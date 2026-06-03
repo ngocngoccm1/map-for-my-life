@@ -1,20 +1,20 @@
 export const preview = {
-  "id": "family-child-51",
-  "title": "MAP 51 - VÌ SAO CON LÌ",
+  "id": "family-child-57",
+  "title": "MAP 57 - VÌ SAO CON HAY NÉ TRÁNH",
   "coreGoal": [
-    "Đây không phải MAP để dán nhãn con là “bướng”, “khó dạy”, “cứng đầu”, “không nghe lời” hay “cố tình chống đối”.",
-    "Đây là MAP giúp cha mẹ nhìn ra: phía sau hành vi lì của con đang có cơ chế cảm xúc, nhu cầu hoặc phòng vệ nào || điều gì khiến con càng bị ép càng phản kháng || và vì sao có những lúc con im lặng không hợp tác nhưng bên trong lại đang rất căng thẳng hoặc tổn thương.",
-    "MAP giúp đọc được: có đứa lì vì muốn giữ quyền kiểm soát || có đứa vì cảm thấy không được lắng nghe || có đứa vì sợ bị áp đặt || có đứa vì từng bị tổn thương cảm xúc || có đứa vì não bộ đang phòng vệ khi bị áp lực hoặc mất an toàn.",
-    "MAP giúp phân biệt rõ: sự kiên định bản chất || và hành vi lì do phản ứng phòng vệ, tích tụ cảm xúc hoặc xung đột nội tâm chưa được giải quyết.",
-    "Mục tiêu sâu nhất là giúp cha mẹ hiểu: hành vi lì thường không phải gốc vấn đề || mà là biểu hiện bên ngoài của nhu cầu được hiểu, được an toàn, được tôn trọng hoặc được giữ lại cảm giác có quyền với chính mình."
+    "Đây không phải MAP để kết luận con “lười”, “không có trách nhiệm”, “yếu đuối”, “thiếu cố gắng” hay “không muốn đối mặt”.",
+    "Đây là MAP giúp cha mẹ nhìn ra: phía sau hành vi né tránh của con đang có cảm xúc, nỗi sợ hoặc cơ chế phòng vệ nào || điều gì khiến con chọn tránh đi thay vì đối diện || và vì sao có những lúc con càng bị ép càng muốn rút lui hoặc biến mất khỏi tình huống đó.",
+    "MAP giúp đọc được: có đứa né tránh vì sợ thất bại || có đứa vì sợ bị đánh giá || có đứa vì từng tổn thương khi cố gắng || có đứa vì não bộ quá tải || có đứa vì cảm xúc bất an quá lớn nên phản ứng né tránh trở thành cách tự bảo vệ an toàn nhất.",
+    "MAP giúp phân biệt rõ: sự cần thời gian xử lý nội tâm tự nhiên || và phản ứng né tránh do lo âu, tổn thương, mất an toàn hoặc mất niềm tin vào bản thân.",
+    "Mục tiêu sâu nhất là giúp cha mẹ hiểu: né tránh thường không phải là “không muốn làm” || mà nhiều khi là dấu hiệu con đang không đủ an toàn hoặc không đủ nội lực để đối diện với điều đang xảy ra."
   ],
   "blocks": [
     {
-      "title": "Khối 1 - GỐC CƠ CHẾ “LÌ” BÊN TRONG CỦA CON",
+      "title": "Khối 1 - GỐC CƠ CHẾ NÉ TRÁNH BÊN TRONG CỦA CON",
       "chapters": [
         {
           "number": 1,
-          "title": "Điều gì bên trong khiến con phản ứng cứng lại và không muốn hợp tác",
+          "title": "Điều gì bên trong khiến con chọn né tránh thay vì đối diện",
           "mainIndex": "Cân bằng",
           "subIndexes": [
             "Linh hồn",
@@ -23,7 +23,7 @@ export const preview = {
         },
         {
           "number": 2,
-          "title": "Con đang chống lại điều gì mỗi khi phản ứng lì",
+          "title": "Con đang sợ điều gì mỗi khi phải đối diện với áp lực hoặc khó khăn",
           "mainIndex": "Sức mạnh tiềm thức",
           "subIndexes": [
             "Thách thức",
@@ -32,25 +32,25 @@ export const preview = {
         },
         {
           "number": 3,
-          "title": "Điều gì khiến con cảm thấy mình cần giữ quyền kiểm soát hoặc bảo vệ bản thân",
-          "mainIndex": "Linh hồn",
+          "title": "Điều gì khiến não bộ của con xem việc đối diện là quá áp lực hoặc không an toàn",
+          "mainIndex": "Cân bằng",
           "subIndexes": [
-            "Nhân cách",
-            "Cân bằng"
+            "Linh hồn",
+            "Thách thức"
           ]
         },
         {
           "number": 4,
-          "title": "Vì sao con càng bị ép càng dễ khóa lại hoặc phản kháng mạnh hơn",
-          "mainIndex": "Thách thức",
+          "title": "Vì sao con dễ rút lui hoặc biến mất khỏi tình huống làm mình căng thẳng",
+          "mainIndex": "Tư duy lý trí",
           "subIndexes": [
-            "Cân bằng",
-            "Thái độ"
+            "Sức mạnh tiềm thức",
+            "Cân bằng"
           ]
         },
         {
           "number": 5,
-          "title": "Kiểu niềm tin nào đang hình thành bên trong khiến con khó mềm lại",
+          "title": "Kiểu niềm tin hoặc tổn thương nào đang làm phản ứng né tránh dễ lặp lại hơn",
           "mainIndex": "Bài học",
           "subIndexes": [
             "Thiếu",
@@ -60,11 +60,11 @@ export const preview = {
       ]
     },
     {
-      "title": "Khối 2 - ĐIỀU GÌ KHIẾN CON CÀNG BỊ ÉP CÀNG LÌ HƠN",
+      "title": "Khối 2 - ĐIỀU GÌ KHIẾN CON CÀNG NGÀY CÀNG NÉ TRÁNH HƠN",
       "chapters": [
         {
           "number": 6,
-          "title": "Kiểu giao tiếp nào khiến con cảm thấy bị áp đặt và phản kháng mạnh hơn",
+          "title": "Kiểu giao tiếp nào khiến con ngày càng sợ đối diện hơn",
           "mainIndex": "Liên kết Linh hồn – Nhân cách",
           "subIndexes": [
             "Thái độ",
@@ -73,25 +73,25 @@ export const preview = {
         },
         {
           "number": 7,
-          "title": "Điều gì khiến con cảm thấy mình không được lắng nghe hoặc không được tôn trọng",
-          "mainIndex": "Linh hồn",
+          "title": "Điều gì khiến con cảm thấy mình không đủ tốt hoặc dễ bị đánh giá",
+          "mainIndex": "Thiếu",
           "subIndexes": [
-            "Thiếu",
+            "Linh hồn",
             "Nhân cách"
           ]
         },
         {
           "number": 8,
-          "title": "Kiểu kiểm soát nào đang làm phản ứng chống đối của con mạnh dần lên",
+          "title": "Kiểu áp lực hoặc kỳ vọng nào đang làm phản ứng né tránh mạnh dần lên",
           "mainIndex": "Thách thức",
           "subIndexes": [
-            "Sức mạnh tiềm thức",
-            "Cân bằng"
+            "Cân bằng",
+            "Sức mạnh tiềm thức"
           ]
         },
         {
           "number": 9,
-          "title": "Vì sao con dễ phản ứng lì hơn khi cảm thấy bị hiểu sai hoặc bị ép làm theo",
+          "title": "Vì sao con dễ né tránh hơn khi cảm thấy có thể thất bại hoặc bị từ chối",
           "mainIndex": "Nhân cách",
           "subIndexes": [
             "Linh hồn",
@@ -100,7 +100,7 @@ export const preview = {
         },
         {
           "number": 10,
-          "title": "Những trải nghiệm nào đang làm hành vi lì trở thành cách tự bảo vệ quen thuộc của con",
+          "title": "Những trải nghiệm nào đang làm né tránh trở thành cơ chế tự bảo vệ quen thuộc của con",
           "mainIndex": "Bài học",
           "subIndexes": [
             "Thế hệ",
@@ -110,11 +110,11 @@ export const preview = {
       ]
     },
     {
-      "title": "Khối 3 - CƠ CHẾ SUY NGHĨ & CẢM XÚC KHI CON “LÌ”",
+      "title": "Khối 3 - CƠ CHẾ SUY NGHĨ & CẢM XÚC KHI CON NÉ TRÁNH",
       "chapters": [
         {
           "number": 11,
-          "title": "Khi phản ứng lì, con đang nghĩ gì bên trong",
+          "title": "Khi né tránh, con đang nghĩ gì bên trong",
           "mainIndex": "Tư duy lý trí",
           "subIndexes": [
             "Sức mạnh tiềm thức",
@@ -123,7 +123,7 @@ export const preview = {
         },
         {
           "number": 12,
-          "title": "Con đang cảm thấy bất lực, tổn thương hay mất an toàn ở điểm nào",
+          "title": "Con đang cảm thấy bất lực, lo âu hoặc mất an toàn ở điểm nào",
           "mainIndex": "Linh hồn",
           "subIndexes": [
             "Thiếu",
@@ -132,7 +132,7 @@ export const preview = {
         },
         {
           "number": 13,
-          "title": "Kiểu cảm xúc nào khiến con chọn im lặng, chống đối hoặc làm ngược lại",
+          "title": "Kiểu cảm xúc nào khiến con chọn rút lui thay vì đối diện",
           "mainIndex": "Cân bằng",
           "subIndexes": [
             "Sức mạnh tiềm thức",
@@ -141,16 +141,16 @@ export const preview = {
         },
         {
           "number": 14,
-          "title": "Vì sao con khó nói ra cảm xúc thật mà lại biểu hiện qua hành vi lì",
+          "title": "Vì sao con khó nói ra nỗi sợ thật mà lại biểu hiện bằng việc né tránh",
           "mainIndex": "Liên kết Linh hồn – Nhân cách",
           "subIndexes": [
-            "Nhân cách",
+            "Tư duy lý trí",
             "Linh hồn"
           ]
         },
         {
           "number": 15,
-          "title": "Điều gì quyết định con sẽ mềm lại hay tiếp tục khóa cảm xúc khi xung đột xảy ra",
+          "title": "Điều gì quyết định con sẽ đủ dũng khí đối diện hay tiếp tục tránh đi",
           "mainIndex": "Sức mạnh tiềm thức",
           "subIndexes": [
             "Trưởng thành",
@@ -160,11 +160,11 @@ export const preview = {
       ]
     },
     {
-      "title": "Khối 4 - BIỂU HIỆN BÊN NGOÀI CỦA HÀNH VI LÌ",
+      "title": "Khối 4 - BIỂU HIỆN BÊN NGOÀI CỦA HÀNH VI NÉ TRÁNH",
       "chapters": [
         {
           "number": 16,
-          "title": "Hành vi lì của con đang biểu hiện ra ngoài theo kiểu nào nhiều nhất",
+          "title": "Hành vi né tránh của con đang biểu hiện ra ngoài theo kiểu nào nhiều nhất",
           "mainIndex": "Nhân cách",
           "subIndexes": [
             "Thái độ",
@@ -173,7 +173,7 @@ export const preview = {
         },
         {
           "number": 17,
-          "title": "Vì sao con có thể im lặng, kéo dài thời gian hoặc không phản hồi khi bị nhắc",
+          "title": "Vì sao con trì hoãn, lảng tránh hoặc không muốn đối diện vấn đề",
           "mainIndex": "Sức mạnh tiềm thức",
           "subIndexes": [
             "Cân bằng",
@@ -182,25 +182,25 @@ export const preview = {
         },
         {
           "number": 18,
-          "title": "Vì sao con càng bị nhắc càng dễ phản ứng ngược hoặc không hợp tác",
+          "title": "Vì sao con càng bị ép đối diện càng muốn rút lui mạnh hơn",
           "mainIndex": "Thách thức",
           "subIndexes": [
-            "Thái độ",
-            "Cân bằng"
+            "Cân bằng",
+            "Liên kết Linh hồn – Nhân cách"
           ]
         },
         {
           "number": 19,
-          "title": "Hành vi nào cho thấy con đang phòng vệ cảm xúc chứ không đơn giản là “cứng đầu”",
+          "title": "Hành vi nào cho thấy hệ thần kinh của con đang quá tải chứ không đơn giản là “lười”",
           "mainIndex": "Cân bằng",
           "subIndexes": [
             "Linh hồn",
-            "Sức mạnh tiềm thức"
+            "Nhân cách"
           ]
         },
         {
           "number": 20,
-          "title": "Những phản ứng nào nếu lặp lâu sẽ khiến con ngày càng khó hợp tác hơn",
+          "title": "Những phản ứng nào nếu lặp lâu sẽ khiến con ngày càng mất khả năng đối diện áp lực",
           "mainIndex": "Bài học",
           "subIndexes": [
             "Thách thức",
@@ -210,11 +210,11 @@ export const preview = {
       ]
     },
     {
-      "title": "Khối 5 - NHỮNG MÔ THỨC “LÌ” DỄ THEO CON ĐẾN KHI TRƯỞNG THÀNH",
+      "title": "Khối 5 - NHỮNG MÔ THỨC NÉ TRÁNH DỄ THEO CON ĐẾN KHI TRƯỞNG THÀNH",
       "chapters": [
         {
           "number": 21,
-          "title": "Kiểu phản kháng hoặc phòng vệ nào con dễ mang theo khi lớn lên",
+          "title": "Kiểu né tránh hoặc rút lui nào con dễ mang theo khi lớn lên",
           "mainIndex": "Bài học",
           "subIndexes": [
             "Sức mạnh tiềm thức",
@@ -223,7 +223,7 @@ export const preview = {
         },
         {
           "number": 22,
-          "title": "Vì sao con có thể lớn lên với xu hướng không thích bị kiểm soát hoặc rất khó tin người",
+          "title": "Vì sao con có thể lớn lên với xu hướng sợ sai hoặc sợ đối diện xung đột",
           "mainIndex": "Sức mạnh tiềm thức",
           "subIndexes": [
             "Thách thức",
@@ -232,7 +232,7 @@ export const preview = {
         },
         {
           "number": 23,
-          "title": "Kiểu người nào con dễ trở thành nếu luôn phải phản kháng để bảo vệ mình",
+          "title": "Kiểu người nào con dễ trở thành nếu luôn phải tự bảo vệ bằng cách tránh né",
           "mainIndex": "Nhân cách",
           "subIndexes": [
             "Linh hồn",
@@ -241,7 +241,7 @@ export const preview = {
         },
         {
           "number": 24,
-          "title": "Kiểu mối quan hệ nào con dễ hình thành với quyền lực, quy tắc và sự hợp tác sau này",
+          "title": "Kiểu mối quan hệ nào con dễ hình thành với áp lực, trách nhiệm và cảm xúc sau này",
           "mainIndex": "Thái độ",
           "subIndexes": [
             "Liên kết Linh hồn – Nhân cách",
@@ -250,21 +250,21 @@ export const preview = {
         },
         {
           "number": 25,
-          "title": "Điều gì nếu kéo dài sẽ khiến con ngày càng khóa cảm xúc và khó mở lòng hơn",
+          "title": "Điều gì nếu kéo dài sẽ khiến con ngày càng mất niềm tin vào khả năng của chính mình",
           "mainIndex": "Thiếu",
           "subIndexes": [
             "Sức mạnh tiềm thức",
-            "Linh hồn"
+            "Cân bằng"
           ]
         }
       ]
     },
     {
-      "title": "Khối 6 - ĐIỀU GÌ ĐANG LÀM HÀNH VI LÌ CỦA CON NGÀY CÀNG NẶNG HƠN",
+      "title": "Khối 6 - ĐIỀU GÌ ĐANG LÀM CON NGÀY CÀNG SỢ ĐỐI DIỆN HƠN",
       "chapters": [
         {
           "number": 26,
-          "title": "Điều gì trong môi trường gia đình đang làm con ngày càng phòng vệ mạnh hơn",
+          "title": "Điều gì trong môi trường gia đình đang làm hệ thần kinh của con luôn muốn rút lui",
           "mainIndex": "Thế hệ",
           "subIndexes": [
             "Cân bằng",
@@ -273,7 +273,7 @@ export const preview = {
         },
         {
           "number": 27,
-          "title": "Kiểu mắng hoặc ép buộc nào đang làm con khóa lại cảm xúc nhiều hơn",
+          "title": "Kiểu quát mắng hoặc áp lực nào đang làm con ngày càng né tránh mạnh hơn",
           "mainIndex": "Thách thức",
           "subIndexes": [
             "Liên kết Linh hồn – Nhân cách",
@@ -282,7 +282,7 @@ export const preview = {
         },
         {
           "number": 28,
-          "title": "Kiểu so sánh hoặc phủ nhận cảm xúc nào đang làm phản ứng lì tăng mạnh hơn",
+          "title": "Kiểu chỉ trích hoặc phủ nhận nào đang làm con mất dần dũng khí đối diện",
           "mainIndex": "Thiếu",
           "subIndexes": [
             "Bài học",
@@ -291,7 +291,7 @@ export const preview = {
         },
         {
           "number": 29,
-          "title": "Điều gì khiến con dần tin rằng chỉ có phản kháng mới bảo vệ được mình",
+          "title": "Điều gì khiến con dần tin rằng tránh đi sẽ an toàn hơn cố gắng đối diện",
           "mainIndex": "Sức mạnh tiềm thức",
           "subIndexes": [
             "Bài học",
@@ -300,7 +300,7 @@ export const preview = {
         },
         {
           "number": 30,
-          "title": "Những trải nghiệm lặp lại nào đang âm thầm biến phản ứng lì thành thói quen cố định",
+          "title": "Những trải nghiệm lặp lại nào đang âm thầm biến né tránh thành phản ứng quen thuộc của con",
           "mainIndex": "Bài học",
           "subIndexes": [
             "Thế hệ",
@@ -310,11 +310,11 @@ export const preview = {
       ]
     },
     {
-      "title": "Khối 7 - KHẢ NĂNG GIÚP CON MỀM LẠI & HỢP TÁC TỰ NHIÊN HƠN",
+      "title": "Khối 7 - KHẢ NĂNG GIÚP CON TĂNG NỘI LỰC & ĐỐI DIỆN LÀNH MẠNH HƠN",
       "chapters": [
         {
           "number": 31,
-          "title": "Điều gì giúp con cảm thấy an toàn hơn để mở lòng hợp tác",
+          "title": "Điều gì giúp con cảm thấy an toàn hơn để đủ dũng khí đối diện khó khăn",
           "mainIndex": "Linh hồn",
           "subIndexes": [
             "Cân bằng",
@@ -323,7 +323,7 @@ export const preview = {
         },
         {
           "number": 32,
-          "title": "Kiểu giao tiếp nào giúp con mềm lại thay vì phản kháng",
+          "title": "Kiểu giao tiếp nào giúp con tăng tự tin và muốn thử đối diện hơn",
           "mainIndex": "Liên kết Linh hồn – Nhân cách",
           "subIndexes": [
             "Thái độ",
@@ -332,7 +332,7 @@ export const preview = {
         },
         {
           "number": 33,
-          "title": "Điều gì giúp con cảm thấy mình vẫn có quyền lựa chọn mà không cần chống đối",
+          "title": "Điều gì giúp hệ thần kinh của con ổn định hơn khi gặp áp lực hoặc thất bại",
           "mainIndex": "Sức mạnh tiềm thức",
           "subIndexes": [
             "Cân bằng",
@@ -341,7 +341,7 @@ export const preview = {
         },
         {
           "number": 34,
-          "title": "Khi được thấu hiểu đúng cách, con sẽ thay đổi hành vi ra sao",
+          "title": "Khi được hỗ trợ đúng cách, con sẽ thay đổi khả năng đối diện khó khăn ra sao",
           "mainIndex": "Trưởng thành",
           "subIndexes": [
             "Linh hồn",
@@ -350,21 +350,21 @@ export const preview = {
         },
         {
           "number": 35,
-          "title": "Phiên bản trưởng thành biết hợp tác nhưng vẫn giữ được chính mình của con sẽ khác hiện tại ở điểm nào",
+          "title": "Phiên bản trưởng thành biết đối diện lành mạnh của con sẽ khác hiện tại ở điểm nào",
           "mainIndex": "Trưởng thành",
           "subIndexes": [
             "Đường đời",
-            "Nhân cách"
+            "Tư duy lý trí"
           ]
         }
       ]
     },
     {
-      "title": "Khối 8 - GIẢI PHÁP ĐỒNG HÀNH & GIÚP CON GIẢM HÀNH VI LÌ",
+      "title": "Khối 8 - GIẢI PHÁP ĐỒNG HÀNH & GIÚP CON GIẢM NÉ TRÁNH",
       "chapters": [
         {
           "number": 36,
-          "title": "Cha mẹ cần hiểu điều gì trước khi kết luận con “bướng” hoặc “khó dạy”",
+          "title": "Cha mẹ cần hiểu điều gì trước khi kết luận con “lười” hoặc “thiếu trách nhiệm”",
           "mainIndex": "Đường đời",
           "subIndexes": [
             "Linh hồn",
@@ -373,7 +373,7 @@ export const preview = {
         },
         {
           "number": 37,
-          "title": "Khi con chống đối, nên đọc điều gì phía sau hành vi đó",
+          "title": "Khi con né tránh, nên đọc điều gì phía sau phản ứng đó",
           "mainIndex": "Cân bằng",
           "subIndexes": [
             "Sức mạnh tiềm thức",
@@ -382,7 +382,7 @@ export const preview = {
         },
         {
           "number": 38,
-          "title": "Cách phản hồi nào giúp con bớt phòng vệ và dễ hợp tác hơn",
+          "title": "Cách phản hồi nào giúp con giảm phòng vệ và dễ đối diện hơn",
           "mainIndex": "Liên kết Linh hồn – Nhân cách",
           "subIndexes": [
             "Thái độ",
@@ -391,7 +391,7 @@ export const preview = {
         },
         {
           "number": 39,
-          "title": "Làm sao giúp con học cách nói ra cảm xúc thay vì phản kháng bằng hành vi",
+          "title": "Làm sao giúp con học cách đối diện cảm xúc thay vì trốn tránh bằng hành vi",
           "mainIndex": "Tư duy lý trí",
           "subIndexes": [
             "Linh hồn",
@@ -400,7 +400,7 @@ export const preview = {
         },
         {
           "number": 40,
-          "title": "Lộ trình giúp con giảm phản ứng lì và xây khả năng hợp tác lành mạnh hơn",
+          "title": "Lộ trình giúp con tăng nội lực và xây khả năng đối diện lành mạnh lâu dài",
           "mainIndex": "Trưởng thành",
           "subIndexes": [
             "Đường đời",
