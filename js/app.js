@@ -1,7 +1,8 @@
 import { addRoute, startRouter } from "./router.js";
 import { loadCategories, loadCategoryMaps, findCategory, findMap, loadPreview } from "./data-loader.js";
-import { renderHeader, renderHome, renderCategory, renderMapDetail, setupGlobalEvents } from "./ui.js";
+import { initTheme, renderHeader, renderHome, renderCategory, renderMapDetail, setupGlobalEvents } from "./ui.js";
 
+initTheme();
 renderHeader();
 setupGlobalEvents();
 

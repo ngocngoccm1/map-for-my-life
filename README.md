@@ -26,7 +26,9 @@ Sau đó mở `http://localhost:8000`.
 
 ## Thêm data mới
 
-Thêm category mới trong `data/categories.js`, đặt `id`, `count`, `imageFolder` và `mapModule`.
+Thêm category mới trong `data/categories.js`, đặt `id`, `order`, `count`, `imageFolder`, `coverImage` và `mapModule`.
+
+`coverImage` có thể để chuỗi rỗng. Khi rỗng, giao diện bìa sách sẽ tự dùng ảnh MAP số 1 theo `imageFolder`; nếu ảnh lỗi thì hiện placeholder gradient.
 
 Tạo file danh sách MAP tương ứng trong `data/maps/`, ví dụ `category-new.js`, export:
 
@@ -56,6 +58,12 @@ getMapImageUrl("Images_Clone_CATEGOGY1", 57, { width: 400, quality: 80 });
 ```
 
 Kết quả dùng quy tắc `https://ik.imagekit.io/noc/<folder>/<number>.jpeg` và hỗ trợ transform resize/quality của ImageKit.
+
+## Theme sáng/tối
+
+Header có nút chuyển `Light` / `Dark`. Theme được lưu trong `localStorage` bằng key `gein-map-theme`, nên reload trang vẫn giữ lựa chọn cũ. Nếu người dùng chưa chọn, app đọc system preference và fallback về light mode.
+
+Màu theme nằm trong CSS variables ở `css/app.css`; khi chỉnh màu, ưu tiên sửa biến trong `:root` và `:root[data-theme="dark"]`.
 
 ## Deploy GitHub Pages
 

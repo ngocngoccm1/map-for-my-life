@@ -3,6 +3,7 @@ Thumbs.db
 node_modules/
 dist/
 .cache/
+.codegraph/
 .env
 .env.*
 *.log

@@ -1,43 +1,63 @@
-import { CONFIG, TEXT, getMapImageUrl, getWhatsappUrl } from "./config.js";
+import { CONFIG, TEXT, HOME_CONTENT, INTRO_IMAGE_URL, getMapImageUrl, getWhatsappUrl } from "./config.js";
 
 const app = () => document.querySelector("#app");
 const modalRoot = () => document.querySelector("#modal-root");
+const THEME_KEY = "gein-map-theme";
 
 let activeCategoryFilter = "Tất cả";
 let categoryState = { query: "", previewOnly: false, visible: CONFIG.pageSize };
 let pendingSection = "";
 
+export function initTheme() {
+  const stored = localStorage.getItem(THEME_KEY);
+  const systemDark = window.matchMedia?.("(prefers-color-scheme: dark)").matches;
+  setTheme(stored || (systemDark ? "dark" : "light"));
+}
+
 export function renderHeader() {
   document.querySelector("#site-header").innerHTML = `
     <nav class="container flex min-h-20 items-center justify-between gap-4">
-      <a href="#/" class="font-display text-2xl font-bold text-pine">${CONFIG.brand}</a>
+      <a href="#/" class="text-lg font-black tracking-tight text-pine sm:text-2xl">${CONFIG.brand}</a>
       <div class="hidden items-center gap-7 text-sm font-bold text-pine lg:flex">
-        <a href="#/" data-scroll-section="intro">${TEXT.nav.intro}</a>
+        <a href="#/" data-scroll-section="intro">Giới thiệu</a>
+        <a href="#/" data-scroll-section="deep-groups">Nhóm chuyên sâu</a>
         <a href="#/" data-scroll-section="catalog">${TEXT.nav.catalog}</a>
         <a href="#/map/family-child/51">${TEXT.nav.preview}</a>
         <a href="#/" data-scroll-section="contact">${TEXT.nav.contact}</a>
       </div>
-      <div class="hidden lg:block"><a class="btn btn-primary" href="${getWhatsappUrl()}" target="_blank" rel="noreferrer">${TEXT.nav.cta}</a></div>
-      <button class="btn btn-secondary lg:hidden" data-mobile-menu aria-expanded="false">Menu</button>
+      <div class="hidden items-center gap-2 lg:flex">
+        <button class="btn btn-secondary w-auto" data-theme-toggle type="button" aria-label="Chuyển sáng tối">Sáng/tối</button>
+        <a class="btn btn-primary" href="${getWhatsappUrl()}" target="_blank" rel="noreferrer">${TEXT.nav.cta}</a>
+      </div>
+      <div class="flex items-center gap-2 lg:hidden">
+        <button class="btn btn-secondary w-auto" data-theme-toggle type="button" aria-label="Chuyển sáng tối">Theme</button>
+        <button class="btn btn-secondary w-auto" data-mobile-menu aria-expanded="false">Menu</button>
+      </div>
     </nav>
     <div class="container hidden pb-4 lg:hidden" data-mobile-panel>
       <div class="card grid gap-2 p-3 text-sm font-bold text-pine">
         <a class="rounded-2xl px-4 py-3" href="#/" data-scroll-section="intro">Giới thiệu</a>
+        <a class="rounded-2xl px-4 py-3" href="#/" data-scroll-section="deep-groups">Nhóm chuyên sâu</a>
         <a class="rounded-2xl px-4 py-3" href="#/" data-scroll-section="catalog">Danh mục MAP</a>
         <a class="rounded-2xl px-4 py-3" href="#/map/family-child/51">Đọc thử</a>
         <a class="rounded-2xl px-4 py-3" href="#/" data-scroll-section="contact">Liên hệ</a>
       </div>
     </div>`;
+  syncThemeButtons();
 }
 
 export function renderHome(categories) {
+  const orderedCategories = [...categories].sort((a, b) => (a.order || 999) - (b.order || 999));
   const groups = ["Tất cả", "Gia đình", "Hôn nhân", "Chữa lành", "Giải mã con người"];
-  const filtered = activeCategoryFilter === "Tất cả" ? categories : categories.filter((item) => item.group === activeCategoryFilter);
+  const filtered = activeCategoryFilter === "Tất cả"
+    ? orderedCategories
+    : orderedCategories.filter((item) => item.group === activeCategoryFilter);
+
   app().innerHTML = `
-    <section class="container grid min-h-[calc(100dvh-80px)] items-center gap-10 py-10 lg:grid-cols-[1fr_.78fr]">
+    <section class="container grid min-h-[calc(100dvh-80px)] items-center gap-10 py-10 lg:grid-cols-[1fr_.86fr]">
       <div class="fade-in">
         <p class="text-sm font-bold uppercase tracking-[.18em] text-clay">Thư viện MAP chữa lành</p>
-        <h1 class="mt-5 max-w-4xl font-display text-5xl font-bold leading-[1.03] text-pine md:text-7xl">${TEXT.hero.headline}</h1>
+        <h1 class="mt-5 max-w-5xl text-5xl font-black leading-[1.04] text-pine md:text-7xl">${TEXT.hero.headline}</h1>
         <p class="mt-6 max-w-2xl text-lg leading-8 text-[var(--muted)]">${TEXT.hero.subheadline}</p>
         <div class="mt-8 flex flex-col gap-3 sm:flex-row">
           <a class="btn btn-primary" href="#/" data-scroll-section="catalog">${TEXT.hero.primary}</a>
@@ -45,51 +65,87 @@ export function renderHome(categories) {
         </div>
       </div>
       <div class="fade-in">
-        <div class="relative">
-          <div class="card rotate-[-2deg] p-4 shadow-soft">
-            ${imageFrame("Images_Clone_CATEGOGY1", 51, "Ảnh MAP mẫu", 760, "h-[520px] max-h-[70dvh]")}
-          </div>
-          <div class="card absolute -bottom-6 left-6 right-6 p-5 shadow-card">
-            <p class="font-display text-3xl font-bold text-pine">MAP 51</p>
-            <p class="mt-1 text-sm text-[var(--muted)]">Vì sao con lì, hiểu điều con chưa nói thành lời.</p>
-          </div>
-        </div>
+        <img class="intro-image" src="${INTRO_IMAGE_URL}" alt="Giới thiệu GEIN MAP FOR SUCCESS" loading="eager" decoding="async" />
       </div>
     </section>
+
+    <section class="container py-10">
+      <div class="card overflow-hidden p-4 md:p-6">
+        <img class="intro-image max-h-[720px]" src="${INTRO_IMAGE_URL}" alt="Ảnh giới thiệu website GEIN MAP FOR SUCCESS" loading="lazy" decoding="async" />
+      </div>
+    </section>
+
     <section id="intro" class="container py-16">
-      <div class="grid gap-6 lg:grid-cols-[.8fr_1.2fr]">
-        <h2 class="font-display text-5xl font-bold leading-tight text-pine">Nhìn thấy hệ điều hành bên trong một con người.</h2>
-        <div class="grid gap-4 sm:grid-cols-2">
-          ${[
-            "Vì sao tôi luôn lặp lại những khó khăn giống nhau?",
-            "Vì sao con tôi cư xử như vậy dù tôi đã cố gắng dạy dỗ rất nhiều?",
-            "Vì sao vợ chồng yêu nhau nhưng vẫn thường xuyên tổn thương nhau?",
-            "Vì sao trong gia đình luôn tồn tại những khoảng cách khó gọi thành tên?"
-          ].map((question) => `<article class="card fade-in p-6 text-lg font-semibold leading-7 text-pine">${question}</article>`).join("")}
+      <div class="grid gap-8 lg:grid-cols-[.78fr_1.22fr]">
+        <div>
+          <p class="text-sm font-bold uppercase tracking-[.18em] text-clay">GEIN MAP FOR SUCCESS</p>
+          <h2 class="mt-4 text-4xl font-black leading-tight text-pine md:text-6xl">Nhìn thấy hệ điều hành bên trong một con người.</h2>
+        </div>
+        <div class="grid gap-4">
+          ${HOME_CONTENT.introParagraphs.map((text) => `<p class="card fade-in p-6 text-lg leading-8 text-[var(--muted)]">${escapeHtml(text)}</p>`).join("")}
         </div>
       </div>
     </section>
+
     <section class="container py-16">
-      <h2 class="font-display text-5xl font-bold text-pine">19 chỉ số được soi chiếu mềm mại.</h2>
-      <div class="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        ${["Con người thật bên trong", "Hướng phát triển", "Tài năng và tiềm năng", "Điểm mạnh", "Điểm yếu", "Bài học cuộc đời", "Giai đoạn trưởng thành", "Tổn thương cảm xúc", "Mô thức gia đình lặp lại"].map((item) => `
+      <div class="grid gap-4 sm:grid-cols-2">
+        ${HOME_CONTENT.questions.map((question, index) => `
+          <article class="card fade-in p-6">
+            <span class="chip">Câu hỏi ${index + 1}</span>
+            <h3 class="mt-5 text-xl font-black leading-8 text-pine">${escapeHtml(question)}</h3>
+          </article>`).join("")}
+      </div>
+    </section>
+
+    <section class="container py-16">
+      <div class="max-w-3xl">
+        <p class="text-sm font-bold uppercase tracking-[.18em] text-clay">19 chỉ số cốt lõi</p>
+        <h2 class="mt-4 text-4xl font-black leading-tight text-pine md:text-6xl">Hệ thống phân tích giúp giải mã con người toàn diện.</h2>
+      </div>
+      <div class="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        ${HOME_CONTENT.coreIndexes.map((item) => `
           <div class="card fade-in p-5">
             <span class="chip">GEIN MAP</span>
-            <h3 class="mt-5 text-xl font-bold text-pine">${item}</h3>
+            <h3 class="mt-5 text-lg font-black leading-7 text-pine">${escapeHtml(item)}</h3>
           </div>`).join("")}
       </div>
+      <div class="card mt-8 p-7">
+        <div class="grid gap-4 md:grid-cols-3">
+          ${HOME_CONTENT.bridgeLines.map((line) => `<p class="text-xl font-black leading-8 text-pine">${escapeHtml(line)}</p>`).join("")}
+        </div>
+      </div>
     </section>
+
+    <section id="deep-groups" class="container py-16">
+      <div class="max-w-3xl">
+        <p class="text-sm font-bold uppercase tracking-[.18em] text-clay">Bản đồ chuyên sâu</p>
+        <h2 class="mt-4 text-4xl font-black leading-tight text-pine md:text-6xl">Mỗi mục tiêu phát triển cần một bản đồ đủ sâu.</h2>
+      </div>
+      <div class="mt-8 grid gap-5 lg:grid-cols-2">
+        ${HOME_CONTENT.deepGroups.map((group) => `
+          <article class="card fade-in p-7">
+            <h3 class="text-2xl font-black text-pine">${escapeHtml(group.title)}</h3>
+            ${group.lead ? `<p class="mt-4 font-bold leading-7 text-clay">${escapeHtml(group.lead)}</p>` : ""}
+            <p class="mt-4 leading-7 text-[var(--muted)]">${escapeHtml(group.description)}</p>
+            ${group.items.length ? `<ul class="mt-5 grid gap-2">${group.items.map((item) => `<li class="rounded-2xl border border-pine/10 bg-white/55 px-4 py-3 font-bold text-pine">${escapeHtml(item)}</li>`).join("")}</ul>` : ""}
+            ${group.note ? `<p class="mt-5 leading-7 text-[var(--muted)]">${escapeHtml(group.note)}</p>` : ""}
+          </article>`).join("")}
+      </div>
+      <div class="card mt-8 p-8">
+        ${HOME_CONTENT.closingLines.map((line) => `<p class="text-xl font-black leading-9 text-pine">${escapeHtml(line)}</p>`).join("")}
+      </div>
+    </section>
+
     <section id="catalog" class="container py-16">
       <div class="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
         <div>
-          <h2 class="font-display text-5xl font-bold text-pine">Danh mục MAP</h2>
-          <p class="mt-3 max-w-2xl text-[var(--muted)]">Dữ liệu được tách theo danh mục để website chỉ tải phần người đọc đang cần.</p>
+          <p class="text-sm font-bold uppercase tracking-[.18em] text-clay">Kệ sách MAP</p>
+          <h2 class="mt-4 text-4xl font-black text-pine md:text-6xl">Danh mục MAP dạng bìa sách</h2>
+          <p class="mt-3 max-w-2xl text-[var(--muted)]">Chọn một bìa để mở danh sách MAP. Dữ liệu vẫn được lazy load theo danh mục.</p>
         </div>
         <div class="flex flex-wrap gap-2">${groups.map((group) => `<button class="chip ${group === activeCategoryFilter ? "bg-pine text-white" : ""}" data-category-filter="${group}">${group}</button>`).join("")}</div>
       </div>
-      <div class="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-        ${filtered.map(categoryCard).join("")}
-      </div>
+      ${renderCategoryShelf(filtered)}
     </section>
     ${contactSection()}
     ${footer()}`;
@@ -98,7 +154,7 @@ export function renderHome(categories) {
 
 export function renderCategory(category, maps) {
   if (!category) throw new Error("Không tìm thấy danh mục MAP.");
-  categoryState = { ...categoryState, visible: CONFIG.pageSize };
+  categoryState = { query: "", previewOnly: false, visible: CONFIG.pageSize };
   drawCategory(category, maps);
 }
 
@@ -114,13 +170,21 @@ function drawCategory(category, maps) {
   app().innerHTML = `
     <section class="container py-10">
       <a class="btn btn-secondary w-auto" href="#/">Quay lại trang chủ</a>
-      <div class="mt-8 grid gap-8 lg:grid-cols-[.72fr_1.28fr]">
-        <div class="card p-6">
-          ${imageFrame(category.imageFolder, 51, category.name, 620, "h-[420px]")}
-          <h1 class="mt-6 font-display text-5xl font-bold leading-tight text-pine">${category.name}</h1>
-          <p class="mt-4 text-[var(--muted)]">${category.description}</p>
-          <div class="mt-5 flex flex-wrap gap-2"><span class="chip">${category.group}</span><span class="chip">${category.count} MAP</span></div>
-        </div>
+      <div class="mt-8 grid gap-8 lg:grid-cols-[320px_1fr]">
+        <aside class="lg:sticky lg:top-28 lg:self-start">
+          <div class="card p-5">
+            ${renderBookCoverItem({
+              href: `#/category/${category.id}`,
+              image: getCoverImage(category),
+              title: category.name,
+              subtitle: category.description,
+              rank: category.order || 1,
+              badge: `${category.count} MAP`,
+              className: "max-w-[260px] mx-auto"
+            })}
+            <div class="mt-6 flex flex-wrap gap-2"><span class="chip">${category.group}</span><span class="chip">${category.count} MAP</span></div>
+          </div>
+        </aside>
         <div>
           <div class="card p-4">
             <div class="grid gap-3 md:grid-cols-[1fr_auto]">
@@ -131,9 +195,7 @@ function drawCategory(category, maps) {
               </label>
             </div>
           </div>
-          <div class="mt-5 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-            ${visible.length ? visible.map((map) => mapCard(category, map)).join("") : emptyState("Không tìm thấy MAP phù hợp.")}
-          </div>
+          ${visible.length ? renderMapShelf(category, visible) : emptyState("Không tìm thấy MAP phù hợp.")}
           ${filtered.length > visible.length ? `<div class="mt-8 text-center"><button class="btn btn-primary w-auto" data-load-more>Load thêm MAP</button></div>` : ""}
         </div>
       </div>
@@ -156,11 +218,11 @@ export function renderMapDetail(category, map, preview) {
         <article class="min-w-0">
           <div class="card p-6 md:p-8">
             <div class="flex flex-wrap gap-2"><span class="chip">Đọc thử</span><span class="chip">${category.group}</span><span class="chip">${map.hasPreview ? "Có đọc thử" : "Đang cập nhật"}</span></div>
-            <h1 class="mt-5 font-display text-5xl font-bold leading-tight text-pine">MAP ${map.number} - ${escapeHtml(map.title)}</h1>
+            <h1 class="mt-5 text-4xl font-black leading-tight text-pine md:text-5xl">MAP ${map.number} - ${escapeHtml(map.title)}</h1>
             <p class="mt-4 text-lg leading-8 text-[var(--muted)]">${escapeHtml(map.subtitle || "")}</p>
             <div class="mt-5 flex flex-wrap gap-2">${map.tags.map((tag) => `<span class="chip">${escapeHtml(tag)}</span>`).join("")}</div>
             <div class="mt-7 flex flex-col gap-3 sm:flex-row">
-              <a class="btn btn-primary" href="#preview-content">Đọc thử</a>
+              <button class="btn btn-primary" data-scroll-to="preview-content" type="button">Đọc thử</button>
               <a class="btn btn-secondary" href="${getWhatsappUrl(`Tôi muốn được tư vấn bản đầy đủ của MAP ${map.number} - ${map.title}`)}" target="_blank" rel="noreferrer">Liên hệ tư vấn</a>
               <button class="btn btn-secondary" data-open-image="${category.imageFolder}|${map.number}|${escapeHtml(map.title)}">Xem ảnh MAP</button>
               <button class="btn btn-secondary" data-share>Chia sẻ</button>
@@ -179,57 +241,70 @@ export function renderMapDetail(category, map, preview) {
   afterRender();
 }
 
-function categoryCard(category) {
+function renderCategoryShelf(categories) {
+  return `<div class="book-shelf mt-8">${categories.map((category, index) => renderBookCoverItem({
+    href: `#/category/${category.id}`,
+    image: getCoverImage(category),
+    title: category.name,
+    subtitle: `${category.group} • ${category.count} MAP`,
+    rank: category.order || index + 1,
+    badge: category.count ? `${category.count} MAP` : "MAP"
+  })).join("")}</div>`;
+}
+
+function renderMapShelf(category, maps) {
+  return `<div class="book-shelf mt-6">${maps.map((map) => renderBookCoverItem({
+    href: `#/map/${category.id}/${map.number}`,
+    image: getMapImageUrl(category.imageFolder, map.number, { width: 500, quality: 82 }),
+    title: `MAP ${map.number} - ${map.title}`,
+    subtitle: map.subtitle || "Nội dung đang được cập nhật",
+    rank: map.number,
+    badge: map.hasPreview ? "Đọc thử" : "MAP",
+    imageAction: `${category.imageFolder}|${map.number}|${escapeHtml(map.title)}`
+  })).join("")}</div>`;
+}
+
+function renderBookCoverItem({ href, image, title, subtitle, rank, badge, imageAction = "", className = "" }) {
   return `
-    <article class="card fade-in overflow-hidden">
-      ${imageFrame(category.imageFolder, 1, category.name, 520, "h-60")}
-      <div class="p-6">
-        <div class="flex flex-wrap gap-2"><span class="chip">${category.group}</span><span class="chip">${category.count} MAP</span></div>
-        <h3 class="mt-5 text-2xl font-bold leading-snug text-pine">${category.name}</h3>
-        <p class="mt-3 text-sm leading-6 text-[var(--muted)]">${category.description}</p>
-        <a class="btn btn-primary mt-6 w-full" href="#/category/${category.id}">Xem danh sách MAP</a>
-      </div>
+    <article class="book-cover fade-in ${className}">
+      <a href="${href}" aria-label="${escapeHtml(title)}">
+        <div class="book-cover__image">
+          <img src="${image}" alt="${escapeHtml(title)}" loading="lazy" decoding="async" />
+          <div class="book-fallback hidden"><strong>GEIN MAP</strong></div>
+          <span class="book-badge">${escapeHtml(badge)}</span>
+          <span class="book-rank">${rank}</span>
+        </div>
+      </a>
+      <a class="book-title block" href="${href}">${escapeHtml(title)}</a>
+      <p class="book-meta">${escapeHtml(subtitle || "")}</p>
+      ${imageAction ? `<button class="btn btn-secondary mt-3 min-h-10 w-full py-2 text-sm" data-open-image="${imageAction}">Xem ảnh</button>` : ""}
     </article>`;
 }
 
-function mapCard(category, map) {
-  return `
-    <article class="card overflow-hidden">
-      <a href="#/map/${category.id}/${map.number}">${imageFrame(category.imageFolder, map.number, map.title, 400, "h-64")}</a>
-      <div class="p-5">
-        <p class="text-sm font-bold text-clay">MAP ${map.number}</p>
-        <h3 class="mt-2 text-xl font-bold text-pine">${escapeHtml(map.title)}</h3>
-        <p class="mt-2 min-h-12 text-sm leading-6 text-[var(--muted)]">${escapeHtml(map.subtitle || "")}</p>
-        <div class="mt-4 flex flex-wrap gap-2">${map.tags.slice(0, 3).map((tag) => `<span class="chip">${escapeHtml(tag)}</span>`).join("")}</div>
-        <div class="mt-5 grid gap-2">
-          <a class="btn btn-primary" href="#/map/${category.id}/${map.number}">Xem chi tiết</a>
-          <button class="btn btn-secondary" data-open-image="${category.imageFolder}|${map.number}|${escapeHtml(map.title)}">Xem ảnh</button>
-          <a class="btn btn-secondary" target="_blank" rel="noreferrer" href="${getWhatsappUrl(`Tôi muốn nhận bản đầy đủ của MAP ${map.number} - ${map.title}`)}">Liên hệ nhận bản đầy đủ</a>
-        </div>
-      </div>
-    </article>`;
+function getCoverImage(category) {
+  return category.coverImage || getMapImageUrl(category.imageFolder, 1, { width: 500, quality: 82 });
 }
 
 function previewContent(preview) {
   return `
     <section class="card p-6 md:p-8">
       <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-        <h2 class="font-display text-4xl font-bold text-pine">Nội dung đọc thử</h2>
+        <h2 class="text-3xl font-black text-pine md:text-4xl">Nội dung đọc thử</h2>
         <div class="flex gap-2"><button class="btn btn-secondary w-auto" data-accordion-all="open">Mở tất cả</button><button class="btn btn-secondary w-auto" data-accordion-all="close">Thu gọn tất cả</button></div>
       </div>
       <div class="mt-6 rounded-[var(--radius)] bg-white/60 p-5">
-        <h3 class="text-xl font-bold text-pine">Mục tiêu cốt lõi của MAP</h3>
+        <h3 class="text-xl font-black text-pine">Mục tiêu cốt lõi của MAP</h3>
         <div class="mt-4 grid gap-3">${preview.coreGoal.map((item) => `<p class="leading-7 text-[var(--muted)]">${escapeHtml(item)}</p>`).join("")}</div>
       </div>
       <div class="mt-5 grid gap-4">
         ${preview.blocks.map((block, index) => `
           <details class="card bg-white/55 p-5" ${index === 0 ? "open" : ""}>
-            <summary class="cursor-pointer text-lg font-bold text-pine">${escapeHtml(block.title)}</summary>
+            <summary class="cursor-pointer text-lg font-black text-pine">${escapeHtml(block.title)}</summary>
             <div class="mt-4 grid gap-3">
               ${block.chapters.map((chapter) => `
                 <div class="rounded-[18px] border border-pine/10 bg-white p-4">
                   <p class="text-sm font-bold text-clay">Chương ${chapter.number}</p>
-                  <h4 class="mt-1 font-bold text-pine">${escapeHtml(chapter.title)}</h4>
+                  <h4 class="mt-1 font-black text-pine">${escapeHtml(chapter.title)}</h4>
                   <p class="mt-2 text-sm text-[var(--muted)]">Chỉ số chính: ${escapeHtml(chapter.mainIndex)}</p>
                   <div class="mt-3 flex flex-wrap gap-2">${chapter.subIndexes.map((item) => `<span class="chip">${escapeHtml(item)}</span>`).join("")}</div>
                 </div>`).join("")}
@@ -243,7 +318,7 @@ function previewContent(preview) {
 function updateState() {
   return `
     <section class="card p-8">
-      <h2 class="font-display text-4xl font-bold text-pine">Nội dung đọc thử</h2>
+      <h2 class="text-3xl font-black text-pine md:text-4xl">Nội dung đọc thử</h2>
       <p class="mt-4 text-lg text-[var(--muted)]">Nội dung đọc thử đang được cập nhật.</p>
       <a class="btn btn-primary mt-6 w-auto" href="${getWhatsappUrl()}" target="_blank" rel="noreferrer">Liên hệ nhận bản đầy đủ</a>
     </section>`;
@@ -254,7 +329,7 @@ function ctaBox(map) {
     <div class="card overflow-hidden">
       <div class="bg-gradient-to-br from-pine via-moss to-clay p-6 text-white">
         <p class="text-sm font-bold uppercase tracking-[.16em] text-white/72">Tư vấn GEIN</p>
-        <h2 class="mt-4 font-display text-4xl font-bold">Nhận bản MAP đầy đủ</h2>
+        <h2 class="mt-4 text-3xl font-black">Nhận bản MAP đầy đủ</h2>
         <p class="mt-4 leading-7 text-white/82">Tư vấn qua Zalo, Viber hoặc WhatsApp để được hướng dẫn phù hợp.</p>
       </div>
       <div class="grid gap-3 p-6">
@@ -269,7 +344,7 @@ function contactSection() {
     <section id="contact" class="container py-16">
       <div class="card grid gap-8 p-7 md:grid-cols-[1fr_1fr] md:p-10">
         <div>
-          <h2 class="font-display text-5xl font-bold text-pine">Liên hệ GEIN MAP</h2>
+          <h2 class="text-4xl font-black text-pine md:text-6xl">Liên hệ GEIN MAP</h2>
           <p class="mt-4 text-[var(--muted)]">Khi bạn muốn hiểu sâu hơn một MAP hoặc cần tư vấn hành trình phù hợp, hãy nhắn cho GEIN.</p>
         </div>
         <div class="grid gap-3 text-pine">
@@ -302,7 +377,7 @@ function imageFrame(folder, number, alt, width, extraClass = "") {
 }
 
 function emptyState(message) {
-  return `<div class="card col-span-full p-8 text-center text-[var(--muted)]">${message}</div>`;
+  return `<div class="card col-span-full mt-6 p-8 text-center text-[var(--muted)]">${message}</div>`;
 }
 
 function bindCategoryEvents(category, maps) {
@@ -342,6 +417,11 @@ function bindDetailEvents() {
 
 export function setupGlobalEvents() {
   document.addEventListener("click", (event) => {
+    const themeToggle = event.target.closest("[data-theme-toggle]");
+    if (themeToggle) {
+      setTheme(getCurrentTheme() === "dark" ? "light" : "dark");
+    }
+
     const sectionLink = event.target.closest("[data-scroll-section]");
     if (sectionLink) {
       event.preventDefault();
@@ -352,6 +432,11 @@ export function setupGlobalEvents() {
         scrollToPendingSection();
       }
       document.querySelector("[data-mobile-panel]")?.classList.add("hidden");
+    }
+
+    const localScroll = event.target.closest("[data-scroll-to]");
+    if (localScroll) {
+      document.getElementById(localScroll.dataset.scrollTo)?.scrollIntoView({ behavior: "smooth", block: "start" });
     }
 
     const menu = event.target.closest("[data-mobile-menu]");
@@ -382,7 +467,7 @@ function openImageModal(folder, number, title) {
     <div class="modal-backdrop" role="dialog" aria-modal="true">
       <div class="modal-panel">
         <div class="mb-3 flex items-center justify-between gap-3">
-          <h2 class="text-xl font-bold text-pine">${escapeHtml(title)}</h2>
+          <h2 class="text-xl font-black text-pine">${escapeHtml(title)}</h2>
           <button class="btn btn-secondary w-auto" data-close-modal>Đóng</button>
         </div>
         ${imageFrame(folder, number, title, 1100, "min-h-[70dvh]")}
@@ -395,6 +480,7 @@ function openImageModal(folder, number, title) {
 function afterRender() {
   prepareImages();
   revealOnScroll();
+  syncThemeButtons();
   if (!scrollToPendingSection()) {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
@@ -410,9 +496,9 @@ function scrollToPendingSection() {
 }
 
 function prepareImages() {
-  document.querySelectorAll(".image-frame img").forEach((img) => {
-    const frame = img.closest(".image-frame");
-    const fallback = frame.querySelector(".fallback-art");
+  document.querySelectorAll(".image-frame img, .book-cover__image img").forEach((img) => {
+    const frame = img.closest(".image-frame, .book-cover__image");
+    const fallback = frame.querySelector(".fallback-art, .book-fallback");
     if (img.complete && img.naturalWidth) frame.classList.remove("is-loading");
     img.addEventListener("load", () => frame.classList.remove("is-loading"), { once: true });
     img.addEventListener("error", () => {
@@ -435,6 +521,26 @@ function revealOnScroll() {
     });
   }, { threshold: .12 });
   items.forEach((item) => observer.observe(item));
+}
+
+function setTheme(theme) {
+  const nextTheme = theme === "dark" ? "dark" : "light";
+  document.documentElement.dataset.theme = nextTheme;
+  localStorage.setItem(THEME_KEY, nextTheme);
+  document.querySelector('meta[name="theme-color"]')?.setAttribute("content", nextTheme === "dark" ? "#08110f" : "#f7f3ea");
+  syncThemeButtons();
+}
+
+function getCurrentTheme() {
+  return document.documentElement.dataset.theme || "light";
+}
+
+function syncThemeButtons() {
+  const label = getCurrentTheme() === "dark" ? "Dark" : "Light";
+  document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
+    button.textContent = label;
+    button.setAttribute("aria-label", `Theme hiện tại: ${label}`);
+  });
 }
 
 function escapeHtml(value = "") {

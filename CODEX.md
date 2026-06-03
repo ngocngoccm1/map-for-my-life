@@ -30,6 +30,8 @@ Không chuyển sang React/Next/Vue nếu chưa có yêu cầu rõ ràng.
 
 Category cần có `id`, `name`, `count`, `imageFolder`, `description`, `group`, `accent`, `mapModule`.
 
+Category cũng nên có `order` và `coverImage`. Nếu `coverImage` rỗng, UI tự dùng ảnh MAP số 1 trong `imageFolder` làm bìa sách và fallback bằng placeholder khi ảnh lỗi.
+
 MAP cần có `id`, `categoryId`, `number`, `title`, `subtitle`, `hasPreview`, `previewModule`, `tags`.
 
 Preview cần export `preview` với `id`, `title`, `coreGoal`, `blocks`. Mỗi block có `title` và `chapters`.
@@ -39,6 +41,10 @@ Khi thêm data mới, chỉ sửa `data/categories.js`, thêm file trong `data/m
 ## Quy tắc UI
 
 Phong cách: premium, healing, warm, elegant, editorial. Ưu tiên mobile mượt, text dễ đọc tiếng Việt, không lạm dụng emoji.
+
+Trang chủ có phần mở đầu đầy đủ, ảnh giới thiệu web từ `INTRO_IMAGE_URL`, các câu hỏi gợi mở, 19 chỉ số cốt lõi, nhóm bản đồ chuyên sâu và danh mục dạng kệ sách.
+
+Website có theme sáng/tối bằng CSS variables. Không hard-code màu mới rải rác; sửa `:root` và `:root[data-theme="dark"]` trong `css/app.css`.
 
 Trang chi tiết MAP là layout dạng trang sách:
 
