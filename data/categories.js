@@ -1,0 +1,152 @@
+export const categories = [
+  {
+    id: "family-child",
+    name: "Bản đồ gia đình - yêu thương, thấu hiểu, đồng hành cùng con",
+    count: 330,
+    imageFolder: "Images_Clone_CATEGOGY1",
+    description: "Giúp cha mẹ hiểu sâu thế giới nội tâm của con, nhận ra sự khác biệt giữa các thành viên và đồng hành phù hợp với từng đứa trẻ.",
+    group: "Gia đình",
+    accent: "warm",
+    mapModule: "category-family-child"
+  },
+  {
+    id: "human-decode",
+    name: "Bản đồ giải mã con người toàn diện",
+    count: 500,
+    imageFolder: "Images_Clone_CATEGOGY2",
+    description: "Một thư viện nền tảng để nhìn sâu vào chỉ số, bài học, tiềm năng, tổn thương và cơ chế vận hành bên trong con người.",
+    group: "Giải mã con người",
+    accent: "sage",
+    mapModule: "category-human-decode"
+  },
+  {
+    id: "grow-together",
+    name: "Bản đồ đồng hành, trưởng thành cùng nhau",
+    count: 60,
+    imageFolder: "Images_Clone_CATEGOGY3",
+    description: "Dành cho những mối quan hệ muốn học cách lắng nghe, nâng đỡ và lớn lên trong sự an toàn.",
+    group: "Gia đình",
+    accent: "warm",
+    mapModule: "category-grow-together"
+  },
+  {
+    id: "peaceful-home",
+    name: "Bản đồ xây dựng mái nhà bình yên và trưởng thành",
+    count: 60,
+    imageFolder: "Images_Clone_CATEGOGY4",
+    description: "Gợi mở cách tạo nền tảng bình yên trong gia đình, nơi mỗi người được nhìn thấy và được tôn trọng.",
+    group: "Gia đình",
+    accent: "sage",
+    mapModule: "category-peaceful-home"
+  },
+  {
+    id: "healing-family",
+    name: "Bản đồ xây dựng gia đình chữa lành",
+    count: 60,
+    imageFolder: "Images_Clone_CATEGOGY5",
+    description: "Tập trung vào việc nhận diện vết thương, chuyển hóa phản ứng cũ và xây lại sự kết nối trong gia đình.",
+    group: "Chữa lành",
+    accent: "warm",
+    mapModule: "category-healing-family"
+  },
+  {
+    id: "sustainable-marriage",
+    name: "Bản đồ xây dựng hôn nhân bền vững",
+    count: 60,
+    imageFolder: "Images_Clone_CATEGOGY6",
+    description: "Hỗ trợ vợ chồng hiểu cơ chế cảm xúc, nhu cầu và bài học phát triển trong đời sống hôn nhân.",
+    group: "Hôn nhân",
+    accent: "clay",
+    mapModule: "category-sustainable-marriage"
+  },
+  {
+    id: "couple-reconnect",
+    name: "Bản đồ phục hồi, kết nối vợ chồng",
+    count: 60,
+    imageFolder: "Images_Clone_CATEGOGY7",
+    description: "Dành cho các cặp đôi cần khôi phục sự tin cậy, đối thoại và cảm giác gần nhau sau tổn thương.",
+    group: "Hôn nhân",
+    accent: "clay",
+    mapModule: "category-couple-reconnect"
+  },
+  {
+    id: "self-love",
+    name: "Bản đồ hành trình yêu lại chính mình",
+    count: 60,
+    imageFolder: "Images_Clone_CATEGOGY8",
+    description: "Một hành trình dịu dàng để hiểu bản thân, ôm lại nhu cầu sâu bên trong và xây lại lòng tự trọng.",
+    group: "Chữa lành",
+    accent: "sage",
+    mapModule: "category-self-love"
+  },
+  {
+    id: "childhood-healing",
+    name: "Bản đồ hành trình chữa lành tuổi thơ",
+    count: 60,
+    imageFolder: "Images_Clone_CATEGOGY9",
+    description: "Giúp nhìn lại những trải nghiệm thời thơ ấu đang ảnh hưởng đến cảm xúc và lựa chọn hiện tại.",
+    group: "Chữa lành",
+    accent: "warm",
+    mapModule: "category-childhood-healing"
+  },
+  {
+    id: "generational-healing",
+    name: "Bản đồ hành trình chữa lành tổn thương truyền đời",
+    count: 60,
+    imageFolder: "Images_Clone_CATEGOGY10",
+    description: "Nhận diện các mô thức lặp lại qua nhiều thế hệ để mở ra lựa chọn mới cho hiện tại.",
+    group: "Chữa lành",
+    accent: "sage",
+    mapModule: "category-generational-healing"
+  },
+  {
+    id: "inner-child",
+    name: "Bản đồ hành trình chữa lành đứa trẻ bên trong",
+    count: 60,
+    imageFolder: "Images_Clone_CATEGOGY11",
+    description: "Kết nối với phần trẻ thơ bên trong, nơi lưu giữ nhu cầu được yêu thương, bảo vệ và công nhận.",
+    group: "Chữa lành",
+    accent: "warm",
+    mapModule: "category-inner-child"
+  },
+  {
+    id: "family-origin",
+    name: "Bản đồ hành trình chữa lành gia đình gốc",
+    count: 60,
+    imageFolder: "Images_Clone_CATEGOGY12",
+    description: "Hiểu cách gia đình gốc định hình niềm tin, phản ứng và mô thức quan hệ của mỗi người.",
+    group: "Chữa lành",
+    accent: "sage",
+    mapModule: "category-family-origin"
+  },
+  {
+    id: "mother-child",
+    name: "Bản đồ hành trình chữa lành mối quan hệ mẹ - con",
+    count: 60,
+    imageFolder: "Images_Clone_CATEGOGY13",
+    description: "Đi sâu vào các nhu cầu, kỳ vọng và vết thương thường ẩn trong mối quan hệ mẹ và con.",
+    group: "Chữa lành",
+    accent: "warm",
+    mapModule: "category-mother-child"
+  },
+  {
+    id: "father-child",
+    name: "Bản đồ hành trình chữa lành mối quan hệ bố - con",
+    count: 60,
+    imageFolder: "Images_Clone_CATEGOGY14",
+    description: "Mở lối để hiểu ảnh hưởng của hình ảnh người bố trong cảm giác an toàn, tự tin và lựa chọn sống.",
+    group: "Chữa lành",
+    accent: "sage",
+    mapModule: "category-father-child"
+  },
+  {
+    id: "marriage-emotion",
+    name: "Bản đồ hành trình chữa lành cảm xúc hôn nhân",
+    count: 60,
+    imageFolder: "Images_Clone_CATEGOGY15",
+    description: "Giúp vợ chồng gọi tên cảm xúc, hiểu điểm kích hoạt và học cách quay về kết nối.",
+    group: "Hôn nhân",
+    accent: "clay",
+    mapModule: "category-marriage-emotion"
+  }
+];
