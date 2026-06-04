@@ -4,7 +4,7 @@ export const categories = [
     order: 1,
     name: "Bản đồ gia đình - yêu thương, thấu hiểu, đồng hành cùng con",
     count: 330,
-    imageFolder: "Images_Clone_CATEGOGY1",
+    imageFolder: "chap1",
     coverImage: "",
     description: "Giúp cha mẹ hiểu sâu thế giới nội tâm của con, nhận ra sự khác biệt giữa các thành viên và đồng hành phù hợp với từng đứa trẻ.",
     group: "Gia đình",

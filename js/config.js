@@ -14,7 +14,7 @@ export const CONFIG = {
   pageSize: 24
 };
 
-export const INTRO_IMAGE_URL = "https://ik.imagekit.io/noc/Images_Clone_CATEGOGY1/%E1%BA%A2nh%20gi%E1%BB%9Bi%20thi%E1%BB%87u%20web.jpeg";
+export const INTRO_IMAGE_URL = "https://ik.imagekit.io/noc/chap1/%E1%BA%A2nh%20gi%E1%BB%9Bi%20thi%E1%BB%87u%20web.jpeg";
 
 export const TEXT = {
   nav: {

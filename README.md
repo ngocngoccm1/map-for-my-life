@@ -56,7 +56,7 @@ Tạo đọc thử trong `data/previews/category-new-map-1.js` và export `previ
 Ảnh được tạo bằng helper:
 
 ```js
-getMapImageUrl("Images_Clone_CATEGOGY1", 57, { width: 400, quality: 80 });
+getMapImageUrl("chap1", 57, { width: 400, quality: 80 });
 ```
 
 Kết quả mặc định dùng quy tắc `https://ik.imagekit.io/noc/<folder>/<number>.jpeg` và hỗ trợ transform resize/quality của ImageKit.
