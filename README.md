@@ -61,17 +61,17 @@ getMapImageUrl("Images_Clone_CATEGOGY1", 57, { width: 400, quality: 80 });
 
 Kết quả mặc định dùng quy tắc `https://ik.imagekit.io/noc/<folder>/<number>.jpeg` và hỗ trợ transform resize/quality của ImageKit.
 
-Với category có nhiều ảnh, khai báo:
+Với category dùng ảnh theo số MAP, khai báo:
 
 ```js
 {
   imageFolder: "chap3",
-  imagePattern: "number-index",
-  supportsMultipleImages: true
+  imagePattern: "number",
+  supportsMultipleImages: false
 }
 ```
 
-Helper sẽ sinh ảnh đầu tiên dạng `https://ik.imagekit.io/noc/chap3/23-1.jpeg`. Khi vào trang detail, app mới probe tuần tự `23-1.jpeg`, `23-2.jpeg`, ... và cache kết quả để hiển thị gallery. List view không probe nhiều ảnh.
+Helper sẽ sinh ảnh dạng `https://ik.imagekit.io/noc/chap3/23.jpeg`.
 
 Với category một ảnh theo số MAP, khai báo:
 

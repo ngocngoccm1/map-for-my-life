@@ -40,7 +40,7 @@ Deliver implementation-ready design-system guidance for GEIN MAP FOR SUCCESS: a 
 
 - Default image pattern: `{folder}/{mapNumber}.jpeg`
 - Multi-image pattern: `{folder}/{mapNumber}-{imageIndex}.jpeg`
-- `chap3` uses multi-image pattern, e.g. `chap3/23-1.jpeg`
+- `chap3` uses default pattern, e.g. `chap3/23.jpeg`
 - `chap4` uses default pattern, e.g. `chap4/41.jpeg`
 - Do not probe multiple images in list views.
 - Only probe multiple images on detail/gallery views.

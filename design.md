@@ -208,7 +208,7 @@ Do not:
 - Light/dark theme works and persists
 - Category shelf looks like book covers
 - MAP list looks like book covers
-- chap3 category supports 23-1.jpeg, 23-2.jpeg, etc.
+- chap3 category supports 23.jpeg
 - chap4 category supports 41.jpeg
 - Detail page can show multiple images if they exist
 - Image probing is cached
