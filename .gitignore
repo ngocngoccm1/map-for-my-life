@@ -1,9 +1,32 @@
 .DS_Store
 Thumbs.db
+
+# Dependencies / build output
 node_modules/
 dist/
 .cache/
+
+# Local AI / agent workspace files
 .codegraph/
+.codex/
+.agents/
+.claude/
+.cursor/
+.continue/
+.aider*
+*.ai.*
+*.prompt.md
+*.transcript.*
+
+# Local env / logs
 .env
 .env.*
 *.log
+
+# Editor / temp files
+.vscode/
+.idea/
+*.tmp
+*.temp
+*.bak
+~$*
