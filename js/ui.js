@@ -1,4 +1,4 @@
-import { CONFIG, TEXT, HOME_CONTENT, INTRO_IMAGE_URL, getMapImageUrl, getWhatsappUrl } from "./config.js";
+import { CONFIG, TEXT, HOME_CONTENT, INTRO_IMAGE_URL, findMapImages, getMapImageUrl, getWhatsappUrl } from "./config.js";
 
 const app = () => document.querySelector("#app");
 const modalRoot = () => document.querySelector("#modal-root");
@@ -7,6 +7,7 @@ const THEME_KEY = "gein-map-theme";
 let activeCategoryFilter = "Tất cả";
 let categoryState = { query: "", previewOnly: false, visible: CONFIG.pageSize };
 let pendingSection = "";
+let activeGallery = { images: [], index: 0, title: "" };
 
 export function initTheme() {
   const stored = localStorage.getItem(THEME_KEY);
@@ -206,6 +207,11 @@ function drawCategory(category, maps) {
 
 export function renderMapDetail(category, map, preview) {
   if (!category || !map) throw new Error("Không tìm thấy MAP.");
+  activeGallery = {
+    images: [getMapImageUrl(category, map.number, { width: 1000, quality: 82 }, category.imagePattern === "number-index" ? 1 : null)],
+    index: 0,
+    title: `MAP ${map.number} - ${map.title}`
+  };
   app().innerHTML = `
     <section class="container py-8">
       <div class="mb-6 flex flex-wrap items-center gap-2 text-sm font-bold text-pine/70">
@@ -213,7 +219,7 @@ export function renderMapDetail(category, map, preview) {
       </div>
       <div class="grid gap-7 lg:grid-cols-[300px_1fr_300px]">
         <aside class="lg:sticky lg:top-28 lg:self-start">
-          <div class="card p-4">${imageFrame(category.imageFolder, map.number, map.title, 900, "h-[460px]")}</div>
+          <div class="card p-4" data-map-gallery-shell>${galleryLoadingFrame(category, map)}</div>
         </aside>
         <article class="min-w-0">
           <div class="card p-6 md:p-8">
@@ -224,7 +230,7 @@ export function renderMapDetail(category, map, preview) {
             <div class="mt-7 flex flex-col gap-3 sm:flex-row">
               <button class="btn btn-primary" data-scroll-to="preview-content" type="button">Đọc thử</button>
               <a class="btn btn-secondary" href="${getWhatsappUrl(`Tôi muốn được tư vấn bản đầy đủ của MAP ${map.number} - ${map.title}`)}" target="_blank" rel="noreferrer">Liên hệ tư vấn</a>
-              <button class="btn btn-secondary" data-open-image="${category.imageFolder}|${map.number}|${escapeHtml(map.title)}">Xem ảnh MAP</button>
+              <button class="btn btn-secondary" data-open-detail-gallery type="button">Xem ảnh MAP</button>
               <button class="btn btn-secondary" data-share>Chia sẻ</button>
             </div>
           </div>
@@ -239,6 +245,7 @@ export function renderMapDetail(category, map, preview) {
     ${footer()}`;
   bindDetailEvents();
   afterRender();
+  loadDetailGallery(category, map);
 }
 
 function renderCategoryShelf(categories) {
@@ -255,12 +262,12 @@ function renderCategoryShelf(categories) {
 function renderMapShelf(category, maps) {
   return `<div class="book-shelf mt-6">${maps.map((map) => renderBookCoverItem({
     href: `#/map/${category.id}/${map.number}`,
-    image: getMapImageUrl(category.imageFolder, map.number, { width: 500, quality: 82 }),
+    image: getMapImageUrl(category, map.number, { width: 500, quality: 82 }),
     title: `MAP ${map.number} - ${map.title}`,
     subtitle: map.subtitle || "Nội dung đang được cập nhật",
     rank: map.number,
     badge: map.hasPreview ? "Đọc thử" : "MAP",
-    imageAction: `${category.imageFolder}|${map.number}|${escapeHtml(map.title)}`
+    imageAction: `${getMapImageUrl(category, map.number, { width: 1100, quality: 82 })}|${escapeHtml(map.title)}`
   })).join("")}</div>`;
 }
 
@@ -282,7 +289,7 @@ function renderBookCoverItem({ href, image, title, subtitle, rank, badge, imageA
 }
 
 function getCoverImage(category) {
-  return category.coverImage || getMapImageUrl(category.imageFolder, 1, { width: 500, quality: 82 });
+  return category.coverImage || getMapImageUrl(category, 1, { width: 500, quality: 82 });
 }
 
 function previewContent(preview) {
@@ -368,11 +375,59 @@ function footer() {
     </footer>`;
 }
 
-function imageFrame(folder, number, alt, width, extraClass = "") {
+function imageFrame(categoryOrFolder, number, alt, width, extraClass = "", imageIndex = null) {
   return `
     <div class="image-frame is-loading ${extraClass}">
-      <img src="${getMapImageUrl(folder, number, { width, quality: 80 })}" alt="${escapeHtml(alt)}" loading="lazy" decoding="async" />
+      <img src="${getMapImageUrl(categoryOrFolder, number, { width, quality: 80 }, imageIndex)}" alt="${escapeHtml(alt)}" loading="lazy" decoding="async" />
       <div class="fallback-art hidden"><div><strong>GEIN MAP</strong><br/>Ảnh đang được cập nhật</div></div>
+    </div>`;
+}
+
+function galleryLoadingFrame(category, map) {
+  return `
+    <div class="map-gallery" data-map-gallery>
+      ${imageFrame(category, map.number, map.title, 900, "h-[460px]", category.imagePattern === "number-index" ? 1 : null)}
+      <p class="gallery-status mt-3 text-sm font-bold text-[var(--muted)]">Đang tải thư viện ảnh...</p>
+    </div>`;
+}
+
+async function loadDetailGallery(category, map) {
+  const shell = document.querySelector("[data-map-gallery-shell]");
+  if (!shell) return;
+
+  try {
+    const images = await findMapImages(category, map.number, { width: 1000, quality: 82 });
+    shell.innerHTML = renderMapGallery(map, images);
+    activeGallery = { images, index: 0, title: `MAP ${map.number} - ${map.title}` };
+  } catch {
+    const fallbackUrl = getMapImageUrl(category, map.number, { width: 1000, quality: 82 }, category.imagePattern === "number-index" ? 1 : null);
+    shell.innerHTML = renderMapGallery(map, [fallbackUrl], true);
+    activeGallery = { images: [fallbackUrl], index: 0, title: `MAP ${map.number} - ${map.title}` };
+  }
+
+  prepareImages();
+}
+
+function renderMapGallery(map, images, hasError = false) {
+  const title = `MAP ${map.number} - ${map.title}`;
+  const thumbnails = images.length > 1
+    ? `<div class="gallery-thumbs mt-3" aria-label="Danh sách ảnh MAP">
+        ${images.map((url, index) => `
+          <button class="gallery-thumb ${index === 0 ? "is-active" : ""}" data-gallery-thumb="${index}" type="button" aria-label="Xem ảnh ${index + 1} của ${escapeHtml(title)}">
+            <img src="${url}" alt="${escapeHtml(title)} - ảnh ${index + 1}" loading="lazy" decoding="async" />
+          </button>`).join("")}
+      </div>`
+    : "";
+
+  return `
+    <div class="map-gallery" data-map-gallery>
+      <div class="image-frame is-loading h-[460px]" data-gallery-main>
+        <img src="${images[0]}" alt="${escapeHtml(title)}" loading="lazy" decoding="async" />
+        <div class="fallback-art hidden"><div><strong>GEIN MAP</strong><br/>Ảnh đang được cập nhật</div></div>
+      </div>
+      ${thumbnails}
+      ${hasError ? `<p class="gallery-status mt-3 text-sm font-bold text-[var(--muted)]">Chưa tìm thấy ảnh bổ sung, đang hiển thị ảnh mặc định.</p>` : ""}
+      <button class="btn btn-secondary mt-4 w-full" data-open-detail-gallery type="button">Xem ảnh lớn</button>
     </div>`;
 }
 
@@ -413,6 +468,28 @@ function bindDetailEvents() {
       document.querySelectorAll("#preview-content details").forEach((detail) => { detail.open = open; });
     });
   });
+  document.querySelector("[data-map-gallery-shell]")?.addEventListener("click", (event) => {
+    const thumb = event.target.closest("[data-gallery-thumb]");
+    if (thumb) setGalleryImage(Number(thumb.dataset.galleryThumb));
+  });
+}
+
+function setGalleryImage(index) {
+  const gallery = document.querySelector("[data-map-gallery]");
+  const main = gallery?.querySelector("[data-gallery-main]");
+  const img = main?.querySelector("img");
+  if (!gallery || !main || !img || !activeGallery.images[index]) return;
+
+  activeGallery.index = index;
+  main.classList.add("is-loading");
+  img.classList.remove("hidden");
+  main.querySelector(".fallback-art")?.classList.add("hidden");
+  img.src = activeGallery.images[index];
+  img.alt = `${activeGallery.title} - ảnh ${index + 1}`;
+  gallery.querySelectorAll("[data-gallery-thumb]").forEach((button) => {
+    button.classList.toggle("is-active", Number(button.dataset.galleryThumb) === index);
+  });
+  prepareImages();
 }
 
 export function setupGlobalEvents() {
@@ -454,15 +531,40 @@ export function setupGlobalEvents() {
 
     const imageButton = event.target.closest("[data-open-image]");
     if (imageButton) {
-      const [folder, number, title] = imageButton.dataset.openImage.split("|");
-      openImageModal(folder, number, title);
+      const [url, title] = imageButton.dataset.openImage.split("|");
+      openImageModal([url], title, 0);
+    }
+
+    const detailGalleryButton = event.target.closest("[data-open-detail-gallery]");
+    if (detailGalleryButton) {
+      openImageModal(activeGallery.images, activeGallery.title, activeGallery.index);
+    }
+
+    const galleryNav = event.target.closest("[data-gallery-modal-nav]");
+    if (galleryNav) {
+      const direction = galleryNav.dataset.galleryModalNav === "next" ? 1 : -1;
+      const nextIndex = (activeGallery.index + direction + activeGallery.images.length) % activeGallery.images.length;
+      openImageModal(activeGallery.images, activeGallery.title, nextIndex);
     }
 
     if (event.target.closest("[data-close-modal]")) modalRoot().innerHTML = "";
   });
+  document.addEventListener("keydown", (event) => {
+    if (!modalRoot().innerHTML) return;
+    if (event.key === "Escape") modalRoot().innerHTML = "";
+    if (event.key === "ArrowRight" && activeGallery.images.length > 1) {
+      openImageModal(activeGallery.images, activeGallery.title, (activeGallery.index + 1) % activeGallery.images.length);
+    }
+    if (event.key === "ArrowLeft" && activeGallery.images.length > 1) {
+      openImageModal(activeGallery.images, activeGallery.title, (activeGallery.index - 1 + activeGallery.images.length) % activeGallery.images.length);
+    }
+  });
 }
 
-function openImageModal(folder, number, title) {
+function openImageModal(images, title, index = 0) {
+  const safeImages = images.length ? images : [];
+  const activeImage = safeImages[index] || "";
+  activeGallery = { images: safeImages, index, title };
   modalRoot().innerHTML = `
     <div class="modal-backdrop" role="dialog" aria-modal="true">
       <div class="modal-panel">
@@ -470,7 +572,15 @@ function openImageModal(folder, number, title) {
           <h2 class="text-xl font-black text-pine">${escapeHtml(title)}</h2>
           <button class="btn btn-secondary w-auto" data-close-modal>Đóng</button>
         </div>
-        ${imageFrame(folder, number, title, 1100, "min-h-[70dvh]")}
+        <div class="modal-gallery">
+          ${safeImages.length > 1 ? `<button class="btn btn-secondary modal-nav modal-nav--prev" data-gallery-modal-nav="prev" type="button" aria-label="Xem ảnh trước">‹</button>` : ""}
+          <div class="image-frame is-loading min-h-[70dvh]">
+            ${activeImage ? `<img src="${activeImage}" alt="${escapeHtml(title)} - ảnh ${index + 1}" loading="lazy" decoding="async" />` : ""}
+            <div class="fallback-art ${activeImage ? "hidden" : ""}"><div><strong>GEIN MAP</strong><br/>Không có ảnh để hiển thị</div></div>
+          </div>
+          ${safeImages.length > 1 ? `<button class="btn btn-secondary modal-nav modal-nav--next" data-gallery-modal-nav="next" type="button" aria-label="Xem ảnh tiếp theo">›</button>` : ""}
+        </div>
+        ${safeImages.length > 1 ? `<p class="mt-3 text-center text-sm font-bold text-[var(--muted)]">${index + 1} / ${safeImages.length}</p>` : ""}
         <a class="btn btn-primary mt-4" href="${getWhatsappUrl(`Tôi muốn nhận bản đầy đủ của ${title}`)}" target="_blank" rel="noreferrer">Liên hệ nhận bản đầy đủ</a>
       </div>
     </div>`;

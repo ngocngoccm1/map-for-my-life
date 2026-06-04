@@ -115,10 +115,70 @@ export function getWhatsappUrl(message = CONFIG.whatsappMessage, phone = CONFIG.
   return `https://wa.me/${cleanPhone.replace("+", "")}?text=${encodeURIComponent(message)}`;
 }
 
-export function getMapImageUrl(folder, mapNumber, options = {}) {
+export function getImageKitUrl(path, options = {}) {
   const transforms = [];
   if (options.width) transforms.push(`w-${options.width}`);
   if (options.quality) transforms.push(`q-${options.quality}`);
   const tr = transforms.length ? `/tr:${transforms.join(",")}` : "";
-  return `${CONFIG.imageKitBase}${tr}/${folder}/${mapNumber}.jpeg`;
+  return `${CONFIG.imageKitBase}${tr}/${path}`;
+}
+
+export function getMapImagePath(categoryOrFolder, mapNumber, imageIndex = null) {
+  const category = typeof categoryOrFolder === "string"
+    ? { imageFolder: categoryOrFolder, imagePattern: "number" }
+    : categoryOrFolder;
+  const folder = category.imageFolder;
+  const pattern = category.imagePattern || "number";
+
+  if (pattern === "number-index") {
+    const index = imageIndex || 1;
+    return `${folder}/${mapNumber}-${index}.jpeg`;
+  }
+
+  return `${folder}/${mapNumber}.jpeg`;
+}
+
+export function getMapImageUrl(categoryOrFolder, mapNumber, options = {}, imageIndex = null) {
+  return getImageKitUrl(getMapImagePath(categoryOrFolder, mapNumber, imageIndex), options);
+}
+
+const mapImagesCache = new Map();
+
+export async function imageExists(url) {
+  return new Promise((resolve) => {
+    const img = new Image();
+    img.onload = () => resolve(true);
+    img.onerror = () => resolve(false);
+    img.src = url;
+  });
+}
+
+export async function findMapImages(category, mapNumber, options = {}) {
+  const maxImages = options.maxImages || 10;
+  const width = options.width || 900;
+  const quality = options.quality || 82;
+  const cacheKey = `${category.id || category.imageFolder}-${mapNumber}-${width}-${quality}-${maxImages}`;
+
+  if (mapImagesCache.has(cacheKey)) return mapImagesCache.get(cacheKey);
+
+  const fallbackUrl = getMapImageUrl(category, mapNumber, { width, quality }, category.imagePattern === "number-index" ? 1 : null);
+
+  if (!category.supportsMultipleImages) {
+    const singleResult = [fallbackUrl];
+    mapImagesCache.set(cacheKey, singleResult);
+    return singleResult;
+  }
+
+  const results = [];
+
+  for (let index = 1; index <= maxImages; index += 1) {
+    const url = getMapImageUrl(category, mapNumber, { width, quality }, index);
+    const exists = await imageExists(url);
+    if (!exists) break;
+    results.push(url);
+  }
+
+  const finalResult = results.length ? results : [fallbackUrl];
+  mapImagesCache.set(cacheKey, finalResult);
+  return finalResult;
 }

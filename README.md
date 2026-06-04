@@ -28,6 +28,8 @@ Sau đó mở `http://localhost:8000`.
 
 Thêm category mới trong `data/categories.js`, đặt `id`, `order`, `count`, `imageFolder`, `coverImage` và `mapModule`.
 
+Category có thể khai báo thêm `imagePattern` và `supportsMultipleImages`. Nếu bỏ trống, app dùng default `imagePattern: "number"` và `supportsMultipleImages: false`.
+
 `coverImage` có thể để chuỗi rỗng. Khi rỗng, giao diện bìa sách sẽ tự dùng ảnh MAP số 1 theo `imageFolder`; nếu ảnh lỗi thì hiện placeholder gradient.
 
 Tạo file danh sách MAP tương ứng trong `data/maps/`, ví dụ `category-new.js`, export:
@@ -57,7 +59,31 @@ Tạo đọc thử trong `data/previews/category-new-map-1.js` và export `previ
 getMapImageUrl("Images_Clone_CATEGOGY1", 57, { width: 400, quality: 80 });
 ```
 
-Kết quả dùng quy tắc `https://ik.imagekit.io/noc/<folder>/<number>.jpeg` và hỗ trợ transform resize/quality của ImageKit.
+Kết quả mặc định dùng quy tắc `https://ik.imagekit.io/noc/<folder>/<number>.jpeg` và hỗ trợ transform resize/quality của ImageKit.
+
+Với category có nhiều ảnh, khai báo:
+
+```js
+{
+  imageFolder: "chap3",
+  imagePattern: "number-index",
+  supportsMultipleImages: true
+}
+```
+
+Helper sẽ sinh ảnh đầu tiên dạng `https://ik.imagekit.io/noc/chap3/23-1.jpeg`. Khi vào trang detail, app mới probe tuần tự `23-1.jpeg`, `23-2.jpeg`, ... và cache kết quả để hiển thị gallery. List view không probe nhiều ảnh.
+
+Với category một ảnh theo số MAP, khai báo:
+
+```js
+{
+  imageFolder: "chap4",
+  imagePattern: "number",
+  supportsMultipleImages: false
+}
+```
+
+Helper sẽ sinh `https://ik.imagekit.io/noc/chap4/41.jpeg`.
 
 ## Theme sáng/tối
 
