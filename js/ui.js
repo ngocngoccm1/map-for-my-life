@@ -55,8 +55,8 @@ export function renderHome(categories) {
     : orderedCategories.filter((item) => item.group === activeCategoryFilter);
 
   app().innerHTML = `
-    <section class="container grid min-h-[calc(100dvh-80px)] items-center gap-10 py-10 lg:grid-cols-[1fr_.86fr]">
-      <div class="fade-in">
+    <section class="hero-section container" style="--hero-bg: url('${INTRO_IMAGE_URL}')">
+      <div class="hero-content fade-in">
         <p class="text-sm font-bold uppercase tracking-[.18em] text-clay">Thư viện MAP chữa lành</p>
         <h1 class="mt-5 max-w-5xl text-5xl font-black leading-[1.04] text-pine md:text-7xl">${TEXT.hero.headline}</h1>
         <p class="mt-6 max-w-2xl text-lg leading-8 text-[var(--muted)]">${TEXT.hero.subheadline}</p>
@@ -64,9 +64,6 @@ export function renderHome(categories) {
           <a class="btn btn-primary" href="#/" data-scroll-section="catalog">${TEXT.hero.primary}</a>
           <a class="btn btn-secondary" target="_blank" rel="noreferrer" href="${getWhatsappUrl()}">${TEXT.hero.secondary}</a>
         </div>
-      </div>
-      <div class="fade-in">
-        <img class="intro-image" src="${INTRO_IMAGE_URL}" alt="Giới thiệu GEIN MAP FOR SUCCESS" loading="eager" decoding="async" />
       </div>
     </section>
 
@@ -217,7 +214,7 @@ export function renderMapDetail(category, map, preview) {
       <div class="mb-6 flex flex-wrap items-center gap-2 text-sm font-bold text-pine/70">
         <a href="#/">Trang chủ</a><span>/</span><a href="#/category/${category.id}">Danh mục</a><span>/</span><span>${escapeHtml(map.title)}</span>
       </div>
-      <div class="grid gap-7 lg:grid-cols-[300px_1fr_300px]">
+      <div class="map-detail-layout grid gap-7 lg:grid-cols-[minmax(340px,390px)_minmax(0,1fr)_280px]">
         <aside class="lg:sticky lg:top-28 lg:self-start">
           <div class="card p-4" data-map-gallery-shell>${galleryLoadingFrame(category, map)}</div>
         </aside>
@@ -386,7 +383,7 @@ function imageFrame(categoryOrFolder, number, alt, width, extraClass = "", image
 function galleryLoadingFrame(category, map) {
   return `
     <div class="map-gallery" data-map-gallery>
-      ${imageFrame(category, map.number, map.title, 900, "h-[460px]", category.imagePattern === "number-index" ? 1 : null)}
+      ${imageFrame(category, map.number, map.title, 900, "image-frame--contain map-detail-image", category.imagePattern === "number-index" ? 1 : null)}
       <p class="gallery-status mt-3 text-sm font-bold text-[var(--muted)]">Đang tải thư viện ảnh...</p>
     </div>`;
 }
@@ -421,7 +418,7 @@ function renderMapGallery(map, images, hasError = false) {
 
   return `
     <div class="map-gallery" data-map-gallery>
-      <div class="image-frame is-loading h-[460px]" data-gallery-main>
+      <div class="image-frame image-frame--contain map-detail-image is-loading" data-gallery-main>
         <img src="${images[0]}" alt="${escapeHtml(title)}" loading="lazy" decoding="async" />
         <div class="fallback-art hidden"><div><strong>GEIN MAP</strong><br/>Ảnh đang được cập nhật</div></div>
       </div>
@@ -574,7 +571,7 @@ function openImageModal(images, title, index = 0) {
         </div>
         <div class="modal-gallery">
           ${safeImages.length > 1 ? `<button class="btn btn-secondary modal-nav modal-nav--prev" data-gallery-modal-nav="prev" type="button" aria-label="Xem ảnh trước">‹</button>` : ""}
-          <div class="image-frame is-loading min-h-[70dvh]">
+          <div class="image-frame image-frame--contain image-frame--modal is-loading">
             ${activeImage ? `<img src="${activeImage}" alt="${escapeHtml(title)} - ảnh ${index + 1}" loading="lazy" decoding="async" />` : ""}
             <div class="fallback-art ${activeImage ? "hidden" : ""}"><div><strong>GEIN MAP</strong><br/>Không có ảnh để hiển thị</div></div>
           </div>
