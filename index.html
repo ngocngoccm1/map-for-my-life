@@ -1,44 +1,1038 @@
-<!doctype html>
-<html lang="vi">
+<!DOCTYPE html>
+<html class="light" lang="vi">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="GEIN MAP FOR SUCCESS - thư viện MAP giúp thấu hiểu bản thân, gia đình, hôn nhân và hành trình chữa lành." />
-    <meta name="theme-color" content="#f7f3ea" />
+    <meta name="theme-color" content="#fdf9f4" />
     <title>GEIN MAP FOR SUCCESS</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script>
       tailwind.config = {
+        darkMode: "class",
         theme: {
           extend: {
-            fontFamily: {
-              display: ['Arial', 'system-ui', 'sans-serif'],
-              sans: ['Arial', 'system-ui', 'sans-serif']
-            },
             colors: {
-              ivory: '#f7f3ea',
-              pearl: '#fffaf1',
-              ink: '#1d2520',
-              moss: '#586f5b',
-              pine: '#253f36',
-              clay: '#b7795f',
-              champagne: '#e8d7ad'
+              "on-surface": "#1c1c19",
+              "inverse-primary": "#c5caa9",
+              "outline": "#77786e",
+              "surface-container-high": "#ebe8e3",
+              "on-background": "#1c1c19",
+              "primary": "#5a5f44",
+              "secondary-fixed": "#ffe088",
+              "surface-dim": "#ddd9d5",
+              "inverse-on-surface": "#f4f0eb",
+              "surface": "#fdf9f4",
+              "primary-fixed-dim": "#c5caa9",
+              "secondary-fixed-dim": "#e9c349",
+              "surface-container": "#f1ede8",
+              "outline-variant": "#c8c7bb",
+              "tertiary-fixed": "#f2dfd1",
+              "surface-variant": "#e6e2dd",
+              "on-secondary": "#ffffff",
+              "tertiary-fixed-dim": "#d5c3b6",
+              "on-secondary-container": "#745c00",
+              "on-primary-fixed-variant": "#444930",
+              "on-tertiary-fixed-variant": "#50453a",
+              "surface-container-highest": "#e6e2dd",
+              "on-primary-container": "#fcffe2",
+              "on-secondary-fixed-variant": "#574500",
+              "surface-bright": "#fdf9f4",
+              "primary-fixed": "#e1e6c3",
+              "on-error-container": "#93000a",
+              "secondary-container": "#fed65b",
+              "background": "#fdf9f4",
+              "error": "#ba1a1a",
+              "on-primary-fixed": "#191d08",
+              "error-container": "#ffdad6",
+              "surface-container-low": "#f7f3ee",
+              "on-tertiary": "#ffffff",
+              "secondary": "#735c00",
+              "surface-tint": "#5c6146",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-container": "#fffbff",
+              "on-tertiary-fixed": "#231a11",
+              "tertiary": "#675a4f",
+              "tertiary-container": "#807266",
+              "on-primary": "#ffffff",
+              "primary-container": "#72775b",
+              "on-surface-variant": "#47473e",
+              "on-error": "#ffffff",
+              "on-secondary-fixed": "#241a00",
+              "inverse-surface": "#31302d"
             },
-            boxShadow: {
-              soft: '0 24px 70px rgba(58, 45, 31, .14)',
-              card: '0 18px 45px rgba(47, 60, 50, .12)'
+            spacing: {
+              "container-max": "1200px",
+              "gutter": "24px",
+              "stack-md": "48px",
+              "stack-lg": "80px"
+            },
+            fontFamily: {
+              "headline-xl": ["EB Garamond", "serif"],
+              "headline-lg": ["EB Garamond", "serif"],
+              "headline-md": ["EB Garamond", "serif"],
+              "body-md": ["Manrope", "sans-serif"],
+              "body-lg": ["Manrope", "sans-serif"],
+              "label-sm": ["Manrope", "sans-serif"]
+            },
+            fontSize: {
+              "headline-xl": ["48px", { lineHeight: "1.1", fontWeight: "500" }],
+              "headline-lg": ["36px", { lineHeight: "1.2", fontWeight: "500" }],
+              "headline-md": ["24px", { lineHeight: "1.3", fontWeight: "500" }],
+              "body-lg": ["18px", { lineHeight: "1.7", fontWeight: "400" }],
+              "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+              "label-sm": ["12px", { lineHeight: "1.4", letterSpacing: "0.05em", fontWeight: "600" }]
             }
           }
         }
       };
     </script>
-    <link rel="stylesheet" href="./css/app.css" />
+    <style>
+      :root { color-scheme: light; }
+      html { scroll-behavior: smooth; }
+      body { font-family: Manrope, sans-serif; }
+      .paper-grain {
+        background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+        opacity: 0.03;
+        pointer-events: none;
+        animation: grainShift 20s steps(10) infinite;
+      }
+      @keyframes grainShift {
+        0%, 100% { transform: translate(0, 0); }
+        10% { transform: translate(-1%, -1%); }
+        30% { transform: translate(1%, -1%); }
+        50% { transform: translate(-1%, 1%); }
+        70% { transform: translate(1%, 1%); }
+        90% { transform: translate(-1%, -1%); }
+      }
+      .ambient-glow { background: radial-gradient(circle, rgba(140, 145, 115, 0.15) 0%, rgba(253, 249, 244, 0) 70%); }
+      .book-card { box-shadow: -5px 0 15px -5px rgba(0,0,0,0.1), 10px 10px 30px -5px rgba(140, 145, 115, 0.08); transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1); }
+      .book-card-shadow { box-shadow: -8px 8px 18px rgba(49, 48, 45, 0.08), 22px 26px 60px rgba(90, 95, 68, 0.16); }
+      .spine-shadow { box-shadow: inset -10px 0 18px rgba(0,0,0,.12); }
+      .float-anim { animation: softFloat 6s ease-in-out infinite; }
+      @keyframes softFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+      .material-symbols-outlined { font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24; vertical-align: middle; }
+      .reveal { opacity: 0; transform: translateY(30px); transition: opacity 1.2s ease-out, transform 1.2s ease-out; }
+      .reveal.active { opacity: 1; transform: translateY(0); }
+      .map-card-hover { transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+      .map-card-hover:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 20px 40px -10px rgba(90, 95, 68, 0.15); }
+      .shimmer-text {
+        background: linear-gradient(90deg, #5a5f44 0%, #a2a688 50%, #5a5f44 100%);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shimmer 4s linear infinite;
+      }
+      @keyframes shimmer { to { background-position: 200% center; } }
+      .pulse-glow { animation: pulseGlow 4s ease-in-out infinite; }
+      @keyframes pulseGlow { 0%, 100% { opacity: 0.4; } 50% { opacity: 0.7; } }
+      .intro-splash {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        overflow: hidden;
+        background: #07131c;
+        animation: introFadeOut 1.2s ease forwards;
+        animation-delay: 1.4s;
+        pointer-events: none;
+      }
+      .intro-splash__bg {
+        position: absolute;
+        inset: 0;
+        background-image: var(--hero-image);
+        background-size: cover;
+        background-position: center right;
+        transform: scale(1.04);
+        animation: introZoom 2.6s ease forwards;
+      }
+      .intro-splash__overlay {
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(circle at 70% 45%, rgba(255, 210, 120, 0.18), transparent 35%),
+          linear-gradient(90deg, rgba(4, 13, 22, 0.45), rgba(4, 13, 22, 0.18));
+      }
+      .cinematic-hero {
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+        overflow: hidden;
+        background-image:
+          linear-gradient(90deg, rgba(7, 18, 28, 0.86) 0%, rgba(28, 34, 23, 0.68) 44%, rgba(28, 34, 23, 0.22) 100%),
+          var(--hero-image);
+        background-size: cover;
+        background-position: center right;
+      }
+      .cinematic-hero .hero-content {
+        position: relative;
+        z-index: 2;
+        opacity: 0;
+        transform: translateY(24px);
+        animation: heroTextIn 1s ease forwards;
+        animation-delay: 2.1s;
+      }
+      @keyframes introZoom {
+        from { transform: scale(1.08); filter: brightness(0.95); }
+        to { transform: scale(1); filter: brightness(0.75); }
+      }
+      @keyframes introFadeOut {
+        from { opacity: 1; visibility: visible; }
+        to { opacity: 0; visibility: hidden; }
+      }
+      @keyframes heroTextIn {
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .book-cover-fallback {
+        background:
+          linear-gradient(90deg, rgba(0,0,0,.16), rgba(255,255,255,.2) 12%, transparent 24%),
+          radial-gradient(circle at 24% 14%, rgba(255,224,136,.36), transparent 34%),
+          linear-gradient(145deg, #e1e6c3, #f2dfd1 54%, #c5caa9);
+      }
+      .book-cover-img.is-hidden { display: none; }
+      .map-directory-cover-img.is-hidden { display: none; }
+      .map-directory-fallback {
+        background:
+          linear-gradient(90deg, rgba(0,0,0,.14), rgba(255,255,255,.2) 12%, transparent 24%),
+          radial-gradient(circle at 22% 16%, rgba(255,224,136,.26), transparent 34%),
+          linear-gradient(145deg, #e1e6c3, #f2dfd1 54%, #c5caa9);
+      }
+      .book-shadow {
+        box-shadow: 15px 15px 30px rgba(140, 145, 115, 0.08), 5px 5px 10px rgba(140, 145, 115, 0.05);
+      }
+      .book-spine-effect {
+        box-shadow: inset 8px 0 10px -5px rgba(0,0,0,0.1);
+      }
+      .transition-soft {
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .filter-tab.is-active { background: #5a5f44; color: #ffffff; border-color: #5a5f44; }
+      .detail-pill { border: 1px solid rgba(200,199,187,.72); background: rgba(253,249,244,.74); }
+      @media (prefers-reduced-motion: reduce) {
+        .reveal, .float-anim, .paper-grain, .shimmer-text, .pulse-glow, .book-card, .map-card-hover {
+          animation: none !important;
+          transition: none !important;
+          transform: none !important;
+          opacity: 1 !important;
+        }
+      }
+      @media (max-width: 640px) {
+        .headline-mobile { font-size: 38px; }
+      }
+      @media (max-width: 768px) {
+        .cinematic-hero {
+          background-position: center;
+          background-image:
+            linear-gradient(180deg, rgba(7, 18, 28, 0.88) 0%, rgba(28, 34, 23, 0.74) 55%, rgba(28, 34, 23, 0.48) 100%),
+            var(--hero-image);
+        }
+        .cinematic-hero .hero-content {
+          max-width: 620px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .intro-splash { display: none; }
+        .cinematic-hero .hero-content {
+          opacity: 1;
+          transform: none;
+          animation: none;
+        }
+      }
+    </style>
   </head>
-  <body class="bg-ivory text-ink font-sans antialiased">
-    <a class="skip-link" href="#app">Bỏ qua nội dung điều hướng</a>
-    <header id="site-header" class="site-header"></header>
-    <main id="app" tabindex="-1"></main>
-    <div id="modal-root"></div>
-    <script type="module" src="./js/app.js"></script>
+  <body class="bg-surface text-on-surface font-body-md overflow-x-hidden selection:bg-primary-fixed selection:text-on-primary-fixed">
+    <div id="introSplash" class="intro-splash" aria-hidden="true">
+      <div class="intro-splash__bg"></div>
+      <div class="intro-splash__overlay"></div>
+    </div>
+    <div class="fixed inset-0 paper-grain z-50"></div>
+    <header class="fixed top-0 w-full z-40 bg-surface/80 backdrop-blur-md shadow-sm">
+      <nav class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
+        <a class="font-headline-md text-headline-md font-medium tracking-tight text-primary" href="#/">GEIN MAP FOR SUCCESS</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a class="text-secondary font-semibold border-b-2 border-secondary pb-1 font-body-md text-body-md" href="#intro">Giới thiệu</a>
+          <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#/catalog">Danh mục MAP</a>
+          <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#/category/family-child">Chi tiết</a>
+          <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#contact">Liên hệ</a>
+        </div>
+        <a class="bg-primary text-on-primary px-6 py-2 rounded-full hover:scale-105 transition-transform duration-300 font-label-sm text-label-sm" href="#/catalog">Bắt đầu ngay</a>
+      </nav>
+    </header>
+
+    <main class="pt-20">
+      <div id="home-view">
+      <section id="hero" class="hero cinematic-hero">
+        <div class="absolute inset-0 ambient-glow -z-10 transition-transform duration-75 ease-out" id="hero-bg-glow"></div>
+        <div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-16 items-center py-stack-lg">
+          <div class="hidden md:block"></div>
+          <div class="hero-content space-y-8 reveal active">
+            <div class="inline-flex gap-3 flex-wrap">
+              <span class="bg-white/10 text-white px-3 py-1 rounded-full font-label-sm text-label-sm border border-white/20">GEIN MAP FOR SUCCESS</span>
+              <span class="bg-secondary/20 text-secondary-fixed px-3 py-1 rounded-full font-label-sm text-label-sm border border-secondary-fixed/20">19 chỉ số cốt lõi</span>
+            </div>
+            <h1 class="font-headline-xl text-headline-xl headline-mobile text-white max-w-xl">BẠN CÓ THẬT SỰ HIỂU CHÍNH MÌNH, HIỂU CON, HIỂU GIA ĐÌNH MÌNH?</h1>
+            <p class="font-body-lg text-body-lg text-inverse-on-surface/90 max-w-lg">Một hệ thống bản đồ chuyên sâu giúp bạn nhìn rõ bản thân, thấu hiểu người thân yêu và xây dựng gia đình chữa lành.</p>
+            <div class="flex flex-col sm:flex-row gap-4 pt-4">
+              <a class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-full font-label-sm text-label-sm hover:shadow-lg transition-all transform hover:-translate-y-1 text-center" href="#/catalog">Khám phá các bản đồ</a>
+              <a class="border border-white/35 text-white px-8 py-4 rounded-full font-label-sm text-label-sm hover:bg-white/10 transition-colors text-center" href="#/catalog">Xem danh mục MAP</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="intro" class="bg-surface-container-low py-stack-lg relative overflow-hidden">
+        <div class="max-w-[860px] mx-auto px-gutter text-center space-y-12">
+          <div class="space-y-6">
+            <h2 class="font-headline-lg text-headline-lg text-on-surface italic reveal">Vì sao chúng ta thường lạc lối?</h2>
+            <div class="grid grid-cols-1 gap-6">
+              <div class="bg-surface p-8 rounded-xl border-l-4 border-primary italic text-left reveal">"Vì sao tôi luôn lặp lại những khó khăn giống nhau?"</div>
+              <div class="bg-surface p-8 rounded-xl border-l-4 border-primary italic text-left reveal">"Vì sao con tôi cư xử như vậy dù tôi đã cố gắng dạy dỗ rất nhiều?"</div>
+              <div class="bg-surface p-8 rounded-xl border-l-4 border-primary italic text-left reveal">"Vì sao vợ chồng yêu nhau nhưng vẫn thường xuyên tổn thương nhau?"</div>
+              <div class="bg-surface p-8 rounded-xl border-l-4 border-primary italic text-left reveal">"Vì sao trong gia đình luôn tồn tại những khoảng cách khó gọi thành tên?"</div>
+            </div>
+          </div>
+          <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed reveal">Thực tế là chúng ta thường nhìn thấy <span class="text-primary font-bold">hành vi bên ngoài</span> nhưng lại chưa hiểu được <span class="text-secondary font-bold">hệ điều hành bên trong</span> của một con người.</p>
+        </div>
+      </section>
+
+      <section class="py-stack-lg max-w-container-max mx-auto px-gutter">
+        <div class="text-center mb-16 reveal">
+          <h2 class="font-headline-lg text-headline-lg mb-4">19 Chỉ số Cốt lõi của Bản đồ Thành công</h2>
+          <p class="text-on-surface-variant">Giải mã những mã gen tâm thức và mô thức hành vi sâu sắc nhất.</p>
+        </div>
+        <div id="indicator-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8"></div>
+      </section>
+
+      <section class="bg-surface-container py-stack-lg">
+        <div class="max-w-[860px] mx-auto px-gutter text-center space-y-8 reveal">
+          <span class="material-symbols-outlined text-secondary text-5xl" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+          <h2 class="font-headline-lg text-headline-lg text-primary italic">Thấu hiểu là nền tảng cao nhất của tình yêu thương.</h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant">Khi chúng ta hiểu đúng bản chất của một người, hành trình đồng hành không còn là áp lực, mà trở thành một cuộc gặp gỡ sâu sắc hơn với chính mình và những người thân yêu.</p>
+        </div>
+      </section>
+
+      <section id="catalog" class="py-stack-lg max-w-container-max mx-auto px-gutter">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-10">
+          <div class="max-w-2xl reveal">
+            <span class="bg-primary/10 text-primary px-3 py-1 rounded-full font-label-sm text-label-sm">Danh mục MAP</span>
+            <h2 class="font-headline-xl text-headline-xl headline-mobile mt-5 text-on-surface">Thư viện bản đồ chuyên sâu</h2>
+            <p class="mt-4 text-on-surface-variant font-body-lg text-body-lg">Chọn một bộ MAP để xem chi tiết, lọc theo nhóm hoặc tìm nhanh theo nhu cầu của bạn.</p>
+          </div>
+          <div class="w-full md:w-[360px] reveal">
+            <label class="sr-only" for="map-search">Tìm MAP</label>
+            <input id="map-search" class="w-full rounded-full border-outline-variant bg-surface-container-lowest px-5 py-4 text-on-surface shadow-sm focus:border-primary focus:ring-primary" placeholder="Tìm theo tên hoặc mô tả..." />
+          </div>
+        </div>
+        <div id="filter-tabs" class="flex flex-wrap gap-3 mb-10"></div>
+        <div id="catalog-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"></div>
+        <div id="empty-state" class="hidden bg-surface-container-low p-10 rounded-2xl text-center text-on-surface-variant">Chưa tìm thấy bản đồ phù hợp.</div>
+      </section>
+
+      <section id="map-detail" class="hidden bg-surface-container-low py-stack-lg">
+        <div class="max-w-container-max mx-auto px-gutter">
+          <div id="detail-content"></div>
+        </div>
+      </section>
+
+      <section id="contact" class="max-w-container-max mx-auto px-gutter my-stack-lg">
+        <div class="bg-primary text-on-primary rounded-3xl p-12 md:p-20 text-center space-y-8 relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+          <div class="relative z-10 space-y-6">
+            <h2 class="font-headline-xl text-headline-xl headline-mobile">Bắt đầu hành trình thấu hiểu từ hôm nay.</h2>
+            <p class="text-body-lg max-w-xl mx-auto opacity-90">Chọn một bản đồ phù hợp và để GEIN đồng hành cùng bạn trong hành trình nhìn sâu, chữa lành và trưởng thành.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4 pt-4">
+              <a class="bg-secondary-container text-on-secondary-container px-10 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all shadow-xl" href="https://wa.me/" target="_blank" rel="noreferrer">Đăng ký tư vấn</a>
+              <a class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-white/20 transition-all" href="#/catalog">Xem bản mẫu</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      </div>
+      <div id="directory-view" class="hidden bg-surface min-h-screen py-stack-lg">
+        <div class="max-w-container-max mx-auto px-gutter">
+          <div id="directory-content"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-surface-container-highest border-t border-outline-variant">
+      <div class="flex flex-col md:flex-row justify-between items-start gap-stack-md px-gutter py-12 max-w-container-max mx-auto">
+        <div class="space-y-4 md:w-1/3">
+          <div class="font-headline-lg text-headline-lg text-primary">GEIN MAP</div>
+          <p class="text-on-surface-variant italic">Soul Map for Personal Growth.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 w-full md:w-2/3">
+          <div class="space-y-4">
+            <div class="text-label-sm font-bold uppercase tracking-widest text-primary">Liên kết</div>
+            <ul class="space-y-2">
+              <li><a class="text-on-surface-variant hover:text-primary transition-all hover:underline" href="#intro">Sứ mệnh</a></li>
+              <li><a class="text-on-surface-variant hover:text-primary transition-all hover:underline" href="#/catalog">Danh mục MAP</a></li>
+              <li><a class="text-on-surface-variant hover:text-primary transition-all hover:underline" href="#/category/family-child">Chi tiết MAP</a></li>
+            </ul>
+          </div>
+          <div class="space-y-4">
+            <div class="text-label-sm font-bold uppercase tracking-widest text-primary">Liên hệ</div>
+            <p class="text-on-surface-variant text-sm">GEIN MAP FOR SUCCESS<br />Tư vấn cá nhân, hôn nhân và gia đình</p>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-container-max mx-auto px-gutter py-8 border-t border-outline-variant/30 text-center text-label-sm text-outline">© 2026 GEIN MAP FOR SUCCESS. Soul Map for Personal Growth. All rights reserved.</div>
+    </footer>
+
+    <script>
+      const HERO_IMAGE_URL = "https://ik.imagekit.io/noc/Images_Clone_CATEGOGY1/%E1%BA%A2nh%20gi%E1%BB%9Bi%20thi%E1%BB%87u%20web.jpeg";
+      document.documentElement.style.setProperty("--hero-image", `url("${HERO_IMAGE_URL}")`);
+
+      const MAP_CATEGORIES = [
+        { id: "family-child", group: "family", groupLabel: "Gia đình", title: "Bản đồ gia đình - yêu thương, thấu hiểu, đồng hành cùng con", total: 330, totalLabel: "330 MAP", description: "Giúp cha mẹ hiểu sâu thế giới nội tâm của con, hiểu sự khác biệt giữa các thành viên trong gia đình, hiểu cách đồng hành phù hợp với từng đứa trẻ và xây dựng môi trường phát triển lành mạnh cho cả gia đình.", cover: "assets/images/books/family-child.webp" },
+        { id: "human-decoding", group: "decoding", groupLabel: "Giải mã con người", title: "Bản đồ giải mã con người toàn diện", total: 500, totalLabel: "500 MAP", description: "Bản đồ nền tảng giúp hiểu toàn diện về bản thân thông qua hệ thống chỉ số GEIN, từ tính cách, tư duy, cảm xúc, năng lực, bài học cuộc đời, các giai đoạn phát triển đến định hướng tương lai.", cover: "assets/images/books/human-decoding.webp" },
+        { id: "grow-together", group: "family", groupLabel: "Gia đình", title: "Bản đồ đồng hành, trưởng thành cùng nhau", total: 60, totalLabel: "60 MAP", description: "Giúp các thành viên trong gia đình học cách đồng hành, thấu hiểu và trưởng thành cùng nhau qua từng giai đoạn sống.", cover: "assets/images/books/grow-together.webp" },
+        { id: "peaceful-home", group: "family", groupLabel: "Gia đình", title: "Bản đồ xây dựng mái nhà bình yên và trưởng thành", total: 60, totalLabel: "60 MAP", description: "Giúp gia đình giảm xung đột, tăng kết nối và xây dựng một mái nhà có nền tảng cảm xúc an toàn.", cover: "assets/images/books/peaceful-home.webp" },
+        { id: "healing-family", group: "family", groupLabel: "Gia đình", title: "Bản đồ xây dựng gia đình chữa lành", total: 60, totalLabel: "60 MAP", description: "Giúp nhận diện những mô thức gia đình đang lặp lại, từ đó xây dựng một môi trường yêu thương, chữa lành và trưởng thành.", cover: "assets/images/books/healing-family.webp" },
+        { id: "strong-marriage", group: "marriage", groupLabel: "Hôn nhân", title: "Bản đồ xây dựng hôn nhân bền vững", total: 60, totalLabel: "60 MAP", description: "Giúp vợ chồng hiểu sự khác biệt trong suy nghĩ, nhu cầu cảm xúc, cách giao tiếp và cách cùng nhau xây dựng mối quan hệ trưởng thành.", cover: "assets/images/books/strong-marriage.webp" },
+        { id: "reconnect-couple", group: "marriage", groupLabel: "Hôn nhân", title: "Bản đồ phục hồi, kết nối vợ chồng", total: 60, totalLabel: "60 MAP", description: "Giúp các cặp đôi phục hồi sự kết nối, tháo gỡ khoảng cách cảm xúc và học cách lắng nghe nhau sâu hơn.", cover: "assets/images/books/reconnect-couple.webp" },
+        { id: "love-myself", group: "healing", groupLabel: "Chữa lành", title: "Bản đồ hành trình yêu lại chính mình", total: 60, totalLabel: "60 MAP", description: "Giúp mỗi người quay về với bản thân, học cách yêu thương chính mình và xây dựng sự bình an từ bên trong.", cover: "assets/images/books/love-myself.webp" },
+        { id: "childhood-healing", group: "healing", groupLabel: "Chữa lành", title: "Bản đồ hành trình chữa lành tuổi thơ", total: 60, totalLabel: "60 MAP", description: "Giúp nhìn lại những trải nghiệm tuổi thơ, nhận diện các vết thương cảm xúc và từng bước tháo gỡ ảnh hưởng của quá khứ.", cover: "assets/images/books/childhood-healing.webp" },
+        { id: "generational-healing", group: "healing", groupLabel: "Chữa lành", title: "Bản đồ hành trình chữa lành tổn thương truyền đời", total: 60, totalLabel: "60 MAP", description: "Giúp nhận diện những mô thức tổn thương được lặp lại qua nhiều thế hệ và mở ra hành trình chữa lành sâu hơn.", cover: "assets/images/books/generational-healing.webp" },
+        { id: "inner-child", group: "healing", groupLabel: "Chữa lành", title: "Bản đồ hành trình chữa lành đứa trẻ bên trong", total: 60, totalLabel: "60 MAP", description: "Giúp kết nối với phần đứa trẻ bên trong, lắng nghe những nhu cầu chưa được đáp ứng và học cách ôm ấp bản thân.", cover: "assets/images/books/inner-child.webp" },
+        { id: "root-family", group: "healing", groupLabel: "Chữa lành", title: "Bản đồ hành trình chữa lành gia đình gốc", total: 60, totalLabel: "60 MAP", description: "Giúp nhìn lại ảnh hưởng từ gia đình gốc, nhận diện các mô thức cảm xúc và từng bước xây dựng sự tự do nội tâm.", cover: "assets/images/books/root-family.webp" },
+        { id: "mother-child", group: "healing", groupLabel: "Chữa lành", title: "Bản đồ hành trình chữa lành mối quan hệ mẹ - con", total: 60, totalLabel: "60 MAP", description: "Giúp nhìn lại, thấu hiểu và chữa lành những khoảng cách trong mối quan hệ mẹ - con bằng sự cảm thông sâu sắc.", cover: "assets/images/books/mother-child.webp" },
+        { id: "father-child", group: "healing", groupLabel: "Chữa lành", title: "Bản đồ hành trình chữa lành mối quan hệ bố - con", total: 60, totalLabel: "60 MAP", description: "Giúp nhận diện các tổn thương, kỳ vọng và khoảng cách trong mối quan hệ bố - con, từ đó mở ra sự kết nối mới.", cover: "assets/images/books/father-child.webp" },
+        { id: "marriage-emotion-healing", group: "marriage", groupLabel: "Hôn nhân", title: "Bản đồ hành trình chữa lành cảm xúc hôn nhân", total: 60, totalLabel: "60 MAP", description: "Giúp vợ chồng nhìn lại những tổn thương cảm xúc trong hôn nhân, học cách giao tiếp, phục hồi và trưởng thành cùng nhau.", cover: "assets/images/books/marriage-emotion-healing.webp" }
+      ];
+
+      const FILTERS = [
+        { id: "all", label: "Tất cả" },
+        { id: "family", label: "Gia đình" },
+        { id: "marriage", label: "Hôn nhân" },
+        { id: "healing", label: "Chữa lành" },
+        { id: "decoding", label: "Giải mã con người" }
+      ];
+
+      const MAP_DATA_CONFIG = {
+        "family-child": { dataCategoryId: "family-child", mapModule: "category-family-child", imageFolder: "chap1", imagePattern: "number", supportsMultipleImages: false, codePrefix: "FAM" },
+        "human-decoding": { dataCategoryId: "human-decode", mapModule: "category-human-decode", imageFolder: "Images_Clone_CATEGOGY2", imagePattern: "number", supportsMultipleImages: false, codePrefix: "DEC" },
+        "grow-together": { dataCategoryId: "grow-together", mapModule: "category-grow-together", imageFolder: "chap3", imagePattern: "number", supportsMultipleImages: false, codePrefix: "GRW" },
+        "peaceful-home": { dataCategoryId: "peaceful-home", mapModule: "category-peaceful-home", imageFolder: "chap4", imagePattern: "number", supportsMultipleImages: false, codePrefix: "HOM" },
+        "healing-family": { dataCategoryId: "healing-family", mapModule: "category-healing-family", imageFolder: "Images_Clone_CATEGOGY5", imagePattern: "number", supportsMultipleImages: false, codePrefix: "HLF" },
+        "strong-marriage": { dataCategoryId: "sustainable-marriage", mapModule: "category-sustainable-marriage", imageFolder: "Images_Clone_CATEGOGY6", imagePattern: "number", supportsMultipleImages: false, codePrefix: "MAR" },
+        "reconnect-couple": { dataCategoryId: "couple-reconnect", mapModule: "category-couple-reconnect", imageFolder: "Images_Clone_CATEGOGY7", imagePattern: "number", supportsMultipleImages: false, codePrefix: "REC" },
+        "love-myself": { dataCategoryId: "self-love", mapModule: "category-self-love", imageFolder: "Images_Clone_CATEGOGY8", imagePattern: "number", supportsMultipleImages: false, codePrefix: "SLF" },
+        "childhood-healing": { dataCategoryId: "childhood-healing", mapModule: "category-childhood-healing", imageFolder: "Images_Clone_CATEGOGY9", imagePattern: "number", supportsMultipleImages: false, codePrefix: "CHD" },
+        "generational-healing": { dataCategoryId: "generational-healing", mapModule: "category-generational-healing", imageFolder: "Images_Clone_CATEGOGY10", imagePattern: "number", supportsMultipleImages: false, codePrefix: "GEN" },
+        "inner-child": { dataCategoryId: "inner-child", mapModule: "category-inner-child", imageFolder: "Images_Clone_CATEGOGY11", imagePattern: "number", supportsMultipleImages: false, codePrefix: "INR" },
+        "root-family": { dataCategoryId: "family-origin", mapModule: "category-family-origin", imageFolder: "Images_Clone_CATEGOGY12", imagePattern: "number", supportsMultipleImages: false, codePrefix: "ROT" },
+        "mother-child": { dataCategoryId: "mother-child", mapModule: "category-mother-child", imageFolder: "Images_Clone_CATEGOGY13", imagePattern: "number", supportsMultipleImages: false, codePrefix: "MOM" },
+        "father-child": { dataCategoryId: "father-child", mapModule: "category-father-child", imageFolder: "Images_Clone_CATEGOGY14", imagePattern: "number", supportsMultipleImages: false, codePrefix: "DAD" },
+        "marriage-emotion-healing": { dataCategoryId: "marriage-emotion", mapModule: "category-marriage-emotion", imageFolder: "Images_Clone_CATEGOGY15", imagePattern: "number", supportsMultipleImages: false, codePrefix: "EMO" }
+      };
+
+      const IMAGEKIT_BASE = "https://ik.imagekit.io/noc";
+      const DIRECTORY_PAGE_SIZE = 10;
+      const mapCache = new Map();
+      const previewCache = new Map();
+      let selectedMaps = [];
+      let selectedPage = 1;
+      let detailQuery = "";
+      let detailSort = "number";
+
+      const INDICATORS = [
+        ["person", "Con người thật bên trong", "Khám phá bản ngã thực sự đằng sau những mặt nạ xã hội thường ngày."],
+        ["trending_up", "Hướng phát triển", "Xác định lộ trình tối ưu để bạn vươn tới phiên bản rạng rỡ nhất."],
+        ["star", "Tài năng", "Nhận diện những món quà thiên bẩm đang chờ đợi được khai phá."],
+        ["shield", "Điểm mạnh", "Công cụ sắc bén nhất để bạn vượt qua mọi thử thách cuộc đời."],
+        ["warning", "Điểm yếu", "Thấu hiểu những góc tối để chuyển hóa chúng thành bài học trưởng thành."],
+        ["menu_book", "Bài học cuộc đời", "Những thông điệp được gửi gắm qua từng sự kiện bạn trải qua."]
+      ];
+
+      let currentFilter = "all";
+      let selectedMap = MAP_CATEGORIES[0];
+
+      const $ = (selector) => document.querySelector(selector);
+
+      function escapeHtml(value) {
+        return String(value ?? "").replace(/[&<>"']/g, (char) => ({
+          "&": "&amp;",
+          "<": "&lt;",
+          ">": "&gt;",
+          '"': "&quot;",
+          "'": "&#039;"
+        }[char]));
+      }
+
+      function fallbackCover(title) {
+        return `<div class="book-cover-fallback absolute inset-0 grid place-items-center p-6 text-center">
+          <div>
+            <div class="font-headline-md text-headline-md text-primary leading-tight">${escapeHtml(title)}</div>
+            <div class="mt-4 text-label-sm text-secondary uppercase tracking-widest">GEIN MAP</div>
+          </div>
+        </div>`;
+      }
+
+      function renderBookImage(item, large = false) {
+        return `<div class="relative ${large ? "max-w-[420px]" : ""} w-full aspect-[2/3] rounded-r-lg overflow-hidden book-card-shadow bg-surface-container-lowest">
+          <div class="absolute left-0 top-0 bottom-0 w-4 bg-black/5 spine-shadow z-10"></div>
+          ${fallbackCover(item.title)}
+          <img class="book-cover-img absolute inset-0 h-full w-full object-cover z-0" src="${escapeHtml(item.cover)}" alt="${escapeHtml(item.title)}" loading="lazy" decoding="async" onerror="this.classList.add('is-hidden')" />
+          <span class="absolute top-4 right-4 z-20 bg-surface/90 text-primary px-3 py-1 rounded-full font-label-sm text-label-sm border border-outline-variant">${escapeHtml(item.totalLabel)}</span>
+        </div>`;
+      }
+
+      function getCategoryConfig(category) {
+        return MAP_DATA_CONFIG[category.id] || {};
+      }
+
+      function getMapImagePath(category, mapNumber, imageIndex = null) {
+        const config = getCategoryConfig(category);
+        const folder = config.imageFolder || "";
+        if ((config.imagePattern || "number") === "number-index") {
+          return `${folder}/${mapNumber}-${imageIndex || 1}.jpeg`;
+        }
+        return `${folder}/${mapNumber}.jpeg`;
+      }
+
+      function getMapImageUrl(category, mapNumber, width = 520, quality = 82) {
+        const transform = width ? `/tr:w-${width},q-${quality}` : "";
+        return `${IMAGEKIT_BASE}${transform}/${getMapImagePath(category, mapNumber, 1)}`;
+      }
+
+      async function loadMapsForCategory(category) {
+        const config = getCategoryConfig(category);
+        if (!config.mapModule) return [];
+        if (mapCache.has(category.id)) return mapCache.get(category.id);
+        const module = await import(`./data/maps/${config.mapModule}.js`);
+        const maps = module.maps || [];
+        mapCache.set(category.id, maps);
+        return maps;
+      }
+
+      async function loadPreviewForMap(map) {
+        if (!map?.hasPreview || !map.previewModule) return null;
+        if (previewCache.has(map.id)) return previewCache.get(map.id);
+        try {
+          const module = await import(`./data/previews/${map.previewModule}.js`);
+          previewCache.set(map.id, module.preview);
+          return module.preview;
+        } catch {
+          previewCache.set(map.id, null);
+          return null;
+        }
+      }
+
+      function mapCode(category, map) {
+        const prefix = getCategoryConfig(category).codePrefix || "MAP";
+        return `#${prefix}-${String(map.number).padStart(3, "0")}`;
+      }
+
+      function renderMapDirectoryFallback(title) {
+        return `<div class="map-directory-fallback absolute inset-0 grid place-items-center p-4 text-center">
+          <div>
+            <div class="font-headline-md text-headline-md text-primary leading-tight">${escapeHtml(title)}</div>
+            <div class="mt-3 text-label-sm text-secondary uppercase tracking-widest">GEIN MAP</div>
+          </div>
+        </div>`;
+      }
+
+      function renderDirectoryBook(category, map) {
+        const title = `MAP ${map.number} - ${map.title}`;
+        return `
+          <article class="group flex flex-col items-center text-center cursor-pointer">
+            <div class="relative w-full aspect-[3/4] mb-6 transition-soft group-hover:-translate-y-2">
+              <div class="absolute inset-0 bg-primary/5 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-soft"></div>
+              <div class="relative w-full h-full rounded-sm overflow-hidden book-shadow flex bg-surface-container-lowest">
+                <div class="w-2 h-full bg-primary/20 absolute left-0 z-20 book-spine-effect"></div>
+                ${renderMapDirectoryFallback(title)}
+                <img alt="${escapeHtml(title)}" class="map-directory-cover-img absolute inset-0 h-full w-full object-cover z-10" src="${getMapImageUrl(category, map.number)}" loading="lazy" decoding="async" onerror="this.classList.add('is-hidden')" />
+              </div>
+            </div>
+            <span class="text-label-sm font-label-sm text-primary-container bg-primary-container/10 px-3 py-1 rounded-full mb-3">${mapCode(category, map)}</span>
+            <h3 class="font-headline-md text-headline-md text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">${escapeHtml(map.title)}</h3>
+            <button class="text-label-sm font-label-sm text-secondary hover:text-secondary-container flex items-center gap-1 group/btn transition-colors" data-map-detail="${category.id}|${map.number}" type="button">
+              XEM CHI TIẾT
+              <span class="material-symbols-outlined text-[16px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+            </button>
+          </article>
+        `;
+      }
+
+      function getFilteredDirectoryMaps() {
+        const query = detailQuery.trim().toLowerCase();
+        let maps = selectedMaps.filter((map) => {
+          const haystack = `${map.number} ${map.title} ${map.subtitle || ""} ${(map.tags || []).join(" ")}`.toLowerCase();
+          return !query || haystack.includes(query);
+        });
+        if (detailSort === "title") {
+          maps = [...maps].sort((a, b) => String(a.title).localeCompare(String(b.title), "vi"));
+        } else if (detailSort === "preview") {
+          maps = [...maps].sort((a, b) => Number(Boolean(b.hasPreview)) - Number(Boolean(a.hasPreview)) || a.number - b.number);
+        } else {
+          maps = [...maps].sort((a, b) => a.number - b.number);
+        }
+        return maps;
+      }
+
+      function renderDirectoryGrid(category) {
+        const filtered = getFilteredDirectoryMaps();
+        const totalPages = Math.max(1, Math.ceil(filtered.length / DIRECTORY_PAGE_SIZE));
+        selectedPage = Math.min(Math.max(selectedPage, 1), totalPages);
+        const start = (selectedPage - 1) * DIRECTORY_PAGE_SIZE;
+        const visible = filtered.slice(start, start + DIRECTORY_PAGE_SIZE);
+        const grid = document.querySelector("[data-map-directory-grid]");
+        const empty = document.querySelector("[data-map-directory-empty]");
+        const pageInfo = document.querySelector("[data-map-directory-page]");
+        if (!grid || !empty || !pageInfo) return;
+        grid.innerHTML = visible.map((map) => renderDirectoryBook(category, map)).join("");
+        empty.classList.toggle("hidden", filtered.length > 0);
+        pageInfo.textContent = `Trang ${selectedPage} của ${totalPages}`;
+        document.querySelectorAll("[data-map-directory-page-action]").forEach((button) => {
+          const action = button.dataset.mapDirectoryPageAction;
+          const isBack = action === "first" || action === "prev";
+          button.disabled = filtered.length === 0 || (isBack ? selectedPage <= 1 : selectedPage >= totalPages);
+        });
+      }
+
+      function bindDirectoryEvents(category) {
+        const search = document.querySelector("[data-map-directory-search]");
+        const sort = document.querySelector("[data-map-directory-sort]");
+        const shell = document.querySelector("[data-map-directory-shell]");
+        search?.addEventListener("input", (event) => {
+          detailQuery = event.target.value;
+          selectedPage = 1;
+          renderDirectoryGrid(category);
+        });
+        sort?.addEventListener("change", (event) => {
+          detailSort = event.target.value;
+          selectedPage = 1;
+          renderDirectoryGrid(category);
+        });
+        shell?.addEventListener("click", (event) => {
+          const detail = event.target.closest("[data-map-detail]");
+          if (detail) {
+            const [categoryId, mapNumber] = detail.dataset.mapDetail.split("|");
+            location.hash = `#/map/${encodeURIComponent(categoryId)}/${encodeURIComponent(mapNumber)}`;
+            return;
+          }
+          const pager = event.target.closest("[data-map-directory-page-action]");
+          if (!pager || pager.disabled) return;
+          const totalPages = Math.max(1, Math.ceil(getFilteredDirectoryMaps().length / DIRECTORY_PAGE_SIZE));
+          const action = pager.dataset.mapDirectoryPageAction;
+          if (action === "first") selectedPage = 1;
+          if (action === "prev") selectedPage = Math.max(1, selectedPage - 1);
+          if (action === "next") selectedPage = Math.min(totalPages, selectedPage + 1);
+          if (action === "last") selectedPage = totalPages;
+          renderDirectoryGrid(category);
+        });
+      }
+
+      function renderFilters() {
+        $("#filter-tabs").innerHTML = FILTERS.map((filter) => `
+          <button class="filter-tab ${filter.id === currentFilter ? "is-active" : ""} border border-outline-variant text-on-surface-variant px-5 py-3 rounded-full font-label-sm text-label-sm hover:border-primary hover:text-primary transition-colors" data-filter="${filter.id}" type="button">${filter.label}</button>
+        `).join("");
+      }
+
+      function getFilteredMaps() {
+        const query = $("#map-search")?.value.trim().toLowerCase() || "";
+        return MAP_CATEGORIES.filter((item) => {
+          const matchesFilter = currentFilter === "all" || item.group === currentFilter;
+          const haystack = `${item.title} ${item.description} ${item.groupLabel}`.toLowerCase();
+          return matchesFilter && (!query || haystack.includes(query));
+        });
+      }
+
+      function renderCatalog() {
+        renderFilters();
+        const items = getFilteredMaps();
+        $("#empty-state").classList.toggle("hidden", items.length > 0);
+        $("#catalog-grid").innerHTML = items.map((item) => `
+          <article class="bg-surface-container-lowest rounded-2xl border border-outline-variant p-5 map-card-hover reveal active">
+            ${renderBookImage(item)}
+            <div class="pt-5 space-y-4">
+              <div class="flex items-center justify-between gap-3">
+                <span class="text-secondary font-label-sm text-label-sm uppercase">${escapeHtml(item.groupLabel)}</span>
+                <span class="text-outline font-label-sm text-label-sm">${escapeHtml(item.totalLabel)}</span>
+              </div>
+              <h3 class="font-headline-md text-headline-md text-primary">${escapeHtml(item.title)}</h3>
+              <p class="text-on-surface-variant text-sm leading-6 line-clamp-4">${escapeHtml(item.description)}</p>
+              <div class="flex flex-col gap-3 pt-2">
+                <button class="bg-primary text-on-primary px-5 py-3 rounded-full font-label-sm text-label-sm hover:shadow-lg transition-all" data-detail="${escapeHtml(item.id)}" type="button">Xem chi tiết</button>
+                <a class="border border-outline-variant text-primary px-5 py-3 rounded-full font-label-sm text-label-sm hover:bg-surface-container text-center transition-colors" href="https://wa.me/" target="_blank" rel="noreferrer">Tư vấn</a>
+              </div>
+            </div>
+          </article>
+        `).join("");
+      }
+
+      async function renderDetail(item) {
+        selectedMap = item || MAP_CATEGORIES[0];
+        selectedPage = 1;
+        detailQuery = "";
+        detailSort = "number";
+        $("#directory-content").innerHTML = `
+          <section class="relative z-10">
+            <header class="mb-stack-md max-w-container-max mx-auto">
+              <nav class="mb-6" aria-label="Breadcrumb">
+                <ul class="flex items-center justify-start gap-2 text-label-sm font-label-sm text-on-surface-variant uppercase tracking-widest">
+                  <li><a class="hover:text-primary transition-colors" href="#/">Trang chủ</a></li>
+                  <li><span class="material-symbols-outlined text-[14px]">chevron_right</span></li>
+                  <li><a class="hover:text-primary transition-colors" href="#/catalog">Danh mục</a></li>
+                  <li><span class="material-symbols-outlined text-[14px]">chevron_right</span></li>
+                  <li class="text-primary font-bold">${escapeHtml(selectedMap.groupLabel)}</li>
+                </ul>
+              </nav>
+              <div class="max-w-3xl mx-auto text-center">
+                <h2 class="font-headline-xl text-headline-xl headline-mobile text-on-surface mb-6 leading-tight">
+                  Bộ sưu tập ${escapeHtml(selectedMap.totalLabel)}<br />
+                  <span class="italic font-normal opacity-80">${escapeHtml(selectedMap.title)}</span>
+                </h2>
+                <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">${escapeHtml(selectedMap.description)}</p>
+              </div>
+            </header>
+
+            <section class="mb-stack-md flex flex-col md:flex-row gap-6 items-center justify-between bg-surface-container-low p-6 rounded-2xl shadow-sm">
+              <div class="relative w-full md:max-w-md">
+                <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">search</span>
+                <input class="w-full bg-surface border-none focus:ring-1 focus:ring-secondary/30 rounded-full py-3 pl-12 pr-6 font-body-md text-on-surface placeholder:text-outline-variant shadow-inner" data-map-directory-search placeholder="Tìm kiếm mã số hoặc tên bản đồ..." type="text" />
+              </div>
+              <div class="flex items-center gap-4 w-full md:w-auto overflow-x-auto pb-2 md:pb-0">
+                <span class="text-label-sm font-label-sm text-outline shrink-0">SẮP XẾP THEO:</span>
+                <select class="bg-transparent border-none text-primary font-bold font-body-md focus:ring-0 cursor-pointer" data-map-directory-sort>
+                  <option value="number">Mới nhất</option>
+                  <option value="title">Theo bảng chữ cái</option>
+                  <option value="preview">Có đọc thử</option>
+                </select>
+                <div class="h-6 w-[1px] bg-outline-variant mx-2"></div>
+                <button class="flex items-center gap-2 px-4 py-2 bg-surface rounded-lg text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" type="button">
+                  <span class="material-symbols-outlined text-[20px]">filter_list</span>
+                  <span class="text-body-md">Bộ lọc nâng cao</span>
+                </button>
+              </div>
+            </section>
+
+            <div class="min-h-[320px]" data-map-directory-shell>
+              <div class="py-20 text-center text-on-surface-variant">Đang tải dữ liệu MAP...</div>
+            </div>
+          </section>
+        `;
+
+        try {
+          selectedMaps = await loadMapsForCategory(selectedMap);
+          document.querySelector("[data-map-directory-shell]").innerHTML = `
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-8 gap-y-12" data-map-directory-grid></div>
+            <div class="hidden bg-surface-container-low p-10 rounded-2xl text-center text-on-surface-variant" data-map-directory-empty>Chưa tìm thấy bản đồ phù hợp.</div>
+            <div class="mt-20 flex flex-col items-center gap-6">
+              <div class="flex items-center justify-center gap-5 text-on-surface-variant font-body-md">
+                <button class="material-symbols-outlined hover:text-primary disabled:opacity-30 transition-colors" data-map-directory-page-action="first" type="button" aria-label="Trang đầu">first_page</button>
+                <button class="material-symbols-outlined hover:text-primary disabled:opacity-30 transition-colors" data-map-directory-page-action="prev" type="button" aria-label="Trang trước">chevron_left</button>
+                <span class="text-primary font-bold" data-map-directory-page>Trang 1</span>
+                <button class="material-symbols-outlined hover:text-primary disabled:opacity-30 transition-colors" data-map-directory-page-action="next" type="button" aria-label="Trang sau">chevron_right</button>
+                <button class="material-symbols-outlined hover:text-primary disabled:opacity-30 transition-colors" data-map-directory-page-action="last" type="button" aria-label="Trang cuối">last_page</button>
+              </div>
+            </div>
+          `;
+          bindDirectoryEvents(selectedMap);
+          renderDirectoryGrid(selectedMap);
+        } catch (error) {
+          document.querySelector("[data-map-directory-shell]").innerHTML = `<div class="bg-surface-container-low p-10 rounded-2xl text-center text-on-surface-variant">Chưa tải được dữ liệu MAP của danh mục này.</div>`;
+          console.error(error);
+        }
+      }
+
+      function renderMapHeroImage(category, map) {
+        const title = `MAP ${map.number} - ${map.title}`;
+        return `<div class="relative w-full max-w-[400px] book-card-shadow rounded-r-lg overflow-hidden transition-transform duration-500 hover:rotate-2 bg-surface-container-lowest">
+          <div class="absolute left-0 top-0 bottom-0 w-4 bg-black/5 spine-shadow z-10"></div>
+          ${renderMapDirectoryFallback(title)}
+          <img alt="${escapeHtml(title)}" class="map-directory-cover-img relative z-10 w-full h-auto object-cover" src="${getMapImageUrl(category, map.number, 900)}" loading="lazy" decoding="async" onerror="this.classList.add('is-hidden')" />
+        </div>`;
+      }
+
+      function renderMapSuggestionCard(category, map, label) {
+        if (!map) return "";
+        return `
+          <a class="group block rounded-2xl border border-outline-variant bg-surface-bright p-5 transition-all hover:-translate-y-1 hover:border-primary hover:shadow-xl" href="#/map/${escapeHtml(category.id)}/${escapeHtml(map.number)}">
+            <div class="grid grid-cols-[88px_1fr] gap-5 items-center">
+              <div class="relative aspect-[3/4] overflow-hidden rounded-sm bg-surface-container-lowest book-shadow">
+                <div class="absolute left-0 top-0 bottom-0 w-2 bg-primary/20 z-20 book-spine-effect"></div>
+                ${renderMapDirectoryFallback(`MAP ${map.number}`)}
+                <img alt="MAP ${escapeHtml(map.number)} - ${escapeHtml(map.title)}" class="map-directory-cover-img absolute inset-0 h-full w-full object-cover z-10" src="${getMapImageUrl(category, map.number, 260)}" loading="lazy" decoding="async" onerror="this.classList.add('is-hidden')" />
+              </div>
+              <div>
+                <div class="text-label-sm font-label-sm text-secondary uppercase tracking-widest">${escapeHtml(label)}</div>
+                <h3 class="mt-2 font-headline-md text-headline-md text-primary leading-snug group-hover:text-secondary transition-colors">MAP ${escapeHtml(map.number)} - ${escapeHtml(map.title)}</h3>
+                <p class="mt-2 text-sm leading-6 text-on-surface-variant">${escapeHtml(map.subtitle || "Xem tiếp bản đồ liên quan trong cùng danh mục.")}</p>
+              </div>
+            </div>
+          </a>
+        `;
+      }
+
+      function renderMapSuggestions(category, maps, map) {
+        const currentIndex = maps.findIndex((item) => String(item.number) === String(map.number));
+        const previous = currentIndex > 0 ? maps[currentIndex - 1] : null;
+        const next = currentIndex >= 0 && currentIndex < maps.length - 1 ? maps[currentIndex + 1] : null;
+        if (!previous && !next) return "";
+        return `
+          <section class="py-stack-lg px-gutter max-w-container-max mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
+              <div>
+                <p class="text-label-sm font-label-sm text-secondary uppercase tracking-widest">Gợi ý tiếp theo</p>
+                <h2 class="font-headline-lg text-headline-lg text-on-surface mt-2">Tiếp tục khám phá trong danh mục này</h2>
+              </div>
+              <a class="text-primary font-label-sm text-label-sm hover:text-secondary transition-colors" href="#/category/${escapeHtml(category.id)}">Quay lại thư mục MAP</a>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+              ${previous ? renderMapSuggestionCard(category, previous, "MAP trước đó") : `<div></div>`}
+              ${next ? renderMapSuggestionCard(category, next, "MAP tiếp theo") : ""}
+            </div>
+          </section>
+        `;
+      }
+
+      function renderPreviewBlocks(preview, start = 0, end = Infinity) {
+        const blocks = preview?.blocks?.length ? preview.blocks : [];
+        if (!blocks.length) {
+          if (start > 0) return "";
+          return `
+            <div class="border border-outline-variant rounded-xl overflow-hidden bg-white">
+              <button class="w-full px-6 py-5 flex justify-between items-center text-left chapter-accordion transition-colors group" data-accordion="fallback">
+                <div class="flex items-center gap-4">
+                  <span class="font-headline-md text-headline-md text-primary">Nội dung đang được cập nhật</span>
+                </div>
+                <span class="material-symbols-outlined transition-transform" data-accordion-icon="fallback">expand_more</span>
+              </button>
+              <div class="hidden px-6 pb-6 space-y-4 border-t border-outline-variant pt-4" data-accordion-content="fallback">
+                <div class="p-3 bg-surface-container-low rounded-lg">
+                  <div class="font-medium text-on-surface">Bản đầy đủ sẽ được tư vấn theo nhu cầu của bạn.</div>
+                  <div class="text-sm text-on-surface-variant">Bạn có thể liên hệ để nhận nội dung chi tiết và bản mẫu phù hợp.</div>
+                </div>
+              </div>
+            </div>`;
+        }
+        return blocks.slice(start, end).map((block, offset) => {
+          const index = start + offset;
+          const key = `block-${index + 1}`;
+          const chapters = (block.chapters || []).slice(0, 6);
+          return `
+            <div class="border border-outline-variant rounded-xl overflow-hidden bg-white">
+              <button class="w-full px-6 py-5 flex justify-between items-center text-left chapter-accordion transition-colors group" data-accordion="${key}">
+                <div class="flex items-center gap-4">
+                  <span class="font-headline-md text-headline-md text-primary">${escapeHtml(block.title || `Khối ${index + 1}`)}</span>
+                </div>
+                <span class="material-symbols-outlined transition-transform" data-accordion-icon="${key}">expand_more</span>
+              </button>
+              <div class="${index === 0 ? "" : "hidden"} px-6 pb-6 space-y-4 border-t border-outline-variant pt-4" data-accordion-content="${key}">
+                <div class="flex flex-col gap-3">
+                  ${chapters.map((chapter) => `
+                    <div class="p-3 bg-surface-container-low rounded-lg">
+                      <div class="font-medium text-on-surface">Chương ${escapeHtml(chapter.number)}: ${escapeHtml(chapter.title)}</div>
+                      <div class="text-sm text-on-surface-variant">Chỉ số chính: ${escapeHtml(chapter.mainIndex || "Đang cập nhật")}${chapter.subIndexes?.length ? ` | Chỉ số phụ: ${escapeHtml(chapter.subIndexes.join(", "))}` : ""}</div>
+                    </div>
+                  `).join("")}
+                </div>
+              </div>
+            </div>`;
+        }).join("");
+      }
+
+      function bindMapPageAccordions() {
+        document.querySelector("[data-map-page]")?.addEventListener("click", (event) => {
+          const button = event.target.closest("[data-accordion]");
+          if (!button) return;
+          const key = button.dataset.accordion;
+          const content = document.querySelector(`[data-accordion-content="${key}"]`);
+          const icon = document.querySelector(`[data-accordion-icon="${key}"]`);
+          content?.classList.toggle("hidden");
+          if (icon) icon.style.transform = content?.classList.contains("hidden") ? "rotate(0deg)" : "rotate(180deg)";
+        });
+      }
+
+      async function renderMapPage(categoryId, mapNumber) {
+        const category = MAP_CATEGORIES.find((item) => item.id === categoryId) || MAP_CATEGORIES[0];
+        $("#home-view").classList.add("hidden");
+        $("#directory-view").classList.remove("hidden");
+        $("#directory-content").innerHTML = `<div class="py-20 text-center text-on-surface-variant">Đang tải chi tiết MAP...</div>`;
+        const maps = await loadMapsForCategory(category);
+        const map = maps.find((item) => String(item.number) === String(mapNumber)) || maps[0];
+        const preview = await loadPreviewForMap(map);
+        const blockCount = preview?.blocks?.length || 1;
+        const leftBlockCount = Math.ceil(blockCount / 2);
+        const coreGoal = preview?.coreGoal?.length ? preview.coreGoal : [
+          map.subtitle || category.description,
+          "Bản đồ này giúp bạn quan sát sâu hơn hệ điều hành bên trong, từ đó lựa chọn cách đồng hành phù hợp hơn."
+        ];
+        $("#directory-content").innerHTML = `
+          <article data-map-page>
+            <section class="relative px-gutter py-stack-lg flex flex-col md:flex-row items-center justify-between max-w-container-max mx-auto gap-12">
+              <div class="md:w-1/2 space-y-6">
+                <nav class="mb-2">
+                  <ul class="flex flex-wrap items-center gap-2 text-label-sm font-label-sm text-on-surface-variant uppercase tracking-widest">
+                    <li><a class="hover:text-primary transition-colors" href="#/">Trang chủ</a></li>
+                    <li><span class="material-symbols-outlined text-[14px]">chevron_right</span></li>
+                    <li><a class="hover:text-primary transition-colors" href="#/category/${escapeHtml(category.id)}">Danh mục</a></li>
+                    <li><span class="material-symbols-outlined text-[14px]">chevron_right</span></li>
+                    <li class="text-primary font-bold">MAP ${escapeHtml(map.number)}</li>
+                  </ul>
+                </nav>
+                <span class="inline-block px-4 py-1 rounded-full bg-primary-fixed text-on-primary-fixed text-label-sm uppercase tracking-widest">${escapeHtml(category.groupLabel)}</span>
+                <h1 class="font-headline-xl text-headline-xl text-on-surface leading-tight">MAP ${escapeHtml(map.number)} - ${escapeHtml(map.title)}</h1>
+                <p class="font-headline-md text-headline-md text-on-surface-variant font-serif italic">"${escapeHtml(map.subtitle || category.description)}"</p>
+                <div class="pt-8 flex flex-col sm:flex-row gap-4">
+                  <a class="bg-primary text-on-primary px-8 py-4 rounded-full font-medium hover:shadow-lg transition-all flex items-center justify-center gap-2" href="https://wa.me/" target="_blank" rel="noreferrer">
+                    <span>Đăng ký tư vấn</span>
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                  </a>
+                  <a class="border border-outline text-primary px-8 py-4 rounded-full font-medium hover:bg-surface-container-low transition-all text-center" href="#/category/${escapeHtml(category.id)}">Xem bản mẫu</a>
+                </div>
+              </div>
+              <div class="md:w-1/2 flex justify-center relative">
+                <div class="ambient-glow absolute inset-0 -z-10"></div>
+                ${renderMapHeroImage(category, map)}
+              </div>
+            </section>
+
+            <section class="bg-surface-container-low py-stack-lg">
+              <div class="max-w-[800px] mx-auto px-gutter text-center space-y-8">
+                <span class="material-symbols-outlined text-secondary text-5xl" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+                <h2 class="font-headline-lg text-headline-lg text-primary uppercase tracking-widest">Mục tiêu cốt lõi</h2>
+                <div class="space-y-6 text-on-surface-variant font-body-lg text-body-lg italic leading-relaxed">
+                  ${coreGoal.map((line) => `<p>"${escapeHtml(line)}"</p>`).join("")}
+                </div>
+                <div class="flex flex-wrap justify-center gap-8 pt-8">
+                  <div class="text-center"><div class="font-headline-md text-primary">${map.hasPreview ? "Có" : "Đang cập nhật"}</div><div class="text-label-sm text-outline uppercase">Đọc thử</div></div>
+                  <div class="text-center"><div class="font-headline-md text-primary">${preview?.blocks?.length || "MAP"}</div><div class="text-label-sm text-outline uppercase">Khối nội dung</div></div>
+                  <div class="text-center"><div class="font-headline-md text-primary">${escapeHtml(category.groupLabel)}</div><div class="text-label-sm text-outline uppercase">Danh mục</div></div>
+                </div>
+              </div>
+            </section>
+
+            <section class="py-stack-lg px-gutter max-w-container-max mx-auto">
+              <div class="text-center mb-16">
+                <h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Cấu trúc nội dung phân tích</h2>
+                <p class="text-on-surface-variant max-w-2xl mx-auto">Dữ liệu bên dưới được tải động từ preview hiện tại của MAP nếu đã có trong project.</p>
+              </div>
+              <div class="grid md:grid-cols-2 gap-8 items-start">
+                <div class="space-y-4">${renderPreviewBlocks(preview, 0, leftBlockCount)}</div>
+                <div class="space-y-4">${renderPreviewBlocks(preview, leftBlockCount)}</div>
+              </div>
+            </section>
+
+            <section class="bg-surface-container py-stack-lg">
+              <div class="max-w-container-max mx-auto px-gutter">
+                <div class="grid md:grid-cols-3 gap-8">
+                  <div class="bg-surface-bright p-10 rounded-2xl border border-outline-variant space-y-4 hover:shadow-xl transition-shadow">
+                    <span class="material-symbols-outlined text-primary text-4xl">family_restroom</span>
+                    <h3 class="font-headline-md text-headline-md text-primary">MAP này phù hợp với ai</h3>
+                    <p class="text-on-surface-variant">Người đang muốn hiểu sâu hơn về chủ đề ${escapeHtml(category.groupLabel.toLowerCase())} và cần một lộ trình quan sát rõ ràng.</p>
+                  </div>
+                  <div class="bg-surface-bright p-10 rounded-2xl border border-outline-variant space-y-4 hover:shadow-xl transition-shadow">
+                    <span class="material-symbols-outlined text-primary text-4xl">psychology_alt</span>
+                    <h3 class="font-headline-md text-headline-md text-primary">Lợi ích nhận được</h3>
+                    <p class="text-on-surface-variant">Nhìn rõ nhu cầu, mô thức cảm xúc và hướng đồng hành phù hợp hơn với từng giai đoạn.</p>
+                  </div>
+                  <div class="bg-surface-bright p-10 rounded-2xl border border-outline-variant space-y-4 hover:shadow-xl transition-shadow">
+                    <span class="material-symbols-outlined text-primary text-4xl">auto_awesome</span>
+                    <h3 class="font-headline-md text-headline-md text-primary">Nội dung chính</h3>
+                    <p class="text-on-surface-variant">${escapeHtml((map.tags || []).join(" · ") || "Thấu hiểu · Chữa lành · Trưởng thành")}</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            ${renderMapSuggestions(category, maps, map)}
+          </article>
+        `;
+        bindMapPageAccordions();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      function showHome(targetId = "") {
+        $("#home-view").classList.remove("hidden");
+        $("#directory-view").classList.add("hidden");
+        requestAnimationFrame(() => {
+          const target = targetId ? document.getElementById(targetId) : null;
+          if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+          else window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      }
+
+      async function showDirectory(categoryId) {
+        const item = MAP_CATEGORIES.find((map) => map.id === categoryId) || MAP_CATEGORIES[0];
+        $("#home-view").classList.add("hidden");
+        $("#directory-view").classList.remove("hidden");
+        await renderDetail(item);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      function route() {
+        const mapMatch = location.hash.match(/^#\/map\/([^/]+)\/([^/]+)$/);
+        if (mapMatch) {
+          renderMapPage(decodeURIComponent(mapMatch[1]), decodeURIComponent(mapMatch[2]));
+          return;
+        }
+        if (location.hash === "#/catalog" || location.hash === "#catalog") {
+          showHome("catalog");
+          return;
+        }
+        const match = location.hash.match(/^#\/category\/([^/]+)$/);
+        if (match) {
+          showDirectory(decodeURIComponent(match[1]));
+          return;
+        }
+        showHome();
+      }
+
+      function detailBlock(title, items) {
+        return `<div class="bg-surface-bright p-6 rounded-2xl border border-outline-variant">
+          <h3 class="font-headline-md text-headline-md text-primary mb-3">${title}</h3>
+          <ul class="space-y-2 text-on-surface-variant">
+            ${items.map((item) => `<li class="flex gap-3"><span class="material-symbols-outlined text-primary text-[20px]">spa</span><span>${item}</span></li>`).join("")}
+          </ul>
+        </div>`;
+      }
+
+      function renderIndicators() {
+        $("#indicator-grid").innerHTML = INDICATORS.map(([icon, title, text]) => `
+          <div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant hover:border-primary transition-all group reveal active map-card-hover">
+            <span class="material-symbols-outlined text-4xl text-primary mb-4" style="font-variation-settings: 'FILL' 1;">${icon}</span>
+            <h3 class="font-headline-md text-headline-md mb-2">${title}</h3>
+            <p class="text-on-surface-variant">${text}</p>
+          </div>
+        `).join("");
+      }
+
+      function bindEvents() {
+        $("#filter-tabs").addEventListener("click", (event) => {
+          const button = event.target.closest("[data-filter]");
+          if (!button) return;
+          currentFilter = button.dataset.filter;
+          renderCatalog();
+        });
+        $("#map-search").addEventListener("input", renderCatalog);
+        $("#catalog-grid").addEventListener("click", (event) => {
+          const button = event.target.closest("[data-detail]");
+          if (!button) return;
+          location.hash = `#/category/${encodeURIComponent(button.dataset.detail)}`;
+        });
+        window.addEventListener("hashchange", route);
+        window.addEventListener("scroll", () => {
+          document.querySelectorAll(".reveal").forEach((element) => {
+            const rect = element.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 80) element.classList.add("active");
+          });
+        }, { passive: true });
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        renderIndicators();
+        renderCatalog();
+        bindEvents();
+        route();
+        document.querySelectorAll(".reveal").forEach((element) => element.classList.add("active"));
+      });
+    </script>
   </body>
 </html>
