@@ -1,311 +1,361 @@
 export const preview = {
   "id": "grow-together-12",
-  "title": "MAP 12 - ĐIỀU KHIẾN MỘT NGƯỜI CẢM THẤY MÌNH KHÔNG ĐƯỢC THẤU HIỂU TRONG GIA ĐÌNH",
+  "title": "MAP 12 — ĐIỀU KHIẾN MỘT NGƯỜI CẢM THẤY ĐƯỢC THẤU HIỂU",
   "coreGoal": [
-    "🌟 MỤC TIÊU CỐT LÕI CỦA MAP",
-    "◇ MAP này không đi theo hướng xác định ai đúng ai sai hoặc quy trách nhiệm cho bất kỳ thành viên nào trong gia đình. Trọng tâm của MAP là giúp nhìn ra những nguyên nhân sâu xa khiến một người cảm thấy mình không được thấu hiểu, không được nhìn thấy đúng với con người thật của mình và dần hình thành cảm giác cô đơn ngay trong chính mái nhà của mình.",
-    "◇ Rất nhiều người không đau vì thiếu tình yêu thương mà đau vì cảm thấy không ai thật sự hiểu mình. Họ có thể được quan tâm, được chăm sóc, được lo lắng nhưng vẫn cảm thấy khoảng cách tồn tại vì những điều quan trọng nhất trong lòng mình chưa từng được nhìn thấy hoặc được đón nhận đúng cách. Cảm giác này âm thầm làm suy giảm sự gắn kết và khiến con người ngày càng thu mình hơn trong các mối quan hệ gia đình.",
-    "◇ Có những người muốn được lắng nghe nhưng liên tục bị ngắt lời. Có những người muốn được công nhận cảm xúc nhưng lại chỉ nhận được lời khuyên. Có những người muốn được thấu hiểu nhưng lại bị đánh giá, so sánh hoặc áp đặt. Theo thời gian, họ dần học cách im lặng, hạn chế chia sẻ và giữ mọi điều quan trọng bên trong thay vì tiếp tục tìm kiếm sự thấu hiểu từ những người thân yêu nhất.",
-    "◇ Điều đặc biệt là cảm giác không được thấu hiểu không chỉ xuất hiện từ hành động của người khác. Nó còn liên quan đến cách mỗi người diễn đạt cảm xúc, cách họ bảo vệ bản thân, những tổn thương trong quá khứ và những nhu cầu cảm xúc chưa từng được gọi tên. Nhiều khi các thành viên đều mong muốn kết nối nhưng lại sử dụng những cách giao tiếp khiến nhau ngày càng xa cách hơn.",
-    "◇ MAP giúp nhìn ra điều gì đang khiến một người cảm thấy mình không được hiểu trong gia đình. Điều gì đang tạo ra",
-    "khoảng cách trong giao tiếp. Điều gì đang khiến những nỗ lực kết nối không đạt được kết quả như mong đợi. Điều gì đang làm gia tăng cảm giác cô đơn về mặt cảm xúc. Từ đó giúp nhận diện rõ gốc rễ thật sự của những khoảng cách đang tồn tại trong hệ gia đình.",
-    "◇ Đồng thời MAP giúp xác định những nhu cầu cần được nhìn thấy, những tổn thương cần được chữa lành và những thay đổi cần được thực hiện để các thành viên có thể hiểu nhau sâu sắc hơn. Không chỉ giúp cải thiện giao tiếp mà còn giúp xây dựng một môi trường an toàn để mỗi người được là chính mình và được đón nhận bằng sự thấu hiểu chân thành.",
-    "◇ MAP đọc toàn bộ chuỗi vận hành theo trình tự: Nhu cầu được thấu hiểu → Không được đáp ứng → Hình thành cảm xúc tổn thương → Tạo phản ứng phòng vệ → Giảm chia sẻ → Tăng khoảng cách → Ảnh hưởng lên từng thành viên → Ảnh hưởng lên hệ gia đình → Điều cần nhận diện → Điều cần thay đổi → Khả năng kết nối trong tương lai.",
-    "◇ MAP này giúp gia đình hiểu rằng cảm giác không được thấu hiểu thường không xuất phát từ việc thiếu tình yêu thương mà xuất phát từ việc thiếu khả năng kết nối đúng với nhu cầu cảm xúc của nhau.",
-    "◇ Khi nhìn thấy điều gì đang làm giảm sự thấu hiểu, các thành viên sẽ có cơ hội thay đổi cách giao tiếp, cách lắng nghe và cách đồng hành với nhau theo hướng sâu sắc hơn.",
-    "◇ Khi cảm giác được nhìn thấy, được lắng nghe và được hiểu xuất hiện, sự tin tưởng, sự an toàn cảm xúc và sự gần gũi sẽ được phục hồi một cách tự nhiên trong hệ gia đình.",
-    "◇ Một gia đình chữa lành không phải là gia đình luôn đồng ý với nhau. Một gia đình chữa lành là gia đình biết cách hiểu nhau ngay cả khi tồn tại những khác biệt trong suy nghĩ, cảm xúc, nhu cầu và trải nghiệm sống của mỗi thành viên.",
-    "━━━━━━━━━━━━━━━",
-    "🔒 NỘI DUNG PHÂN TÍCH 40 CHƯƠNG CHUYÊN SÂU",
-    "━━━━━━━━━━━━━━━"
+    "CỦA MAP",
+    "MAP này không đi theo hướng xác định ai hiểu ai nhiều hơn trong mối quan hệ, cũng không nhằm đánh giá ai đang quan",
+    "tâm nhiều hơn hoặc ai đang cố gắng nhiều hơn để kết nối với đối phương. MAP không tập trung vào việc phân xử đúng sai",
+    "trong giao tiếp mà tập trung giải mã điều gì thật sự khiến một con người cảm thấy mình được thấu hiểu ở tầng sâu bên",
+    "trong.",
+    "Trọng tâm của MAP là giúp cả hai nhìn thấy nhu cầu được thấu hiểu đang vận hành như thế nào trong thế giới nội tâm",
+    "của mỗi người. Bởi vì rất nhiều mâu thuẫn, khoảng cách và cảm giác cô đơn trong mối quan hệ không bắt nguồn từ việc",
+    "thiếu tình yêu, mà bắt nguồn từ việc một hoặc cả hai người không cảm thấy mình được hiểu đúng.",
+    "Rất nhiều người nghĩ rằng được thấu hiểu là được đồng ý với mình. Nhưng trên thực tế, cảm giác được thấu hiểu không",
+    "xuất hiện khi người khác luôn đứng về phía mình hoặc luôn chấp nhận mọi quan điểm của mình. Cảm giác được thấu hiểu",
+    "thường xuất hiện khi một người cảm thấy cảm xúc của mình được nhìn thấy, suy nghĩ của mình được lắng nghe, nhu cầu",
+    "của mình được tôn trọng và con người thật của mình được đón nhận mà không bị phán xét.",
+    "MAP giúp phân tích cách nhu cầu được thấu hiểu ảnh hưởng đến cảm giác an toàn, sự kết nối và mức độ mở lòng trong",
+    "mối quan hệ. Khi một người cảm thấy mình được hiểu đúng, họ thường dễ tin tưởng hơn, chia sẻ nhiều hơn và kết nối sâu",
+    "sắc hơn với đối phương.",
+    "Có những người chỉ cần được lắng nghe trọn vẹn đã cảm thấy được thấu hiểu. Có những người cần được công nhận cảm",
+    "xúc trước khi nhận lời khuyên. Có những người cần được tôn trọng không gian riêng. Có những người cần được đồng hành",
+    "===== TRANG 36/48 | ảnh - gốc/PSM - 6 =====",
+    "bằng hành động cụ thể nhiều hơn lời nói. Mỗi người có một ngôn ngữ thấu hiểu khác nhau và chính sự khác biệt này",
+    "thường tạo ra nhiều hiểu lầm trong mối quan hệ.",
+    "MAP giúp nhìn ra điều gì khiến người A cảm thấy mình được thấu hiểu thật sự. Điều gì khiến người A cảm thấy được lắng",
+    "nghe, được tôn trọng và được kết nối. Điều gì khiến người A cảm thấy mình không còn phải giải thích quá nhiều để được",
+    "hiểu. Điều gì khiến người A cảm thấy mình có thể là chính mình mà không cần phòng vệ.",
+    "Đồng thời MAP giúp nhìn ra điều gì khiến người B cảm thấy mình được thấu hiểu thật sự. Điều gì khiến người B cảm thấy",
+    "được đón nhận. Điều gì khiến người B cảm thấy cảm xúc của mình có giá trị. Điều gì khiến người B cảm thấy mình không",
+    "còn cô đơn bên trong mối quan hệ.",
+    "MAP giúp nhận diện những khác biệt trong nhu cầu được thấu hiểu giữa hai người. Có những điều người A nghĩ là quan",
+    "tâm nhưng người B lại không cảm nhận được. Có những điều người B đang cần nhưng người A chưa từng nhận ra. Chính",
+    "những khoảng cách này thường khiến cả hai yêu nhau nhưng vẫn cảm thấy thiếu kết nối hoặc không được hiểu.",
+    "MAP giúp làm rõ những điều cần được nhìn thấy, được lắng nghe và được tôn trọng ở mỗi người để cảm giác được thấu",
+    "hiểu có thể xuất hiện một cách tự nhiên. Đây chính là những điểm then chốt giúp thu hẹp khoảng cách cảm xúc giữa hai",
+    "người.",
+    "MAP phân tích các dấu hiệu cho thấy một người đang không cảm thấy được thấu hiểu. Khi nhu cầu này không được đáp",
+    "ứng, con người thường xuất hiện cảm giác cô đơn, thất vọng, hụt hãng hoặc dần khép lòng. Những cảm xúc này nếu kéo",
+    "dài sẽ ảnh hưởng trực tiếp đến chất lượng kết nối và khả năng đồng hành lâu dài của mối quan hệ.",
+    "MAP đồng thời giúp nhìn ra những cơ chế hiểu sai đang diễn ra giữa hai người. Có những lúc cả hai đều tin rằng mình đã",
+    "hiểu đối phương nhưng thực tế chỉ đang hiểu bằng suy đoán. Có những lúc cả hai phản ứng với những gì mình nghĩ thay vì",
+    "những gì đối phương thật sự đang cảm nhận.",
+    "MAP giúp phân tích cách những giả định, phán đoán và khuôn mẫu cũ có thể làm méo mó quá trình thấu hiểu. Khi con",
+    "người ngừng tò mò và ngừng khám phá thế giới bên trong của nhau, sự kết nối thường dần bị thay thế bằng những hiểu lầm",
+    "âm thầm tích lũy.",
+    "MAP giúp xác định môi trường nào làm cho sự thấu hiểu phát triển mạnh nhất. Một môi trường an toàn cảm xúc, ít phán",
+    "xét, nhiều lắng nghe, nhiều hiện diện và nhiều sự tò mò chân thành về thế giới bên trong của nhau sẽ giúp cảm giác được",
+    "thấu hiểu ngày càng sâu sắc hơn.",
+    "MAP cũng giúp nhận diện tử huyệt khi cả hai nghĩ rằng mình đã hiểu nhau. Một trong những nguy cơ lớn nhất của những",
+    "mối quan hệ lâu dài là cảm giác quen thuộc khiến cả hai ngừng tìm hiểu nhau. Khi không còn tò mò về thế giới bên trong",
+    "của đối phương, sự thấu hiểu sẽ dần bị thay thế bằng giả định, phán đoán và những khuôn mẫu cũ.",
+    "MAP giúp xây dựng nhận thức rằng sự thấu hiểu không phải là khả năng đọc được suy nghĩ của nhau mà là khả năng liên",
+    "tục tìm hiểu, lắng nghe và cập nhật những thay đổi đang diễn ra bên trong đối phương qua từng giai đoạn cuộc sống.",
+    "Toàn bộ hành trình phân tích theo logic: Nhu cầu bên trong hình thành cách mỗi người cảm nhận tình yêu và sự kết nối",
+    "¬ Cách cảm nhận tình yêu tạo ra những điều cần được nhìn thấy và được công nhận ¬ Những điều cần được nhìn thấy",
+    "dẫn đến nhu cầu được lắng nghe và được tôn trọng ¬ Khi nhu cầu được đáp ứng, cảm giác được thấu hiểu bắt đầu hình",
+    "thành ¬ Cảm giác được thấu hiểu tạo ra sự an toàn và tin tưởng ¬ Sự an toàn giúp con người mở lòng và chia sẻ chân",
+    "thật hơn ¬ Kết nối ngày càng trở nên sâu sắc hơn ¬ Nhận diện những khoảng lệch đang làm suy giảm sự thấu hiểu ¬ Xây",
+    "dựng môi trường giao tiếp giúp cả hai tiếp tục khám phá thế giới bên trong của nhau ¬ Nuôi dưỡng sự kết nối bền vững và",
+    "trưởng thành hơn theo thời gian.",
+    "Mục tiêu sâu nhất của MAP 12 là giúp cả hai hiểu rằng được thấu hiểu là một trong những nhu cầu cảm xúc sâu sắc nhất",
+    "của con người. Khi một người cảm thấy mình được nhìn thấy và được hiểu đúng, họ sẽ dễ mở lòng hơn, tin tưởng hơn và kết",
+    "nối sâu sắc hơn với đối phương. Đồng thời, MAP giúp cả hai nhận ra rằng một mối quan hệ bền vững không được xây dựng",
+    "trên khả năng đoán đúng suy nghĩ của nhau mà được xây dựng trên sự sẵn sàng liên tục tìm hiểu, lắng nghe, đặt câu hỏi và",
+    "khám phá thế giới bên trong của nhau qua từng giai đoạn cuộc sống. Khi cả hai hiểu được điều gì thật sự khiến đối phương",
+    "cảm thấy được thấu hiểu, rất nhiều khoảng cách cảm xúc sẽ được thu hẹp, những hiểu lầm sẽ giảm bớt, sự kết nối sẽ sâu",
+    "hơn và hành trình đồng hành sẽ trở nên ý nghĩa hơn rất nhiều theo thời gian.",
+    "1 NỘI DỤNG PHÂN TÍCH 40 CHƯƠNG CHUYÊN SÂU",
+    "===== TRANG 37/48 | ảnh - gốc/PSM - 6 =====",
+    "$ Loại phân tích: MAP đôi (2 MAP)"
   ],
   "blocks": [
     {
-      "title": "KHỐI 1 — NHẬN DIỆN CẢM GIÁC KHÔNG ĐƯỢC THẤU HIỂU",
+      "title": "Khối 1 — GỐC NHU CẦU ĐƯỢC THẤU HIỂU BÊN TRONG MỖI NGƯỜI",
       "chapters": [
         {
           "number": 1,
-          "title": "Những biểu hiện thường gặp khi một người cảm thấy không được hiểu",
-          "mainIndex": "",
+          "title": "Chương 1 — Nhu cầu sâu nhất khiến người A muốn được thấu hiểu",
+          "mainIndex": "Linh hồn o Chỉ số phụ: Cân bằng | | Đường đời",
           "subIndexes": []
         },
         {
           "number": 2,
-          "title": "Những cảm xúc xuất hiện bên trong",
-          "mainIndex": "",
+          "title": "Chương 2 — Nhu cầu sâu nhất khiến người B muốn được thấu hiểu",
+          "mainIndex": "Linh hồn o Chỉ số phụ: Cân bằng | | Đường đời",
           "subIndexes": []
         },
         {
           "number": 3,
-          "title": "Những hành vi phản ứng thường thấy",
-          "mainIndex": "",
+          "title": "Chương 3 — Điều gì khiến mỗi người cảm thấy mình được nhìn thấy thật sự",
+          "mainIndex": "Liên kết Linh hồn - Nhân cách Chỉ số phụ: Linh hồn | | Nhân cách",
           "subIndexes": []
         },
         {
           "number": 4,
-          "title": "Điều gì đang phản ánh thực trạng hiện tại",
-          "mainIndex": "",
+          "title": "Chương 4 — Những trải nghiệm nào đang ảnh hưởng đến nhu cầu được thấu hiểu hiện tại",
+          "mainIndex": "Bài học o Chỉ số phụ: Linh hồn | | Thách thức",
           "subIndexes": []
         }
       ]
     },
     {
-      "title": "KHỐI 2 — NHỮNG NGUYÊN NHÂN ĐANG TẠO RA CẢM GIÁC NÀY",
+      "title": "Khối 2 — ĐIỀU KHIẾN NGƯỜI A CẢM THẤY ĐƯỢC THẤU HIỂU",
       "chapters": [
         {
           "number": 5,
-          "title": "Những yếu tố làm giảm khả năng thấu hiểu giữa các thành viên",
-          "mainIndex": "",
+          "title": "Chương 5 — Điều người A cần nhất từ đối phương",
+          "mainIndex": "Linh hồn Chỉ số phụ: Liên kết Linh hồn - Nhân cách | | Cân bằng",
           "subIndexes": []
         },
         {
           "number": 6,
-          "title": "Những mô thức giao tiếp đang tồn tại",
-          "mainIndex": "",
+          "title": "Chương 6 — Điều gì khiến người A cảm thấy được lắng nghe",
+          "mainIndex": "Liên kết Linh hồn - Nhân cách Chỉ số phụ: Nhân cách | | Linh hồn",
           "subIndexes": []
         },
         {
           "number": 7,
-          "title": "Những hiểu lầm lặp đi lặp lại",
-          "mainIndex": "",
+          "title": "Chương 7 — Điều gì khiến người A cảm thấy được tôn trọng",
+          "mainIndex": "Nhân cách Chỉ số phụ: Linh hồn | | Cân bằng",
           "subIndexes": []
         },
         {
           "number": 8,
-          "title": "Điều gì đang duy trì khoảng cách hiện tại",
-          "mainIndex": "",
+          "title": "Chương 8 — Điều gì khiến người A cảm thấy mình không còn cô đơn trong mối quan hệ",
+          "mainIndex": "Cân bằng Chỉ số phụ: Linh hồn | | Đam mê",
           "subIndexes": []
         }
       ]
     },
     {
-      "title": "KHỐI 3 — ĐIỀU NGƯỜI ĐÓ THẬT SỰ MUỐN ĐƯỢC HIỂU",
+      "title": "Khối 3 — ĐIỀU KHIẾN NGƯỜI B CẢM THẤY ĐƯỢC THẤU HIỂU",
       "chapters": [
         {
           "number": 9,
-          "title": "Những nhu cầu cảm xúc sâu bên trong",
-          "mainIndex": "",
+          "title": "Chương 9 — Điều người B cần nhất từ đối phương",
+          "mainIndex": "Linh hồn Chỉ số phụ: Liên kết Linh hồn - Nhân cách | | Cân bằng",
           "subIndexes": []
         },
         {
           "number": 10,
-          "title": "Nhu cầu được lắng nghe",
-          "mainIndex": "",
+          "title": "Chương 10 — Điều gì khiến người B cảm thấy được lắng nghe",
+          "mainIndex": "Liên kết Linh hồn - Nhân cách Chỉ số phụ: Nhân cách | | Linh hồn",
           "subIndexes": []
         },
         {
           "number": 11,
-          "title": "Nhu cầu được công nhận cảm xúc",
-          "mainIndex": "",
+          "title": "Chương 11 — Điều gì khiến người B cảm thấy được tôn trọng",
+          "mainIndex": "Nhân cách Chỉ số phụ: Linh hồn | | Cân bằng",
           "subIndexes": []
         },
         {
           "number": 12,
-          "title": "Nhu cầu được đón nhận đúng với con người thật của mình",
-          "mainIndex": "",
+          "title": "Chương 12 — Điều gì khiến người B cảm thấy mình không còn cô đơn trong mối quan hệ",
+          "mainIndex": "Cân bằng Chỉ số phụ: Linh hồn | | Đam mê",
           "subIndexes": []
         }
       ]
     },
     {
-      "title": "KHỐI 4 — NHỮNG TỔN THƯƠNG KHIẾN CẢM GIÁC NÀY NGÀY CÀNG SÂU HƠN",
+      "title": "Khối 4 — NHỮNG KHÁC BIỆT TRONG NHU CẦU ĐƯỢC THẤU HIỂU",
       "chapters": [
         {
           "number": 13,
-          "title": "Những trải nghiệm đã tạo ra sự tổn thương",
-          "mainIndex": "",
+          "title": "Chương 13 — Sự khác nhau trong cách hai người cảm nhận sự thấu hiểu",
+          "mainIndex": "Liên kết Linh hồn - Nhân cách Chỉ số phụ: Linh hồn | | Nhân cách",
           "subIndexes": []
         },
         {
           "number": 14,
-          "title": "Những lần không được lắng nghe",
-          "mainIndex": "",
+          "title": "Chương 14 — Điều gì người A cần nhưng người B chưa nhận ra",
+          "mainIndex": "Linh hồn Chỉ số phụ: Thiếu | | Liên kết Linh hồn - Nhân cách",
           "subIndexes": []
         },
         {
           "number": 15,
-          "title": "Những lần bị hiểu sai",
-          "mainIndex": "",
+          "title": "Chương 15 — Điều gì người B cần nhưng người A chưa nhận ra",
+          "mainIndex": "Linh hồn Chỉ số phụ: Thiếu | | Liên kết Linh hồn - Nhân cách",
           "subIndexes": []
         },
         {
           "number": 16,
-          "title": "Điều gì đang làm gia tăng cảm giác cô đơn cảm xúc",
-          "mainIndex": "",
+          "title": "Chương 16 — Những hiểu lầm nào thường xuất hiện vì khác biệt nhu cầu kết nối",
+          "mainIndex": "Cân bằng Chỉ số phụ: Nhân cách | | Bài học",
           "subIndexes": []
         }
       ]
     },
     {
-      "title": "KHỐI 5 — NHỮNG ĐIỂM MẠNH VẪN CÒN TỒN TẠI TRONG HỆ GIA ĐÌNH",
+      "title": "Khối 5 — NHỮNG DẤU HIỆU CHO THẤY MỘT NGƯỜI ĐANG KHÔNG CẢM THẤY ĐƯỢC THẤU HIỂU",
       "chapters": [
         {
           "number": 17,
-          "title": "Những nguồn lực tích cực vẫn đang hiện diện",
-          "mainIndex": "",
+          "title": "Chương 17 — Các biểu hiện bên ngoài khi một người cảm thấy không được hiểu",
+          "mainIndex": "Nhân cách Chỉ số phụ: Cân bằng I | Thái độ",
           "subIndexes": []
         },
         {
           "number": 18,
-          "title": "Những giá trị tốt đẹp vẫn được duy trì",
-          "mainIndex": "",
+          "title": "Chương 18 — Điều gì xảy ra bên trong khi nhu cầu này không được đáp ứng",
+          "mainIndex": "Linh hồn Chỉ số phụ: Thiếu | | Bài học",
           "subIndexes": []
         },
         {
           "number": 19,
-          "title": "Những cơ hội để cải thiện sự thấu hiểu",
-          "mainIndex": "",
+          "title": "Chương 19 — Những cảm xúc nào dễ xuất hiện khi không được thấu hiểu",
+          "mainIndex": "Cân bằng Chỉ số phụ: Linh hồn | | Thách thức",
           "subIndexes": []
         },
         {
           "number": 20,
-          "title": "Điều gì nên tiếp tục được phát huy",
-          "mainIndex": "",
+          "title": "Chương 20 — Những hành vi nào được tạo ra từ cảm giác cô đơn và không được nhìn thấy",
+          "mainIndex": "Thái độ Chỉ số phụ: Cân bằng | | Sức mạnh tiềm thức",
           "subIndexes": []
         }
       ]
     },
     {
-      "title": "KHỐI 6 — ĐIỀU HỆ GIA ĐÌNH NÀY ĐANG DẠY CÁC THÀNH VIÊN VỀ SỰ THẤU HIỂU",
+      "title": "Khối 6 — NHỮNG ĐIỀU KHIẾN CẢ HAI DỄ HIỂU SAI NHAU",
       "chapters": [
         {
           "number": 21,
-          "title": "Những bài học mà gia đình đang truyền tải",
-          "mainIndex": "",
+          "title": "Chương 21 — Những khoảng cách trong giao tiếp giữa hai người",
+          "mainIndex": "Nhân cách Chỉ số phụ: Liên kết Linh hồn - Nhân cách I | Tư duy lý trí",
           "subIndexes": []
         },
         {
           "number": 22,
-          "title": "Những nhận thức đang được hình thành",
-          "mainIndex": "",
+          "title": "Chương 22 — Điều gì khiến cả hai tưởng rằng mình đã hiểu nhau nhưng thực tế chưa hiểu",
+          "mainIndex": "Tư duy lý trí o Chỉ số phụ: Nhân cách | | Bài học",
           "subIndexes": []
         },
         {
           "number": 23,
-          "title": "Những cách lắng nghe đang được học hỏi",
-          "mainIndex": "",
+          "title": "Chương 23 — Những mô thức phản ứng đang làm giảm chất lượng kết nối",
+          "mainIndex": "Sức mạnh tiềm thức Chỉ số phụ: Cân bằng | | Bài học",
           "subIndexes": []
         },
         {
           "number": 24,
-          "title": "Ý nghĩa phát triển phía sau các trải nghiệm hiện tại",
-          "mainIndex": "",
+          "title": "Chương 24 — Điều gì đang khiến sự thấu hiểu bị đứt gãy",
+          "mainIndex": "Bài học Chỉ số phụ: Cân bằng | | Thách thức",
           "subIndexes": []
         }
       ]
     },
     {
-      "title": "KHỐI 7 — HỆ QUẢ NẾU CẢM GIÁC KHÔNG ĐƯỢC THẤU HIỂU TIẾP TỤC KÉO DÀI",
+      "title": "Khối 7 — MÔI TRƯỜNG GIÚP SỰ THẤU HIỂU PHÁT TRIỂN",
       "chapters": [
         {
           "number": 25,
-          "title": "Những ảnh hưởng lâu dài",
-          "mainIndex": "",
+          "title": "Chương 25 — Môi trường nào giúp cả hai dễ mở lòng hơn",
+          "mainIndex": "Linh hồn o Chỉ số phụ: Cân bằng | | Đam mê",
           "subIndexes": []
         },
         {
           "number": 26,
-          "title": "Điều gì sẽ tiếp tục tạo khoảng cách",
-          "mainIndex": "",
+          "title": "Chương 26 — Điều gì giúp mỗi người cảm thấy an toàn để chia sẻ thật",
+          "mainIndex": "Cân bằng Chỉ số phụ: Linh hồn | | Liên kết Linh hồn - Nhân cách",
           "subIndexes": []
         },
         {
           "number": 27,
-          "title": "Điều gì sẽ tiếp tục ảnh hưởng đến cảm xúc",
-          "mainIndex": "",
+          "title": "Chương 27 — Những cách kết nối nào giúp tăng cảm giác được hiểu",
+          "mainIndex": "Liên kết Linh hồn - Nhân cách Chỉ số phụ: Linh hồn | | Đam mê",
           "subIndexes": []
         },
         {
           "number": 28,
-          "title": "Điều gì sẽ tiếp tục làm suy giảm kết nối",
-          "mainIndex": "",
+          "title": "Chương 28 — Điều gì giúp sự thấu hiểu ngày càng sâu sắc hơn theo thời gian",
+          "mainIndex": "Trưởng thành Chỉ số phụ: Linh hồn II Sứ mệnh",
           "subIndexes": []
         }
       ]
     },
     {
-      "title": "KHỐI 8 — TỬ HUYỆT KHI MỌI NGƯỜI ĐỀU MUỐN ĐƯỢC HIỂU NHƯNG KHÔNG BIẾT CÁCH HIỂU NHAU",
+      "title": "Khối 8 — TỬ HUYỆT KHI CẢ HAI NGHĨ MÌNH ĐÃ HIỂU NHAU",
       "chapters": [
         {
           "number": 29,
-          "title": "Điều gì xảy ra khi các thành viên đều có nhu cầu được thấu hiểu nhưng lại giao tiếp theo những cách khiến nhau tổn thương",
-          "mainIndex": "",
+          "title": "Chương 29 — Điều gì xảy ra khi một người chỉ hiểu bằng suy đoán",
+          "mainIndex": "Tư duy lý trí o Chỉ số phụ: Bài học | | Nhân cách",
           "subIndexes": []
         },
         {
           "number": 30,
-          "title": "Những hiểu lầm có thể kéo dài",
-          "mainIndex": "",
+          "title": "Chương 30 — Điều gì xảy ra khi cả hai ngừng tìm hiểu thế giới bên trong của nhau",
+          "mainIndex": "Thách thức Chỉ số phụ: Linh hồn | | Bài học",
           "subIndexes": []
         },
         {
           "number": 31,
-          "title": "Những tổn thương có thể tiếp tục tích tụ",
-          "mainIndex": "",
+          "title": "Chương 31 — Những mô thức nào khiến cảm giác cô đơn xuất hiện trong mối quan hệ",
+          "mainIndex": "Sức mạnh tiềm thức Chỉ số phụ: Thiếu | | Bài học",
           "subIndexes": []
         },
         {
           "number": 32,
-          "title": "Điều gì khiến khoảng cách ngày càng lớn hơn",
-          "mainIndex": "",
+          "title": "Chương 32 — Điều gì làm một người dần khép lòng dù vẫn còn tình cảm",
+          "mainIndex": "Thách thức Chỉ số phụ: Cân bằng I | Linh hồn",
           "subIndexes": []
         }
       ]
     },
     {
-      "title": "KHỐI 9 — PHIÊN BẢN GIA ĐÌNH KHI SỰ THẤU HIỂU ĐƯỢC XÂY DỰNG",
+      "title": "Khối 9 — PHIÊN BẢN KẾT NỐI SÂU SẮC KHI CẢ HAI THẬT SỰ THẤU HIỂU NHAU",
       "chapters": [
         {
           "number": 33,
-          "title": "Hình ảnh gia đình khi các thành viên cảm thấy được nhìn thấy và được hiểu",
-          "mainIndex": "",
+          "title": "Chương 33 — Điều gì thay đổi khi nhu cầu được thấu hiểu được đáp ứng",
+          "mainIndex": "Trưởng thành Chỉ số phụ: Linh hồn | | Cân bằng",
           "subIndexes": []
         },
         {
           "number": 34,
-          "title": "Điều sẽ thay đổi trong cảm xúc",
-          "mainIndex": "",
+          "title": "Chương 34 — Điều gì thay đổi trong cảm xúc và sự an toàn nội tâm",
+          "mainIndex": "Cân bằng Chỉ số phụ: Trưởng thành | | Linh hồn",
           "subIndexes": []
         },
         {
           "number": 35,
-          "title": "Điều sẽ thay đổi trong nhận thức",
-          "mainIndex": "",
+          "title": "Chương 35 — Điều gì thay đổi trong khả năng chia sẻ và đồng hành",
+          "mainIndex": "Trưởng thành Chỉ số phụ: Liên kết Linh hồn - Nhân cách | | Sứ mệnh",
           "subIndexes": []
         },
         {
           "number": 36,
-          "title": "Gia đình sẽ phát triển theo hướng nào",
-          "mainIndex": "",
+          "title": "Chương 36 — Phiên bản kết nối sâu sắc nhất của mối quan hệ sẽ như thế nào",
+          "mainIndex": "Liên kết Đường đời - Sứ mệnh Chỉ số phụ: Trưởng thành | | Linh hồn",
           "subIndexes": []
         }
       ]
     },
     {
-      "title": "KHỐI 10 — GIẢI PHÁP GIÚP GIA ĐÌNH TĂNG CƯỜNG SỰ THẤU HIỂU",
+      "title": "Khối 10 — GIẢI PHÁP GIÚP CẢ HAI THẤU HIỂU NHAU SÂU HƠN",
       "chapters": [
         {
           "number": 37,
-          "title": "Nhận diện những nhu cầu cảm xúc chưa được nhìn thấy",
-          "mainIndex": "",
+          "title": "Chương 37 — Cách nhận diện nhu cầu thật phía sau cảm xúc",
+          "mainIndex": "Tư duy lý trí o Chỉ số phụ: Linh hồn | | Cân bằng",
           "subIndexes": []
         },
         {
           "number": 38,
-          "title": "Học cách lắng nghe mà không phán xét",
-          "mainIndex": "",
+          "title": "Chương 38 — Cách lắng nghe mà không phán xét",
+          "mainIndex": "Liên kết Linh hồn - Nhân cách Chỉ số phụ: Nhân cách | | Cân bằng",
           "subIndexes": []
         },
         {
           "number": 39,
-          "title": "Học cách giao tiếp bằng sự đồng cảm",
-          "mainIndex": "",
+          "title": "Chương 39 — Cách hiểu sự khác biệt trong cách cảm nhận tình yêu và kết nối",
+          "mainIndex": "Linh hồn Chỉ số phụ: Tư duy lý trí | | Liên kết Linh hồn - Nhân cách",
           "subIndexes": []
         },
         {
           "number": 40,
-          "title": "Giúp mái nhà trở thành nơi mọi người được là chính mình mà không sợ bị hiểu sai hoặc bị từ chối",
-          "mainIndex": "",
+          "title": "Chương 40 — Con đường giúp mỗi người cảm thấy được nhìn thấy, được hiểu và được đón nhận",
+          "mainIndex": "Liên kết Đường đời - Sứ mệnh Chỉ số phụ: Linh hồn | | Trưởng thành",
           "subIndexes": []
         }
       ]

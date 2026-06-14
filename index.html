@@ -415,27 +415,31 @@
 
       const MAP_DATA_CONFIG = {
         "family-child": { dataCategoryId: "family-child", mapModule: "category-family-child", imageFolder: "chap1", imagePattern: "number", supportsMultipleImages: false, codePrefix: "FAM" },
-        "human-decoding": { dataCategoryId: "human-decode", mapModule: "category-human-decode", imageFolder: "Images_Clone_CATEGOGY2", imagePattern: "number", supportsMultipleImages: false, codePrefix: "DEC" },
+        "human-decoding": { dataCategoryId: "human-decode", mapModule: "category-human-decode", imageFolder: "chap2", imagePattern: "number", supportsMultipleImages: false, codePrefix: "DEC" },
         "grow-together": { dataCategoryId: "grow-together", mapModule: "category-grow-together", imageFolder: "chap3", imagePattern: "number", supportsMultipleImages: false, codePrefix: "GRW" },
         "peaceful-home": { dataCategoryId: "peaceful-home", mapModule: "category-peaceful-home", imageFolder: "chap4", imagePattern: "number", supportsMultipleImages: false, codePrefix: "HOM" },
-        "healing-family": { dataCategoryId: "healing-family", mapModule: "category-healing-family", imageFolder: "Images_Clone_CATEGOGY5", imagePattern: "number", supportsMultipleImages: false, codePrefix: "HLF" },
-        "strong-marriage": { dataCategoryId: "sustainable-marriage", mapModule: "category-sustainable-marriage", imageFolder: "Images_Clone_CATEGOGY6", imagePattern: "number", supportsMultipleImages: false, codePrefix: "MAR" },
-        "reconnect-couple": { dataCategoryId: "couple-reconnect", mapModule: "category-couple-reconnect", imageFolder: "Images_Clone_CATEGOGY7", imagePattern: "number", supportsMultipleImages: false, codePrefix: "REC" },
-        "love-myself": { dataCategoryId: "self-love", mapModule: "category-self-love", imageFolder: "Images_Clone_CATEGOGY8", imagePattern: "number", supportsMultipleImages: false, codePrefix: "SLF" },
-        "childhood-healing": { dataCategoryId: "childhood-healing", mapModule: "category-childhood-healing", imageFolder: "Images_Clone_CATEGOGY9", imagePattern: "number", supportsMultipleImages: false, codePrefix: "CHD" },
-        "generational-healing": { dataCategoryId: "generational-healing", mapModule: "category-generational-healing", imageFolder: "Images_Clone_CATEGOGY10", imagePattern: "number", supportsMultipleImages: false, codePrefix: "GEN" },
-        "inner-child": { dataCategoryId: "inner-child", mapModule: "category-inner-child", imageFolder: "Images_Clone_CATEGOGY11", imagePattern: "number", supportsMultipleImages: false, codePrefix: "INR" },
-        "root-family": { dataCategoryId: "family-origin", mapModule: "category-family-origin", imageFolder: "Images_Clone_CATEGOGY12", imagePattern: "number", supportsMultipleImages: false, codePrefix: "ROT" },
-        "mother-child": { dataCategoryId: "mother-child", mapModule: "category-mother-child", imageFolder: "Images_Clone_CATEGOGY13", imagePattern: "number", supportsMultipleImages: false, codePrefix: "MOM" },
-        "father-child": { dataCategoryId: "father-child", mapModule: "category-father-child", imageFolder: "Images_Clone_CATEGOGY14", imagePattern: "number", supportsMultipleImages: false, codePrefix: "DAD" },
-        "marriage-emotion-healing": { dataCategoryId: "marriage-emotion", mapModule: "category-marriage-emotion", imageFolder: "Images_Clone_CATEGOGY15", imagePattern: "number", supportsMultipleImages: false, codePrefix: "EMO" }
+        "healing-family": { dataCategoryId: "healing-family", mapModule: "category-healing-family", imageFolder: "chap5", imagePattern: "number", supportsMultipleImages: false, codePrefix: "HLF" },
+        "strong-marriage": { dataCategoryId: "sustainable-marriage", mapModule: "category-sustainable-marriage", imageFolder: "chap6", imagePattern: "number", supportsMultipleImages: false, codePrefix: "MAR" },
+        "reconnect-couple": { dataCategoryId: "couple-reconnect", mapModule: "category-couple-reconnect", imageFolder: "chap7", imagePattern: "number", supportsMultipleImages: false, codePrefix: "REC" },
+        "love-myself": { dataCategoryId: "self-love", mapModule: "category-self-love", imageFolder: "chap8", imagePattern: "number", supportsMultipleImages: false, codePrefix: "SLF" },
+        "childhood-healing": { dataCategoryId: "childhood-healing", mapModule: "category-childhood-healing", imageFolder: "chap9", imagePattern: "number", supportsMultipleImages: false, codePrefix: "CHD" },
+        "generational-healing": { dataCategoryId: "generational-healing", mapModule: "category-generational-healing", imageFolder: "chap10", imagePattern: "number", supportsMultipleImages: false, codePrefix: "GEN" },
+        "inner-child": { dataCategoryId: "inner-child", mapModule: "category-inner-child", imageFolder: "chap11", imagePattern: "number", supportsMultipleImages: false, codePrefix: "INR" },
+        "root-family": { dataCategoryId: "family-origin", mapModule: "category-family-origin", imageFolder: "chap12", imagePattern: "number", supportsMultipleImages: false, codePrefix: "ROT" },
+        "mother-child": { dataCategoryId: "mother-child", mapModule: "category-mother-child", imageFolder: "chap13", imagePattern: "number", supportsMultipleImages: false, codePrefix: "MOM" },
+        "father-child": { dataCategoryId: "father-child", mapModule: "category-father-child", imageFolder: "chap14", imagePattern: "number", supportsMultipleImages: false, codePrefix: "DAD" },
+        "marriage-emotion-healing": { dataCategoryId: "marriage-emotion", mapModule: "category-marriage-emotion", imageFolder: "chap15", imagePattern: "number", supportsMultipleImages: false, codePrefix: "EMO" }
       };
 
       const IMAGEKIT_BASE = "https://ik.imagekit.io/noc";
       const DIRECTORY_PAGE_SIZE = 10;
+      const IMAGE_PRELOAD_BATCH_SIZE = 8;
       const mapCache = new Map();
       const previewCache = new Map();
+      const imageStatusCache = new Map();
+      const preloadedCategoryImages = new Set();
       let selectedMaps = [];
+      let selectedDirectoryCategory = null;
       let selectedPage = 1;
       let detailQuery = "";
       let detailSort = "number";
@@ -500,6 +504,45 @@
         return `${IMAGEKIT_BASE}${transform}/${getMapImagePath(category, mapNumber, 1)}`;
       }
 
+      function checkImageUrl(url) {
+        if (imageStatusCache.has(url)) return Promise.resolve(imageStatusCache.get(url));
+        return new Promise((resolve) => {
+          const img = new Image();
+          img.onload = () => {
+            imageStatusCache.set(url, true);
+            resolve(true);
+          };
+          img.onerror = () => {
+            imageStatusCache.set(url, false);
+            resolve(false);
+          };
+          img.src = url;
+        });
+      }
+
+      function markMapImageStatus(url, status) {
+        imageStatusCache.set(url, status);
+      }
+
+      function scheduleImagePreload(category, maps) {
+        if (!category || !maps?.length || preloadedCategoryImages.has(category.id)) return;
+        preloadedCategoryImages.add(category.id);
+        const urls = maps.map((map) => getMapImageUrl(category, map.number));
+        let index = 0;
+        const runBatch = () => {
+          const batch = urls.slice(index, index + IMAGE_PRELOAD_BATCH_SIZE);
+          index += IMAGE_PRELOAD_BATCH_SIZE;
+          Promise.all(batch.map(checkImageUrl)).finally(() => {
+            if (selectedDirectoryCategory?.id === category.id) renderDirectoryGrid(category);
+            if (index < urls.length) {
+              const schedule = window.requestIdleCallback || ((callback) => setTimeout(callback, 120));
+              schedule(runBatch);
+            }
+          });
+        };
+        runBatch();
+      }
+
       async function loadMapsForCategory(category) {
         const config = getCategoryConfig(category);
         if (!config.mapModule) return [];
@@ -539,6 +582,8 @@
 
       function renderDirectoryBook(category, map) {
         const title = `MAP ${map.number} - ${map.title}`;
+        const imageUrl = getMapImageUrl(category, map.number);
+        const imageAvailable = imageStatusCache.get(imageUrl);
         return `
           <article class="group flex flex-col items-center text-center cursor-pointer">
             <div class="relative w-full aspect-[3/4] mb-6 transition-soft group-hover:-translate-y-2">
@@ -546,7 +591,7 @@
               <div class="relative w-full h-full rounded-sm overflow-hidden book-shadow flex bg-surface-container-lowest">
                 <div class="w-2 h-full bg-primary/20 absolute left-0 z-20 book-spine-effect"></div>
                 ${renderMapDirectoryFallback(title)}
-                <img alt="${escapeHtml(title)}" class="map-directory-cover-img absolute inset-0 h-full w-full object-cover z-10" src="${getMapImageUrl(category, map.number)}" loading="lazy" decoding="async" onerror="this.classList.add('is-hidden')" />
+                ${imageAvailable === false ? "" : `<img alt="${escapeHtml(title)}" class="map-directory-cover-img absolute inset-0 h-full w-full object-cover z-10" src="${imageUrl}" loading="lazy" decoding="async" onload="markMapImageStatus(this.src, true)" onerror="markMapImageStatus(this.src, false); this.classList.add('is-hidden')" />`}
               </div>
             </div>
             <span class="text-label-sm font-label-sm text-primary-container bg-primary-container/10 px-3 py-1 rounded-full mb-3">${mapCode(category, map)}</span>
@@ -720,6 +765,7 @@
 
         try {
           selectedMaps = await loadMapsForCategory(selectedMap);
+          selectedDirectoryCategory = selectedMap;
           document.querySelector("[data-map-directory-shell]").innerHTML = `
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-8 gap-y-12" data-map-directory-grid></div>
             <div class="hidden bg-surface-container-low p-10 rounded-2xl text-center text-on-surface-variant" data-map-directory-empty>Chưa tìm thấy bản đồ phù hợp.</div>
@@ -735,6 +781,7 @@
           `;
           bindDirectoryEvents(selectedMap);
           renderDirectoryGrid(selectedMap);
+          scheduleImagePreload(selectedMap, selectedMaps);
         } catch (error) {
           document.querySelector("[data-map-directory-shell]").innerHTML = `<div class="bg-surface-container-low p-10 rounded-2xl text-center text-on-surface-variant">Chưa tải được dữ liệu MAP của danh mục này.</div>`;
           console.error(error);

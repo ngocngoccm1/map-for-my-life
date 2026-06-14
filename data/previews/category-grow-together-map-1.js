@@ -1,310 +1,350 @@
 export const preview = {
   "id": "grow-together-1",
-  "title": "MAP 1 - GIA ĐÌNH NÀY ĐANG THẬT SỰ MANG NĂNG LƯỢNG NHƯ THẾ NÀO?",
+  "title": "MAP 1 — HIỆN TẠI HAI NGƯỜI ĐANG THẬT SỰ ĐỒNG HÀNH VỚI NHAU THEO CÁCH NÀO?",
   "coreGoal": [
-    "🌟 MỤC TIÊU CỐT LÕI CỦA MAP",
-    "◇ MAP này không đi theo hướng đánh giá gia đình là tốt hay xấu, tích cực hay tiêu cực, hạnh phúc hay bất hạnh. Trọng tâm của MAP là giúp nhìn ra trường năng lượng thật sự đang tồn tại trong hệ gia đình, những cảm xúc đang được nuôi dưỡng mỗi ngày, những mô thức đang vận hành phía sau các tương tác và bầu không khí mà các thành viên đang cùng nhau tạo ra.",
-    "◇ Rất nhiều gia đình nhìn bề ngoài có thể rất ổn định nhưng bên trong lại chứa đựng áp lực, khoảng cách hoặc những cảm xúc chưa được nói ra. Ngược lại cũng có những gia đình từng trải qua nhiều khó khăn nhưng lại sở hữu sự gắn kết, chữa lành và bình an rất sâu sắc.",
-    "◇ Năng lượng gia đình không được quyết định bởi điều kiện vật chất, địa vị xã hội hay thành công bên ngoài. Nó được tạo nên từ cách các thành viên suy nghĩ về nhau, cảm nhận về nhau, giao tiếp với nhau và đồng hành cùng nhau qua thời gian.",
-    "◇ Có những gia đình mang năng lượng yêu thương và an toàn cảm xúc. Có những gia đình mang năng lượng kiểm soát, áp lực hoặc phòng thủ. Có những gia đình mang năng lượng chữa lành, phát triển và trưởng thành. Cũng có những gia đình đang mang theo những tổn thương chưa được giải quyết từ nhiều năm trước.",
-    "◇ MAP giúp nhìn ra những nguồn năng lượng đang chi phối hệ gia đình hiện tại. Điều gì đang tạo ra cảm giác bình an. Điều gì đang tạo ra sự căng thẳng. Điều gì đang nuôi dưỡng kết nối và điều gì đang làm suy giảm kết nối.",
-    "◇ Đồng thời MAP giúp xác định những yếu tố cần được duy trì, những điều cần được điều chỉnh và những cơ hội chữa lành đang hiện diện để gia đình có thể phát triển theo hướng lành mạnh hơn.",
-    "◇ MAP đọc toàn bộ chuỗi vận hành theo trình tự: Năng lượng hiện tại → Cảm xúc chủ đạo → Cách tương tác → Mô thức vận hành → Ảnh hưởng lên từng thành viên → Ảnh hưởng lên toàn hệ gia đình → Điều cần nhận diện → Điều cần chữa lành → Điều cần phát triển → Hướng đi tương lai.",
-    "◇ MAP này giúp gia đình nhìn thấy điều mà nhiều người thường bỏ qua: năng lượng gia đình không phải là điều vô hình khó hiểu mà là tổng hòa của những cảm xúc, suy nghĩ, hành vi và tương tác được lặp lại mỗi ngày.",
-    "◇ Khi nhìn thấy rõ trường năng lượng đang vận hành, các thành viên sẽ hiểu vì sao mình cảm thấy như hiện tại và điều gì đang tác động đến chất lượng cuộc sống của cả hệ gia đình.",
-    "◇ Khi hiểu được nguồn gốc của những năng lượng tích cực và tiêu cực, gia đình sẽ có cơ hội chủ động xây dựng một môi trường chữa lành, phát triển và bình an hơn.",
-    "◇ Một gia đình chữa lành không phải là gia đình không có tổn thương. Một gia đình chữa lành là gia đình đủ nhận thức để nhìn thấy điều đang diễn ra và đủ trưởng thành để cùng nhau tạo ra những thay đổi tích cực.",
-    "━━━━━━━━━━━━━━━",
-    "🔒 NỘI DUNG PHÂN TÍCH 40 CHƯƠNG CHUYÊN SÂU",
-    "━━━━━━━━━━━━━━━"
+    "CỦA MAP",
+    "MAP này không được xây dựng để đánh giá hai người có hợp nhau hay không, ai yêu nhiều hơn ai, ai hy sinh nhiều hơn ai",
+    "hoặc dự đoán kết quả cuối cùng của mối quan hệ. MAP cũng không nhằm xác định ai đúng ai sai trong những xung đột đã",
+    "xảy ra. Trọng tâm của MAP là nhìn thẳng vào bản chất thật của sự đồng hành đang tồn tại giữa hai người ở thời điểm hiện",
+    "tại.",
+    "MAP giúp hai người nhận diện điều gì đang thật sự giữ họ ở lại trong cuộc đời nhau. Đó có thể là tình yêu, sự thấu hiểu,",
+    "cảm giác an toàn, trách nhiệm, thói quen gắn bó, nhu cầu được công nhận, nhu cầu được chữa lành, sự phụ thuộc cảm xúc,",
+    "những mục tiêu chung hoặc những khoảng trống nội tâm mà cả hai đang vô thức tìm kiếm ở nhau. MAP giúp phân biệt rõ",
+    "điều gì là kết nối thật và điều gì chỉ là sự gắn bó được duy trì bởi nỗi sợ hoặc nhu cầu chưa được gọi tên.",
+    "MAP giúp làm rõ cách bản chất cá nhân của mỗi người ảnh hưởng đến cách họ bước vào mối quan hệ, cách họ tìm kiếm",
+    "sự kết nối và cách họ lựa chọn đồng hành cùng đối phương. Những khác biệt trong nhu cầu, cảm xúc, niềm tin và trải",
+    "nghiệm sống sẽ tạo nên những cách yêu thương và gắn bó rất khác nhau giữa các cặp đôi.",
+    "MAP giúp phân tích cách các nhu cầu cảm xúc bên trong hình thành nên kỳ vọng đối với người đồng hành. Khi nhu cầu",
+    "được đáp ứng, con người thường cảm thấy được kết nối, được thấu hiểu và được an toàn. Ngược lại, khi nhu cầu không",
+    "được nhìn thấy hoặc không được đáp ứng, khoảng cách cảm xúc sẽ dần xuất hiện dù cả hai vẫn đang ở cạnh nhau.",
+    "MAP giúp làm rõ cơ chế tâm lý và cảm xúc đang vận hành trong mối quan hệ. Nhu cầu bên trong tạo ra kỳ vọng, kỳ vọng",
+    "tạo ra cách kết nối, cách kết nối tạo ra cảm xúc, cảm xúc tạo ra hành vi và những hành vi được lặp lại theo thời gian sẽ hình",
+    "thành nên mô thức đồng hành đặc trưng của hai người.",
+    "MAP giúp nhận diện cách hai người đang yêu thương, hỗ trợ, tương tác và phản ứng với nhau trong cuộc sống hằng ngày.",
+    "Thông qua những phản ứng quen thuộc khi vui vẻ, thất vọng, tổn thương, căng thẳng hoặc bất đồng, MAP giúp làm rõ",
+    "những mô thức kết nối đang được duy trì trong mối quan hệ hiện tại.",
+    "MAP giúp phân tích cách hai người phản ứng khi tổn thương, khi nhu cầu không được đáp ứng hoặc khi cảm thấy không",
+    "được thấu hiểu. Đây là những thời điểm bộc lộ rõ nhất cách mỗi người bảo vệ bản thân, tìm kiếm sự an toàn và duy trì hoặc",
+    "làm suy giảm sự kết nối với đối phương.",
+    "MAP giúp làm rõ cách các hành vi và phản ứng được lặp lại theo thời gian tạo thành những mô thức đồng hành vô hình.",
+    "Chính những mô thức này sẽ quyết định chất lượng kết nối, mức độ gắn bó, cảm giác an toàn và hướng phát triển lâu dài",
+    "của mối quan hệ.",
+    "MAP giúp giải mã vì sao có những cặp đôi rất yêu nhau nhưng vẫn thường xuyên cảm thấy cô đơn, không được thấu hiểu",
+    "hoặc khó kết nối sâu sắc. Đồng thời MAP cũng giúp làm rõ vì sao có những cặp đôi không quá lãng mạn nhưng lại xây",
+    "dựng được sự đồng hành ổn định, bền vững và lâu dài.",
+    "MAP giúp nhận diện những yếu tố đang nuôi dưỡng sự kết nối giữa hai người cũng như những yếu tố đang âm thầm tạo",
+    "ra khoảng cách. Điều này giúp cả hai nhìn thấy rõ hơn nền tảng thật sự đang nâng đỡ hoặc làm suy yếu mối quan hệ của",
+    "mình.",
+    "MAP giúp làm rõ rằng điều giữ một mối quan hệ tồn tại không phải lúc nào cũng chỉ là tình yêu. Đôi khi đó còn là trách",
+    "nhiệm, sự quen thuộc, nhu cầu được công nhận, nhu cầu được chữa lành, nỗi sợ mất mát, sự phụ thuộc cảm xúc hoặc",
+    "những mục tiêu chung mà hai người đang cùng hướng tới.",
+    "MAP giúp phân tích những động lực sâu bên dưới quyết định việc hai người tiếp tục lựa chọn đồng hành cùng nhau.",
+    "Thông qua đó giúp mỗi người hiểu rõ hơn điều gì đang thực sự kết nối mình với đối phương thay vì chỉ nhìn vào những biểu",
+    "hiện bên ngoài của mối quan hệ.",
+    "MAP giúp xây dựng nhận thức rõ ràng hơn về trạng thái thật của mối quan hệ hiện tại. Khi nhìn thấy được điều gì đang",
+    "vận hành phía dưới cảm xúc, hành vi và các tương tác hằng ngày, hai người sẽ có cơ hội đưa ra những lựa chọn trưởng",
+    "thành và phù hợp hơn cho hành trình đồng hành phía trước.",
+    "Toàn bộ hành trình phân tích theo logic: Bản chất cá nhân tạo ra nhu cầu cảm xúc ¬ Nhu cầu cảm xúc hình thành kỳ",
+    "vọng trong mối quan hệ ¬ Kỳ vọng quyết định cách kết nối và yêu thương ¬ Cách kết nối tạo ra cảm xúc trong quá trình",
+    "đồng hành ¬ Cảm xúc dẫn đến hành vi và phản ứng thường ngày ¬ Hành vi lặp lại hình thành mô thức đồng hành ¬› Mô",
+    "thức đồng hành tạo nên chất lượng kết nối hiện tại H¬ Nhận diện điều gì đang nuôi dưỡng sự gắn bó và điều gì đang tạo",
+    "===== TRANG 2/48 | ảnh - gốc/PSM - 6 =====",
+    "khoảng cách ¬ Hiểu rõ động lực thật sự khiến cả hai tiếp tục ở lại bên nhau ¬ Xây dựng sự đồng hành dựa trên nhận thức,",
+    "thấu hiểu và lựa chọn trưởng thành hơn.",
+    "Mục tiêu sâu nhất của MAP 1 là giúp hai người nhìn thấy sự thật đang vận hành bên dưới mối quan hệ hiện tại, hiểu rõ",
+    "điều gì đang nuôi dưỡng kết nối, điều gì đang tạo khoảng cách và điều gì đang khiến cả hai tiếp tục lựa chọn đồng hành",
+    "cùng nhau. Khi hiểu được nền móng thật sự của mối quan hệ, hai người sẽ có cơ hội xây dựng sự đồng hành dựa trên nhận",
+    "thức rõ ràng hơn, trưởng thành hơn và bền vững hơn. Điều quan trọng nhất không phải biết mối quan hệ này có đi được bao",
+    "xa, mà là hiểu được hôm nay cả hai đang thật sự đi cùng nhau vì điều gì.",
+    "1 NỘI DỤNG PHÂN TÍCH 40 CHƯƠNG CHUYÊN SÂU"
   ],
   "blocks": [
     {
-      "title": "KHỐI 1 — NHẬN DIỆN TRƯỜNG NĂNG LƯỢNG TỔNG THỂ CỦA GIA ĐÌNH",
+      "title": "Khối 1 — GỐC BẢN CHẤT KẾT NỐI GIỮA HAI NGƯỜI",
       "chapters": [
         {
           "number": 1,
-          "title": "Bầu không khí cảm xúc đang tồn tại trong gia đình",
-          "mainIndex": "",
+          "title": "Chương 1 — Điều gì trong bản chất của hai người đã tạo nên sự kết nối ban đầu",
+          "mainIndex": "Đường đời Chỉ số phụ: Linh hồn II Đường đời đối phương",
           "subIndexes": []
         },
         {
           "number": 2,
-          "title": "Những cảm xúc xuất hiện thường xuyên nhất.",
-          "mainIndex": "",
+          "title": "Chương 2 — Hai người đang bị thu hút nhau bởi điều gì sâu nhất",
+          "mainIndex": "Linh hồn o Chỉ số phụ: Đam mê | | Nhân cách",
           "subIndexes": []
         },
         {
           "number": 3,
-          "title": "Những nguồn năng lượng tích cực đang hiện diện",
-          "mainIndex": "",
+          "title": "Chương 3 — Nền tảng đồng hành hiện tại đang được xây trên nhu cầu nào",
+          "mainIndex": "Linh hồn o Chỉ số phụ: Cân bằng I | Liên kết Linh hồn - Nhân cách",
           "subIndexes": []
         },
         {
           "number": 4,
-          "title": "Điều gì đang phản ánh rõ nhất năng lượng hiện tại của hệ gia đình",
-          "mainIndex": "",
+          "title": "Chương 4 — Điều gì khiến hai người quyết định ở lại trong cuộc đời nhau",
+          "mainIndex": "Đường đời Chỉ số phụ: Sứ mệnh | | Linh hồn",
           "subIndexes": []
         }
       ]
     },
     {
-      "title": "KHỐI 2 — NHỮNG MÔ THỨC ĐANG TẠO RA NĂNG LƯỢNG NÀY",
+      "title": "Khối 2 — NHU CẦU CỐT LÕI ĐANG GIỮ HAI NGƯỜI Ở LẠI",
       "chapters": [
         {
           "number": 5,
-          "title": "Những vòng lặp đang vận hành phía sau các tương tác gia đình",
-          "mainIndex": "",
+          "title": "Chương 5 — Điều người A thật sự đang tìm kiếm từ người B",
+          "mainIndex": "Linh hồn o Chỉ số phụ: Đam mê | | Thiếu",
           "subIndexes": []
         },
         {
           "number": 6,
-          "title": "Những thói quen giao tiếp đang lặp lại",
-          "mainIndex": "",
+          "title": "Chương 6 — Điều người B thật sự đang tìm kiếm từ người A",
+          "mainIndex": "Linh hồn o Chỉ số phụ: Đam mê | | Thiếu",
           "subIndexes": []
         },
         {
           "number": 7,
-          "title": "Những phản ứng vô thức đang xuất hiện",
-          "mainIndex": "",
+          "title": "Chương 7 — Nhu cầu nào đang kết nối hai người mạnh nhất",
+          "mainIndex": "Liên kết Linh hồn - Nhân cách Chỉ số phụ: Linh hồn | | Đường đời",
           "subIndexes": []
         },
         {
           "number": 8,
-          "title": "Điều gì đang duy trì trường năng lượng hiện tại",
-          "mainIndex": "",
+          "title": "Chương 8 — Điều gì sẽ xảy ra nếu nhu cầu cốt lõi này không được đáp ứng",
+          "mainIndex": "Cân bằng Chỉ số phụ: Linh hồn | | Bài học",
           "subIndexes": []
         }
       ]
     },
     {
-      "title": "KHỐI 3 — NĂNG LƯỢNG ĐANG TÁC ĐỘNG LÊN TỪNG THÀNH VIÊN NHƯ THẾ NÀO?",
+      "title": "Khối 3 — CÁCH HAI NGƯỜI ĐANG KẾT NỐI VỚI NHAU",
       "chapters": [
         {
           "number": 9,
-          "title": "Ảnh hưởng của môi trường gia đình lên từng cá nhân",
-          "mainIndex": "",
+          "title": "Chương 9 — Hai người đang kết nối với nhau bằng cảm xúc hay trách nhiệm",
+          "mainIndex": "Liên kết Đường đời - Sứ mệnh Chỉ số phụ: Linh hồn II Sứ mệnh",
           "subIndexes": []
         },
         {
           "number": 10,
-          "title": "Điều các thành viên đang hấp thụ mỗi ngày",
-          "mainIndex": "",
+          "title": "Chương 10 — Điều giúp cả hai cảm thấy gần gũi nhất",
+          "mainIndex": "Linh hồn o Chỉ số phụ: Đam mê | | Cân bằng",
           "subIndexes": []
         },
         {
           "number": 11,
-          "title": "Điều đang tiếp thêm năng lượng",
-          "mainIndex": "",
+          "title": "Chương 11 — Điều đang tạo ra khoảng cách giữa hai người",
+          "mainIndex": "Cân bằng Chỉ số phụ: Nhân cách | | Bài học",
           "subIndexes": []
         },
         {
           "number": 12,
-          "title": "Những ảnh hưởng cảm xúc đang diễn ra âm thầm",
-          "mainIndex": "",
+          "title": "Chương 12 — Kiểu kết nối đang vận hành mạnh nhất trong mối quan hệ",
+          "mainIndex": "Liên kết Linh hồn - Nhân cách Chỉ số phụ: Đường đời | | Linh hồn",
           "subIndexes": []
         }
       ]
     },
     {
-      "title": "KHỐI 4 — NHỮNG TỔN THƯƠNG VÀ THIẾU HỤT ĐANG ẨN SAU TRƯỜNG NĂNG LƯỢNG HIỆN TẠI",
+      "title": "Khối 4 — CƠ CHẾ CẢM XÚC ĐANG VẬN HÀNH TRONG MỐI QUAN HỆ",
       "chapters": [
         {
           "number": 13,
-          "title": "Những nhu cầu chưa được đáp ứng",
-          "mainIndex": "",
+          "title": "Chương 13 — Người A đang tạo cảm xúc gì cho người B",
+          "mainIndex": "Linh hồn o Chỉ số phụ: Nhân cách | | Cân bằng",
           "subIndexes": []
         },
         {
           "number": 14,
-          "title": "Những tổn thương đang tồn tại",
-          "mainIndex": "",
+          "title": "Chương 14 — Người B đang tạo cảm xúc gì cho người A",
+          "mainIndex": "Linh hồn o Chỉ số phụ: Nhân cách | | Cân bằng",
           "subIndexes": []
         },
         {
           "number": 15,
-          "title": "Những nỗi sợ đang ảnh hưởng đến hệ gia đình",
-          "mainIndex": "",
+          "title": "Chương 15 — Cảm xúc chủ đạo của mối quan hệ hiện tại là gì",
+          "mainIndex": "Cân bằng Chỉ số phụ: Linh hồn | | Liên kết Linh hồn - Nhân cách",
           "subIndexes": []
         },
         {
           "number": 16,
-          "title": "Điều gì đang tạo nên sự mất cân bằng hiện tại",
-          "mainIndex": "",
+          "title": "Chương 16 — Điều gì đang làm cảm xúc giữa hai người ngày càng gần hoặc ngày càng xa",
+          "mainIndex": "Cân bằng Chỉ số phụ: Bài học | | Thách thức",
           "subIndexes": []
         }
       ]
     },
     {
-      "title": "KHỐI 5 — NHỮNG ĐIỂM MẠNH VÀ NGUỒN LỰC CHỮA LÀNH ĐANG HIỆN DIỆN",
+      "title": "Khối 5 — CƠ CHẾ SUY NGHĨ & NHẬN THỨC VỀ MỐI QUAN HỆ",
       "chapters": [
         {
           "number": 17,
-          "title": "Những yếu tố tích cực vẫn đang tồn tại trong gia đình",
-          "mainIndex": "",
+          "title": "Chương 17 — Người A đang hiểu mối quan hệ này theo cách nào",
+          "mainIndex": "Tư duy lý trí o Chỉ số phụ: Linh hồn I | Đường đời ===== TRANG 3/48 | ảnh - gốc/PSM - 6 =====",
           "subIndexes": []
         },
         {
           "number": 18,
-          "title": "Những giá trị đang được duy trì",
-          "mainIndex": "",
+          "title": "Chương 18 — Người B đang hiểu mối quan hệ này theo cách nào",
+          "mainIndex": "Tư duy lý trí o Chỉ số phụ: Linh hồn I | Đường đời",
           "subIndexes": []
         },
         {
           "number": 19,
-          "title": "Những kết nối còn hiện diện",
-          "mainIndex": "",
+          "title": "Chương 19 — Những kỳ vọng đang vận hành bên trong hai người",
+          "mainIndex": "Thái độ Chỉ số phụ: Linh hồn | | Đam mê",
           "subIndexes": []
         },
         {
           "number": 20,
-          "title": "Điều gì có thể trở thành nền tảng phát triển lâu dài",
-          "mainIndex": "",
+          "title": "Chương 20 — Những nhận thức nào đang giúp hoặc cản trở kết nối",
+          "mainIndex": "Tư duy lý trí o Chỉ số phụ: Bài học | | Cân bằng",
           "subIndexes": []
         }
       ]
     },
     {
-      "title": "KHỐI 6 — ĐIỀU GIA ĐÌNH NÀY ĐANG CỐ GẮNG DẠY CÁC THÀNH VIÊN",
+      "title": "Khối 6 — MÔ THỨC ĐỒNG HÀNH HIỆN TẠI CỦA HAI NGƯỜI",
       "chapters": [
         {
           "number": 21,
-          "title": "Những bài học mà hệ gia đình đang vô thức hoặc hữu thức truyền tải",
-          "mainIndex": "",
+          "title": "Chương 21 — Hai người đang đồng hành theo kiểu chữa lành, phát triển hay phụ thuộc",
+          "mainIndex": "Bài học o Chỉ số phụ: Linh hồn | | Thách thức",
           "subIndexes": []
         },
         {
           "number": 22,
-          "title": "Những giá trị đang được hình thành",
-          "mainIndex": "",
+          "title": "Chương 22 — Điều đang được lặp lại nhiều nhất trong mối quan hệ",
+          "mainIndex": "Bài học Chỉ số phụ: Cân bằng | | Thách thức",
           "subIndexes": []
         },
         {
           "number": 23,
-          "title": "Những nhận thức đang được xây dựng",
-          "mainIndex": "",
+          "title": "Chương 23 — Kiểu vai trò mà mỗi người đang giữ trong mối quan hệ",
+          "mainIndex": "Nhân cách Chỉ số phụ: Liên kết Linh hồn - Nhân cách | | Thái độ",
           "subIndexes": []
         },
         {
           "number": 24,
-          "title": "Ý nghĩa phát triển phía sau các trải nghiệm hiện tại",
-          "mainIndex": "",
+          "title": "Chương 24 — Mô thức nào đang quyết định cách hai người đi cùng nhau",
+          "mainIndex": "Thách thức Chỉ số phụ: Bài học | | Sức mạnh tiềm thức",
           "subIndexes": []
         }
       ]
     },
     {
-      "title": "KHỐI 7 — HỆ QUẢ NẾU NĂNG LƯỢNG HIỆN TẠI TIẾP TỤC DUY TRÌ",
+      "title": "Khối 7 — ĐIỀU HAI NGƯỜI ĐANG BỔ SUNG CHO NHAU",
       "chapters": [
         {
           "number": 25,
-          "title": "Những ảnh hưởng lâu dài của trường năng lượng hiện tại",
-          "mainIndex": "",
+          "title": "Chương 25 — Người A đang giúp người B phát triển điều gì",
+          "mainIndex": "Sứ mệnh Chỉ số phụ: Đường đời | | Trưởng thành",
           "subIndexes": []
         },
         {
           "number": 26,
-          "title": "Điều gì sẽ tiếp tục được củng cố",
-          "mainIndex": "",
+          "title": "Chương 26 — Người B đang giúp người A phát triển điều gì",
+          "mainIndex": "Sứ mệnh Chỉ số phụ: Đường đời | | Trưởng thành",
           "subIndexes": []
         },
         {
           "number": 27,
-          "title": "Điều gì sẽ tiếp tục tạo áp lực hoặc bình an",
-          "mainIndex": "",
+          "title": "Chương 27 — Khoảng thiếu nào của mỗi người đang được đối phương bù đắp",
+          "mainIndex": "Thiếu Chỉ số phụ: Linh hồn Ị | Đam mê",
           "subIndexes": []
         },
         {
           "number": 28,
-          "title": "Điều gì sẽ tiếp tục ảnh hưởng đến các mối quan hệ",
-          "mainIndex": "",
+          "title": "Chương 28 — Điều cả hai đang cùng học từ nhau",
+          "mainIndex": "Trưởng thành Chỉ số phụ: Bài học I | Sứ mệnh",
           "subIndexes": []
         }
       ]
     },
     {
-      "title": "KHỐI 8 — TỬ HUYỆT KHI GIA ĐÌNH KHÔNG NHÌN THẤY NĂNG LƯỢNG THẬT SỰ ĐANG VẬN HÀNH",
+      "title": "Khối 8 — TỬ HUYỆT ĐANG ẨN TRONG KIỂU ĐỒNG HÀNH HIỆN TẠI",
       "chapters": [
         {
           "number": 29,
-          "title": "Điều gì xảy ra khi các thành viên chỉ nhìn vào hành vi mà không nhìn vào gốc rễ năng lượng phía sau",
-          "mainIndex": "",
+          "title": "Chương 29 — Điểm mù lớn nhất mà cả hai chưa nhìn thấy",
+          "mainIndex": "Thách thức Chỉ số phụ: Bài học I | Tư duy lý trí",
           "subIndexes": []
         },
         {
           "number": 30,
-          "title": "Những hiểu lầm có thể kéo dài",
-          "mainIndex": "",
+          "title": "Chương 30 — Điều đang được gọi là yêu thương nhưng thực chất là kiểm soát",
+          "mainIndex": "Cân bằng Chỉ số phụ: Nhân cách | | Thách thức",
           "subIndexes": []
         },
         {
           "number": 31,
-          "title": "Điều gì khiến chữa lành trở nên khó khăn hơn",
-          "mainIndex": "",
+          "title": "Chương 31 — Điều đang được gọi là đồng hành nhưng thực chất là phụ thuộc",
+          "mainIndex": "Thiếu Chỉ số phụ: Linh hồn | | Bài học",
           "subIndexes": []
         },
         {
           "number": 32,
-          "title": "Những hậu quả sâu xa đối với hệ gia đình",
-          "mainIndex": "",
+          "title": "Chương 32 — Nguy cơ lớn nhất nếu mô thức hiện tại tiếp tục kéo dài",
+          "mainIndex": "Thách thức Chỉ số phụ: Bài học II Cân bằng",
           "subIndexes": []
         }
       ]
     },
     {
-      "title": "KHỐI 9 — PHIÊN BẢN NĂNG LƯỢNG TÍCH CỰC NHẤT MÀ GIA ĐÌNH CÓ THỂ ĐẠT ĐƯỢC",
+      "title": "Khối 9 — HƯỚNG PHÁT TRIỂN CỦA MỐI QUAN HỆ NẾU TIẾP TỤC ĐỒNG HÀNH THEO CÁCH HIỆN TẠI",
       "chapters": [
         {
           "number": 33,
-          "title": "Hình ảnh gia đình khi những nguồn năng lượng tích cực được nuôi dưỡng đầy đủ",
-          "mainIndex": "",
+          "title": "Chương 33 — Điều gì sẽ ngày càng mạnh lên trong mối quan hệ",
+          "mainIndex": "Trưởng thành Chỉ số phụ: Đường đời | | Sứ mệnh",
           "subIndexes": []
         },
         {
           "number": 34,
-          "title": "Điều sẽ thay đổi trong cảm xúc",
-          "mainIndex": "",
+          "title": "Chương 34 — Điều gì sẽ dần trở thành khoảng cách",
+          "mainIndex": "Thách thức Chỉ số phụ: Cân bằng I | Bài học",
           "subIndexes": []
         },
         {
           "number": 35,
-          "title": "Điều sẽ thay đổi trong nhận thức",
-          "mainIndex": "",
+          "title": "Chương 35 — Tương lai cảm xúc của mối quan hệ đang được xây theo hướng nào",
+          "mainIndex": "Cân bằng Chỉ số phụ: Trưởng thành | | Linh hồn",
           "subIndexes": []
         },
         {
           "number": 36,
-          "title": "Gia đình sẽ phát triển theo hướng nào",
-          "mainIndex": "",
+          "title": "Chương 36 — Phiên bản mối quan hệ mà hai người đang tiến tới",
+          "mainIndex": "Trưởng thành Chỉ số phụ: Đường đời | | Liên kết Đường đời - Sứ mệnh",
           "subIndexes": []
         }
       ]
     },
     {
-      "title": "KHỐI 10 — GIẢI PHÁP GIÚP GIA ĐÌNH XÂY DỰNG TRƯỜNG NĂNG LƯỢNG CHỮA LÀNH",
+      "title": "Khối 10 — GIẢI PHÁP GIÚP HAI NGƯỜI ĐỒNG HÀNH ĐÚNG BẢN CHẤT HƠN",
       "chapters": [
         {
           "number": 37,
-          "title": "Nhận diện những nguồn năng lượng đang vận hành",
-          "mainIndex": "",
+          "title": "Chương 37 — Điều cả hai cần hiểu rõ nhất về nhau lúc này",
+          "mainIndex": "Liên kết Linh hồn - Nhân cách Chỉ số phụ: Linh hồn | | Nhân cách",
           "subIndexes": []
         },
         {
           "number": 38,
-          "title": "Học cách chuyển hóa những mô thức tiêu hao năng lượng",
-          "mainIndex": "",
+          "title": "Chương 38 — Điều cả hai cần điều chỉnh để kết nối sâu hơn",
+          "mainIndex": "Cân bằng Chỉ số phụ: Trưởng thành | | Bài học",
           "subIndexes": []
         },
         {
           "number": 39,
-          "title": "Học cách xây dựng môi trường an toàn cảm xúc",
-          "mainIndex": "",
+          "title": "Chương 39 — Điều giúp hai người đồng hành trưởng thành hơn mỗi ngày",
+          "mainIndex": "Trưởng thành Chỉ số phụ: Sứ mệnh | | Đường đời",
           "subIndexes": []
         },
         {
           "number": 40,
-          "title": "Giúp mái nhà trở thành nơi mang lại bình an, chữa lành, yêu thương và phát triển bền vững cho tất cả các thành viên",
-          "mainIndex": "",
+          "title": "Chương 40 — Con đường đồng hành bền vững nhất dành cho mối quan hệ này",
+          "mainIndex": "Liên kết Đường đời - Sứ mệnh Chỉ số phụ: Trưởng thành | | Đường đời",
           "subIndexes": []
         }
       ]
