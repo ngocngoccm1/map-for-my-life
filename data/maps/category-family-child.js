@@ -1,3651 +1,4947 @@
-const featured = [
+export const maps = [
   {
+    "id": "family-child-1",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-1",
     "number": 1,
-    "title": "CON NGƯỜI THẬT BÊN TRONG CỦA CON",
-    "subtitle": "Đây không phải MAP mô tả tính cách bề mặt của trẻ.",
+    "title": "CON NG\u01af\u1edcI TH\u1eacT B\u00caN TRONG C\u1ee6A CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP m\u00f4 t\u1ea3 t\u00ednh c\u00e1ch b\u1ec1 m\u1eb7t c\u1ee7a tr\u1ebb.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-2",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-2",
     "number": 2,
-    "title": "TÍNH CÁCH BẨM SINH CỦA CON",
-    "subtitle": "Đây không phải MAP dán nhãn tính cách kiểu: hướng nội || hướng ngoại || ngoan || bướng || mạnh mẽ || nhạy cảm.",
+    "title": "T\u00cdNH C\u00c1CH B\u1ea8M SINH C\u1ee6A CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP d\u00e1n nh\u00e3n t\u00ednh c\u00e1ch ki\u1ec3u: h\u01b0\u1edbng n\u1ed9i || h\u01b0\u1edbng ngo\u1ea1i || ngoan || b\u01b0\u1edbng || m\u1ea1nh m\u1ebd || nh\u1ea1y c\u1ea3m.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-3",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-3",
     "number": 3,
-    "title": "ĐIỂM MẠNH TỰ NHIÊN CỦA CON",
-    "subtitle": "Đây không phải MAP chỉ để “khen con có năng khiếu gì”.",
+    "title": "\u0110I\u1ec2M M\u1ea0NH T\u1ef0 NHI\u00caN C\u1ee6A CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 \u201ckhen con c\u00f3 n\u0103ng khi\u1ebfu g\u00ec\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-4",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-4",
     "number": 4,
-    "title": "ĐIỂM YẾU TỰ NHIÊN CỦA CON",
-    "subtitle": "Đây không phải MAP để phán xét || dán nhãn || chỉ trích tính xấu của con.",
+    "title": "\u0110I\u1ec2M Y\u1ebeU T\u1ef0 NHI\u00caN C\u1ee6A CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 ph\u00e1n x\u00e9t || d\u00e1n nh\u00e3n || ch\u1ec9 tr\u00edch t\u00ednh x\u1ea5u c\u1ee7a con.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-5",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-5",
     "number": 5,
-    "title": "KHÍ CHẤT TỰ NHIÊN CỦA CON",
-    "subtitle": "Đây không phải MAP phân loại con theo kiểu “ngoan – bướng – hướng nội – hướng ngoại”.",
+    "title": "KH\u00cd CH\u1ea4T T\u1ef0 NHI\u00caN C\u1ee6A CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ph\u00e2n lo\u1ea1i con theo ki\u1ec3u \u201cngoan \u2013 b\u01b0\u1edbng \u2013 h\u01b0\u1edbng n\u1ed9i \u2013 h\u01b0\u1edbng ngo\u1ea1i\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-6",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-6",
     "number": 6,
-    "title": "ĐIỀU KHIẾN CON CẢM THẤY AN TOÀN",
-    "subtitle": "Đây không phải MAP nói đơn giản rằng: con thích được yêu thương hay cần quan tâm.",
+    "title": "\u0110I\u1ec0U KHI\u1ebeN CON C\u1ea2M TH\u1ea4Y AN TO\u00c0N",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP n\u00f3i \u0111\u01a1n gi\u1ea3n r\u1eb1ng: con th\u00edch \u0111\u01b0\u1ee3c y\u00eau th\u01b0\u01a1ng hay c\u1ea7n quan t\u00e2m.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-7",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-7",
     "number": 7,
-    "title": "ĐIỀU KHIẾN CON DỄ TỔN THƯƠNG",
-    "subtitle": "Đây không phải MAP chỉ để nói rằng con “nhạy cảm” hay “yếu đuối”.",
+    "title": "\u0110I\u1ec0U KHI\u1ebeN CON D\u1ec4 T\u1ed4N TH\u01af\u01a0NG",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 n\u00f3i r\u1eb1ng con \u201cnh\u1ea1y c\u1ea3m\u201d hay \u201cy\u1ebfu \u0111u\u1ed1i\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-8",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-8",
     "number": 8,
-    "title": "CÁCH CON NHÌN THẾ GIỚI",
-    "subtitle": "Đây không phải MAP mô tả đơn giản rằng con tích cực hay tiêu cực.",
+    "title": "C\u00c1CH CON NH\u00ccN TH\u1ebe GI\u1edaI",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP m\u00f4 t\u1ea3 \u0111\u01a1n gi\u1ea3n r\u1eb1ng con t\u00edch c\u1ef1c hay ti\u00eau c\u1ef1c.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-9",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-9",
     "number": 9,
-    "title": "ĐIỀU CON THẬT SỰ CẦN BÊN TRONG",
-    "subtitle": "Đây không phải MAP nói đơn giản rằng con cần yêu thương hay quan tâm.",
+    "title": "\u0110I\u1ec0U CON TH\u1eacT S\u1ef0 C\u1ea6N B\u00caN TRONG",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP n\u00f3i \u0111\u01a1n gi\u1ea3n r\u1eb1ng con c\u1ea7n y\u00eau th\u01b0\u01a1ng hay quan t\u00e2m.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-10",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-10",
     "number": 10,
-    "title": "ĐIỀU KHIẾN CON CẢM THẤY MÌNH CÓ GIÁ TRỊ",
-    "subtitle": "Đây không phải MAP để khen con giỏi hay nâng lòng tự tin bề mặt.",
+    "title": "\u0110I\u1ec0U KHI\u1ebeN CON C\u1ea2M TH\u1ea4Y M\u00ccNH C\u00d3 GI\u00c1 TR\u1eca",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 khen con gi\u1ecfi hay n\u00e2ng l\u00f2ng t\u1ef1 tin b\u1ec1 m\u1eb7t.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-11",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-11",
     "number": 11,
-    "title": "NỖI SỢ SÂU BÊN TRONG CỦA CON",
-    "subtitle": "Đây không phải MAP để gắn nhãn con là “nhát”, “yếu”, “quá nhạy cảm” hay “thiếu tự tin”.",
+    "title": "N\u1ed6I S\u1ee2 S\u00c2U B\u00caN TRONG C\u1ee6A CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 g\u1eafn nh\u00e3n con l\u00e0 \u201cnh\u00e1t\u201d, \u201cy\u1ebfu\u201d, \u201cqu\u00e1 nh\u1ea1y c\u1ea3m\u201d hay \u201cthi\u1ebfu t\u1ef1 tin\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-12",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-12",
     "number": 12,
-    "title": "ĐIỀU KHIẾN CON TỰ TIN",
-    "subtitle": "Đây không phải MAP dạy con “mạnh dạn hơn” theo kiểu bề mặt hoặc ép con phải hướng ngoại, nổi bật.",
+    "title": "\u0110I\u1ec0U KHI\u1ebeN CON T\u1ef0 TIN",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP d\u1ea1y con \u201cm\u1ea1nh d\u1ea1n h\u01a1n\u201d theo ki\u1ec3u b\u1ec1 m\u1eb7t ho\u1eb7c \u00e9p con ph\u1ea3i h\u01b0\u1edbng ngo\u1ea1i, n\u1ed5i b\u1eadt.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-13",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-13",
     "number": 13,
-    "title": "ĐIỀU KHIẾN CON MẤT TỰ TIN",
-    "subtitle": "Đây không phải MAP chỉ để nói rằng con “nhút nhát”, “thiếu tự tin” hay “cần mạnh dạn hơn”.",
+    "title": "\u0110I\u1ec0U KHI\u1ebeN CON M\u1ea4T T\u1ef0 TIN",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 n\u00f3i r\u1eb1ng con \u201cnh\u00fat nh\u00e1t\u201d, \u201cthi\u1ebfu t\u1ef1 tin\u201d hay \u201cc\u1ea7n m\u1ea1nh d\u1ea1n h\u01a1n\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-14",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-14",
     "number": 14,
-    "title": "ĐIỀU CON RẤT KHÓ NÓI RA",
-    "subtitle": "Đây không phải MAP chỉ để nói rằng con “ít nói”, “khó chia sẻ” hay “không biết diễn đạt cảm xúc”.",
+    "title": "\u0110I\u1ec0U CON R\u1ea4T KH\u00d3 N\u00d3I RA",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 n\u00f3i r\u1eb1ng con \u201c\u00edt n\u00f3i\u201d, \u201ckh\u00f3 chia s\u1ebb\u201d hay \u201ckh\u00f4ng bi\u1ebft di\u1ec5n \u0111\u1ea1t c\u1ea3m x\u00fac\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-15",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-15",
     "number": 15,
-    "title": "CƠ CHẾ BẢO VỆ BẢN THÂN CỦA CON",
-    "subtitle": "Đây không phải MAP để đánh giá con “bướng”, “lì”, “khó dạy”, “thu mình” hay “quá nhạy cảm”.",
+    "title": "C\u01a0 CH\u1ebe B\u1ea2O V\u1ec6 B\u1ea2N TH\u00c2N C\u1ee6A CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 \u0111\u00e1nh gi\u00e1 con \u201cb\u01b0\u1edbng\u201d, \u201cl\u00ec\u201d, \u201ckh\u00f3 d\u1ea1y\u201d, \u201cthu m\u00ecnh\u201d hay \u201cqu\u00e1 nh\u1ea1y c\u1ea3m\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-16",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-16",
     "number": 16,
-    "title": "THẾ GIỚI CẢM XÚC BÊN TRONG CỦA CON",
-    "subtitle": "Đây không phải MAP mô tả đơn giản rằng con vui vẻ, nhạy cảm hay dễ xúc động.",
+    "title": "TH\u1ebe GI\u1edaI C\u1ea2M X\u00daC B\u00caN TRONG C\u1ee6A CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP m\u00f4 t\u1ea3 \u0111\u01a1n gi\u1ea3n r\u1eb1ng con vui v\u1ebb, nh\u1ea1y c\u1ea3m hay d\u1ec5 x\u00fac \u0111\u1ed9ng.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-17",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-17",
     "number": 17,
-    "title": "ĐIỀU KHIẾN CON VUI THẬT SỰ",
-    "subtitle": "Đây không phải MAP chỉ để nói con thích chơi gì, thích ăn gì hay thích được thưởng điều gì.",
+    "title": "\u0110I\u1ec0U KHI\u1ebeN CON VUI TH\u1eacT S\u1ef0",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 n\u00f3i con th\u00edch ch\u01a1i g\u00ec, th\u00edch \u0103n g\u00ec hay th\u00edch \u0111\u01b0\u1ee3c th\u01b0\u1edfng \u0111i\u1ec1u g\u00ec.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-18",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-18",
     "number": 18,
-    "title": "ĐIỀU KHIẾN CON BUỒN LÂU",
-    "subtitle": "Đây không phải MAP chỉ để nói rằng con “nhạy cảm”, “hay buồn”, “dễ khóc” hay “suy nghĩ nhiều”.",
+    "title": "\u0110I\u1ec0U KHI\u1ebeN CON BU\u1ed2N L\u00c2U",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 n\u00f3i r\u1eb1ng con \u201cnh\u1ea1y c\u1ea3m\u201d, \u201chay bu\u1ed3n\u201d, \u201cd\u1ec5 kh\u00f3c\u201d hay \u201csuy ngh\u0129 nhi\u1ec1u\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-19",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-19",
     "number": 19,
-    "title": "KHI TỔN THƯƠNG CON PHẢN ỨNG THẾ NÀO",
-    "subtitle": "Đây không phải MAP chỉ để mô tả rằng con dễ khóc, dễ giận hay dễ thu mình.",
+    "title": "KHI T\u1ed4N TH\u01af\u01a0NG CON PH\u1ea2N \u1ee8NG TH\u1ebe N\u00c0O",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 m\u00f4 t\u1ea3 r\u1eb1ng con d\u1ec5 kh\u00f3c, d\u1ec5 gi\u1eadn hay d\u1ec5 thu m\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-20",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-20",
     "number": 20,
-    "title": "KHI ÁP LỰC CON PHẢN ỨNG THẾ NÀO",
-    "subtitle": "Đây không phải MAP chỉ để nói rằng con “chịu áp lực kém”, “dễ căng thẳng” hay “hay mất bình tĩnh”.",
+    "title": "KHI \u00c1P L\u1ef0C CON PH\u1ea2N \u1ee8NG TH\u1ebe N\u00c0O",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 n\u00f3i r\u1eb1ng con \u201cch\u1ecbu \u00e1p l\u1ef1c k\u00e9m\u201d, \u201cd\u1ec5 c\u0103ng th\u1eb3ng\u201d hay \u201chay m\u1ea5t b\u00ecnh t\u0129nh\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-21",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-21",
     "number": 21,
-    "title": "ĐIỀU KHIẾN CON THU MÌNH",
-    "subtitle": "Đây không phải MAP chỉ để nói rằng con “hướng nội”, “ít nói”, “khó hòa đồng” hay “ngại giao tiếp”.",
+    "title": "\u0110I\u1ec0U KHI\u1ebeN CON THU M\u00ccNH",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 n\u00f3i r\u1eb1ng con \u201ch\u01b0\u1edbng n\u1ed9i\u201d, \u201c\u00edt n\u00f3i\u201d, \u201ckh\u00f3 h\u00f2a \u0111\u1ed3ng\u201d hay \u201cng\u1ea1i giao ti\u1ebfp\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-22",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-22",
     "number": 22,
-    "title": "ĐIỀU KHIẾN CON THU MÌNH",
-    "subtitle": "Đây không phải MAP chỉ để nói rằng con “hướng nội”, “ít nói”, “khó hòa đồng” hay “ngại giao tiếp”.",
+    "title": "\u0110I\u1ec0U KHI\u1ebeN CON THU M\u00ccNH",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 n\u00f3i r\u1eb1ng con \u201ch\u01b0\u1edbng n\u1ed9i\u201d, \u201c\u00edt n\u00f3i\u201d, \u201ckh\u00f3 h\u00f2a \u0111\u1ed3ng\u201d hay \u201cng\u1ea1i giao ti\u1ebfp\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-23",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-23",
     "number": 23,
-    "title": "CÁCH CON GIẤU CẢM XÚC",
-    "subtitle": "Đây không phải MAP chỉ để nói rằng con “ít nói”, “khó chia sẻ”, “lạnh lùng” hay “hay giữ trong lòng”.",
+    "title": "C\u00c1CH CON GI\u1ea4U C\u1ea2M X\u00daC",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 n\u00f3i r\u1eb1ng con \u201c\u00edt n\u00f3i\u201d, \u201ckh\u00f3 chia s\u1ebb\u201d, \u201cl\u1ea1nh l\u00f9ng\u201d hay \u201chay gi\u1eef trong l\u00f2ng\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-24",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-24",
     "number": 24,
-    "title": "ĐIỀU CON KHÔNG MUỐN AI BIẾT",
-    "subtitle": "Đây không phải MAP để nói rằng con “bí mật”, “khó hiểu”, “không chịu nói thật” hay “có điều gì đó sai sai”.",
+    "title": "\u0110I\u1ec0U CON KH\u00d4NG MU\u1ed0N AI BI\u1ebeT",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 n\u00f3i r\u1eb1ng con \u201cb\u00ed m\u1eadt\u201d, \u201ckh\u00f3 hi\u1ec3u\u201d, \u201ckh\u00f4ng ch\u1ecbu n\u00f3i th\u1eadt\u201d hay \u201cc\u00f3 \u0111i\u1ec1u g\u00ec \u0111\u00f3 sai sai\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-25",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-25",
     "number": 25,
-    "title": "MỨC ĐỘ NHẠY CẢM CẢM XÚC CỦA CON",
-    "subtitle": "Đây không phải MAP để dán nhãn con là “quá nhạy cảm”, “yếu đuối” hay “mong manh”.",
+    "title": "M\u1ee8C \u0110\u1ed8 NH\u1ea0Y C\u1ea2M C\u1ea2M X\u00daC C\u1ee6A CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 d\u00e1n nh\u00e3n con l\u00e0 \u201cqu\u00e1 nh\u1ea1y c\u1ea3m\u201d, \u201cy\u1ebfu \u0111u\u1ed1i\u201d hay \u201cmong manh\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-26",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-26",
     "number": 26,
-    "title": "NỖI CÔ ĐƠN NỘI TÂM CỦA CON",
-    "subtitle": "Đây không phải MAP chỉ để nói rằng con “hay ở một mình”, “ít chia sẻ” hay “khó hòa nhập”.",
+    "title": "N\u1ed6I C\u00d4 \u0110\u01a0N N\u1ed8I T\u00c2M C\u1ee6A CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 n\u00f3i r\u1eb1ng con \u201chay \u1edf m\u1ed9t m\u00ecnh\u201d, \u201c\u00edt chia s\u1ebb\u201d hay \u201ckh\u00f3 h\u00f2a nh\u1eadp\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-27",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-27",
     "number": 27,
-    "title": "ÁP LỰC TINH THẦN BÊN TRONG CON",
-    "subtitle": "Đây không phải MAP chỉ để nói rằng con “hay căng thẳng”, “hay lo nghĩ”, “dễ áp lực” hay “không chịu được áp lực”.",
+    "title": "\u00c1P L\u1ef0C TINH TH\u1ea6N B\u00caN TRONG CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 n\u00f3i r\u1eb1ng con \u201chay c\u0103ng th\u1eb3ng\u201d, \u201chay lo ngh\u0129\u201d, \u201cd\u1ec5 \u00e1p l\u1ef1c\u201d hay \u201ckh\u00f4ng ch\u1ecbu \u0111\u01b0\u1ee3c \u00e1p l\u1ef1c\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-28",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-28",
     "number": 28,
-    "title": "ĐIỀU KHIẾN CON CẢM THẤY MÌNH KHÔNG ĐỦ TỐT",
-    "subtitle": "Đây không phải MAP chỉ để nói rằng con “thiếu tự tin”, “hay tự ti”, “sợ thất bại” hay “luôn so sánh bản thân với người khác”.",
+    "title": "\u0110I\u1ec0U KHI\u1ebeN CON C\u1ea2M TH\u1ea4Y M\u00ccNH KH\u00d4NG \u0110\u1ee6 T\u1ed0T",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 n\u00f3i r\u1eb1ng con \u201cthi\u1ebfu t\u1ef1 tin\u201d, \u201chay t\u1ef1 ti\u201d, \u201cs\u1ee3 th\u1ea5t b\u1ea1i\u201d hay \u201clu\u00f4n so s\u00e1nh b\u1ea3n th\u00e2n v\u1edbi ng\u01b0\u1eddi kh\u00e1c\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-29",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-29",
     "number": 29,
-    "title": "NỖI ĐAU CẢM XÚC DỄ LẶP LẠI",
-    "subtitle": "Đây không phải MAP chỉ để kể lại những điều làm con buồn hoặc tổn thương.",
+    "title": "N\u1ed6I \u0110AU C\u1ea2M X\u00daC D\u1ec4 L\u1eb6P L\u1ea0I",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 k\u1ec3 l\u1ea1i nh\u1eefng \u0111i\u1ec1u l\u00e0m con bu\u1ed3n ho\u1eb7c t\u1ed5n th\u01b0\u01a1ng.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-30",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-30",
     "number": 30,
-    "title": "ĐIỀU GIÚP CON HỒI PHỤC CẢM XÚC",
-    "subtitle": "MAP này không được xây dựng để chỉ ra những hoạt động giúp con vui hơn tạm thời, cũng không nhằm tìm các cách đánh lạc hướng cảm xúc, làm con quên đi nỗi buồn hoặc giúp con nhanh chóng trở lại trạng thái bình thường sau tổn thương. Trọng tâm của MAP là tìm ra điều gì thật sự nuôi dưỡng và phục hồi hệ cảm xúc của con từ bên trong.",
+    "title": "\u0110I\u1ec0U GI\u00daP CON H\u1ed2I PH\u1ee4C C\u1ea2M X\u00daC",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng \u0111\u1ec3 ch\u1ec9 ra nh\u1eefng ho\u1ea1t \u0111\u1ed9ng gi\u00fap con vui h\u01a1n t\u1ea1m th\u1eddi, c\u0169ng kh\u00f4ng nh\u1eb1m t\u00ecm c\u00e1c c\u00e1ch \u0111\u00e1nh l\u1ea1c h\u01b0\u1edbng c\u1ea3m x\u00fac, l\u00e0m con qu\u00ean \u0111i n\u1ed7i bu\u1ed3n ho\u1eb7c gi\u00fap con nhanh ch\u00f3ng tr\u1edf l\u1ea1i tr\u1ea1ng th\u00e1i b\u00ecnh th\u01b0\u1eddng sau t\u1ed5n th\u01b0\u01a1ng. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 t\u00ecm ra \u0111i\u1ec1u g\u00ec th\u1eadt s\u1ef1 nu\u00f4i d\u01b0\u1ee1ng v\u00e0 ph\u1ee5c h\u1ed3i h\u1ec7 c\u1ea3m x\u00fac c\u1ee7a con t\u1eeb b\u00ean trong.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-31",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-31",
     "number": 31,
-    "title": "CÁCH CON SUY NGHĨ VÀ XỬ LÝ THÔNG TIN",
-    "subtitle": "Đây không phải MAP chỉ để nói rằng con “thông minh”, “học nhanh”, “logic”, “cảm tính” hay “khó tập trung”.",
+    "title": "C\u00c1CH CON SUY NGH\u0128 V\u00c0 X\u1eec L\u00dd TH\u00d4NG TIN",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 n\u00f3i r\u1eb1ng con \u201cth\u00f4ng minh\u201d, \u201ch\u1ecdc nhanh\u201d, \u201clogic\u201d, \u201cc\u1ea3m t\u00ednh\u201d hay \u201ckh\u00f3 t\u1eadp trung\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-32",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-32",
     "number": 32,
-    "title": "CON HỌC BẰNG CẢM XÚC HAY LÝ TRÍ",
-    "subtitle": "Đây không phải MAP chỉ để phân loại con là “cảm xúc” hay “logic”.",
+    "title": "CON H\u1eccC B\u1eb0NG C\u1ea2M X\u00daC HAY L\u00dd TR\u00cd",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 ph\u00e2n lo\u1ea1i con l\u00e0 \u201cc\u1ea3m x\u00fac\u201d hay \u201clogic\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-33",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-33",
     "number": 33,
-    "title": "KIỂU TIẾP THU PHÙ HỢP NHẤT VỚI CON",
-    "subtitle": "Đây không phải MAP chỉ để nói con học nhanh hay học chậm.",
+    "title": "KI\u1ec2U TI\u1ebeP THU PH\u00d9 H\u1ee2P NH\u1ea4T V\u1edaI CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 n\u00f3i con h\u1ecdc nhanh hay h\u1ecdc ch\u1eadm.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-34",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-34",
     "number": 34,
-    "title": "ĐIỀU LÀM CON MẤT TẬP TRUNG",
-    "subtitle": "Đây không phải MAP chỉ để nói rằng con “lơ đãng”, “ham chơi”, “không chú ý”, “học trước quên sau” hay “thiếu kỷ luật”.",
+    "title": "\u0110I\u1ec0U L\u00c0M CON M\u1ea4T T\u1eacP TRUNG",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 n\u00f3i r\u1eb1ng con \u201cl\u01a1 \u0111\u00e3ng\u201d, \u201cham ch\u01a1i\u201d, \u201ckh\u00f4ng ch\u00fa \u00fd\u201d, \u201ch\u1ecdc tr\u01b0\u1edbc qu\u00ean sau\u201d hay \u201cthi\u1ebfu k\u1ef7 lu\u1eadt\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-35",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-35",
     "number": 35,
-    "title": "ĐIỀU GIÚP CON TẬP TRUNG TỐT HƠN",
-    "subtitle": "Đây không phải MAP chỉ để đưa vài mẹo “tăng tập trung” hay ép con ngồi yên lâu hơn.",
+    "title": "\u0110I\u1ec0U GI\u00daP CON T\u1eacP TRUNG T\u1ed0T H\u01a0N",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 \u0111\u01b0a v\u00e0i m\u1eb9o \u201ct\u0103ng t\u1eadp trung\u201d hay \u00e9p con ng\u1ed3i y\u00ean l\u00e2u h\u01a1n.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-36",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-36",
     "number": 36,
-    "title": "CÁCH CON GHI NHỚ",
-    "subtitle": "Đây không phải MAP chỉ để nói con “nhớ tốt”, “hay quên”, “học trước quên sau” hay “trí nhớ kém”.",
+    "title": "C\u00c1CH CON GHI NH\u1eda",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 n\u00f3i con \u201cnh\u1edb t\u1ed1t\u201d, \u201chay qu\u00ean\u201d, \u201ch\u1ecdc tr\u01b0\u1edbc qu\u00ean sau\u201d hay \u201ctr\u00ed nh\u1edb k\u00e9m\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-37",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-37",
     "number": 37,
-    "title": "CON PHÙ HỢP HỌC MỘT MÌNH HAY HỌC NHÓM",
-    "subtitle": "Đây không phải MAP chỉ để kết luận con nên học một mình hay học cùng bạn bè.",
+    "title": "CON PH\u00d9 H\u1ee2P H\u1eccC M\u1ed8T M\u00ccNH HAY H\u1eccC NH\u00d3M",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 k\u1ebft lu\u1eadn con n\u00ean h\u1ecdc m\u1ed9t m\u00ecnh hay h\u1ecdc c\u00f9ng b\u1ea1n b\u00e8.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-38",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-38",
     "number": 38,
-    "title": "KIỂU ĐỘNG LỰC HỌC TẬP PHÙ HỢP VỚI CON",
-    "subtitle": "Đây không phải MAP chỉ để nói con “có động lực” hay “lười học”.",
+    "title": "KI\u1ec2U \u0110\u1ed8NG L\u1ef0C H\u1eccC T\u1eacP PH\u00d9 H\u1ee2P V\u1edaI CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 n\u00f3i con \u201cc\u00f3 \u0111\u1ed9ng l\u1ef1c\u201d hay \u201cl\u01b0\u1eddi h\u1ecdc\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-39",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-39",
     "number": 39,
-    "title": "ĐIỀU KHIẾN CON ÁP LỰC HỌC TẬP",
-    "subtitle": "Đây không phải MAP chỉ để nói con “sợ học”, “lười học”, “học yếu” hay “không chịu cố gắng”.",
+    "title": "\u0110I\u1ec0U KHI\u1ebeN CON \u00c1P L\u1ef0C H\u1eccC T\u1eacP",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 n\u00f3i con \u201cs\u1ee3 h\u1ecdc\u201d, \u201cl\u01b0\u1eddi h\u1ecdc\u201d, \u201ch\u1ecdc y\u1ebfu\u201d hay \u201ckh\u00f4ng ch\u1ecbu c\u1ed1 g\u1eafng\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-40",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-40",
     "number": 40,
-    "title": "ĐIỀU KHIẾN CON CHÁN HỌC",
-    "subtitle": "Đây không phải MAP chỉ để kết luận rằng con “lười”, “thiếu cố gắng” hay “không thích học”.",
+    "title": "\u0110I\u1ec0U KHI\u1ebeN CON CH\u00c1N H\u1eccC",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 k\u1ebft lu\u1eadn r\u1eb1ng con \u201cl\u01b0\u1eddi\u201d, \u201cthi\u1ebfu c\u1ed1 g\u1eafng\u201d hay \u201ckh\u00f4ng th\u00edch h\u1ecdc\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-41",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-41",
     "number": 41,
-    "title": "VÌ SAO CON HỌC KHÔNG ĐÚNG NĂNG LỰC THẬT",
-    "subtitle": "Đây không phải MAP chỉ để kết luận rằng con “học yếu”, “không thông minh”, “không tập trung” hay “không chịu cố gắng”.",
+    "title": "V\u00cc SAO CON H\u1eccC KH\u00d4NG \u0110\u00daNG N\u0102NG L\u1ef0C TH\u1eacT",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 k\u1ebft lu\u1eadn r\u1eb1ng con \u201ch\u1ecdc y\u1ebfu\u201d, \u201ckh\u00f4ng th\u00f4ng minh\u201d, \u201ckh\u00f4ng t\u1eadp trung\u201d hay \u201ckh\u00f4ng ch\u1ecbu c\u1ed1 g\u1eafng\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-42",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-42",
     "number": 42,
-    "title": "CÁCH KHƠI ĐỘNG LỰC HỌC TẬP TỰ NHIÊN",
-    "subtitle": "Đây không phải MAP chỉ để tìm cách “ép con chăm học hơn” hoặc tạo thêm phần thưởng để con chịu học.",
+    "title": "C\u00c1CH KH\u01a0I \u0110\u1ed8NG L\u1ef0C H\u1eccC T\u1eacP T\u1ef0 NHI\u00caN",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 t\u00ecm c\u00e1ch \u201c\u00e9p con ch\u0103m h\u1ecdc h\u01a1n\u201d ho\u1eb7c t\u1ea1o th\u00eam ph\u1ea7n th\u01b0\u1edfng \u0111\u1ec3 con ch\u1ecbu h\u1ecdc.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-43",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-43",
     "number": 43,
-    "title": "CÁCH GIÚP CON CHỦ ĐỘNG HỌC TẬP",
-    "subtitle": "Đây không phải MAP chỉ để tìm cách làm con “ngoan hơn”, “tự giác hơn” hay “chịu học hơn”.",
+    "title": "C\u00c1CH GI\u00daP CON CH\u1ee6 \u0110\u1ed8NG H\u1eccC T\u1eacP",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 t\u00ecm c\u00e1ch l\u00e0m con \u201cngoan h\u01a1n\u201d, \u201ct\u1ef1 gi\u00e1c h\u01a1n\u201d hay \u201cch\u1ecbu h\u1ecdc h\u01a1n\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-44",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-44",
     "number": 44,
-    "title": "MÔI TRƯỜNG HỌC TẬP PHÙ HỢP VỚI CON",
-    "subtitle": "Đây không phải MAP chỉ để chọn trường học, lớp học hay bàn học cho con.",
+    "title": "M\u00d4I TR\u01af\u1edcNG H\u1eccC T\u1eacP PH\u00d9 H\u1ee2P V\u1edaI CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 ch\u1ecdn tr\u01b0\u1eddng h\u1ecdc, l\u1edbp h\u1ecdc hay b\u00e0n h\u1ecdc cho con.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-45",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-45",
     "number": 45,
-    "title": "PHƯƠNG PHÁP HỌC PHÙ HỢP VỚI CON",
-    "subtitle": "Đây không phải MAP chỉ để chọn vài “mẹo học tập” chung chung hoặc ép con học theo một khuôn mẫu cố định.",
+    "title": "PH\u01af\u01a0NG PH\u00c1P H\u1eccC PH\u00d9 H\u1ee2P V\u1edaI CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 ch\u1ecdn v\u00e0i \u201cm\u1eb9o h\u1ecdc t\u1eadp\u201d chung chung ho\u1eb7c \u00e9p con h\u1ecdc theo m\u1ed9t khu\u00f4n m\u1eabu c\u1ed1 \u0111\u1ecbnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-46",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-46",
     "number": 46,
-    "title": "CÁCH CON PHẢN ỨNG VỚI ĐIỂM SỐ",
-    "subtitle": "Đây không phải MAP chỉ để nói con “ham điểm”, “sợ điểm thấp”, “không quan tâm điểm số” hay “dễ buồn vì kết quả học tập”.",
+    "title": "C\u00c1CH CON PH\u1ea2N \u1ee8NG V\u1edaI \u0110I\u1ec2M S\u1ed0",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 n\u00f3i con \u201cham \u0111i\u1ec3m\u201d, \u201cs\u1ee3 \u0111i\u1ec3m th\u1ea5p\u201d, \u201ckh\u00f4ng quan t\u00e2m \u0111i\u1ec3m s\u1ed1\u201d hay \u201cd\u1ec5 bu\u1ed3n v\u00ec k\u1ebft qu\u1ea3 h\u1ecdc t\u1eadp\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-47",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-47",
     "number": 47,
-    "title": "CÁCH CON PHẢN ỨNG VỚI THÀNH TÍCH",
-    "subtitle": "Đây không phải MAP chỉ để nói con “ham thành tích”, “thích được khen”, “sợ thua” hay “không có động lực cố gắng”.",
+    "title": "C\u00c1CH CON PH\u1ea2N \u1ee8NG V\u1edaI TH\u00c0NH T\u00cdCH",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 n\u00f3i con \u201cham th\u00e0nh t\u00edch\u201d, \u201cth\u00edch \u0111\u01b0\u1ee3c khen\u201d, \u201cs\u1ee3 thua\u201d hay \u201ckh\u00f4ng c\u00f3 \u0111\u1ed9ng l\u1ef1c c\u1ed1 g\u1eafng\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-48",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-48",
     "number": 48,
-    "title": "NGUYÊN NHÂN SÂU BÊN DƯỚI VIỆC HỌC KÉM",
-    "subtitle": "Đây không phải MAP để kết luận con “học kém”, “không có khả năng”, “lười”, “khó dạy” hay “không chịu cố gắng”.",
+    "title": "NGUY\u00caN NH\u00c2N S\u00c2U B\u00caN D\u01af\u1edaI VI\u1ec6C H\u1eccC K\u00c9M",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 k\u1ebft lu\u1eadn con \u201ch\u1ecdc k\u00e9m\u201d, \u201ckh\u00f4ng c\u00f3 kh\u1ea3 n\u0103ng\u201d, \u201cl\u01b0\u1eddi\u201d, \u201ckh\u00f3 d\u1ea1y\u201d hay \u201ckh\u00f4ng ch\u1ecbu c\u1ed1 g\u1eafng\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-49",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-49",
     "number": 49,
-    "title": "NGUYÊN NHÂN CON TRÌ HOÃN HỌC TẬP",
-    "subtitle": "Đây không phải MAP chỉ để kết luận con “lười”, “thiếu kỷ luật”, “không tự giác” hay “không có trách nhiệm”.",
+    "title": "NGUY\u00caN NH\u00c2N CON TR\u00cc HO\u00c3N H\u1eccC T\u1eacP",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 k\u1ebft lu\u1eadn con \u201cl\u01b0\u1eddi\u201d, \u201cthi\u1ebfu k\u1ef7 lu\u1eadt\u201d, \u201ckh\u00f4ng t\u1ef1 gi\u00e1c\u201d hay \u201ckh\u00f4ng c\u00f3 tr\u00e1ch nhi\u1ec7m\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-50",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-50",
     "number": 50,
-    "title": "CÁCH GIÚP CON DUY TRÌ SỰ TẬP TRUNG LÂU DÀI",
-    "subtitle": "Đây không phải MAP chỉ để tìm cách bắt con “ngồi yên lâu hơn”, “ít mất tập trung hơn” hay “chăm chú hơn”.",
+    "title": "C\u00c1CH GI\u00daP CON DUY TR\u00cc S\u1ef0 T\u1eacP TRUNG L\u00c2U D\u00c0I",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 t\u00ecm c\u00e1ch b\u1eaft con \u201cng\u1ed3i y\u00ean l\u00e2u h\u01a1n\u201d, \u201c\u00edt m\u1ea5t t\u1eadp trung h\u01a1n\u201d hay \u201cch\u0103m ch\u00fa h\u01a1n\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-51",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-51",
     "number": 51,
-    "title": "VÌ SAO CON LÌ",
-    "subtitle": "Đây không phải MAP để dán nhãn con là “bướng”, “khó dạy”, “cứng đầu”, “không nghe lời” hay “cố tình chống đối”.",
+    "title": "V\u00cc SAO CON L\u00cc",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 d\u00e1n nh\u00e3n con l\u00e0 \u201cb\u01b0\u1edbng\u201d, \u201ckh\u00f3 d\u1ea1y\u201d, \u201cc\u1ee9ng \u0111\u1ea7u\u201d, \u201ckh\u00f4ng nghe l\u1eddi\u201d hay \u201cc\u1ed1 t\u00ecnh ch\u1ed1ng \u0111\u1ed1i\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-52",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-52",
     "number": 52,
-    "title": "VÌ SAO CON CHỐNG ĐỐI",
-    "subtitle": "Đây không phải MAP để kết luận con “hư”, “khó bảo”, “không nghe lời”, “thích cãi” hay “cố tình làm ngược”.",
+    "title": "V\u00cc SAO CON CH\u1ed0NG \u0110\u1ed0I",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 k\u1ebft lu\u1eadn con \u201ch\u01b0\u201d, \u201ckh\u00f3 b\u1ea3o\u201d, \u201ckh\u00f4ng nghe l\u1eddi\u201d, \u201cth\u00edch c\u00e3i\u201d hay \u201cc\u1ed1 t\u00ecnh l\u00e0m ng\u01b0\u1ee3c\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-53",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-53",
     "number": 53,
-    "title": "VÌ SAO CON IM LẶNG",
-    "subtitle": "Đây không phải MAP để kết luận con “ít nói”, “lạnh”, “khó gần”, “không chia sẻ” hay “không quan tâm”.",
+    "title": "V\u00cc SAO CON IM L\u1eb6NG",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 k\u1ebft lu\u1eadn con \u201c\u00edt n\u00f3i\u201d, \u201cl\u1ea1nh\u201d, \u201ckh\u00f3 g\u1ea7n\u201d, \u201ckh\u00f4ng chia s\u1ebb\u201d hay \u201ckh\u00f4ng quan t\u00e2m\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-54",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-54",
     "number": 54,
-    "title": "VÌ SAO CON KHÓ HỢP TÁC",
-    "subtitle": "Đây không phải MAP để kết luận con “khó bảo”, “không nghe lời”, “không biết phối hợp” hay “cố tình chống lại người lớn”.",
+    "title": "V\u00cc SAO CON KH\u00d3 H\u1ee2P T\u00c1C",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 k\u1ebft lu\u1eadn con \u201ckh\u00f3 b\u1ea3o\u201d, \u201ckh\u00f4ng nghe l\u1eddi\u201d, \u201ckh\u00f4ng bi\u1ebft ph\u1ed1i h\u1ee3p\u201d hay \u201cc\u1ed1 t\u00ecnh ch\u1ed1ng l\u1ea1i ng\u01b0\u1eddi l\u1edbn\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-55",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-55",
     "number": 55,
-    "title": "VÌ SAO CON DỄ NỔI NÓNG",
-    "subtitle": "Đây không phải MAP để kết luận con “nóng tính”, “khó kiểm soát”, “hung dữ”, “quá nhạy” hay “có vấn đề hành vi”.",
+    "title": "V\u00cc SAO CON D\u1ec4 N\u1ed4I N\u00d3NG",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 k\u1ebft lu\u1eadn con \u201cn\u00f3ng t\u00ednh\u201d, \u201ckh\u00f3 ki\u1ec3m so\u00e1t\u201d, \u201chung d\u1eef\u201d, \u201cqu\u00e1 nh\u1ea1y\u201d hay \u201cc\u00f3 v\u1ea5n \u0111\u1ec1 h\u00e0nh vi\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-56",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-56",
     "number": 56,
-    "title": "VÌ SAO CON DỄ KHÓC",
-    "subtitle": "Đây không phải MAP để kết luận con “yếu đuối”, “mít ướt”, “quá nhạy cảm” hay “không mạnh mẽ”.",
+    "title": "V\u00cc SAO CON D\u1ec4 KH\u00d3C",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 k\u1ebft lu\u1eadn con \u201cy\u1ebfu \u0111u\u1ed1i\u201d, \u201cm\u00edt \u01b0\u1edbt\u201d, \u201cqu\u00e1 nh\u1ea1y c\u1ea3m\u201d hay \u201ckh\u00f4ng m\u1ea1nh m\u1ebd\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-57",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-57",
     "number": 57,
-    "title": "VÌ SAO CON HAY NÉ TRÁNH",
-    "subtitle": "Đây không phải MAP để kết luận con “lười”, “không có trách nhiệm”, “yếu đuối”, “thiếu cố gắng” hay “không muốn đối mặt”.",
+    "title": "V\u00cc SAO CON HAY N\u00c9 TR\u00c1NH",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 k\u1ebft lu\u1eadn con \u201cl\u01b0\u1eddi\u201d, \u201ckh\u00f4ng c\u00f3 tr\u00e1ch nhi\u1ec7m\u201d, \u201cy\u1ebfu \u0111u\u1ed1i\u201d, \u201cthi\u1ebfu c\u1ed1 g\u1eafng\u201d hay \u201ckh\u00f4ng mu\u1ed1n \u0111\u1ed1i m\u1eb7t\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-58",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-58",
     "number": 58,
-    "title": "VÌ SAO CON DỄ BỎ CUỘC",
-    "subtitle": "Đây không phải MAP để kết luận con “thiếu cố gắng”, “lười”, “không có ý chí” hay “không kiên trì”.",
+    "title": "V\u00cc SAO CON D\u1ec4 B\u1ece CU\u1ed8C",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 k\u1ebft lu\u1eadn con \u201cthi\u1ebfu c\u1ed1 g\u1eafng\u201d, \u201cl\u01b0\u1eddi\u201d, \u201ckh\u00f4ng c\u00f3 \u00fd ch\u00ed\u201d hay \u201ckh\u00f4ng ki\u00ean tr\u00ec\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-59",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-59",
     "number": 59,
-    "title": "VÌ SAO CON THÍCH KIỂM SOÁT",
-    "subtitle": "Đây không phải MAP để kết luận con “khó tính”, “thích ra lệnh”, “ích kỷ”, “cứng đầu” hay “muốn hơn người khác”.",
+    "title": "V\u00cc SAO CON TH\u00cdCH KI\u1ec2M SO\u00c1T",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 k\u1ebft lu\u1eadn con \u201ckh\u00f3 t\u00ednh\u201d, \u201cth\u00edch ra l\u1ec7nh\u201d, \u201c\u00edch k\u1ef7\u201d, \u201cc\u1ee9ng \u0111\u1ea7u\u201d hay \u201cmu\u1ed1n h\u01a1n ng\u01b0\u1eddi kh\u00e1c\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-60",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-60",
     "number": 60,
-    "title": "VÌ SAO CON THÍCH LÀM THEO Ý MÌNH",
-    "subtitle": "Đây không phải MAP để kết luận con “cứng đầu”, “khó dạy”, “ích kỷ”, “không nghe lời” hay “luôn muốn chống lại người lớn”.",
+    "title": "V\u00cc SAO CON TH\u00cdCH L\u00c0M THEO \u00dd M\u00ccNH",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 k\u1ebft lu\u1eadn con \u201cc\u1ee9ng \u0111\u1ea7u\u201d, \u201ckh\u00f3 d\u1ea1y\u201d, \u201c\u00edch k\u1ef7\u201d, \u201ckh\u00f4ng nghe l\u1eddi\u201d hay \u201clu\u00f4n mu\u1ed1n ch\u1ed1ng l\u1ea1i ng\u01b0\u1eddi l\u1edbn\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-61",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-61",
     "number": 61,
-    "title": "VÌ SAO CON PHỤ THUỘC CẢM XÚC",
-    "subtitle": "Đây không phải MAP để kết luận con “yếu đuối”, “bám người”, “quá nhạy”, “thiếu bản lĩnh” hay “không tự lập”.",
+    "title": "V\u00cc SAO CON PH\u1ee4 THU\u1ed8C C\u1ea2M X\u00daC",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 k\u1ebft lu\u1eadn con \u201cy\u1ebfu \u0111u\u1ed1i\u201d, \u201cb\u00e1m ng\u01b0\u1eddi\u201d, \u201cqu\u00e1 nh\u1ea1y\u201d, \u201cthi\u1ebfu b\u1ea3n l\u0129nh\u201d hay \u201ckh\u00f4ng t\u1ef1 l\u1eadp\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-62",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-62",
     "number": 62,
-    "title": "VÌ SAO CON DỄ BỊ ẢNH HƯỞNG BỞI NGƯỜI KHÁC",
-    "subtitle": "Đây không phải MAP để kết luận con “không có chính kiến”, “ba phải”, “yếu đuối”, “dễ bị dụ” hay “không biết tự quyết”.",
+    "title": "V\u00cc SAO CON D\u1ec4 B\u1eca \u1ea2NH H\u01af\u1edeNG B\u1edeI NG\u01af\u1edcI KH\u00c1C",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 k\u1ebft lu\u1eadn con \u201ckh\u00f4ng c\u00f3 ch\u00ednh ki\u1ebfn\u201d, \u201cba ph\u1ea3i\u201d, \u201cy\u1ebfu \u0111u\u1ed1i\u201d, \u201cd\u1ec5 b\u1ecb d\u1ee5\u201d hay \u201ckh\u00f4ng bi\u1ebft t\u1ef1 quy\u1ebft\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-63",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-63",
     "number": 63,
-    "title": "VÌ SAO CON DỄ PHẢN ỨNG TIÊU CỰC",
-    "subtitle": "Đây không phải MAP để kết luận con “khó chịu”, “tiêu cực”, “hay cãi”, “khó gần” hay “có vấn đề tính cách”.",
+    "title": "V\u00cc SAO CON D\u1ec4 PH\u1ea2N \u1ee8NG TI\u00caU C\u1ef0C",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 k\u1ebft lu\u1eadn con \u201ckh\u00f3 ch\u1ecbu\u201d, \u201cti\u00eau c\u1ef1c\u201d, \u201chay c\u00e3i\u201d, \u201ckh\u00f3 g\u1ea7n\u201d hay \u201cc\u00f3 v\u1ea5n \u0111\u1ec1 t\u00ednh c\u00e1ch\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-64",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-64",
     "number": 64,
-    "title": "HÀNH VI CỦA CON KHI CẢM THẤY KHÔNG AN TOÀN",
-    "subtitle": "Đây không phải MAP để kết luận con “khó hiểu”, “khó chiều”, “bất thường”, “khó dạy” hay “phản ứng quá mức”.",
+    "title": "H\u00c0NH VI C\u1ee6A CON KHI C\u1ea2M TH\u1ea4Y KH\u00d4NG AN TO\u00c0N",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 k\u1ebft lu\u1eadn con \u201ckh\u00f3 hi\u1ec3u\u201d, \u201ckh\u00f3 chi\u1ec1u\u201d, \u201cb\u1ea5t th\u01b0\u1eddng\u201d, \u201ckh\u00f3 d\u1ea1y\u201d hay \u201cph\u1ea3n \u1ee9ng qu\u00e1 m\u1ee9c\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-65",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-65",
     "number": 65,
-    "title": "HÀNH VI CỦA CON KHI BỊ TỔN THƯƠNG",
-    "subtitle": "Đây không phải MAP để kết luận con “quá nhạy cảm”, “khó chịu”, “khó kiểm soát”, “hay làm quá” hay “không biết chịu đựng”.",
+    "title": "H\u00c0NH VI C\u1ee6A CON KHI B\u1eca T\u1ed4N TH\u01af\u01a0NG",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 k\u1ebft lu\u1eadn con \u201cqu\u00e1 nh\u1ea1y c\u1ea3m\u201d, \u201ckh\u00f3 ch\u1ecbu\u201d, \u201ckh\u00f3 ki\u1ec3m so\u00e1t\u201d, \u201chay l\u00e0m qu\u00e1\u201d hay \u201ckh\u00f4ng bi\u1ebft ch\u1ecbu \u0111\u1ef1ng\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-66",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-66",
     "number": 66,
-    "title": "ĐIỀU BỐ MẸ THƯỜNG HIỂU SAI VỀ HÀNH VI CỦA CON",
-    "subtitle": "Đây không phải MAP để phán xét bố mẹ “nuôi con sai” || cũng không phải MAP để bênh con vô điều kiện.",
+    "title": "\u0110I\u1ec0U B\u1ed0 M\u1eb8 TH\u01af\u1edcNG HI\u1ec2U SAI V\u1ec0 H\u00c0NH VI C\u1ee6A CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 ph\u00e1n x\u00e9t b\u1ed1 m\u1eb9 \u201cnu\u00f4i con sai\u201d || c\u0169ng kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 b\u00eanh con v\u00f4 \u0111i\u1ec1u ki\u1ec7n.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-67",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-67",
     "number": 67,
-    "title": "SỰ KHÁC NHAU GIỮA BẢN CHẤT VÀ HÀNH VI HIỆN TẠI CỦA CON",
-    "subtitle": "Đây không phải MAP để đánh giá con “đúng” hay “sai”, “ngoan” hay “hư”, “tốt” hay “xấu”.",
+    "title": "S\u1ef0 KH\u00c1C NHAU GI\u1eeeA B\u1ea2N CH\u1ea4T V\u00c0 H\u00c0NH VI HI\u1ec6N T\u1ea0I C\u1ee6A CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 \u0111\u00e1nh gi\u00e1 con \u201c\u0111\u00fang\u201d hay \u201csai\u201d, \u201cngoan\u201d hay \u201ch\u01b0\u201d, \u201ct\u1ed1t\u201d hay \u201cx\u1ea5u\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-68",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-68",
     "number": 68,
-    "title": "KHI NÀO CON CẦN ĐƯỢC MỀM MỎNG",
-    "subtitle": "Đây không phải MAP để dạy cha mẹ “chiều con”, “nhẹ tay vô điều kiện” hay để con muốn gì cũng được.",
+    "title": "KHI N\u00c0O CON C\u1ea6N \u0110\u01af\u1ee2C M\u1ec0M M\u1eceNG",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 d\u1ea1y cha m\u1eb9 \u201cchi\u1ec1u con\u201d, \u201cnh\u1eb9 tay v\u00f4 \u0111i\u1ec1u ki\u1ec7n\u201d hay \u0111\u1ec3 con mu\u1ed1n g\u00ec c\u0169ng \u0111\u01b0\u1ee3c.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-69",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-69",
     "number": 69,
-    "title": "KHI NÀO CON CẦN NGUYÊN TẮC RÕ RÀNG",
-    "subtitle": "Đây không phải MAP để biến con thành đứa trẻ “phải nghe lời tuyệt đối” || cũng không phải MAP cổ vũ việc kiểm soát cứng nhắc hoặc áp đặt vô cảm.",
+    "title": "KHI N\u00c0O CON C\u1ea6N NGUY\u00caN T\u1eaeC R\u00d5 R\u00c0NG",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 bi\u1ebfn con th\u00e0nh \u0111\u1ee9a tr\u1ebb \u201cph\u1ea3i nghe l\u1eddi tuy\u1ec7t \u0111\u1ed1i\u201d || c\u0169ng kh\u00f4ng ph\u1ea3i MAP c\u1ed5 v\u0169 vi\u1ec7c ki\u1ec3m so\u00e1t c\u1ee9ng nh\u1eafc ho\u1eb7c \u00e1p \u0111\u1eb7t v\u00f4 c\u1ea3m.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-70",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-70",
     "number": 70,
-    "title": "CÁCH ĐIỀU CHỈNH HÀNH VI PHÙ HỢP VỚI BẢN CHẤT CỦA CON",
-    "subtitle": "Đây không phải MAP để “sửa con cho ngoan” theo một khuôn mẫu chung || cũng không phải MAP dùng áp lực, kiểm soát hoặc ép con thay đổi hành vi bằng sợ hãi.",
+    "title": "C\u00c1CH \u0110I\u1ec0U CH\u1ec8NH H\u00c0NH VI PH\u00d9 H\u1ee2P V\u1edaI B\u1ea2N CH\u1ea4T C\u1ee6A CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 \u201cs\u1eeda con cho ngoan\u201d theo m\u1ed9t khu\u00f4n m\u1eabu chung || c\u0169ng kh\u00f4ng ph\u1ea3i MAP d\u00f9ng \u00e1p l\u1ef1c, ki\u1ec3m so\u00e1t ho\u1eb7c \u00e9p con thay \u0111\u1ed5i h\u00e0nh vi b\u1eb1ng s\u1ee3 h\u00e3i.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-71",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-71",
     "number": 71,
-    "title": "HÌNH ẢNH BẢN THÂN TRONG MẮT CON",
-    "subtitle": "Đây không phải MAP để đánh giá con “tự tin” hay “tự ti” một cách đơn giản.",
+    "title": "H\u00ccNH \u1ea2NH B\u1ea2N TH\u00c2N TRONG M\u1eaeT CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 \u0111\u00e1nh gi\u00e1 con \u201ct\u1ef1 tin\u201d hay \u201ct\u1ef1 ti\u201d m\u1ed9t c\u00e1ch \u0111\u01a1n gi\u1ea3n.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-72",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-72",
     "number": 72,
-    "title": "ĐIỀU KHIẾN CON CẢM THẤY CÓ GIÁ TRỊ",
-    "subtitle": "Đây không phải MAP để dạy con “phải giỏi”, “phải thành công” hoặc “phải được công nhận” mới có giá trị.",
+    "title": "\u0110I\u1ec0U KHI\u1ebeN CON C\u1ea2M TH\u1ea4Y C\u00d3 GI\u00c1 TR\u1eca",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 d\u1ea1y con \u201cph\u1ea3i gi\u1ecfi\u201d, \u201cph\u1ea3i th\u00e0nh c\u00f4ng\u201d ho\u1eb7c \u201cph\u1ea3i \u0111\u01b0\u1ee3c c\u00f4ng nh\u1eadn\u201d m\u1edbi c\u00f3 gi\u00e1 tr\u1ecb.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-73",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-73",
     "number": 73,
-    "title": "ĐIỀU KHIẾN CON CẢM THẤY VÔ DỤNG",
-    "subtitle": "Đây không phải MAP để dán nhãn con là “yếu đuối”, “thiếu tự tin” hay “tiêu cực”.",
+    "title": "\u0110I\u1ec0U KHI\u1ebeN CON C\u1ea2M TH\u1ea4Y V\u00d4 D\u1ee4NG",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 d\u00e1n nh\u00e3n con l\u00e0 \u201cy\u1ebfu \u0111u\u1ed1i\u201d, \u201cthi\u1ebfu t\u1ef1 tin\u201d hay \u201cti\u00eau c\u1ef1c\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-74",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-74",
     "number": 74,
-    "title": "CÁCH CON XÂY LÒNG TỰ TRỌNG",
-    "subtitle": "Đây không phải MAP để dạy con “tự tin giả”, “phải luôn mạnh mẽ” hoặc luôn nghĩ mình giỏi hơn người khác.",
+    "title": "C\u00c1CH CON X\u00c2Y L\u00d2NG T\u1ef0 TR\u1eccNG",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 d\u1ea1y con \u201ct\u1ef1 tin gi\u1ea3\u201d, \u201cph\u1ea3i lu\u00f4n m\u1ea1nh m\u1ebd\u201d ho\u1eb7c lu\u00f4n ngh\u0129 m\u00ecnh gi\u1ecfi h\u01a1n ng\u01b0\u1eddi kh\u00e1c.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-75",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-75",
     "number": 75,
-    "title": "ĐIỀU KHIẾN CON LUÔN MUỐN ĐƯỢC CÔNG NHẬN",
-    "subtitle": "Đây không phải MAP để đánh giá con là “háo thắng”, “thích nổi bật” hay “quá cần chú ý”.",
+    "title": "\u0110I\u1ec0U KHI\u1ebeN CON LU\u00d4N MU\u1ed0N \u0110\u01af\u1ee2C C\u00d4NG NH\u1eacN",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 \u0111\u00e1nh gi\u00e1 con l\u00e0 \u201ch\u00e1o th\u1eafng\u201d, \u201cth\u00edch n\u1ed5i b\u1eadt\u201d hay \u201cqu\u00e1 c\u1ea7n ch\u00fa \u00fd\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-76",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-76",
     "number": 76,
-    "title": "NGUY CƠ CON SỐNG THEO KỲ VỌNG NGƯỜI KHÁC",
-    "subtitle": "Đây không phải MAP để khuyến khích con chống đối, bất cần hoặc bỏ ngoài tai mọi góp ý từ người khác.",
+    "title": "NGUY C\u01a0 CON S\u1ed0NG THEO K\u1ef2 V\u1eccNG NG\u01af\u1edcI KH\u00c1C",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 khuy\u1ebfn kh\u00edch con ch\u1ed1ng \u0111\u1ed1i, b\u1ea5t c\u1ea7n ho\u1eb7c b\u1ecf ngo\u00e0i tai m\u1ecdi g\u00f3p \u00fd t\u1eeb ng\u01b0\u1eddi kh\u00e1c.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-77",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-77",
     "number": 77,
-    "title": "NGUY CƠ CON ĐÁNH MẤT BẢN SẮC CÁ NHÂN",
-    "subtitle": "Đây không phải MAP để khuyến khích con “khác biệt bằng mọi giá” hoặc chống lại môi trường xung quanh chỉ để khẳng định cái tôi.",
+    "title": "NGUY C\u01a0 CON \u0110\u00c1NH M\u1ea4T B\u1ea2N S\u1eaeC C\u00c1 NH\u00c2N",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 khuy\u1ebfn kh\u00edch con \u201ckh\u00e1c bi\u1ec7t b\u1eb1ng m\u1ecdi gi\u00e1\u201d ho\u1eb7c ch\u1ed1ng l\u1ea1i m\u00f4i tr\u01b0\u1eddng xung quanh ch\u1ec9 \u0111\u1ec3 kh\u1eb3ng \u0111\u1ecbnh c\u00e1i t\u00f4i.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-78",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-78",
     "number": 78,
-    "title": "NỖI SỢ THUA KÉM CỦA CON",
-    "subtitle": "Đây không phải MAP để dán nhãn con là “ganh đua”, “hiếu thắng” hoặc “quá nhạy cảm với thành công của người khác”.",
+    "title": "N\u1ed6I S\u1ee2 THUA K\u00c9M C\u1ee6A CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 d\u00e1n nh\u00e3n con l\u00e0 \u201cganh \u0111ua\u201d, \u201chi\u1ebfu th\u1eafng\u201d ho\u1eb7c \u201cqu\u00e1 nh\u1ea1y c\u1ea3m v\u1edbi th\u00e0nh c\u00f4ng c\u1ee7a ng\u01b0\u1eddi kh\u00e1c\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-79",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-79",
     "number": 79,
-    "title": "ÁP LỰC PHẢI GIỎI HOẶC HOÀN HẢO",
-    "subtitle": "Đây không phải MAP để phủ nhận việc cố gắng phát triển bản thân hoặc học cách làm tốt mọi việc.",
+    "title": "\u00c1P L\u1ef0C PH\u1ea2I GI\u1eceI HO\u1eb6C HO\u00c0N H\u1ea2O",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 ph\u1ee7 nh\u1eadn vi\u1ec7c c\u1ed1 g\u1eafng ph\u00e1t tri\u1ec3n b\u1ea3n th\u00e2n ho\u1eb7c h\u1ecdc c\u00e1ch l\u00e0m t\u1ed1t m\u1ecdi vi\u1ec7c.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-80",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-80",
     "number": 80,
-    "title": "NGUY CƠ HÌNH THÀNH TƯ DUY THÀNH TÍCH",
-    "subtitle": "Đây không phải MAP để phủ nhận việc cố gắng, phát triển năng lực hoặc đạt thành tích trong học tập và cuộc sống.",
+    "title": "NGUY C\u01a0 H\u00ccNH TH\u00c0NH T\u01af DUY TH\u00c0NH T\u00cdCH",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 ph\u1ee7 nh\u1eadn vi\u1ec7c c\u1ed1 g\u1eafng, ph\u00e1t tri\u1ec3n n\u0103ng l\u1ef1c ho\u1eb7c \u0111\u1ea1t th\u00e0nh t\u00edch trong h\u1ecdc t\u1eadp v\u00e0 cu\u1ed9c s\u1ed1ng.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-81",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-81",
     "number": 81,
-    "title": "TÀI NĂNG NỔI BẬT NHẤT CỦA CON",
-    "subtitle": "Đây không phải MAP để dán nhãn con là “giỏi sẵn”, “có năng khiếu bẩm sinh” hoặc ép con phải phát triển theo một hướng cố định từ quá sớm.",
+    "title": "T\u00c0I N\u0102NG N\u1ed4I B\u1eacT NH\u1ea4T C\u1ee6A CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 d\u00e1n nh\u00e3n con l\u00e0 \u201cgi\u1ecfi s\u1eb5n\u201d, \u201cc\u00f3 n\u0103ng khi\u1ebfu b\u1ea9m sinh\u201d ho\u1eb7c \u00e9p con ph\u1ea3i ph\u00e1t tri\u1ec3n theo m\u1ed9t h\u01b0\u1edbng c\u1ed1 \u0111\u1ecbnh t\u1eeb qu\u00e1 s\u1edbm.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-82",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-82",
     "number": 82,
-    "title": "NĂNG KHIẾU BẨM SINH CỦA CON",
-    "subtitle": "Đây không phải MAP để gắn nhãn con là “thần đồng”, “đặc biệt hơn người khác” hoặc ép con phải thành công sớm chỉ vì có năng khiếu nổi bật.",
+    "title": "N\u0102NG KHI\u1ebeU B\u1ea8M SINH C\u1ee6A CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 g\u1eafn nh\u00e3n con l\u00e0 \u201cth\u1ea7n \u0111\u1ed3ng\u201d, \u201c\u0111\u1eb7c bi\u1ec7t h\u01a1n ng\u01b0\u1eddi kh\u00e1c\u201d ho\u1eb7c \u00e9p con ph\u1ea3i th\u00e0nh c\u00f4ng s\u1edbm ch\u1ec9 v\u00ec c\u00f3 n\u0103ng khi\u1ebfu n\u1ed5i b\u1eadt.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-83",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-83",
     "number": 83,
-    "title": "ĐIỀU CON CÓ THỂ PHÁT TRIỂN VƯỢT TRỘI",
-    "subtitle": "Đây không phải MAP để ép con phải trở thành “xuất sắc hơn người khác” hoặc chạy theo thành tích vượt trội bằng mọi giá.",
+    "title": "\u0110I\u1ec0U CON C\u00d3 TH\u1ec2 PH\u00c1T TRI\u1ec2N V\u01af\u1ee2T TR\u1ed8I",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 \u00e9p con ph\u1ea3i tr\u1edf th\u00e0nh \u201cxu\u1ea5t s\u1eafc h\u01a1n ng\u01b0\u1eddi kh\u00e1c\u201d ho\u1eb7c ch\u1ea1y theo th\u00e0nh t\u00edch v\u01b0\u1ee3t tr\u1ed9i b\u1eb1ng m\u1ecdi gi\u00e1.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-84",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-84",
     "number": 84,
-    "title": "ĐIỀU CON HỌC NHANH TỰ NHIÊN",
-    "subtitle": "Đây không phải MAP để đánh giá con “thông minh hơn” hoặc “kém hơn” người khác dựa trên tốc độ học tập thông thường.",
+    "title": "\u0110I\u1ec0U CON H\u1eccC NHANH T\u1ef0 NHI\u00caN",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 \u0111\u00e1nh gi\u00e1 con \u201cth\u00f4ng minh h\u01a1n\u201d ho\u1eb7c \u201ck\u00e9m h\u01a1n\u201d ng\u01b0\u1eddi kh\u00e1c d\u1ef1a tr\u00ean t\u1ed1c \u0111\u1ed9 h\u1ecdc t\u1eadp th\u00f4ng th\u01b0\u1eddng.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-85",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-85",
     "number": 85,
-    "title": "MÔI TRƯỜNG GIÚP TÀI NĂNG CỦA CON PHÁT TRIỂN",
-    "subtitle": "Đây không phải MAP để tìm “môi trường hoàn hảo tuyệt đối” hoặc ép con phải phát triển theo một khuôn mẫu cố định nào đó.",
+    "title": "M\u00d4I TR\u01af\u1edcNG GI\u00daP T\u00c0I N\u0102NG C\u1ee6A CON PH\u00c1T TRI\u1ec2N",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 t\u00ecm \u201cm\u00f4i tr\u01b0\u1eddng ho\u00e0n h\u1ea3o tuy\u1ec7t \u0111\u1ed1i\u201d ho\u1eb7c \u00e9p con ph\u1ea3i ph\u00e1t tri\u1ec3n theo m\u1ed9t khu\u00f4n m\u1eabu c\u1ed1 \u0111\u1ecbnh n\u00e0o \u0111\u00f3.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-86",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-86",
     "number": 86,
-    "title": "ĐIỀU DỄ LÀM TÀI NĂNG CỦA CON BỊ THUI CHỘT",
-    "subtitle": "Đây không phải MAP để phán xét cha mẹ, môi trường hoặc biến việc nuôi dạy thành nỗi sợ “làm sai sẽ phá hỏng con”.",
+    "title": "\u0110I\u1ec0U D\u1ec4 L\u00c0M T\u00c0I N\u0102NG C\u1ee6A CON B\u1eca THUI CH\u1ed8T",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 ph\u00e1n x\u00e9t cha m\u1eb9, m\u00f4i tr\u01b0\u1eddng ho\u1eb7c bi\u1ebfn vi\u1ec7c nu\u00f4i d\u1ea1y th\u00e0nh n\u1ed7i s\u1ee3 \u201cl\u00e0m sai s\u1ebd ph\u00e1 h\u1ecfng con\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-87",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-87",
     "number": 87,
-    "title": "HOẠT ĐỘNG PHÙ HỢP VỚI NĂNG LỰC CỦA CON",
-    "subtitle": "Đây không phải MAP để nhồi lịch hoạt động dày đặc cho con hoặc ép con phải tham gia thật nhiều để “phát triển toàn diện”.",
+    "title": "HO\u1ea0T \u0110\u1ed8NG PH\u00d9 H\u1ee2P V\u1edaI N\u0102NG L\u1ef0C C\u1ee6A CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 nh\u1ed3i l\u1ecbch ho\u1ea1t \u0111\u1ed9ng d\u00e0y \u0111\u1eb7c cho con ho\u1eb7c \u00e9p con ph\u1ea3i tham gia th\u1eadt nhi\u1ec1u \u0111\u1ec3 \u201cph\u00e1t tri\u1ec3n to\u00e0n di\u1ec7n\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-88",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-88",
     "number": 88,
-    "title": "KỸ NĂNG CON NÊN RÈN TỪ NHỎ",
-    "subtitle": "Đây không phải MAP để ép con phải “giỏi toàn diện”, học thật nhiều kỹ năng hoặc biến tuổi thơ của con thành hành trình chạy theo thành tích phát triển.",
+    "title": "K\u1ef8 N\u0102NG CON N\u00caN R\u00c8N T\u1eea NH\u1ece",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 \u00e9p con ph\u1ea3i \u201cgi\u1ecfi to\u00e0n di\u1ec7n\u201d, h\u1ecdc th\u1eadt nhi\u1ec1u k\u1ef9 n\u0103ng ho\u1eb7c bi\u1ebfn tu\u1ed5i th\u01a1 c\u1ee7a con th\u00e0nh h\u00e0nh tr\u00ecnh ch\u1ea1y theo th\u00e0nh t\u00edch ph\u00e1t tri\u1ec3n.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-89",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-89",
     "number": 89,
-    "title": "ĐIỂM MẠNH NÊN ĐƯỢC BỐ MẸ NUÔI DƯỠNG",
-    "subtitle": "Đây không phải MAP để biến con thành “phiên bản hoàn hảo” hoặc chỉ tập trung vào thành tích và khả năng nổi bật bề ngoài.",
+    "title": "\u0110I\u1ec2M M\u1ea0NH N\u00caN \u0110\u01af\u1ee2C B\u1ed0 M\u1eb8 NU\u00d4I D\u01af\u1ee0NG",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 bi\u1ebfn con th\u00e0nh \u201cphi\u00ean b\u1ea3n ho\u00e0n h\u1ea3o\u201d ho\u1eb7c ch\u1ec9 t\u1eadp trung v\u00e0o th\u00e0nh t\u00edch v\u00e0 kh\u1ea3 n\u0103ng n\u1ed5i b\u1eadt b\u1ec1 ngo\u00e0i.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-90",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-90",
     "number": 90,
-    "title": "HƯỚNG PHÁT TRIỂN DÀI HẠN PHÙ HỢP VỚI CON",
-    "subtitle": "Đây không phải MAP để “chốt nghề tương lai” cho con từ quá sớm hoặc ép con phải đi theo một con đường cố định mà người lớn mong muốn.",
+    "title": "H\u01af\u1edaNG PH\u00c1T TRI\u1ec2N D\u00c0I H\u1ea0N PH\u00d9 H\u1ee2P V\u1edaI CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 \u201cch\u1ed1t ngh\u1ec1 t\u01b0\u01a1ng lai\u201d cho con t\u1eeb qu\u00e1 s\u1edbm ho\u1eb7c \u00e9p con ph\u1ea3i \u0111i theo m\u1ed9t con \u0111\u01b0\u1eddng c\u1ed1 \u0111\u1ecbnh m\u00e0 ng\u01b0\u1eddi l\u1edbn mong mu\u1ed1n.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-91",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-91",
     "number": 91,
-    "title": "MÔI TRƯỜNG GIA ĐÌNH PHÙ HỢP VỚI CON",
-    "subtitle": "Đây không phải MAP để đánh giá gia đình nào “tốt hơn” hay tạo áp lực rằng cha mẹ phải trở thành “gia đình hoàn hảo”.",
+    "title": "M\u00d4I TR\u01af\u1edcNG GIA \u0110\u00ccNH PH\u00d9 H\u1ee2P V\u1edaI CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 \u0111\u00e1nh gi\u00e1 gia \u0111\u00ecnh n\u00e0o \u201ct\u1ed1t h\u01a1n\u201d hay t\u1ea1o \u00e1p l\u1ef1c r\u1eb1ng cha m\u1eb9 ph\u1ea3i tr\u1edf th\u00e0nh \u201cgia \u0111\u00ecnh ho\u00e0n h\u1ea3o\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-92",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-92",
     "number": 92,
-    "title": "MÔI TRƯỜNG HỌC ĐƯỜNG PHÙ HỢP VỚI CON",
-    "subtitle": "Đây không phải MAP để tìm “trường tốt nhất” theo danh tiếng hoặc chạy theo áp lực thành tích học tập.",
+    "title": "M\u00d4I TR\u01af\u1edcNG H\u1eccC \u0110\u01af\u1edcNG PH\u00d9 H\u1ee2P V\u1edaI CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 t\u00ecm \u201ctr\u01b0\u1eddng t\u1ed1t nh\u1ea5t\u201d theo danh ti\u1ebfng ho\u1eb7c ch\u1ea1y theo \u00e1p l\u1ef1c th\u00e0nh t\u00edch h\u1ecdc t\u1eadp.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-93",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-93",
     "number": 93,
-    "title": "KIỂU KỶ LUẬT PHÙ HỢP VỚI CON",
-    "subtitle": "Đây không phải MAP để biến con thành đứa trẻ “ngoan tuyệt đối” hoặc phải nghe lời bằng mọi giá.",
+    "title": "KI\u1ec2U K\u1ef6 LU\u1eacT PH\u00d9 H\u1ee2P V\u1edaI CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 bi\u1ebfn con th\u00e0nh \u0111\u1ee9a tr\u1ebb \u201cngoan tuy\u1ec7t \u0111\u1ed1i\u201d ho\u1eb7c ph\u1ea3i nghe l\u1eddi b\u1eb1ng m\u1ecdi gi\u00e1.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-94",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-94",
     "number": 94,
-    "title": "CON CẦN TỰ DO HAY NGUYÊN TẮC NHIỀU HƠN",
-    "subtitle": "Đây không phải MAP để chọn một phía “tự do hoàn toàn” hoặc “nguyên tắc tuyệt đối” trong việc nuôi dạy con.",
+    "title": "CON C\u1ea6N T\u1ef0 DO HAY NGUY\u00caN T\u1eaeC NHI\u1ec0U H\u01a0N",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 ch\u1ecdn m\u1ed9t ph\u00eda \u201ct\u1ef1 do ho\u00e0n to\u00e0n\u201d ho\u1eb7c \u201cnguy\u00ean t\u1eafc tuy\u1ec7t \u0111\u1ed1i\u201d trong vi\u1ec7c nu\u00f4i d\u1ea1y con.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-95",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-95",
     "number": 95,
-    "title": "ĐIỀU KHIẾN CON PHÁT TRIỂN MẠNH",
-    "subtitle": "Đây không phải MAP để ép con phải phát triển nhanh hơn, giỏi hơn hoặc trở thành phiên bản “lý tưởng” theo kỳ vọng của người lớn.",
+    "title": "\u0110I\u1ec0U KHI\u1ebeN CON PH\u00c1T TRI\u1ec2N M\u1ea0NH",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 \u00e9p con ph\u1ea3i ph\u00e1t tri\u1ec3n nhanh h\u01a1n, gi\u1ecfi h\u01a1n ho\u1eb7c tr\u1edf th\u00e0nh phi\u00ean b\u1ea3n \u201cl\u00fd t\u01b0\u1edfng\u201d theo k\u1ef3 v\u1ecdng c\u1ee7a ng\u01b0\u1eddi l\u1edbn.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-96",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-96",
     "number": 96,
-    "title": "ĐIỀU KHIẾN CON MẤT NĂNG LƯỢNG",
-    "subtitle": "Đây không phải MAP để đánh giá con “yếu đuối”, “lười biếng” hoặc thiếu cố gắng khi con mệt mỏi, mất động lực hoặc dễ kiệt sức cảm xúc.",
+    "title": "\u0110I\u1ec0U KHI\u1ebeN CON M\u1ea4T N\u0102NG L\u01af\u1ee2NG",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 \u0111\u00e1nh gi\u00e1 con \u201cy\u1ebfu \u0111u\u1ed1i\u201d, \u201cl\u01b0\u1eddi bi\u1ebfng\u201d ho\u1eb7c thi\u1ebfu c\u1ed1 g\u1eafng khi con m\u1ec7t m\u1ecfi, m\u1ea5t \u0111\u1ed9ng l\u1ef1c ho\u1eb7c d\u1ec5 ki\u1ec7t s\u1ee9c c\u1ea3m x\u00fac.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-97",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-97",
     "number": 97,
-    "title": "KIỂU BẠN BÈ PHÙ HỢP VỚI CON",
-    "subtitle": "Đây không phải MAP để kiểm soát việc con chơi với ai hoặc ép con phải có thật nhiều bạn bè mới được xem là “hòa đồng”.",
+    "title": "KI\u1ec2U B\u1ea0N B\u00c8 PH\u00d9 H\u1ee2P V\u1edaI CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 ki\u1ec3m so\u00e1t vi\u1ec7c con ch\u01a1i v\u1edbi ai ho\u1eb7c \u00e9p con ph\u1ea3i c\u00f3 th\u1eadt nhi\u1ec1u b\u1ea1n b\u00e8 m\u1edbi \u0111\u01b0\u1ee3c xem l\u00e0 \u201ch\u00f2a \u0111\u1ed3ng\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-98",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-98",
     "number": 98,
-    "title": "HOẠT ĐỘNG GIÚP CON PHÁT TRIỂN TỐT",
-    "subtitle": "Đây không phải MAP để nhồi quá nhiều hoạt động cho con hoặc ép con phải “đa tài”, “năng động” hay luôn bận rộn để được xem là phát triển tốt.",
+    "title": "HO\u1ea0T \u0110\u1ed8NG GI\u00daP CON PH\u00c1T TRI\u1ec2N T\u1ed0T",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 nh\u1ed3i qu\u00e1 nhi\u1ec1u ho\u1ea1t \u0111\u1ed9ng cho con ho\u1eb7c \u00e9p con ph\u1ea3i \u201c\u0111a t\u00e0i\u201d, \u201cn\u0103ng \u0111\u1ed9ng\u201d hay lu\u00f4n b\u1eadn r\u1ed9n \u0111\u1ec3 \u0111\u01b0\u1ee3c xem l\u00e0 ph\u00e1t tri\u1ec3n t\u1ed1t.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-99",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-99",
     "number": 99,
-    "title": "MÔI TRƯỜNG GIÚP CON TỰ TIN HƠN",
-    "subtitle": "Đây không phải MAP để biến con thành đứa trẻ “hướng ngoại”, “nổi bật” hoặc luôn phải thể hiện bản thân mới được xem là tự tin.",
+    "title": "M\u00d4I TR\u01af\u1edcNG GI\u00daP CON T\u1ef0 TIN H\u01a0N",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 bi\u1ebfn con th\u00e0nh \u0111\u1ee9a tr\u1ebb \u201ch\u01b0\u1edbng ngo\u1ea1i\u201d, \u201cn\u1ed5i b\u1eadt\u201d ho\u1eb7c lu\u00f4n ph\u1ea3i th\u1ec3 hi\u1ec7n b\u1ea3n th\u00e2n m\u1edbi \u0111\u01b0\u1ee3c xem l\u00e0 t\u1ef1 tin.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-100",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-100",
     "number": 100,
-    "title": "ĐIỀU KHIẾN CON DỄ SỐNG SAI BẢN CHẤT",
-    "subtitle": "Đây không phải MAP để phán xét con là “sống giả”, “không tốt” hoặc “không đúng” chỉ vì con thay đổi hành vi theo môi trường xung quanh.",
+    "title": "\u0110I\u1ec0U KHI\u1ebeN CON D\u1ec4 S\u1ed0NG SAI B\u1ea2N CH\u1ea4T",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 ph\u00e1n x\u00e9t con l\u00e0 \u201cs\u1ed1ng gi\u1ea3\u201d, \u201ckh\u00f4ng t\u1ed1t\u201d ho\u1eb7c \u201ckh\u00f4ng \u0111\u00fang\u201d ch\u1ec9 v\u00ec con thay \u0111\u1ed5i h\u00e0nh vi theo m\u00f4i tr\u01b0\u1eddng xung quanh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-101",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-101",
     "number": 101,
-    "title": "ĐIỀU KHIẾN CON DỄ THU MÌNH",
-    "subtitle": "Đây không phải MAP để gắn nhãn con là “nhút nhát”, “yếu đuối”, “khó hòa nhập” hoặc cho rằng con có vấn đề chỉ vì con ít nói, thu mình hoặc không dễ mở lòng với người khác.",
+    "title": "\u0110I\u1ec0U KHI\u1ebeN CON D\u1ec4 THU M\u00ccNH",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 g\u1eafn nh\u00e3n con l\u00e0 \u201cnh\u00fat nh\u00e1t\u201d, \u201cy\u1ebfu \u0111u\u1ed1i\u201d, \u201ckh\u00f3 h\u00f2a nh\u1eadp\u201d ho\u1eb7c cho r\u1eb1ng con c\u00f3 v\u1ea5n \u0111\u1ec1 ch\u1ec9 v\u00ec con \u00edt n\u00f3i, thu m\u00ecnh ho\u1eb7c kh\u00f4ng d\u1ec5 m\u1edf l\u00f2ng v\u1edbi ng\u01b0\u1eddi kh\u00e1c.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-102",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-102",
     "number": 102,
-    "title": "MÔI TRƯỜNG DỄ TẠO ÁP LỰC CHO CON",
-    "subtitle": "Đây không phải MAP để đổ lỗi cho gia đình, nhà trường hoặc môi trường sống của con.",
+    "title": "M\u00d4I TR\u01af\u1edcNG D\u1ec4 T\u1ea0O \u00c1P L\u1ef0C CHO CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 \u0111\u1ed5 l\u1ed7i cho gia \u0111\u00ecnh, nh\u00e0 tr\u01b0\u1eddng ho\u1eb7c m\u00f4i tr\u01b0\u1eddng s\u1ed1ng c\u1ee7a con.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-103",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-103",
     "number": 103,
-    "title": "KIỂU NGƯỜI ẢNH HƯỞNG MẠNH ĐẾN CON",
-    "subtitle": "Đây không phải MAP để kiểm soát các mối quan hệ của con hoặc khiến cha mẹ trở nên nghi ngờ tất cả những người xung quanh con.",
+    "title": "KI\u1ec2U NG\u01af\u1edcI \u1ea2NH H\u01af\u1edeNG M\u1ea0NH \u0110\u1ebeN CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 ki\u1ec3m so\u00e1t c\u00e1c m\u1ed1i quan h\u1ec7 c\u1ee7a con ho\u1eb7c khi\u1ebfn cha m\u1eb9 tr\u1edf n\u00ean nghi ng\u1edd t\u1ea5t c\u1ea3 nh\u1eefng ng\u01b0\u1eddi xung quanh con.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-104",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-104",
     "number": 104,
-    "title": "MÔI TRƯỜNG NUÔI DƯỠNG TÀI NĂNG CỦA CON",
-    "subtitle": "Đây không phải MAP để ép con phải “thành công sớm”, “giỏi hơn người khác” hoặc biến tài năng thành áp lực thành tích từ quá nhỏ.",
+    "title": "M\u00d4I TR\u01af\u1edcNG NU\u00d4I D\u01af\u1ee0NG T\u00c0I N\u0102NG C\u1ee6A CON",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 \u00e9p con ph\u1ea3i \u201cth\u00e0nh c\u00f4ng s\u1edbm\u201d, \u201cgi\u1ecfi h\u01a1n ng\u01b0\u1eddi kh\u00e1c\u201d ho\u1eb7c bi\u1ebfn t\u00e0i n\u0103ng th\u00e0nh \u00e1p l\u1ef1c th\u00e0nh t\u00edch t\u1eeb qu\u00e1 nh\u1ecf.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-105",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-105",
     "number": 105,
-    "title": "MÔI TRƯỜNG KHIẾN CON CẢM THẤY ĐƯỢC LÀ CHÍNH MÌNH",
-    "subtitle": "Đây không phải MAP để tạo cho con một môi trường “hoàn hảo” nơi con không bao giờ phải thay đổi, thích nghi hoặc trưởng thành.",
+    "title": "M\u00d4I TR\u01af\u1edcNG KHI\u1ebeN CON C\u1ea2M TH\u1ea4Y \u0110\u01af\u1ee2C L\u00c0 CH\u00cdNH M\u00ccNH",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 t\u1ea1o cho con m\u1ed9t m\u00f4i tr\u01b0\u1eddng \u201cho\u00e0n h\u1ea3o\u201d n\u01a1i con kh\u00f4ng bao gi\u1edd ph\u1ea3i thay \u0111\u1ed5i, th\u00edch nghi ho\u1eb7c tr\u01b0\u1edfng th\u00e0nh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-106",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-106",
     "number": 106,
-    "title": "CÁCH CON XÂY THÓI QUEN TỐT",
-    "subtitle": "Đây không phải MAP chỉ để nói rằng con “có kỷ luật”, “thiếu kỷ luật”, “chăm chỉ”, “lười biếng”, “ngoan” hay “khó bảo”.",
+    "title": "C\u00c1CH CON X\u00c2Y TH\u00d3I QUEN T\u1ed0T",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 n\u00f3i r\u1eb1ng con \u201cc\u00f3 k\u1ef7 lu\u1eadt\u201d, \u201cthi\u1ebfu k\u1ef7 lu\u1eadt\u201d, \u201cch\u0103m ch\u1ec9\u201d, \u201cl\u01b0\u1eddi bi\u1ebfng\u201d, \u201cngoan\u201d hay \u201ckh\u00f3 b\u1ea3o\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-107",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-107",
     "number": 107,
-    "title": "VÌ SAO CON KHÓ DUY TRÌ KỶ LUẬT",
-    "subtitle": "Đây không phải MAP chỉ để nói rằng con “thiếu kỷ luật”, “lười biếng”, “hay trì hoãn”, “không có ý thức” hay “không chịu cố gắng”.",
+    "title": "V\u00cc SAO CON KH\u00d3 DUY TR\u00cc K\u1ef6 LU\u1eacT",
+    "subtitle": "\u0110\u00e2y kh\u00f4ng ph\u1ea3i MAP ch\u1ec9 \u0111\u1ec3 n\u00f3i r\u1eb1ng con \u201cthi\u1ebfu k\u1ef7 lu\u1eadt\u201d, \u201cl\u01b0\u1eddi bi\u1ebfng\u201d, \u201chay tr\u00ec ho\u00e3n\u201d, \u201ckh\u00f4ng c\u00f3 \u00fd th\u1ee9c\u201d hay \u201ckh\u00f4ng ch\u1ecbu c\u1ed1 g\u1eafng\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-108",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-108",
     "number": 108,
-    "title": "CÁCH GIÚP CON TỰ GIÁC",
-    "subtitle": "MAP này không nhằm đánh giá con là đứa trẻ có trách nhiệm hay thiếu trách nhiệm, không dán nhãn con là lười biếng, vô tâm, ỷ lại hay thiếu ý thức.",
+    "title": "C\u00c1CH GI\u00daP CON T\u1ef0 GI\u00c1C",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m \u0111\u00e1nh gi\u00e1 con l\u00e0 \u0111\u1ee9a tr\u1ebb c\u00f3 tr\u00e1ch nhi\u1ec7m hay thi\u1ebfu tr\u00e1ch nhi\u1ec7m, kh\u00f4ng d\u00e1n nh\u00e3n con l\u00e0 l\u01b0\u1eddi bi\u1ebfng, v\u00f4 t\u00e2m, \u1ef7 l\u1ea1i hay thi\u1ebfu \u00fd th\u1ee9c.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-109",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-109",
     "number": 109,
-    "title": "CÁCH GIÚP CON QUẢN LÝ THỜI GIAN",
-    "subtitle": "MAP này không nhằm đánh giá con là đứa trẻ biết quản lý thời gian hay không biết quản lý thời gian, không dán nhãn con là chậm chạp, thiếu tổ chức, trì hoãn hay thiếu trách nhiệm.",
+    "title": "C\u00c1CH GI\u00daP CON QU\u1ea2N L\u00dd TH\u1edcI GIAN",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m \u0111\u00e1nh gi\u00e1 con l\u00e0 \u0111\u1ee9a tr\u1ebb bi\u1ebft qu\u1ea3n l\u00fd th\u1eddi gian hay kh\u00f4ng bi\u1ebft qu\u1ea3n l\u00fd th\u1eddi gian, kh\u00f4ng d\u00e1n nh\u00e3n con l\u00e0 ch\u1eadm ch\u1ea1p, thi\u1ebfu t\u1ed5 ch\u1ee9c, tr\u00ec ho\u00e3n hay thi\u1ebfu tr\u00e1ch nhi\u1ec7m.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-110",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-110",
     "number": 110,
-    "title": "CÁCH GIÚP CON HOÀN THÀNH VIỆC ĐÃ BẮT ĐẦU",
-    "subtitle": "MAP này không nhằm đánh giá con là đứa trẻ kiên trì hay thiếu kiên trì, không dán nhãn con là dễ bỏ cuộc, thiếu cố gắng, thiếu quyết tâm hay không có ý chí.",
+    "title": "C\u00c1CH GI\u00daP CON HO\u00c0N TH\u00c0NH VI\u1ec6C \u0110\u00c3 B\u1eaeT \u0110\u1ea6U",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m \u0111\u00e1nh gi\u00e1 con l\u00e0 \u0111\u1ee9a tr\u1ebb ki\u00ean tr\u00ec hay thi\u1ebfu ki\u00ean tr\u00ec, kh\u00f4ng d\u00e1n nh\u00e3n con l\u00e0 d\u1ec5 b\u1ecf cu\u1ed9c, thi\u1ebfu c\u1ed1 g\u1eafng, thi\u1ebfu quy\u1ebft t\u00e2m hay kh\u00f4ng c\u00f3 \u00fd ch\u00ed.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-111",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-111",
     "number": 111,
-    "title": "THÓI QUEN HỌC TẬP PHÙ HỢP VỚI CON",
-    "subtitle": "MAP này không nhằm đánh giá con là đứa trẻ học giỏi hay học kém, chăm chỉ hay lười biếng, thông minh hay chậm tiếp thu, cũng không nhằm ép con phải học nhiều hơn hoặc đạt thành tích cao hơn.",
+    "title": "TH\u00d3I QUEN H\u1eccC T\u1eacP PH\u00d9 H\u1ee2P V\u1edaI CON",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m \u0111\u00e1nh gi\u00e1 con l\u00e0 \u0111\u1ee9a tr\u1ebb h\u1ecdc gi\u1ecfi hay h\u1ecdc k\u00e9m, ch\u0103m ch\u1ec9 hay l\u01b0\u1eddi bi\u1ebfng, th\u00f4ng minh hay ch\u1eadm ti\u1ebfp thu, c\u0169ng kh\u00f4ng nh\u1eb1m \u00e9p con ph\u1ea3i h\u1ecdc nhi\u1ec1u h\u01a1n ho\u1eb7c \u0111\u1ea1t th\u00e0nh t\u00edch cao h\u01a1n.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-112",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-112",
     "number": 112,
-    "title": "THÓI QUEN SINH HOẠT PHÙ HỢP VỚI CON",
-    "subtitle": "MAP này không nhằm đánh giá con là đứa trẻ có nề nếp hay thiếu nề nếp, không dán nhãn con là lười vận động, thức khuya, khó hợp tác hay thiếu ý thức trong sinh hoạt hằng ngày.",
+    "title": "TH\u00d3I QUEN SINH HO\u1ea0T PH\u00d9 H\u1ee2P V\u1edaI CON",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m \u0111\u00e1nh gi\u00e1 con l\u00e0 \u0111\u1ee9a tr\u1ebb c\u00f3 n\u1ec1 n\u1ebfp hay thi\u1ebfu n\u1ec1 n\u1ebfp, kh\u00f4ng d\u00e1n nh\u00e3n con l\u00e0 l\u01b0\u1eddi v\u1eadn \u0111\u1ed9ng, th\u1ee9c khuya, kh\u00f3 h\u1ee3p t\u00e1c hay thi\u1ebfu \u00fd th\u1ee9c trong sinh ho\u1ea1t h\u1eb1ng ng\u00e0y.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-113",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-113",
     "number": 113,
-    "title": "GIẤC NGỦ ẢNH HƯỞNG ĐẾN CẢM XÚC CỦA CON",
-    "subtitle": "MAP này không nhằm đánh giá con là đứa trẻ ngủ ngoan hay ngủ không ngoan, không dán nhãn con là khó ngủ, lười ngủ, thức khuya hay thiếu ý thức trong việc giữ nề nếp nghỉ ngơi.",
+    "title": "GI\u1ea4C NG\u1ee6 \u1ea2NH H\u01af\u1edeNG \u0110\u1ebeN C\u1ea2M X\u00daC C\u1ee6A CON",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m \u0111\u00e1nh gi\u00e1 con l\u00e0 \u0111\u1ee9a tr\u1ebb ng\u1ee7 ngoan hay ng\u1ee7 kh\u00f4ng ngoan, kh\u00f4ng d\u00e1n nh\u00e3n con l\u00e0 kh\u00f3 ng\u1ee7, l\u01b0\u1eddi ng\u1ee7, th\u1ee9c khuya hay thi\u1ebfu \u00fd th\u1ee9c trong vi\u1ec7c gi\u1eef n\u1ec1 n\u1ebfp ngh\u1ec9 ng\u01a1i.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-114",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-114",
     "number": 114,
-    "title": "NẾP SỐNG GIA ĐÌNH ẢNH HƯỞNG ĐẾN SỰ TẬP TRUNG CỦA CON",
-    "subtitle": "MAP này không nhằm đánh giá con là đứa trẻ tập trung tốt hay thiếu tập trung, không dán nhãn con là lơ đãng, tăng động, ham chơi, học không vào hay thiếu ý chí cố gắng.",
+    "title": "N\u1ebeP S\u1ed0NG GIA \u0110\u00ccNH \u1ea2NH H\u01af\u1edeNG \u0110\u1ebeN S\u1ef0 T\u1eacP TRUNG C\u1ee6A CON",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m \u0111\u00e1nh gi\u00e1 con l\u00e0 \u0111\u1ee9a tr\u1ebb t\u1eadp trung t\u1ed1t hay thi\u1ebfu t\u1eadp trung, kh\u00f4ng d\u00e1n nh\u00e3n con l\u00e0 l\u01a1 \u0111\u00e3ng, t\u0103ng \u0111\u1ed9ng, ham ch\u01a1i, h\u1ecdc kh\u00f4ng v\u00e0o hay thi\u1ebfu \u00fd ch\u00ed c\u1ed1 g\u1eafng.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-115",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-115",
     "number": 115,
-    "title": "CÁCH XÂY NỀN NẾP MÀ KHÔNG LÀM CON BỊ ÁP LỰC",
-    "subtitle": "MAP này không nhằm đánh giá con là đứa trẻ ngoan hay hư, nghe lời hay chống đối, có kỷ luật hay thiếu kỷ luật.",
+    "title": "C\u00c1CH X\u00c2Y N\u1ec0N N\u1ebeP M\u00c0 KH\u00d4NG L\u00c0M CON B\u1eca \u00c1P L\u1ef0C",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m \u0111\u00e1nh gi\u00e1 con l\u00e0 \u0111\u1ee9a tr\u1ebb ngoan hay h\u01b0, nghe l\u1eddi hay ch\u1ed1ng \u0111\u1ed1i, c\u00f3 k\u1ef7 lu\u1eadt hay thi\u1ebfu k\u1ef7 lu\u1eadt.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-116",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-116",
     "number": 116,
-    "title": "NGUY CƠ NGHIỆN ĐIỆN THOẠI",
-    "subtitle": "MAP này không nhằm đánh giá con là đứa trẻ ngoan hay hư khi sử dụng điện thoại, không dán nhãn con là nghiện điện thoại, ham chơi, thiếu ý thức hay mất kiểm soát bản thân.",
+    "title": "NGUY C\u01a0 NGHI\u1ec6N \u0110I\u1ec6N THO\u1ea0I",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m \u0111\u00e1nh gi\u00e1 con l\u00e0 \u0111\u1ee9a tr\u1ebb ngoan hay h\u01b0 khi s\u1eed d\u1ee5ng \u0111i\u1ec7n tho\u1ea1i, kh\u00f4ng d\u00e1n nh\u00e3n con l\u00e0 nghi\u1ec7n \u0111i\u1ec7n tho\u1ea1i, ham ch\u01a1i, thi\u1ebfu \u00fd th\u1ee9c hay m\u1ea5t ki\u1ec3m so\u00e1t b\u1ea3n th\u00e2n.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-117",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-117",
     "number": 117,
-    "title": "NGUY CƠ NGHIỆN TRÒ CHƠI",
-    "subtitle": "MAP này không nhằm đánh giá con là đứa trẻ ngoan hay hư vì chơi game, không dán nhãn con là nghiện game, ham chơi, thiếu ý chí, thiếu trách nhiệm hay không biết kiểm soát bản thân.",
+    "title": "NGUY C\u01a0 NGHI\u1ec6N TR\u00d2 CH\u01a0I",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m \u0111\u00e1nh gi\u00e1 con l\u00e0 \u0111\u1ee9a tr\u1ebb ngoan hay h\u01b0 v\u00ec ch\u01a1i game, kh\u00f4ng d\u00e1n nh\u00e3n con l\u00e0 nghi\u1ec7n game, ham ch\u01a1i, thi\u1ebfu \u00fd ch\u00ed, thi\u1ebfu tr\u00e1ch nhi\u1ec7m hay kh\u00f4ng bi\u1ebft ki\u1ec3m so\u00e1t b\u1ea3n th\u00e2n.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-118",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-118",
     "number": 118,
-    "title": "NGUY CƠ PHỤ THUỘC GIẢI TRÍ NHANH",
-    "subtitle": "MAP này không nhằm đánh giá con là đứa trẻ ham chơi, thiếu tập trung, lười suy nghĩ hay không biết kiểm soát bản thân khi sử dụng các hình thức giải trí nhanh.",
+    "title": "NGUY C\u01a0 PH\u1ee4 THU\u1ed8C GI\u1ea2I TR\u00cd NHANH",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m \u0111\u00e1nh gi\u00e1 con l\u00e0 \u0111\u1ee9a tr\u1ebb ham ch\u01a1i, thi\u1ebfu t\u1eadp trung, l\u01b0\u1eddi suy ngh\u0129 hay kh\u00f4ng bi\u1ebft ki\u1ec3m so\u00e1t b\u1ea3n th\u00e2n khi s\u1eed d\u1ee5ng c\u00e1c h\u00ecnh th\u1ee9c gi\u1ea3i tr\u00ed nhanh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-119",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-119",
     "number": 119,
-    "title": "VÌ SAO CON DỄ MẤT TẬP TRUNG VÌ ĐIỆN THOẠI",
-    "subtitle": "MAP này không nhằm đánh giá con là đứa trẻ thiếu tập trung, lười học, thiếu ý chí hay không biết kiểm soát bản thân khi sử dụng điện thoại.",
+    "title": "V\u00cc SAO CON D\u1ec4 M\u1ea4T T\u1eacP TRUNG V\u00cc \u0110I\u1ec6N THO\u1ea0I",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m \u0111\u00e1nh gi\u00e1 con l\u00e0 \u0111\u1ee9a tr\u1ebb thi\u1ebfu t\u1eadp trung, l\u01b0\u1eddi h\u1ecdc, thi\u1ebfu \u00fd ch\u00ed hay kh\u00f4ng bi\u1ebft ki\u1ec3m so\u00e1t b\u1ea3n th\u00e2n khi s\u1eed d\u1ee5ng \u0111i\u1ec7n tho\u1ea1i.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-120",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-120",
     "number": 120,
-    "title": "VÌ SAO CON TÌM CẢM GIÁC AN TOÀN TRONG THẾ GIỚI ẢO",
-    "subtitle": "MAP này không nhằm đánh giá con là đứa trẻ nghiện mạng xã hội, mê game, thích ở trong phòng hay xa cách với cuộc sống thật.",
+    "title": "V\u00cc SAO CON T\u00ccM C\u1ea2M GI\u00c1C AN TO\u00c0N TRONG TH\u1ebe GI\u1edaI \u1ea2O",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m \u0111\u00e1nh gi\u00e1 con l\u00e0 \u0111\u1ee9a tr\u1ebb nghi\u1ec7n m\u1ea1ng x\u00e3 h\u1ed9i, m\u00ea game, th\u00edch \u1edf trong ph\u00f2ng hay xa c\u00e1ch v\u1edbi cu\u1ed9c s\u1ed1ng th\u1eadt.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-121",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-121",
     "number": 121,
-    "title": "CÁCH ĐẶT GIỚI HẠN THIẾT BỊ PHÙ HỢP VỚI CON",
-    "subtitle": "MAP này không nhằm đánh giá con là đứa trẻ ngoan hay không ngoan khi sử dụng điện thoại, máy tính bảng, trò chơi điện tử hoặc mạng xã hội. Đây cũng không phải MAP để xác định con có nghe lời khi bị cấm thiết bị hay không.",
+    "title": "C\u00c1CH \u0110\u1eb6T GI\u1edaI H\u1ea0N THI\u1ebeT B\u1eca PH\u00d9 H\u1ee2P V\u1edaI CON",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m \u0111\u00e1nh gi\u00e1 con l\u00e0 \u0111\u1ee9a tr\u1ebb ngoan hay kh\u00f4ng ngoan khi s\u1eed d\u1ee5ng \u0111i\u1ec7n tho\u1ea1i, m\u00e1y t\u00ednh b\u1ea3ng, tr\u00f2 ch\u01a1i \u0111i\u1ec7n t\u1eed ho\u1eb7c m\u1ea1ng x\u00e3 h\u1ed9i. \u0110\u00e2y c\u0169ng kh\u00f4ng ph\u1ea3i MAP \u0111\u1ec3 x\u00e1c \u0111\u1ecbnh con c\u00f3 nghe l\u1eddi khi b\u1ecb c\u1ea5m thi\u1ebft b\u1ecb hay kh\u00f4ng.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-122",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-122",
     "number": 122,
-    "title": "CÁCH GIÚP CON QUAY LẠI HỌC TẬP SAU KHI BỊ XAO NHÃNG",
-    "subtitle": "MAP này không nhằm đánh giá con là đứa trẻ chăm học hay lười học, không dán nhãn con là thiếu ý chí, thiếu quyết tâm hoặc thiếu trách nhiệm khi kết quả học tập giảm sút sau một giai đoạn bị xao nhãng.",
+    "title": "C\u00c1CH GI\u00daP CON QUAY L\u1ea0I H\u1eccC T\u1eacP SAU KHI B\u1eca XAO NH\u00c3NG",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m \u0111\u00e1nh gi\u00e1 con l\u00e0 \u0111\u1ee9a tr\u1ebb ch\u0103m h\u1ecdc hay l\u01b0\u1eddi h\u1ecdc, kh\u00f4ng d\u00e1n nh\u00e3n con l\u00e0 thi\u1ebfu \u00fd ch\u00ed, thi\u1ebfu quy\u1ebft t\u00e2m ho\u1eb7c thi\u1ebfu tr\u00e1ch nhi\u1ec7m khi k\u1ebft qu\u1ea3 h\u1ecdc t\u1eadp gi\u1ea3m s\u00fat sau m\u1ed9t giai \u0111o\u1ea1n b\u1ecb xao nh\u00e3ng.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-123",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-123",
     "number": 123,
-    "title": "CÁCH GIÚP CON DÙNG CÔNG NGHỆ LÀNH MẠNH",
-    "subtitle": "MAP này không nhằm đánh giá con là đứa trẻ dùng công nghệ tốt hay xấu, không dán nhãn con là nghiện thiết bị, mê màn hình hoặc thiếu ý thức khi sử dụng điện thoại, máy tính bảng, mạng xã hội hay các nền tảng giải trí số.",
+    "title": "C\u00c1CH GI\u00daP CON D\u00d9NG C\u00d4NG NGH\u1ec6 L\u00c0NH M\u1ea0NH",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m \u0111\u00e1nh gi\u00e1 con l\u00e0 \u0111\u1ee9a tr\u1ebb d\u00f9ng c\u00f4ng ngh\u1ec7 t\u1ed1t hay x\u1ea5u, kh\u00f4ng d\u00e1n nh\u00e3n con l\u00e0 nghi\u1ec7n thi\u1ebft b\u1ecb, m\u00ea m\u00e0n h\u00ecnh ho\u1eb7c thi\u1ebfu \u00fd th\u1ee9c khi s\u1eed d\u1ee5ng \u0111i\u1ec7n tho\u1ea1i, m\u00e1y t\u00ednh b\u1ea3ng, m\u1ea1ng x\u00e3 h\u1ed9i hay c\u00e1c n\u1ec1n t\u1ea3ng gi\u1ea3i tr\u00ed s\u1ed1.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-124",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-124",
     "number": 124,
-    "title": "DẤU HIỆU CON ĐANG TRỐN CẢM XÚC BẰNG GIẢI TRÍ",
-    "subtitle": "MAP này không nhằm đánh giá con là đứa trẻ ham chơi, mê điện thoại, nghiện game, lười học hay thiếu ý thức trong việc sử dụng thời gian giải trí.",
+    "title": "D\u1ea4U HI\u1ec6U CON \u0110ANG TR\u1ed0N C\u1ea2M X\u00daC B\u1eb0NG GI\u1ea2I TR\u00cd",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m \u0111\u00e1nh gi\u00e1 con l\u00e0 \u0111\u1ee9a tr\u1ebb ham ch\u01a1i, m\u00ea \u0111i\u1ec7n tho\u1ea1i, nghi\u1ec7n game, l\u01b0\u1eddi h\u1ecdc hay thi\u1ebfu \u00fd th\u1ee9c trong vi\u1ec7c s\u1eed d\u1ee5ng th\u1eddi gian gi\u1ea3i tr\u00ed.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-125",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-125",
     "number": 125,
-    "title": "CÁCH THAY THẾ GIẢI TRÍ NHANH BẰNG HOẠT ĐỘNG LÀNH MẠNH",
-    "subtitle": "MAP này không nhằm đánh giá con là đứa trẻ ham chơi, nghiện điện thoại, thiếu ý chí hay không biết tận dụng thời gian của mình một cách hiệu quả.",
+    "title": "C\u00c1CH THAY TH\u1ebe GI\u1ea2I TR\u00cd NHANH B\u1eb0NG HO\u1ea0T \u0110\u1ed8NG L\u00c0NH M\u1ea0NH",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m \u0111\u00e1nh gi\u00e1 con l\u00e0 \u0111\u1ee9a tr\u1ebb ham ch\u01a1i, nghi\u1ec7n \u0111i\u1ec7n tho\u1ea1i, thi\u1ebfu \u00fd ch\u00ed hay kh\u00f4ng bi\u1ebft t\u1eadn d\u1ee5ng th\u1eddi gian c\u1ee7a m\u00ecnh m\u1ed9t c\u00e1ch hi\u1ec7u qu\u1ea3.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-126",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-126",
     "number": 126,
-    "title": "KHỦNG HOẢNG TUỔI DẬY THÌ",
-    "subtitle": "MAP này không nhằm đánh giá con là đứa trẻ ngoan hay hư, nghe lời hay chống đối, trưởng thành hay nổi loạn. MAP cũng không xem tuổi dậy thì là một giai đoạn \"có vấn đề\" cần phải kiểm soát hoặc sửa chữa.",
+    "title": "KH\u1ee6NG HO\u1ea2NG TU\u1ed4I D\u1eacY TH\u00cc",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m \u0111\u00e1nh gi\u00e1 con l\u00e0 \u0111\u1ee9a tr\u1ebb ngoan hay h\u01b0, nghe l\u1eddi hay ch\u1ed1ng \u0111\u1ed1i, tr\u01b0\u1edfng th\u00e0nh hay n\u1ed5i lo\u1ea1n. MAP c\u0169ng kh\u00f4ng xem tu\u1ed5i d\u1eady th\u00ec l\u00e0 m\u1ed9t giai \u0111o\u1ea1n \"c\u00f3 v\u1ea5n \u0111\u1ec1\" c\u1ea7n ph\u1ea3i ki\u1ec3m so\u00e1t ho\u1eb7c s\u1eeda ch\u1eefa.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-127",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-127",
     "number": 127,
-    "title": "NHỮNG THAY ĐỔI TÂM LÝ TUỔI TEEN",
-    "subtitle": "MAP này không nhằm đánh giá con là đứa trẻ thất thường, khó bảo, nhạy cảm quá mức hay đang trở nên nổi loạn. MAP cũng không xem tuổi teen là giai đoạn đầy vấn đề cần phải kiểm soát hoặc chỉnh sửa liên tục.",
+    "title": "NH\u1eeeNG THAY \u0110\u1ed4I T\u00c2M L\u00dd TU\u1ed4I TEEN",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m \u0111\u00e1nh gi\u00e1 con l\u00e0 \u0111\u1ee9a tr\u1ebb th\u1ea5t th\u01b0\u1eddng, kh\u00f3 b\u1ea3o, nh\u1ea1y c\u1ea3m qu\u00e1 m\u1ee9c hay \u0111ang tr\u1edf n\u00ean n\u1ed5i lo\u1ea1n. MAP c\u0169ng kh\u00f4ng xem tu\u1ed5i teen l\u00e0 giai \u0111o\u1ea1n \u0111\u1ea7y v\u1ea5n \u0111\u1ec1 c\u1ea7n ph\u1ea3i ki\u1ec3m so\u00e1t ho\u1eb7c ch\u1ec9nh s\u1eeda li\u00ean t\u1ee5c.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-128",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-128",
     "number": 128,
-    "title": "VÌ SAO TUỔI TEEN DỄ CHỐNG ĐỐI",
-    "subtitle": "MAP này không nhằm đánh giá con là đứa trẻ hư, khó bảo, ngang bướng hay không biết nghe lời. MAP cũng không xem sự chống đối là vấn đề cần bị dập tắt bằng quyền lực, hình phạt hoặc kiểm soát mạnh hơn.",
+    "title": "V\u00cc SAO TU\u1ed4I TEEN D\u1ec4 CH\u1ed0NG \u0110\u1ed0I",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m \u0111\u00e1nh gi\u00e1 con l\u00e0 \u0111\u1ee9a tr\u1ebb h\u01b0, kh\u00f3 b\u1ea3o, ngang b\u01b0\u1edbng hay kh\u00f4ng bi\u1ebft nghe l\u1eddi. MAP c\u0169ng kh\u00f4ng xem s\u1ef1 ch\u1ed1ng \u0111\u1ed1i l\u00e0 v\u1ea5n \u0111\u1ec1 c\u1ea7n b\u1ecb d\u1eadp t\u1eaft b\u1eb1ng quy\u1ec1n l\u1ef1c, h\u00ecnh ph\u1ea1t ho\u1eb7c ki\u1ec3m so\u00e1t m\u1ea1nh h\u01a1n.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-129",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-129",
     "number": 129,
-    "title": "TUỔI TEEN VÀ NHU CẦU ĐƯỢC TÔN TRỌNG",
-    "subtitle": "MAP này không được xây dựng theo hướng nuông chiều con, cũng không nhằm cổ vũ việc để con muốn làm gì thì làm. MAP tập trung giải mã nhu cầu được tôn trọng như một nhu cầu tâm lý cốt lõi của tuổi teen, giúp cha mẹ hiểu vì sao đây là một trong những yếu tố ảnh hưởng mạnh nhất đến cảm xúc, hành vi, lòng tự trọng và quá trình hình thành bản sắc cá nhân của con.",
+    "title": "TU\u1ed4I TEEN V\u00c0 NHU C\u1ea6U \u0110\u01af\u1ee2C T\u00d4N TR\u1eccNG",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng theo h\u01b0\u1edbng nu\u00f4ng chi\u1ec1u con, c\u0169ng kh\u00f4ng nh\u1eb1m c\u1ed5 v\u0169 vi\u1ec7c \u0111\u1ec3 con mu\u1ed1n l\u00e0m g\u00ec th\u00ec l\u00e0m. MAP t\u1eadp trung gi\u1ea3i m\u00e3 nhu c\u1ea7u \u0111\u01b0\u1ee3c t\u00f4n tr\u1ecdng nh\u01b0 m\u1ed9t nhu c\u1ea7u t\u00e2m l\u00fd c\u1ed1t l\u00f5i c\u1ee7a tu\u1ed5i teen, gi\u00fap cha m\u1eb9 hi\u1ec3u v\u00ec sao \u0111\u00e2y l\u00e0 m\u1ed9t trong nh\u1eefng y\u1ebfu t\u1ed1 \u1ea3nh h\u01b0\u1edfng m\u1ea1nh nh\u1ea5t \u0111\u1ebfn c\u1ea3m x\u00fac, h\u00e0nh vi, l\u00f2ng t\u1ef1 tr\u1ecdng v\u00e0 qu\u00e1 tr\u00ecnh h\u00ecnh th\u00e0nh b\u1ea3n s\u1eafc c\u00e1 nh\u00e2n c\u1ee7a con.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-130",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-130",
     "number": 130,
-    "title": "ĐIỀU TUỔI TEEN GHÉT NHẤT TỪ BỐ MẸ",
-    "subtitle": "MAP này không được xây dựng nhằm phán xét cha mẹ, cũng không nhằm khẳng định con luôn đúng còn người lớn luôn sai. MAP tập trung giải mã những điều tuổi teen thường phản ứng mạnh nhất từ cha mẹ để giúp người lớn nhìn thấy điều đang diễn ra bên dưới hành vi thay vì chỉ nhìn thấy sự chống đối bên ngoài.",
+    "title": "\u0110I\u1ec0U TU\u1ed4I TEEN GH\u00c9T NH\u1ea4T T\u1eea B\u1ed0 M\u1eb8",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng nh\u1eb1m ph\u00e1n x\u00e9t cha m\u1eb9, c\u0169ng kh\u00f4ng nh\u1eb1m kh\u1eb3ng \u0111\u1ecbnh con lu\u00f4n \u0111\u00fang c\u00f2n ng\u01b0\u1eddi l\u1edbn lu\u00f4n sai. MAP t\u1eadp trung gi\u1ea3i m\u00e3 nh\u1eefng \u0111i\u1ec1u tu\u1ed5i teen th\u01b0\u1eddng ph\u1ea3n \u1ee9ng m\u1ea1nh nh\u1ea5t t\u1eeb cha m\u1eb9 \u0111\u1ec3 gi\u00fap ng\u01b0\u1eddi l\u1edbn nh\u00ecn th\u1ea5y \u0111i\u1ec1u \u0111ang di\u1ec5n ra b\u00ean d\u01b0\u1edbi h\u00e0nh vi thay v\u00ec ch\u1ec9 nh\u00ecn th\u1ea5y s\u1ef1 ch\u1ed1ng \u0111\u1ed1i b\u00ean ngo\u00e0i.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-131",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-131",
     "number": 131,
-    "title": "ĐIỀU TUỔI TEEN CẦN NHẤT NHƯNG ÍT NÓI RA",
-    "subtitle": "MAP này không được xây dựng theo hướng suy đoán cảm tính về tuổi teen, cũng không nhằm tạo ra những kết luận chung chung như “con cần được yêu thương” hoặc “con cần được quan tâm”. MAP tập trung giải mã những nhu cầu cảm xúc, tâm lý và giá trị cốt lõi đang tồn tại rất mạnh bên trong tuổi teen nhưng thường không được con diễn đạt thành lời.",
+    "title": "\u0110I\u1ec0U TU\u1ed4I TEEN C\u1ea6N NH\u1ea4T NH\u01afNG \u00cdT N\u00d3I RA",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng theo h\u01b0\u1edbng suy \u0111o\u00e1n c\u1ea3m t\u00ednh v\u1ec1 tu\u1ed5i teen, c\u0169ng kh\u00f4ng nh\u1eb1m t\u1ea1o ra nh\u1eefng k\u1ebft lu\u1eadn chung chung nh\u01b0 \u201ccon c\u1ea7n \u0111\u01b0\u1ee3c y\u00eau th\u01b0\u01a1ng\u201d ho\u1eb7c \u201ccon c\u1ea7n \u0111\u01b0\u1ee3c quan t\u00e2m\u201d. MAP t\u1eadp trung gi\u1ea3i m\u00e3 nh\u1eefng nhu c\u1ea7u c\u1ea3m x\u00fac, t\u00e2m l\u00fd v\u00e0 gi\u00e1 tr\u1ecb c\u1ed1t l\u00f5i \u0111ang t\u1ed3n t\u1ea1i r\u1ea5t m\u1ea1nh b\u00ean trong tu\u1ed5i teen nh\u01b0ng th\u01b0\u1eddng kh\u00f4ng \u0111\u01b0\u1ee3c con di\u1ec5n \u0111\u1ea1t th\u00e0nh l\u1eddi.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-132",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-132",
     "number": 132,
-    "title": "CÁCH ĐỒNG HÀNH VỚI CON TUỔI TEEN",
-    "subtitle": "MAP này không được xây dựng theo hướng dạy cha mẹ cách kiểm soát con tốt hơn hoặc làm sao để con nghe lời hơn. MAP tập trung giải mã cách kết nối, dẫn dắt và đồng hành phù hợp với giai đoạn tuổi teen — giai đoạn con đang chuyển từ sự phụ thuộc sang tự chủ, từ trẻ nhỏ sang người trưởng thành.",
+    "title": "C\u00c1CH \u0110\u1ed2NG H\u00c0NH V\u1edaI CON TU\u1ed4I TEEN",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng theo h\u01b0\u1edbng d\u1ea1y cha m\u1eb9 c\u00e1ch ki\u1ec3m so\u00e1t con t\u1ed1t h\u01a1n ho\u1eb7c l\u00e0m sao \u0111\u1ec3 con nghe l\u1eddi h\u01a1n. MAP t\u1eadp trung gi\u1ea3i m\u00e3 c\u00e1ch k\u1ebft n\u1ed1i, d\u1eabn d\u1eaft v\u00e0 \u0111\u1ed3ng h\u00e0nh ph\u00f9 h\u1ee3p v\u1edbi giai \u0111o\u1ea1n tu\u1ed5i teen \u2014 giai \u0111o\u1ea1n con \u0111ang chuy\u1ec3n t\u1eeb s\u1ef1 ph\u1ee5 thu\u1ed9c sang t\u1ef1 ch\u1ee7, t\u1eeb tr\u1ebb nh\u1ecf sang ng\u01b0\u1eddi tr\u01b0\u1edfng th\u00e0nh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-133",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-133",
     "number": 133,
-    "title": "NGUY CƠ MẤT KẾT NỐI Ở TUỔI TEEN",
-    "subtitle": "MAP này không được xây dựng theo hướng giải thích đơn giản rằng tuổi teen lớn lên nên tự nhiên xa cha mẹ hoặc ít chia sẻ hơn. MAP tập trung đi sâu vào cơ chế tâm lý, cảm xúc và các tổn thương tích lũy khiến một đứa trẻ dần mất kết nối với gia đình, với người khác và với chính bản thân mình.",
+    "title": "NGUY C\u01a0 M\u1ea4T K\u1ebeT N\u1ed0I \u1ede TU\u1ed4I TEEN",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng theo h\u01b0\u1edbng gi\u1ea3i th\u00edch \u0111\u01a1n gi\u1ea3n r\u1eb1ng tu\u1ed5i teen l\u1edbn l\u00ean n\u00ean t\u1ef1 nhi\u00ean xa cha m\u1eb9 ho\u1eb7c \u00edt chia s\u1ebb h\u01a1n. MAP t\u1eadp trung \u0111i s\u00e2u v\u00e0o c\u01a1 ch\u1ebf t\u00e2m l\u00fd, c\u1ea3m x\u00fac v\u00e0 c\u00e1c t\u1ed5n th\u01b0\u01a1ng t\u00edch l\u0169y khi\u1ebfn m\u1ed9t \u0111\u1ee9a tr\u1ebb d\u1ea7n m\u1ea5t k\u1ebft n\u1ed1i v\u1edbi gia \u0111\u00ecnh, v\u1edbi ng\u01b0\u1eddi kh\u00e1c v\u00e0 v\u1edbi ch\u00ednh b\u1ea3n th\u00e2n m\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-134",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-134",
     "number": 134,
-    "title": "HÌNH ẢNH CƠ THỂ TRONG MẮT CON TUỔI TEEN",
-    "subtitle": "MAP này không được xây dựng theo hướng đơn giản rằng con đang tự ti ngoại hình hoặc quá quan tâm đến vẻ ngoài. MAP tập trung đi sâu vào việc hình ảnh cơ thể đang trở thành một phần rất quan trọng trong quá trình xây dựng giá trị bản thân, lòng tự trọng và bản sắc cá nhân của tuổi teen như thế nào.",
+    "title": "H\u00ccNH \u1ea2NH C\u01a0 TH\u1ec2 TRONG M\u1eaeT CON TU\u1ed4I TEEN",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng theo h\u01b0\u1edbng \u0111\u01a1n gi\u1ea3n r\u1eb1ng con \u0111ang t\u1ef1 ti ngo\u1ea1i h\u00ecnh ho\u1eb7c qu\u00e1 quan t\u00e2m \u0111\u1ebfn v\u1ebb ngo\u00e0i. MAP t\u1eadp trung \u0111i s\u00e2u v\u00e0o vi\u1ec7c h\u00ecnh \u1ea3nh c\u01a1 th\u1ec3 \u0111ang tr\u1edf th\u00e0nh m\u1ed9t ph\u1ea7n r\u1ea5t quan tr\u1ecdng trong qu\u00e1 tr\u00ecnh x\u00e2y d\u1ef1ng gi\u00e1 tr\u1ecb b\u1ea3n th\u00e2n, l\u00f2ng t\u1ef1 tr\u1ecdng v\u00e0 b\u1ea3n s\u1eafc c\u00e1 nh\u00e2n c\u1ee7a tu\u1ed5i teen nh\u01b0 th\u1ebf n\u00e0o.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-135",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-135",
     "number": 135,
-    "title": "CÁCH GIÚP CON TUỔI TEEN GIỮ BẢN SẮC CÁ NHÂN",
-    "subtitle": "MAP này không được xây dựng theo hướng khuyến khích tuổi teen “hãy là chính mình” bằng những lời động viên chung chung. MAP tập trung đi sâu vào quá trình tuổi teen đang phải vật lộn giữa nhu cầu được thuộc về, được công nhận và được yêu thương với nhu cầu giữ lại con người thật bên trong mình.",
+    "title": "C\u00c1CH GI\u00daP CON TU\u1ed4I TEEN GI\u1eee B\u1ea2N S\u1eaeC C\u00c1 NH\u00c2N",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng theo h\u01b0\u1edbng khuy\u1ebfn kh\u00edch tu\u1ed5i teen \u201ch\u00e3y l\u00e0 ch\u00ednh m\u00ecnh\u201d b\u1eb1ng nh\u1eefng l\u1eddi \u0111\u1ed9ng vi\u00ean chung chung. MAP t\u1eadp trung \u0111i s\u00e2u v\u00e0o qu\u00e1 tr\u00ecnh tu\u1ed5i teen \u0111ang ph\u1ea3i v\u1eadt l\u1ed9n gi\u1eefa nhu c\u1ea7u \u0111\u01b0\u1ee3c thu\u1ed9c v\u1ec1, \u0111\u01b0\u1ee3c c\u00f4ng nh\u1eadn v\u00e0 \u0111\u01b0\u1ee3c y\u00eau th\u01b0\u01a1ng v\u1edbi nhu c\u1ea7u gi\u1eef l\u1ea1i con ng\u01b0\u1eddi th\u1eadt b\u00ean trong m\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-136",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-136",
     "number": 136,
-    "title": "Cách con kết bạn",
-    "subtitle": "MAP này không được đi theo kiểu “con hướng ngoại hay hướng nội”, mà phải đi sâu vào việc con đang xây dựng các kết nối xã hội như thế nào từ gốc bản chất, nhu cầu cảm xúc, cảm giác an toàn và trải nghiệm nội tâm của chính mình || trọng tâm là giúp cha mẹ hiểu rằng cách một đứa trẻ kết bạn phản ánh rất rõ lòng tự trọng, khả năng tin người, nhu cầu được thuộc về, mức độ an toàn cảm xúc và cách con nhìn nhận giá trị bản thân trong các mối quan hệ xã hội.",
+    "title": "C\u00e1ch con k\u1ebft b\u1ea1n",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201ccon h\u01b0\u1edbng ngo\u1ea1i hay h\u01b0\u1edbng n\u1ed9i\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c con \u0111ang x\u00e2y d\u1ef1ng c\u00e1c k\u1ebft n\u1ed1i x\u00e3 h\u1ed9i nh\u01b0 th\u1ebf n\u00e0o t\u1eeb g\u1ed1c b\u1ea3n ch\u1ea5t, nhu c\u1ea7u c\u1ea3m x\u00fac, c\u1ea3m gi\u00e1c an to\u00e0n v\u00e0 tr\u1ea3i nghi\u1ec7m n\u1ed9i t\u00e2m c\u1ee7a ch\u00ednh m\u00ecnh || tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng c\u00e1ch m\u1ed9t \u0111\u1ee9a tr\u1ebb k\u1ebft b\u1ea1n ph\u1ea3n \u00e1nh r\u1ea5t r\u00f5 l\u00f2ng t\u1ef1 tr\u1ecdng, kh\u1ea3 n\u0103ng tin ng\u01b0\u1eddi, nhu c\u1ea7u \u0111\u01b0\u1ee3c thu\u1ed9c v\u1ec1, m\u1ee9c \u0111\u1ed9 an to\u00e0n c\u1ea3m x\u00fac v\u00e0 c\u00e1ch con nh\u00ecn nh\u1eadn gi\u00e1 tr\u1ecb b\u1ea3n th\u00e2n trong c\u00e1c m\u1ed1i quan h\u1ec7 x\u00e3 h\u1ed9i.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-137",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-137",
     "number": 137,
-    "title": "Kiểu bạn bè ảnh hưởng mạnh đến con",
-    "subtitle": "MAP này không được đi theo kiểu “bạn tốt – bạn xấu” đơn giản, mà phải đi sâu vào việc vì sao con bị thu hút bởi một kiểu người nhất định và những kiểu bạn bè đó đang tác động như thế nào đến cảm xúc, hành vi, lòng tự trọng, bản sắc cá nhân và hướng phát triển của con || trọng tâm là giúp cha mẹ hiểu rằng một đứa trẻ không kết nối ngẫu nhiên, mà thường bị hút về những kiểu người chạm đúng nhu cầu cảm xúc, khoảng trống nội tâm hoặc mô thức tâm lý đang vận hành bên trong mình.",
+    "title": "Ki\u1ec3u b\u1ea1n b\u00e8 \u1ea3nh h\u01b0\u1edfng m\u1ea1nh \u0111\u1ebfn con",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201cb\u1ea1n t\u1ed1t \u2013 b\u1ea1n x\u1ea5u\u201d \u0111\u01a1n gi\u1ea3n, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c v\u00ec sao con b\u1ecb thu h\u00fat b\u1edfi m\u1ed9t ki\u1ec3u ng\u01b0\u1eddi nh\u1ea5t \u0111\u1ecbnh v\u00e0 nh\u1eefng ki\u1ec3u b\u1ea1n b\u00e8 \u0111\u00f3 \u0111ang t\u00e1c \u0111\u1ed9ng nh\u01b0 th\u1ebf n\u00e0o \u0111\u1ebfn c\u1ea3m x\u00fac, h\u00e0nh vi, l\u00f2ng t\u1ef1 tr\u1ecdng, b\u1ea3n s\u1eafc c\u00e1 nh\u00e2n v\u00e0 h\u01b0\u1edbng ph\u00e1t tri\u1ec3n c\u1ee7a con || tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng m\u1ed9t \u0111\u1ee9a tr\u1ebb kh\u00f4ng k\u1ebft n\u1ed1i ng\u1eabu nhi\u00ean, m\u00e0 th\u01b0\u1eddng b\u1ecb h\u00fat v\u1ec1 nh\u1eefng ki\u1ec3u ng\u01b0\u1eddi ch\u1ea1m \u0111\u00fang nhu c\u1ea7u c\u1ea3m x\u00fac, kho\u1ea3ng tr\u1ed1ng n\u1ed9i t\u00e2m ho\u1eb7c m\u00f4 th\u1ee9c t\u00e2m l\u00fd \u0111ang v\u1eadn h\u00e0nh b\u00ean trong m\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-138",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-138",
     "number": 138,
-    "title": "Vì sao con dễ bị ảnh hưởng bởi môi trường",
-    "subtitle": "MAP này không được đi theo kiểu “con dễ bị lôi kéo” đơn giản, mà phải đi sâu vào việc vì sao môi trường xung quanh có thể tác động mạnh đến cảm xúc, suy nghĩ, hành vi và bản sắc đang hình thành của con || trọng tâm là giúp cha mẹ hiểu rằng một đứa trẻ dễ bị ảnh hưởng bởi môi trường thường không chỉ vì yếu đuối, mà vì bên trong con đang có nhu cầu được thuộc về, được công nhận, được an toàn hoặc chưa đủ nội lực để giữ vững chính mình trước áp lực bên ngoài.",
+    "title": "V\u00ec sao con d\u1ec5 b\u1ecb \u1ea3nh h\u01b0\u1edfng b\u1edfi m\u00f4i tr\u01b0\u1eddng",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201ccon d\u1ec5 b\u1ecb l\u00f4i k\u00e9o\u201d \u0111\u01a1n gi\u1ea3n, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c v\u00ec sao m\u00f4i tr\u01b0\u1eddng xung quanh c\u00f3 th\u1ec3 t\u00e1c \u0111\u1ed9ng m\u1ea1nh \u0111\u1ebfn c\u1ea3m x\u00fac, suy ngh\u0129, h\u00e0nh vi v\u00e0 b\u1ea3n s\u1eafc \u0111ang h\u00ecnh th\u00e0nh c\u1ee7a con || tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng m\u1ed9t \u0111\u1ee9a tr\u1ebb d\u1ec5 b\u1ecb \u1ea3nh h\u01b0\u1edfng b\u1edfi m\u00f4i tr\u01b0\u1eddng th\u01b0\u1eddng kh\u00f4ng ch\u1ec9 v\u00ec y\u1ebfu \u0111u\u1ed1i, m\u00e0 v\u00ec b\u00ean trong con \u0111ang c\u00f3 nhu c\u1ea7u \u0111\u01b0\u1ee3c thu\u1ed9c v\u1ec1, \u0111\u01b0\u1ee3c c\u00f4ng nh\u1eadn, \u0111\u01b0\u1ee3c an to\u00e0n ho\u1eb7c ch\u01b0a \u0111\u1ee7 n\u1ed9i l\u1ef1c \u0111\u1ec3 gi\u1eef v\u1eefng ch\u00ednh m\u00ecnh tr\u01b0\u1edbc \u00e1p l\u1ef1c b\u00ean ngo\u00e0i.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-139",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-139",
     "number": 139,
-    "title": "Con có xu hướng lãnh đạo hay đi theo",
-    "subtitle": "MAP này không được đi theo kiểu “con có tố chất lãnh đạo hay không” đơn giản, mà phải đi sâu vào việc bên trong con đang vận hành theo nhu cầu dẫn dắt, ảnh hưởng người khác hay nhu cầu được dẫn đường, được hòa nhập và được an toàn trong tập thể || trọng tâm là giúp cha mẹ hiểu rằng xu hướng lãnh đạo hoặc đi theo không chỉ do tính cách, mà phản ánh rất rõ lòng tự trọng, mức độ tự tin nội tại, khả năng chịu trách nhiệm, nhu cầu được công nhận và cách con nhìn giá trị của bản thân trong môi trường xã hội.",
+    "title": "Con c\u00f3 xu h\u01b0\u1edbng l\u00e3nh \u0111\u1ea1o hay \u0111i theo",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201ccon c\u00f3 t\u1ed1 ch\u1ea5t l\u00e3nh \u0111\u1ea1o hay kh\u00f4ng\u201d \u0111\u01a1n gi\u1ea3n, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c b\u00ean trong con \u0111ang v\u1eadn h\u00e0nh theo nhu c\u1ea7u d\u1eabn d\u1eaft, \u1ea3nh h\u01b0\u1edfng ng\u01b0\u1eddi kh\u00e1c hay nhu c\u1ea7u \u0111\u01b0\u1ee3c d\u1eabn \u0111\u01b0\u1eddng, \u0111\u01b0\u1ee3c h\u00f2a nh\u1eadp v\u00e0 \u0111\u01b0\u1ee3c an to\u00e0n trong t\u1eadp th\u1ec3 || tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng xu h\u01b0\u1edbng l\u00e3nh \u0111\u1ea1o ho\u1eb7c \u0111i theo kh\u00f4ng ch\u1ec9 do t\u00ednh c\u00e1ch, m\u00e0 ph\u1ea3n \u00e1nh r\u1ea5t r\u00f5 l\u00f2ng t\u1ef1 tr\u1ecdng, m\u1ee9c \u0111\u1ed9 t\u1ef1 tin n\u1ed9i t\u1ea1i, kh\u1ea3 n\u0103ng ch\u1ecbu tr\u00e1ch nhi\u1ec7m, nhu c\u1ea7u \u0111\u01b0\u1ee3c c\u00f4ng nh\u1eadn v\u00e0 c\u00e1ch con nh\u00ecn gi\u00e1 tr\u1ecb c\u1ee7a b\u1ea3n th\u00e2n trong m\u00f4i tr\u01b0\u1eddng x\u00e3 h\u1ed9i.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-140",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-140",
     "number": 140,
-    "title": "Điều khiến con khó hòa nhập",
-    "subtitle": "MAP này không được đi theo kiểu “con nhút nhát” hoặc “con hướng nội”, mà phải đi sâu vào việc vì sao con cảm thấy lạc lõng, khó kết nối hoặc khó thuộc về trong môi trường xã hội || trọng tâm là giúp cha mẹ hiểu rằng khó hòa nhập thường không phải do con “có vấn đề”, mà vì bên trong con đang có xung đột về giá trị bản thân, cảm giác an toàn, nỗi sợ bị đánh giá hoặc chưa tìm được môi trường phù hợp với bản chất thật của mình.",
+    "title": "\u0110i\u1ec1u khi\u1ebfn con kh\u00f3 h\u00f2a nh\u1eadp",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201ccon nh\u00fat nh\u00e1t\u201d ho\u1eb7c \u201ccon h\u01b0\u1edbng n\u1ed9i\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c v\u00ec sao con c\u1ea3m th\u1ea5y l\u1ea1c l\u00f5ng, kh\u00f3 k\u1ebft n\u1ed1i ho\u1eb7c kh\u00f3 thu\u1ed9c v\u1ec1 trong m\u00f4i tr\u01b0\u1eddng x\u00e3 h\u1ed9i || tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng kh\u00f3 h\u00f2a nh\u1eadp th\u01b0\u1eddng kh\u00f4ng ph\u1ea3i do con \u201cc\u00f3 v\u1ea5n \u0111\u1ec1\u201d, m\u00e0 v\u00ec b\u00ean trong con \u0111ang c\u00f3 xung \u0111\u1ed9t v\u1ec1 gi\u00e1 tr\u1ecb b\u1ea3n th\u00e2n, c\u1ea3m gi\u00e1c an to\u00e0n, n\u1ed7i s\u1ee3 b\u1ecb \u0111\u00e1nh gi\u00e1 ho\u1eb7c ch\u01b0a t\u00ecm \u0111\u01b0\u1ee3c m\u00f4i tr\u01b0\u1eddng ph\u00f9 h\u1ee3p v\u1edbi b\u1ea3n ch\u1ea5t th\u1eadt c\u1ee7a m\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-141",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-141",
     "number": 141,
-    "title": "Nguy cơ bị cô lập trong tập thể",
-    "subtitle": "MAP này không được đi theo kiểu “con ít bạn” hay “con khó hòa đồng” đơn giản, mà phải đi sâu vào việc vì sao một đứa trẻ dần bị tách khỏi tập thể về mặt cảm xúc, kết nối và giá trị xã hội || trọng tâm là giúp cha mẹ hiểu rằng bị cô lập không chỉ là chuyện bên ngoài không có bạn, mà nguy hiểm hơn là khi con bắt đầu tin rằng mình không đủ giá trị để thuộc về một nhóm nào đó.",
+    "title": "Nguy c\u01a1 b\u1ecb c\u00f4 l\u1eadp trong t\u1eadp th\u1ec3",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201ccon \u00edt b\u1ea1n\u201d hay \u201ccon kh\u00f3 h\u00f2a \u0111\u1ed3ng\u201d \u0111\u01a1n gi\u1ea3n, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c v\u00ec sao m\u1ed9t \u0111\u1ee9a tr\u1ebb d\u1ea7n b\u1ecb t\u00e1ch kh\u1ecfi t\u1eadp th\u1ec3 v\u1ec1 m\u1eb7t c\u1ea3m x\u00fac, k\u1ebft n\u1ed1i v\u00e0 gi\u00e1 tr\u1ecb x\u00e3 h\u1ed9i || tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng b\u1ecb c\u00f4 l\u1eadp kh\u00f4ng ch\u1ec9 l\u00e0 chuy\u1ec7n b\u00ean ngo\u00e0i kh\u00f4ng c\u00f3 b\u1ea1n, m\u00e0 nguy hi\u1ec3m h\u01a1n l\u00e0 khi con b\u1eaft \u0111\u1ea7u tin r\u1eb1ng m\u00ecnh kh\u00f4ng \u0111\u1ee7 gi\u00e1 tr\u1ecb \u0111\u1ec3 thu\u1ed9c v\u1ec1 m\u1ed9t nh\u00f3m n\u00e0o \u0111\u00f3.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-142",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-142",
     "number": 142,
-    "title": "Kỹ năng xã hội con cần phát triển",
-    "subtitle": "MAP này không được đi theo kiểu dạy “kỹ năng giao tiếp” bề mặt, mà phải đi sâu vào việc vì sao con thiếu một kỹ năng xã hội nào đó và điều đó đang phản ánh điều gì trong nội tâm, lòng tự trọng, cảm giác an toàn và cách con nhìn bản thân trong các mối quan hệ || trọng tâm là giúp cha mẹ hiểu rằng kỹ năng xã hội không chỉ là cách nói chuyện, mà là khả năng kết nối, giữ ranh giới, đọc cảm xúc, hợp tác và tồn tại lành mạnh trong môi trường con người.",
+    "title": "K\u1ef9 n\u0103ng x\u00e3 h\u1ed9i con c\u1ea7n ph\u00e1t tri\u1ec3n",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u d\u1ea1y \u201ck\u1ef9 n\u0103ng giao ti\u1ebfp\u201d b\u1ec1 m\u1eb7t, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c v\u00ec sao con thi\u1ebfu m\u1ed9t k\u1ef9 n\u0103ng x\u00e3 h\u1ed9i n\u00e0o \u0111\u00f3 v\u00e0 \u0111i\u1ec1u \u0111\u00f3 \u0111ang ph\u1ea3n \u00e1nh \u0111i\u1ec1u g\u00ec trong n\u1ed9i t\u00e2m, l\u00f2ng t\u1ef1 tr\u1ecdng, c\u1ea3m gi\u00e1c an to\u00e0n v\u00e0 c\u00e1ch con nh\u00ecn b\u1ea3n th\u00e2n trong c\u00e1c m\u1ed1i quan h\u1ec7 || tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng k\u1ef9 n\u0103ng x\u00e3 h\u1ed9i kh\u00f4ng ch\u1ec9 l\u00e0 c\u00e1ch n\u00f3i chuy\u1ec7n, m\u00e0 l\u00e0 kh\u1ea3 n\u0103ng k\u1ebft n\u1ed1i, gi\u1eef ranh gi\u1edbi, \u0111\u1ecdc c\u1ea3m x\u00fac, h\u1ee3p t\u00e1c v\u00e0 t\u1ed3n t\u1ea1i l\u00e0nh m\u1ea1nh trong m\u00f4i tr\u01b0\u1eddng con ng\u01b0\u1eddi.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-143",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-143",
     "number": 143,
-    "title": "Cách con phản ứng khi bị từ chối",
-    "subtitle": "MAP này không được đi theo kiểu “con nhạy cảm” hay “con mạnh mẽ”, mà phải đi sâu vào việc bên trong con đang diễn ra điều gì khi cảm thấy mình không được chọn, không được chấp nhận hoặc bị loại khỏi một kết nối nào đó. Trọng tâm là giúp cha mẹ hiểu: phản ứng của con trước sự từ chối phản ánh rất rõ lòng tự trọng, cảm giác giá trị bản thân, nỗi sợ bị bỏ rơi và cách con bảo vệ trái tim mình khỏi tổn thương.",
+    "title": "C\u00e1ch con ph\u1ea3n \u1ee9ng khi b\u1ecb t\u1eeb ch\u1ed1i",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201ccon nh\u1ea1y c\u1ea3m\u201d hay \u201ccon m\u1ea1nh m\u1ebd\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c b\u00ean trong con \u0111ang di\u1ec5n ra \u0111i\u1ec1u g\u00ec khi c\u1ea3m th\u1ea5y m\u00ecnh kh\u00f4ng \u0111\u01b0\u1ee3c ch\u1ecdn, kh\u00f4ng \u0111\u01b0\u1ee3c ch\u1ea5p nh\u1eadn ho\u1eb7c b\u1ecb lo\u1ea1i kh\u1ecfi m\u1ed9t k\u1ebft n\u1ed1i n\u00e0o \u0111\u00f3. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: ph\u1ea3n \u1ee9ng c\u1ee7a con tr\u01b0\u1edbc s\u1ef1 t\u1eeb ch\u1ed1i ph\u1ea3n \u00e1nh r\u1ea5t r\u00f5 l\u00f2ng t\u1ef1 tr\u1ecdng, c\u1ea3m gi\u00e1c gi\u00e1 tr\u1ecb b\u1ea3n th\u00e2n, n\u1ed7i s\u1ee3 b\u1ecb b\u1ecf r\u01a1i v\u00e0 c\u00e1ch con b\u1ea3o v\u1ec7 tr\u00e1i tim m\u00ecnh kh\u1ecfi t\u1ed5n th\u01b0\u01a1ng.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-144",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-144",
     "number": 144,
-    "title": "Cách con thể hiện bản thân trong tập thể",
-    "subtitle": "MAP này không được đi theo kiểu “con hướng ngoại hay hướng nội”, mà phải đi sâu vào việc khi đứng trong tập thể, con đang thể hiện phiên bản thật của mình hay đang dùng một vai trò xã hội để được chấp nhận, an toàn hoặc có giá trị. Trọng tâm là giúp cha mẹ hiểu: cách con thể hiện bản thân trong tập thể phản ánh rất rõ lòng tự trọng, cảm giác thuộc về, nỗi sợ bị đánh giá và cách con đang xây hình ảnh cá nhân trước xã hội.",
+    "title": "C\u00e1ch con th\u1ec3 hi\u1ec7n b\u1ea3n th\u00e2n trong t\u1eadp th\u1ec3",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201ccon h\u01b0\u1edbng ngo\u1ea1i hay h\u01b0\u1edbng n\u1ed9i\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c khi \u0111\u1ee9ng trong t\u1eadp th\u1ec3, con \u0111ang th\u1ec3 hi\u1ec7n phi\u00ean b\u1ea3n th\u1eadt c\u1ee7a m\u00ecnh hay \u0111ang d\u00f9ng m\u1ed9t vai tr\u00f2 x\u00e3 h\u1ed9i \u0111\u1ec3 \u0111\u01b0\u1ee3c ch\u1ea5p nh\u1eadn, an to\u00e0n ho\u1eb7c c\u00f3 gi\u00e1 tr\u1ecb. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: c\u00e1ch con th\u1ec3 hi\u1ec7n b\u1ea3n th\u00e2n trong t\u1eadp th\u1ec3 ph\u1ea3n \u00e1nh r\u1ea5t r\u00f5 l\u00f2ng t\u1ef1 tr\u1ecdng, c\u1ea3m gi\u00e1c thu\u1ed9c v\u1ec1, n\u1ed7i s\u1ee3 b\u1ecb \u0111\u00e1nh gi\u00e1 v\u00e0 c\u00e1ch con \u0111ang x\u00e2y h\u00ecnh \u1ea3nh c\u00e1 nh\u00e2n tr\u01b0\u1edbc x\u00e3 h\u1ed9i.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-145",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-145",
     "number": 145,
-    "title": "Điều giúp con có mối quan hệ bạn bè lành mạnh",
-    "subtitle": "MAP này không được đi theo kiểu “chọn bạn tốt” đơn giản, mà phải đi sâu vào việc điều gì bên trong giúp con xây được những mối quan hệ khiến con phát triển, được tôn trọng và vẫn giữ được chính mình. Trọng tâm là giúp cha mẹ hiểu: một mối quan hệ bạn bè lành mạnh không chỉ phụ thuộc vào người con gặp, mà còn phụ thuộc vào lòng tự trọng, khả năng giữ ranh giới, mức độ hiểu bản thân và nhu cầu cảm xúc của chính con.",
+    "title": "\u0110i\u1ec1u gi\u00fap con c\u00f3 m\u1ed1i quan h\u1ec7 b\u1ea1n b\u00e8 l\u00e0nh m\u1ea1nh",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201cch\u1ecdn b\u1ea1n t\u1ed1t\u201d \u0111\u01a1n gi\u1ea3n, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c \u0111i\u1ec1u g\u00ec b\u00ean trong gi\u00fap con x\u00e2y \u0111\u01b0\u1ee3c nh\u1eefng m\u1ed1i quan h\u1ec7 khi\u1ebfn con ph\u00e1t tri\u1ec3n, \u0111\u01b0\u1ee3c t\u00f4n tr\u1ecdng v\u00e0 v\u1eabn gi\u1eef \u0111\u01b0\u1ee3c ch\u00ednh m\u00ecnh. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: m\u1ed9t m\u1ed1i quan h\u1ec7 b\u1ea1n b\u00e8 l\u00e0nh m\u1ea1nh kh\u00f4ng ch\u1ec9 ph\u1ee5 thu\u1ed9c v\u00e0o ng\u01b0\u1eddi con g\u1eb7p, m\u00e0 c\u00f2n ph\u1ee5 thu\u1ed9c v\u00e0o l\u00f2ng t\u1ef1 tr\u1ecdng, kh\u1ea3 n\u0103ng gi\u1eef ranh gi\u1edbi, m\u1ee9c \u0111\u1ed9 hi\u1ec3u b\u1ea3n th\u00e2n v\u00e0 nhu c\u1ea7u c\u1ea3m x\u00fac c\u1ee7a ch\u00ednh con.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-146",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-146",
     "number": 146,
-    "title": "KIỂU GIÁO VIÊN PHÙ HỢP VỚI CON",
-    "subtitle": "MAP này không được xây dựng theo hướng đơn giản rằng con thích giáo viên hiền hay giáo viên nghiêm. MAP tập trung đi sâu vào việc kiểu người dẫn dắt nào giúp con cảm thấy an toàn, được tôn trọng, được nhìn thấy năng lực thật và có động lực phát triển tự nhiên trong môi trường học tập.",
+    "title": "KI\u1ec2U GI\u00c1O VI\u00caN PH\u00d9 H\u1ee2P V\u1edaI CON",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng theo h\u01b0\u1edbng \u0111\u01a1n gi\u1ea3n r\u1eb1ng con th\u00edch gi\u00e1o vi\u00ean hi\u1ec1n hay gi\u00e1o vi\u00ean nghi\u00eam. MAP t\u1eadp trung \u0111i s\u00e2u v\u00e0o vi\u1ec7c ki\u1ec3u ng\u01b0\u1eddi d\u1eabn d\u1eaft n\u00e0o gi\u00fap con c\u1ea3m th\u1ea5y an to\u00e0n, \u0111\u01b0\u1ee3c t\u00f4n tr\u1ecdng, \u0111\u01b0\u1ee3c nh\u00ecn th\u1ea5y n\u0103ng l\u1ef1c th\u1eadt v\u00e0 c\u00f3 \u0111\u1ed9ng l\u1ef1c ph\u00e1t tri\u1ec3n t\u1ef1 nhi\u00ean trong m\u00f4i tr\u01b0\u1eddng h\u1ecdc t\u1eadp.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-147",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-147",
     "number": 147,
-    "title": "CÁCH CON PHẢN ỨNG VỚI SỰ PHÊ BÌNH CỦA GIÁO VIÊN",
-    "subtitle": "MAP này không đi theo hướng đánh giá con có chịu được áp lực hay không, mà tập trung đi sâu vào việc điều gì đang diễn ra bên trong con khi bị giáo viên góp ý, nhắc nhở hoặc phê bình. MAP giúp cha mẹ hiểu rằng phản ứng của con trước sự phê bình phản ánh trực tiếp lòng tự trọng, cảm giác giá trị bản thân, nỗi sợ sai, nỗi sợ bị đánh giá và cách con nhìn nhận chính mình trong môi trường học đường.",
+    "title": "C\u00c1CH CON PH\u1ea2N \u1ee8NG V\u1edaI S\u1ef0 PH\u00ca B\u00ccNH C\u1ee6A GI\u00c1O VI\u00caN",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng \u0111\u00e1nh gi\u00e1 con c\u00f3 ch\u1ecbu \u0111\u01b0\u1ee3c \u00e1p l\u1ef1c hay kh\u00f4ng, m\u00e0 t\u1eadp trung \u0111i s\u00e2u v\u00e0o vi\u1ec7c \u0111i\u1ec1u g\u00ec \u0111ang di\u1ec5n ra b\u00ean trong con khi b\u1ecb gi\u00e1o vi\u00ean g\u00f3p \u00fd, nh\u1eafc nh\u1edf ho\u1eb7c ph\u00ea b\u00ecnh. MAP gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng ph\u1ea3n \u1ee9ng c\u1ee7a con tr\u01b0\u1edbc s\u1ef1 ph\u00ea b\u00ecnh ph\u1ea3n \u00e1nh tr\u1ef1c ti\u1ebfp l\u00f2ng t\u1ef1 tr\u1ecdng, c\u1ea3m gi\u00e1c gi\u00e1 tr\u1ecb b\u1ea3n th\u00e2n, n\u1ed7i s\u1ee3 sai, n\u1ed7i s\u1ee3 b\u1ecb \u0111\u00e1nh gi\u00e1 v\u00e0 c\u00e1ch con nh\u00ecn nh\u1eadn ch\u00ednh m\u00ecnh trong m\u00f4i tr\u01b0\u1eddng h\u1ecdc \u0111\u01b0\u1eddng.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-148",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-148",
     "number": 148,
-    "title": "CÁCH CON PHẢN ỨNG VỚI ÁP LỰC LỚP HỌC",
-    "subtitle": "MAP này không đi theo hướng đánh giá con chịu áp lực tốt hay kém, mà tập trung đi sâu vào việc khi ở trong môi trường học đường có cạnh tranh, kỳ vọng, kiểm tra, đánh giá và so sánh liên tục, bên trong con đang vận hành như thế nào. MAP giúp cha mẹ hiểu rằng phản ứng của con trước áp lực lớp học phản ánh rất rõ mức độ an toàn nội tâm, lòng tự trọng, nỗi sợ thất bại, nhu cầu được công nhận và cách con đang định nghĩa giá trị bản thân trong môi trường học tập.",
+    "title": "C\u00c1CH CON PH\u1ea2N \u1ee8NG V\u1edaI \u00c1P L\u1ef0C L\u1edaP H\u1eccC",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng \u0111\u00e1nh gi\u00e1 con ch\u1ecbu \u00e1p l\u1ef1c t\u1ed1t hay k\u00e9m, m\u00e0 t\u1eadp trung \u0111i s\u00e2u v\u00e0o vi\u1ec7c khi \u1edf trong m\u00f4i tr\u01b0\u1eddng h\u1ecdc \u0111\u01b0\u1eddng c\u00f3 c\u1ea1nh tranh, k\u1ef3 v\u1ecdng, ki\u1ec3m tra, \u0111\u00e1nh gi\u00e1 v\u00e0 so s\u00e1nh li\u00ean t\u1ee5c, b\u00ean trong con \u0111ang v\u1eadn h\u00e0nh nh\u01b0 th\u1ebf n\u00e0o. MAP gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng ph\u1ea3n \u1ee9ng c\u1ee7a con tr\u01b0\u1edbc \u00e1p l\u1ef1c l\u1edbp h\u1ecdc ph\u1ea3n \u00e1nh r\u1ea5t r\u00f5 m\u1ee9c \u0111\u1ed9 an to\u00e0n n\u1ed9i t\u00e2m, l\u00f2ng t\u1ef1 tr\u1ecdng, n\u1ed7i s\u1ee3 th\u1ea5t b\u1ea1i, nhu c\u1ea7u \u0111\u01b0\u1ee3c c\u00f4ng nh\u1eadn v\u00e0 c\u00e1ch con \u0111ang \u0111\u1ecbnh ngh\u0129a gi\u00e1 tr\u1ecb b\u1ea3n th\u00e2n trong m\u00f4i tr\u01b0\u1eddng h\u1ecdc t\u1eadp.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-149",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-149",
     "number": 149,
-    "title": "ĐIỀU KHIẾN CON SỢ ĐẾN TRƯỜNG",
-    "subtitle": "MAP này không đi theo hướng đánh giá con có lười học hay không thích học, mà tập trung đi sâu vào việc bên trong con đang sợ điều gì mỗi khi phải bước vào môi trường học đường. MAP giúp cha mẹ hiểu rằng nỗi sợ đến trường thường không nằm ở bản thân việc học, mà nằm ở cảm giác bị áp lực, bị đánh giá, bị cô lập, không được thấu hiểu, không được an toàn hoặc không còn được là chính mình trong môi trường đó.",
+    "title": "\u0110I\u1ec0U KHI\u1ebeN CON S\u1ee2 \u0110\u1ebeN TR\u01af\u1edcNG",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng \u0111\u00e1nh gi\u00e1 con c\u00f3 l\u01b0\u1eddi h\u1ecdc hay kh\u00f4ng th\u00edch h\u1ecdc, m\u00e0 t\u1eadp trung \u0111i s\u00e2u v\u00e0o vi\u1ec7c b\u00ean trong con \u0111ang s\u1ee3 \u0111i\u1ec1u g\u00ec m\u1ed7i khi ph\u1ea3i b\u01b0\u1edbc v\u00e0o m\u00f4i tr\u01b0\u1eddng h\u1ecdc \u0111\u01b0\u1eddng. MAP gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng n\u1ed7i s\u1ee3 \u0111\u1ebfn tr\u01b0\u1eddng th\u01b0\u1eddng kh\u00f4ng n\u1eb1m \u1edf b\u1ea3n th\u00e2n vi\u1ec7c h\u1ecdc, m\u00e0 n\u1eb1m \u1edf c\u1ea3m gi\u00e1c b\u1ecb \u00e1p l\u1ef1c, b\u1ecb \u0111\u00e1nh gi\u00e1, b\u1ecb c\u00f4 l\u1eadp, kh\u00f4ng \u0111\u01b0\u1ee3c th\u1ea5u hi\u1ec3u, kh\u00f4ng \u0111\u01b0\u1ee3c an to\u00e0n ho\u1eb7c kh\u00f4ng c\u00f2n \u0111\u01b0\u1ee3c l\u00e0 ch\u00ednh m\u00ecnh trong m\u00f4i tr\u01b0\u1eddng \u0111\u00f3.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-150",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-150",
     "number": 150,
-    "title": "ĐIỀU KHIẾN CON YÊU THÍCH TRƯỜNG HỌC",
-    "subtitle": "MAP này không đi theo hướng tìm hiểu con thích môn học nào hay thích đi học vì điều gì thú vị bên ngoài, mà tập trung đi sâu vào việc điều gì trong môi trường học đường khiến con cảm thấy được sống đúng với bản chất, được phát triển năng lực và cảm thấy mình có giá trị. MAP giúp cha mẹ hiểu rằng một đứa trẻ yêu thích trường học không phải vì cuộc sống học đường không có áp lực, mà vì con cảm thấy an toàn, được kết nối, được công nhận và được phát triển theo cách phù hợp với chính mình.",
+    "title": "\u0110I\u1ec0U KHI\u1ebeN CON Y\u00caU TH\u00cdCH TR\u01af\u1edcNG H\u1eccC",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng t\u00ecm hi\u1ec3u con th\u00edch m\u00f4n h\u1ecdc n\u00e0o hay th\u00edch \u0111i h\u1ecdc v\u00ec \u0111i\u1ec1u g\u00ec th\u00fa v\u1ecb b\u00ean ngo\u00e0i, m\u00e0 t\u1eadp trung \u0111i s\u00e2u v\u00e0o vi\u1ec7c \u0111i\u1ec1u g\u00ec trong m\u00f4i tr\u01b0\u1eddng h\u1ecdc \u0111\u01b0\u1eddng khi\u1ebfn con c\u1ea3m th\u1ea5y \u0111\u01b0\u1ee3c s\u1ed1ng \u0111\u00fang v\u1edbi b\u1ea3n ch\u1ea5t, \u0111\u01b0\u1ee3c ph\u00e1t tri\u1ec3n n\u0103ng l\u1ef1c v\u00e0 c\u1ea3m th\u1ea5y m\u00ecnh c\u00f3 gi\u00e1 tr\u1ecb. MAP gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng m\u1ed9t \u0111\u1ee9a tr\u1ebb y\u00eau th\u00edch tr\u01b0\u1eddng h\u1ecdc kh\u00f4ng ph\u1ea3i v\u00ec cu\u1ed9c s\u1ed1ng h\u1ecdc \u0111\u01b0\u1eddng kh\u00f4ng c\u00f3 \u00e1p l\u1ef1c, m\u00e0 v\u00ec con c\u1ea3m th\u1ea5y an to\u00e0n, \u0111\u01b0\u1ee3c k\u1ebft n\u1ed1i, \u0111\u01b0\u1ee3c c\u00f4ng nh\u1eadn v\u00e0 \u0111\u01b0\u1ee3c ph\u00e1t tri\u1ec3n theo c\u00e1ch ph\u00f9 h\u1ee3p v\u1edbi ch\u00ednh m\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-151",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-151",
     "number": 151,
-    "title": "NGUY CƠ BỊ BẮT NẠT HỌC ĐƯỜNG",
-    "subtitle": "MAP này không đi theo hướng gắn nhãn con là yếu đuối, thiếu bản lĩnh hay dễ bị bắt nạt, mà đi sâu vào việc điều gì trong nội tâm, lòng tự trọng, cảm giác giá trị bản thân, khả năng giữ ranh giới và cách con xuất hiện trong môi trường tập thể khiến con có nguy cơ trở thành đối tượng bị tổn thương trong học đường. Mục tiêu là giúp cha mẹ nhìn thấy gốc rễ bên dưới hiện tượng thay vì chỉ nhìn hành vi bên ngoài.",
+    "title": "NGUY C\u01a0 B\u1eca B\u1eaeT N\u1ea0T H\u1eccC \u0110\u01af\u1edcNG",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng g\u1eafn nh\u00e3n con l\u00e0 y\u1ebfu \u0111u\u1ed1i, thi\u1ebfu b\u1ea3n l\u0129nh hay d\u1ec5 b\u1ecb b\u1eaft n\u1ea1t, m\u00e0 \u0111i s\u00e2u v\u00e0o vi\u1ec7c \u0111i\u1ec1u g\u00ec trong n\u1ed9i t\u00e2m, l\u00f2ng t\u1ef1 tr\u1ecdng, c\u1ea3m gi\u00e1c gi\u00e1 tr\u1ecb b\u1ea3n th\u00e2n, kh\u1ea3 n\u0103ng gi\u1eef ranh gi\u1edbi v\u00e0 c\u00e1ch con xu\u1ea5t hi\u1ec7n trong m\u00f4i tr\u01b0\u1eddng t\u1eadp th\u1ec3 khi\u1ebfn con c\u00f3 nguy c\u01a1 tr\u1edf th\u00e0nh \u0111\u1ed1i t\u01b0\u1ee3ng b\u1ecb t\u1ed5n th\u01b0\u01a1ng trong h\u1ecdc \u0111\u01b0\u1eddng. M\u1ee5c ti\u00eau l\u00e0 gi\u00fap cha m\u1eb9 nh\u00ecn th\u1ea5y g\u1ed1c r\u1ec5 b\u00ean d\u01b0\u1edbi hi\u1ec7n t\u01b0\u1ee3ng thay v\u00ec ch\u1ec9 nh\u00ecn h\u00e0nh vi b\u00ean ngo\u00e0i.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-152",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-152",
     "number": 152,
-    "title": "DẤU HIỆU CON ĐANG CHỊU ÁP LỰC Ở TRƯỜNG",
-    "subtitle": "MAP này không đi theo hướng đánh giá con mạnh mẽ hay yếu đuối, học giỏi hay học kém, mà đi sâu vào việc nhận diện những tín hiệu áp lực học đường đang âm thầm diễn ra bên trong con. Mục tiêu không phải chỉ để nhìn thấy sự mệt mỏi bên ngoài mà để hiểu những gì đang xảy ra trong hệ cảm xúc, hệ thần kinh, lòng tự trọng và thế giới nội tâm của con khi phải sống trong môi trường có đánh giá, cạnh tranh, kỳ vọng và áp lực liên tục.",
+    "title": "D\u1ea4U HI\u1ec6U CON \u0110ANG CH\u1ecaU \u00c1P L\u1ef0C \u1ede TR\u01af\u1edcNG",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng \u0111\u00e1nh gi\u00e1 con m\u1ea1nh m\u1ebd hay y\u1ebfu \u0111u\u1ed1i, h\u1ecdc gi\u1ecfi hay h\u1ecdc k\u00e9m, m\u00e0 \u0111i s\u00e2u v\u00e0o vi\u1ec7c nh\u1eadn di\u1ec7n nh\u1eefng t\u00edn hi\u1ec7u \u00e1p l\u1ef1c h\u1ecdc \u0111\u01b0\u1eddng \u0111ang \u00e2m th\u1ea7m di\u1ec5n ra b\u00ean trong con. M\u1ee5c ti\u00eau kh\u00f4ng ph\u1ea3i ch\u1ec9 \u0111\u1ec3 nh\u00ecn th\u1ea5y s\u1ef1 m\u1ec7t m\u1ecfi b\u00ean ngo\u00e0i m\u00e0 \u0111\u1ec3 hi\u1ec3u nh\u1eefng g\u00ec \u0111ang x\u1ea3y ra trong h\u1ec7 c\u1ea3m x\u00fac, h\u1ec7 th\u1ea7n kinh, l\u00f2ng t\u1ef1 tr\u1ecdng v\u00e0 th\u1ebf gi\u1edbi n\u1ed9i t\u00e2m c\u1ee7a con khi ph\u1ea3i s\u1ed1ng trong m\u00f4i tr\u01b0\u1eddng c\u00f3 \u0111\u00e1nh gi\u00e1, c\u1ea1nh tranh, k\u1ef3 v\u1ecdng v\u00e0 \u00e1p l\u1ef1c li\u00ean t\u1ee5c.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-153",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-153",
     "number": 153,
-    "title": "CÁCH BỐ MẸ PHỐI HỢP VỚI GIÁO VIÊN ĐỂ HỖ TRỢ CON",
-    "subtitle": "MAP này không đi theo hướng dạy cha mẹ nên hỏi giáo viên điều gì hay nên họp phụ huynh như thế nào, mà đi sâu vào việc làm sao để gia đình và nhà trường thật sự trở thành một hệ thống đồng hành thống nhất giúp con phát triển đúng với bản chất, khả năng và nhu cầu cảm xúc của mình. Mục tiêu không phải quản lý con chặt hơn mà là giúp con được hiểu đúng hơn.",
+    "title": "C\u00c1CH B\u1ed0 M\u1eb8 PH\u1ed0I H\u1ee2P V\u1edaI GI\u00c1O VI\u00caN \u0110\u1ec2 H\u1ed6 TR\u1ee2 CON",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng d\u1ea1y cha m\u1eb9 n\u00ean h\u1ecfi gi\u00e1o vi\u00ean \u0111i\u1ec1u g\u00ec hay n\u00ean h\u1ecdp ph\u1ee5 huynh nh\u01b0 th\u1ebf n\u00e0o, m\u00e0 \u0111i s\u00e2u v\u00e0o vi\u1ec7c l\u00e0m sao \u0111\u1ec3 gia \u0111\u00ecnh v\u00e0 nh\u00e0 tr\u01b0\u1eddng th\u1eadt s\u1ef1 tr\u1edf th\u00e0nh m\u1ed9t h\u1ec7 th\u1ed1ng \u0111\u1ed3ng h\u00e0nh th\u1ed1ng nh\u1ea5t gi\u00fap con ph\u00e1t tri\u1ec3n \u0111\u00fang v\u1edbi b\u1ea3n ch\u1ea5t, kh\u1ea3 n\u0103ng v\u00e0 nhu c\u1ea7u c\u1ea3m x\u00fac c\u1ee7a m\u00ecnh. M\u1ee5c ti\u00eau kh\u00f4ng ph\u1ea3i qu\u1ea3n l\u00fd con ch\u1eb7t h\u01a1n m\u00e0 l\u00e0 gi\u00fap con \u0111\u01b0\u1ee3c hi\u1ec3u \u0111\u00fang h\u01a1n.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-154",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-154",
     "number": 154,
-    "title": "MÔI TRƯỜNG LỚP HỌC GIÚP CON PHÁT TRIỂN",
-    "subtitle": "MAP này không đi theo hướng phân loại lớp học nghiêm khắc hay thoải mái, lớp chọn hay lớp thường, mà đi sâu vào việc kiểu môi trường học tập nào thật sự phù hợp với hệ cảm xúc, nhịp phát triển, cách tiếp nhận thông tin và nhu cầu tâm lý riêng của con. Mục tiêu là giúp cha mẹ hiểu rằng môi trường học tập không chỉ ảnh hưởng đến điểm số mà còn ảnh hưởng trực tiếp đến lòng tự trọng, động lực nội tại, cảm giác thuộc về và khả năng phát triển lâu dài của con.",
+    "title": "M\u00d4I TR\u01af\u1edcNG L\u1edaP H\u1eccC GI\u00daP CON PH\u00c1T TRI\u1ec2N",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng ph\u00e2n lo\u1ea1i l\u1edbp h\u1ecdc nghi\u00eam kh\u1eafc hay tho\u1ea3i m\u00e1i, l\u1edbp ch\u1ecdn hay l\u1edbp th\u01b0\u1eddng, m\u00e0 \u0111i s\u00e2u v\u00e0o vi\u1ec7c ki\u1ec3u m\u00f4i tr\u01b0\u1eddng h\u1ecdc t\u1eadp n\u00e0o th\u1eadt s\u1ef1 ph\u00f9 h\u1ee3p v\u1edbi h\u1ec7 c\u1ea3m x\u00fac, nh\u1ecbp ph\u00e1t tri\u1ec3n, c\u00e1ch ti\u1ebfp nh\u1eadn th\u00f4ng tin v\u00e0 nhu c\u1ea7u t\u00e2m l\u00fd ri\u00eang c\u1ee7a con. M\u1ee5c ti\u00eau l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng m\u00f4i tr\u01b0\u1eddng h\u1ecdc t\u1eadp kh\u00f4ng ch\u1ec9 \u1ea3nh h\u01b0\u1edfng \u0111\u1ebfn \u0111i\u1ec3m s\u1ed1 m\u00e0 c\u00f2n \u1ea3nh h\u01b0\u1edfng tr\u1ef1c ti\u1ebfp \u0111\u1ebfn l\u00f2ng t\u1ef1 tr\u1ecdng, \u0111\u1ed9ng l\u1ef1c n\u1ed9i t\u1ea1i, c\u1ea3m gi\u00e1c thu\u1ed9c v\u1ec1 v\u00e0 kh\u1ea3 n\u0103ng ph\u00e1t tri\u1ec3n l\u00e2u d\u00e0i c\u1ee7a con.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-155",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-155",
     "number": 155,
-    "title": "ĐIỀU KHIẾN CON MẤT NIỀM TIN VÀO VIỆC HỌC",
-    "subtitle": "MAP này không đi theo hướng đánh giá con lười học, thiếu ý chí hay thiếu động lực, mà đi sâu vào việc điều gì đã diễn ra bên trong khiến một đứa trẻ từng tò mò, từng muốn khám phá, từng muốn học hỏi lại dần đánh mất niềm tin vào chính khả năng phát triển của mình. Mục tiêu là giúp cha mẹ nhìn thấy rằng mất niềm tin vào việc học là một quá trình tích lũy tổn thương kéo dài chứ không phải một quyết định xảy ra trong một ngày.",
+    "title": "\u0110I\u1ec0U KHI\u1ebeN CON M\u1ea4T NI\u1ec0M TIN V\u00c0O VI\u1ec6C H\u1eccC",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng \u0111\u00e1nh gi\u00e1 con l\u01b0\u1eddi h\u1ecdc, thi\u1ebfu \u00fd ch\u00ed hay thi\u1ebfu \u0111\u1ed9ng l\u1ef1c, m\u00e0 \u0111i s\u00e2u v\u00e0o vi\u1ec7c \u0111i\u1ec1u g\u00ec \u0111\u00e3 di\u1ec5n ra b\u00ean trong khi\u1ebfn m\u1ed9t \u0111\u1ee9a tr\u1ebb t\u1eebng t\u00f2 m\u00f2, t\u1eebng mu\u1ed1n kh\u00e1m ph\u00e1, t\u1eebng mu\u1ed1n h\u1ecdc h\u1ecfi l\u1ea1i d\u1ea7n \u0111\u00e1nh m\u1ea5t ni\u1ec1m tin v\u00e0o ch\u00ednh kh\u1ea3 n\u0103ng ph\u00e1t tri\u1ec3n c\u1ee7a m\u00ecnh. M\u1ee5c ti\u00eau l\u00e0 gi\u00fap cha m\u1eb9 nh\u00ecn th\u1ea5y r\u1eb1ng m\u1ea5t ni\u1ec1m tin v\u00e0o vi\u1ec7c h\u1ecdc l\u00e0 m\u1ed9t qu\u00e1 tr\u00ecnh t\u00edch l\u0169y t\u1ed5n th\u01b0\u01a1ng k\u00e9o d\u00e0i ch\u1ee9 kh\u00f4ng ph\u1ea3i m\u1ed9t quy\u1ebft \u0111\u1ecbnh x\u1ea3y ra trong m\u1ed9t ng\u00e0y.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-156",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-156",
     "number": 156,
-    "title": "NGUY CƠ CON ĐANG SỐNG GIẢ",
-    "subtitle": "MAP này không đi theo hướng đánh giá con ngoan hay hư, đúng hay sai, mà đi sâu vào việc liệu con có đang dần rời xa con người thật của mình để trở thành một phiên bản dễ được yêu thương hơn, dễ được chấp nhận hơn hoặc ít bị tổn thương hơn hay không. Mục tiêu cốt lõi là giúp cha mẹ nhìn thấy rằng rất nhiều đứa trẻ không sống giả vì muốn lừa dối người khác, mà vì chúng đang cố bảo vệ chính mình khỏi cảm giác bị từ chối, bị thất vọng hoặc bị mất kết nối với những người quan trọng nhất trong cuộc đời.",
+    "title": "NGUY C\u01a0 CON \u0110ANG S\u1ed0NG GI\u1ea2",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng \u0111\u00e1nh gi\u00e1 con ngoan hay h\u01b0, \u0111\u00fang hay sai, m\u00e0 \u0111i s\u00e2u v\u00e0o vi\u1ec7c li\u1ec7u con c\u00f3 \u0111ang d\u1ea7n r\u1eddi xa con ng\u01b0\u1eddi th\u1eadt c\u1ee7a m\u00ecnh \u0111\u1ec3 tr\u1edf th\u00e0nh m\u1ed9t phi\u00ean b\u1ea3n d\u1ec5 \u0111\u01b0\u1ee3c y\u00eau th\u01b0\u01a1ng h\u01a1n, d\u1ec5 \u0111\u01b0\u1ee3c ch\u1ea5p nh\u1eadn h\u01a1n ho\u1eb7c \u00edt b\u1ecb t\u1ed5n th\u01b0\u01a1ng h\u01a1n hay kh\u00f4ng. M\u1ee5c ti\u00eau c\u1ed1t l\u00f5i l\u00e0 gi\u00fap cha m\u1eb9 nh\u00ecn th\u1ea5y r\u1eb1ng r\u1ea5t nhi\u1ec1u \u0111\u1ee9a tr\u1ebb kh\u00f4ng s\u1ed1ng gi\u1ea3 v\u00ec mu\u1ed1n l\u1eeba d\u1ed1i ng\u01b0\u1eddi kh\u00e1c, m\u00e0 v\u00ec ch\u00fang \u0111ang c\u1ed1 b\u1ea3o v\u1ec7 ch\u00ednh m\u00ecnh kh\u1ecfi c\u1ea3m gi\u00e1c b\u1ecb t\u1eeb ch\u1ed1i, b\u1ecb th\u1ea5t v\u1ecdng ho\u1eb7c b\u1ecb m\u1ea5t k\u1ebft n\u1ed1i v\u1edbi nh\u1eefng ng\u01b0\u1eddi quan tr\u1ecdng nh\u1ea5t trong cu\u1ed9c \u0111\u1eddi.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-157",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-157",
     "number": 157,
-    "title": "NGUY CƠ CON MẤT KẾT NỐI VỚI BẢN THÂN",
-    "subtitle": "MAP này không đi theo hướng đánh giá con có biết mình thích gì hay không, cũng không chỉ dừng lại ở việc con có mục tiêu hay đam mê rõ ràng hay chưa. MAP đi sâu vào một vấn đề nền tảng hơn rất nhiều: liệu con có còn kết nối với cảm xúc, nhu cầu, mong muốn, giá trị và con người thật bên trong của mình hay không. Mục tiêu cốt lõi là giúp cha mẹ nhận ra rằng một đứa trẻ mất kết nối với bản thân vẫn có thể học tập bình thường, giao tiếp bình thường và sinh hoạt bình thường, nhưng bên trong lại đang ngày càng xa lạ với chính mình.",
+    "title": "NGUY C\u01a0 CON M\u1ea4T K\u1ebeT N\u1ed0I V\u1edaI B\u1ea2N TH\u00c2N",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng \u0111\u00e1nh gi\u00e1 con c\u00f3 bi\u1ebft m\u00ecnh th\u00edch g\u00ec hay kh\u00f4ng, c\u0169ng kh\u00f4ng ch\u1ec9 d\u1eebng l\u1ea1i \u1edf vi\u1ec7c con c\u00f3 m\u1ee5c ti\u00eau hay \u0111am m\u00ea r\u00f5 r\u00e0ng hay ch\u01b0a. MAP \u0111i s\u00e2u v\u00e0o m\u1ed9t v\u1ea5n \u0111\u1ec1 n\u1ec1n t\u1ea3ng h\u01a1n r\u1ea5t nhi\u1ec1u: li\u1ec7u con c\u00f3 c\u00f2n k\u1ebft n\u1ed1i v\u1edbi c\u1ea3m x\u00fac, nhu c\u1ea7u, mong mu\u1ed1n, gi\u00e1 tr\u1ecb v\u00e0 con ng\u01b0\u1eddi th\u1eadt b\u00ean trong c\u1ee7a m\u00ecnh hay kh\u00f4ng. M\u1ee5c ti\u00eau c\u1ed1t l\u00f5i l\u00e0 gi\u00fap cha m\u1eb9 nh\u1eadn ra r\u1eb1ng m\u1ed9t \u0111\u1ee9a tr\u1ebb m\u1ea5t k\u1ebft n\u1ed1i v\u1edbi b\u1ea3n th\u00e2n v\u1eabn c\u00f3 th\u1ec3 h\u1ecdc t\u1eadp b\u00ecnh th\u01b0\u1eddng, giao ti\u1ebfp b\u00ecnh th\u01b0\u1eddng v\u00e0 sinh ho\u1ea1t b\u00ecnh th\u01b0\u1eddng, nh\u01b0ng b\u00ean trong l\u1ea1i \u0111ang ng\u00e0y c\u00e0ng xa l\u1ea1 v\u1edbi ch\u00ednh m\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-158",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-158",
     "number": 158,
-    "title": "NGUY CƠ CON MẤT TỰ TIN SÂU BÊN TRONG",
-    "subtitle": "MAP này không đi theo hướng đánh giá con nhút nhát, rụt rè hay thiếu tự tin trong giao tiếp bên ngoài, mà đi sâu vào việc liệu bên trong con có đang dần mất niềm tin vào chính giá trị, khả năng và sự hiện diện của bản thân hay không. Mục tiêu cốt lõi là giúp cha mẹ nhìn thấy rằng nhiều đứa trẻ vẫn cười nói bình thường, vẫn học tập bình thường, vẫn hòa nhập bình thường nhưng bên trong lại luôn sống với cảm giác mình không đủ tốt, không đủ quan trọng hoặc không đủ xứng đáng.",
+    "title": "NGUY C\u01a0 CON M\u1ea4T T\u1ef0 TIN S\u00c2U B\u00caN TRONG",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng \u0111\u00e1nh gi\u00e1 con nh\u00fat nh\u00e1t, r\u1ee5t r\u00e8 hay thi\u1ebfu t\u1ef1 tin trong giao ti\u1ebfp b\u00ean ngo\u00e0i, m\u00e0 \u0111i s\u00e2u v\u00e0o vi\u1ec7c li\u1ec7u b\u00ean trong con c\u00f3 \u0111ang d\u1ea7n m\u1ea5t ni\u1ec1m tin v\u00e0o ch\u00ednh gi\u00e1 tr\u1ecb, kh\u1ea3 n\u0103ng v\u00e0 s\u1ef1 hi\u1ec7n di\u1ec7n c\u1ee7a b\u1ea3n th\u00e2n hay kh\u00f4ng. M\u1ee5c ti\u00eau c\u1ed1t l\u00f5i l\u00e0 gi\u00fap cha m\u1eb9 nh\u00ecn th\u1ea5y r\u1eb1ng nhi\u1ec1u \u0111\u1ee9a tr\u1ebb v\u1eabn c\u01b0\u1eddi n\u00f3i b\u00ecnh th\u01b0\u1eddng, v\u1eabn h\u1ecdc t\u1eadp b\u00ecnh th\u01b0\u1eddng, v\u1eabn h\u00f2a nh\u1eadp b\u00ecnh th\u01b0\u1eddng nh\u01b0ng b\u00ean trong l\u1ea1i lu\u00f4n s\u1ed1ng v\u1edbi c\u1ea3m gi\u00e1c m\u00ecnh kh\u00f4ng \u0111\u1ee7 t\u1ed1t, kh\u00f4ng \u0111\u1ee7 quan tr\u1ecdng ho\u1eb7c kh\u00f4ng \u0111\u1ee7 x\u1ee9ng \u0111\u00e1ng.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-159",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-159",
     "number": 159,
-    "title": "NGUY CƠ PHỤ THUỘC CẢM XÚC",
-    "subtitle": "MAP này không đi theo hướng đánh giá con là đứa trẻ bám người, yếu đuối hay quá nhạy cảm, mà đi sâu vào việc liệu con có đang dần phụ thuộc giá trị bản thân, sự ổn định cảm xúc và cảm giác an toàn nội tâm vào người khác hay không. Mục tiêu cốt lõi là giúp cha mẹ nhìn thấy rằng phía sau một đứa trẻ luôn cần được chú ý, luôn sợ mất kết nối hoặc quá nhạy với thái độ của người khác thường là một hệ cảm xúc đang thiếu cảm giác an toàn và một lòng tự trọng chưa đủ vững để tự nâng đỡ chính mình.",
+    "title": "NGUY C\u01a0 PH\u1ee4 THU\u1ed8C C\u1ea2M X\u00daC",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng \u0111\u00e1nh gi\u00e1 con l\u00e0 \u0111\u1ee9a tr\u1ebb b\u00e1m ng\u01b0\u1eddi, y\u1ebfu \u0111u\u1ed1i hay qu\u00e1 nh\u1ea1y c\u1ea3m, m\u00e0 \u0111i s\u00e2u v\u00e0o vi\u1ec7c li\u1ec7u con c\u00f3 \u0111ang d\u1ea7n ph\u1ee5 thu\u1ed9c gi\u00e1 tr\u1ecb b\u1ea3n th\u00e2n, s\u1ef1 \u1ed5n \u0111\u1ecbnh c\u1ea3m x\u00fac v\u00e0 c\u1ea3m gi\u00e1c an to\u00e0n n\u1ed9i t\u00e2m v\u00e0o ng\u01b0\u1eddi kh\u00e1c hay kh\u00f4ng. M\u1ee5c ti\u00eau c\u1ed1t l\u00f5i l\u00e0 gi\u00fap cha m\u1eb9 nh\u00ecn th\u1ea5y r\u1eb1ng ph\u00eda sau m\u1ed9t \u0111\u1ee9a tr\u1ebb lu\u00f4n c\u1ea7n \u0111\u01b0\u1ee3c ch\u00fa \u00fd, lu\u00f4n s\u1ee3 m\u1ea5t k\u1ebft n\u1ed1i ho\u1eb7c qu\u00e1 nh\u1ea1y v\u1edbi th\u00e1i \u0111\u1ed9 c\u1ee7a ng\u01b0\u1eddi kh\u00e1c th\u01b0\u1eddng l\u00e0 m\u1ed9t h\u1ec7 c\u1ea3m x\u00fac \u0111ang thi\u1ebfu c\u1ea3m gi\u00e1c an to\u00e0n v\u00e0 m\u1ed9t l\u00f2ng t\u1ef1 tr\u1ecdng ch\u01b0a \u0111\u1ee7 v\u1eefng \u0111\u1ec3 t\u1ef1 n\u00e2ng \u0111\u1ee1 ch\u00ednh m\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-160",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-160",
     "number": 160,
-    "title": "NGUY CƠ NỔI LOẠN TUỔI TEEN",
-    "subtitle": "MAP này giúp cha mẹ nhìn sâu vào bản chất thật phía sau hành vi nổi loạn của con thay vì chỉ nhìn thấy các biểu hiện chống đối bên ngoài. Mục tiêu cốt lõi không phải để xác định con ngoan hay hư, mà để nhận diện những nhu cầu tâm lý, cảm xúc và bản sắc cá nhân đang bị dồn nén bên trong con. MAP giúp giải mã vì sao nhiều đứa trẻ tuổi teen càng lớn càng phản ứng mạnh với sự kiểm soát, áp đặt hoặc thiếu tôn trọng, đồng thời giúp cha mẹ hiểu rằng nổi loạn thường là tín hiệu cho thấy con đang cố bảo vệ quyền được là chính mình, quyền được lắng nghe và quyền được trưởng thành theo cách riêng.",
+    "title": "NGUY C\u01a0 N\u1ed4I LO\u1ea0N TU\u1ed4I TEEN",
+    "subtitle": "MAP n\u00e0y gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o b\u1ea3n ch\u1ea5t th\u1eadt ph\u00eda sau h\u00e0nh vi n\u1ed5i lo\u1ea1n c\u1ee7a con thay v\u00ec ch\u1ec9 nh\u00ecn th\u1ea5y c\u00e1c bi\u1ec3u hi\u1ec7n ch\u1ed1ng \u0111\u1ed1i b\u00ean ngo\u00e0i. M\u1ee5c ti\u00eau c\u1ed1t l\u00f5i kh\u00f4ng ph\u1ea3i \u0111\u1ec3 x\u00e1c \u0111\u1ecbnh con ngoan hay h\u01b0, m\u00e0 \u0111\u1ec3 nh\u1eadn di\u1ec7n nh\u1eefng nhu c\u1ea7u t\u00e2m l\u00fd, c\u1ea3m x\u00fac v\u00e0 b\u1ea3n s\u1eafc c\u00e1 nh\u00e2n \u0111ang b\u1ecb d\u1ed3n n\u00e9n b\u00ean trong con. MAP gi\u00fap gi\u1ea3i m\u00e3 v\u00ec sao nhi\u1ec1u \u0111\u1ee9a tr\u1ebb tu\u1ed5i teen c\u00e0ng l\u1edbn c\u00e0ng ph\u1ea3n \u1ee9ng m\u1ea1nh v\u1edbi s\u1ef1 ki\u1ec3m so\u00e1t, \u00e1p \u0111\u1eb7t ho\u1eb7c thi\u1ebfu t\u00f4n tr\u1ecdng, \u0111\u1ed3ng th\u1eddi gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng n\u1ed5i lo\u1ea1n th\u01b0\u1eddng l\u00e0 t\u00edn hi\u1ec7u cho th\u1ea5y con \u0111ang c\u1ed1 b\u1ea3o v\u1ec7 quy\u1ec1n \u0111\u01b0\u1ee3c l\u00e0 ch\u00ednh m\u00ecnh, quy\u1ec1n \u0111\u01b0\u1ee3c l\u1eafng nghe v\u00e0 quy\u1ec1n \u0111\u01b0\u1ee3c tr\u01b0\u1edfng th\u00e0nh theo c\u00e1ch ri\u00eang.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-161",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-161",
     "number": 161,
-    "title": "NGUY CƠ THU MÌNH VÀ CÔ LẬP",
-    "subtitle": "MAP này giúp cha mẹ nhìn sâu vào bản chất thật phía sau sự im lặng, thu mình, ít chia sẻ hoặc xu hướng tách khỏi thế giới xung quanh của con. Mục tiêu cốt lõi không phải để đánh giá con hướng nội, ít nói hay khó hòa nhập, mà để nhận diện liệu con có đang dần mất niềm tin vào kết nối, mất cảm giác an toàn trong các mối quan hệ và đang vô thức xây những bức tường cảm xúc để tự bảo vệ mình hay không. MAP giúp cha mẹ hiểu rằng phần lớn những đứa trẻ thu mình không thật sự muốn cô lập, mà đang cố tránh bị tổn thương thêm một lần nữa.",
+    "title": "NGUY C\u01a0 THU M\u00ccNH V\u00c0 C\u00d4 L\u1eacP",
+    "subtitle": "MAP n\u00e0y gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o b\u1ea3n ch\u1ea5t th\u1eadt ph\u00eda sau s\u1ef1 im l\u1eb7ng, thu m\u00ecnh, \u00edt chia s\u1ebb ho\u1eb7c xu h\u01b0\u1edbng t\u00e1ch kh\u1ecfi th\u1ebf gi\u1edbi xung quanh c\u1ee7a con. M\u1ee5c ti\u00eau c\u1ed1t l\u00f5i kh\u00f4ng ph\u1ea3i \u0111\u1ec3 \u0111\u00e1nh gi\u00e1 con h\u01b0\u1edbng n\u1ed9i, \u00edt n\u00f3i hay kh\u00f3 h\u00f2a nh\u1eadp, m\u00e0 \u0111\u1ec3 nh\u1eadn di\u1ec7n li\u1ec7u con c\u00f3 \u0111ang d\u1ea7n m\u1ea5t ni\u1ec1m tin v\u00e0o k\u1ebft n\u1ed1i, m\u1ea5t c\u1ea3m gi\u00e1c an to\u00e0n trong c\u00e1c m\u1ed1i quan h\u1ec7 v\u00e0 \u0111ang v\u00f4 th\u1ee9c x\u00e2y nh\u1eefng b\u1ee9c t\u01b0\u1eddng c\u1ea3m x\u00fac \u0111\u1ec3 t\u1ef1 b\u1ea3o v\u1ec7 m\u00ecnh hay kh\u00f4ng. MAP gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng ph\u1ea7n l\u1edbn nh\u1eefng \u0111\u1ee9a tr\u1ebb thu m\u00ecnh kh\u00f4ng th\u1eadt s\u1ef1 mu\u1ed1n c\u00f4 l\u1eadp, m\u00e0 \u0111ang c\u1ed1 tr\u00e1nh b\u1ecb t\u1ed5n th\u01b0\u01a1ng th\u00eam m\u1ed9t l\u1ea7n n\u1eefa.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-162",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-162",
     "number": 162,
-    "title": "NGUY CƠ SỐNG ĐỂ LÀM HÀI LÒNG NGƯỜI KHÁC",
-    "subtitle": "MAP này giúp cha mẹ nhìn sâu vào nguy cơ con đang dần đánh mất cảm xúc thật, nhu cầu thật và bản sắc thật của mình để đổi lấy sự chấp nhận, yêu thương hoặc công nhận từ người khác. Mục tiêu cốt lõi không phải đánh giá con là ngoan, biết điều hay sống tình cảm, mà giúp nhận diện liệu con có đang vô thức hình thành niềm tin rằng giá trị của mình phụ thuộc vào việc làm người khác hài lòng hay không. MAP giúp cha mẹ hiểu rằng nhiều đứa trẻ rất ngoan bên ngoài nhưng bên trong lại đang sống trong áp lực phải đáp ứng kỳ vọng, sợ làm người khác thất vọng và không còn dám sống thật với chính mình.",
+    "title": "NGUY C\u01a0 S\u1ed0NG \u0110\u1ec2 L\u00c0M H\u00c0I L\u00d2NG NG\u01af\u1edcI KH\u00c1C",
+    "subtitle": "MAP n\u00e0y gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o nguy c\u01a1 con \u0111ang d\u1ea7n \u0111\u00e1nh m\u1ea5t c\u1ea3m x\u00fac th\u1eadt, nhu c\u1ea7u th\u1eadt v\u00e0 b\u1ea3n s\u1eafc th\u1eadt c\u1ee7a m\u00ecnh \u0111\u1ec3 \u0111\u1ed5i l\u1ea5y s\u1ef1 ch\u1ea5p nh\u1eadn, y\u00eau th\u01b0\u01a1ng ho\u1eb7c c\u00f4ng nh\u1eadn t\u1eeb ng\u01b0\u1eddi kh\u00e1c. M\u1ee5c ti\u00eau c\u1ed1t l\u00f5i kh\u00f4ng ph\u1ea3i \u0111\u00e1nh gi\u00e1 con l\u00e0 ngoan, bi\u1ebft \u0111i\u1ec1u hay s\u1ed1ng t\u00ecnh c\u1ea3m, m\u00e0 gi\u00fap nh\u1eadn di\u1ec7n li\u1ec7u con c\u00f3 \u0111ang v\u00f4 th\u1ee9c h\u00ecnh th\u00e0nh ni\u1ec1m tin r\u1eb1ng gi\u00e1 tr\u1ecb c\u1ee7a m\u00ecnh ph\u1ee5 thu\u1ed9c v\u00e0o vi\u1ec7c l\u00e0m ng\u01b0\u1eddi kh\u00e1c h\u00e0i l\u00f2ng hay kh\u00f4ng. MAP gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng nhi\u1ec1u \u0111\u1ee9a tr\u1ebb r\u1ea5t ngoan b\u00ean ngo\u00e0i nh\u01b0ng b\u00ean trong l\u1ea1i \u0111ang s\u1ed1ng trong \u00e1p l\u1ef1c ph\u1ea3i \u0111\u00e1p \u1ee9ng k\u1ef3 v\u1ecdng, s\u1ee3 l\u00e0m ng\u01b0\u1eddi kh\u00e1c th\u1ea5t v\u1ecdng v\u00e0 kh\u00f4ng c\u00f2n d\u00e1m s\u1ed1ng th\u1eadt v\u1edbi ch\u00ednh m\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-163",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-163",
     "number": 163,
-    "title": "NGUY CƠ ÁP LỰC THÀNH TÍCH",
-    "subtitle": "MAP này giúp cha mẹ nhìn sâu vào nguy cơ con đang dần gắn giá trị bản thân với kết quả, thành tích, vị trí và sự công nhận từ bên ngoài thay vì xây dựng giá trị từ nội lực bên trong. Mục tiêu cốt lõi không phải đánh giá con có tham vọng hay cầu tiến hay không, mà giúp nhận diện liệu con có đang sống trong niềm tin rằng chỉ khi thành công, giỏi giang hoặc đứng đầu thì mình mới đủ tốt, đủ giá trị và xứng đáng được yêu thương hay không. MAP giúp cha mẹ hiểu rằng nhiều đứa trẻ nhìn bên ngoài rất chăm chỉ, có trách nhiệm và thành tích cao nhưng bên trong lại đang sống trong áp lực, sợ hãi và tự phủ nhận bản thân kéo dài.",
+    "title": "NGUY C\u01a0 \u00c1P L\u1ef0C TH\u00c0NH T\u00cdCH",
+    "subtitle": "MAP n\u00e0y gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o nguy c\u01a1 con \u0111ang d\u1ea7n g\u1eafn gi\u00e1 tr\u1ecb b\u1ea3n th\u00e2n v\u1edbi k\u1ebft qu\u1ea3, th\u00e0nh t\u00edch, v\u1ecb tr\u00ed v\u00e0 s\u1ef1 c\u00f4ng nh\u1eadn t\u1eeb b\u00ean ngo\u00e0i thay v\u00ec x\u00e2y d\u1ef1ng gi\u00e1 tr\u1ecb t\u1eeb n\u1ed9i l\u1ef1c b\u00ean trong. M\u1ee5c ti\u00eau c\u1ed1t l\u00f5i kh\u00f4ng ph\u1ea3i \u0111\u00e1nh gi\u00e1 con c\u00f3 tham v\u1ecdng hay c\u1ea7u ti\u1ebfn hay kh\u00f4ng, m\u00e0 gi\u00fap nh\u1eadn di\u1ec7n li\u1ec7u con c\u00f3 \u0111ang s\u1ed1ng trong ni\u1ec1m tin r\u1eb1ng ch\u1ec9 khi th\u00e0nh c\u00f4ng, gi\u1ecfi giang ho\u1eb7c \u0111\u1ee9ng \u0111\u1ea7u th\u00ec m\u00ecnh m\u1edbi \u0111\u1ee7 t\u1ed1t, \u0111\u1ee7 gi\u00e1 tr\u1ecb v\u00e0 x\u1ee9ng \u0111\u00e1ng \u0111\u01b0\u1ee3c y\u00eau th\u01b0\u01a1ng hay kh\u00f4ng. MAP gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng nhi\u1ec1u \u0111\u1ee9a tr\u1ebb nh\u00ecn b\u00ean ngo\u00e0i r\u1ea5t ch\u0103m ch\u1ec9, c\u00f3 tr\u00e1ch nhi\u1ec7m v\u00e0 th\u00e0nh t\u00edch cao nh\u01b0ng b\u00ean trong l\u1ea1i \u0111ang s\u1ed1ng trong \u00e1p l\u1ef1c, s\u1ee3 h\u00e3i v\u00e0 t\u1ef1 ph\u1ee7 nh\u1eadn b\u1ea3n th\u00e2n k\u00e9o d\u00e0i.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-164",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-164",
     "number": 164,
-    "title": "NGUY CƠ TỰ PHỦ NHẬN BẢN THÂN",
-    "subtitle": "MAP này giúp cha mẹ nhìn sâu vào nguy cơ con đang dần đánh mất khả năng nhìn thấy giá trị, điểm mạnh, cảm xúc và con người thật của chính mình. Mục tiêu cốt lõi không phải đánh giá con có tự tin hay không tự tin, mà giúp nhận diện liệu bên trong con có đang hình thành niềm tin rằng mình không đủ tốt, không đủ quan trọng, không đủ giá trị hoặc không xứng đáng được yêu thương và tôn trọng hay không. MAP giúp cha mẹ hiểu rằng nhiều đứa trẻ vẫn học tập, giao tiếp và sinh hoạt bình thường nhưng bên trong lại đang âm thầm phủ nhận chính bản thân mình mỗi ngày.",
+    "title": "NGUY C\u01a0 T\u1ef0 PH\u1ee6 NH\u1eacN B\u1ea2N TH\u00c2N",
+    "subtitle": "MAP n\u00e0y gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o nguy c\u01a1 con \u0111ang d\u1ea7n \u0111\u00e1nh m\u1ea5t kh\u1ea3 n\u0103ng nh\u00ecn th\u1ea5y gi\u00e1 tr\u1ecb, \u0111i\u1ec3m m\u1ea1nh, c\u1ea3m x\u00fac v\u00e0 con ng\u01b0\u1eddi th\u1eadt c\u1ee7a ch\u00ednh m\u00ecnh. M\u1ee5c ti\u00eau c\u1ed1t l\u00f5i kh\u00f4ng ph\u1ea3i \u0111\u00e1nh gi\u00e1 con c\u00f3 t\u1ef1 tin hay kh\u00f4ng t\u1ef1 tin, m\u00e0 gi\u00fap nh\u1eadn di\u1ec7n li\u1ec7u b\u00ean trong con c\u00f3 \u0111ang h\u00ecnh th\u00e0nh ni\u1ec1m tin r\u1eb1ng m\u00ecnh kh\u00f4ng \u0111\u1ee7 t\u1ed1t, kh\u00f4ng \u0111\u1ee7 quan tr\u1ecdng, kh\u00f4ng \u0111\u1ee7 gi\u00e1 tr\u1ecb ho\u1eb7c kh\u00f4ng x\u1ee9ng \u0111\u00e1ng \u0111\u01b0\u1ee3c y\u00eau th\u01b0\u01a1ng v\u00e0 t\u00f4n tr\u1ecdng hay kh\u00f4ng. MAP gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng nhi\u1ec1u \u0111\u1ee9a tr\u1ebb v\u1eabn h\u1ecdc t\u1eadp, giao ti\u1ebfp v\u00e0 sinh ho\u1ea1t b\u00ecnh th\u01b0\u1eddng nh\u01b0ng b\u00ean trong l\u1ea1i \u0111ang \u00e2m th\u1ea7m ph\u1ee7 nh\u1eadn ch\u00ednh b\u1ea3n th\u00e2n m\u00ecnh m\u1ed7i ng\u00e0y.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-165",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-165",
     "number": 165,
-    "title": "NGUY CƠ TỰ PHÁ BẢN THÂN",
-    "subtitle": "MAP này giúp cha mẹ nhìn sâu vào nguy cơ con đang vô thức thực hiện những suy nghĩ, cảm xúc và hành vi khiến chính mình mất cơ hội phát triển, mất kết nối, mất giá trị hoặc tự đẩy bản thân ra xa những điều tốt đẹp trong cuộc sống. Mục tiêu cốt lõi không phải đánh giá con có bướng bỉnh, khó dạy hay chống đối hay không, mà giúp nhận diện liệu bên trong con có đang hình thành niềm tin rằng mình không đủ giá trị, không xứng đáng được yêu thương, không xứng đáng thành công hoặc không xứng đáng có một cuộc sống tốt đẹp hay không.",
+    "title": "NGUY C\u01a0 T\u1ef0 PH\u00c1 B\u1ea2N TH\u00c2N",
+    "subtitle": "MAP n\u00e0y gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o nguy c\u01a1 con \u0111ang v\u00f4 th\u1ee9c th\u1ef1c hi\u1ec7n nh\u1eefng suy ngh\u0129, c\u1ea3m x\u00fac v\u00e0 h\u00e0nh vi khi\u1ebfn ch\u00ednh m\u00ecnh m\u1ea5t c\u01a1 h\u1ed9i ph\u00e1t tri\u1ec3n, m\u1ea5t k\u1ebft n\u1ed1i, m\u1ea5t gi\u00e1 tr\u1ecb ho\u1eb7c t\u1ef1 \u0111\u1ea9y b\u1ea3n th\u00e2n ra xa nh\u1eefng \u0111i\u1ec1u t\u1ed1t \u0111\u1eb9p trong cu\u1ed9c s\u1ed1ng. M\u1ee5c ti\u00eau c\u1ed1t l\u00f5i kh\u00f4ng ph\u1ea3i \u0111\u00e1nh gi\u00e1 con c\u00f3 b\u01b0\u1edbng b\u1ec9nh, kh\u00f3 d\u1ea1y hay ch\u1ed1ng \u0111\u1ed1i hay kh\u00f4ng, m\u00e0 gi\u00fap nh\u1eadn di\u1ec7n li\u1ec7u b\u00ean trong con c\u00f3 \u0111ang h\u00ecnh th\u00e0nh ni\u1ec1m tin r\u1eb1ng m\u00ecnh kh\u00f4ng \u0111\u1ee7 gi\u00e1 tr\u1ecb, kh\u00f4ng x\u1ee9ng \u0111\u00e1ng \u0111\u01b0\u1ee3c y\u00eau th\u01b0\u01a1ng, kh\u00f4ng x\u1ee9ng \u0111\u00e1ng th\u00e0nh c\u00f4ng ho\u1eb7c kh\u00f4ng x\u1ee9ng \u0111\u00e1ng c\u00f3 m\u1ed9t cu\u1ed9c s\u1ed1ng t\u1ed1t \u0111\u1eb9p hay kh\u00f4ng.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-166",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-166",
     "number": 166,
-    "title": "NGUY CƠ MẤT ĐỊNH HƯỚNG TƯƠNG LAI",
-    "subtitle": "MAP này giúp cha mẹ nhìn sâu vào nguy cơ con đang dần mất kết nối với chính mình, mất động lực phát triển và không còn nhìn thấy ý nghĩa thật sự của con đường phía trước.",
+    "title": "NGUY C\u01a0 M\u1ea4T \u0110\u1ecaNH H\u01af\u1edaNG T\u01af\u01a0NG LAI",
+    "subtitle": "MAP n\u00e0y gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o nguy c\u01a1 con \u0111ang d\u1ea7n m\u1ea5t k\u1ebft n\u1ed1i v\u1edbi ch\u00ednh m\u00ecnh, m\u1ea5t \u0111\u1ed9ng l\u1ef1c ph\u00e1t tri\u1ec3n v\u00e0 kh\u00f4ng c\u00f2n nh\u00ecn th\u1ea5y \u00fd ngh\u0129a th\u1eadt s\u1ef1 c\u1ee7a con \u0111\u01b0\u1eddng ph\u00eda tr\u01b0\u1edbc.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-167",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-167",
     "number": 167,
-    "title": "NGUY CƠ LỆCH GIÁ TRỊ SỐNG",
-    "subtitle": "MAP này giúp cha mẹ nhìn sâu vào nguy cơ con đang dần đánh mất la bàn giá trị sống bên trong || không còn phân biệt rõ điều gì thật sự quan trọng || điều gì có ý nghĩa || điều gì phù hợp với con người thật của mình || giúp cha mẹ hiểu rằng lệch giá trị sống không bắt đầu từ việc con muốn làm điều sai mà bắt đầu từ việc con mất kết nối với chính bản thân mình.",
+    "title": "NGUY C\u01a0 L\u1ec6CH GI\u00c1 TR\u1eca S\u1ed0NG",
+    "subtitle": "MAP n\u00e0y gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o nguy c\u01a1 con \u0111ang d\u1ea7n \u0111\u00e1nh m\u1ea5t la b\u00e0n gi\u00e1 tr\u1ecb s\u1ed1ng b\u00ean trong || kh\u00f4ng c\u00f2n ph\u00e2n bi\u1ec7t r\u00f5 \u0111i\u1ec1u g\u00ec th\u1eadt s\u1ef1 quan tr\u1ecdng || \u0111i\u1ec1u g\u00ec c\u00f3 \u00fd ngh\u0129a || \u0111i\u1ec1u g\u00ec ph\u00f9 h\u1ee3p v\u1edbi con ng\u01b0\u1eddi th\u1eadt c\u1ee7a m\u00ecnh || gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng l\u1ec7ch gi\u00e1 tr\u1ecb s\u1ed1ng kh\u00f4ng b\u1eaft \u0111\u1ea7u t\u1eeb vi\u1ec7c con mu\u1ed1n l\u00e0m \u0111i\u1ec1u sai m\u00e0 b\u1eaft \u0111\u1ea7u t\u1eeb vi\u1ec7c con m\u1ea5t k\u1ebft n\u1ed1i v\u1edbi ch\u00ednh b\u1ea3n th\u00e2n m\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-168",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-168",
     "number": 168,
-    "title": "NGUY CƠ HÌNH THÀNH TỔN THƯƠNG TÂM LÝ LÂU DÀI",
-    "subtitle": "MAP này giúp cha mẹ nhìn sâu vào nguy cơ con đang tích tụ những tổn thương cảm xúc chưa được chữa lành bên trong || nhận diện những vết thương tâm lý đang âm thầm hình thành và ảnh hưởng đến nhân cách, lòng tự trọng, khả năng kết nối và chất lượng cuộc sống tương lai của con || giúp cha mẹ hiểu rằng tổn thương tâm lý lâu dài không chỉ xuất hiện từ những biến cố lớn mà còn được hình thành từ những cảm xúc bị bỏ quên, bị phủ nhận hoặc phải chịu đựng quá lâu trong cô đơn.",
+    "title": "NGUY C\u01a0 H\u00ccNH TH\u00c0NH T\u1ed4N TH\u01af\u01a0NG T\u00c2M L\u00dd L\u00c2U D\u00c0I",
+    "subtitle": "MAP n\u00e0y gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o nguy c\u01a1 con \u0111ang t\u00edch t\u1ee5 nh\u1eefng t\u1ed5n th\u01b0\u01a1ng c\u1ea3m x\u00fac ch\u01b0a \u0111\u01b0\u1ee3c ch\u1eefa l\u00e0nh b\u00ean trong || nh\u1eadn di\u1ec7n nh\u1eefng v\u1ebft th\u01b0\u01a1ng t\u00e2m l\u00fd \u0111ang \u00e2m th\u1ea7m h\u00ecnh th\u00e0nh v\u00e0 \u1ea3nh h\u01b0\u1edfng \u0111\u1ebfn nh\u00e2n c\u00e1ch, l\u00f2ng t\u1ef1 tr\u1ecdng, kh\u1ea3 n\u0103ng k\u1ebft n\u1ed1i v\u00e0 ch\u1ea5t l\u01b0\u1ee3ng cu\u1ed9c s\u1ed1ng t\u01b0\u01a1ng lai c\u1ee7a con || gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng t\u1ed5n th\u01b0\u01a1ng t\u00e2m l\u00fd l\u00e2u d\u00e0i kh\u00f4ng ch\u1ec9 xu\u1ea5t hi\u1ec7n t\u1eeb nh\u1eefng bi\u1ebfn c\u1ed1 l\u1edbn m\u00e0 c\u00f2n \u0111\u01b0\u1ee3c h\u00ecnh th\u00e0nh t\u1eeb nh\u1eefng c\u1ea3m x\u00fac b\u1ecb b\u1ecf qu\u00ean, b\u1ecb ph\u1ee7 nh\u1eadn ho\u1eb7c ph\u1ea3i ch\u1ecbu \u0111\u1ef1ng qu\u00e1 l\u00e2u trong c\u00f4 \u0111\u01a1n.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-169",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-169",
     "number": 169,
-    "title": "NHỮNG MÔ THỨC TIÊU CỰC DỄ LẶP LẠI TRONG ĐỜI CON",
-    "subtitle": "MAP này giúp cha mẹ nhìn sâu vào những vòng lặp suy nghĩ → cảm xúc → hành vi đang âm thầm hình thành bên trong con || nhận diện các mô thức tiêu cực có nguy cơ lặp đi lặp lại nhiều lần trong học tập, các mối quan hệ, lòng tự trọng và hành trình trưởng thành của con || giúp cha mẹ hiểu rằng mô thức tiêu cực không xuất hiện ngẫu nhiên mà thường bắt nguồn từ tổn thương, niềm tin sai lệch, thiếu an toàn cảm xúc hoặc các cơ chế sinh tồn đã tồn tại quá lâu bên trong con.",
+    "title": "NH\u1eeeNG M\u00d4 TH\u1ee8C TI\u00caU C\u1ef0C D\u1ec4 L\u1eb6P L\u1ea0I TRONG \u0110\u1edcI CON",
+    "subtitle": "MAP n\u00e0y gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o nh\u1eefng v\u00f2ng l\u1eb7p suy ngh\u0129 \u2192 c\u1ea3m x\u00fac \u2192 h\u00e0nh vi \u0111ang \u00e2m th\u1ea7m h\u00ecnh th\u00e0nh b\u00ean trong con || nh\u1eadn di\u1ec7n c\u00e1c m\u00f4 th\u1ee9c ti\u00eau c\u1ef1c c\u00f3 nguy c\u01a1 l\u1eb7p \u0111i l\u1eb7p l\u1ea1i nhi\u1ec1u l\u1ea7n trong h\u1ecdc t\u1eadp, c\u00e1c m\u1ed1i quan h\u1ec7, l\u00f2ng t\u1ef1 tr\u1ecdng v\u00e0 h\u00e0nh tr\u00ecnh tr\u01b0\u1edfng th\u00e0nh c\u1ee7a con || gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng m\u00f4 th\u1ee9c ti\u00eau c\u1ef1c kh\u00f4ng xu\u1ea5t hi\u1ec7n ng\u1eabu nhi\u00ean m\u00e0 th\u01b0\u1eddng b\u1eaft ngu\u1ed3n t\u1eeb t\u1ed5n th\u01b0\u01a1ng, ni\u1ec1m tin sai l\u1ec7ch, thi\u1ebfu an to\u00e0n c\u1ea3m x\u00fac ho\u1eb7c c\u00e1c c\u01a1 ch\u1ebf sinh t\u1ed3n \u0111\u00e3 t\u1ed3n t\u1ea1i qu\u00e1 l\u00e2u b\u00ean trong con.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-170",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-170",
     "number": 170,
-    "title": "NGUY CƠ CON TRƯỞNG THÀNH QUÁ SỚM",
-    "subtitle": "MAP này giúp cha mẹ nhận diện liệu con có đang phải lớn nhanh hơn độ tuổi cảm xúc thật của mình hay không || giúp nhìn sâu vào những áp lực vô hình khiến con phải tự gồng, tự chịu đựng và tự sinh tồn quá sớm || giúp phân biệt rõ giữa một đứa trẻ phát triển lành mạnh với một đứa trẻ đang trưởng thành sớm vì thiếu an toàn cảm xúc.",
+    "title": "NGUY C\u01a0 CON TR\u01af\u1edeNG TH\u00c0NH QU\u00c1 S\u1edaM",
+    "subtitle": "MAP n\u00e0y gi\u00fap cha m\u1eb9 nh\u1eadn di\u1ec7n li\u1ec7u con c\u00f3 \u0111ang ph\u1ea3i l\u1edbn nhanh h\u01a1n \u0111\u1ed9 tu\u1ed5i c\u1ea3m x\u00fac th\u1eadt c\u1ee7a m\u00ecnh hay kh\u00f4ng || gi\u00fap nh\u00ecn s\u00e2u v\u00e0o nh\u1eefng \u00e1p l\u1ef1c v\u00f4 h\u00ecnh khi\u1ebfn con ph\u1ea3i t\u1ef1 g\u1ed3ng, t\u1ef1 ch\u1ecbu \u0111\u1ef1ng v\u00e0 t\u1ef1 sinh t\u1ed3n qu\u00e1 s\u1edbm || gi\u00fap ph\u00e2n bi\u1ec7t r\u00f5 gi\u1eefa m\u1ed9t \u0111\u1ee9a tr\u1ebb ph\u00e1t tri\u1ec3n l\u00e0nh m\u1ea1nh v\u1edbi m\u1ed9t \u0111\u1ee9a tr\u1ebb \u0111ang tr\u01b0\u1edfng th\u00e0nh s\u1edbm v\u00ec thi\u1ebfu an to\u00e0n c\u1ea3m x\u00fac.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-171",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-171",
     "number": 171,
-    "title": "VẾT THƯƠNG CẢM XÚC SÂU NHẤT CỦA CON",
-    "subtitle": "MAP này giúp cha mẹ nhìn sâu vào vết thương cảm xúc sâu nhất đang âm thầm tồn tại bên trong con || giúp nhận diện nỗi đau đang ảnh hưởng đến lòng tự trọng, cảm giác an toàn, khả năng yêu thương và cách con nhìn nhận chính mình || giúp hiểu rằng nhiều đứa trẻ không thể diễn tả tổn thương bằng lời nhưng vẫn đang sống trong những cảm xúc đau kéo dài mỗi ngày.",
+    "title": "V\u1ebeT TH\u01af\u01a0NG C\u1ea2M X\u00daC S\u00c2U NH\u1ea4T C\u1ee6A CON",
+    "subtitle": "MAP n\u00e0y gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o v\u1ebft th\u01b0\u01a1ng c\u1ea3m x\u00fac s\u00e2u nh\u1ea5t \u0111ang \u00e2m th\u1ea7m t\u1ed3n t\u1ea1i b\u00ean trong con || gi\u00fap nh\u1eadn di\u1ec7n n\u1ed7i \u0111au \u0111ang \u1ea3nh h\u01b0\u1edfng \u0111\u1ebfn l\u00f2ng t\u1ef1 tr\u1ecdng, c\u1ea3m gi\u00e1c an to\u00e0n, kh\u1ea3 n\u0103ng y\u00eau th\u01b0\u01a1ng v\u00e0 c\u00e1ch con nh\u00ecn nh\u1eadn ch\u00ednh m\u00ecnh || gi\u00fap hi\u1ec3u r\u1eb1ng nhi\u1ec1u \u0111\u1ee9a tr\u1ebb kh\u00f4ng th\u1ec3 di\u1ec5n t\u1ea3 t\u1ed5n th\u01b0\u01a1ng b\u1eb1ng l\u1eddi nh\u01b0ng v\u1eabn \u0111ang s\u1ed1ng trong nh\u1eefng c\u1ea3m x\u00fac \u0111au k\u00e9o d\u00e0i m\u1ed7i ng\u00e0y.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-172",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-172",
     "number": 172,
-    "title": "ĐIỀU CON LUÔN CỐ CHE GIẤU",
-    "subtitle": "MAP này giúp cha mẹ nhìn sâu vào những cảm xúc, nỗi đau, nhu cầu và phần con người thật mà con đang âm thầm che giấu bên trong || giúp nhận diện những cơ chế phòng vệ khiến con không dám sống thật với chính mình || giúp hiểu rằng nhiều đứa trẻ không che giấu vì muốn lừa dối mà vì đang cố bảo vệ bản thân khỏi tổn thương, từ chối hoặc mất an toàn cảm xúc.",
+    "title": "\u0110I\u1ec0U CON LU\u00d4N C\u1ed0 CHE GI\u1ea4U",
+    "subtitle": "MAP n\u00e0y gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o nh\u1eefng c\u1ea3m x\u00fac, n\u1ed7i \u0111au, nhu c\u1ea7u v\u00e0 ph\u1ea7n con ng\u01b0\u1eddi th\u1eadt m\u00e0 con \u0111ang \u00e2m th\u1ea7m che gi\u1ea5u b\u00ean trong || gi\u00fap nh\u1eadn di\u1ec7n nh\u1eefng c\u01a1 ch\u1ebf ph\u00f2ng v\u1ec7 khi\u1ebfn con kh\u00f4ng d\u00e1m s\u1ed1ng th\u1eadt v\u1edbi ch\u00ednh m\u00ecnh || gi\u00fap hi\u1ec3u r\u1eb1ng nhi\u1ec1u \u0111\u1ee9a tr\u1ebb kh\u00f4ng che gi\u1ea5u v\u00ec mu\u1ed1n l\u1eeba d\u1ed1i m\u00e0 v\u00ec \u0111ang c\u1ed1 b\u1ea3o v\u1ec7 b\u1ea3n th\u00e2n kh\u1ecfi t\u1ed5n th\u01b0\u01a1ng, t\u1eeb ch\u1ed1i ho\u1eb7c m\u1ea5t an to\u00e0n c\u1ea3m x\u00fac.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-173",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-173",
     "number": 173,
-    "title": "ĐIỀU KHIẾN CON MẤT CẢM GIÁC AN TOÀN",
-    "subtitle": "MAP này giúp cha mẹ nhìn sâu vào những nguyên nhân đang làm hệ thần kinh, cảm xúc và nội tâm của con liên tục sống trong trạng thái căng thẳng, phòng thủ hoặc bất an || giúp nhận diện những yếu tố khiến con không còn cảm thấy được bảo vệ, được yêu thương ổn định và được là chính mình || giúp hiểu rằng cảm giác an toàn là nền tảng quan trọng nhất cho sự phát triển cảm xúc, nhân cách và nội lực của con.",
+    "title": "\u0110I\u1ec0U KHI\u1ebeN CON M\u1ea4T C\u1ea2M GI\u00c1C AN TO\u00c0N",
+    "subtitle": "MAP n\u00e0y gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o nh\u1eefng nguy\u00ean nh\u00e2n \u0111ang l\u00e0m h\u1ec7 th\u1ea7n kinh, c\u1ea3m x\u00fac v\u00e0 n\u1ed9i t\u00e2m c\u1ee7a con li\u00ean t\u1ee5c s\u1ed1ng trong tr\u1ea1ng th\u00e1i c\u0103ng th\u1eb3ng, ph\u00f2ng th\u1ee7 ho\u1eb7c b\u1ea5t an || gi\u00fap nh\u1eadn di\u1ec7n nh\u1eefng y\u1ebfu t\u1ed1 khi\u1ebfn con kh\u00f4ng c\u00f2n c\u1ea3m th\u1ea5y \u0111\u01b0\u1ee3c b\u1ea3o v\u1ec7, \u0111\u01b0\u1ee3c y\u00eau th\u01b0\u01a1ng \u1ed5n \u0111\u1ecbnh v\u00e0 \u0111\u01b0\u1ee3c l\u00e0 ch\u00ednh m\u00ecnh || gi\u00fap hi\u1ec3u r\u1eb1ng c\u1ea3m gi\u00e1c an to\u00e0n l\u00e0 n\u1ec1n t\u1ea3ng quan tr\u1ecdng nh\u1ea5t cho s\u1ef1 ph\u00e1t tri\u1ec3n c\u1ea3m x\u00fac, nh\u00e2n c\u00e1ch v\u00e0 n\u1ed9i l\u1ef1c c\u1ee7a con.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-174",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-174",
     "number": 174,
-    "title": "ĐIỀU KHIẾN CON DẦN KHÉP LÒNG",
-    "subtitle": "MAP này giúp cha mẹ nhìn sâu vào những nguyên nhân đang khiến con dần thu cảm xúc, mất kết nối, không còn muốn mở lòng hoặc không còn cảm thấy an toàn khi thể hiện con người thật của mình || giúp nhận diện những tổn thương âm thầm đang khiến con đóng lại cánh cửa cảm xúc || giúp hiểu rằng một đứa trẻ khép lòng không phải vì không cần yêu thương mà vì đã nhiều lần cảm thấy không được thấu hiểu, không được đón nhận hoặc không còn tin vào sự an toàn của kết nối.",
+    "title": "\u0110I\u1ec0U KHI\u1ebeN CON D\u1ea6N KH\u00c9P L\u00d2NG",
+    "subtitle": "MAP n\u00e0y gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o nh\u1eefng nguy\u00ean nh\u00e2n \u0111ang khi\u1ebfn con d\u1ea7n thu c\u1ea3m x\u00fac, m\u1ea5t k\u1ebft n\u1ed1i, kh\u00f4ng c\u00f2n mu\u1ed1n m\u1edf l\u00f2ng ho\u1eb7c kh\u00f4ng c\u00f2n c\u1ea3m th\u1ea5y an to\u00e0n khi th\u1ec3 hi\u1ec7n con ng\u01b0\u1eddi th\u1eadt c\u1ee7a m\u00ecnh || gi\u00fap nh\u1eadn di\u1ec7n nh\u1eefng t\u1ed5n th\u01b0\u01a1ng \u00e2m th\u1ea7m \u0111ang khi\u1ebfn con \u0111\u00f3ng l\u1ea1i c\u00e1nh c\u1eeda c\u1ea3m x\u00fac || gi\u00fap hi\u1ec3u r\u1eb1ng m\u1ed9t \u0111\u1ee9a tr\u1ebb kh\u00e9p l\u00f2ng kh\u00f4ng ph\u1ea3i v\u00ec kh\u00f4ng c\u1ea7n y\u00eau th\u01b0\u01a1ng m\u00e0 v\u00ec \u0111\u00e3 nhi\u1ec1u l\u1ea7n c\u1ea3m th\u1ea5y kh\u00f4ng \u0111\u01b0\u1ee3c th\u1ea5u hi\u1ec3u, kh\u00f4ng \u0111\u01b0\u1ee3c \u0111\u00f3n nh\u1eadn ho\u1eb7c kh\u00f4ng c\u00f2n tin v\u00e0o s\u1ef1 an to\u00e0n c\u1ee7a k\u1ebft n\u1ed1i.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-175",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-175",
     "number": 175,
-    "title": "ĐIỀU GIÚP CON CHỮA LÀNH NỘI TÂM",
-    "subtitle": "MAP này giúp cha mẹ nhìn sâu vào những yếu tố thật sự giúp nội tâm, cảm xúc và hệ thần kinh của con được hồi phục sau những tổn thương bên trong || giúp hiểu điều gì khiến con cảm thấy được an toàn, được nhìn thấy và được yêu thương đúng cách || giúp nhận ra rằng chữa lành không phải là ép con quên đau mà là đồng hành để con không còn phải một mình chống chọi với cảm xúc của mình.",
+    "title": "\u0110I\u1ec0U GI\u00daP CON CH\u1eeeA L\u00c0NH N\u1ed8I T\u00c2M",
+    "subtitle": "MAP n\u00e0y gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o nh\u1eefng y\u1ebfu t\u1ed1 th\u1eadt s\u1ef1 gi\u00fap n\u1ed9i t\u00e2m, c\u1ea3m x\u00fac v\u00e0 h\u1ec7 th\u1ea7n kinh c\u1ee7a con \u0111\u01b0\u1ee3c h\u1ed3i ph\u1ee5c sau nh\u1eefng t\u1ed5n th\u01b0\u01a1ng b\u00ean trong || gi\u00fap hi\u1ec3u \u0111i\u1ec1u g\u00ec khi\u1ebfn con c\u1ea3m th\u1ea5y \u0111\u01b0\u1ee3c an to\u00e0n, \u0111\u01b0\u1ee3c nh\u00ecn th\u1ea5y v\u00e0 \u0111\u01b0\u1ee3c y\u00eau th\u01b0\u01a1ng \u0111\u00fang c\u00e1ch || gi\u00fap nh\u1eadn ra r\u1eb1ng ch\u1eefa l\u00e0nh kh\u00f4ng ph\u1ea3i l\u00e0 \u00e9p con qu\u00ean \u0111au m\u00e0 l\u00e0 \u0111\u1ed3ng h\u00e0nh \u0111\u1ec3 con kh\u00f4ng c\u00f2n ph\u1ea3i m\u1ed9t m\u00ecnh ch\u1ed1ng ch\u1ecdi v\u1edbi c\u1ea3m x\u00fac c\u1ee7a m\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-176",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-176",
     "number": 176,
-    "title": "CÁCH GIÚP CON XÂY LẠI NIỀM TIN",
-    "subtitle": "MAP này giúp cha mẹ nhìn sâu vào những nguyên nhân đã làm con dần mất niềm tin vào bản thân, vào người khác và vào cuộc sống || giúp nhận diện những tổn thương đang khiến con không còn muốn hy vọng, không còn muốn mở lòng hoặc luôn sống trong trạng thái đề phòng || giúp hiểu rằng mất niềm tin không phải là tiêu cực mà là hệ quả của những tổn thương cảm xúc chưa được chữa lành.",
+    "title": "C\u00c1CH GI\u00daP CON X\u00c2Y L\u1ea0I NI\u1ec0M TIN",
+    "subtitle": "MAP n\u00e0y gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o nh\u1eefng nguy\u00ean nh\u00e2n \u0111\u00e3 l\u00e0m con d\u1ea7n m\u1ea5t ni\u1ec1m tin v\u00e0o b\u1ea3n th\u00e2n, v\u00e0o ng\u01b0\u1eddi kh\u00e1c v\u00e0 v\u00e0o cu\u1ed9c s\u1ed1ng || gi\u00fap nh\u1eadn di\u1ec7n nh\u1eefng t\u1ed5n th\u01b0\u01a1ng \u0111ang khi\u1ebfn con kh\u00f4ng c\u00f2n mu\u1ed1n hy v\u1ecdng, kh\u00f4ng c\u00f2n mu\u1ed1n m\u1edf l\u00f2ng ho\u1eb7c lu\u00f4n s\u1ed1ng trong tr\u1ea1ng th\u00e1i \u0111\u1ec1 ph\u00f2ng || gi\u00fap hi\u1ec3u r\u1eb1ng m\u1ea5t ni\u1ec1m tin kh\u00f4ng ph\u1ea3i l\u00e0 ti\u00eau c\u1ef1c m\u00e0 l\u00e0 h\u1ec7 qu\u1ea3 c\u1ee7a nh\u1eefng t\u1ed5n th\u01b0\u01a1ng c\u1ea3m x\u00fac ch\u01b0a \u0111\u01b0\u1ee3c ch\u1eefa l\u00e0nh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-177",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-177",
     "number": 177,
-    "title": "ĐIỀU CON CẦN NGHE NHIỀU HƠN TỪ BỐ MẸ",
-    "subtitle": "MAP này giúp cha mẹ nhìn sâu vào những lời nói, thông điệp cảm xúc và cách giao tiếp mà nội tâm con đang thật sự cần để cảm thấy được nhìn thấy, được công nhận và được yêu thương đúng cách || giúp nhận diện những khoảng thiếu hụt cảm xúc được tạo ra không phải bởi sự thiếu quan tâm mà bởi việc chưa chạm đúng nhu cầu nội tâm của con || giúp hiểu rằng có những lời nói có thể nuôi dưỡng hoặc làm tổn thương lòng tự trọng của con trong nhiều năm.",
+    "title": "\u0110I\u1ec0U CON C\u1ea6N NGHE NHI\u1ec0U H\u01a0N T\u1eea B\u1ed0 M\u1eb8",
+    "subtitle": "MAP n\u00e0y gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o nh\u1eefng l\u1eddi n\u00f3i, th\u00f4ng \u0111i\u1ec7p c\u1ea3m x\u00fac v\u00e0 c\u00e1ch giao ti\u1ebfp m\u00e0 n\u1ed9i t\u00e2m con \u0111ang th\u1eadt s\u1ef1 c\u1ea7n \u0111\u1ec3 c\u1ea3m th\u1ea5y \u0111\u01b0\u1ee3c nh\u00ecn th\u1ea5y, \u0111\u01b0\u1ee3c c\u00f4ng nh\u1eadn v\u00e0 \u0111\u01b0\u1ee3c y\u00eau th\u01b0\u01a1ng \u0111\u00fang c\u00e1ch || gi\u00fap nh\u1eadn di\u1ec7n nh\u1eefng kho\u1ea3ng thi\u1ebfu h\u1ee5t c\u1ea3m x\u00fac \u0111\u01b0\u1ee3c t\u1ea1o ra kh\u00f4ng ph\u1ea3i b\u1edfi s\u1ef1 thi\u1ebfu quan t\u00e2m m\u00e0 b\u1edfi vi\u1ec7c ch\u01b0a ch\u1ea1m \u0111\u00fang nhu c\u1ea7u n\u1ed9i t\u00e2m c\u1ee7a con || gi\u00fap hi\u1ec3u r\u1eb1ng c\u00f3 nh\u1eefng l\u1eddi n\u00f3i c\u00f3 th\u1ec3 nu\u00f4i d\u01b0\u1ee1ng ho\u1eb7c l\u00e0m t\u1ed5n th\u01b0\u01a1ng l\u00f2ng t\u1ef1 tr\u1ecdng c\u1ee7a con trong nhi\u1ec1u n\u0103m.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-178",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-178",
     "number": 178,
-    "title": "CÁCH GIÚP CON CẢM THẤY ĐƯỢC YÊU THƯƠNG THẬT SỰ",
-    "subtitle": "MAP này giúp cha mẹ hiểu điều gì thật sự khiến nội tâm con cảm nhận được tình yêu, sự kết nối và cảm giác mình có giá trị trong gia đình || giúp nhận diện khoảng cách giữa việc được chăm sóc và việc thật sự cảm thấy được yêu thương || giúp hiểu rằng một đứa trẻ có thể được đáp ứng đầy đủ về vật chất nhưng vẫn mang cảm giác cô đơn, thiếu kết nối và thiếu giá trị bên trong.",
+    "title": "C\u00c1CH GI\u00daP CON C\u1ea2M TH\u1ea4Y \u0110\u01af\u1ee2C Y\u00caU TH\u01af\u01a0NG TH\u1eacT S\u1ef0",
+    "subtitle": "MAP n\u00e0y gi\u00fap cha m\u1eb9 hi\u1ec3u \u0111i\u1ec1u g\u00ec th\u1eadt s\u1ef1 khi\u1ebfn n\u1ed9i t\u00e2m con c\u1ea3m nh\u1eadn \u0111\u01b0\u1ee3c t\u00ecnh y\u00eau, s\u1ef1 k\u1ebft n\u1ed1i v\u00e0 c\u1ea3m gi\u00e1c m\u00ecnh c\u00f3 gi\u00e1 tr\u1ecb trong gia \u0111\u00ecnh || gi\u00fap nh\u1eadn di\u1ec7n kho\u1ea3ng c\u00e1ch gi\u1eefa vi\u1ec7c \u0111\u01b0\u1ee3c ch\u0103m s\u00f3c v\u00e0 vi\u1ec7c th\u1eadt s\u1ef1 c\u1ea3m th\u1ea5y \u0111\u01b0\u1ee3c y\u00eau th\u01b0\u01a1ng || gi\u00fap hi\u1ec3u r\u1eb1ng m\u1ed9t \u0111\u1ee9a tr\u1ebb c\u00f3 th\u1ec3 \u0111\u01b0\u1ee3c \u0111\u00e1p \u1ee9ng \u0111\u1ea7y \u0111\u1ee7 v\u1ec1 v\u1eadt ch\u1ea5t nh\u01b0ng v\u1eabn mang c\u1ea3m gi\u00e1c c\u00f4 \u0111\u01a1n, thi\u1ebfu k\u1ebft n\u1ed1i v\u00e0 thi\u1ebfu gi\u00e1 tr\u1ecb b\u00ean trong.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-179",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-179",
     "number": 179,
-    "title": "CÁCH GIÚP CON PHỤC HỒI SAU ÁP LỰC HỌC TẬP",
-    "subtitle": "MAP này giúp cha mẹ hiểu áp lực học tập đang ảnh hưởng như thế nào đến nội tâm, lòng tự trọng, hệ thần kinh và cảm giác giá trị bản thân của con || giúp nhìn ra rằng điều làm con kiệt sức không chỉ là bài vở hay lịch học dày đặc mà là cảm giác phải liên tục chứng minh mình đủ tốt để được công nhận, yêu thương và tự hào về chính mình.",
+    "title": "C\u00c1CH GI\u00daP CON PH\u1ee4C H\u1ed2I SAU \u00c1P L\u1ef0C H\u1eccC T\u1eacP",
+    "subtitle": "MAP n\u00e0y gi\u00fap cha m\u1eb9 hi\u1ec3u \u00e1p l\u1ef1c h\u1ecdc t\u1eadp \u0111ang \u1ea3nh h\u01b0\u1edfng nh\u01b0 th\u1ebf n\u00e0o \u0111\u1ebfn n\u1ed9i t\u00e2m, l\u00f2ng t\u1ef1 tr\u1ecdng, h\u1ec7 th\u1ea7n kinh v\u00e0 c\u1ea3m gi\u00e1c gi\u00e1 tr\u1ecb b\u1ea3n th\u00e2n c\u1ee7a con || gi\u00fap nh\u00ecn ra r\u1eb1ng \u0111i\u1ec1u l\u00e0m con ki\u1ec7t s\u1ee9c kh\u00f4ng ch\u1ec9 l\u00e0 b\u00e0i v\u1edf hay l\u1ecbch h\u1ecdc d\u00e0y \u0111\u1eb7c m\u00e0 l\u00e0 c\u1ea3m gi\u00e1c ph\u1ea3i li\u00ean t\u1ee5c ch\u1ee9ng minh m\u00ecnh \u0111\u1ee7 t\u1ed1t \u0111\u1ec3 \u0111\u01b0\u1ee3c c\u00f4ng nh\u1eadn, y\u00eau th\u01b0\u01a1ng v\u00e0 t\u1ef1 h\u00e0o v\u1ec1 ch\u00ednh m\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-180",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-180",
     "number": 180,
-    "title": "CÁCH GIÚP CON TRỞ VỀ ĐÚNG BẢN CHẤT",
-    "subtitle": "MAP này giúp cha mẹ hiểu điều gì đang làm con lệch khỏi bản chất thật và điều gì giúp con dần quay lại với con người tự nhiên bên trong mình || giúp nhận diện khoảng cách giữa con người thật của con và phiên bản thích nghi mà con đang sống để được yêu thương, được an toàn hoặc được chấp nhận || giúp nhìn ra rằng nhiều hành vi như thu mình, nổi loạn, làm hài lòng hoặc lạnh lùng thực chất là cơ chế sinh tồn chứ không phải bản chất thật của con.",
+    "title": "C\u00c1CH GI\u00daP CON TR\u1ede V\u1ec0 \u0110\u00daNG B\u1ea2N CH\u1ea4T",
+    "subtitle": "MAP n\u00e0y gi\u00fap cha m\u1eb9 hi\u1ec3u \u0111i\u1ec1u g\u00ec \u0111ang l\u00e0m con l\u1ec7ch kh\u1ecfi b\u1ea3n ch\u1ea5t th\u1eadt v\u00e0 \u0111i\u1ec1u g\u00ec gi\u00fap con d\u1ea7n quay l\u1ea1i v\u1edbi con ng\u01b0\u1eddi t\u1ef1 nhi\u00ean b\u00ean trong m\u00ecnh || gi\u00fap nh\u1eadn di\u1ec7n kho\u1ea3ng c\u00e1ch gi\u1eefa con ng\u01b0\u1eddi th\u1eadt c\u1ee7a con v\u00e0 phi\u00ean b\u1ea3n th\u00edch nghi m\u00e0 con \u0111ang s\u1ed1ng \u0111\u1ec3 \u0111\u01b0\u1ee3c y\u00eau th\u01b0\u01a1ng, \u0111\u01b0\u1ee3c an to\u00e0n ho\u1eb7c \u0111\u01b0\u1ee3c ch\u1ea5p nh\u1eadn || gi\u00fap nh\u00ecn ra r\u1eb1ng nhi\u1ec1u h\u00e0nh vi nh\u01b0 thu m\u00ecnh, n\u1ed5i lo\u1ea1n, l\u00e0m h\u00e0i l\u00f2ng ho\u1eb7c l\u1ea1nh l\u00f9ng th\u1ef1c ch\u1ea5t l\u00e0 c\u01a1 ch\u1ebf sinh t\u1ed3n ch\u1ee9 kh\u00f4ng ph\u1ea3i b\u1ea3n ch\u1ea5t th\u1eadt c\u1ee7a con.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-181",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-181",
     "number": 181,
-    "title": "HÀNH TRÌNH TRƯỞNG THÀNH CỦA CON THEO TỪNG GIAI ĐOẠN",
-    "subtitle": "MAP này giúp cha mẹ nhìn thấy toàn bộ hành trình trưởng thành của con như một quá trình phát triển dài hạn về nội tâm, tư duy, cảm xúc, hành vi và bản sắc cá nhân chứ không chỉ là sự lớn lên về tuổi tác || giúp hiểu rằng mỗi giai đoạn cuộc đời đều mang một nhiệm vụ phát triển riêng và cần một cách đồng hành khác nhau để con phát triển khỏe mạnh từ bên trong.",
+    "title": "H\u00c0NH TR\u00ccNH TR\u01af\u1edeNG TH\u00c0NH C\u1ee6A CON THEO T\u1eeaNG GIAI \u0110O\u1ea0N",
+    "subtitle": "MAP n\u00e0y gi\u00fap cha m\u1eb9 nh\u00ecn th\u1ea5y to\u00e0n b\u1ed9 h\u00e0nh tr\u00ecnh tr\u01b0\u1edfng th\u00e0nh c\u1ee7a con nh\u01b0 m\u1ed9t qu\u00e1 tr\u00ecnh ph\u00e1t tri\u1ec3n d\u00e0i h\u1ea1n v\u1ec1 n\u1ed9i t\u00e2m, t\u01b0 duy, c\u1ea3m x\u00fac, h\u00e0nh vi v\u00e0 b\u1ea3n s\u1eafc c\u00e1 nh\u00e2n ch\u1ee9 kh\u00f4ng ch\u1ec9 l\u00e0 s\u1ef1 l\u1edbn l\u00ean v\u1ec1 tu\u1ed5i t\u00e1c || gi\u00fap hi\u1ec3u r\u1eb1ng m\u1ed7i giai \u0111o\u1ea1n cu\u1ed9c \u0111\u1eddi \u0111\u1ec1u mang m\u1ed9t nhi\u1ec7m v\u1ee5 ph\u00e1t tri\u1ec3n ri\u00eang v\u00e0 c\u1ea7n m\u1ed9t c\u00e1ch \u0111\u1ed3ng h\u00e0nh kh\u00e1c nhau \u0111\u1ec3 con ph\u00e1t tri\u1ec3n kh\u1ecfe m\u1ea1nh t\u1eeb b\u00ean trong.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-182",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-182",
     "number": 182,
-    "title": "ĐIỀU CON CẦN HỌC TRONG GIAI ĐOẠN ĐẦU ĐỜI",
-    "subtitle": "MAP này giúp cha mẹ nhìn sâu vào những bài học nền tảng quan trọng nhất mà con cần tiếp nhận trong những năm đầu đời để xây dựng nội tâm khỏe mạnh, lòng tự trọng ổn định và nền phát triển bền vững cho toàn bộ cuộc sống phía trước || giúp hiểu rằng những gì con học được trong giai đoạn đầu đời sẽ trở thành nền móng cho cách con nhìn bản thân, nhìn người khác và nhìn thế giới sau này.",
+    "title": "\u0110I\u1ec0U CON C\u1ea6N H\u1eccC TRONG GIAI \u0110O\u1ea0N \u0110\u1ea6U \u0110\u1edcI",
+    "subtitle": "MAP n\u00e0y gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o nh\u1eefng b\u00e0i h\u1ecdc n\u1ec1n t\u1ea3ng quan tr\u1ecdng nh\u1ea5t m\u00e0 con c\u1ea7n ti\u1ebfp nh\u1eadn trong nh\u1eefng n\u0103m \u0111\u1ea7u \u0111\u1eddi \u0111\u1ec3 x\u00e2y d\u1ef1ng n\u1ed9i t\u00e2m kh\u1ecfe m\u1ea1nh, l\u00f2ng t\u1ef1 tr\u1ecdng \u1ed5n \u0111\u1ecbnh v\u00e0 n\u1ec1n ph\u00e1t tri\u1ec3n b\u1ec1n v\u1eefng cho to\u00e0n b\u1ed9 cu\u1ed9c s\u1ed1ng ph\u00eda tr\u01b0\u1edbc || gi\u00fap hi\u1ec3u r\u1eb1ng nh\u1eefng g\u00ec con h\u1ecdc \u0111\u01b0\u1ee3c trong giai \u0111o\u1ea1n \u0111\u1ea7u \u0111\u1eddi s\u1ebd tr\u1edf th\u00e0nh n\u1ec1n m\u00f3ng cho c\u00e1ch con nh\u00ecn b\u1ea3n th\u00e2n, nh\u00ecn ng\u01b0\u1eddi kh\u00e1c v\u00e0 nh\u00ecn th\u1ebf gi\u1edbi sau n\u00e0y.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-183",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-183",
     "number": 183,
-    "title": "ĐIỀU CON CẦN PHÁT TRIỂN Ở TUỔI THIẾU NIÊN",
-    "subtitle": "MAP này giúp cha mẹ nhìn sâu vào những thay đổi tâm lý, cảm xúc, tư duy và bản sắc đang diễn ra bên trong con khi bước vào tuổi thiếu niên || giúp hiểu rằng đây không chỉ là giai đoạn thay đổi hành vi mà là giai đoạn con bắt đầu xây dựng phiên bản trưởng thành đầu tiên của chính mình || giúp cha mẹ nhận ra điều gì con thật sự cần để phát triển khỏe mạnh từ bên trong.",
+    "title": "\u0110I\u1ec0U CON C\u1ea6N PH\u00c1T TRI\u1ec2N \u1ede TU\u1ed4I THI\u1ebeU NI\u00caN",
+    "subtitle": "MAP n\u00e0y gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o nh\u1eefng thay \u0111\u1ed5i t\u00e2m l\u00fd, c\u1ea3m x\u00fac, t\u01b0 duy v\u00e0 b\u1ea3n s\u1eafc \u0111ang di\u1ec5n ra b\u00ean trong con khi b\u01b0\u1edbc v\u00e0o tu\u1ed5i thi\u1ebfu ni\u00ean || gi\u00fap hi\u1ec3u r\u1eb1ng \u0111\u00e2y kh\u00f4ng ch\u1ec9 l\u00e0 giai \u0111o\u1ea1n thay \u0111\u1ed5i h\u00e0nh vi m\u00e0 l\u00e0 giai \u0111o\u1ea1n con b\u1eaft \u0111\u1ea7u x\u00e2y d\u1ef1ng phi\u00ean b\u1ea3n tr\u01b0\u1edfng th\u00e0nh \u0111\u1ea7u ti\u00ean c\u1ee7a ch\u00ednh m\u00ecnh || gi\u00fap cha m\u1eb9 nh\u1eadn ra \u0111i\u1ec1u g\u00ec con th\u1eadt s\u1ef1 c\u1ea7n \u0111\u1ec3 ph\u00e1t tri\u1ec3n kh\u1ecfe m\u1ea1nh t\u1eeb b\u00ean trong.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-184",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-184",
     "number": 184,
-    "title": "GIAI ĐOẠN CON DỄ THAY ĐỔI MẠNH NHẤT",
-    "subtitle": "MAP này giúp cha mẹ nhìn sâu vào những giai đoạn chuyển hóa mạnh nhất trong hành trình trưởng thành của con || giúp hiểu rằng có những thời điểm con không chỉ thay đổi hành vi hay cảm xúc mà đang tái cấu trúc toàn bộ cách nhìn bản thân, cách nhìn cuộc sống và bản sắc cá nhân của mình || giúp nhận diện đúng những bước ngoặt có khả năng quyết định hướng phát triển lâu dài của con.",
+    "title": "GIAI \u0110O\u1ea0N CON D\u1ec4 THAY \u0110\u1ed4I M\u1ea0NH NH\u1ea4T",
+    "subtitle": "MAP n\u00e0y gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o nh\u1eefng giai \u0111o\u1ea1n chuy\u1ec3n h\u00f3a m\u1ea1nh nh\u1ea5t trong h\u00e0nh tr\u00ecnh tr\u01b0\u1edfng th\u00e0nh c\u1ee7a con || gi\u00fap hi\u1ec3u r\u1eb1ng c\u00f3 nh\u1eefng th\u1eddi \u0111i\u1ec3m con kh\u00f4ng ch\u1ec9 thay \u0111\u1ed5i h\u00e0nh vi hay c\u1ea3m x\u00fac m\u00e0 \u0111ang t\u00e1i c\u1ea5u tr\u00fac to\u00e0n b\u1ed9 c\u00e1ch nh\u00ecn b\u1ea3n th\u00e2n, c\u00e1ch nh\u00ecn cu\u1ed9c s\u1ed1ng v\u00e0 b\u1ea3n s\u1eafc c\u00e1 nh\u00e2n c\u1ee7a m\u00ecnh || gi\u00fap nh\u1eadn di\u1ec7n \u0111\u00fang nh\u1eefng b\u01b0\u1edbc ngo\u1eb7t c\u00f3 kh\u1ea3 n\u0103ng quy\u1ebft \u0111\u1ecbnh h\u01b0\u1edbng ph\u00e1t tri\u1ec3n l\u00e2u d\u00e0i c\u1ee7a con.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-185",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-185",
     "number": 185,
-    "title": "BÀI HỌC LỚN CON CẦN VƯỢT QUA",
-    "subtitle": "MAP này giúp cha mẹ nhìn sâu vào bài học cốt lõi mà cuộc đời sẽ liên tục đặt ra cho con trong suốt hành trình trưởng thành || giúp hiểu rằng có những thử thách không xuất hiện ngẫu nhiên mà là những bài học phát triển bắt buộc để con xây nội lực, bản sắc và sự trưởng thành thật sự từ bên trong.",
+    "title": "B\u00c0I H\u1eccC L\u1edaN CON C\u1ea6N V\u01af\u1ee2T QUA",
+    "subtitle": "MAP n\u00e0y gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o b\u00e0i h\u1ecdc c\u1ed1t l\u00f5i m\u00e0 cu\u1ed9c \u0111\u1eddi s\u1ebd li\u00ean t\u1ee5c \u0111\u1eb7t ra cho con trong su\u1ed1t h\u00e0nh tr\u00ecnh tr\u01b0\u1edfng th\u00e0nh || gi\u00fap hi\u1ec3u r\u1eb1ng c\u00f3 nh\u1eefng th\u1eed th\u00e1ch kh\u00f4ng xu\u1ea5t hi\u1ec7n ng\u1eabu nhi\u00ean m\u00e0 l\u00e0 nh\u1eefng b\u00e0i h\u1ecdc ph\u00e1t tri\u1ec3n b\u1eaft bu\u1ed9c \u0111\u1ec3 con x\u00e2y n\u1ed9i l\u1ef1c, b\u1ea3n s\u1eafc v\u00e0 s\u1ef1 tr\u01b0\u1edfng th\u00e0nh th\u1eadt s\u1ef1 t\u1eeb b\u00ean trong.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-186",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-186",
     "number": 186,
-    "title": "NỘI LỰC CON CẦN XÂY TỪ NHỎ",
-    "subtitle": "MAP này giúp cha mẹ nhìn sâu vào nền nội lực cốt lõi mà con cần được xây dựng từ những năm đầu đời để có thể trưởng thành vững vàng, ổn định và không đánh mất chính mình trước những áp lực của cuộc sống || giúp hiểu rằng nội lực không phải là sự cứng rắn bên ngoài mà là sức mạnh nội tâm giúp con đứng dậy sau khó khăn, giữ được giá trị bản thân và tiếp tục phát triển lành mạnh.",
+    "title": "N\u1ed8I L\u1ef0C CON C\u1ea6N X\u00c2Y T\u1eea NH\u1ece",
+    "subtitle": "MAP n\u00e0y gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o n\u1ec1n n\u1ed9i l\u1ef1c c\u1ed1t l\u00f5i m\u00e0 con c\u1ea7n \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng t\u1eeb nh\u1eefng n\u0103m \u0111\u1ea7u \u0111\u1eddi \u0111\u1ec3 c\u00f3 th\u1ec3 tr\u01b0\u1edfng th\u00e0nh v\u1eefng v\u00e0ng, \u1ed5n \u0111\u1ecbnh v\u00e0 kh\u00f4ng \u0111\u00e1nh m\u1ea5t ch\u00ednh m\u00ecnh tr\u01b0\u1edbc nh\u1eefng \u00e1p l\u1ef1c c\u1ee7a cu\u1ed9c s\u1ed1ng || gi\u00fap hi\u1ec3u r\u1eb1ng n\u1ed9i l\u1ef1c kh\u00f4ng ph\u1ea3i l\u00e0 s\u1ef1 c\u1ee9ng r\u1eafn b\u00ean ngo\u00e0i m\u00e0 l\u00e0 s\u1ee9c m\u1ea1nh n\u1ed9i t\u00e2m gi\u00fap con \u0111\u1ee9ng d\u1eady sau kh\u00f3 kh\u0103n, gi\u1eef \u0111\u01b0\u1ee3c gi\u00e1 tr\u1ecb b\u1ea3n th\u00e2n v\u00e0 ti\u1ebfp t\u1ee5c ph\u00e1t tri\u1ec3n l\u00e0nh m\u1ea1nh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-187",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-187",
     "number": 187,
-    "title": "Giá trị sống con cần hình thành",
-    "subtitle": "MAP này không được đi theo kiểu “dạy con đạo đức” hay “nói điều đúng sai chung chung”, mà phải đi sâu vào việc đâu là những giá trị sống cốt lõi con cần hình thành để sau này có thể sống đúng bản chất, có định hướng và không dễ bị cuốn lệch bởi môi trường hay áp lực xã hội.",
+    "title": "Gi\u00e1 tr\u1ecb s\u1ed1ng con c\u1ea7n h\u00ecnh th\u00e0nh",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201cd\u1ea1y con \u0111\u1ea1o \u0111\u1ee9c\u201d hay \u201cn\u00f3i \u0111i\u1ec1u \u0111\u00fang sai chung chung\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c \u0111\u00e2u l\u00e0 nh\u1eefng gi\u00e1 tr\u1ecb s\u1ed1ng c\u1ed1t l\u00f5i con c\u1ea7n h\u00ecnh th\u00e0nh \u0111\u1ec3 sau n\u00e0y c\u00f3 th\u1ec3 s\u1ed1ng \u0111\u00fang b\u1ea3n ch\u1ea5t, c\u00f3 \u0111\u1ecbnh h\u01b0\u1edbng v\u00e0 kh\u00f4ng d\u1ec5 b\u1ecb cu\u1ed1n l\u1ec7ch b\u1edfi m\u00f4i tr\u01b0\u1eddng hay \u00e1p l\u1ef1c x\u00e3 h\u1ed9i.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-188",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-188",
     "number": 188,
-    "title": "Kỹ năng quan trọng con cần phát triển",
-    "subtitle": "MAP này không được đi theo kiểu “liệt kê kỹ năng mềm” hay dạy con thật nhiều kỹ năng bề mặt, mà phải đi sâu vào việc đâu là những kỹ năng cốt lõi con thật sự cần phát triển để có thể sống độc lập, thích nghi, giữ được bản sắc và phát triển bền vững trong cuộc sống sau này.",
+    "title": "K\u1ef9 n\u0103ng quan tr\u1ecdng con c\u1ea7n ph\u00e1t tri\u1ec3n",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201cli\u1ec7t k\u00ea k\u1ef9 n\u0103ng m\u1ec1m\u201d hay d\u1ea1y con th\u1eadt nhi\u1ec1u k\u1ef9 n\u0103ng b\u1ec1 m\u1eb7t, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c \u0111\u00e2u l\u00e0 nh\u1eefng k\u1ef9 n\u0103ng c\u1ed1t l\u00f5i con th\u1eadt s\u1ef1 c\u1ea7n ph\u00e1t tri\u1ec3n \u0111\u1ec3 c\u00f3 th\u1ec3 s\u1ed1ng \u0111\u1ed9c l\u1eadp, th\u00edch nghi, gi\u1eef \u0111\u01b0\u1ee3c b\u1ea3n s\u1eafc v\u00e0 ph\u00e1t tri\u1ec3n b\u1ec1n v\u1eefng trong cu\u1ed9c s\u1ed1ng sau n\u00e0y.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-189",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-189",
     "number": 189,
-    "title": "ĐIỀU GIÚP CON TRƯỞNG THÀNH LÀNH MẠNH",
-    "subtitle": "MAP này không đi theo kiểu đánh giá con trưởng thành sớm hay muộn, ngoan hay chưa ngoan, mạnh mẽ hay yếu đuối, mà đi sâu vào việc giải mã điều gì thật sự giúp con phát triển một cách lành mạnh từ bên trong.",
+    "title": "\u0110I\u1ec0U GI\u00daP CON TR\u01af\u1edeNG TH\u00c0NH L\u00c0NH M\u1ea0NH",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo ki\u1ec3u \u0111\u00e1nh gi\u00e1 con tr\u01b0\u1edfng th\u00e0nh s\u1edbm hay mu\u1ed9n, ngoan hay ch\u01b0a ngoan, m\u1ea1nh m\u1ebd hay y\u1ebfu \u0111u\u1ed1i, m\u00e0 \u0111i s\u00e2u v\u00e0o vi\u1ec7c gi\u1ea3i m\u00e3 \u0111i\u1ec1u g\u00ec th\u1eadt s\u1ef1 gi\u00fap con ph\u00e1t tri\u1ec3n m\u1ed9t c\u00e1ch l\u00e0nh m\u1ea1nh t\u1eeb b\u00ean trong.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-190",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-190",
     "number": 190,
-    "title": "Hướng phát triển lâu dài phù hợp với con",
-    "subtitle": "MAP này không được đi theo kiểu định hướng nghề nghiệp đơn giản hay chỉ dự đoán con phù hợp với công việc nào trong tương lai, mà phải đi sâu vào việc đâu là hướng phát triển lâu dài phù hợp nhất với bản chất, nội lực, nhịp trưởng thành, hệ giá trị và tiềm năng thật của con để con có thể phát triển bền vững trong suốt cuộc đời.",
+    "title": "H\u01b0\u1edbng ph\u00e1t tri\u1ec3n l\u00e2u d\u00e0i ph\u00f9 h\u1ee3p v\u1edbi con",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u0111\u1ecbnh h\u01b0\u1edbng ngh\u1ec1 nghi\u1ec7p \u0111\u01a1n gi\u1ea3n hay ch\u1ec9 d\u1ef1 \u0111o\u00e1n con ph\u00f9 h\u1ee3p v\u1edbi c\u00f4ng vi\u1ec7c n\u00e0o trong t\u01b0\u01a1ng lai, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c \u0111\u00e2u l\u00e0 h\u01b0\u1edbng ph\u00e1t tri\u1ec3n l\u00e2u d\u00e0i ph\u00f9 h\u1ee3p nh\u1ea5t v\u1edbi b\u1ea3n ch\u1ea5t, n\u1ed9i l\u1ef1c, nh\u1ecbp tr\u01b0\u1edfng th\u00e0nh, h\u1ec7 gi\u00e1 tr\u1ecb v\u00e0 ti\u1ec1m n\u0103ng th\u1eadt c\u1ee7a con \u0111\u1ec3 con c\u00f3 th\u1ec3 ph\u00e1t tri\u1ec3n b\u1ec1n v\u1eefng trong su\u1ed1t cu\u1ed9c \u0111\u1eddi.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-191",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-191",
     "number": 191,
-    "title": "Con cần được đồng hành như thế nào theo từng độ tuổi",
-    "subtitle": "MAP này không được đi theo kiểu dạy con theo từng độ tuổi một cách chung chung hay đưa ra những lời khuyên nuôi dạy trẻ mang tính đại trà, mà phải đi sâu vào việc ở mỗi giai đoạn phát triển, con thật sự cần kiểu đồng hành nào để phát triển đúng bản chất, ổn định cảm xúc, xây nội lực và trưởng thành một cách lành mạnh từ bên trong.",
+    "title": "Con c\u1ea7n \u0111\u01b0\u1ee3c \u0111\u1ed3ng h\u00e0nh nh\u01b0 th\u1ebf n\u00e0o theo t\u1eebng \u0111\u1ed9 tu\u1ed5i",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u d\u1ea1y con theo t\u1eebng \u0111\u1ed9 tu\u1ed5i m\u1ed9t c\u00e1ch chung chung hay \u0111\u01b0a ra nh\u1eefng l\u1eddi khuy\u00ean nu\u00f4i d\u1ea1y tr\u1ebb mang t\u00ednh \u0111\u1ea1i tr\u00e0, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c \u1edf m\u1ed7i giai \u0111o\u1ea1n ph\u00e1t tri\u1ec3n, con th\u1eadt s\u1ef1 c\u1ea7n ki\u1ec3u \u0111\u1ed3ng h\u00e0nh n\u00e0o \u0111\u1ec3 ph\u00e1t tri\u1ec3n \u0111\u00fang b\u1ea3n ch\u1ea5t, \u1ed5n \u0111\u1ecbnh c\u1ea3m x\u00fac, x\u00e2y n\u1ed9i l\u1ef1c v\u00e0 tr\u01b0\u1edfng th\u00e0nh m\u1ed9t c\u00e1ch l\u00e0nh m\u1ea1nh t\u1eeb b\u00ean trong.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-192",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-192",
     "number": 192,
-    "title": "Điều bố mẹ cần thay đổi để đồng hành đúng với con",
-    "subtitle": "MAP này không được đi theo kiểu dạy cha mẹ cách nuôi con chung chung hay đưa ra những lời khuyên giáo dục mang tính khuôn mẫu, mà phải đi sâu vào việc đâu là những điều bố mẹ thật sự cần thay đổi trong cách suy nghĩ, cách nhìn nhận, cách phản ứng cảm xúc và cách đồng hành để con được phát triển đúng bản chất thay vì lớn lên trong áp lực, lệch hướng hoặc mất kết nối với chính mình.",
+    "title": "\u0110i\u1ec1u b\u1ed1 m\u1eb9 c\u1ea7n thay \u0111\u1ed5i \u0111\u1ec3 \u0111\u1ed3ng h\u00e0nh \u0111\u00fang v\u1edbi con",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u d\u1ea1y cha m\u1eb9 c\u00e1ch nu\u00f4i con chung chung hay \u0111\u01b0a ra nh\u1eefng l\u1eddi khuy\u00ean gi\u00e1o d\u1ee5c mang t\u00ednh khu\u00f4n m\u1eabu, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c \u0111\u00e2u l\u00e0 nh\u1eefng \u0111i\u1ec1u b\u1ed1 m\u1eb9 th\u1eadt s\u1ef1 c\u1ea7n thay \u0111\u1ed5i trong c\u00e1ch suy ngh\u0129, c\u00e1ch nh\u00ecn nh\u1eadn, c\u00e1ch ph\u1ea3n \u1ee9ng c\u1ea3m x\u00fac v\u00e0 c\u00e1ch \u0111\u1ed3ng h\u00e0nh \u0111\u1ec3 con \u0111\u01b0\u1ee3c ph\u00e1t tri\u1ec3n \u0111\u00fang b\u1ea3n ch\u1ea5t thay v\u00ec l\u1edbn l\u00ean trong \u00e1p l\u1ef1c, l\u1ec7ch h\u01b0\u1edbng ho\u1eb7c m\u1ea5t k\u1ebft n\u1ed1i v\u1edbi ch\u00ednh m\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-193",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-193",
     "number": 193,
-    "title": "Phiên bản trưởng thành cao nhất của con",
-    "subtitle": "MAP này không được đi theo kiểu mô tả con sẽ thành công ra sao, đạt được địa vị gì hay trở thành người nổi bật như thế nào trong tương lai, mà phải đi sâu vào việc đâu là phiên bản trưởng thành cao nhất mà con có thể trở thành nếu được phát triển đúng bản chất, vượt qua các bài học cần thiết và đi đúng con đường phù hợp với chính mình.",
+    "title": "Phi\u00ean b\u1ea3n tr\u01b0\u1edfng th\u00e0nh cao nh\u1ea5t c\u1ee7a con",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u m\u00f4 t\u1ea3 con s\u1ebd th\u00e0nh c\u00f4ng ra sao, \u0111\u1ea1t \u0111\u01b0\u1ee3c \u0111\u1ecba v\u1ecb g\u00ec hay tr\u1edf th\u00e0nh ng\u01b0\u1eddi n\u1ed5i b\u1eadt nh\u01b0 th\u1ebf n\u00e0o trong t\u01b0\u01a1ng lai, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c \u0111\u00e2u l\u00e0 phi\u00ean b\u1ea3n tr\u01b0\u1edfng th\u00e0nh cao nh\u1ea5t m\u00e0 con c\u00f3 th\u1ec3 tr\u1edf th\u00e0nh n\u1ebfu \u0111\u01b0\u1ee3c ph\u00e1t tri\u1ec3n \u0111\u00fang b\u1ea3n ch\u1ea5t, v\u01b0\u1ee3t qua c\u00e1c b\u00e0i h\u1ecdc c\u1ea7n thi\u1ebft v\u00e0 \u0111i \u0111\u00fang con \u0111\u01b0\u1eddng ph\u00f9 h\u1ee3p v\u1edbi ch\u00ednh m\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-194",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-194",
     "number": 194,
-    "title": "Bài học theo từng chặng cuộc đời của con",
-    "subtitle": "MAP này không được đi theo kiểu dự đoán tương lai, đoán trước biến cố hay khẳng định điều gì chắc chắn sẽ xảy ra trong cuộc đời con, mà phải đi sâu vào việc ở mỗi chặng trưởng thành, con cần học điều gì để phát triển đúng bản chất, mở khóa nội lực và từng bước trở thành phiên bản trưởng thành khỏe mạnh nhất của chính mình.",
+    "title": "B\u00e0i h\u1ecdc theo t\u1eebng ch\u1eb7ng cu\u1ed9c \u0111\u1eddi c\u1ee7a con",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u d\u1ef1 \u0111o\u00e1n t\u01b0\u01a1ng lai, \u0111o\u00e1n tr\u01b0\u1edbc bi\u1ebfn c\u1ed1 hay kh\u1eb3ng \u0111\u1ecbnh \u0111i\u1ec1u g\u00ec ch\u1eafc ch\u1eafn s\u1ebd x\u1ea3y ra trong cu\u1ed9c \u0111\u1eddi con, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c \u1edf m\u1ed7i ch\u1eb7ng tr\u01b0\u1edfng th\u00e0nh, con c\u1ea7n h\u1ecdc \u0111i\u1ec1u g\u00ec \u0111\u1ec3 ph\u00e1t tri\u1ec3n \u0111\u00fang b\u1ea3n ch\u1ea5t, m\u1edf kh\u00f3a n\u1ed9i l\u1ef1c v\u00e0 t\u1eebng b\u01b0\u1edbc tr\u1edf th\u00e0nh phi\u00ean b\u1ea3n tr\u01b0\u1edfng th\u00e0nh kh\u1ecfe m\u1ea1nh nh\u1ea5t c\u1ee7a ch\u00ednh m\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-195",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-195",
     "number": 195,
-    "title": "Thách thức theo từng giai đoạn tuổi của con",
-    "subtitle": "MAP này không được đi theo kiểu liệt kê những khó khăn con sẽ gặp trong tương lai hay mô tả các thử thách một cách chung chung, mà phải đi sâu vào việc ở mỗi giai đoạn phát triển, con sẽ cần đối diện với những thách thức tâm lý, cảm xúc, nhận thức, hành vi và bản sắc nào để từng bước trưởng thành đúng hướng và phát triển đúng với bản chất thật của mình.",
+    "title": "Th\u00e1ch th\u1ee9c theo t\u1eebng giai \u0111o\u1ea1n tu\u1ed5i c\u1ee7a con",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u li\u1ec7t k\u00ea nh\u1eefng kh\u00f3 kh\u0103n con s\u1ebd g\u1eb7p trong t\u01b0\u01a1ng lai hay m\u00f4 t\u1ea3 c\u00e1c th\u1eed th\u00e1ch m\u1ed9t c\u00e1ch chung chung, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c \u1edf m\u1ed7i giai \u0111o\u1ea1n ph\u00e1t tri\u1ec3n, con s\u1ebd c\u1ea7n \u0111\u1ed1i di\u1ec7n v\u1edbi nh\u1eefng th\u00e1ch th\u1ee9c t\u00e2m l\u00fd, c\u1ea3m x\u00fac, nh\u1eadn th\u1ee9c, h\u00e0nh vi v\u00e0 b\u1ea3n s\u1eafc n\u00e0o \u0111\u1ec3 t\u1eebng b\u01b0\u1edbc tr\u01b0\u1edfng th\u00e0nh \u0111\u00fang h\u01b0\u1edbng v\u00e0 ph\u00e1t tri\u1ec3n \u0111\u00fang v\u1edbi b\u1ea3n ch\u1ea5t th\u1eadt c\u1ee7a m\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-196",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-196",
     "number": 196,
-    "title": "Con đang phản chiếu điều gì từ bố mẹ",
-    "subtitle": "MAP này không được đi theo kiểu đổ lỗi cho bố mẹ hoặc xem mọi vấn đề của con đều xuất phát từ gia đình, mà phải đi sâu vào việc con đang vô thức phản chiếu những cảm xúc, niềm tin, cách suy nghĩ, cách phản ứng, những cơ chế phòng thủ và những tổn thương chưa được giải quyết của bố mẹ như thế nào trong quá trình lớn lên.",
+    "title": "Con \u0111ang ph\u1ea3n chi\u1ebfu \u0111i\u1ec1u g\u00ec t\u1eeb b\u1ed1 m\u1eb9",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u0111\u1ed5 l\u1ed7i cho b\u1ed1 m\u1eb9 ho\u1eb7c xem m\u1ecdi v\u1ea5n \u0111\u1ec1 c\u1ee7a con \u0111\u1ec1u xu\u1ea5t ph\u00e1t t\u1eeb gia \u0111\u00ecnh, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c con \u0111ang v\u00f4 th\u1ee9c ph\u1ea3n chi\u1ebfu nh\u1eefng c\u1ea3m x\u00fac, ni\u1ec1m tin, c\u00e1ch suy ngh\u0129, c\u00e1ch ph\u1ea3n \u1ee9ng, nh\u1eefng c\u01a1 ch\u1ebf ph\u00f2ng th\u1ee7 v\u00e0 nh\u1eefng t\u1ed5n th\u01b0\u01a1ng ch\u01b0a \u0111\u01b0\u1ee3c gi\u1ea3i quy\u1ebft c\u1ee7a b\u1ed1 m\u1eb9 nh\u01b0 th\u1ebf n\u00e0o trong qu\u00e1 tr\u00ecnh l\u1edbn l\u00ean.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-197",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-197",
     "number": 197,
-    "title": "Tính cách nào của bố mẹ ảnh hưởng mạnh nhất đến con",
-    "subtitle": "MAP này không được đi theo kiểu đánh giá bố mẹ tốt hay xấu, đúng hay sai, mà phải đi sâu vào việc những tính cách, cơ chế phản ứng, cách suy nghĩ, cách quản lý cảm xúc và cách đối diện cuộc sống của bố mẹ đang ảnh hưởng như thế nào đến nội tâm, hành vi, nhân cách và quá trình trưởng thành của con trong suốt hành trình phát triển.",
+    "title": "T\u00ednh c\u00e1ch n\u00e0o c\u1ee7a b\u1ed1 m\u1eb9 \u1ea3nh h\u01b0\u1edfng m\u1ea1nh nh\u1ea5t \u0111\u1ebfn con",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u0111\u00e1nh gi\u00e1 b\u1ed1 m\u1eb9 t\u1ed1t hay x\u1ea5u, \u0111\u00fang hay sai, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c nh\u1eefng t\u00ednh c\u00e1ch, c\u01a1 ch\u1ebf ph\u1ea3n \u1ee9ng, c\u00e1ch suy ngh\u0129, c\u00e1ch qu\u1ea3n l\u00fd c\u1ea3m x\u00fac v\u00e0 c\u00e1ch \u0111\u1ed1i di\u1ec7n cu\u1ed9c s\u1ed1ng c\u1ee7a b\u1ed1 m\u1eb9 \u0111ang \u1ea3nh h\u01b0\u1edfng nh\u01b0 th\u1ebf n\u00e0o \u0111\u1ebfn n\u1ed9i t\u00e2m, h\u00e0nh vi, nh\u00e2n c\u00e1ch v\u00e0 qu\u00e1 tr\u00ecnh tr\u01b0\u1edfng th\u00e0nh c\u1ee7a con trong su\u1ed1t h\u00e0nh tr\u00ecnh ph\u00e1t tri\u1ec3n.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-198",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-198",
     "number": 198,
-    "title": "Cảm xúc nào của bố mẹ con hấp thụ nhiều nhất",
-    "subtitle": "MAP này không được đi theo kiểu con giống cảm xúc của bố mẹ hay chỉ đơn giản mô tả trạng thái tâm lý của gia đình, mà phải đi sâu vào việc những cảm xúc nào của bố mẹ đang được truyền đi mỗi ngày và đang âm thầm đi vào nội tâm, hệ cảm xúc, cách suy nghĩ, cách phản ứng và quá trình trưởng thành của con như thế nào || trọng tâm là giúp cha mẹ hiểu rằng trẻ không chỉ nghe những điều người lớn nói mà còn hấp thụ những điều người lớn đang cảm thấy, kể cả khi những cảm xúc đó chưa từng được diễn đạt thành lời.",
+    "title": "C\u1ea3m x\u00fac n\u00e0o c\u1ee7a b\u1ed1 m\u1eb9 con h\u1ea5p th\u1ee5 nhi\u1ec1u nh\u1ea5t",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u con gi\u1ed1ng c\u1ea3m x\u00fac c\u1ee7a b\u1ed1 m\u1eb9 hay ch\u1ec9 \u0111\u01a1n gi\u1ea3n m\u00f4 t\u1ea3 tr\u1ea1ng th\u00e1i t\u00e2m l\u00fd c\u1ee7a gia \u0111\u00ecnh, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c nh\u1eefng c\u1ea3m x\u00fac n\u00e0o c\u1ee7a b\u1ed1 m\u1eb9 \u0111ang \u0111\u01b0\u1ee3c truy\u1ec1n \u0111i m\u1ed7i ng\u00e0y v\u00e0 \u0111ang \u00e2m th\u1ea7m \u0111i v\u00e0o n\u1ed9i t\u00e2m, h\u1ec7 c\u1ea3m x\u00fac, c\u00e1ch suy ngh\u0129, c\u00e1ch ph\u1ea3n \u1ee9ng v\u00e0 qu\u00e1 tr\u00ecnh tr\u01b0\u1edfng th\u00e0nh c\u1ee7a con nh\u01b0 th\u1ebf n\u00e0o || tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng tr\u1ebb kh\u00f4ng ch\u1ec9 nghe nh\u1eefng \u0111i\u1ec1u ng\u01b0\u1eddi l\u1edbn n\u00f3i m\u00e0 c\u00f2n h\u1ea5p th\u1ee5 nh\u1eefng \u0111i\u1ec1u ng\u01b0\u1eddi l\u1edbn \u0111ang c\u1ea3m th\u1ea5y, k\u1ec3 c\u1ea3 khi nh\u1eefng c\u1ea3m x\u00fac \u0111\u00f3 ch\u01b0a t\u1eebng \u0111\u01b0\u1ee3c di\u1ec5n \u0111\u1ea1t th\u00e0nh l\u1eddi.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-199",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-199",
     "number": 199,
-    "title": "Nỗi sợ nào của bố mẹ đang truyền sang con",
-    "subtitle": "MAP này không được đi theo kiểu quy trách nhiệm cho bố mẹ hoặc đơn giản kết luận rằng bố mẹ làm con sợ hãi, mà phải đi sâu vào việc những nỗi sợ vô thức, những tổn thương chưa được chữa lành, những lo lắng kéo dài và những hệ niềm tin phòng thủ của bố mẹ đang âm thầm ảnh hưởng đến nội tâm, cảm xúc, cách suy nghĩ và cách phản ứng của con như thế nào trong suốt quá trình lớn lên.",
+    "title": "N\u1ed7i s\u1ee3 n\u00e0o c\u1ee7a b\u1ed1 m\u1eb9 \u0111ang truy\u1ec1n sang con",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u quy tr\u00e1ch nhi\u1ec7m cho b\u1ed1 m\u1eb9 ho\u1eb7c \u0111\u01a1n gi\u1ea3n k\u1ebft lu\u1eadn r\u1eb1ng b\u1ed1 m\u1eb9 l\u00e0m con s\u1ee3 h\u00e3i, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c nh\u1eefng n\u1ed7i s\u1ee3 v\u00f4 th\u1ee9c, nh\u1eefng t\u1ed5n th\u01b0\u01a1ng ch\u01b0a \u0111\u01b0\u1ee3c ch\u1eefa l\u00e0nh, nh\u1eefng lo l\u1eafng k\u00e9o d\u00e0i v\u00e0 nh\u1eefng h\u1ec7 ni\u1ec1m tin ph\u00f2ng th\u1ee7 c\u1ee7a b\u1ed1 m\u1eb9 \u0111ang \u00e2m th\u1ea7m \u1ea3nh h\u01b0\u1edfng \u0111\u1ebfn n\u1ed9i t\u00e2m, c\u1ea3m x\u00fac, c\u00e1ch suy ngh\u0129 v\u00e0 c\u00e1ch ph\u1ea3n \u1ee9ng c\u1ee7a con nh\u01b0 th\u1ebf n\u00e0o trong su\u1ed1t qu\u00e1 tr\u00ecnh l\u1edbn l\u00ean.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-200",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-200",
     "number": 200,
-    "title": "Áp lực vô hình con đang gánh thay bố mẹ",
-    "subtitle": "MAP này không được đi theo hướng chỉ ra rằng bố mẹ đang tạo áp lực cho con, mà phải đi sâu vào việc con đang vô thức mang trên vai những áp lực cảm xúc, kỳ vọng, nỗi sợ, trách nhiệm và gánh nặng nội tâm nào vốn thuộc về người lớn || trọng tâm là giúp cha mẹ nhận ra rằng rất nhiều đứa trẻ đang sống lệch khỏi nhịp phát triển tự nhiên không phải vì bản chất của con, mà vì con đang cố gắng gánh thay những điều vượt quá khả năng và vai trò của một đứa trẻ.",
+    "title": "\u00c1p l\u1ef1c v\u00f4 h\u00ecnh con \u0111ang g\u00e1nh thay b\u1ed1 m\u1eb9",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo h\u01b0\u1edbng ch\u1ec9 ra r\u1eb1ng b\u1ed1 m\u1eb9 \u0111ang t\u1ea1o \u00e1p l\u1ef1c cho con, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c con \u0111ang v\u00f4 th\u1ee9c mang tr\u00ean vai nh\u1eefng \u00e1p l\u1ef1c c\u1ea3m x\u00fac, k\u1ef3 v\u1ecdng, n\u1ed7i s\u1ee3, tr\u00e1ch nhi\u1ec7m v\u00e0 g\u00e1nh n\u1eb7ng n\u1ed9i t\u00e2m n\u00e0o v\u1ed1n thu\u1ed9c v\u1ec1 ng\u01b0\u1eddi l\u1edbn || tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 nh\u1eadn ra r\u1eb1ng r\u1ea5t nhi\u1ec1u \u0111\u1ee9a tr\u1ebb \u0111ang s\u1ed1ng l\u1ec7ch kh\u1ecfi nh\u1ecbp ph\u00e1t tri\u1ec3n t\u1ef1 nhi\u00ean kh\u00f4ng ph\u1ea3i v\u00ec b\u1ea3n ch\u1ea5t c\u1ee7a con, m\u00e0 v\u00ec con \u0111ang c\u1ed1 g\u1eafng g\u00e1nh thay nh\u1eefng \u0111i\u1ec1u v\u01b0\u1ee3t qu\u00e1 kh\u1ea3 n\u0103ng v\u00e0 vai tr\u00f2 c\u1ee7a m\u1ed9t \u0111\u1ee9a tr\u1ebb.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-201",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-201",
     "number": 201,
-    "title": "Điều con đang cố làm để được bố mẹ công nhận",
-    "subtitle": "MAP này không được đi theo kiểu con muốn được yêu thương hay cần được bố mẹ quan tâm, mà phải đi sâu vào việc con đang vô thức cố gắng trở thành ai, làm điều gì, hy sinh điều gì hoặc thay đổi điều gì trong chính mình để cảm thấy mình có giá trị, được nhìn thấy và được công nhận trong mắt bố mẹ || trọng tâm là giúp cha mẹ hiểu rằng rất nhiều hành vi của con không đơn thuần là tính cách mà thực chất là những nỗ lực âm thầm nhằm tìm kiếm cảm giác mình đủ tốt để được yêu thương.",
+    "title": "\u0110i\u1ec1u con \u0111ang c\u1ed1 l\u00e0m \u0111\u1ec3 \u0111\u01b0\u1ee3c b\u1ed1 m\u1eb9 c\u00f4ng nh\u1eadn",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u con mu\u1ed1n \u0111\u01b0\u1ee3c y\u00eau th\u01b0\u01a1ng hay c\u1ea7n \u0111\u01b0\u1ee3c b\u1ed1 m\u1eb9 quan t\u00e2m, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c con \u0111ang v\u00f4 th\u1ee9c c\u1ed1 g\u1eafng tr\u1edf th\u00e0nh ai, l\u00e0m \u0111i\u1ec1u g\u00ec, hy sinh \u0111i\u1ec1u g\u00ec ho\u1eb7c thay \u0111\u1ed5i \u0111i\u1ec1u g\u00ec trong ch\u00ednh m\u00ecnh \u0111\u1ec3 c\u1ea3m th\u1ea5y m\u00ecnh c\u00f3 gi\u00e1 tr\u1ecb, \u0111\u01b0\u1ee3c nh\u00ecn th\u1ea5y v\u00e0 \u0111\u01b0\u1ee3c c\u00f4ng nh\u1eadn trong m\u1eaft b\u1ed1 m\u1eb9 || tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng r\u1ea5t nhi\u1ec1u h\u00e0nh vi c\u1ee7a con kh\u00f4ng \u0111\u01a1n thu\u1ea7n l\u00e0 t\u00ednh c\u00e1ch m\u00e0 th\u1ef1c ch\u1ea5t l\u00e0 nh\u1eefng n\u1ed7 l\u1ef1c \u00e2m th\u1ea7m nh\u1eb1m t\u00ecm ki\u1ebfm c\u1ea3m gi\u00e1c m\u00ecnh \u0111\u1ee7 t\u1ed1t \u0111\u1ec3 \u0111\u01b0\u1ee3c y\u00eau th\u01b0\u01a1ng.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-202",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-202",
     "number": 202,
-    "title": "Điều bố mẹ vô tình khiến con cảm thấy mình không đủ tốt",
-    "subtitle": "MAP này không được đi theo kiểu chỉ ra lỗi của bố mẹ hay phân tích con đang tự ti như thế nào, mà phải đi sâu vào việc những cách suy nghĩ, kỳ vọng, phản ứng, giao tiếp và trạng thái cảm xúc nào của bố mẹ đang vô thức tạo nên cảm giác \"mình chưa đủ tốt\" bên trong con || trọng tâm là giúp cha mẹ hiểu rằng rất nhiều đứa trẻ không thiếu năng lực, không thiếu tiềm năng, mà đang lớn lên trong áp lực phải liên tục chứng minh giá trị của mình để được công nhận và yêu thương.",
+    "title": "\u0110i\u1ec1u b\u1ed1 m\u1eb9 v\u00f4 t\u00ecnh khi\u1ebfn con c\u1ea3m th\u1ea5y m\u00ecnh kh\u00f4ng \u0111\u1ee7 t\u1ed1t",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u ch\u1ec9 ra l\u1ed7i c\u1ee7a b\u1ed1 m\u1eb9 hay ph\u00e2n t\u00edch con \u0111ang t\u1ef1 ti nh\u01b0 th\u1ebf n\u00e0o, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c nh\u1eefng c\u00e1ch suy ngh\u0129, k\u1ef3 v\u1ecdng, ph\u1ea3n \u1ee9ng, giao ti\u1ebfp v\u00e0 tr\u1ea1ng th\u00e1i c\u1ea3m x\u00fac n\u00e0o c\u1ee7a b\u1ed1 m\u1eb9 \u0111ang v\u00f4 th\u1ee9c t\u1ea1o n\u00ean c\u1ea3m gi\u00e1c \"m\u00ecnh ch\u01b0a \u0111\u1ee7 t\u1ed1t\" b\u00ean trong con || tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng r\u1ea5t nhi\u1ec1u \u0111\u1ee9a tr\u1ebb kh\u00f4ng thi\u1ebfu n\u0103ng l\u1ef1c, kh\u00f4ng thi\u1ebfu ti\u1ec1m n\u0103ng, m\u00e0 \u0111ang l\u1edbn l\u00ean trong \u00e1p l\u1ef1c ph\u1ea3i li\u00ean t\u1ee5c ch\u1ee9ng minh gi\u00e1 tr\u1ecb c\u1ee7a m\u00ecnh \u0111\u1ec3 \u0111\u01b0\u1ee3c c\u00f4ng nh\u1eadn v\u00e0 y\u00eau th\u01b0\u01a1ng.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-203",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-203",
     "number": 203,
-    "title": "Mô thức cảm xúc lặp lại giữa bố mẹ và con",
-    "subtitle": "MAP này không được đi theo kiểu tìm ai đúng ai sai trong gia đình, mà phải đi sâu vào việc những mô thức cảm xúc nào đang lặp đi lặp lại giữa bố mẹ và con, khiến cả hai vô thức phản ứng theo cùng một vòng lặp mà không nhận ra || trọng tâm là giúp cha mẹ hiểu rằng rất nhiều xung đột, khoảng cách, tổn thương và hiểu lầm trong gia đình không bắt nguồn từ một sự kiện riêng lẻ mà đến từ những mô thức cảm xúc được lặp lại qua nhiều năm và âm thầm truyền từ thế hệ này sang thế hệ khác.",
+    "title": "M\u00f4 th\u1ee9c c\u1ea3m x\u00fac l\u1eb7p l\u1ea1i gi\u1eefa b\u1ed1 m\u1eb9 v\u00e0 con",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u t\u00ecm ai \u0111\u00fang ai sai trong gia \u0111\u00ecnh, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c nh\u1eefng m\u00f4 th\u1ee9c c\u1ea3m x\u00fac n\u00e0o \u0111ang l\u1eb7p \u0111i l\u1eb7p l\u1ea1i gi\u1eefa b\u1ed1 m\u1eb9 v\u00e0 con, khi\u1ebfn c\u1ea3 hai v\u00f4 th\u1ee9c ph\u1ea3n \u1ee9ng theo c\u00f9ng m\u1ed9t v\u00f2ng l\u1eb7p m\u00e0 kh\u00f4ng nh\u1eadn ra || tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng r\u1ea5t nhi\u1ec1u xung \u0111\u1ed9t, kho\u1ea3ng c\u00e1ch, t\u1ed5n th\u01b0\u01a1ng v\u00e0 hi\u1ec3u l\u1ea7m trong gia \u0111\u00ecnh kh\u00f4ng b\u1eaft ngu\u1ed3n t\u1eeb m\u1ed9t s\u1ef1 ki\u1ec7n ri\u00eang l\u1ebb m\u00e0 \u0111\u1ebfn t\u1eeb nh\u1eefng m\u00f4 th\u1ee9c c\u1ea3m x\u00fac \u0111\u01b0\u1ee3c l\u1eb7p l\u1ea1i qua nhi\u1ec1u n\u0103m v\u00e0 \u00e2m th\u1ea7m truy\u1ec1n t\u1eeb th\u1ebf h\u1ec7 n\u00e0y sang th\u1ebf h\u1ec7 kh\u00e1c.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-204",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-204",
     "number": 204,
-    "title": "Khi con trở thành tấm gương phản chiếu gia đình",
-    "subtitle": "MAP này không được đi theo kiểu “con giống bố mẹ” hay chỉ tập trung vào việc sửa hành vi của con, mà phải đi sâu vào việc con đang phản chiếu điều gì từ trạng thái cảm xúc, cách sống, cơ chế phản ứng, niềm tin và môi trường gia đình mà chính người lớn nhiều khi chưa nhận ra || trọng tâm là giúp cha mẹ hiểu rằng rất nhiều hành vi, cảm xúc và vấn đề của con thực chất là tấm gương đang phản chiếu những điều đang tồn tại bên trong hệ thống gia đình.",
+    "title": "Khi con tr\u1edf th\u00e0nh t\u1ea5m g\u01b0\u01a1ng ph\u1ea3n chi\u1ebfu gia \u0111\u00ecnh",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201ccon gi\u1ed1ng b\u1ed1 m\u1eb9\u201d hay ch\u1ec9 t\u1eadp trung v\u00e0o vi\u1ec7c s\u1eeda h\u00e0nh vi c\u1ee7a con, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c con \u0111ang ph\u1ea3n chi\u1ebfu \u0111i\u1ec1u g\u00ec t\u1eeb tr\u1ea1ng th\u00e1i c\u1ea3m x\u00fac, c\u00e1ch s\u1ed1ng, c\u01a1 ch\u1ebf ph\u1ea3n \u1ee9ng, ni\u1ec1m tin v\u00e0 m\u00f4i tr\u01b0\u1eddng gia \u0111\u00ecnh m\u00e0 ch\u00ednh ng\u01b0\u1eddi l\u1edbn nhi\u1ec1u khi ch\u01b0a nh\u1eadn ra || tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng r\u1ea5t nhi\u1ec1u h\u00e0nh vi, c\u1ea3m x\u00fac v\u00e0 v\u1ea5n \u0111\u1ec1 c\u1ee7a con th\u1ef1c ch\u1ea5t l\u00e0 t\u1ea5m g\u01b0\u01a1ng \u0111ang ph\u1ea3n chi\u1ebfu nh\u1eefng \u0111i\u1ec1u \u0111ang t\u1ed3n t\u1ea1i b\u00ean trong h\u1ec7 th\u1ed1ng gia \u0111\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-205",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-205",
     "number": 205,
-    "title": "Khi vấn đề của con thực chất là tín hiệu từ môi trường gia đình",
-    "subtitle": "MAP này không được đi theo kiểu “con có vấn đề” hay tập trung vào việc sửa chữa hành vi của con, mà phải đi sâu vào việc nhiều cảm xúc, phản ứng, khó khăn và biểu hiện của con thực chất đang là tín hiệu phản ánh trạng thái của môi trường gia đình || trọng tâm là giúp cha mẹ hiểu rằng rất nhiều điều đang xuất hiện ở con không bắt đầu từ riêng con, mà đến từ cách gia đình vận hành, cách cảm xúc được xử lý, cách kết nối được xây dựng và những áp lực vô hình đang tồn tại trong hệ thống sống của cả nhà.",
+    "title": "Khi v\u1ea5n \u0111\u1ec1 c\u1ee7a con th\u1ef1c ch\u1ea5t l\u00e0 t\u00edn hi\u1ec7u t\u1eeb m\u00f4i tr\u01b0\u1eddng gia \u0111\u00ecnh",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201ccon c\u00f3 v\u1ea5n \u0111\u1ec1\u201d hay t\u1eadp trung v\u00e0o vi\u1ec7c s\u1eeda ch\u1eefa h\u00e0nh vi c\u1ee7a con, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c nhi\u1ec1u c\u1ea3m x\u00fac, ph\u1ea3n \u1ee9ng, kh\u00f3 kh\u0103n v\u00e0 bi\u1ec3u hi\u1ec7n c\u1ee7a con th\u1ef1c ch\u1ea5t \u0111ang l\u00e0 t\u00edn hi\u1ec7u ph\u1ea3n \u00e1nh tr\u1ea1ng th\u00e1i c\u1ee7a m\u00f4i tr\u01b0\u1eddng gia \u0111\u00ecnh || tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng r\u1ea5t nhi\u1ec1u \u0111i\u1ec1u \u0111ang xu\u1ea5t hi\u1ec7n \u1edf con kh\u00f4ng b\u1eaft \u0111\u1ea7u t\u1eeb ri\u00eang con, m\u00e0 \u0111\u1ebfn t\u1eeb c\u00e1ch gia \u0111\u00ecnh v\u1eadn h\u00e0nh, c\u00e1ch c\u1ea3m x\u00fac \u0111\u01b0\u1ee3c x\u1eed l\u00fd, c\u00e1ch k\u1ebft n\u1ed1i \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng v\u00e0 nh\u1eefng \u00e1p l\u1ef1c v\u00f4 h\u00ecnh \u0111ang t\u1ed3n t\u1ea1i trong h\u1ec7 th\u1ed1ng s\u1ed1ng c\u1ee7a c\u1ea3 nh\u00e0.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-206",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-206",
     "number": 206,
-    "title": "Mức độ an toàn cảm xúc giữa bố mẹ và con",
-    "subtitle": "MAP này không được đi theo kiểu “bố mẹ có yêu con hay không”, mà phải đi sâu vào việc con có thật sự cảm thấy an toàn về mặt cảm xúc khi ở bên bố mẹ hay không || trọng tâm là giúp cha mẹ hiểu rằng một đứa trẻ chỉ thật sự mở lòng, phát triển lành mạnh và sống đúng bản chất khi bên trong con có cảm giác “mình được yêu thương, được lắng nghe và được là chính mình mà không sợ bị tổn thương”.",
+    "title": "M\u1ee9c \u0111\u1ed9 an to\u00e0n c\u1ea3m x\u00fac gi\u1eefa b\u1ed1 m\u1eb9 v\u00e0 con",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201cb\u1ed1 m\u1eb9 c\u00f3 y\u00eau con hay kh\u00f4ng\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c con c\u00f3 th\u1eadt s\u1ef1 c\u1ea3m th\u1ea5y an to\u00e0n v\u1ec1 m\u1eb7t c\u1ea3m x\u00fac khi \u1edf b\u00ean b\u1ed1 m\u1eb9 hay kh\u00f4ng || tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng m\u1ed9t \u0111\u1ee9a tr\u1ebb ch\u1ec9 th\u1eadt s\u1ef1 m\u1edf l\u00f2ng, ph\u00e1t tri\u1ec3n l\u00e0nh m\u1ea1nh v\u00e0 s\u1ed1ng \u0111\u00fang b\u1ea3n ch\u1ea5t khi b\u00ean trong con c\u00f3 c\u1ea3m gi\u00e1c \u201cm\u00ecnh \u0111\u01b0\u1ee3c y\u00eau th\u01b0\u01a1ng, \u0111\u01b0\u1ee3c l\u1eafng nghe v\u00e0 \u0111\u01b0\u1ee3c l\u00e0 ch\u00ednh m\u00ecnh m\u00e0 kh\u00f4ng s\u1ee3 b\u1ecb t\u1ed5n th\u01b0\u01a1ng\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-207",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-207",
     "number": 207,
-    "title": "Khi nào con cảm thấy gần gũi với bố mẹ nhất",
-    "subtitle": "MAP này không được đi theo kiểu “con thương ai hơn” hay chỉ nhìn vào thời gian bố mẹ ở cạnh con, mà phải đi sâu vào việc trong những trạng thái cảm xúc, cách kết nối và môi trường nào con thật sự cảm thấy được gần gũi, được hiểu và muốn mở lòng với bố mẹ || trọng tâm là giúp cha mẹ hiểu rằng sự gần gũi cảm xúc không đến từ việc ở cạnh nhau nhiều, mà đến từ cảm giác an toàn, được lắng nghe và được kết nối thật sự từ bên trong.",
+    "title": "Khi n\u00e0o con c\u1ea3m th\u1ea5y g\u1ea7n g\u0169i v\u1edbi b\u1ed1 m\u1eb9 nh\u1ea5t",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201ccon th\u01b0\u01a1ng ai h\u01a1n\u201d hay ch\u1ec9 nh\u00ecn v\u00e0o th\u1eddi gian b\u1ed1 m\u1eb9 \u1edf c\u1ea1nh con, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c trong nh\u1eefng tr\u1ea1ng th\u00e1i c\u1ea3m x\u00fac, c\u00e1ch k\u1ebft n\u1ed1i v\u00e0 m\u00f4i tr\u01b0\u1eddng n\u00e0o con th\u1eadt s\u1ef1 c\u1ea3m th\u1ea5y \u0111\u01b0\u1ee3c g\u1ea7n g\u0169i, \u0111\u01b0\u1ee3c hi\u1ec3u v\u00e0 mu\u1ed1n m\u1edf l\u00f2ng v\u1edbi b\u1ed1 m\u1eb9 || tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng s\u1ef1 g\u1ea7n g\u0169i c\u1ea3m x\u00fac kh\u00f4ng \u0111\u1ebfn t\u1eeb vi\u1ec7c \u1edf c\u1ea1nh nhau nhi\u1ec1u, m\u00e0 \u0111\u1ebfn t\u1eeb c\u1ea3m gi\u00e1c an to\u00e0n, \u0111\u01b0\u1ee3c l\u1eafng nghe v\u00e0 \u0111\u01b0\u1ee3c k\u1ebft n\u1ed1i th\u1eadt s\u1ef1 t\u1eeb b\u00ean trong.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-208",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-208",
     "number": 208,
-    "title": "Khi nào con cảm thấy cô đơn trong gia đình",
-    "subtitle": "MAP này không được đi theo kiểu “con ở một mình nên cô đơn”, mà phải đi sâu vào việc có những đứa trẻ dù sống trong gia đình đầy đủ vẫn cảm thấy cô đơn về mặt cảm xúc || trọng tâm là giúp cha mẹ hiểu rằng cô đơn trong gia đình không phải là thiếu người ở cạnh, mà là cảm giác không được hiểu, không được kết nối thật hoặc không có nơi an toàn để bộc lộ con người thật của mình.",
+    "title": "Khi n\u00e0o con c\u1ea3m th\u1ea5y c\u00f4 \u0111\u01a1n trong gia \u0111\u00ecnh",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201ccon \u1edf m\u1ed9t m\u00ecnh n\u00ean c\u00f4 \u0111\u01a1n\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c c\u00f3 nh\u1eefng \u0111\u1ee9a tr\u1ebb d\u00f9 s\u1ed1ng trong gia \u0111\u00ecnh \u0111\u1ea7y \u0111\u1ee7 v\u1eabn c\u1ea3m th\u1ea5y c\u00f4 \u0111\u01a1n v\u1ec1 m\u1eb7t c\u1ea3m x\u00fac || tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng c\u00f4 \u0111\u01a1n trong gia \u0111\u00ecnh kh\u00f4ng ph\u1ea3i l\u00e0 thi\u1ebfu ng\u01b0\u1eddi \u1edf c\u1ea1nh, m\u00e0 l\u00e0 c\u1ea3m gi\u00e1c kh\u00f4ng \u0111\u01b0\u1ee3c hi\u1ec3u, kh\u00f4ng \u0111\u01b0\u1ee3c k\u1ebft n\u1ed1i th\u1eadt ho\u1eb7c kh\u00f4ng c\u00f3 n\u01a1i an to\u00e0n \u0111\u1ec3 b\u1ed9c l\u1ed9 con ng\u01b0\u1eddi th\u1eadt c\u1ee7a m\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-209",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-209",
     "number": 209,
-    "title": "Điều khiến con không muốn mở lòng",
-    "subtitle": "MAP này không được đi theo kiểu “con ít nói” hay “con khó chia sẻ”, mà phải đi sâu vào việc điều gì bên trong đang khiến con dần khép cảm xúc và không còn muốn mở lòng với bố mẹ || trọng tâm là giúp cha mẹ hiểu rằng đa phần trẻ không tự nhiên đóng lòng, mà thường là do con không còn cảm thấy đủ an toàn để bộc lộ cảm xúc thật, suy nghĩ thật và con người thật của mình.",
+    "title": "\u0110i\u1ec1u khi\u1ebfn con kh\u00f4ng mu\u1ed1n m\u1edf l\u00f2ng",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201ccon \u00edt n\u00f3i\u201d hay \u201ccon kh\u00f3 chia s\u1ebb\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c \u0111i\u1ec1u g\u00ec b\u00ean trong \u0111ang khi\u1ebfn con d\u1ea7n kh\u00e9p c\u1ea3m x\u00fac v\u00e0 kh\u00f4ng c\u00f2n mu\u1ed1n m\u1edf l\u00f2ng v\u1edbi b\u1ed1 m\u1eb9 || tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng \u0111a ph\u1ea7n tr\u1ebb kh\u00f4ng t\u1ef1 nhi\u00ean \u0111\u00f3ng l\u00f2ng, m\u00e0 th\u01b0\u1eddng l\u00e0 do con kh\u00f4ng c\u00f2n c\u1ea3m th\u1ea5y \u0111\u1ee7 an to\u00e0n \u0111\u1ec3 b\u1ed9c l\u1ed9 c\u1ea3m x\u00fac th\u1eadt, suy ngh\u0129 th\u1eadt v\u00e0 con ng\u01b0\u1eddi th\u1eadt c\u1ee7a m\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-210",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-210",
     "number": 210,
-    "title": "Điều khiến con cảm thấy được lắng nghe",
-    "subtitle": "MAP này không được đi theo kiểu “bố mẹ có nghe con nói hay không”, mà phải đi sâu vào việc khi nào con thật sự cảm thấy cảm xúc, suy nghĩ và con người của mình được tiếp nhận một cách an toàn và chân thành || trọng tâm là giúp cha mẹ hiểu rằng được lắng nghe không chỉ là được nghe lời nói, mà là cảm giác mình được hiểu, được tôn trọng và không bị phủ nhận khi bộc lộ điều thật bên trong.",
+    "title": "\u0110i\u1ec1u khi\u1ebfn con c\u1ea3m th\u1ea5y \u0111\u01b0\u1ee3c l\u1eafng nghe",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201cb\u1ed1 m\u1eb9 c\u00f3 nghe con n\u00f3i hay kh\u00f4ng\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c khi n\u00e0o con th\u1eadt s\u1ef1 c\u1ea3m th\u1ea5y c\u1ea3m x\u00fac, suy ngh\u0129 v\u00e0 con ng\u01b0\u1eddi c\u1ee7a m\u00ecnh \u0111\u01b0\u1ee3c ti\u1ebfp nh\u1eadn m\u1ed9t c\u00e1ch an to\u00e0n v\u00e0 ch\u00e2n th\u00e0nh || tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng \u0111\u01b0\u1ee3c l\u1eafng nghe kh\u00f4ng ch\u1ec9 l\u00e0 \u0111\u01b0\u1ee3c nghe l\u1eddi n\u00f3i, m\u00e0 l\u00e0 c\u1ea3m gi\u00e1c m\u00ecnh \u0111\u01b0\u1ee3c hi\u1ec3u, \u0111\u01b0\u1ee3c t\u00f4n tr\u1ecdng v\u00e0 kh\u00f4ng b\u1ecb ph\u1ee7 nh\u1eadn khi b\u1ed9c l\u1ed9 \u0111i\u1ec1u th\u1eadt b\u00ean trong.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-211",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-211",
     "number": 211,
-    "title": "Điều khiến con cảm thấy bị phán xét",
-    "subtitle": "MAP này không được đi theo kiểu “bố mẹ la con” hay “bố mẹ nghiêm khắc”, mà phải đi sâu vào việc điều gì khiến con cảm thấy mình không được hiểu, không được chấp nhận hoặc luôn phải phòng thủ khi ở cạnh bố mẹ || trọng tâm là giúp cha mẹ hiểu rằng cảm giác bị phán xét không chỉ đến từ lời nói nặng nề, mà còn đến từ ánh nhìn, thái độ, cách phản ứng và việc con luôn cảm thấy mình không đủ tốt khi bộc lộ con người thật của mình.",
+    "title": "\u0110i\u1ec1u khi\u1ebfn con c\u1ea3m th\u1ea5y b\u1ecb ph\u00e1n x\u00e9t",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201cb\u1ed1 m\u1eb9 la con\u201d hay \u201cb\u1ed1 m\u1eb9 nghi\u00eam kh\u1eafc\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c \u0111i\u1ec1u g\u00ec khi\u1ebfn con c\u1ea3m th\u1ea5y m\u00ecnh kh\u00f4ng \u0111\u01b0\u1ee3c hi\u1ec3u, kh\u00f4ng \u0111\u01b0\u1ee3c ch\u1ea5p nh\u1eadn ho\u1eb7c lu\u00f4n ph\u1ea3i ph\u00f2ng th\u1ee7 khi \u1edf c\u1ea1nh b\u1ed1 m\u1eb9 || tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng c\u1ea3m gi\u00e1c b\u1ecb ph\u00e1n x\u00e9t kh\u00f4ng ch\u1ec9 \u0111\u1ebfn t\u1eeb l\u1eddi n\u00f3i n\u1eb7ng n\u1ec1, m\u00e0 c\u00f2n \u0111\u1ebfn t\u1eeb \u00e1nh nh\u00ecn, th\u00e1i \u0111\u1ed9, c\u00e1ch ph\u1ea3n \u1ee9ng v\u00e0 vi\u1ec7c con lu\u00f4n c\u1ea3m th\u1ea5y m\u00ecnh kh\u00f4ng \u0111\u1ee7 t\u1ed1t khi b\u1ed9c l\u1ed9 con ng\u01b0\u1eddi th\u1eadt c\u1ee7a m\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-212",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-212",
     "number": 212,
-    "title": "Điều khiến kết nối gia đình dần yếu đi",
-    "subtitle": "MAP này không được đi theo kiểu “gia đình ít nói chuyện với nhau”, mà phải đi sâu vào việc điều gì đang âm thầm làm khoảng cách cảm xúc giữa các thành viên ngày càng lớn lên theo thời gian || trọng tâm là giúp cha mẹ hiểu rằng kết nối gia đình không mất đi trong một ngày, mà thường suy yếu bởi những mất kết nối nhỏ lặp đi lặp lại, những cảm xúc không được xử lý và việc mọi người sống cạnh nhau nhưng không còn thật sự chạm được vào nhau về mặt cảm xúc.",
+    "title": "\u0110i\u1ec1u khi\u1ebfn k\u1ebft n\u1ed1i gia \u0111\u00ecnh d\u1ea7n y\u1ebfu \u0111i",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201cgia \u0111\u00ecnh \u00edt n\u00f3i chuy\u1ec7n v\u1edbi nhau\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c \u0111i\u1ec1u g\u00ec \u0111ang \u00e2m th\u1ea7m l\u00e0m kho\u1ea3ng c\u00e1ch c\u1ea3m x\u00fac gi\u1eefa c\u00e1c th\u00e0nh vi\u00ean ng\u00e0y c\u00e0ng l\u1edbn l\u00ean theo th\u1eddi gian || tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng k\u1ebft n\u1ed1i gia \u0111\u00ecnh kh\u00f4ng m\u1ea5t \u0111i trong m\u1ed9t ng\u00e0y, m\u00e0 th\u01b0\u1eddng suy y\u1ebfu b\u1edfi nh\u1eefng m\u1ea5t k\u1ebft n\u1ed1i nh\u1ecf l\u1eb7p \u0111i l\u1eb7p l\u1ea1i, nh\u1eefng c\u1ea3m x\u00fac kh\u00f4ng \u0111\u01b0\u1ee3c x\u1eed l\u00fd v\u00e0 vi\u1ec7c m\u1ecdi ng\u01b0\u1eddi s\u1ed1ng c\u1ea1nh nhau nh\u01b0ng kh\u00f4ng c\u00f2n th\u1eadt s\u1ef1 ch\u1ea1m \u0111\u01b0\u1ee3c v\u00e0o nhau v\u1ec1 m\u1eb7t c\u1ea3m x\u00fac.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-213",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-213",
     "number": 213,
-    "title": "Điều giúp xây lại kết nối cảm xúc an toàn",
-    "subtitle": "MAP này không được đi theo kiểu “gia đình cần yêu thương nhau nhiều hơn”, mà phải đi sâu vào việc điều gì thật sự giúp những kết nối đã tổn thương, xa cách hoặc phòng thủ dần được chữa lành và xây lại một cách an toàn || trọng tâm là giúp cha mẹ hiểu rằng kết nối cảm xúc an toàn không được tạo bằng ép buộc, kiểm soát hay cố gắng thay đổi người khác, mà được xây từ cảm giác được hiểu, được tôn trọng, được chấp nhận và được hiện diện thật với nhau qua thời gian.",
+    "title": "\u0110i\u1ec1u gi\u00fap x\u00e2y l\u1ea1i k\u1ebft n\u1ed1i c\u1ea3m x\u00fac an to\u00e0n",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201cgia \u0111\u00ecnh c\u1ea7n y\u00eau th\u01b0\u01a1ng nhau nhi\u1ec1u h\u01a1n\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c \u0111i\u1ec1u g\u00ec th\u1eadt s\u1ef1 gi\u00fap nh\u1eefng k\u1ebft n\u1ed1i \u0111\u00e3 t\u1ed5n th\u01b0\u01a1ng, xa c\u00e1ch ho\u1eb7c ph\u00f2ng th\u1ee7 d\u1ea7n \u0111\u01b0\u1ee3c ch\u1eefa l\u00e0nh v\u00e0 x\u00e2y l\u1ea1i m\u1ed9t c\u00e1ch an to\u00e0n || tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng k\u1ebft n\u1ed1i c\u1ea3m x\u00fac an to\u00e0n kh\u00f4ng \u0111\u01b0\u1ee3c t\u1ea1o b\u1eb1ng \u00e9p bu\u1ed9c, ki\u1ec3m so\u00e1t hay c\u1ed1 g\u1eafng thay \u0111\u1ed5i ng\u01b0\u1eddi kh\u00e1c, m\u00e0 \u0111\u01b0\u1ee3c x\u00e2y t\u1eeb c\u1ea3m gi\u00e1c \u0111\u01b0\u1ee3c hi\u1ec3u, \u0111\u01b0\u1ee3c t\u00f4n tr\u1ecdng, \u0111\u01b0\u1ee3c ch\u1ea5p nh\u1eadn v\u00e0 \u0111\u01b0\u1ee3c hi\u1ec7n di\u1ec7n th\u1eadt v\u1edbi nhau qua th\u1eddi gian.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-214",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-214",
     "number": 214,
-    "title": "Khi bố mẹ yêu con nhưng con không cảm nhận được",
-    "subtitle": "MAP này không được đi theo kiểu “bố mẹ thương con nhưng con không hiểu”, mà phải đi sâu vào việc vì sao có những gia đình rất yêu thương nhau nhưng đứa trẻ vẫn lớn lên trong cảm giác thiếu được yêu, thiếu được hiểu hoặc thiếu được kết nối cảm xúc thật || trọng tâm là giúp cha mẹ hiểu rằng tình yêu chỉ thật sự chạm tới con khi nó được truyền đi đúng cách mà nội tâm của con có thể cảm nhận, tiếp nhận và tin tưởng được.",
+    "title": "Khi b\u1ed1 m\u1eb9 y\u00eau con nh\u01b0ng con kh\u00f4ng c\u1ea3m nh\u1eadn \u0111\u01b0\u1ee3c",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201cb\u1ed1 m\u1eb9 th\u01b0\u01a1ng con nh\u01b0ng con kh\u00f4ng hi\u1ec3u\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c v\u00ec sao c\u00f3 nh\u1eefng gia \u0111\u00ecnh r\u1ea5t y\u00eau th\u01b0\u01a1ng nhau nh\u01b0ng \u0111\u1ee9a tr\u1ebb v\u1eabn l\u1edbn l\u00ean trong c\u1ea3m gi\u00e1c thi\u1ebfu \u0111\u01b0\u1ee3c y\u00eau, thi\u1ebfu \u0111\u01b0\u1ee3c hi\u1ec3u ho\u1eb7c thi\u1ebfu \u0111\u01b0\u1ee3c k\u1ebft n\u1ed1i c\u1ea3m x\u00fac th\u1eadt || tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng t\u00ecnh y\u00eau ch\u1ec9 th\u1eadt s\u1ef1 ch\u1ea1m t\u1edbi con khi n\u00f3 \u0111\u01b0\u1ee3c truy\u1ec1n \u0111i \u0111\u00fang c\u00e1ch m\u00e0 n\u1ed9i t\u00e2m c\u1ee7a con c\u00f3 th\u1ec3 c\u1ea3m nh\u1eadn, ti\u1ebfp nh\u1eadn v\u00e0 tin t\u01b0\u1edfng \u0111\u01b0\u1ee3c.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-215",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-215",
     "number": 215,
-    "title": "Khi con cần bố mẹ nhưng không biết cách nói ra",
-    "subtitle": "MAP này không được đi theo kiểu “con không biết chia sẻ”, mà phải đi sâu vào việc có rất nhiều đứa trẻ đang cần được giúp đỡ, được ôm lấy, được đồng hành hoặc được thấu hiểu nhưng lại không đủ khả năng gọi tên cảm xúc và nhu cầu thật của mình || trọng tâm là giúp cha mẹ hiểu rằng nhiều hành vi khó chịu, phản kháng, im lặng, bất thường hoặc khó hiểu của con thực chất là những tín hiệu cầu cứu cảm xúc khi bên trong con đang rất cần sự kết nối và cảm giác an toàn.",
+    "title": "Khi con c\u1ea7n b\u1ed1 m\u1eb9 nh\u01b0ng kh\u00f4ng bi\u1ebft c\u00e1ch n\u00f3i ra",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201ccon kh\u00f4ng bi\u1ebft chia s\u1ebb\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c c\u00f3 r\u1ea5t nhi\u1ec1u \u0111\u1ee9a tr\u1ebb \u0111ang c\u1ea7n \u0111\u01b0\u1ee3c gi\u00fap \u0111\u1ee1, \u0111\u01b0\u1ee3c \u00f4m l\u1ea5y, \u0111\u01b0\u1ee3c \u0111\u1ed3ng h\u00e0nh ho\u1eb7c \u0111\u01b0\u1ee3c th\u1ea5u hi\u1ec3u nh\u01b0ng l\u1ea1i kh\u00f4ng \u0111\u1ee7 kh\u1ea3 n\u0103ng g\u1ecdi t\u00ean c\u1ea3m x\u00fac v\u00e0 nhu c\u1ea7u th\u1eadt c\u1ee7a m\u00ecnh || tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng nhi\u1ec1u h\u00e0nh vi kh\u00f3 ch\u1ecbu, ph\u1ea3n kh\u00e1ng, im l\u1eb7ng, b\u1ea5t th\u01b0\u1eddng ho\u1eb7c kh\u00f3 hi\u1ec3u c\u1ee7a con th\u1ef1c ch\u1ea5t l\u00e0 nh\u1eefng t\u00edn hi\u1ec7u c\u1ea7u c\u1ee9u c\u1ea3m x\u00fac khi b\u00ean trong con \u0111ang r\u1ea5t c\u1ea7n s\u1ef1 k\u1ebft n\u1ed1i v\u00e0 c\u1ea3m gi\u00e1c an to\u00e0n.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-216",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-216",
     "number": 216,
-    "title": "Vì sao bố mẹ và con dễ va chạm",
-    "subtitle": "MAP này không được đi theo kiểu “khác tính nên hay cãi nhau”, mà phải đi sâu vào việc điều gì bên trong tính cách, cảm xúc, nhu cầu và cơ chế phản ứng khiến bố mẹ và con dễ va chạm lặp đi lặp lại. Trọng tâm là giúp cha mẹ hiểu: rất nhiều xung đột trong gia đình không đến từ việc ai đúng ai sai, mà đến từ việc mỗi người đang nhìn thế giới, cảm nhận tình yêu và phản ứng với áp lực theo những cách hoàn toàn khác nhau.",
+    "title": "V\u00ec sao b\u1ed1 m\u1eb9 v\u00e0 con d\u1ec5 va ch\u1ea1m",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201ckh\u00e1c t\u00ednh n\u00ean hay c\u00e3i nhau\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c \u0111i\u1ec1u g\u00ec b\u00ean trong t\u00ednh c\u00e1ch, c\u1ea3m x\u00fac, nhu c\u1ea7u v\u00e0 c\u01a1 ch\u1ebf ph\u1ea3n \u1ee9ng khi\u1ebfn b\u1ed1 m\u1eb9 v\u00e0 con d\u1ec5 va ch\u1ea1m l\u1eb7p \u0111i l\u1eb7p l\u1ea1i. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: r\u1ea5t nhi\u1ec1u xung \u0111\u1ed9t trong gia \u0111\u00ecnh kh\u00f4ng \u0111\u1ebfn t\u1eeb vi\u1ec7c ai \u0111\u00fang ai sai, m\u00e0 \u0111\u1ebfn t\u1eeb vi\u1ec7c m\u1ed7i ng\u01b0\u1eddi \u0111ang nh\u00ecn th\u1ebf gi\u1edbi, c\u1ea3m nh\u1eadn t\u00ecnh y\u00eau v\u00e0 ph\u1ea3n \u1ee9ng v\u1edbi \u00e1p l\u1ef1c theo nh\u1eefng c\u00e1ch ho\u00e0n to\u00e0n kh\u00e1c nhau.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-217",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-217",
     "number": 217,
-    "title": "Kiểu xung đột dễ lặp lại trong gia đình",
-    "subtitle": "MAP này không được đi theo kiểu “gia đình hay cãi nhau”, mà phải đi sâu vào việc vì sao có những kiểu xung đột cứ lặp đi lặp lại dù mọi người đều đã mệt mỏi và muốn thay đổi. Trọng tâm là giúp cha mẹ hiểu: phần lớn xung đột gia đình không phải là những sự việc riêng lẻ, mà là những mô thức cảm xúc – phản ứng – phòng vệ đang vận hành vô thức qua thời gian.",
+    "title": "Ki\u1ec3u xung \u0111\u1ed9t d\u1ec5 l\u1eb7p l\u1ea1i trong gia \u0111\u00ecnh",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201cgia \u0111\u00ecnh hay c\u00e3i nhau\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c v\u00ec sao c\u00f3 nh\u1eefng ki\u1ec3u xung \u0111\u1ed9t c\u1ee9 l\u1eb7p \u0111i l\u1eb7p l\u1ea1i d\u00f9 m\u1ecdi ng\u01b0\u1eddi \u0111\u1ec1u \u0111\u00e3 m\u1ec7t m\u1ecfi v\u00e0 mu\u1ed1n thay \u0111\u1ed5i. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: ph\u1ea7n l\u1edbn xung \u0111\u1ed9t gia \u0111\u00ecnh kh\u00f4ng ph\u1ea3i l\u00e0 nh\u1eefng s\u1ef1 vi\u1ec7c ri\u00eang l\u1ebb, m\u00e0 l\u00e0 nh\u1eefng m\u00f4 th\u1ee9c c\u1ea3m x\u00fac \u2013 ph\u1ea3n \u1ee9ng \u2013 ph\u00f2ng v\u1ec7 \u0111ang v\u1eadn h\u00e0nh v\u00f4 th\u1ee9c qua th\u1eddi gian.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-218",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-218",
     "number": 218,
-    "title": "Điều bố mẹ làm với ý tốt nhưng con lại tổn thương",
-    "subtitle": "MAP này không được đi theo kiểu “bố mẹ sai cách”, mà phải đi sâu vào việc vì sao có rất nhiều hành động xuất phát từ yêu thương, lo lắng và mong muốn tốt cho con nhưng lại đi vào nội tâm con như áp lực, tổn thương hoặc sự phủ nhận chính mình. Trọng tâm là giúp cha mẹ hiểu: trong mối quan hệ cảm xúc, điều quan trọng không chỉ là “ý định của bố mẹ”, mà còn là “cách con cảm nhận được điều đó từ bên trong”.",
+    "title": "\u0110i\u1ec1u b\u1ed1 m\u1eb9 l\u00e0m v\u1edbi \u00fd t\u1ed1t nh\u01b0ng con l\u1ea1i t\u1ed5n th\u01b0\u01a1ng",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201cb\u1ed1 m\u1eb9 sai c\u00e1ch\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c v\u00ec sao c\u00f3 r\u1ea5t nhi\u1ec1u h\u00e0nh \u0111\u1ed9ng xu\u1ea5t ph\u00e1t t\u1eeb y\u00eau th\u01b0\u01a1ng, lo l\u1eafng v\u00e0 mong mu\u1ed1n t\u1ed1t cho con nh\u01b0ng l\u1ea1i \u0111i v\u00e0o n\u1ed9i t\u00e2m con nh\u01b0 \u00e1p l\u1ef1c, t\u1ed5n th\u01b0\u01a1ng ho\u1eb7c s\u1ef1 ph\u1ee7 nh\u1eadn ch\u00ednh m\u00ecnh. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: trong m\u1ed1i quan h\u1ec7 c\u1ea3m x\u00fac, \u0111i\u1ec1u quan tr\u1ecdng kh\u00f4ng ch\u1ec9 l\u00e0 \u201c\u00fd \u0111\u1ecbnh c\u1ee7a b\u1ed1 m\u1eb9\u201d, m\u00e0 c\u00f2n l\u00e0 \u201cc\u00e1ch con c\u1ea3m nh\u1eadn \u0111\u01b0\u1ee3c \u0111i\u1ec1u \u0111\u00f3 t\u1eeb b\u00ean trong\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-219",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-219",
     "number": 219,
-    "title": "Điều con làm khiến bố mẹ dễ mất kiểm soát",
-    "subtitle": "MAP này không được đi theo kiểu “con hư nên bố mẹ nóng giận”, mà phải đi sâu vào việc vì sao có những hành vi, thái độ hoặc phản ứng của con lại chạm đúng vào những điểm nhạy cảm, nỗi sợ và áp lực bên trong bố mẹ khiến người lớn dễ bùng nổ cảm xúc hoặc mất kiểm soát. Trọng tâm là giúp cha mẹ hiểu: rất nhiều phản ứng mạnh của người lớn không chỉ đến từ hành vi hiện tại của con, mà đến từ những điều sâu hơn đang bị kích hoạt bên trong chính bố mẹ.",
+    "title": "\u0110i\u1ec1u con l\u00e0m khi\u1ebfn b\u1ed1 m\u1eb9 d\u1ec5 m\u1ea5t ki\u1ec3m so\u00e1t",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201ccon h\u01b0 n\u00ean b\u1ed1 m\u1eb9 n\u00f3ng gi\u1eadn\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c v\u00ec sao c\u00f3 nh\u1eefng h\u00e0nh vi, th\u00e1i \u0111\u1ed9 ho\u1eb7c ph\u1ea3n \u1ee9ng c\u1ee7a con l\u1ea1i ch\u1ea1m \u0111\u00fang v\u00e0o nh\u1eefng \u0111i\u1ec3m nh\u1ea1y c\u1ea3m, n\u1ed7i s\u1ee3 v\u00e0 \u00e1p l\u1ef1c b\u00ean trong b\u1ed1 m\u1eb9 khi\u1ebfn ng\u01b0\u1eddi l\u1edbn d\u1ec5 b\u00f9ng n\u1ed5 c\u1ea3m x\u00fac ho\u1eb7c m\u1ea5t ki\u1ec3m so\u00e1t. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: r\u1ea5t nhi\u1ec1u ph\u1ea3n \u1ee9ng m\u1ea1nh c\u1ee7a ng\u01b0\u1eddi l\u1edbn kh\u00f4ng ch\u1ec9 \u0111\u1ebfn t\u1eeb h\u00e0nh vi hi\u1ec7n t\u1ea1i c\u1ee7a con, m\u00e0 \u0111\u1ebfn t\u1eeb nh\u1eefng \u0111i\u1ec1u s\u00e2u h\u01a1n \u0111ang b\u1ecb k\u00edch ho\u1ea1t b\u00ean trong ch\u00ednh b\u1ed1 m\u1eb9.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-220",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-220",
     "number": 220,
-    "title": "Khi hai bên đều không hiểu nhu cầu của nhau",
-    "subtitle": "MAP này không được đi theo kiểu “không chịu lắng nghe nhau”, mà phải đi sâu vào việc vì sao bố mẹ và con dù sống rất gần nhau nhưng lại không thật sự hiểu điều người còn lại đang cần bên trong. Trọng tâm là giúp cha mẹ hiểu: rất nhiều xung đột, khoảng cách và tổn thương trong gia đình xuất phát từ việc mỗi người đều đang cố bảo vệ nhu cầu cảm xúc của mình nhưng lại không nhìn ra nhu cầu thật của người kia.",
+    "title": "Khi hai b\u00ean \u0111\u1ec1u kh\u00f4ng hi\u1ec3u nhu c\u1ea7u c\u1ee7a nhau",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201ckh\u00f4ng ch\u1ecbu l\u1eafng nghe nhau\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c v\u00ec sao b\u1ed1 m\u1eb9 v\u00e0 con d\u00f9 s\u1ed1ng r\u1ea5t g\u1ea7n nhau nh\u01b0ng l\u1ea1i kh\u00f4ng th\u1eadt s\u1ef1 hi\u1ec3u \u0111i\u1ec1u ng\u01b0\u1eddi c\u00f2n l\u1ea1i \u0111ang c\u1ea7n b\u00ean trong. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: r\u1ea5t nhi\u1ec1u xung \u0111\u1ed9t, kho\u1ea3ng c\u00e1ch v\u00e0 t\u1ed5n th\u01b0\u01a1ng trong gia \u0111\u00ecnh xu\u1ea5t ph\u00e1t t\u1eeb vi\u1ec7c m\u1ed7i ng\u01b0\u1eddi \u0111\u1ec1u \u0111ang c\u1ed1 b\u1ea3o v\u1ec7 nhu c\u1ea7u c\u1ea3m x\u00fac c\u1ee7a m\u00ecnh nh\u01b0ng l\u1ea1i kh\u00f4ng nh\u00ecn ra nhu c\u1ea7u th\u1eadt c\u1ee7a ng\u01b0\u1eddi kia.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-221",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-221",
     "number": 221,
-    "title": "Khi bố mẹ càng cố gần con càng xa",
-    "subtitle": "MAP này không được đi theo kiểu “con tuổi lớn khó gần”, mà phải đi sâu vào việc vì sao có những gia đình bố mẹ càng lo, càng quan tâm, càng cố kết nối thì con lại càng thu mình, né tránh hoặc tạo khoảng cách cảm xúc. Trọng tâm là giúp cha mẹ hiểu: nhiều khi điều làm con xa cách không phải vì thiếu yêu thương, mà vì cách tiếp cận đang vô tình tạo áp lực, mất an toàn hoặc làm con cảm thấy mình không được hiểu đúng.",
+    "title": "Khi b\u1ed1 m\u1eb9 c\u00e0ng c\u1ed1 g\u1ea7n con c\u00e0ng xa",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201ccon tu\u1ed5i l\u1edbn kh\u00f3 g\u1ea7n\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c v\u00ec sao c\u00f3 nh\u1eefng gia \u0111\u00ecnh b\u1ed1 m\u1eb9 c\u00e0ng lo, c\u00e0ng quan t\u00e2m, c\u00e0ng c\u1ed1 k\u1ebft n\u1ed1i th\u00ec con l\u1ea1i c\u00e0ng thu m\u00ecnh, n\u00e9 tr\u00e1nh ho\u1eb7c t\u1ea1o kho\u1ea3ng c\u00e1ch c\u1ea3m x\u00fac. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: nhi\u1ec1u khi \u0111i\u1ec1u l\u00e0m con xa c\u00e1ch kh\u00f4ng ph\u1ea3i v\u00ec thi\u1ebfu y\u00eau th\u01b0\u01a1ng, m\u00e0 v\u00ec c\u00e1ch ti\u1ebfp c\u1eadn \u0111ang v\u00f4 t\u00ecnh t\u1ea1o \u00e1p l\u1ef1c, m\u1ea5t an to\u00e0n ho\u1eb7c l\u00e0m con c\u1ea3m th\u1ea5y m\u00ecnh kh\u00f4ng \u0111\u01b0\u1ee3c hi\u1ec3u \u0111\u00fang.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-222",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-222",
     "number": 222,
-    "title": "Điều hai bên cần học từ nhau",
-    "subtitle": "MAP này không được đi theo kiểu “ai đúng ai sai”, mà phải đi sâu vào việc mỗi bên xuất hiện trong cuộc đời nhau để giúp nhau học điều gì, trưởng thành điều gì và chữa lành điều gì. Trọng tâm là giúp cha mẹ hiểu: trong mối quan hệ bố mẹ – con, không chỉ con học từ bố mẹ mà chính bố mẹ cũng đang được con phản chiếu, thử thách và giúp trưởng thành rất nhiều.",
+    "title": "\u0110i\u1ec1u hai b\u00ean c\u1ea7n h\u1ecdc t\u1eeb nhau",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201cai \u0111\u00fang ai sai\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c m\u1ed7i b\u00ean xu\u1ea5t hi\u1ec7n trong cu\u1ed9c \u0111\u1eddi nhau \u0111\u1ec3 gi\u00fap nhau h\u1ecdc \u0111i\u1ec1u g\u00ec, tr\u01b0\u1edfng th\u00e0nh \u0111i\u1ec1u g\u00ec v\u00e0 ch\u1eefa l\u00e0nh \u0111i\u1ec1u g\u00ec. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: trong m\u1ed1i quan h\u1ec7 b\u1ed1 m\u1eb9 \u2013 con, kh\u00f4ng ch\u1ec9 con h\u1ecdc t\u1eeb b\u1ed1 m\u1eb9 m\u00e0 ch\u00ednh b\u1ed1 m\u1eb9 c\u0169ng \u0111ang \u0111\u01b0\u1ee3c con ph\u1ea3n chi\u1ebfu, th\u1eed th\u00e1ch v\u00e0 gi\u00fap tr\u01b0\u1edfng th\u00e0nh r\u1ea5t nhi\u1ec1u.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-223",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-223",
     "number": 223,
-    "title": "Xung đột theo bản chất tính cách",
-    "subtitle": "MAP này không được đi theo kiểu “ai tính khó hơn ai”, mà phải đi sâu vào việc vì sao chính sự khác biệt trong bản chất tính cách, cách cảm nhận, cách suy nghĩ và cách phản ứng lại khiến bố mẹ và con rất dễ va chạm dù cả hai đều yêu thương nhau. Trọng tâm là giúp cha mẹ hiểu: nhiều xung đột không đến từ việc ai sai, mà đến từ việc hai hệ tính cách khác nhau đang cố bảo vệ nhu cầu và thế giới riêng của mình theo những cách hoàn toàn khác nhau.",
+    "title": "Xung \u0111\u1ed9t theo b\u1ea3n ch\u1ea5t t\u00ednh c\u00e1ch",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201cai t\u00ednh kh\u00f3 h\u01a1n ai\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c v\u00ec sao ch\u00ednh s\u1ef1 kh\u00e1c bi\u1ec7t trong b\u1ea3n ch\u1ea5t t\u00ednh c\u00e1ch, c\u00e1ch c\u1ea3m nh\u1eadn, c\u00e1ch suy ngh\u0129 v\u00e0 c\u00e1ch ph\u1ea3n \u1ee9ng l\u1ea1i khi\u1ebfn b\u1ed1 m\u1eb9 v\u00e0 con r\u1ea5t d\u1ec5 va ch\u1ea1m d\u00f9 c\u1ea3 hai \u0111\u1ec1u y\u00eau th\u01b0\u01a1ng nhau. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: nhi\u1ec1u xung \u0111\u1ed9t kh\u00f4ng \u0111\u1ebfn t\u1eeb vi\u1ec7c ai sai, m\u00e0 \u0111\u1ebfn t\u1eeb vi\u1ec7c hai h\u1ec7 t\u00ednh c\u00e1ch kh\u00e1c nhau \u0111ang c\u1ed1 b\u1ea3o v\u1ec7 nhu c\u1ea7u v\u00e0 th\u1ebf gi\u1edbi ri\u00eang c\u1ee7a m\u00ecnh theo nh\u1eefng c\u00e1ch ho\u00e0n to\u00e0n kh\u00e1c nhau.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-224",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-224",
     "number": 224,
-    "title": "Điểm khác biệt lớn nhất giữa bố mẹ và con",
-    "subtitle": "MAP này không được đi theo kiểu “ai giống ai” hay “khác nhau ở đâu” một cách bề mặt, mà phải đi sâu vào việc đâu là khác biệt cốt lõi trong bản chất, nhu cầu, tư duy, cảm xúc và cách sống giữa bố mẹ và con khiến hai bên rất dễ hiểu sai, va chạm hoặc cảm thấy không thuộc về cùng một thế giới. Trọng tâm là giúp cha mẹ hiểu: nhiều khác biệt không phải là vấn đề cần sửa, mà là điều cần được hiểu đúng để hai bên có thể sống hòa hợp và tôn trọng nhau hơn.",
+    "title": "\u0110i\u1ec3m kh\u00e1c bi\u1ec7t l\u1edbn nh\u1ea5t gi\u1eefa b\u1ed1 m\u1eb9 v\u00e0 con",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201cai gi\u1ed1ng ai\u201d hay \u201ckh\u00e1c nhau \u1edf \u0111\u00e2u\u201d m\u1ed9t c\u00e1ch b\u1ec1 m\u1eb7t, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c \u0111\u00e2u l\u00e0 kh\u00e1c bi\u1ec7t c\u1ed1t l\u00f5i trong b\u1ea3n ch\u1ea5t, nhu c\u1ea7u, t\u01b0 duy, c\u1ea3m x\u00fac v\u00e0 c\u00e1ch s\u1ed1ng gi\u1eefa b\u1ed1 m\u1eb9 v\u00e0 con khi\u1ebfn hai b\u00ean r\u1ea5t d\u1ec5 hi\u1ec3u sai, va ch\u1ea1m ho\u1eb7c c\u1ea3m th\u1ea5y kh\u00f4ng thu\u1ed9c v\u1ec1 c\u00f9ng m\u1ed9t th\u1ebf gi\u1edbi. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: nhi\u1ec1u kh\u00e1c bi\u1ec7t kh\u00f4ng ph\u1ea3i l\u00e0 v\u1ea5n \u0111\u1ec1 c\u1ea7n s\u1eeda, m\u00e0 l\u00e0 \u0111i\u1ec1u c\u1ea7n \u0111\u01b0\u1ee3c hi\u1ec3u \u0111\u00fang \u0111\u1ec3 hai b\u00ean c\u00f3 th\u1ec3 s\u1ed1ng h\u00f2a h\u1ee3p v\u00e0 t\u00f4n tr\u1ecdng nhau h\u01a1n.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-225",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-225",
     "number": 225,
-    "title": "Điểm tương đồng dễ tạo kết nối giữa bố mẹ và con",
-    "subtitle": "MAP này không được đi theo kiểu “hai người giống nhau ở đâu”, mà phải đi sâu vào việc đâu là những điểm đồng điệu trong bản chất, cảm xúc, nhu cầu và cách sống giữa bố mẹ và con có thể trở thành nền kết nối rất mạnh nếu được nhìn ra và nuôi dưỡng đúng cách. Trọng tâm là giúp cha mẹ hiểu: trong mọi mối quan hệ bố mẹ – con luôn tồn tại những điểm chạm tự nhiên giúp cả hai dễ hiểu nhau, dễ đồng hành và dễ chữa lành cho nhau hơn.",
+    "title": "\u0110i\u1ec3m t\u01b0\u01a1ng \u0111\u1ed3ng d\u1ec5 t\u1ea1o k\u1ebft n\u1ed1i gi\u1eefa b\u1ed1 m\u1eb9 v\u00e0 con",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201chai ng\u01b0\u1eddi gi\u1ed1ng nhau \u1edf \u0111\u00e2u\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c \u0111\u00e2u l\u00e0 nh\u1eefng \u0111i\u1ec3m \u0111\u1ed3ng \u0111i\u1ec7u trong b\u1ea3n ch\u1ea5t, c\u1ea3m x\u00fac, nhu c\u1ea7u v\u00e0 c\u00e1ch s\u1ed1ng gi\u1eefa b\u1ed1 m\u1eb9 v\u00e0 con c\u00f3 th\u1ec3 tr\u1edf th\u00e0nh n\u1ec1n k\u1ebft n\u1ed1i r\u1ea5t m\u1ea1nh n\u1ebfu \u0111\u01b0\u1ee3c nh\u00ecn ra v\u00e0 nu\u00f4i d\u01b0\u1ee1ng \u0111\u00fang c\u00e1ch. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: trong m\u1ecdi m\u1ed1i quan h\u1ec7 b\u1ed1 m\u1eb9 \u2013 con lu\u00f4n t\u1ed3n t\u1ea1i nh\u1eefng \u0111i\u1ec3m ch\u1ea1m t\u1ef1 nhi\u00ean gi\u00fap c\u1ea3 hai d\u1ec5 hi\u1ec3u nhau, d\u1ec5 \u0111\u1ed3ng h\u00e0nh v\u00e0 d\u1ec5 ch\u1eefa l\u00e0nh cho nhau h\u01a1n.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-226",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-226",
     "number": 226,
-    "title": "Kiểu lời nói khiến con tổn thương lâu dài",
-    "subtitle": "MAP này không được đi theo kiểu “nói nặng lời là sai”, mà phải đi sâu vào việc vì sao có những câu nói tưởng như bình thường, dạy dỗ hoặc vô tình lúc nóng giận lại có thể đi rất sâu vào nội tâm của con và ở lại trong nhiều năm. Trọng tâm là giúp cha mẹ hiểu: trẻ em không chỉ nhớ lời nói, mà còn hấp thụ cảm giác mình là ai thông qua cách người lớn nói với mình mỗi ngày.",
+    "title": "Ki\u1ec3u l\u1eddi n\u00f3i khi\u1ebfn con t\u1ed5n th\u01b0\u01a1ng l\u00e2u d\u00e0i",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201cn\u00f3i n\u1eb7ng l\u1eddi l\u00e0 sai\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c v\u00ec sao c\u00f3 nh\u1eefng c\u00e2u n\u00f3i t\u01b0\u1edfng nh\u01b0 b\u00ecnh th\u01b0\u1eddng, d\u1ea1y d\u1ed7 ho\u1eb7c v\u00f4 t\u00ecnh l\u00fac n\u00f3ng gi\u1eadn l\u1ea1i c\u00f3 th\u1ec3 \u0111i r\u1ea5t s\u00e2u v\u00e0o n\u1ed9i t\u00e2m c\u1ee7a con v\u00e0 \u1edf l\u1ea1i trong nhi\u1ec1u n\u0103m. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: tr\u1ebb em kh\u00f4ng ch\u1ec9 nh\u1edb l\u1eddi n\u00f3i, m\u00e0 c\u00f2n h\u1ea5p th\u1ee5 c\u1ea3m gi\u00e1c m\u00ecnh l\u00e0 ai th\u00f4ng qua c\u00e1ch ng\u01b0\u1eddi l\u1edbn n\u00f3i v\u1edbi m\u00ecnh m\u1ed7i ng\u00e0y.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-227",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-227",
     "number": 227,
-    "title": "Kiểu giao tiếp khiến con dần im lặng",
-    "subtitle": "MAP này không được đi theo kiểu “con ít nói” hay “con khó chia sẻ”, mà phải đi sâu vào việc vì sao có những kiểu giao tiếp trong gia đình khiến con dần không còn muốn nói thật cảm xúc, suy nghĩ và nhu cầu của mình nữa. Trọng tâm là giúp cha mẹ hiểu: im lặng của con thường không bắt đầu từ việc con không có gì để nói, mà từ việc con không còn cảm thấy an toàn khi nói ra điều thật bên trong mình.",
+    "title": "Ki\u1ec3u giao ti\u1ebfp khi\u1ebfn con d\u1ea7n im l\u1eb7ng",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201ccon \u00edt n\u00f3i\u201d hay \u201ccon kh\u00f3 chia s\u1ebb\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c v\u00ec sao c\u00f3 nh\u1eefng ki\u1ec3u giao ti\u1ebfp trong gia \u0111\u00ecnh khi\u1ebfn con d\u1ea7n kh\u00f4ng c\u00f2n mu\u1ed1n n\u00f3i th\u1eadt c\u1ea3m x\u00fac, suy ngh\u0129 v\u00e0 nhu c\u1ea7u c\u1ee7a m\u00ecnh n\u1eefa. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: im l\u1eb7ng c\u1ee7a con th\u01b0\u1eddng kh\u00f4ng b\u1eaft \u0111\u1ea7u t\u1eeb vi\u1ec7c con kh\u00f4ng c\u00f3 g\u00ec \u0111\u1ec3 n\u00f3i, m\u00e0 t\u1eeb vi\u1ec7c con kh\u00f4ng c\u00f2n c\u1ea3m th\u1ea5y an to\u00e0n khi n\u00f3i ra \u0111i\u1ec1u th\u1eadt b\u00ean trong m\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-228",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-228",
     "number": 228,
-    "title": "Vì sao con không muốn nói thật cảm xúc",
-    "subtitle": "MAP này không được đi theo kiểu “con khó chia sẻ cảm xúc”, mà phải đi sâu vào việc vì sao con dần cảm thấy việc nói thật cảm xúc của mình là không an toàn, không được hiểu hoặc không còn ý nghĩa nữa. Trọng tâm là giúp cha mẹ hiểu: rất nhiều đứa trẻ không phải không có cảm xúc, mà là chúng đã học cách giấu cảm xúc thật để tự bảo vệ mình trong môi trường giao tiếp hiện tại của gia đình.",
+    "title": "V\u00ec sao con kh\u00f4ng mu\u1ed1n n\u00f3i th\u1eadt c\u1ea3m x\u00fac",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201ccon kh\u00f3 chia s\u1ebb c\u1ea3m x\u00fac\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c v\u00ec sao con d\u1ea7n c\u1ea3m th\u1ea5y vi\u1ec7c n\u00f3i th\u1eadt c\u1ea3m x\u00fac c\u1ee7a m\u00ecnh l\u00e0 kh\u00f4ng an to\u00e0n, kh\u00f4ng \u0111\u01b0\u1ee3c hi\u1ec3u ho\u1eb7c kh\u00f4ng c\u00f2n \u00fd ngh\u0129a n\u1eefa. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: r\u1ea5t nhi\u1ec1u \u0111\u1ee9a tr\u1ebb kh\u00f4ng ph\u1ea3i kh\u00f4ng c\u00f3 c\u1ea3m x\u00fac, m\u00e0 l\u00e0 ch\u00fang \u0111\u00e3 h\u1ecdc c\u00e1ch gi\u1ea5u c\u1ea3m x\u00fac th\u1eadt \u0111\u1ec3 t\u1ef1 b\u1ea3o v\u1ec7 m\u00ecnh trong m\u00f4i tr\u01b0\u1eddng giao ti\u1ebfp hi\u1ec7n t\u1ea1i c\u1ee7a gia \u0111\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-229",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-229",
     "number": 229,
-    "title": "Điều con thật sự muốn nghe từ bố mẹ",
-    "subtitle": "MAP này không được đi theo kiểu “nói lời yêu thương với con”, mà phải đi sâu vào việc bên dưới mọi hành vi, phản ứng và cảm xúc của con, thật ra con đang rất muốn được nghe điều gì từ bố mẹ để cảm thấy an toàn, được yêu thương và được công nhận đúng bản thân mình. Trọng tâm là giúp cha mẹ hiểu: nhiều khi điều chữa lành con sâu nhất không phải là vật chất hay kiểm soát, mà là những lời nói khiến con cảm thấy “mình được thấy, được hiểu và được yêu đúng cách”.",
+    "title": "\u0110i\u1ec1u con th\u1eadt s\u1ef1 mu\u1ed1n nghe t\u1eeb b\u1ed1 m\u1eb9",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201cn\u00f3i l\u1eddi y\u00eau th\u01b0\u01a1ng v\u1edbi con\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c b\u00ean d\u01b0\u1edbi m\u1ecdi h\u00e0nh vi, ph\u1ea3n \u1ee9ng v\u00e0 c\u1ea3m x\u00fac c\u1ee7a con, th\u1eadt ra con \u0111ang r\u1ea5t mu\u1ed1n \u0111\u01b0\u1ee3c nghe \u0111i\u1ec1u g\u00ec t\u1eeb b\u1ed1 m\u1eb9 \u0111\u1ec3 c\u1ea3m th\u1ea5y an to\u00e0n, \u0111\u01b0\u1ee3c y\u00eau th\u01b0\u01a1ng v\u00e0 \u0111\u01b0\u1ee3c c\u00f4ng nh\u1eadn \u0111\u00fang b\u1ea3n th\u00e2n m\u00ecnh. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: nhi\u1ec1u khi \u0111i\u1ec1u ch\u1eefa l\u00e0nh con s\u00e2u nh\u1ea5t kh\u00f4ng ph\u1ea3i l\u00e0 v\u1eadt ch\u1ea5t hay ki\u1ec3m so\u00e1t, m\u00e0 l\u00e0 nh\u1eefng l\u1eddi n\u00f3i khi\u1ebfn con c\u1ea3m th\u1ea5y \u201cm\u00ecnh \u0111\u01b0\u1ee3c th\u1ea5y, \u0111\u01b0\u1ee3c hi\u1ec3u v\u00e0 \u0111\u01b0\u1ee3c y\u00eau \u0111\u00fang c\u00e1ch\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-230",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-230",
     "number": 230,
-    "title": "Khi bố mẹ nói nhưng con chỉ nghe thấy áp lực",
-    "subtitle": "MAP này không được đi theo kiểu “bố mẹ tạo áp lực cho con”, mà phải đi sâu vào việc vì sao nhiều lời nhắc nhở, dạy dỗ, kỳ vọng hoặc quan tâm của bố mẹ khi đi vào nội tâm của con lại biến thành áp lực, lo sợ và cảm giác mình chưa đủ tốt. Trọng tâm là giúp cha mẹ hiểu: điều bố mẹ muốn truyền đi và điều con thật sự cảm nhận được đôi khi hoàn toàn khác nhau.",
+    "title": "Khi b\u1ed1 m\u1eb9 n\u00f3i nh\u01b0ng con ch\u1ec9 nghe th\u1ea5y \u00e1p l\u1ef1c",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201cb\u1ed1 m\u1eb9 t\u1ea1o \u00e1p l\u1ef1c cho con\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c v\u00ec sao nhi\u1ec1u l\u1eddi nh\u1eafc nh\u1edf, d\u1ea1y d\u1ed7, k\u1ef3 v\u1ecdng ho\u1eb7c quan t\u00e2m c\u1ee7a b\u1ed1 m\u1eb9 khi \u0111i v\u00e0o n\u1ed9i t\u00e2m c\u1ee7a con l\u1ea1i bi\u1ebfn th\u00e0nh \u00e1p l\u1ef1c, lo s\u1ee3 v\u00e0 c\u1ea3m gi\u00e1c m\u00ecnh ch\u01b0a \u0111\u1ee7 t\u1ed1t. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: \u0111i\u1ec1u b\u1ed1 m\u1eb9 mu\u1ed1n truy\u1ec1n \u0111i v\u00e0 \u0111i\u1ec1u con th\u1eadt s\u1ef1 c\u1ea3m nh\u1eadn \u0111\u01b0\u1ee3c \u0111\u00f4i khi ho\u00e0n to\u00e0n kh\u00e1c nhau.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-231",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-231",
     "number": 231,
-    "title": "Cách nói để con cảm thấy an toàn",
-    "subtitle": "MAP này không được đi theo kiểu “nói nhẹ nhàng với con”, mà phải đi sâu vào việc kiểu lời nói, cách phản hồi và cách hiện diện cảm xúc nào giúp con thật sự cảm thấy an toàn bên trong khi ở cạnh bố mẹ. Trọng tâm là giúp cha mẹ hiểu: trẻ chỉ thật sự mở lòng, phát triển tự nhiên và dám là chính mình khi cảm thấy lời nói của bố mẹ không làm mình sợ hãi, phòng thủ hay mất giá trị.",
+    "title": "C\u00e1ch n\u00f3i \u0111\u1ec3 con c\u1ea3m th\u1ea5y an to\u00e0n",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201cn\u00f3i nh\u1eb9 nh\u00e0ng v\u1edbi con\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c ki\u1ec3u l\u1eddi n\u00f3i, c\u00e1ch ph\u1ea3n h\u1ed3i v\u00e0 c\u00e1ch hi\u1ec7n di\u1ec7n c\u1ea3m x\u00fac n\u00e0o gi\u00fap con th\u1eadt s\u1ef1 c\u1ea3m th\u1ea5y an to\u00e0n b\u00ean trong khi \u1edf c\u1ea1nh b\u1ed1 m\u1eb9. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: tr\u1ebb ch\u1ec9 th\u1eadt s\u1ef1 m\u1edf l\u00f2ng, ph\u00e1t tri\u1ec3n t\u1ef1 nhi\u00ean v\u00e0 d\u00e1m l\u00e0 ch\u00ednh m\u00ecnh khi c\u1ea3m th\u1ea5y l\u1eddi n\u00f3i c\u1ee7a b\u1ed1 m\u1eb9 kh\u00f4ng l\u00e0m m\u00ecnh s\u1ee3 h\u00e3i, ph\u00f2ng th\u1ee7 hay m\u1ea5t gi\u00e1 tr\u1ecb.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-232",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-232",
     "number": 232,
-    "title": "Cách giúp con chủ động chia sẻ cảm xúc",
-    "subtitle": "MAP này không được đi theo kiểu “khuyến khích con nói nhiều hơn”, mà phải đi sâu vào việc điều gì giúp con thật sự muốn chủ động mở lòng, chia sẻ cảm xúc và tin rằng cảm xúc của mình sẽ được đón nhận an toàn. Trọng tâm là giúp cha mẹ hiểu: trẻ chỉ chủ động chia sẻ khi bên trong cảm thấy được lắng nghe, được tôn trọng và không phải phòng thủ trước phản ứng của người lớn.",
+    "title": "C\u00e1ch gi\u00fap con ch\u1ee7 \u0111\u1ed9ng chia s\u1ebb c\u1ea3m x\u00fac",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201ckhuy\u1ebfn kh\u00edch con n\u00f3i nhi\u1ec1u h\u01a1n\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c \u0111i\u1ec1u g\u00ec gi\u00fap con th\u1eadt s\u1ef1 mu\u1ed1n ch\u1ee7 \u0111\u1ed9ng m\u1edf l\u00f2ng, chia s\u1ebb c\u1ea3m x\u00fac v\u00e0 tin r\u1eb1ng c\u1ea3m x\u00fac c\u1ee7a m\u00ecnh s\u1ebd \u0111\u01b0\u1ee3c \u0111\u00f3n nh\u1eadn an to\u00e0n. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: tr\u1ebb ch\u1ec9 ch\u1ee7 \u0111\u1ed9ng chia s\u1ebb khi b\u00ean trong c\u1ea3m th\u1ea5y \u0111\u01b0\u1ee3c l\u1eafng nghe, \u0111\u01b0\u1ee3c t\u00f4n tr\u1ecdng v\u00e0 kh\u00f4ng ph\u1ea3i ph\u00f2ng th\u1ee7 tr\u01b0\u1edbc ph\u1ea3n \u1ee9ng c\u1ee7a ng\u01b0\u1eddi l\u1edbn.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-233",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-233",
     "number": 233,
-    "title": "Điều cần thay đổi trong giao tiếp gia đình",
-    "subtitle": "MAP này không được đi theo kiểu “cải thiện cách nói chuyện trong gia đình”, mà phải đi sâu vào việc những kiểu giao tiếp nào đang âm thầm làm mất kết nối cảm xúc, tạo áp lực, khiến các thành viên ngày càng không hiểu nhau và điều gì thật sự cần được thay đổi từ gốc để gia đình có thể kết nối lại một cách an toàn. Trọng tâm là giúp cha mẹ hiểu: vấn đề của gia đình nhiều khi không nằm ở việc “có yêu nhau hay không”, mà nằm ở cách mọi người đang giao tiếp với nhau mỗi ngày.",
+    "title": "\u0110i\u1ec1u c\u1ea7n thay \u0111\u1ed5i trong giao ti\u1ebfp gia \u0111\u00ecnh",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201cc\u1ea3i thi\u1ec7n c\u00e1ch n\u00f3i chuy\u1ec7n trong gia \u0111\u00ecnh\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c nh\u1eefng ki\u1ec3u giao ti\u1ebfp n\u00e0o \u0111ang \u00e2m th\u1ea7m l\u00e0m m\u1ea5t k\u1ebft n\u1ed1i c\u1ea3m x\u00fac, t\u1ea1o \u00e1p l\u1ef1c, khi\u1ebfn c\u00e1c th\u00e0nh vi\u00ean ng\u00e0y c\u00e0ng kh\u00f4ng hi\u1ec3u nhau v\u00e0 \u0111i\u1ec1u g\u00ec th\u1eadt s\u1ef1 c\u1ea7n \u0111\u01b0\u1ee3c thay \u0111\u1ed5i t\u1eeb g\u1ed1c \u0111\u1ec3 gia \u0111\u00ecnh c\u00f3 th\u1ec3 k\u1ebft n\u1ed1i l\u1ea1i m\u1ed9t c\u00e1ch an to\u00e0n. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: v\u1ea5n \u0111\u1ec1 c\u1ee7a gia \u0111\u00ecnh nhi\u1ec1u khi kh\u00f4ng n\u1eb1m \u1edf vi\u1ec7c \u201cc\u00f3 y\u00eau nhau hay kh\u00f4ng\u201d, m\u00e0 n\u1eb1m \u1edf c\u00e1ch m\u1ecdi ng\u01b0\u1eddi \u0111ang giao ti\u1ebfp v\u1edbi nhau m\u1ed7i ng\u00e0y.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-234",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-234",
     "number": 234,
-    "title": "Cách góp ý để con không cảm thấy bị tấn công",
-    "subtitle": "MAP này không được đi theo kiểu “dạy bố mẹ nói nhẹ nhàng hơn”, mà phải đi sâu vào việc vì sao nhiều lời góp ý của bố mẹ dù có ý tốt nhưng khi đi vào nội tâm của con lại trở thành cảm giác bị chê trách, bị phủ nhận hoặc bị tấn công cảm xúc. Trọng tâm là giúp cha mẹ hiểu: điều làm con tổn thương nhiều khi không phải nội dung góp ý, mà là cách con cảm nhận giá trị bản thân mình trong lúc được góp ý.",
+    "title": "C\u00e1ch g\u00f3p \u00fd \u0111\u1ec3 con kh\u00f4ng c\u1ea3m th\u1ea5y b\u1ecb t\u1ea5n c\u00f4ng",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201cd\u1ea1y b\u1ed1 m\u1eb9 n\u00f3i nh\u1eb9 nh\u00e0ng h\u01a1n\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c v\u00ec sao nhi\u1ec1u l\u1eddi g\u00f3p \u00fd c\u1ee7a b\u1ed1 m\u1eb9 d\u00f9 c\u00f3 \u00fd t\u1ed1t nh\u01b0ng khi \u0111i v\u00e0o n\u1ed9i t\u00e2m c\u1ee7a con l\u1ea1i tr\u1edf th\u00e0nh c\u1ea3m gi\u00e1c b\u1ecb ch\u00ea tr\u00e1ch, b\u1ecb ph\u1ee7 nh\u1eadn ho\u1eb7c b\u1ecb t\u1ea5n c\u00f4ng c\u1ea3m x\u00fac. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: \u0111i\u1ec1u l\u00e0m con t\u1ed5n th\u01b0\u01a1ng nhi\u1ec1u khi kh\u00f4ng ph\u1ea3i n\u1ed9i dung g\u00f3p \u00fd, m\u00e0 l\u00e0 c\u00e1ch con c\u1ea3m nh\u1eadn gi\u00e1 tr\u1ecb b\u1ea3n th\u00e2n m\u00ecnh trong l\u00fac \u0111\u01b0\u1ee3c g\u00f3p \u00fd.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-235",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-235",
     "number": 235,
-    "title": "Cách lắng nghe để con cảm thấy được tôn trọng",
-    "subtitle": "MAP này không được đi theo kiểu “nghe con nói”, mà phải đi sâu vào việc kiểu lắng nghe nào khiến con thật sự cảm thấy cảm xúc, suy nghĩ và con người của mình được tôn trọng thay vì bị xem nhẹ, sửa ngay hoặc phủ nhận. Trọng tâm là giúp cha mẹ hiểu: nhiều đứa trẻ không cần bố mẹ giải quyết mọi vấn đề ngay lập tức, mà cần cảm giác “mình đang được lắng nghe thật sự”.",
+    "title": "C\u00e1ch l\u1eafng nghe \u0111\u1ec3 con c\u1ea3m th\u1ea5y \u0111\u01b0\u1ee3c t\u00f4n tr\u1ecdng",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201cnghe con n\u00f3i\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c ki\u1ec3u l\u1eafng nghe n\u00e0o khi\u1ebfn con th\u1eadt s\u1ef1 c\u1ea3m th\u1ea5y c\u1ea3m x\u00fac, suy ngh\u0129 v\u00e0 con ng\u01b0\u1eddi c\u1ee7a m\u00ecnh \u0111\u01b0\u1ee3c t\u00f4n tr\u1ecdng thay v\u00ec b\u1ecb xem nh\u1eb9, s\u1eeda ngay ho\u1eb7c ph\u1ee7 nh\u1eadn. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: nhi\u1ec1u \u0111\u1ee9a tr\u1ebb kh\u00f4ng c\u1ea7n b\u1ed1 m\u1eb9 gi\u1ea3i quy\u1ebft m\u1ecdi v\u1ea5n \u0111\u1ec1 ngay l\u1eadp t\u1ee9c, m\u00e0 c\u1ea7n c\u1ea3m gi\u00e1c \u201cm\u00ecnh \u0111ang \u0111\u01b0\u1ee3c l\u1eafng nghe th\u1eadt s\u1ef1\u201d.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-236",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-236",
     "number": 236,
-    "title": "Ảnh hưởng của năng lượng người cha lên con",
-    "subtitle": "MAP này không được đi theo kiểu “vai trò của bố trong gia đình”, mà phải đi sâu vào việc năng lượng, cách hiện diện, cảm xúc, cách giao tiếp và trạng thái nội tâm của người cha đang âm thầm ảnh hưởng lên thế giới bên trong của con như thế nào. Trọng tâm là giúp cha mẹ hiểu: nhiều niềm tin, cảm xúc, sự tự tin, cách phản ứng và cảm giác giá trị của con được hình thành rất mạnh từ mối liên kết với người cha.",
+    "title": "\u1ea2nh h\u01b0\u1edfng c\u1ee7a n\u0103ng l\u01b0\u1ee3ng ng\u01b0\u1eddi cha l\u00ean con",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201cvai tr\u00f2 c\u1ee7a b\u1ed1 trong gia \u0111\u00ecnh\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c n\u0103ng l\u01b0\u1ee3ng, c\u00e1ch hi\u1ec7n di\u1ec7n, c\u1ea3m x\u00fac, c\u00e1ch giao ti\u1ebfp v\u00e0 tr\u1ea1ng th\u00e1i n\u1ed9i t\u00e2m c\u1ee7a ng\u01b0\u1eddi cha \u0111ang \u00e2m th\u1ea7m \u1ea3nh h\u01b0\u1edfng l\u00ean th\u1ebf gi\u1edbi b\u00ean trong c\u1ee7a con nh\u01b0 th\u1ebf n\u00e0o. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: nhi\u1ec1u ni\u1ec1m tin, c\u1ea3m x\u00fac, s\u1ef1 t\u1ef1 tin, c\u00e1ch ph\u1ea3n \u1ee9ng v\u00e0 c\u1ea3m gi\u00e1c gi\u00e1 tr\u1ecb c\u1ee7a con \u0111\u01b0\u1ee3c h\u00ecnh th\u00e0nh r\u1ea5t m\u1ea1nh t\u1eeb m\u1ed1i li\u00ean k\u1ebft v\u1edbi ng\u01b0\u1eddi cha.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-237",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-237",
     "number": 237,
-    "title": "Ảnh hưởng của năng lượng người mẹ lên con",
-    "subtitle": "MAP này không được đi theo kiểu “vai trò của mẹ trong việc chăm con”, mà phải đi sâu vào việc năng lượng cảm xúc, cách yêu thương, cách phản ứng và trạng thái nội tâm của người mẹ đang âm thầm tạo nên thế giới cảm xúc bên trong con như thế nào. Trọng tâm là giúp cha mẹ hiểu: rất nhiều cảm giác an toàn, giá trị bản thân, khả năng yêu thương chính mình và cách con kết nối cảm xúc với thế giới được hình thành từ mối liên kết với người mẹ.",
+    "title": "\u1ea2nh h\u01b0\u1edfng c\u1ee7a n\u0103ng l\u01b0\u1ee3ng ng\u01b0\u1eddi m\u1eb9 l\u00ean con",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201cvai tr\u00f2 c\u1ee7a m\u1eb9 trong vi\u1ec7c ch\u0103m con\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c n\u0103ng l\u01b0\u1ee3ng c\u1ea3m x\u00fac, c\u00e1ch y\u00eau th\u01b0\u01a1ng, c\u00e1ch ph\u1ea3n \u1ee9ng v\u00e0 tr\u1ea1ng th\u00e1i n\u1ed9i t\u00e2m c\u1ee7a ng\u01b0\u1eddi m\u1eb9 \u0111ang \u00e2m th\u1ea7m t\u1ea1o n\u00ean th\u1ebf gi\u1edbi c\u1ea3m x\u00fac b\u00ean trong con nh\u01b0 th\u1ebf n\u00e0o. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: r\u1ea5t nhi\u1ec1u c\u1ea3m gi\u00e1c an to\u00e0n, gi\u00e1 tr\u1ecb b\u1ea3n th\u00e2n, kh\u1ea3 n\u0103ng y\u00eau th\u01b0\u01a1ng ch\u00ednh m\u00ecnh v\u00e0 c\u00e1ch con k\u1ebft n\u1ed1i c\u1ea3m x\u00fac v\u1edbi th\u1ebf gi\u1edbi \u0111\u01b0\u1ee3c h\u00ecnh th\u00e0nh t\u1eeb m\u1ed1i li\u00ean k\u1ebft v\u1edbi ng\u01b0\u1eddi m\u1eb9.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-238",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-238",
     "number": 238,
-    "title": "Điều con đang thiếu từ cha",
-    "subtitle": "MAP này không được đi theo kiểu “cha chưa dành đủ thời gian cho con”, mà phải đi sâu vào việc bên trong nội tâm con đang thiếu điều gì từ năng lượng, sự hiện diện, sự công nhận và kết nối cảm xúc với người cha. Trọng tâm là giúp cha mẹ hiểu: nhiều hành vi, cảm xúc và khoảng trống bên trong con thật ra xuất phát từ những nhu cầu sâu mà con chưa nhận đủ từ cha trong quá trình trưởng thành.",
+    "title": "\u0110i\u1ec1u con \u0111ang thi\u1ebfu t\u1eeb cha",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201ccha ch\u01b0a d\u00e0nh \u0111\u1ee7 th\u1eddi gian cho con\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c b\u00ean trong n\u1ed9i t\u00e2m con \u0111ang thi\u1ebfu \u0111i\u1ec1u g\u00ec t\u1eeb n\u0103ng l\u01b0\u1ee3ng, s\u1ef1 hi\u1ec7n di\u1ec7n, s\u1ef1 c\u00f4ng nh\u1eadn v\u00e0 k\u1ebft n\u1ed1i c\u1ea3m x\u00fac v\u1edbi ng\u01b0\u1eddi cha. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: nhi\u1ec1u h\u00e0nh vi, c\u1ea3m x\u00fac v\u00e0 kho\u1ea3ng tr\u1ed1ng b\u00ean trong con th\u1eadt ra xu\u1ea5t ph\u00e1t t\u1eeb nh\u1eefng nhu c\u1ea7u s\u00e2u m\u00e0 con ch\u01b0a nh\u1eadn \u0111\u1ee7 t\u1eeb cha trong qu\u00e1 tr\u00ecnh tr\u01b0\u1edfng th\u00e0nh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-239",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-239",
     "number": 239,
-    "title": "Điều con đang thiếu từ mẹ",
-    "subtitle": "MAP này không được đi theo kiểu “mẹ chưa chăm con đủ”, mà phải đi sâu vào việc bên trong nội tâm con đang thiếu điều gì từ năng lượng cảm xúc, sự ôm ấp, sự chấp nhận, sự lắng nghe và kết nối an toàn với người mẹ. Trọng tâm là giúp cha mẹ hiểu: nhiều cảm xúc, hành vi và nỗi bất an của con thật ra xuất phát từ những nhu cầu sâu mà con chưa nhận đủ từ mẹ trong quá trình trưởng thành.",
+    "title": "\u0110i\u1ec1u con \u0111ang thi\u1ebfu t\u1eeb m\u1eb9",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201cm\u1eb9 ch\u01b0a ch\u0103m con \u0111\u1ee7\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c b\u00ean trong n\u1ed9i t\u00e2m con \u0111ang thi\u1ebfu \u0111i\u1ec1u g\u00ec t\u1eeb n\u0103ng l\u01b0\u1ee3ng c\u1ea3m x\u00fac, s\u1ef1 \u00f4m \u1ea5p, s\u1ef1 ch\u1ea5p nh\u1eadn, s\u1ef1 l\u1eafng nghe v\u00e0 k\u1ebft n\u1ed1i an to\u00e0n v\u1edbi ng\u01b0\u1eddi m\u1eb9. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: nhi\u1ec1u c\u1ea3m x\u00fac, h\u00e0nh vi v\u00e0 n\u1ed7i b\u1ea5t an c\u1ee7a con th\u1eadt ra xu\u1ea5t ph\u00e1t t\u1eeb nh\u1eefng nhu c\u1ea7u s\u00e2u m\u00e0 con ch\u01b0a nh\u1eadn \u0111\u1ee7 t\u1eeb m\u1eb9 trong qu\u00e1 tr\u00ecnh tr\u01b0\u1edfng th\u00e0nh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-240",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-240",
     "number": 240,
-    "title": "Khi cha mẹ yêu con theo hai cách khác nhau",
-    "subtitle": "MAP này không được đi theo kiểu “mỗi người một cách dạy con”, mà phải đi sâu vào việc khi cha và mẹ mang hai kiểu yêu thương, giao tiếp, kỳ vọng và kết nối khác nhau thì nội tâm của con sẽ hấp thụ, phản ứng và phát triển như thế nào. Trọng tâm là giúp cha mẹ hiểu: sự khác biệt trong cách yêu của cha và mẹ có thể vừa giúp con cân bằng hơn, nhưng cũng có thể tạo ra mâu thuẫn nội tâm, áp lực hoặc cảm giác mất an toàn nếu không được đồng hành đúng cách.",
+    "title": "Khi cha m\u1eb9 y\u00eau con theo hai c\u00e1ch kh\u00e1c nhau",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201cm\u1ed7i ng\u01b0\u1eddi m\u1ed9t c\u00e1ch d\u1ea1y con\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c khi cha v\u00e0 m\u1eb9 mang hai ki\u1ec3u y\u00eau th\u01b0\u01a1ng, giao ti\u1ebfp, k\u1ef3 v\u1ecdng v\u00e0 k\u1ebft n\u1ed1i kh\u00e1c nhau th\u00ec n\u1ed9i t\u00e2m c\u1ee7a con s\u1ebd h\u1ea5p th\u1ee5, ph\u1ea3n \u1ee9ng v\u00e0 ph\u00e1t tri\u1ec3n nh\u01b0 th\u1ebf n\u00e0o. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: s\u1ef1 kh\u00e1c bi\u1ec7t trong c\u00e1ch y\u00eau c\u1ee7a cha v\u00e0 m\u1eb9 c\u00f3 th\u1ec3 v\u1eeba gi\u00fap con c\u00e2n b\u1eb1ng h\u01a1n, nh\u01b0ng c\u0169ng c\u00f3 th\u1ec3 t\u1ea1o ra m\u00e2u thu\u1eabn n\u1ed9i t\u00e2m, \u00e1p l\u1ef1c ho\u1eb7c c\u1ea3m gi\u00e1c m\u1ea5t an to\u00e0n n\u1ebfu kh\u00f4ng \u0111\u01b0\u1ee3c \u0111\u1ed3ng h\u00e0nh \u0111\u00fang c\u00e1ch.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-241",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-241",
     "number": 241,
-    "title": "Khi con gần mẹ hơn cha",
-    "subtitle": "MAP này không được đi theo kiểu “con hợp mẹ hơn bố”, mà phải đi sâu vào việc vì sao con hình thành sự gắn bó cảm xúc mạnh với mẹ hơn cha, điều đó đang phản ánh điều gì trong nội tâm con và trong hệ thống gia đình. Trọng tâm là giúp cha mẹ hiểu: việc con gần mẹ hơn cha không đơn giản chỉ là thói quen, mà thường liên quan đến cảm giác an toàn, khả năng mở lòng, kiểu kết nối cảm xúc và nhu cầu sâu bên trong của con.",
+    "title": "Khi con g\u1ea7n m\u1eb9 h\u01a1n cha",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201ccon h\u1ee3p m\u1eb9 h\u01a1n b\u1ed1\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c v\u00ec sao con h\u00ecnh th\u00e0nh s\u1ef1 g\u1eafn b\u00f3 c\u1ea3m x\u00fac m\u1ea1nh v\u1edbi m\u1eb9 h\u01a1n cha, \u0111i\u1ec1u \u0111\u00f3 \u0111ang ph\u1ea3n \u00e1nh \u0111i\u1ec1u g\u00ec trong n\u1ed9i t\u00e2m con v\u00e0 trong h\u1ec7 th\u1ed1ng gia \u0111\u00ecnh. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: vi\u1ec7c con g\u1ea7n m\u1eb9 h\u01a1n cha kh\u00f4ng \u0111\u01a1n gi\u1ea3n ch\u1ec9 l\u00e0 th\u00f3i quen, m\u00e0 th\u01b0\u1eddng li\u00ean quan \u0111\u1ebfn c\u1ea3m gi\u00e1c an to\u00e0n, kh\u1ea3 n\u0103ng m\u1edf l\u00f2ng, ki\u1ec3u k\u1ebft n\u1ed1i c\u1ea3m x\u00fac v\u00e0 nhu c\u1ea7u s\u00e2u b\u00ean trong c\u1ee7a con.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-242",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-242",
     "number": 242,
-    "title": "Khi con gần cha hơn mẹ",
-    "subtitle": "MAP này không được đi theo kiểu “con hợp bố hơn mẹ”, mà phải đi sâu vào việc vì sao con hình thành sự gắn bó cảm xúc mạnh với cha hơn mẹ, điều đó đang phản ánh điều gì trong nội tâm con và trong hệ thống gia đình. Trọng tâm là giúp cha mẹ hiểu: việc con gần cha hơn mẹ không đơn giản chỉ là tính cách hay sở thích, mà thường liên quan đến cảm giác được công nhận, kiểu kết nối cảm xúc, nhu cầu an toàn và cách con đang tìm kiếm sự đồng hành bên trong.",
+    "title": "Khi con g\u1ea7n cha h\u01a1n m\u1eb9",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201ccon h\u1ee3p b\u1ed1 h\u01a1n m\u1eb9\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c v\u00ec sao con h\u00ecnh th\u00e0nh s\u1ef1 g\u1eafn b\u00f3 c\u1ea3m x\u00fac m\u1ea1nh v\u1edbi cha h\u01a1n m\u1eb9, \u0111i\u1ec1u \u0111\u00f3 \u0111ang ph\u1ea3n \u00e1nh \u0111i\u1ec1u g\u00ec trong n\u1ed9i t\u00e2m con v\u00e0 trong h\u1ec7 th\u1ed1ng gia \u0111\u00ecnh. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: vi\u1ec7c con g\u1ea7n cha h\u01a1n m\u1eb9 kh\u00f4ng \u0111\u01a1n gi\u1ea3n ch\u1ec9 l\u00e0 t\u00ednh c\u00e1ch hay s\u1edf th\u00edch, m\u00e0 th\u01b0\u1eddng li\u00ean quan \u0111\u1ebfn c\u1ea3m gi\u00e1c \u0111\u01b0\u1ee3c c\u00f4ng nh\u1eadn, ki\u1ec3u k\u1ebft n\u1ed1i c\u1ea3m x\u00fac, nhu c\u1ea7u an to\u00e0n v\u00e0 c\u00e1ch con \u0111ang t\u00ecm ki\u1ebfm s\u1ef1 \u0111\u1ed3ng h\u00e0nh b\u00ean trong.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-243",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-243",
     "number": 243,
-    "title": "Mô thức gia đình ảnh hưởng đến sự phát triển của con",
-    "subtitle": "MAP này không được đi theo kiểu “gia đình tốt hay xấu”, mà phải đi sâu vào việc mô thức vận hành của gia đình đang âm thầm tạo nên cách suy nghĩ, cảm xúc, phản ứng và sự phát triển nội tâm của con như thế nào. Trọng tâm là giúp cha mẹ nhìn ra: con không chỉ lớn lên bằng lời dạy, mà còn lớn lên bằng năng lượng, thói quen, cách giao tiếp, kiểu yêu thương, kiểu xung đột và trạng thái sống lặp đi lặp lại trong gia đình mỗi ngày.",
+    "title": "M\u00f4 th\u1ee9c gia \u0111\u00ecnh \u1ea3nh h\u01b0\u1edfng \u0111\u1ebfn s\u1ef1 ph\u00e1t tri\u1ec3n c\u1ee7a con",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201cgia \u0111\u00ecnh t\u1ed1t hay x\u1ea5u\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c m\u00f4 th\u1ee9c v\u1eadn h\u00e0nh c\u1ee7a gia \u0111\u00ecnh \u0111ang \u00e2m th\u1ea7m t\u1ea1o n\u00ean c\u00e1ch suy ngh\u0129, c\u1ea3m x\u00fac, ph\u1ea3n \u1ee9ng v\u00e0 s\u1ef1 ph\u00e1t tri\u1ec3n n\u1ed9i t\u00e2m c\u1ee7a con nh\u01b0 th\u1ebf n\u00e0o. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 nh\u00ecn ra: con kh\u00f4ng ch\u1ec9 l\u1edbn l\u00ean b\u1eb1ng l\u1eddi d\u1ea1y, m\u00e0 c\u00f2n l\u1edbn l\u00ean b\u1eb1ng n\u0103ng l\u01b0\u1ee3ng, th\u00f3i quen, c\u00e1ch giao ti\u1ebfp, ki\u1ec3u y\u00eau th\u01b0\u01a1ng, ki\u1ec3u xung \u0111\u1ed9t v\u00e0 tr\u1ea1ng th\u00e1i s\u1ed1ng l\u1eb7p \u0111i l\u1eb7p l\u1ea1i trong gia \u0111\u00ecnh m\u1ed7i ng\u00e0y.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-244",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-244",
     "number": 244,
-    "title": "Vai trò cảm xúc của cha trong nội tâm con",
-    "subtitle": "MAP này không được đi theo kiểu “người cha là trụ cột”, mà phải đi sâu vào vai trò cảm xúc thật sự của người cha bên trong thế giới nội tâm của con. Trọng tâm là giúp cha mẹ hiểu: người cha không chỉ ảnh hưởng đến kỷ luật hay sự mạnh mẽ, mà còn ảnh hưởng rất sâu đến lòng tự trọng, cảm giác được công nhận, sự tự tin, khả năng bước ra thế giới và cách con nhìn nhận giá trị của chính mình.",
+    "title": "Vai tr\u00f2 c\u1ea3m x\u00fac c\u1ee7a cha trong n\u1ed9i t\u00e2m con",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201cng\u01b0\u1eddi cha l\u00e0 tr\u1ee5 c\u1ed9t\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vai tr\u00f2 c\u1ea3m x\u00fac th\u1eadt s\u1ef1 c\u1ee7a ng\u01b0\u1eddi cha b\u00ean trong th\u1ebf gi\u1edbi n\u1ed9i t\u00e2m c\u1ee7a con. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: ng\u01b0\u1eddi cha kh\u00f4ng ch\u1ec9 \u1ea3nh h\u01b0\u1edfng \u0111\u1ebfn k\u1ef7 lu\u1eadt hay s\u1ef1 m\u1ea1nh m\u1ebd, m\u00e0 c\u00f2n \u1ea3nh h\u01b0\u1edfng r\u1ea5t s\u00e2u \u0111\u1ebfn l\u00f2ng t\u1ef1 tr\u1ecdng, c\u1ea3m gi\u00e1c \u0111\u01b0\u1ee3c c\u00f4ng nh\u1eadn, s\u1ef1 t\u1ef1 tin, kh\u1ea3 n\u0103ng b\u01b0\u1edbc ra th\u1ebf gi\u1edbi v\u00e0 c\u00e1ch con nh\u00ecn nh\u1eadn gi\u00e1 tr\u1ecb c\u1ee7a ch\u00ednh m\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-245",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-245",
     "number": 245,
-    "title": "Vai trò cảm xúc của mẹ trong nội tâm con",
-    "subtitle": "MAP này không được đi theo kiểu “mẹ là người yêu thương con nhất”, mà phải đi sâu vào vai trò cảm xúc thật sự của người mẹ bên trong thế giới nội tâm của con. Trọng tâm là giúp cha mẹ hiểu: người mẹ không chỉ ảnh hưởng đến sự chăm sóc hay nuôi dưỡng, mà còn ảnh hưởng rất sâu đến cảm giác an toàn, khả năng yêu bản thân, cách con kết nối cảm xúc và cách con cảm nhận mình có xứng đáng được yêu hay không.",
+    "title": "Vai tr\u00f2 c\u1ea3m x\u00fac c\u1ee7a m\u1eb9 trong n\u1ed9i t\u00e2m con",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201cm\u1eb9 l\u00e0 ng\u01b0\u1eddi y\u00eau th\u01b0\u01a1ng con nh\u1ea5t\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vai tr\u00f2 c\u1ea3m x\u00fac th\u1eadt s\u1ef1 c\u1ee7a ng\u01b0\u1eddi m\u1eb9 b\u00ean trong th\u1ebf gi\u1edbi n\u1ed9i t\u00e2m c\u1ee7a con. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: ng\u01b0\u1eddi m\u1eb9 kh\u00f4ng ch\u1ec9 \u1ea3nh h\u01b0\u1edfng \u0111\u1ebfn s\u1ef1 ch\u0103m s\u00f3c hay nu\u00f4i d\u01b0\u1ee1ng, m\u00e0 c\u00f2n \u1ea3nh h\u01b0\u1edfng r\u1ea5t s\u00e2u \u0111\u1ebfn c\u1ea3m gi\u00e1c an to\u00e0n, kh\u1ea3 n\u0103ng y\u00eau b\u1ea3n th\u00e2n, c\u00e1ch con k\u1ebft n\u1ed1i c\u1ea3m x\u00fac v\u00e0 c\u00e1ch con c\u1ea3m nh\u1eadn m\u00ecnh c\u00f3 x\u1ee9ng \u0111\u00e1ng \u0111\u01b0\u1ee3c y\u00eau hay kh\u00f4ng.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-246",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-246",
     "number": 246,
-    "title": "Khi cha vắng mặt về cảm xúc",
-    "subtitle": "MAP này không được đi theo kiểu “cha không quan tâm con”, mà phải đi sâu vào trạng thái người cha vẫn có mặt trong gia đình nhưng lại thiếu hiện diện cảm xúc trong thế giới nội tâm của con. Trọng tâm là giúp cha mẹ hiểu: một người cha có thể vẫn đi làm, chăm lo trách nhiệm và sống cùng gia đình, nhưng nếu thiếu kết nối cảm xúc thật sự thì bên trong con vẫn có thể hình thành khoảng trống rất lớn liên quan đến sự công nhận, điểm tựa và giá trị bản thân.",
+    "title": "Khi cha v\u1eafng m\u1eb7t v\u1ec1 c\u1ea3m x\u00fac",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201ccha kh\u00f4ng quan t\u00e2m con\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o tr\u1ea1ng th\u00e1i ng\u01b0\u1eddi cha v\u1eabn c\u00f3 m\u1eb7t trong gia \u0111\u00ecnh nh\u01b0ng l\u1ea1i thi\u1ebfu hi\u1ec7n di\u1ec7n c\u1ea3m x\u00fac trong th\u1ebf gi\u1edbi n\u1ed9i t\u00e2m c\u1ee7a con. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: m\u1ed9t ng\u01b0\u1eddi cha c\u00f3 th\u1ec3 v\u1eabn \u0111i l\u00e0m, ch\u0103m lo tr\u00e1ch nhi\u1ec7m v\u00e0 s\u1ed1ng c\u00f9ng gia \u0111\u00ecnh, nh\u01b0ng n\u1ebfu thi\u1ebfu k\u1ebft n\u1ed1i c\u1ea3m x\u00fac th\u1eadt s\u1ef1 th\u00ec b\u00ean trong con v\u1eabn c\u00f3 th\u1ec3 h\u00ecnh th\u00e0nh kho\u1ea3ng tr\u1ed1ng r\u1ea5t l\u1edbn li\u00ean quan \u0111\u1ebfn s\u1ef1 c\u00f4ng nh\u1eadn, \u0111i\u1ec3m t\u1ef1a v\u00e0 gi\u00e1 tr\u1ecb b\u1ea3n th\u00e2n.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-247",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-247",
     "number": 247,
-    "title": "Khi mẹ quá lo lắng hoặc kiểm soát",
-    "subtitle": "MAP này không được đi theo kiểu “mẹ thương con nên lo”, mà phải đi sâu vào việc khi tình yêu của mẹ đi kèm quá nhiều lo lắng, kiểm soát, sợ hãi hoặc can thiệp quá mức thì nội tâm của con sẽ hấp thụ điều gì và phát triển theo hướng nào. Trọng tâm là giúp cha mẹ hiểu: lo lắng của mẹ nếu không được điều hòa có thể trở thành áp lực cảm xúc khiến con mất tự do, mất tự tin hoặc luôn cảm thấy mình không đủ khả năng tự bước đi.",
+    "title": "Khi m\u1eb9 qu\u00e1 lo l\u1eafng ho\u1eb7c ki\u1ec3m so\u00e1t",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201cm\u1eb9 th\u01b0\u01a1ng con n\u00ean lo\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c khi t\u00ecnh y\u00eau c\u1ee7a m\u1eb9 \u0111i k\u00e8m qu\u00e1 nhi\u1ec1u lo l\u1eafng, ki\u1ec3m so\u00e1t, s\u1ee3 h\u00e3i ho\u1eb7c can thi\u1ec7p qu\u00e1 m\u1ee9c th\u00ec n\u1ed9i t\u00e2m c\u1ee7a con s\u1ebd h\u1ea5p th\u1ee5 \u0111i\u1ec1u g\u00ec v\u00e0 ph\u00e1t tri\u1ec3n theo h\u01b0\u1edbng n\u00e0o. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: lo l\u1eafng c\u1ee7a m\u1eb9 n\u1ebfu kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i\u1ec1u h\u00f2a c\u00f3 th\u1ec3 tr\u1edf th\u00e0nh \u00e1p l\u1ef1c c\u1ea3m x\u00fac khi\u1ebfn con m\u1ea5t t\u1ef1 do, m\u1ea5t t\u1ef1 tin ho\u1eb7c lu\u00f4n c\u1ea3m th\u1ea5y m\u00ecnh kh\u00f4ng \u0111\u1ee7 kh\u1ea3 n\u0103ng t\u1ef1 b\u01b0\u1edbc \u0111i.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-248",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-248",
     "number": 248,
-    "title": "Khi con bị kéo lệch giữa hai cách nuôi dạy",
-    "subtitle": "MAP này không được đi theo kiểu “cha mẹ không thống nhất cách dạy con”, mà phải đi sâu vào việc khi con sống giữa hai cách nuôi dạy khác nhau, hai kiểu phản ứng khác nhau và hai hệ kỳ vọng khác nhau thì nội tâm của con bị kéo lệch như thế nào. Trọng tâm là giúp cha mẹ hiểu: con không chỉ nghe lời cha hoặc mẹ, mà còn hấp thụ sự lệch nhịp giữa hai người, từ đó hình thành áp lực, mâu thuẫn nội tâm, sự thích nghi quá mức hoặc cảm giác không biết phải sống theo hướng nào mới được yêu thương và công nhận.",
+    "title": "Khi con b\u1ecb k\u00e9o l\u1ec7ch gi\u1eefa hai c\u00e1ch nu\u00f4i d\u1ea1y",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201ccha m\u1eb9 kh\u00f4ng th\u1ed1ng nh\u1ea5t c\u00e1ch d\u1ea1y con\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c khi con s\u1ed1ng gi\u1eefa hai c\u00e1ch nu\u00f4i d\u1ea1y kh\u00e1c nhau, hai ki\u1ec3u ph\u1ea3n \u1ee9ng kh\u00e1c nhau v\u00e0 hai h\u1ec7 k\u1ef3 v\u1ecdng kh\u00e1c nhau th\u00ec n\u1ed9i t\u00e2m c\u1ee7a con b\u1ecb k\u00e9o l\u1ec7ch nh\u01b0 th\u1ebf n\u00e0o. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: con kh\u00f4ng ch\u1ec9 nghe l\u1eddi cha ho\u1eb7c m\u1eb9, m\u00e0 c\u00f2n h\u1ea5p th\u1ee5 s\u1ef1 l\u1ec7ch nh\u1ecbp gi\u1eefa hai ng\u01b0\u1eddi, t\u1eeb \u0111\u00f3 h\u00ecnh th\u00e0nh \u00e1p l\u1ef1c, m\u00e2u thu\u1eabn n\u1ed9i t\u00e2m, s\u1ef1 th\u00edch nghi qu\u00e1 m\u1ee9c ho\u1eb7c c\u1ea3m gi\u00e1c kh\u00f4ng bi\u1ebft ph\u1ea3i s\u1ed1ng theo h\u01b0\u1edbng n\u00e0o m\u1edbi \u0111\u01b0\u1ee3c y\u00eau th\u01b0\u01a1ng v\u00e0 c\u00f4ng nh\u1eadn.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-249",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-249",
     "number": 249,
-    "title": "Cách cân bằng vai trò cha và mẹ",
-    "subtitle": "MAP này không được đi theo kiểu “cha mẹ chia việc nuôi con cho đều”, mà phải đi sâu vào việc làm sao để vai trò của cha và mẹ trong nội tâm con được cân bằng về cảm xúc, sự hiện diện, sự công nhận, sự bảo vệ, sự ôm ấp và định hướng phát triển. Trọng tâm là giúp cha mẹ hiểu: con cần cả hai nguồn năng lượng khác nhau nhưng bổ sung cho nhau, để vừa có cảm giác an toàn, vừa có điểm tựa, vừa được yêu thương, vừa được phát triển độc lập.",
+    "title": "C\u00e1ch c\u00e2n b\u1eb1ng vai tr\u00f2 cha v\u00e0 m\u1eb9",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c \u0111i theo ki\u1ec3u \u201ccha m\u1eb9 chia vi\u1ec7c nu\u00f4i con cho \u0111\u1ec1u\u201d, m\u00e0 ph\u1ea3i \u0111i s\u00e2u v\u00e0o vi\u1ec7c l\u00e0m sao \u0111\u1ec3 vai tr\u00f2 c\u1ee7a cha v\u00e0 m\u1eb9 trong n\u1ed9i t\u00e2m con \u0111\u01b0\u1ee3c c\u00e2n b\u1eb1ng v\u1ec1 c\u1ea3m x\u00fac, s\u1ef1 hi\u1ec7n di\u1ec7n, s\u1ef1 c\u00f4ng nh\u1eadn, s\u1ef1 b\u1ea3o v\u1ec7, s\u1ef1 \u00f4m \u1ea5p v\u00e0 \u0111\u1ecbnh h\u01b0\u1edbng ph\u00e1t tri\u1ec3n. Tr\u1ecdng t\u00e2m l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u: con c\u1ea7n c\u1ea3 hai ngu\u1ed3n n\u0103ng l\u01b0\u1ee3ng kh\u00e1c nhau nh\u01b0ng b\u1ed5 sung cho nhau, \u0111\u1ec3 v\u1eeba c\u00f3 c\u1ea3m gi\u00e1c an to\u00e0n, v\u1eeba c\u00f3 \u0111i\u1ec3m t\u1ef1a, v\u1eeba \u0111\u01b0\u1ee3c y\u00eau th\u01b0\u01a1ng, v\u1eeba \u0111\u01b0\u1ee3c ph\u00e1t tri\u1ec3n \u0111\u1ed9c l\u1eadp.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-250",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-250",
     "number": 250,
-    "title": "Điều con cần nhận đủ từ cả cha và mẹ",
-    "subtitle": "MAP này được xây dựng nhằm giúp cha mẹ nhìn sâu vào những nhu cầu cốt lõi mà một đứa trẻ cần được nhận đủ từ cả cha và mẹ trong suốt quá trình trưởng thành để hình thành một nền nội tâm cân bằng, an toàn và vững vàng. Trọng tâm của MAP không nằm ở việc cha mẹ yêu con nhiều hay ít, hy sinh nhiều hay ít, mà nằm ở việc con đã thật sự nhận được những gì từ tình yêu đó trong thế giới nội tâm của mình.",
+    "title": "\u0110i\u1ec1u con c\u1ea7n nh\u1eadn \u0111\u1ee7 t\u1eeb c\u1ea3 cha v\u00e0 m\u1eb9",
+    "subtitle": "MAP n\u00e0y \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng nh\u1eb1m gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o nh\u1eefng nhu c\u1ea7u c\u1ed1t l\u00f5i m\u00e0 m\u1ed9t \u0111\u1ee9a tr\u1ebb c\u1ea7n \u0111\u01b0\u1ee3c nh\u1eadn \u0111\u1ee7 t\u1eeb c\u1ea3 cha v\u00e0 m\u1eb9 trong su\u1ed1t qu\u00e1 tr\u00ecnh tr\u01b0\u1edfng th\u00e0nh \u0111\u1ec3 h\u00ecnh th\u00e0nh m\u1ed9t n\u1ec1n n\u1ed9i t\u00e2m c\u00e2n b\u1eb1ng, an to\u00e0n v\u00e0 v\u1eefng v\u00e0ng. Tr\u1ecdng t\u00e2m c\u1ee7a MAP kh\u00f4ng n\u1eb1m \u1edf vi\u1ec7c cha m\u1eb9 y\u00eau con nhi\u1ec1u hay \u00edt, hy sinh nhi\u1ec1u hay \u00edt, m\u00e0 n\u1eb1m \u1edf vi\u1ec7c con \u0111\u00e3 th\u1eadt s\u1ef1 nh\u1eadn \u0111\u01b0\u1ee3c nh\u1eefng g\u00ec t\u1eeb t\u00ecnh y\u00eau \u0111\u00f3 trong th\u1ebf gi\u1edbi n\u1ed9i t\u00e2m c\u1ee7a m\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-251",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-251",
     "number": 251,
-    "title": "PHONG CÁCH NUÔI DẠY CỦA BỐ MẸ ĐANG ẢNH HƯỞNG ĐẾN CON NHƯ THẾ NÀO",
-    "subtitle": "MAP này không nhằm đánh giá cha mẹ là người nuôi dạy tốt hay chưa tốt, đúng hay sai, nghiêm khắc hay mềm mỏng. MAP cũng không tập trung phán xét phương pháp giáo dục của bất kỳ gia đình nào. Mục tiêu của MAP là giúp cha mẹ nhìn sâu hơn vào những tác động đang diễn ra bên trong con mỗi ngày thông qua chính cách nuôi dạy mà cha mẹ đang sử dụng.",
+    "title": "PHONG C\u00c1CH NU\u00d4I D\u1ea0Y C\u1ee6A B\u1ed0 M\u1eb8 \u0110ANG \u1ea2NH H\u01af\u1edeNG \u0110\u1ebeN CON NH\u01af TH\u1ebe N\u00c0O",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m \u0111\u00e1nh gi\u00e1 cha m\u1eb9 l\u00e0 ng\u01b0\u1eddi nu\u00f4i d\u1ea1y t\u1ed1t hay ch\u01b0a t\u1ed1t, \u0111\u00fang hay sai, nghi\u00eam kh\u1eafc hay m\u1ec1m m\u1ecfng. MAP c\u0169ng kh\u00f4ng t\u1eadp trung ph\u00e1n x\u00e9t ph\u01b0\u01a1ng ph\u00e1p gi\u00e1o d\u1ee5c c\u1ee7a b\u1ea5t k\u1ef3 gia \u0111\u00ecnh n\u00e0o. M\u1ee5c ti\u00eau c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u h\u01a1n v\u00e0o nh\u1eefng t\u00e1c \u0111\u1ed9ng \u0111ang di\u1ec5n ra b\u00ean trong con m\u1ed7i ng\u00e0y th\u00f4ng qua ch\u00ednh c\u00e1ch nu\u00f4i d\u1ea1y m\u00e0 cha m\u1eb9 \u0111ang s\u1eed d\u1ee5ng.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-252",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-252",
     "number": 252,
-    "title": "KHI BỐ MẸ QUÁ NGHIÊM KHẮC",
-    "subtitle": "MAP này không nhằm khẳng định rằng sự nghiêm khắc là hoàn toàn sai hoặc cha mẹ nghiêm khắc là cha mẹ không yêu thương con. MAP cũng không cổ vũ việc nuôi dạy dễ dãi, buông lỏng hay thiếu nguyên tắc. Mục tiêu của MAP là giúp cha mẹ nhìn sâu vào những tác động tâm lý và cảm xúc đang hình thành bên trong con khi sự nghiêm khắc vượt quá khả năng tiếp nhận và chịu đựng của con.",
+    "title": "KHI B\u1ed0 M\u1eb8 QU\u00c1 NGHI\u00caM KH\u1eaeC",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m kh\u1eb3ng \u0111\u1ecbnh r\u1eb1ng s\u1ef1 nghi\u00eam kh\u1eafc l\u00e0 ho\u00e0n to\u00e0n sai ho\u1eb7c cha m\u1eb9 nghi\u00eam kh\u1eafc l\u00e0 cha m\u1eb9 kh\u00f4ng y\u00eau th\u01b0\u01a1ng con. MAP c\u0169ng kh\u00f4ng c\u1ed5 v\u0169 vi\u1ec7c nu\u00f4i d\u1ea1y d\u1ec5 d\u00e3i, bu\u00f4ng l\u1ecfng hay thi\u1ebfu nguy\u00ean t\u1eafc. M\u1ee5c ti\u00eau c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o nh\u1eefng t\u00e1c \u0111\u1ed9ng t\u00e2m l\u00fd v\u00e0 c\u1ea3m x\u00fac \u0111ang h\u00ecnh th\u00e0nh b\u00ean trong con khi s\u1ef1 nghi\u00eam kh\u1eafc v\u01b0\u1ee3t qu\u00e1 kh\u1ea3 n\u0103ng ti\u1ebfp nh\u1eadn v\u00e0 ch\u1ecbu \u0111\u1ef1ng c\u1ee7a con.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-253",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-253",
     "number": 253,
-    "title": "KHI BỐ MẸ QUÁ MỀM MỎNG",
-    "subtitle": "MAP này không nhằm đánh giá những cha mẹ mềm mỏng là nuôi dạy con sai cách hoặc yêu thương con không đúng. MAP cũng không cổ vũ việc cha mẹ trở nên cứng nhắc, kiểm soát hoặc áp đặt để con trưởng thành hơn. Mục tiêu của MAP là giúp cha mẹ nhìn sâu vào những ảnh hưởng âm thầm đang hình thành bên trong con khi tình yêu thương thiếu đi ranh giới, định hướng và sự nhất quán cần thiết.",
+    "title": "KHI B\u1ed0 M\u1eb8 QU\u00c1 M\u1ec0M M\u1eceNG",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m \u0111\u00e1nh gi\u00e1 nh\u1eefng cha m\u1eb9 m\u1ec1m m\u1ecfng l\u00e0 nu\u00f4i d\u1ea1y con sai c\u00e1ch ho\u1eb7c y\u00eau th\u01b0\u01a1ng con kh\u00f4ng \u0111\u00fang. MAP c\u0169ng kh\u00f4ng c\u1ed5 v\u0169 vi\u1ec7c cha m\u1eb9 tr\u1edf n\u00ean c\u1ee9ng nh\u1eafc, ki\u1ec3m so\u00e1t ho\u1eb7c \u00e1p \u0111\u1eb7t \u0111\u1ec3 con tr\u01b0\u1edfng th\u00e0nh h\u01a1n. M\u1ee5c ti\u00eau c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o nh\u1eefng \u1ea3nh h\u01b0\u1edfng \u00e2m th\u1ea7m \u0111ang h\u00ecnh th\u00e0nh b\u00ean trong con khi t\u00ecnh y\u00eau th\u01b0\u01a1ng thi\u1ebfu \u0111i ranh gi\u1edbi, \u0111\u1ecbnh h\u01b0\u1edbng v\u00e0 s\u1ef1 nh\u1ea5t qu\u00e1n c\u1ea7n thi\u1ebft.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-254",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-254",
     "number": 254,
-    "title": "KHI BỐ MẸ QUÁ KIỂM SOÁT",
-    "subtitle": "MAP này không nhằm đánh giá cha mẹ kiểm soát con là cha mẹ không yêu thương hoặc không có trách nhiệm. MAP cũng không khuyến khích cha mẹ buông lỏng quản lý hay để con tự xoay xở mà thiếu sự định hướng cần thiết. Mục tiêu của MAP là giúp cha mẹ nhìn sâu vào những ảnh hưởng tâm lý và cảm xúc đang hình thành bên trong con khi sự đồng hành dần chuyển thành kiểm soát quá mức.",
+    "title": "KHI B\u1ed0 M\u1eb8 QU\u00c1 KI\u1ec2M SO\u00c1T",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m \u0111\u00e1nh gi\u00e1 cha m\u1eb9 ki\u1ec3m so\u00e1t con l\u00e0 cha m\u1eb9 kh\u00f4ng y\u00eau th\u01b0\u01a1ng ho\u1eb7c kh\u00f4ng c\u00f3 tr\u00e1ch nhi\u1ec7m. MAP c\u0169ng kh\u00f4ng khuy\u1ebfn kh\u00edch cha m\u1eb9 bu\u00f4ng l\u1ecfng qu\u1ea3n l\u00fd hay \u0111\u1ec3 con t\u1ef1 xoay x\u1edf m\u00e0 thi\u1ebfu s\u1ef1 \u0111\u1ecbnh h\u01b0\u1edbng c\u1ea7n thi\u1ebft. M\u1ee5c ti\u00eau c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o nh\u1eefng \u1ea3nh h\u01b0\u1edfng t\u00e2m l\u00fd v\u00e0 c\u1ea3m x\u00fac \u0111ang h\u00ecnh th\u00e0nh b\u00ean trong con khi s\u1ef1 \u0111\u1ed3ng h\u00e0nh d\u1ea7n chuy\u1ec3n th\u00e0nh ki\u1ec3m so\u00e1t qu\u00e1 m\u1ee9c.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-255",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-255",
     "number": 255,
-    "title": "KHI BỐ MẸ QUÁ KỲ VỌNG",
-    "subtitle": "MAP này không nhằm phủ nhận vai trò của kỳ vọng trong quá trình nuôi dạy con, cũng không cho rằng cha mẹ mong con phát triển tốt hơn là điều sai. MAP không nhìn kỳ vọng như một điều tiêu cực tuyệt đối. Mục tiêu của MAP là giúp cha mẹ nhận ra ranh giới giữa định hướng lành mạnh và kỳ vọng quá mức, giữa động lực phát triển và áp lực khiến con dần đánh mất chính mình.",
+    "title": "KHI B\u1ed0 M\u1eb8 QU\u00c1 K\u1ef2 V\u1eccNG",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m ph\u1ee7 nh\u1eadn vai tr\u00f2 c\u1ee7a k\u1ef3 v\u1ecdng trong qu\u00e1 tr\u00ecnh nu\u00f4i d\u1ea1y con, c\u0169ng kh\u00f4ng cho r\u1eb1ng cha m\u1eb9 mong con ph\u00e1t tri\u1ec3n t\u1ed1t h\u01a1n l\u00e0 \u0111i\u1ec1u sai. MAP kh\u00f4ng nh\u00ecn k\u1ef3 v\u1ecdng nh\u01b0 m\u1ed9t \u0111i\u1ec1u ti\u00eau c\u1ef1c tuy\u1ec7t \u0111\u1ed1i. M\u1ee5c ti\u00eau c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 nh\u1eadn ra ranh gi\u1edbi gi\u1eefa \u0111\u1ecbnh h\u01b0\u1edbng l\u00e0nh m\u1ea1nh v\u00e0 k\u1ef3 v\u1ecdng qu\u00e1 m\u1ee9c, gi\u1eefa \u0111\u1ed9ng l\u1ef1c ph\u00e1t tri\u1ec3n v\u00e0 \u00e1p l\u1ef1c khi\u1ebfn con d\u1ea7n \u0111\u00e1nh m\u1ea5t ch\u00ednh m\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-256",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-256",
     "number": 256,
-    "title": "KHI BỐ MẸ QUÁ BẢO BỌC",
-    "subtitle": "MAP này không nhằm phủ nhận tình yêu thương, sự quan tâm hay mong muốn bảo vệ con của cha mẹ. MAP cũng không cho rằng cha mẹ chăm sóc con kỹ lưỡng là điều sai. Mục tiêu của MAP là giúp cha mẹ nhìn ra ranh giới giữa bảo vệ lành mạnh và bảo bọc quá mức, giữa đồng hành cùng con và vô tình tước đi cơ hội trưởng thành tự nhiên của con.",
+    "title": "KHI B\u1ed0 M\u1eb8 QU\u00c1 B\u1ea2O B\u1eccC",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m ph\u1ee7 nh\u1eadn t\u00ecnh y\u00eau th\u01b0\u01a1ng, s\u1ef1 quan t\u00e2m hay mong mu\u1ed1n b\u1ea3o v\u1ec7 con c\u1ee7a cha m\u1eb9. MAP c\u0169ng kh\u00f4ng cho r\u1eb1ng cha m\u1eb9 ch\u0103m s\u00f3c con k\u1ef9 l\u01b0\u1ee1ng l\u00e0 \u0111i\u1ec1u sai. M\u1ee5c ti\u00eau c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 nh\u00ecn ra ranh gi\u1edbi gi\u1eefa b\u1ea3o v\u1ec7 l\u00e0nh m\u1ea1nh v\u00e0 b\u1ea3o b\u1ecdc qu\u00e1 m\u1ee9c, gi\u1eefa \u0111\u1ed3ng h\u00e0nh c\u00f9ng con v\u00e0 v\u00f4 t\u00ecnh t\u01b0\u1edbc \u0111i c\u01a1 h\u1ed9i tr\u01b0\u1edfng th\u00e0nh t\u1ef1 nhi\u00ean c\u1ee7a con.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-257",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-257",
     "number": 257,
-    "title": "KHI BỐ MẸ THIẾU NHẤT QUÁN",
-    "subtitle": "MAP này không nhằm đánh giá cha mẹ là người nuôi dạy thiếu trách nhiệm hoặc cố tình làm tổn thương con. MAP cũng không đơn thuần nhìn sự thiếu nhất quán như việc hôm nay nghiêm, hôm sau dễ hoặc cha mẹ thay đổi ý kiến trong một vài tình huống. Mục tiêu của MAP là giúp cha mẹ nhìn sâu vào những ảnh hưởng tâm lý âm thầm đang hình thành bên trong con khi môi trường nuôi dạy thiếu sự ổn định và nhất quán trong thời gian dài.",
+    "title": "KHI B\u1ed0 M\u1eb8 THI\u1ebeU NH\u1ea4T QU\u00c1N",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m \u0111\u00e1nh gi\u00e1 cha m\u1eb9 l\u00e0 ng\u01b0\u1eddi nu\u00f4i d\u1ea1y thi\u1ebfu tr\u00e1ch nhi\u1ec7m ho\u1eb7c c\u1ed1 t\u00ecnh l\u00e0m t\u1ed5n th\u01b0\u01a1ng con. MAP c\u0169ng kh\u00f4ng \u0111\u01a1n thu\u1ea7n nh\u00ecn s\u1ef1 thi\u1ebfu nh\u1ea5t qu\u00e1n nh\u01b0 vi\u1ec7c h\u00f4m nay nghi\u00eam, h\u00f4m sau d\u1ec5 ho\u1eb7c cha m\u1eb9 thay \u0111\u1ed5i \u00fd ki\u1ebfn trong m\u1ed9t v\u00e0i t\u00ecnh hu\u1ed1ng. M\u1ee5c ti\u00eau c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o nh\u1eefng \u1ea3nh h\u01b0\u1edfng t\u00e2m l\u00fd \u00e2m th\u1ea7m \u0111ang h\u00ecnh th\u00e0nh b\u00ean trong con khi m\u00f4i tr\u01b0\u1eddng nu\u00f4i d\u1ea1y thi\u1ebfu s\u1ef1 \u1ed5n \u0111\u1ecbnh v\u00e0 nh\u1ea5t qu\u00e1n trong th\u1eddi gian d\u00e0i.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-258",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-258",
     "number": 258,
-    "title": "KHI BỐ MẸ DÙNG PHẦN THƯỞNG VÀ HÌNH PHẠT SAI CÁCH",
-    "subtitle": "MAP này không nhằm phủ nhận hoàn toàn vai trò của phần thưởng và hình phạt trong quá trình nuôi dạy con. MAP cũng không cho rằng cha mẹ không nên thiết lập hậu quả hoặc ghi nhận những nỗ lực tích cực của con. Mục tiêu của MAP là giúp cha mẹ hiểu rõ sự khác biệt giữa việc hướng dẫn con phát triển nhận thức với việc điều khiển hành vi của con bằng thưởng – phạt một cách máy móc và thiếu kết nối.",
+    "title": "KHI B\u1ed0 M\u1eb8 D\u00d9NG PH\u1ea6N TH\u01af\u1edeNG V\u00c0 H\u00ccNH PH\u1ea0T SAI C\u00c1CH",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m ph\u1ee7 nh\u1eadn ho\u00e0n to\u00e0n vai tr\u00f2 c\u1ee7a ph\u1ea7n th\u01b0\u1edfng v\u00e0 h\u00ecnh ph\u1ea1t trong qu\u00e1 tr\u00ecnh nu\u00f4i d\u1ea1y con. MAP c\u0169ng kh\u00f4ng cho r\u1eb1ng cha m\u1eb9 kh\u00f4ng n\u00ean thi\u1ebft l\u1eadp h\u1eadu qu\u1ea3 ho\u1eb7c ghi nh\u1eadn nh\u1eefng n\u1ed7 l\u1ef1c t\u00edch c\u1ef1c c\u1ee7a con. M\u1ee5c ti\u00eau c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u00f5 s\u1ef1 kh\u00e1c bi\u1ec7t gi\u1eefa vi\u1ec7c h\u01b0\u1edbng d\u1eabn con ph\u00e1t tri\u1ec3n nh\u1eadn th\u1ee9c v\u1edbi vi\u1ec7c \u0111i\u1ec1u khi\u1ec3n h\u00e0nh vi c\u1ee7a con b\u1eb1ng th\u01b0\u1edfng \u2013 ph\u1ea1t m\u1ed9t c\u00e1ch m\u00e1y m\u00f3c v\u00e0 thi\u1ebfu k\u1ebft n\u1ed1i.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-259",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-259",
     "number": 259,
-    "title": "KHI BỐ MẸ YÊU CON BẰNG NỖI SỢ",
-    "subtitle": "MAP này không nhằm đánh giá những cha mẹ luôn lo lắng cho con là yêu con sai cách hoặc yêu con không đủ. MAP cũng không phủ nhận rằng sự quan tâm, bảo vệ và lo cho tương lai của con là một phần tự nhiên trong tình yêu của cha mẹ. Mục tiêu của MAP là giúp cha mẹ nhìn sâu vào những ảnh hưởng âm thầm xảy ra khi tình yêu dành cho con được dẫn dắt bởi nỗi sợ thay vì bởi sự tin tưởng và ổn định nội tâm.",
+    "title": "KHI B\u1ed0 M\u1eb8 Y\u00caU CON B\u1eb0NG N\u1ed6I S\u1ee2",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m \u0111\u00e1nh gi\u00e1 nh\u1eefng cha m\u1eb9 lu\u00f4n lo l\u1eafng cho con l\u00e0 y\u00eau con sai c\u00e1ch ho\u1eb7c y\u00eau con kh\u00f4ng \u0111\u1ee7. MAP c\u0169ng kh\u00f4ng ph\u1ee7 nh\u1eadn r\u1eb1ng s\u1ef1 quan t\u00e2m, b\u1ea3o v\u1ec7 v\u00e0 lo cho t\u01b0\u01a1ng lai c\u1ee7a con l\u00e0 m\u1ed9t ph\u1ea7n t\u1ef1 nhi\u00ean trong t\u00ecnh y\u00eau c\u1ee7a cha m\u1eb9. M\u1ee5c ti\u00eau c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o nh\u1eefng \u1ea3nh h\u01b0\u1edfng \u00e2m th\u1ea7m x\u1ea3y ra khi t\u00ecnh y\u00eau d\u00e0nh cho con \u0111\u01b0\u1ee3c d\u1eabn d\u1eaft b\u1edfi n\u1ed7i s\u1ee3 thay v\u00ec b\u1edfi s\u1ef1 tin t\u01b0\u1edfng v\u00e0 \u1ed5n \u0111\u1ecbnh n\u1ed9i t\u00e2m.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-260",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-260",
     "number": 260,
-    "title": "PHONG CÁCH ĐỒNG HÀNH PHÙ HỢP NHẤT VỚI CON",
-    "subtitle": "MAP này không nhằm tìm ra một công thức nuôi dạy hoàn hảo áp dụng cho mọi đứa trẻ. MAP cũng không đi theo hướng đánh giá phong cách nào là tốt nhất, hiện đại nhất hoặc hiệu quả nhất. Mục tiêu của MAP là giúp cha mẹ hiểu rằng mỗi đứa trẻ đều có cấu trúc nội tâm, cách tiếp nhận cảm xúc, nhịp phát triển và nhu cầu trưởng thành rất khác nhau, vì vậy cách đồng hành phù hợp với mỗi con cũng sẽ khác nhau.",
+    "title": "PHONG C\u00c1CH \u0110\u1ed2NG H\u00c0NH PH\u00d9 H\u1ee2P NH\u1ea4T V\u1edaI CON",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m t\u00ecm ra m\u1ed9t c\u00f4ng th\u1ee9c nu\u00f4i d\u1ea1y ho\u00e0n h\u1ea3o \u00e1p d\u1ee5ng cho m\u1ecdi \u0111\u1ee9a tr\u1ebb. MAP c\u0169ng kh\u00f4ng \u0111i theo h\u01b0\u1edbng \u0111\u00e1nh gi\u00e1 phong c\u00e1ch n\u00e0o l\u00e0 t\u1ed1t nh\u1ea5t, hi\u1ec7n \u0111\u1ea1i nh\u1ea5t ho\u1eb7c hi\u1ec7u qu\u1ea3 nh\u1ea5t. M\u1ee5c ti\u00eau c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng m\u1ed7i \u0111\u1ee9a tr\u1ebb \u0111\u1ec1u c\u00f3 c\u1ea5u tr\u00fac n\u1ed9i t\u00e2m, c\u00e1ch ti\u1ebfp nh\u1eadn c\u1ea3m x\u00fac, nh\u1ecbp ph\u00e1t tri\u1ec3n v\u00e0 nhu c\u1ea7u tr\u01b0\u1edfng th\u00e0nh r\u1ea5t kh\u00e1c nhau, v\u00ec v\u1eady c\u00e1ch \u0111\u1ed3ng h\u00e0nh ph\u00f9 h\u1ee3p v\u1edbi m\u1ed7i con c\u0169ng s\u1ebd kh\u00e1c nhau.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-261",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-261",
     "number": 261,
-    "title": "MÂU THUẪN GIỮA BỐ MẸ ẢNH HƯỞNG ĐẾN CON THẾ NÀO",
-    "subtitle": "MAP này không nhằm kết luận rằng mọi gia đình có mâu thuẫn đều là gia đình không hạnh phúc hoặc mọi cuộc tranh cãi giữa vợ chồng đều gây tổn thương cho con. MAP cũng không đi theo hướng đánh giá ai đúng ai sai trong mối quan hệ vợ chồng. Mục tiêu của MAP là giúp cha mẹ nhìn sâu vào cách những căng thẳng, xung đột, lạnh nhạt và mất kết nối giữa người lớn đang âm thầm tác động đến thế giới nội tâm của con.",
+    "title": "M\u00c2U THU\u1eaaN GI\u1eeeA B\u1ed0 M\u1eb8 \u1ea2NH H\u01af\u1edeNG \u0110\u1ebeN CON TH\u1ebe N\u00c0O",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m k\u1ebft lu\u1eadn r\u1eb1ng m\u1ecdi gia \u0111\u00ecnh c\u00f3 m\u00e2u thu\u1eabn \u0111\u1ec1u l\u00e0 gia \u0111\u00ecnh kh\u00f4ng h\u1ea1nh ph\u00fac ho\u1eb7c m\u1ecdi cu\u1ed9c tranh c\u00e3i gi\u1eefa v\u1ee3 ch\u1ed3ng \u0111\u1ec1u g\u00e2y t\u1ed5n th\u01b0\u01a1ng cho con. MAP c\u0169ng kh\u00f4ng \u0111i theo h\u01b0\u1edbng \u0111\u00e1nh gi\u00e1 ai \u0111\u00fang ai sai trong m\u1ed1i quan h\u1ec7 v\u1ee3 ch\u1ed3ng. M\u1ee5c ti\u00eau c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o c\u00e1ch nh\u1eefng c\u0103ng th\u1eb3ng, xung \u0111\u1ed9t, l\u1ea1nh nh\u1ea1t v\u00e0 m\u1ea5t k\u1ebft n\u1ed1i gi\u1eefa ng\u01b0\u1eddi l\u1edbn \u0111ang \u00e2m th\u1ea7m t\u00e1c \u0111\u1ed9ng \u0111\u1ebfn th\u1ebf gi\u1edbi n\u1ed9i t\u00e2m c\u1ee7a con.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-262",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-262",
     "number": 262,
-    "title": "KHI CON TRỞ THÀNH NGƯỜI ĐỨNG GIỮA BỐ VÀ MẸ",
-    "subtitle": "MAP này không nhằm nói về việc con chỉ đơn giản chứng kiến những cuộc cãi vã giữa cha mẹ. MAP cũng không chỉ tập trung vào những xung đột rõ ràng trong gia đình. Mục tiêu của MAP là giúp cha mẹ nhìn sâu vào những tình huống mà con vô thức bị kéo vào vai trò trung gian cảm xúc, người hòa giải, người an ủi hoặc người gánh trách nhiệm cho những vấn đề vốn thuộc về người lớn.",
+    "title": "KHI CON TR\u1ede TH\u00c0NH NG\u01af\u1edcI \u0110\u1ee8NG GI\u1eeeA B\u1ed0 V\u00c0 M\u1eb8",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m n\u00f3i v\u1ec1 vi\u1ec7c con ch\u1ec9 \u0111\u01a1n gi\u1ea3n ch\u1ee9ng ki\u1ebfn nh\u1eefng cu\u1ed9c c\u00e3i v\u00e3 gi\u1eefa cha m\u1eb9. MAP c\u0169ng kh\u00f4ng ch\u1ec9 t\u1eadp trung v\u00e0o nh\u1eefng xung \u0111\u1ed9t r\u00f5 r\u00e0ng trong gia \u0111\u00ecnh. M\u1ee5c ti\u00eau c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o nh\u1eefng t\u00ecnh hu\u1ed1ng m\u00e0 con v\u00f4 th\u1ee9c b\u1ecb k\u00e9o v\u00e0o vai tr\u00f2 trung gian c\u1ea3m x\u00fac, ng\u01b0\u1eddi h\u00f2a gi\u1ea3i, ng\u01b0\u1eddi an \u1ee7i ho\u1eb7c ng\u01b0\u1eddi g\u00e1nh tr\u00e1ch nhi\u1ec7m cho nh\u1eefng v\u1ea5n \u0111\u1ec1 v\u1ed1n thu\u1ed9c v\u1ec1 ng\u01b0\u1eddi l\u1edbn.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-263",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-263",
     "number": 263,
-    "title": "KHI CON PHẢI GÁNH CẢM XÚC THAY GIA ĐÌNH",
-    "subtitle": "MAP này không nhằm mô tả con là một đứa trẻ quá nhạy cảm, quá lo xa hoặc quá quan tâm đến người khác. MAP cũng không đơn thuần xem việc con thương bố mẹ, hiểu chuyện hoặc luôn nghĩ cho gia đình là một phẩm chất tích cực. Mục tiêu của MAP là giúp cha mẹ nhìn sâu vào những gánh nặng cảm xúc vô hình mà con đang mang khi vô thức trở thành người chứa đựng, hấp thụ hoặc gánh vác cảm xúc của cả gia đình.",
+    "title": "KHI CON PH\u1ea2I G\u00c1NH C\u1ea2M X\u00daC THAY GIA \u0110\u00ccNH",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m m\u00f4 t\u1ea3 con l\u00e0 m\u1ed9t \u0111\u1ee9a tr\u1ebb qu\u00e1 nh\u1ea1y c\u1ea3m, qu\u00e1 lo xa ho\u1eb7c qu\u00e1 quan t\u00e2m \u0111\u1ebfn ng\u01b0\u1eddi kh\u00e1c. MAP c\u0169ng kh\u00f4ng \u0111\u01a1n thu\u1ea7n xem vi\u1ec7c con th\u01b0\u01a1ng b\u1ed1 m\u1eb9, hi\u1ec3u chuy\u1ec7n ho\u1eb7c lu\u00f4n ngh\u0129 cho gia \u0111\u00ecnh l\u00e0 m\u1ed9t ph\u1ea9m ch\u1ea5t t\u00edch c\u1ef1c. M\u1ee5c ti\u00eau c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o nh\u1eefng g\u00e1nh n\u1eb7ng c\u1ea3m x\u00fac v\u00f4 h\u00ecnh m\u00e0 con \u0111ang mang khi v\u00f4 th\u1ee9c tr\u1edf th\u00e0nh ng\u01b0\u1eddi ch\u1ee9a \u0111\u1ef1ng, h\u1ea5p th\u1ee5 ho\u1eb7c g\u00e1nh v\u00e1c c\u1ea3m x\u00fac c\u1ee7a c\u1ea3 gia \u0111\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-264",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-264",
     "number": 264,
-    "title": "KHI CON HỌC CÁCH YÊU THƯƠNG TỪ MỐI QUAN HỆ CỦA BỐ MẸ",
-    "subtitle": "MAP này không đơn thuần nói rằng cha mẹ là tấm gương để con noi theo. MAP cũng không chỉ tập trung vào việc cha mẹ cần cư xử tốt trước mặt con. Mục tiêu của MAP là giúp cha mẹ nhìn sâu vào cách toàn bộ mối quan hệ giữa hai người đang âm thầm trở thành mô hình tình yêu đầu tiên được khắc sâu vào hệ cảm xúc, niềm tin và nhận thức của con về các mối quan hệ trong tương lai.",
+    "title": "KHI CON H\u1eccC C\u00c1CH Y\u00caU TH\u01af\u01a0NG T\u1eea M\u1ed0I QUAN H\u1ec6 C\u1ee6A B\u1ed0 M\u1eb8",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01a1n thu\u1ea7n n\u00f3i r\u1eb1ng cha m\u1eb9 l\u00e0 t\u1ea5m g\u01b0\u01a1ng \u0111\u1ec3 con noi theo. MAP c\u0169ng kh\u00f4ng ch\u1ec9 t\u1eadp trung v\u00e0o vi\u1ec7c cha m\u1eb9 c\u1ea7n c\u01b0 x\u1eed t\u1ed1t tr\u01b0\u1edbc m\u1eb7t con. M\u1ee5c ti\u00eau c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o c\u00e1ch to\u00e0n b\u1ed9 m\u1ed1i quan h\u1ec7 gi\u1eefa hai ng\u01b0\u1eddi \u0111ang \u00e2m th\u1ea7m tr\u1edf th\u00e0nh m\u00f4 h\u00ecnh t\u00ecnh y\u00eau \u0111\u1ea7u ti\u00ean \u0111\u01b0\u1ee3c kh\u1eafc s\u00e2u v\u00e0o h\u1ec7 c\u1ea3m x\u00fac, ni\u1ec1m tin v\u00e0 nh\u1eadn th\u1ee9c c\u1ee7a con v\u1ec1 c\u00e1c m\u1ed1i quan h\u1ec7 trong t\u01b0\u01a1ng lai.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-265",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-265",
     "number": 265,
-    "title": "KHI CON HỌC CÁCH IM LẶNG TỪ GIA ĐÌNH",
-    "subtitle": "MAP này không nhằm đánh giá con là một đứa trẻ ít nói, hướng nội hoặc khó gần. MAP cũng không mặc định rằng mọi sự im lặng đều là vấn đề cần thay đổi. Mục tiêu của MAP là giúp cha mẹ nhìn sâu vào những trường hợp mà sự im lặng của con không còn là tính cách tự nhiên, mà đã trở thành một cơ chế sinh tồn cảm xúc được hình thành từ chính môi trường gia đình.",
+    "title": "KHI CON H\u1eccC C\u00c1CH IM L\u1eb6NG T\u1eea GIA \u0110\u00ccNH",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m \u0111\u00e1nh gi\u00e1 con l\u00e0 m\u1ed9t \u0111\u1ee9a tr\u1ebb \u00edt n\u00f3i, h\u01b0\u1edbng n\u1ed9i ho\u1eb7c kh\u00f3 g\u1ea7n. MAP c\u0169ng kh\u00f4ng m\u1eb7c \u0111\u1ecbnh r\u1eb1ng m\u1ecdi s\u1ef1 im l\u1eb7ng \u0111\u1ec1u l\u00e0 v\u1ea5n \u0111\u1ec1 c\u1ea7n thay \u0111\u1ed5i. M\u1ee5c ti\u00eau c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o nh\u1eefng tr\u01b0\u1eddng h\u1ee3p m\u00e0 s\u1ef1 im l\u1eb7ng c\u1ee7a con kh\u00f4ng c\u00f2n l\u00e0 t\u00ednh c\u00e1ch t\u1ef1 nhi\u00ean, m\u00e0 \u0111\u00e3 tr\u1edf th\u00e0nh m\u1ed9t c\u01a1 ch\u1ebf sinh t\u1ed3n c\u1ea3m x\u00fac \u0111\u01b0\u1ee3c h\u00ecnh th\u00e0nh t\u1eeb ch\u00ednh m\u00f4i tr\u01b0\u1eddng gia \u0111\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-266",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-266",
     "number": 266,
-    "title": "KHI CON SỢ XUNG ĐỘT VÌ CHỨNG KIẾN BỐ MẸ CĂNG THẲNG",
-    "subtitle": "MAP này không nhằm mô tả con là một đứa trẻ yếu đuối, quá nhạy cảm hoặc không chịu được áp lực. MAP cũng không đơn thuần nói về việc con sợ những cuộc cãi vã lớn tiếng giữa cha mẹ. Mục tiêu của MAP là giúp cha mẹ nhìn sâu vào cách hệ thần kinh và cảm giác an toàn của con đang được định hình khi lớn lên trong môi trường thường xuyên có căng thẳng, xung đột hoặc mất kết nối cảm xúc.",
+    "title": "KHI CON S\u1ee2 XUNG \u0110\u1ed8T V\u00cc CH\u1ee8NG KI\u1ebeN B\u1ed0 M\u1eb8 C\u0102NG TH\u1eb2NG",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m m\u00f4 t\u1ea3 con l\u00e0 m\u1ed9t \u0111\u1ee9a tr\u1ebb y\u1ebfu \u0111u\u1ed1i, qu\u00e1 nh\u1ea1y c\u1ea3m ho\u1eb7c kh\u00f4ng ch\u1ecbu \u0111\u01b0\u1ee3c \u00e1p l\u1ef1c. MAP c\u0169ng kh\u00f4ng \u0111\u01a1n thu\u1ea7n n\u00f3i v\u1ec1 vi\u1ec7c con s\u1ee3 nh\u1eefng cu\u1ed9c c\u00e3i v\u00e3 l\u1edbn ti\u1ebfng gi\u1eefa cha m\u1eb9. M\u1ee5c ti\u00eau c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o c\u00e1ch h\u1ec7 th\u1ea7n kinh v\u00e0 c\u1ea3m gi\u00e1c an to\u00e0n c\u1ee7a con \u0111ang \u0111\u01b0\u1ee3c \u0111\u1ecbnh h\u00ecnh khi l\u1edbn l\u00ean trong m\u00f4i tr\u01b0\u1eddng th\u01b0\u1eddng xuy\u00ean c\u00f3 c\u0103ng th\u1eb3ng, xung \u0111\u1ed9t ho\u1eb7c m\u1ea5t k\u1ebft n\u1ed1i c\u1ea3m x\u00fac.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-267",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-267",
     "number": 267,
-    "title": "KHI CON MẤT CẢM GIÁC AN TOÀN VÌ KHÔNG KHÍ GIA ĐÌNH",
-    "subtitle": "MAP này không nhằm đánh giá gia đình là tốt hay xấu, hạnh phúc hay bất hạnh. MAP cũng không chỉ tập trung vào những biến cố lớn như ly hôn, bạo lực hoặc các cuộc cãi vã nghiêm trọng. Mục tiêu của MAP là giúp cha mẹ nhìn sâu vào cách bầu không khí cảm xúc trong gia đình đang âm thầm nuôi dưỡng hoặc làm suy giảm cảm giác an toàn bên trong con mỗi ngày.",
+    "title": "KHI CON M\u1ea4T C\u1ea2M GI\u00c1C AN TO\u00c0N V\u00cc KH\u00d4NG KH\u00cd GIA \u0110\u00ccNH",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m \u0111\u00e1nh gi\u00e1 gia \u0111\u00ecnh l\u00e0 t\u1ed1t hay x\u1ea5u, h\u1ea1nh ph\u00fac hay b\u1ea5t h\u1ea1nh. MAP c\u0169ng kh\u00f4ng ch\u1ec9 t\u1eadp trung v\u00e0o nh\u1eefng bi\u1ebfn c\u1ed1 l\u1edbn nh\u01b0 ly h\u00f4n, b\u1ea1o l\u1ef1c ho\u1eb7c c\u00e1c cu\u1ed9c c\u00e3i v\u00e3 nghi\u00eam tr\u1ecdng. M\u1ee5c ti\u00eau c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o c\u00e1ch b\u1ea7u kh\u00f4ng kh\u00ed c\u1ea3m x\u00fac trong gia \u0111\u00ecnh \u0111ang \u00e2m th\u1ea7m nu\u00f4i d\u01b0\u1ee1ng ho\u1eb7c l\u00e0m suy gi\u1ea3m c\u1ea3m gi\u00e1c an to\u00e0n b\u00ean trong con m\u1ed7i ng\u00e0y.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-268",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-268",
     "number": 268,
-    "title": "CÁCH BỐ MẸ GIẢM ẢNH HƯỞNG TIÊU CỰC LÊN CON",
-    "subtitle": "MAP này không đơn thuần kêu gọi cha mẹ yêu thương con nhiều hơn, dành nhiều thời gian hơn hoặc cố gắng trở thành những bậc cha mẹ hoàn hảo. MAP cũng không tập trung vào việc tìm ra ai đúng ai sai trong gia đình. Mục tiêu của MAP là giúp cha mẹ nhìn thấy những tác động âm thầm nhưng lặp lại mỗi ngày đang đi vào nội tâm con và học cách thay đổi những điều đó từ gốc rễ.",
+    "title": "C\u00c1CH B\u1ed0 M\u1eb8 GI\u1ea2M \u1ea2NH H\u01af\u1edeNG TI\u00caU C\u1ef0C L\u00caN CON",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01a1n thu\u1ea7n k\u00eau g\u1ecdi cha m\u1eb9 y\u00eau th\u01b0\u01a1ng con nhi\u1ec1u h\u01a1n, d\u00e0nh nhi\u1ec1u th\u1eddi gian h\u01a1n ho\u1eb7c c\u1ed1 g\u1eafng tr\u1edf th\u00e0nh nh\u1eefng b\u1eadc cha m\u1eb9 ho\u00e0n h\u1ea3o. MAP c\u0169ng kh\u00f4ng t\u1eadp trung v\u00e0o vi\u1ec7c t\u00ecm ra ai \u0111\u00fang ai sai trong gia \u0111\u00ecnh. M\u1ee5c ti\u00eau c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 nh\u00ecn th\u1ea5y nh\u1eefng t\u00e1c \u0111\u1ed9ng \u00e2m th\u1ea7m nh\u01b0ng l\u1eb7p l\u1ea1i m\u1ed7i ng\u00e0y \u0111ang \u0111i v\u00e0o n\u1ed9i t\u00e2m con v\u00e0 h\u1ecdc c\u00e1ch thay \u0111\u1ed5i nh\u1eefng \u0111i\u1ec1u \u0111\u00f3 t\u1eeb g\u1ed1c r\u1ec5.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-269",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-269",
     "number": 269,
-    "title": "CÁCH XÂY LẠI SỰ ỔN ĐỊNH TRONG GIA ĐÌNH",
-    "subtitle": "MAP này không đi theo hướng xây dựng hình ảnh một gia đình hoàn hảo, không có mâu thuẫn hay khó khăn. MAP cũng không đơn thuần khuyến khích các thành viên cố gắng hy sinh hoặc chịu đựng nhiều hơn vì gia đình. Mục tiêu của MAP là giúp cha mẹ hiểu rõ điều gì thật sự tạo nên sự ổn định trong gia đình và vì sao sự ổn định đó lại trở thành nền tảng quan trọng nhất cho sự phát triển cảm xúc của con.",
+    "title": "C\u00c1CH X\u00c2Y L\u1ea0I S\u1ef0 \u1ed4N \u0110\u1ecaNH TRONG GIA \u0110\u00ccNH",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng x\u00e2y d\u1ef1ng h\u00ecnh \u1ea3nh m\u1ed9t gia \u0111\u00ecnh ho\u00e0n h\u1ea3o, kh\u00f4ng c\u00f3 m\u00e2u thu\u1eabn hay kh\u00f3 kh\u0103n. MAP c\u0169ng kh\u00f4ng \u0111\u01a1n thu\u1ea7n khuy\u1ebfn kh\u00edch c\u00e1c th\u00e0nh vi\u00ean c\u1ed1 g\u1eafng hy sinh ho\u1eb7c ch\u1ecbu \u0111\u1ef1ng nhi\u1ec1u h\u01a1n v\u00ec gia \u0111\u00ecnh. M\u1ee5c ti\u00eau c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u00f5 \u0111i\u1ec1u g\u00ec th\u1eadt s\u1ef1 t\u1ea1o n\u00ean s\u1ef1 \u1ed5n \u0111\u1ecbnh trong gia \u0111\u00ecnh v\u00e0 v\u00ec sao s\u1ef1 \u1ed5n \u0111\u1ecbnh \u0111\u00f3 l\u1ea1i tr\u1edf th\u00e0nh n\u1ec1n t\u1ea3ng quan tr\u1ecdng nh\u1ea5t cho s\u1ef1 ph\u00e1t tri\u1ec3n c\u1ea3m x\u00fac c\u1ee7a con.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-270",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-270",
     "number": 270,
-    "title": "ĐIỀU CON CẦN THẤY TỪ MỐI QUAN HỆ CỦA BỐ MẸ",
-    "subtitle": "MAP này không nhằm yêu cầu cha mẹ phải trở thành một cặp vợ chồng hoàn hảo, không bao giờ bất đồng hay luôn thể hiện tình yêu một cách lý tưởng. MAP cũng không tập trung vào việc đánh giá chất lượng hôn nhân của cha mẹ. Mục tiêu của MAP là giúp cha mẹ nhìn sâu vào những điều con đang quan sát, cảm nhận và hấp thụ mỗi ngày từ chính mối quan hệ giữa hai người.",
+    "title": "\u0110I\u1ec0U CON C\u1ea6N TH\u1ea4Y T\u1eea M\u1ed0I QUAN H\u1ec6 C\u1ee6A B\u1ed0 M\u1eb8",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m y\u00eau c\u1ea7u cha m\u1eb9 ph\u1ea3i tr\u1edf th\u00e0nh m\u1ed9t c\u1eb7p v\u1ee3 ch\u1ed3ng ho\u00e0n h\u1ea3o, kh\u00f4ng bao gi\u1edd b\u1ea5t \u0111\u1ed3ng hay lu\u00f4n th\u1ec3 hi\u1ec7n t\u00ecnh y\u00eau m\u1ed9t c\u00e1ch l\u00fd t\u01b0\u1edfng. MAP c\u0169ng kh\u00f4ng t\u1eadp trung v\u00e0o vi\u1ec7c \u0111\u00e1nh gi\u00e1 ch\u1ea5t l\u01b0\u1ee3ng h\u00f4n nh\u00e2n c\u1ee7a cha m\u1eb9. M\u1ee5c ti\u00eau c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o nh\u1eefng \u0111i\u1ec1u con \u0111ang quan s\u00e1t, c\u1ea3m nh\u1eadn v\u00e0 h\u1ea5p th\u1ee5 m\u1ed7i ng\u00e0y t\u1eeb ch\u00ednh m\u1ed1i quan h\u1ec7 gi\u1eefa hai ng\u01b0\u1eddi.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-271",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-271",
     "number": 271,
-    "title": "VỊ TRÍ CỦA CON TRONG GIA ĐÌNH ẢNH HƯỞNG ĐẾN TÍNH CÁCH",
-    "subtitle": "MAP này không nhằm phân loại đơn giản con đầu, con giữa, con út hoặc con một theo những khuôn mẫu quen thuộc. MAP cũng không cố gắng dự đoán tính cách của một đứa trẻ chỉ dựa trên thứ tự sinh ra trong gia đình. Mục tiêu của MAP là giúp cha mẹ nhìn sâu vào cách vị trí của con trong hệ gia đình đang âm thầm ảnh hưởng đến cảm xúc, niềm tin, cơ chế thích nghi, vai trò sống và cách con nhìn nhận chính mình.",
+    "title": "V\u1eca TR\u00cd C\u1ee6A CON TRONG GIA \u0110\u00ccNH \u1ea2NH H\u01af\u1edeNG \u0110\u1ebeN T\u00cdNH C\u00c1CH",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m ph\u00e2n lo\u1ea1i \u0111\u01a1n gi\u1ea3n con \u0111\u1ea7u, con gi\u1eefa, con \u00fat ho\u1eb7c con m\u1ed9t theo nh\u1eefng khu\u00f4n m\u1eabu quen thu\u1ed9c. MAP c\u0169ng kh\u00f4ng c\u1ed1 g\u1eafng d\u1ef1 \u0111o\u00e1n t\u00ednh c\u00e1ch c\u1ee7a m\u1ed9t \u0111\u1ee9a tr\u1ebb ch\u1ec9 d\u1ef1a tr\u00ean th\u1ee9 t\u1ef1 sinh ra trong gia \u0111\u00ecnh. M\u1ee5c ti\u00eau c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o c\u00e1ch v\u1ecb tr\u00ed c\u1ee7a con trong h\u1ec7 gia \u0111\u00ecnh \u0111ang \u00e2m th\u1ea7m \u1ea3nh h\u01b0\u1edfng \u0111\u1ebfn c\u1ea3m x\u00fac, ni\u1ec1m tin, c\u01a1 ch\u1ebf th\u00edch nghi, vai tr\u00f2 s\u1ed1ng v\u00e0 c\u00e1ch con nh\u00ecn nh\u1eadn ch\u00ednh m\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-272",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-272",
     "number": 272,
-    "title": "KHI CON LÀ ANH HOẶC CHỊ LỚN",
-    "subtitle": "MAP này không nhằm mô tả đơn giản rằng con đầu thường trách nhiệm hơn, trưởng thành hơn hoặc biết nhường nhịn hơn các em. MAP tập trung đi sâu vào việc vị trí anh/chị lớn trong gia đình đang tạo ra những áp lực vô hình, những vai trò cảm xúc và những trách nhiệm âm thầm ảnh hưởng đến nội tâm, tính cách và cách con nhìn nhận chính mình như thế nào trong suốt quá trình trưởng thành.",
+    "title": "KHI CON L\u00c0 ANH HO\u1eb6C CH\u1eca L\u1edaN",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m m\u00f4 t\u1ea3 \u0111\u01a1n gi\u1ea3n r\u1eb1ng con \u0111\u1ea7u th\u01b0\u1eddng tr\u00e1ch nhi\u1ec7m h\u01a1n, tr\u01b0\u1edfng th\u00e0nh h\u01a1n ho\u1eb7c bi\u1ebft nh\u01b0\u1eddng nh\u1ecbn h\u01a1n c\u00e1c em. MAP t\u1eadp trung \u0111i s\u00e2u v\u00e0o vi\u1ec7c v\u1ecb tr\u00ed anh/ch\u1ecb l\u1edbn trong gia \u0111\u00ecnh \u0111ang t\u1ea1o ra nh\u1eefng \u00e1p l\u1ef1c v\u00f4 h\u00ecnh, nh\u1eefng vai tr\u00f2 c\u1ea3m x\u00fac v\u00e0 nh\u1eefng tr\u00e1ch nhi\u1ec7m \u00e2m th\u1ea7m \u1ea3nh h\u01b0\u1edfng \u0111\u1ebfn n\u1ed9i t\u00e2m, t\u00ednh c\u00e1ch v\u00e0 c\u00e1ch con nh\u00ecn nh\u1eadn ch\u00ednh m\u00ecnh nh\u01b0 th\u1ebf n\u00e0o trong su\u1ed1t qu\u00e1 tr\u00ecnh tr\u01b0\u1edfng th\u00e0nh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-273",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-273",
     "number": 273,
-    "title": "KHI CON LÀ EM ÚT",
-    "subtitle": "MAP này không nhằm mô tả đơn giản rằng em út thường được cưng chiều, được yêu thương nhiều hơn hoặc có cuộc sống dễ dàng hơn các anh chị. MAP tập trung đi sâu vào việc vị trí em út trong hệ gia đình đang ảnh hưởng như thế nào đến cảm giác giá trị bản thân, khả năng tự lập, mức độ tự tin, cơ chế thích nghi và cách con xây dựng nội lực khi trưởng thành.",
+    "title": "KHI CON L\u00c0 EM \u00daT",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m m\u00f4 t\u1ea3 \u0111\u01a1n gi\u1ea3n r\u1eb1ng em \u00fat th\u01b0\u1eddng \u0111\u01b0\u1ee3c c\u01b0ng chi\u1ec1u, \u0111\u01b0\u1ee3c y\u00eau th\u01b0\u01a1ng nhi\u1ec1u h\u01a1n ho\u1eb7c c\u00f3 cu\u1ed9c s\u1ed1ng d\u1ec5 d\u00e0ng h\u01a1n c\u00e1c anh ch\u1ecb. MAP t\u1eadp trung \u0111i s\u00e2u v\u00e0o vi\u1ec7c v\u1ecb tr\u00ed em \u00fat trong h\u1ec7 gia \u0111\u00ecnh \u0111ang \u1ea3nh h\u01b0\u1edfng nh\u01b0 th\u1ebf n\u00e0o \u0111\u1ebfn c\u1ea3m gi\u00e1c gi\u00e1 tr\u1ecb b\u1ea3n th\u00e2n, kh\u1ea3 n\u0103ng t\u1ef1 l\u1eadp, m\u1ee9c \u0111\u1ed9 t\u1ef1 tin, c\u01a1 ch\u1ebf th\u00edch nghi v\u00e0 c\u00e1ch con x\u00e2y d\u1ef1ng n\u1ed9i l\u1ef1c khi tr\u01b0\u1edfng th\u00e0nh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-274",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-274",
     "number": 274,
-    "title": "KHI CON LÀ CON MỘT",
-    "subtitle": "MAP này không nhằm mô tả đơn giản rằng con một được yêu thương nhiều hơn, được chăm sóc kỹ hơn hoặc được đầu tư nhiều hơn những đứa trẻ khác. MAP tập trung đi sâu vào việc vị trí con một khiến toàn bộ sự chú ý, kỳ vọng, cảm xúc, lo lắng và mô thức vận hành của gia đình dồn trực tiếp lên một đứa trẻ như thế nào, từ đó ảnh hưởng sâu sắc đến nội tâm, tính cách và hành trình trưởng thành của con.",
+    "title": "KHI CON L\u00c0 CON M\u1ed8T",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m m\u00f4 t\u1ea3 \u0111\u01a1n gi\u1ea3n r\u1eb1ng con m\u1ed9t \u0111\u01b0\u1ee3c y\u00eau th\u01b0\u01a1ng nhi\u1ec1u h\u01a1n, \u0111\u01b0\u1ee3c ch\u0103m s\u00f3c k\u1ef9 h\u01a1n ho\u1eb7c \u0111\u01b0\u1ee3c \u0111\u1ea7u t\u01b0 nhi\u1ec1u h\u01a1n nh\u1eefng \u0111\u1ee9a tr\u1ebb kh\u00e1c. MAP t\u1eadp trung \u0111i s\u00e2u v\u00e0o vi\u1ec7c v\u1ecb tr\u00ed con m\u1ed9t khi\u1ebfn to\u00e0n b\u1ed9 s\u1ef1 ch\u00fa \u00fd, k\u1ef3 v\u1ecdng, c\u1ea3m x\u00fac, lo l\u1eafng v\u00e0 m\u00f4 th\u1ee9c v\u1eadn h\u00e0nh c\u1ee7a gia \u0111\u00ecnh d\u1ed3n tr\u1ef1c ti\u1ebfp l\u00ean m\u1ed9t \u0111\u1ee9a tr\u1ebb nh\u01b0 th\u1ebf n\u00e0o, t\u1eeb \u0111\u00f3 \u1ea3nh h\u01b0\u1edfng s\u00e2u s\u1eafc \u0111\u1ebfn n\u1ed9i t\u00e2m, t\u00ednh c\u00e1ch v\u00e0 h\u00e0nh tr\u00ecnh tr\u01b0\u1edfng th\u00e0nh c\u1ee7a con.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-275",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-275",
     "number": 275,
-    "title": "KHI CON BỊ SO SÁNH VỚI ANH CHỊ EM",
-    "subtitle": "MAP này không nhằm nói đơn giản rằng cha mẹ không nên so sánh các con với nhau. MAP tập trung đi sâu vào việc sự so sánh trong gia đình đang tác động như thế nào đến cảm giác giá trị bản thân, cảm giác được yêu thương, vị trí của con trong hệ gia đình và cách con nhìn nhận chính mình trong suốt quá trình trưởng thành.",
+    "title": "KHI CON B\u1eca SO S\u00c1NH V\u1edaI ANH CH\u1eca EM",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m n\u00f3i \u0111\u01a1n gi\u1ea3n r\u1eb1ng cha m\u1eb9 kh\u00f4ng n\u00ean so s\u00e1nh c\u00e1c con v\u1edbi nhau. MAP t\u1eadp trung \u0111i s\u00e2u v\u00e0o vi\u1ec7c s\u1ef1 so s\u00e1nh trong gia \u0111\u00ecnh \u0111ang t\u00e1c \u0111\u1ed9ng nh\u01b0 th\u1ebf n\u00e0o \u0111\u1ebfn c\u1ea3m gi\u00e1c gi\u00e1 tr\u1ecb b\u1ea3n th\u00e2n, c\u1ea3m gi\u00e1c \u0111\u01b0\u1ee3c y\u00eau th\u01b0\u01a1ng, v\u1ecb tr\u00ed c\u1ee7a con trong h\u1ec7 gia \u0111\u00ecnh v\u00e0 c\u00e1ch con nh\u00ecn nh\u1eadn ch\u00ednh m\u00ecnh trong su\u1ed1t qu\u00e1 tr\u00ecnh tr\u01b0\u1edfng th\u00e0nh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-276",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-276",
     "number": 276,
-    "title": "KHI CON CẢM THẤY BỐ MẸ THIÊN VỊ",
-    "subtitle": "MAP này không nhằm đi tìm câu trả lời rằng bố mẹ có thật sự thiên vị hay không. MAP tập trung đi sâu vào trải nghiệm cảm xúc của đứa trẻ khi con cảm nhận rằng mình nhận được ít tình yêu hơn, ít sự quan tâm hơn, ít sự công nhận hơn hoặc ít được bảo vệ hơn so với anh chị em trong gia đình. Điều ảnh hưởng đến nội tâm con không phải sự thật khách quan, mà là điều con cảm nhận và tin là sự thật.",
+    "title": "KHI CON C\u1ea2M TH\u1ea4Y B\u1ed0 M\u1eb8 THI\u00caN V\u1eca",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m \u0111i t\u00ecm c\u00e2u tr\u1ea3 l\u1eddi r\u1eb1ng b\u1ed1 m\u1eb9 c\u00f3 th\u1eadt s\u1ef1 thi\u00ean v\u1ecb hay kh\u00f4ng. MAP t\u1eadp trung \u0111i s\u00e2u v\u00e0o tr\u1ea3i nghi\u1ec7m c\u1ea3m x\u00fac c\u1ee7a \u0111\u1ee9a tr\u1ebb khi con c\u1ea3m nh\u1eadn r\u1eb1ng m\u00ecnh nh\u1eadn \u0111\u01b0\u1ee3c \u00edt t\u00ecnh y\u00eau h\u01a1n, \u00edt s\u1ef1 quan t\u00e2m h\u01a1n, \u00edt s\u1ef1 c\u00f4ng nh\u1eadn h\u01a1n ho\u1eb7c \u00edt \u0111\u01b0\u1ee3c b\u1ea3o v\u1ec7 h\u01a1n so v\u1edbi anh ch\u1ecb em trong gia \u0111\u00ecnh. \u0110i\u1ec1u \u1ea3nh h\u01b0\u1edfng \u0111\u1ebfn n\u1ed9i t\u00e2m con kh\u00f4ng ph\u1ea3i s\u1ef1 th\u1eadt kh\u00e1ch quan, m\u00e0 l\u00e0 \u0111i\u1ec1u con c\u1ea3m nh\u1eadn v\u00e0 tin l\u00e0 s\u1ef1 th\u1eadt.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-277",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-277",
     "number": 277,
-    "title": "KHI CON PHẢI NHƯỜNG NHỊN QUÁ NHIỀU",
-    "subtitle": "MAP này không nhằm dạy con phải biết nhường nhịn nhiều hơn, mà giúp cha mẹ nhìn sâu vào những gì đang xảy ra bên trong một đứa trẻ khi con liên tục phải đặt nhu cầu, cảm xúc, quyền lợi và tiếng nói của mình xuống sau người khác. Trọng tâm của MAP là làm rõ ranh giới giữa sự sẻ chia lành mạnh và sự hy sinh bản thân kéo dài, từ đó giúp cha mẹ nhận ra khi nào việc dạy con “biết điều” đang vô tình biến thành việc dạy con quen chịu thiệt.",
+    "title": "KHI CON PH\u1ea2I NH\u01af\u1edcNG NH\u1ecaN QU\u00c1 NHI\u1ec0U",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m d\u1ea1y con ph\u1ea3i bi\u1ebft nh\u01b0\u1eddng nh\u1ecbn nhi\u1ec1u h\u01a1n, m\u00e0 gi\u00fap cha m\u1eb9 nh\u00ecn s\u00e2u v\u00e0o nh\u1eefng g\u00ec \u0111ang x\u1ea3y ra b\u00ean trong m\u1ed9t \u0111\u1ee9a tr\u1ebb khi con li\u00ean t\u1ee5c ph\u1ea3i \u0111\u1eb7t nhu c\u1ea7u, c\u1ea3m x\u00fac, quy\u1ec1n l\u1ee3i v\u00e0 ti\u1ebfng n\u00f3i c\u1ee7a m\u00ecnh xu\u1ed1ng sau ng\u01b0\u1eddi kh\u00e1c. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 l\u00e0m r\u00f5 ranh gi\u1edbi gi\u1eefa s\u1ef1 s\u1ebb chia l\u00e0nh m\u1ea1nh v\u00e0 s\u1ef1 hy sinh b\u1ea3n th\u00e2n k\u00e9o d\u00e0i, t\u1eeb \u0111\u00f3 gi\u00fap cha m\u1eb9 nh\u1eadn ra khi n\u00e0o vi\u1ec7c d\u1ea1y con \u201cbi\u1ebft \u0111i\u1ec1u\u201d \u0111ang v\u00f4 t\u00ecnh bi\u1ebfn th\u00e0nh vi\u1ec7c d\u1ea1y con quen ch\u1ecbu thi\u1ec7t.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-278",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-278",
     "number": 278,
-    "title": "KHI CON CẠNH TRANH ĐỂ ĐƯỢC CHÚ Ý",
-    "subtitle": "MAP này không nhằm phân tích việc con ganh đua, hơn thua hoặc thích nổi bật ở tầng hành vi bên ngoài, mà đi sâu vào nhu cầu cảm xúc ẩn phía sau những hành vi đó. Trọng tâm của MAP là giúp cha mẹ nhìn thấy rằng rất nhiều đứa trẻ không thật sự muốn thắng người khác, mà đang cố gắng tìm kiếm cảm giác mình được nhìn thấy, được quan tâm, được công nhận và có vị trí riêng trong gia đình.",
+    "title": "KHI CON C\u1ea0NH TRANH \u0110\u1ec2 \u0110\u01af\u1ee2C CH\u00da \u00dd",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m ph\u00e2n t\u00edch vi\u1ec7c con ganh \u0111ua, h\u01a1n thua ho\u1eb7c th\u00edch n\u1ed5i b\u1eadt \u1edf t\u1ea7ng h\u00e0nh vi b\u00ean ngo\u00e0i, m\u00e0 \u0111i s\u00e2u v\u00e0o nhu c\u1ea7u c\u1ea3m x\u00fac \u1ea9n ph\u00eda sau nh\u1eefng h\u00e0nh vi \u0111\u00f3. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 nh\u00ecn th\u1ea5y r\u1eb1ng r\u1ea5t nhi\u1ec1u \u0111\u1ee9a tr\u1ebb kh\u00f4ng th\u1eadt s\u1ef1 mu\u1ed1n th\u1eafng ng\u01b0\u1eddi kh\u00e1c, m\u00e0 \u0111ang c\u1ed1 g\u1eafng t\u00ecm ki\u1ebfm c\u1ea3m gi\u00e1c m\u00ecnh \u0111\u01b0\u1ee3c nh\u00ecn th\u1ea5y, \u0111\u01b0\u1ee3c quan t\u00e2m, \u0111\u01b0\u1ee3c c\u00f4ng nh\u1eadn v\u00e0 c\u00f3 v\u1ecb tr\u00ed ri\u00eang trong gia \u0111\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-279",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-279",
     "number": 279,
-    "title": "CÁCH XÂY KẾT NỐI LÀNH MẠNH GIỮA ANH CHỊ EM",
-    "subtitle": "MAP này không nhằm dạy các con phải yêu thương nhau bằng những lời khuyên đạo đức hoặc những quy tắc ứng xử bề mặt, mà đi sâu vào những điều thật sự tạo nên hoặc phá vỡ kết nối giữa anh chị em trong một gia đình. Trọng tâm của MAP là giúp cha mẹ hiểu rằng quan hệ anh chị em không được quyết định bởi huyết thống, mà được nuôi dưỡng hoặc tổn thương bởi chính môi trường cảm xúc mà gia đình tạo ra mỗi ngày.",
+    "title": "C\u00c1CH X\u00c2Y K\u1ebeT N\u1ed0I L\u00c0NH M\u1ea0NH GI\u1eeeA ANH CH\u1eca EM",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m d\u1ea1y c\u00e1c con ph\u1ea3i y\u00eau th\u01b0\u01a1ng nhau b\u1eb1ng nh\u1eefng l\u1eddi khuy\u00ean \u0111\u1ea1o \u0111\u1ee9c ho\u1eb7c nh\u1eefng quy t\u1eafc \u1ee9ng x\u1eed b\u1ec1 m\u1eb7t, m\u00e0 \u0111i s\u00e2u v\u00e0o nh\u1eefng \u0111i\u1ec1u th\u1eadt s\u1ef1 t\u1ea1o n\u00ean ho\u1eb7c ph\u00e1 v\u1ee1 k\u1ebft n\u1ed1i gi\u1eefa anh ch\u1ecb em trong m\u1ed9t gia \u0111\u00ecnh. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng quan h\u1ec7 anh ch\u1ecb em kh\u00f4ng \u0111\u01b0\u1ee3c quy\u1ebft \u0111\u1ecbnh b\u1edfi huy\u1ebft th\u1ed1ng, m\u00e0 \u0111\u01b0\u1ee3c nu\u00f4i d\u01b0\u1ee1ng ho\u1eb7c t\u1ed5n th\u01b0\u01a1ng b\u1edfi ch\u00ednh m\u00f4i tr\u01b0\u1eddng c\u1ea3m x\u00fac m\u00e0 gia \u0111\u00ecnh t\u1ea1o ra m\u1ed7i ng\u00e0y.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-280",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-280",
     "number": 280,
-    "title": "CÁCH BỐ MẸ CÔNG BẰNG THEO ĐÚNG NHU CẦU TỪNG CON",
-    "subtitle": "MAP này không nhằm hướng dẫn cha mẹ đối xử giống hệt nhau với tất cả các con, mà giúp cha mẹ hiểu sâu sắc sự khác biệt giữa công bằng và đồng đều trong nuôi dạy con. Trọng tâm của MAP là làm rõ rằng mỗi đứa trẻ có một thế giới nội tâm riêng, một cách tiếp nhận yêu thương riêng và một nhu cầu phát triển riêng. Vì vậy, công bằng thật sự không nằm ở việc cho các con những điều giống nhau, mà nằm ở việc nhìn thấy và đáp ứng đúng điều mỗi đứa trẻ thật sự cần.",
+    "title": "C\u00c1CH B\u1ed0 M\u1eb8 C\u00d4NG B\u1eb0NG THEO \u0110\u00daNG NHU C\u1ea6U T\u1eeaNG CON",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m h\u01b0\u1edbng d\u1eabn cha m\u1eb9 \u0111\u1ed1i x\u1eed gi\u1ed1ng h\u1ec7t nhau v\u1edbi t\u1ea5t c\u1ea3 c\u00e1c con, m\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u s\u00e2u s\u1eafc s\u1ef1 kh\u00e1c bi\u1ec7t gi\u1eefa c\u00f4ng b\u1eb1ng v\u00e0 \u0111\u1ed3ng \u0111\u1ec1u trong nu\u00f4i d\u1ea1y con. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 l\u00e0m r\u00f5 r\u1eb1ng m\u1ed7i \u0111\u1ee9a tr\u1ebb c\u00f3 m\u1ed9t th\u1ebf gi\u1edbi n\u1ed9i t\u00e2m ri\u00eang, m\u1ed9t c\u00e1ch ti\u1ebfp nh\u1eadn y\u00eau th\u01b0\u01a1ng ri\u00eang v\u00e0 m\u1ed9t nhu c\u1ea7u ph\u00e1t tri\u1ec3n ri\u00eang. V\u00ec v\u1eady, c\u00f4ng b\u1eb1ng th\u1eadt s\u1ef1 kh\u00f4ng n\u1eb1m \u1edf vi\u1ec7c cho c\u00e1c con nh\u1eefng \u0111i\u1ec1u gi\u1ed1ng nhau, m\u00e0 n\u1eb1m \u1edf vi\u1ec7c nh\u00ecn th\u1ea5y v\u00e0 \u0111\u00e1p \u1ee9ng \u0111\u00fang \u0111i\u1ec1u m\u1ed7i \u0111\u1ee9a tr\u1ebb th\u1eadt s\u1ef1 c\u1ea7n.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-281",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-281",
     "number": 281,
-    "title": "NHỮNG MÔ THỨC GIA ĐÌNH ĐANG LẶP LẠI QUA NHIỀU THẾ HỆ",
-    "subtitle": "MAP này không nhằm tìm người để đổ lỗi, không nhằm quy trách nhiệm cho ông bà, cha mẹ hoặc bất kỳ thế hệ nào trong gia đình, mà giúp mỗi người nhìn sâu vào những mô thức cảm xúc, niềm tin, cách phản ứng và cách sống đang được truyền từ thế hệ này sang thế hệ khác. Trọng tâm của MAP là giúp người đọc nhận ra rằng rất nhiều điều mình đang nghĩ, đang sợ, đang chịu đựng hoặc đang lặp lại hôm nay có thể không hoàn toàn bắt đầu từ riêng mình, mà là kết quả của một chuỗi ảnh hưởng kéo dài qua nhiều thế hệ.",
+    "title": "NH\u1eeeNG M\u00d4 TH\u1ee8C GIA \u0110\u00ccNH \u0110ANG L\u1eb6P L\u1ea0I QUA NHI\u1ec0U TH\u1ebe H\u1ec6",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng nh\u1eb1m t\u00ecm ng\u01b0\u1eddi \u0111\u1ec3 \u0111\u1ed5 l\u1ed7i, kh\u00f4ng nh\u1eb1m quy tr\u00e1ch nhi\u1ec7m cho \u00f4ng b\u00e0, cha m\u1eb9 ho\u1eb7c b\u1ea5t k\u1ef3 th\u1ebf h\u1ec7 n\u00e0o trong gia \u0111\u00ecnh, m\u00e0 gi\u00fap m\u1ed7i ng\u01b0\u1eddi nh\u00ecn s\u00e2u v\u00e0o nh\u1eefng m\u00f4 th\u1ee9c c\u1ea3m x\u00fac, ni\u1ec1m tin, c\u00e1ch ph\u1ea3n \u1ee9ng v\u00e0 c\u00e1ch s\u1ed1ng \u0111ang \u0111\u01b0\u1ee3c truy\u1ec1n t\u1eeb th\u1ebf h\u1ec7 n\u00e0y sang th\u1ebf h\u1ec7 kh\u00e1c. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 gi\u00fap ng\u01b0\u1eddi \u0111\u1ecdc nh\u1eadn ra r\u1eb1ng r\u1ea5t nhi\u1ec1u \u0111i\u1ec1u m\u00ecnh \u0111ang ngh\u0129, \u0111ang s\u1ee3, \u0111ang ch\u1ecbu \u0111\u1ef1ng ho\u1eb7c \u0111ang l\u1eb7p l\u1ea1i h\u00f4m nay c\u00f3 th\u1ec3 kh\u00f4ng ho\u00e0n to\u00e0n b\u1eaft \u0111\u1ea7u t\u1eeb ri\u00eang m\u00ecnh, m\u00e0 l\u00e0 k\u1ebft qu\u1ea3 c\u1ee7a m\u1ed9t chu\u1ed7i \u1ea3nh h\u01b0\u1edfng k\u00e9o d\u00e0i qua nhi\u1ec1u th\u1ebf h\u1ec7.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-282",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-282",
     "number": 282,
-    "title": "ĐIỀU CON ĐANG VÔ THỨC HỌC TỪ GIA ĐÌNH",
-    "subtitle": "MAP này không tập trung vào việc cha mẹ đã dạy con điều gì bằng lời nói, mà đi sâu vào những điều con đang hấp thụ mỗi ngày từ cách gia đình vận hành, cách người lớn yêu thương, phản ứng, đối diện khó khăn, xử lý cảm xúc và xây dựng các mối quan hệ. Trọng tâm của MAP là giúp cha mẹ nhận ra rằng điều ảnh hưởng đến con sâu nhất thường không nằm ở những bài học được nói ra, mà nằm ở những điều được sống cùng nhau mỗi ngày trong gia đình.",
+    "title": "\u0110I\u1ec0U CON \u0110ANG V\u00d4 TH\u1ee8C H\u1eccC T\u1eea GIA \u0110\u00ccNH",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng t\u1eadp trung v\u00e0o vi\u1ec7c cha m\u1eb9 \u0111\u00e3 d\u1ea1y con \u0111i\u1ec1u g\u00ec b\u1eb1ng l\u1eddi n\u00f3i, m\u00e0 \u0111i s\u00e2u v\u00e0o nh\u1eefng \u0111i\u1ec1u con \u0111ang h\u1ea5p th\u1ee5 m\u1ed7i ng\u00e0y t\u1eeb c\u00e1ch gia \u0111\u00ecnh v\u1eadn h\u00e0nh, c\u00e1ch ng\u01b0\u1eddi l\u1edbn y\u00eau th\u01b0\u01a1ng, ph\u1ea3n \u1ee9ng, \u0111\u1ed1i di\u1ec7n kh\u00f3 kh\u0103n, x\u1eed l\u00fd c\u1ea3m x\u00fac v\u00e0 x\u00e2y d\u1ef1ng c\u00e1c m\u1ed1i quan h\u1ec7. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 nh\u1eadn ra r\u1eb1ng \u0111i\u1ec1u \u1ea3nh h\u01b0\u1edfng \u0111\u1ebfn con s\u00e2u nh\u1ea5t th\u01b0\u1eddng kh\u00f4ng n\u1eb1m \u1edf nh\u1eefng b\u00e0i h\u1ecdc \u0111\u01b0\u1ee3c n\u00f3i ra, m\u00e0 n\u1eb1m \u1edf nh\u1eefng \u0111i\u1ec1u \u0111\u01b0\u1ee3c s\u1ed1ng c\u00f9ng nhau m\u1ed7i ng\u00e0y trong gia \u0111\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-283",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-283",
     "number": 283,
-    "title": "NIỀM TIN GIA ĐÌNH ẢNH HƯỞNG ĐẾN CON NHƯ THẾ NÀO",
-    "subtitle": "MAP này không đi theo hướng giải thích chung chung rằng gia đình ảnh hưởng đến con, mà đi sâu vào việc những niềm tin đang tồn tại trong gia đình sẽ âm thầm trở thành hệ điều hành bên trong của con như thế nào. Trọng tâm của MAP là giúp cha mẹ nhận ra rằng con không chỉ học từ lời dạy trực tiếp, mà còn hấp thụ những câu nói lặp đi lặp lại, những nỗi sợ lặp đi lặp lại, những cách đánh giá cuộc sống, tiền bạc, tình yêu, thành công, thất bại và giá trị bản thân đang tồn tại trong gia đình mỗi ngày.",
+    "title": "NI\u1ec0M TIN GIA \u0110\u00ccNH \u1ea2NH H\u01af\u1edeNG \u0110\u1ebeN CON NH\u01af TH\u1ebe N\u00c0O",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng gi\u1ea3i th\u00edch chung chung r\u1eb1ng gia \u0111\u00ecnh \u1ea3nh h\u01b0\u1edfng \u0111\u1ebfn con, m\u00e0 \u0111i s\u00e2u v\u00e0o vi\u1ec7c nh\u1eefng ni\u1ec1m tin \u0111ang t\u1ed3n t\u1ea1i trong gia \u0111\u00ecnh s\u1ebd \u00e2m th\u1ea7m tr\u1edf th\u00e0nh h\u1ec7 \u0111i\u1ec1u h\u00e0nh b\u00ean trong c\u1ee7a con nh\u01b0 th\u1ebf n\u00e0o. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 nh\u1eadn ra r\u1eb1ng con kh\u00f4ng ch\u1ec9 h\u1ecdc t\u1eeb l\u1eddi d\u1ea1y tr\u1ef1c ti\u1ebfp, m\u00e0 c\u00f2n h\u1ea5p th\u1ee5 nh\u1eefng c\u00e2u n\u00f3i l\u1eb7p \u0111i l\u1eb7p l\u1ea1i, nh\u1eefng n\u1ed7i s\u1ee3 l\u1eb7p \u0111i l\u1eb7p l\u1ea1i, nh\u1eefng c\u00e1ch \u0111\u00e1nh gi\u00e1 cu\u1ed9c s\u1ed1ng, ti\u1ec1n b\u1ea1c, t\u00ecnh y\u00eau, th\u00e0nh c\u00f4ng, th\u1ea5t b\u1ea1i v\u00e0 gi\u00e1 tr\u1ecb b\u1ea3n th\u00e2n \u0111ang t\u1ed3n t\u1ea1i trong gia \u0111\u00ecnh m\u1ed7i ng\u00e0y.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-284",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-284",
     "number": 284,
-    "title": "TỔN THƯƠNG ĐANG TRUYỀN TỪ THẾ HỆ TRƯỚC",
-    "subtitle": "MAP này không đi theo hướng đổ lỗi cho ông bà, cha mẹ hay những thế hệ đi trước, mà đi sâu vào việc những tổn thương chưa được nhìn nhận và chữa lành trong gia đình có thể âm thầm truyền từ thế hệ này sang thế hệ khác như thế nào. Trọng tâm của MAP là giúp mỗi người hiểu rằng nhiều phản ứng, nỗi sợ, cách yêu thương, cách bảo vệ bản thân và cách nuôi dạy con hôm nay không hoàn toàn bắt đầu từ hiện tại, mà có thể là kết quả của những vết thương đã tồn tại trong hệ gia đình từ rất lâu.",
+    "title": "T\u1ed4N TH\u01af\u01a0NG \u0110ANG TRUY\u1ec0N T\u1eea TH\u1ebe H\u1ec6 TR\u01af\u1edaC",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng \u0111\u1ed5 l\u1ed7i cho \u00f4ng b\u00e0, cha m\u1eb9 hay nh\u1eefng th\u1ebf h\u1ec7 \u0111i tr\u01b0\u1edbc, m\u00e0 \u0111i s\u00e2u v\u00e0o vi\u1ec7c nh\u1eefng t\u1ed5n th\u01b0\u01a1ng ch\u01b0a \u0111\u01b0\u1ee3c nh\u00ecn nh\u1eadn v\u00e0 ch\u1eefa l\u00e0nh trong gia \u0111\u00ecnh c\u00f3 th\u1ec3 \u00e2m th\u1ea7m truy\u1ec1n t\u1eeb th\u1ebf h\u1ec7 n\u00e0y sang th\u1ebf h\u1ec7 kh\u00e1c nh\u01b0 th\u1ebf n\u00e0o. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 gi\u00fap m\u1ed7i ng\u01b0\u1eddi hi\u1ec3u r\u1eb1ng nhi\u1ec1u ph\u1ea3n \u1ee9ng, n\u1ed7i s\u1ee3, c\u00e1ch y\u00eau th\u01b0\u01a1ng, c\u00e1ch b\u1ea3o v\u1ec7 b\u1ea3n th\u00e2n v\u00e0 c\u00e1ch nu\u00f4i d\u1ea1y con h\u00f4m nay kh\u00f4ng ho\u00e0n to\u00e0n b\u1eaft \u0111\u1ea7u t\u1eeb hi\u1ec7n t\u1ea1i, m\u00e0 c\u00f3 th\u1ec3 l\u00e0 k\u1ebft qu\u1ea3 c\u1ee7a nh\u1eefng v\u1ebft th\u01b0\u01a1ng \u0111\u00e3 t\u1ed3n t\u1ea1i trong h\u1ec7 gia \u0111\u00ecnh t\u1eeb r\u1ea5t l\u00e2u.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-285",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-285",
     "number": 285,
-    "title": "ĐIỀU GIA ĐÌNH ĐANG VÔ THỨC ÁP ĐẶT LÊN CON",
-    "subtitle": "MAP này không đi theo hướng quy kết cha mẹ là người áp đặt hoặc nhìn gia đình dưới góc độ đúng – sai đơn giản, mà đi sâu vào những áp lực vô hình đang được đặt lên vai con mỗi ngày thông qua kỳ vọng, nỗi sợ, tiêu chuẩn sống, vai trò gia đình và những mong muốn chưa hoàn thành của người lớn. Trọng tâm của MAP là giúp cha mẹ nhận ra rằng nhiều điều con đang gánh không đến từ những mệnh lệnh trực tiếp, mà đến từ những thông điệp âm thầm được truyền đi trong gia đình suốt nhiều năm.",
+    "title": "\u0110I\u1ec0U GIA \u0110\u00ccNH \u0110ANG V\u00d4 TH\u1ee8C \u00c1P \u0110\u1eb6T L\u00caN CON",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng quy k\u1ebft cha m\u1eb9 l\u00e0 ng\u01b0\u1eddi \u00e1p \u0111\u1eb7t ho\u1eb7c nh\u00ecn gia \u0111\u00ecnh d\u01b0\u1edbi g\u00f3c \u0111\u1ed9 \u0111\u00fang \u2013 sai \u0111\u01a1n gi\u1ea3n, m\u00e0 \u0111i s\u00e2u v\u00e0o nh\u1eefng \u00e1p l\u1ef1c v\u00f4 h\u00ecnh \u0111ang \u0111\u01b0\u1ee3c \u0111\u1eb7t l\u00ean vai con m\u1ed7i ng\u00e0y th\u00f4ng qua k\u1ef3 v\u1ecdng, n\u1ed7i s\u1ee3, ti\u00eau chu\u1ea9n s\u1ed1ng, vai tr\u00f2 gia \u0111\u00ecnh v\u00e0 nh\u1eefng mong mu\u1ed1n ch\u01b0a ho\u00e0n th\u00e0nh c\u1ee7a ng\u01b0\u1eddi l\u1edbn. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 nh\u1eadn ra r\u1eb1ng nhi\u1ec1u \u0111i\u1ec1u con \u0111ang g\u00e1nh kh\u00f4ng \u0111\u1ebfn t\u1eeb nh\u1eefng m\u1ec7nh l\u1ec7nh tr\u1ef1c ti\u1ebfp, m\u00e0 \u0111\u1ebfn t\u1eeb nh\u1eefng th\u00f4ng \u0111i\u1ec7p \u00e2m th\u1ea7m \u0111\u01b0\u1ee3c truy\u1ec1n \u0111i trong gia \u0111\u00ecnh su\u1ed1t nhi\u1ec1u n\u0103m.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-286",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-286",
     "number": 286,
-    "title": "KHI CON TRỞ THÀNH NGƯỜI GÁNH CẢM XÚC CỦA GIA ĐÌNH",
-    "subtitle": "MAP này không đi theo hướng giải thích đơn giản rằng con là đứa trẻ nhạy cảm, sống tình cảm hoặc thương gia đình, mà đi sâu vào cơ chế khiến một đứa trẻ vô thức trở thành người hấp thụ, điều hòa, giữ gìn hoặc gánh vác cảm xúc cho cả hệ gia đình. Trọng tâm của MAP là giúp cha mẹ nhận ra rằng phía sau hình ảnh một đứa trẻ rất hiểu chuyện, rất ngoan hoặc rất biết quan tâm người khác đôi khi là một nội tâm luôn căng thẳng, luôn cảnh giác và luôn cảm thấy mình phải chịu trách nhiệm cho cảm xúc của mọi người xung quanh.",
+    "title": "KHI CON TR\u1ede TH\u00c0NH NG\u01af\u1edcI G\u00c1NH C\u1ea2M X\u00daC C\u1ee6A GIA \u0110\u00ccNH",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng gi\u1ea3i th\u00edch \u0111\u01a1n gi\u1ea3n r\u1eb1ng con l\u00e0 \u0111\u1ee9a tr\u1ebb nh\u1ea1y c\u1ea3m, s\u1ed1ng t\u00ecnh c\u1ea3m ho\u1eb7c th\u01b0\u01a1ng gia \u0111\u00ecnh, m\u00e0 \u0111i s\u00e2u v\u00e0o c\u01a1 ch\u1ebf khi\u1ebfn m\u1ed9t \u0111\u1ee9a tr\u1ebb v\u00f4 th\u1ee9c tr\u1edf th\u00e0nh ng\u01b0\u1eddi h\u1ea5p th\u1ee5, \u0111i\u1ec1u h\u00f2a, gi\u1eef g\u00ecn ho\u1eb7c g\u00e1nh v\u00e1c c\u1ea3m x\u00fac cho c\u1ea3 h\u1ec7 gia \u0111\u00ecnh. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 nh\u1eadn ra r\u1eb1ng ph\u00eda sau h\u00ecnh \u1ea3nh m\u1ed9t \u0111\u1ee9a tr\u1ebb r\u1ea5t hi\u1ec3u chuy\u1ec7n, r\u1ea5t ngoan ho\u1eb7c r\u1ea5t bi\u1ebft quan t\u00e2m ng\u01b0\u1eddi kh\u00e1c \u0111\u00f4i khi l\u00e0 m\u1ed9t n\u1ed9i t\u00e2m lu\u00f4n c\u0103ng th\u1eb3ng, lu\u00f4n c\u1ea3nh gi\u00e1c v\u00e0 lu\u00f4n c\u1ea3m th\u1ea5y m\u00ecnh ph\u1ea3i ch\u1ecbu tr\u00e1ch nhi\u1ec7m cho c\u1ea3m x\u00fac c\u1ee7a m\u1ecdi ng\u01b0\u1eddi xung quanh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-287",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-287",
     "number": 287,
-    "title": "KHI CON PHẢI TRƯỞNG THÀNH QUÁ SỚM",
-    "subtitle": "MAP này không đi theo hướng ca ngợi một đứa trẻ vì quá hiểu chuyện, quá tự lập, quá mạnh mẽ hoặc quá trưởng thành so với tuổi, mà đi sâu vào cái giá tâm lý mà con đang phải trả khi buộc phải lớn nhanh để thích nghi với môi trường sống của mình. Trọng tâm của MAP là giúp cha mẹ nhìn ra rằng có những đứa trẻ không thật sự trưởng thành từ sự phát triển tự nhiên, mà đang sống trong chế độ sinh tồn cảm xúc, nơi con phải gồng lên để tự bảo vệ mình, bảo vệ gia đình hoặc giữ mọi thứ ổn định.",
+    "title": "KHI CON PH\u1ea2I TR\u01af\u1edeNG TH\u00c0NH QU\u00c1 S\u1edaM",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng ca ng\u1ee3i m\u1ed9t \u0111\u1ee9a tr\u1ebb v\u00ec qu\u00e1 hi\u1ec3u chuy\u1ec7n, qu\u00e1 t\u1ef1 l\u1eadp, qu\u00e1 m\u1ea1nh m\u1ebd ho\u1eb7c qu\u00e1 tr\u01b0\u1edfng th\u00e0nh so v\u1edbi tu\u1ed5i, m\u00e0 \u0111i s\u00e2u v\u00e0o c\u00e1i gi\u00e1 t\u00e2m l\u00fd m\u00e0 con \u0111ang ph\u1ea3i tr\u1ea3 khi bu\u1ed9c ph\u1ea3i l\u1edbn nhanh \u0111\u1ec3 th\u00edch nghi v\u1edbi m\u00f4i tr\u01b0\u1eddng s\u1ed1ng c\u1ee7a m\u00ecnh. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 nh\u00ecn ra r\u1eb1ng c\u00f3 nh\u1eefng \u0111\u1ee9a tr\u1ebb kh\u00f4ng th\u1eadt s\u1ef1 tr\u01b0\u1edfng th\u00e0nh t\u1eeb s\u1ef1 ph\u00e1t tri\u1ec3n t\u1ef1 nhi\u00ean, m\u00e0 \u0111ang s\u1ed1ng trong ch\u1ebf \u0111\u1ed9 sinh t\u1ed3n c\u1ea3m x\u00fac, n\u01a1i con ph\u1ea3i g\u1ed3ng l\u00ean \u0111\u1ec3 t\u1ef1 b\u1ea3o v\u1ec7 m\u00ecnh, b\u1ea3o v\u1ec7 gia \u0111\u00ecnh ho\u1eb7c gi\u1eef m\u1ecdi th\u1ee9 \u1ed5n \u0111\u1ecbnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-288",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-288",
     "number": 288,
-    "title": "CÁCH XÂY MÔI TRƯỜNG GIA ĐÌNH CHỮA LÀNH HƠN",
-    "subtitle": "MAP này không đi theo hướng xây dựng một gia đình hoàn hảo, không có mâu thuẫn hoặc luôn tích cực, mà đi sâu vào cách tạo ra một môi trường nơi mỗi thành viên cảm thấy an toàn hơn về cảm xúc, được là chính mình hơn và có cơ hội chữa lành những tổn thương đã tích lũy trong quá trình sống cùng nhau. Trọng tâm của MAP là giúp gia đình hiểu rằng chữa lành không phải là xóa bỏ mọi vấn đề, mà là thay đổi cách lắng nghe, kết nối, phản ứng và đồng hành với nhau mỗi ngày.",
+    "title": "C\u00c1CH X\u00c2Y M\u00d4I TR\u01af\u1edcNG GIA \u0110\u00ccNH CH\u1eeeA L\u00c0NH H\u01a0N",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng x\u00e2y d\u1ef1ng m\u1ed9t gia \u0111\u00ecnh ho\u00e0n h\u1ea3o, kh\u00f4ng c\u00f3 m\u00e2u thu\u1eabn ho\u1eb7c lu\u00f4n t\u00edch c\u1ef1c, m\u00e0 \u0111i s\u00e2u v\u00e0o c\u00e1ch t\u1ea1o ra m\u1ed9t m\u00f4i tr\u01b0\u1eddng n\u01a1i m\u1ed7i th\u00e0nh vi\u00ean c\u1ea3m th\u1ea5y an to\u00e0n h\u01a1n v\u1ec1 c\u1ea3m x\u00fac, \u0111\u01b0\u1ee3c l\u00e0 ch\u00ednh m\u00ecnh h\u01a1n v\u00e0 c\u00f3 c\u01a1 h\u1ed9i ch\u1eefa l\u00e0nh nh\u1eefng t\u1ed5n th\u01b0\u01a1ng \u0111\u00e3 t\u00edch l\u0169y trong qu\u00e1 tr\u00ecnh s\u1ed1ng c\u00f9ng nhau. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 gi\u00fap gia \u0111\u00ecnh hi\u1ec3u r\u1eb1ng ch\u1eefa l\u00e0nh kh\u00f4ng ph\u1ea3i l\u00e0 x\u00f3a b\u1ecf m\u1ecdi v\u1ea5n \u0111\u1ec1, m\u00e0 l\u00e0 thay \u0111\u1ed5i c\u00e1ch l\u1eafng nghe, k\u1ebft n\u1ed1i, ph\u1ea3n \u1ee9ng v\u00e0 \u0111\u1ed3ng h\u00e0nh v\u1edbi nhau m\u1ed7i ng\u00e0y.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-289",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-289",
     "number": 289,
-    "title": "MÔ THỨC TIỀN BẠC CỦA GIA ĐÌNH ẢNH HƯỞNG ĐẾN CON",
-    "subtitle": "MAP này không đi theo hướng dạy quản lý tài chính cá nhân hay kiến thức kiếm tiền đơn thuần, mà đi sâu vào cách môi trường tiền bạc trong gia đình đang âm thầm hình thành nhận thức, cảm xúc, nỗi sợ, giá trị bản thân và cảm giác an toàn của con từ khi còn rất nhỏ. Trọng tâm của MAP là giúp cha mẹ hiểu rằng điều ảnh hưởng đến con không chỉ là gia đình có nhiều hay ít tiền, mà là cách gia đình nhìn nhận, sử dụng, lo lắng, tranh cãi, đánh giá và gắn ý nghĩa cho tiền bạc mỗi ngày.",
+    "title": "M\u00d4 TH\u1ee8C TI\u1ec0N B\u1ea0C C\u1ee6A GIA \u0110\u00ccNH \u1ea2NH H\u01af\u1edeNG \u0110\u1ebeN CON",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng d\u1ea1y qu\u1ea3n l\u00fd t\u00e0i ch\u00ednh c\u00e1 nh\u00e2n hay ki\u1ebfn th\u1ee9c ki\u1ebfm ti\u1ec1n \u0111\u01a1n thu\u1ea7n, m\u00e0 \u0111i s\u00e2u v\u00e0o c\u00e1ch m\u00f4i tr\u01b0\u1eddng ti\u1ec1n b\u1ea1c trong gia \u0111\u00ecnh \u0111ang \u00e2m th\u1ea7m h\u00ecnh th\u00e0nh nh\u1eadn th\u1ee9c, c\u1ea3m x\u00fac, n\u1ed7i s\u1ee3, gi\u00e1 tr\u1ecb b\u1ea3n th\u00e2n v\u00e0 c\u1ea3m gi\u00e1c an to\u00e0n c\u1ee7a con t\u1eeb khi c\u00f2n r\u1ea5t nh\u1ecf. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng \u0111i\u1ec1u \u1ea3nh h\u01b0\u1edfng \u0111\u1ebfn con kh\u00f4ng ch\u1ec9 l\u00e0 gia \u0111\u00ecnh c\u00f3 nhi\u1ec1u hay \u00edt ti\u1ec1n, m\u00e0 l\u00e0 c\u00e1ch gia \u0111\u00ecnh nh\u00ecn nh\u1eadn, s\u1eed d\u1ee5ng, lo l\u1eafng, tranh c\u00e3i, \u0111\u00e1nh gi\u00e1 v\u00e0 g\u1eafn \u00fd ngh\u0129a cho ti\u1ec1n b\u1ea1c m\u1ed7i ng\u00e0y.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-290",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-290",
     "number": 290,
-    "title": "MÔ THỨC TÌNH CẢM CỦA GIA ĐÌNH ẢNH HƯỞNG ĐẾN CON",
-    "subtitle": "MAP này không đi theo hướng đánh giá gia đình hạnh phúc hay không hạnh phúc, mà đi sâu vào cách môi trường tình cảm trong gia đình đang âm thầm xây dựng nhận thức của con về tình yêu, sự gắn bó, sự thân mật, sự an toàn cảm xúc và giá trị bản thân. Trọng tâm của MAP là giúp cha mẹ hiểu rằng trẻ không học về tình yêu bằng lời khuyên hay bài giảng, mà học bằng những gì con nhìn thấy, cảm nhận và trải nghiệm mỗi ngày từ cách các thành viên trong gia đình yêu thương, xung đột, chữa lành và đối xử với nhau.",
+    "title": "M\u00d4 TH\u1ee8C T\u00ccNH C\u1ea2M C\u1ee6A GIA \u0110\u00ccNH \u1ea2NH H\u01af\u1edeNG \u0110\u1ebeN CON",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng \u0111\u00e1nh gi\u00e1 gia \u0111\u00ecnh h\u1ea1nh ph\u00fac hay kh\u00f4ng h\u1ea1nh ph\u00fac, m\u00e0 \u0111i s\u00e2u v\u00e0o c\u00e1ch m\u00f4i tr\u01b0\u1eddng t\u00ecnh c\u1ea3m trong gia \u0111\u00ecnh \u0111ang \u00e2m th\u1ea7m x\u00e2y d\u1ef1ng nh\u1eadn th\u1ee9c c\u1ee7a con v\u1ec1 t\u00ecnh y\u00eau, s\u1ef1 g\u1eafn b\u00f3, s\u1ef1 th\u00e2n m\u1eadt, s\u1ef1 an to\u00e0n c\u1ea3m x\u00fac v\u00e0 gi\u00e1 tr\u1ecb b\u1ea3n th\u00e2n. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng tr\u1ebb kh\u00f4ng h\u1ecdc v\u1ec1 t\u00ecnh y\u00eau b\u1eb1ng l\u1eddi khuy\u00ean hay b\u00e0i gi\u1ea3ng, m\u00e0 h\u1ecdc b\u1eb1ng nh\u1eefng g\u00ec con nh\u00ecn th\u1ea5y, c\u1ea3m nh\u1eadn v\u00e0 tr\u1ea3i nghi\u1ec7m m\u1ed7i ng\u00e0y t\u1eeb c\u00e1ch c\u00e1c th\u00e0nh vi\u00ean trong gia \u0111\u00ecnh y\u00eau th\u01b0\u01a1ng, xung \u0111\u1ed9t, ch\u1eefa l\u00e0nh v\u00e0 \u0111\u1ed1i x\u1eed v\u1edbi nhau.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-291",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-291",
     "number": 291,
-    "title": "MAP BỐ MẸ – CON GIAI ĐOẠN 0–6 TUỔI",
-    "subtitle": "MAP này không đi theo hướng dạy cha mẹ các kỹ thuật nuôi dạy trẻ nhỏ đơn thuần, mà đi sâu vào giai đoạn nền móng quan trọng nhất của cuộc đời con người — giai đoạn từ 0–6 tuổi, nơi những lớp cảm xúc đầu tiên, cảm giác an toàn đầu tiên, niềm tin đầu tiên về bản thân và thế giới bắt đầu được hình thành. Mục tiêu cốt lõi là giúp cha mẹ hiểu rằng: những gì xảy ra trong giai đoạn này không chỉ ảnh hưởng đến tuổi thơ, mà còn trở thành nền tảng cho cách con yêu thương, kết nối, tin tưởng, học hỏi và vận hành cuộc sống trong nhiều năm sau đó.",
+    "title": "MAP B\u1ed0 M\u1eb8 \u2013 CON GIAI \u0110O\u1ea0N 0\u20136 TU\u1ed4I",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng d\u1ea1y cha m\u1eb9 c\u00e1c k\u1ef9 thu\u1eadt nu\u00f4i d\u1ea1y tr\u1ebb nh\u1ecf \u0111\u01a1n thu\u1ea7n, m\u00e0 \u0111i s\u00e2u v\u00e0o giai \u0111o\u1ea1n n\u1ec1n m\u00f3ng quan tr\u1ecdng nh\u1ea5t c\u1ee7a cu\u1ed9c \u0111\u1eddi con ng\u01b0\u1eddi \u2014 giai \u0111o\u1ea1n t\u1eeb 0\u20136 tu\u1ed5i, n\u01a1i nh\u1eefng l\u1edbp c\u1ea3m x\u00fac \u0111\u1ea7u ti\u00ean, c\u1ea3m gi\u00e1c an to\u00e0n \u0111\u1ea7u ti\u00ean, ni\u1ec1m tin \u0111\u1ea7u ti\u00ean v\u1ec1 b\u1ea3n th\u00e2n v\u00e0 th\u1ebf gi\u1edbi b\u1eaft \u0111\u1ea7u \u0111\u01b0\u1ee3c h\u00ecnh th\u00e0nh. M\u1ee5c ti\u00eau c\u1ed1t l\u00f5i l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng: nh\u1eefng g\u00ec x\u1ea3y ra trong giai \u0111o\u1ea1n n\u00e0y kh\u00f4ng ch\u1ec9 \u1ea3nh h\u01b0\u1edfng \u0111\u1ebfn tu\u1ed5i th\u01a1, m\u00e0 c\u00f2n tr\u1edf th\u00e0nh n\u1ec1n t\u1ea3ng cho c\u00e1ch con y\u00eau th\u01b0\u01a1ng, k\u1ebft n\u1ed1i, tin t\u01b0\u1edfng, h\u1ecdc h\u1ecfi v\u00e0 v\u1eadn h\u00e0nh cu\u1ed9c s\u1ed1ng trong nhi\u1ec1u n\u0103m sau \u0111\u00f3.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-292",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-292",
     "number": 292,
-    "title": "MAP BỐ MẸ – CON GIAI ĐOẠN 7–12 TUỔI",
-    "subtitle": "MAP này không đi theo hướng dạy cha mẹ cách quản lý việc học hay kiểm soát hành vi của con trong độ tuổi tiểu học, mà đi sâu vào giai đoạn trẻ bắt đầu xây dựng nhận thức rõ ràng hơn về bản thân, năng lực, vị trí của mình trong tập thể và cảm giác mình có giá trị hay không. Đây là giai đoạn nội tâm con bắt đầu hình thành những lớp nền rất quan trọng liên quan đến lòng tự trọng, sự tự tin, khả năng đối diện thất bại, cảm giác thuộc về và cách con nhìn chính mình trong thế giới xung quanh.",
+    "title": "MAP B\u1ed0 M\u1eb8 \u2013 CON GIAI \u0110O\u1ea0N 7\u201312 TU\u1ed4I",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng d\u1ea1y cha m\u1eb9 c\u00e1ch qu\u1ea3n l\u00fd vi\u1ec7c h\u1ecdc hay ki\u1ec3m so\u00e1t h\u00e0nh vi c\u1ee7a con trong \u0111\u1ed9 tu\u1ed5i ti\u1ec3u h\u1ecdc, m\u00e0 \u0111i s\u00e2u v\u00e0o giai \u0111o\u1ea1n tr\u1ebb b\u1eaft \u0111\u1ea7u x\u00e2y d\u1ef1ng nh\u1eadn th\u1ee9c r\u00f5 r\u00e0ng h\u01a1n v\u1ec1 b\u1ea3n th\u00e2n, n\u0103ng l\u1ef1c, v\u1ecb tr\u00ed c\u1ee7a m\u00ecnh trong t\u1eadp th\u1ec3 v\u00e0 c\u1ea3m gi\u00e1c m\u00ecnh c\u00f3 gi\u00e1 tr\u1ecb hay kh\u00f4ng. \u0110\u00e2y l\u00e0 giai \u0111o\u1ea1n n\u1ed9i t\u00e2m con b\u1eaft \u0111\u1ea7u h\u00ecnh th\u00e0nh nh\u1eefng l\u1edbp n\u1ec1n r\u1ea5t quan tr\u1ecdng li\u00ean quan \u0111\u1ebfn l\u00f2ng t\u1ef1 tr\u1ecdng, s\u1ef1 t\u1ef1 tin, kh\u1ea3 n\u0103ng \u0111\u1ed1i di\u1ec7n th\u1ea5t b\u1ea1i, c\u1ea3m gi\u00e1c thu\u1ed9c v\u1ec1 v\u00e0 c\u00e1ch con nh\u00ecn ch\u00ednh m\u00ecnh trong th\u1ebf gi\u1edbi xung quanh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-293",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-293",
     "number": 293,
-    "title": "MAP BỐ MẸ – CON GIAI ĐOẠN TUỔI TEEN",
-    "subtitle": "MAP này không đi theo hướng quản lý tuổi dậy thì, kiểm soát hành vi hay tìm cách làm cho con nghe lời hơn, mà đi sâu vào giai đoạn chuyển hóa mạnh mẽ nhất trong quá trình phát triển bản sắc cá nhân của con. Đây là giai đoạn tuổi teen bắt đầu rời khỏi sự phụ thuộc tâm lý của thời thơ ấu để từng bước xây dựng cảm giác “mình là ai”, “mình muốn gì”, “mình có giá trị như thế nào” và “mình muốn sống cuộc đời của mình ra sao”. Mục tiêu cốt lõi của MAP là giúp cha mẹ hiểu rằng phần lớn những xung đột tuổi teen không xuất phát từ sự nổi loạn đơn thuần mà đến từ nhu cầu phát triển bản sắc và nhu cầu được nhìn nhận như một con người độc lập hơn.",
+    "title": "MAP B\u1ed0 M\u1eb8 \u2013 CON GIAI \u0110O\u1ea0N TU\u1ed4I TEEN",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng qu\u1ea3n l\u00fd tu\u1ed5i d\u1eady th\u00ec, ki\u1ec3m so\u00e1t h\u00e0nh vi hay t\u00ecm c\u00e1ch l\u00e0m cho con nghe l\u1eddi h\u01a1n, m\u00e0 \u0111i s\u00e2u v\u00e0o giai \u0111o\u1ea1n chuy\u1ec3n h\u00f3a m\u1ea1nh m\u1ebd nh\u1ea5t trong qu\u00e1 tr\u00ecnh ph\u00e1t tri\u1ec3n b\u1ea3n s\u1eafc c\u00e1 nh\u00e2n c\u1ee7a con. \u0110\u00e2y l\u00e0 giai \u0111o\u1ea1n tu\u1ed5i teen b\u1eaft \u0111\u1ea7u r\u1eddi kh\u1ecfi s\u1ef1 ph\u1ee5 thu\u1ed9c t\u00e2m l\u00fd c\u1ee7a th\u1eddi th\u01a1 \u1ea5u \u0111\u1ec3 t\u1eebng b\u01b0\u1edbc x\u00e2y d\u1ef1ng c\u1ea3m gi\u00e1c \u201cm\u00ecnh l\u00e0 ai\u201d, \u201cm\u00ecnh mu\u1ed1n g\u00ec\u201d, \u201cm\u00ecnh c\u00f3 gi\u00e1 tr\u1ecb nh\u01b0 th\u1ebf n\u00e0o\u201d v\u00e0 \u201cm\u00ecnh mu\u1ed1n s\u1ed1ng cu\u1ed9c \u0111\u1eddi c\u1ee7a m\u00ecnh ra sao\u201d. M\u1ee5c ti\u00eau c\u1ed1t l\u00f5i c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng ph\u1ea7n l\u1edbn nh\u1eefng xung \u0111\u1ed9t tu\u1ed5i teen kh\u00f4ng xu\u1ea5t ph\u00e1t t\u1eeb s\u1ef1 n\u1ed5i lo\u1ea1n \u0111\u01a1n thu\u1ea7n m\u00e0 \u0111\u1ebfn t\u1eeb nhu c\u1ea7u ph\u00e1t tri\u1ec3n b\u1ea3n s\u1eafc v\u00e0 nhu c\u1ea7u \u0111\u01b0\u1ee3c nh\u00ecn nh\u1eadn nh\u01b0 m\u1ed9t con ng\u01b0\u1eddi \u0111\u1ed9c l\u1eadp h\u01a1n.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-294",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-294",
     "number": 294,
-    "title": "MAP BỐ MẸ – CON GIAI ĐOẠN CON BƯỚC VÀO TRƯỞNG THÀNH",
-    "subtitle": "MAP này không đi theo hướng dạy cha mẹ cách buộc con tự lập hay yêu cầu con trưởng thành nhanh hơn, mà đi sâu vào một trong những giai đoạn chuyển giao lớn nhất của cả hệ gia đình: khi con bắt đầu rời khỏi vai trò “đứa trẻ trong gia đình” để trở thành một người trưởng thành có cuộc đời, trách nhiệm, lựa chọn và bản sắc riêng. Mục tiêu cốt lõi của MAP là giúp cả cha mẹ và con nhìn thấy rằng đây không chỉ là hành trình trưởng thành của con, mà còn là hành trình trưởng thành trong vai trò làm cha mẹ.",
+    "title": "MAP B\u1ed0 M\u1eb8 \u2013 CON GIAI \u0110O\u1ea0N CON B\u01af\u1edaC V\u00c0O TR\u01af\u1edeNG TH\u00c0NH",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng d\u1ea1y cha m\u1eb9 c\u00e1ch bu\u1ed9c con t\u1ef1 l\u1eadp hay y\u00eau c\u1ea7u con tr\u01b0\u1edfng th\u00e0nh nhanh h\u01a1n, m\u00e0 \u0111i s\u00e2u v\u00e0o m\u1ed9t trong nh\u1eefng giai \u0111o\u1ea1n chuy\u1ec3n giao l\u1edbn nh\u1ea5t c\u1ee7a c\u1ea3 h\u1ec7 gia \u0111\u00ecnh: khi con b\u1eaft \u0111\u1ea7u r\u1eddi kh\u1ecfi vai tr\u00f2 \u201c\u0111\u1ee9a tr\u1ebb trong gia \u0111\u00ecnh\u201d \u0111\u1ec3 tr\u1edf th\u00e0nh m\u1ed9t ng\u01b0\u1eddi tr\u01b0\u1edfng th\u00e0nh c\u00f3 cu\u1ed9c \u0111\u1eddi, tr\u00e1ch nhi\u1ec7m, l\u1ef1a ch\u1ecdn v\u00e0 b\u1ea3n s\u1eafc ri\u00eang. M\u1ee5c ti\u00eau c\u1ed1t l\u00f5i c\u1ee7a MAP l\u00e0 gi\u00fap c\u1ea3 cha m\u1eb9 v\u00e0 con nh\u00ecn th\u1ea5y r\u1eb1ng \u0111\u00e2y kh\u00f4ng ch\u1ec9 l\u00e0 h\u00e0nh tr\u00ecnh tr\u01b0\u1edfng th\u00e0nh c\u1ee7a con, m\u00e0 c\u00f2n l\u00e0 h\u00e0nh tr\u00ecnh tr\u01b0\u1edfng th\u00e0nh trong vai tr\u00f2 l\u00e0m cha m\u1eb9.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-295",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-295",
     "number": 295,
-    "title": "NHỮNG THAY ĐỔI TÂM LÝ KHIẾN BỐ MẸ KHÓ HIỂU CON THEO TỪNG TUỔI",
-    "subtitle": "MAP này không đi theo hướng giải thích đơn giản rằng trẻ em thay đổi theo tuổi, mà đi sâu vào cơ chế phát triển tâm lý, cảm xúc, nhận thức và nhu cầu nội tâm đang liên tục chuyển hóa bên trong con từ khi sinh ra cho đến lúc trưởng thành. Mục tiêu cốt lõi của MAP là giúp cha mẹ hiểu rằng rất nhiều hành vi khiến người lớn lo lắng, khó chịu hoặc cảm thấy “không hiểu nổi con” thực chất lại là tín hiệu cho thấy con đang bước sang một giai đoạn phát triển mới.",
+    "title": "NH\u1eeeNG THAY \u0110\u1ed4I T\u00c2M L\u00dd KHI\u1ebeN B\u1ed0 M\u1eb8 KH\u00d3 HI\u1ec2U CON THEO T\u1eeaNG TU\u1ed4I",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng gi\u1ea3i th\u00edch \u0111\u01a1n gi\u1ea3n r\u1eb1ng tr\u1ebb em thay \u0111\u1ed5i theo tu\u1ed5i, m\u00e0 \u0111i s\u00e2u v\u00e0o c\u01a1 ch\u1ebf ph\u00e1t tri\u1ec3n t\u00e2m l\u00fd, c\u1ea3m x\u00fac, nh\u1eadn th\u1ee9c v\u00e0 nhu c\u1ea7u n\u1ed9i t\u00e2m \u0111ang li\u00ean t\u1ee5c chuy\u1ec3n h\u00f3a b\u00ean trong con t\u1eeb khi sinh ra cho \u0111\u1ebfn l\u00fac tr\u01b0\u1edfng th\u00e0nh. M\u1ee5c ti\u00eau c\u1ed1t l\u00f5i c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng r\u1ea5t nhi\u1ec1u h\u00e0nh vi khi\u1ebfn ng\u01b0\u1eddi l\u1edbn lo l\u1eafng, kh\u00f3 ch\u1ecbu ho\u1eb7c c\u1ea3m th\u1ea5y \u201ckh\u00f4ng hi\u1ec3u n\u1ed5i con\u201d th\u1ef1c ch\u1ea5t l\u1ea1i l\u00e0 t\u00edn hi\u1ec7u cho th\u1ea5y con \u0111ang b\u01b0\u1edbc sang m\u1ed9t giai \u0111o\u1ea1n ph\u00e1t tri\u1ec3n m\u1edbi.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-296",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-296",
     "number": 296,
-    "title": "ĐIỀU BỐ MẸ CẦN THAY ĐỔI KHI CON LỚN LÊN",
-    "subtitle": "MAP này không tập trung vào việc dạy cha mẹ phải hy sinh nhiều hơn hay cố gắng kiểm soát con tốt hơn, mà đi sâu vào một sự thật rất quan trọng: mỗi lần con trưởng thành thêm một giai đoạn, cha mẹ cũng cần trưởng thành thêm một giai đoạn trong vai trò làm cha mẹ. Mục tiêu cốt lõi của MAP là giúp cha mẹ nhìn thấy rằng rất nhiều khoảng cách, xung đột và tổn thương trong gia đình không xuất hiện vì con thay đổi, mà xuất hiện vì cách yêu thương và cách đồng hành của cha mẹ không thay đổi kịp với sự phát triển của con.",
+    "title": "\u0110I\u1ec0U B\u1ed0 M\u1eb8 C\u1ea6N THAY \u0110\u1ed4I KHI CON L\u1edaN L\u00caN",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng t\u1eadp trung v\u00e0o vi\u1ec7c d\u1ea1y cha m\u1eb9 ph\u1ea3i hy sinh nhi\u1ec1u h\u01a1n hay c\u1ed1 g\u1eafng ki\u1ec3m so\u00e1t con t\u1ed1t h\u01a1n, m\u00e0 \u0111i s\u00e2u v\u00e0o m\u1ed9t s\u1ef1 th\u1eadt r\u1ea5t quan tr\u1ecdng: m\u1ed7i l\u1ea7n con tr\u01b0\u1edfng th\u00e0nh th\u00eam m\u1ed9t giai \u0111o\u1ea1n, cha m\u1eb9 c\u0169ng c\u1ea7n tr\u01b0\u1edfng th\u00e0nh th\u00eam m\u1ed9t giai \u0111o\u1ea1n trong vai tr\u00f2 l\u00e0m cha m\u1eb9. M\u1ee5c ti\u00eau c\u1ed1t l\u00f5i c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 nh\u00ecn th\u1ea5y r\u1eb1ng r\u1ea5t nhi\u1ec1u kho\u1ea3ng c\u00e1ch, xung \u0111\u1ed9t v\u00e0 t\u1ed5n th\u01b0\u01a1ng trong gia \u0111\u00ecnh kh\u00f4ng xu\u1ea5t hi\u1ec7n v\u00ec con thay \u0111\u1ed5i, m\u00e0 xu\u1ea5t hi\u1ec7n v\u00ec c\u00e1ch y\u00eau th\u01b0\u01a1ng v\u00e0 c\u00e1ch \u0111\u1ed3ng h\u00e0nh c\u1ee7a cha m\u1eb9 kh\u00f4ng thay \u0111\u1ed5i k\u1ecbp v\u1edbi s\u1ef1 ph\u00e1t tri\u1ec3n c\u1ee7a con.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-297",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-297",
     "number": 297,
-    "title": "KHOẢNG CÁCH THƯỜNG XUẤT HIỆN THEO TỪNG GIAI ĐOẠN TUỔI",
-    "subtitle": "MAP này không đi theo hướng giải thích đơn giản rằng con lớn lên thì tự nhiên sẽ xa cha mẹ, mà đi sâu vào cơ chế hình thành khoảng cách cảm xúc giữa cha mẹ và con qua từng giai đoạn phát triển. Mục tiêu cốt lõi của MAP là giúp cha mẹ nhìn thấy rằng khoảng cách không xuất hiện trong một ngày, cũng không bắt đầu từ những cuộc cãi vã lớn. Nó thường được hình thành từ những lần con không được lắng nghe, những cảm xúc không được nhìn thấy, những nhu cầu không được hiểu đúng và những cách kết nối đã không còn phù hợp với độ tuổi của con.",
+    "title": "KHO\u1ea2NG C\u00c1CH TH\u01af\u1edcNG XU\u1ea4T HI\u1ec6N THEO T\u1eeaNG GIAI \u0110O\u1ea0N TU\u1ed4I",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng gi\u1ea3i th\u00edch \u0111\u01a1n gi\u1ea3n r\u1eb1ng con l\u1edbn l\u00ean th\u00ec t\u1ef1 nhi\u00ean s\u1ebd xa cha m\u1eb9, m\u00e0 \u0111i s\u00e2u v\u00e0o c\u01a1 ch\u1ebf h\u00ecnh th\u00e0nh kho\u1ea3ng c\u00e1ch c\u1ea3m x\u00fac gi\u1eefa cha m\u1eb9 v\u00e0 con qua t\u1eebng giai \u0111o\u1ea1n ph\u00e1t tri\u1ec3n. M\u1ee5c ti\u00eau c\u1ed1t l\u00f5i c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 nh\u00ecn th\u1ea5y r\u1eb1ng kho\u1ea3ng c\u00e1ch kh\u00f4ng xu\u1ea5t hi\u1ec7n trong m\u1ed9t ng\u00e0y, c\u0169ng kh\u00f4ng b\u1eaft \u0111\u1ea7u t\u1eeb nh\u1eefng cu\u1ed9c c\u00e3i v\u00e3 l\u1edbn. N\u00f3 th\u01b0\u1eddng \u0111\u01b0\u1ee3c h\u00ecnh th\u00e0nh t\u1eeb nh\u1eefng l\u1ea7n con kh\u00f4ng \u0111\u01b0\u1ee3c l\u1eafng nghe, nh\u1eefng c\u1ea3m x\u00fac kh\u00f4ng \u0111\u01b0\u1ee3c nh\u00ecn th\u1ea5y, nh\u1eefng nhu c\u1ea7u kh\u00f4ng \u0111\u01b0\u1ee3c hi\u1ec3u \u0111\u00fang v\u00e0 nh\u1eefng c\u00e1ch k\u1ebft n\u1ed1i \u0111\u00e3 kh\u00f4ng c\u00f2n ph\u00f9 h\u1ee3p v\u1edbi \u0111\u1ed9 tu\u1ed5i c\u1ee7a con.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-298",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-298",
     "number": 298,
-    "title": "CÁCH ĐỒNG HÀNH PHÙ HỢP VỚI TỪNG ĐỘ TUỔI CỦA CON",
-    "subtitle": "MAP này không đi theo hướng cung cấp những công thức nuôi dạy cố định hay những bí quyết áp dụng giống nhau cho mọi đứa trẻ, mà đi sâu vào việc giúp cha mẹ hiểu rằng mỗi giai đoạn phát triển của con đều là một thế giới tâm lý hoàn toàn khác nhau. Điều con cần ở tuổi lên ba sẽ khác điều con cần ở tuổi lên mười. Điều tuổi teen cần sẽ khác điều người trưởng thành cần. Khi nhu cầu phát triển thay đổi nhưng cách đồng hành của cha mẹ không thay đổi, xung đột và khoảng cách sẽ dần xuất hiện.",
+    "title": "C\u00c1CH \u0110\u1ed2NG H\u00c0NH PH\u00d9 H\u1ee2P V\u1edaI T\u1eeaNG \u0110\u1ed8 TU\u1ed4I C\u1ee6A CON",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng cung c\u1ea5p nh\u1eefng c\u00f4ng th\u1ee9c nu\u00f4i d\u1ea1y c\u1ed1 \u0111\u1ecbnh hay nh\u1eefng b\u00ed quy\u1ebft \u00e1p d\u1ee5ng gi\u1ed1ng nhau cho m\u1ecdi \u0111\u1ee9a tr\u1ebb, m\u00e0 \u0111i s\u00e2u v\u00e0o vi\u1ec7c gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng m\u1ed7i giai \u0111o\u1ea1n ph\u00e1t tri\u1ec3n c\u1ee7a con \u0111\u1ec1u l\u00e0 m\u1ed9t th\u1ebf gi\u1edbi t\u00e2m l\u00fd ho\u00e0n to\u00e0n kh\u00e1c nhau. \u0110i\u1ec1u con c\u1ea7n \u1edf tu\u1ed5i l\u00ean ba s\u1ebd kh\u00e1c \u0111i\u1ec1u con c\u1ea7n \u1edf tu\u1ed5i l\u00ean m\u01b0\u1eddi. \u0110i\u1ec1u tu\u1ed5i teen c\u1ea7n s\u1ebd kh\u00e1c \u0111i\u1ec1u ng\u01b0\u1eddi tr\u01b0\u1edfng th\u00e0nh c\u1ea7n. Khi nhu c\u1ea7u ph\u00e1t tri\u1ec3n thay \u0111\u1ed5i nh\u01b0ng c\u00e1ch \u0111\u1ed3ng h\u00e0nh c\u1ee7a cha m\u1eb9 kh\u00f4ng thay \u0111\u1ed5i, xung \u0111\u1ed9t v\u00e0 kho\u1ea3ng c\u00e1ch s\u1ebd d\u1ea7n xu\u1ea5t hi\u1ec7n.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-299",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-299",
     "number": 299,
-    "title": "HÀNH TRÌNH TRƯỞNG THÀNH CỦA CẢ BỐ MẸ VÀ CON",
-    "subtitle": "MAP này không đi theo hướng xem cha mẹ là người dạy và con là người học, cũng không xem hành trình phát triển chỉ diễn ra ở phía con, mà đi sâu vào sự thật rằng: mỗi đứa trẻ lớn lên đều đang kéo theo một hành trình trưởng thành mới của chính cha mẹ. Khi con thay đổi, cha mẹ buộc phải thay đổi. Khi con bước sang một giai đoạn phát triển mới, cha mẹ cũng phải học một vai trò mới. Đây là hành trình mà cả hai phía đều đang học, đều đang lớn lên và đều đang đối diện với những thử thách riêng của mình.",
+    "title": "H\u00c0NH TR\u00ccNH TR\u01af\u1edeNG TH\u00c0NH C\u1ee6A C\u1ea2 B\u1ed0 M\u1eb8 V\u00c0 CON",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng xem cha m\u1eb9 l\u00e0 ng\u01b0\u1eddi d\u1ea1y v\u00e0 con l\u00e0 ng\u01b0\u1eddi h\u1ecdc, c\u0169ng kh\u00f4ng xem h\u00e0nh tr\u00ecnh ph\u00e1t tri\u1ec3n ch\u1ec9 di\u1ec5n ra \u1edf ph\u00eda con, m\u00e0 \u0111i s\u00e2u v\u00e0o s\u1ef1 th\u1eadt r\u1eb1ng: m\u1ed7i \u0111\u1ee9a tr\u1ebb l\u1edbn l\u00ean \u0111\u1ec1u \u0111ang k\u00e9o theo m\u1ed9t h\u00e0nh tr\u00ecnh tr\u01b0\u1edfng th\u00e0nh m\u1edbi c\u1ee7a ch\u00ednh cha m\u1eb9. Khi con thay \u0111\u1ed5i, cha m\u1eb9 bu\u1ed9c ph\u1ea3i thay \u0111\u1ed5i. Khi con b\u01b0\u1edbc sang m\u1ed9t giai \u0111o\u1ea1n ph\u00e1t tri\u1ec3n m\u1edbi, cha m\u1eb9 c\u0169ng ph\u1ea3i h\u1ecdc m\u1ed9t vai tr\u00f2 m\u1edbi. \u0110\u00e2y l\u00e0 h\u00e0nh tr\u00ecnh m\u00e0 c\u1ea3 hai ph\u00eda \u0111\u1ec1u \u0111ang h\u1ecdc, \u0111\u1ec1u \u0111ang l\u1edbn l\u00ean v\u00e0 \u0111\u1ec1u \u0111ang \u0111\u1ed1i di\u1ec7n v\u1edbi nh\u1eefng th\u1eed th\u00e1ch ri\u00eang c\u1ee7a m\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-300",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-300",
     "number": 300,
-    "title": "GIAI ĐOẠN DỄ ĐỨT KẾT NỐI NHẤT GIỮA BỐ MẸ VÀ CON",
-    "subtitle": "MAP này không đi theo hướng xem tuổi teen là nguyên nhân duy nhất khiến bố mẹ và con xa nhau, cũng không đơn giản hóa vấn đề bằng nhận định rằng con lớn lên thì tự nhiên sẽ xa cách. MAP đi sâu vào quá trình hình thành khoảng cách cảm xúc trong gia đình để giúp cha mẹ hiểu rằng đứt kết nối luôn là kết quả của một hành trình tích tụ kéo dài, nơi những nhu cầu cảm xúc không được nhìn thấy dần biến thành im lặng, phòng vệ và xa cách.",
+    "title": "GIAI \u0110O\u1ea0N D\u1ec4 \u0110\u1ee8T K\u1ebeT N\u1ed0I NH\u1ea4T GI\u1eeeA B\u1ed0 M\u1eb8 V\u00c0 CON",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng xem tu\u1ed5i teen l\u00e0 nguy\u00ean nh\u00e2n duy nh\u1ea5t khi\u1ebfn b\u1ed1 m\u1eb9 v\u00e0 con xa nhau, c\u0169ng kh\u00f4ng \u0111\u01a1n gi\u1ea3n h\u00f3a v\u1ea5n \u0111\u1ec1 b\u1eb1ng nh\u1eadn \u0111\u1ecbnh r\u1eb1ng con l\u1edbn l\u00ean th\u00ec t\u1ef1 nhi\u00ean s\u1ebd xa c\u00e1ch. MAP \u0111i s\u00e2u v\u00e0o qu\u00e1 tr\u00ecnh h\u00ecnh th\u00e0nh kho\u1ea3ng c\u00e1ch c\u1ea3m x\u00fac trong gia \u0111\u00ecnh \u0111\u1ec3 gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng \u0111\u1ee9t k\u1ebft n\u1ed1i lu\u00f4n l\u00e0 k\u1ebft qu\u1ea3 c\u1ee7a m\u1ed9t h\u00e0nh tr\u00ecnh t\u00edch t\u1ee5 k\u00e9o d\u00e0i, n\u01a1i nh\u1eefng nhu c\u1ea7u c\u1ea3m x\u00fac kh\u00f4ng \u0111\u01b0\u1ee3c nh\u00ecn th\u1ea5y d\u1ea7n bi\u1ebfn th\u00e0nh im l\u1eb7ng, ph\u00f2ng v\u1ec7 v\u00e0 xa c\u00e1ch.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-301",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-301",
     "number": 301,
-    "title": "PHÁT HIỆN ĐỨA TRẺ ĐANG SỐNG GIẢ",
-    "subtitle": "MAP này không đi theo hướng đánh giá con ngoan hay hư, không phân loại con hướng nội hay hướng ngoại, cũng không dựa vào những biểu hiện bề mặt để kết luận về con người thật của một đứa trẻ. MAP đi sâu vào việc nhận diện liệu đứa trẻ đang sống đúng với bản chất thật của mình hay đang vô thức tạo ra một phiên bản khác để thích nghi với môi trường sống xung quanh.",
+    "title": "PH\u00c1T HI\u1ec6N \u0110\u1ee8A TR\u1eba \u0110ANG S\u1ed0NG GI\u1ea2",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng \u0111\u00e1nh gi\u00e1 con ngoan hay h\u01b0, kh\u00f4ng ph\u00e2n lo\u1ea1i con h\u01b0\u1edbng n\u1ed9i hay h\u01b0\u1edbng ngo\u1ea1i, c\u0169ng kh\u00f4ng d\u1ef1a v\u00e0o nh\u1eefng bi\u1ec3u hi\u1ec7n b\u1ec1 m\u1eb7t \u0111\u1ec3 k\u1ebft lu\u1eadn v\u1ec1 con ng\u01b0\u1eddi th\u1eadt c\u1ee7a m\u1ed9t \u0111\u1ee9a tr\u1ebb. MAP \u0111i s\u00e2u v\u00e0o vi\u1ec7c nh\u1eadn di\u1ec7n li\u1ec7u \u0111\u1ee9a tr\u1ebb \u0111ang s\u1ed1ng \u0111\u00fang v\u1edbi b\u1ea3n ch\u1ea5t th\u1eadt c\u1ee7a m\u00ecnh hay \u0111ang v\u00f4 th\u1ee9c t\u1ea1o ra m\u1ed9t phi\u00ean b\u1ea3n kh\u00e1c \u0111\u1ec3 th\u00edch nghi v\u1edbi m\u00f4i tr\u01b0\u1eddng s\u1ed1ng xung quanh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-302",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-302",
     "number": 302,
-    "title": "PHÁT HIỆN MẤT KẾT NỐI CẢM XÚC",
-    "subtitle": "MAP này không đi theo hướng đánh giá con là ít nói, lạnh lùng, khó gần hay không biết chia sẻ, mà đi sâu vào việc nhận diện liệu đứa trẻ có đang dần mất kết nối với chính cảm xúc của mình hay không. MAP giúp cha mẹ hiểu rằng một đứa trẻ vẫn có thể học tốt, sinh hoạt bình thường, cư xử ngoan ngoãn nhưng bên trong lại đang ngày càng xa rời cảm xúc thật, nhu cầu thật và thế giới nội tâm của chính mình.",
+    "title": "PH\u00c1T HI\u1ec6N M\u1ea4T K\u1ebeT N\u1ed0I C\u1ea2M X\u00daC",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng \u0111\u00e1nh gi\u00e1 con l\u00e0 \u00edt n\u00f3i, l\u1ea1nh l\u00f9ng, kh\u00f3 g\u1ea7n hay kh\u00f4ng bi\u1ebft chia s\u1ebb, m\u00e0 \u0111i s\u00e2u v\u00e0o vi\u1ec7c nh\u1eadn di\u1ec7n li\u1ec7u \u0111\u1ee9a tr\u1ebb c\u00f3 \u0111ang d\u1ea7n m\u1ea5t k\u1ebft n\u1ed1i v\u1edbi ch\u00ednh c\u1ea3m x\u00fac c\u1ee7a m\u00ecnh hay kh\u00f4ng. MAP gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng m\u1ed9t \u0111\u1ee9a tr\u1ebb v\u1eabn c\u00f3 th\u1ec3 h\u1ecdc t\u1ed1t, sinh ho\u1ea1t b\u00ecnh th\u01b0\u1eddng, c\u01b0 x\u1eed ngoan ngo\u00e3n nh\u01b0ng b\u00ean trong l\u1ea1i \u0111ang ng\u00e0y c\u00e0ng xa r\u1eddi c\u1ea3m x\u00fac th\u1eadt, nhu c\u1ea7u th\u1eadt v\u00e0 th\u1ebf gi\u1edbi n\u1ed9i t\u00e2m c\u1ee7a ch\u00ednh m\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-303",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-303",
     "number": 303,
-    "title": "PHÁT HIỆN ÁP LỰC HỌC TẬP",
-    "subtitle": "MAP này không đi theo hướng đánh giá con học giỏi hay học yếu, không tập trung vào điểm số, thành tích hoặc kết quả học tập bề mặt, mà đi sâu vào việc nhận diện những áp lực tâm lý đang vận hành phía sau hành trình học tập của con. MAP giúp cha mẹ hiểu rằng nhiều đứa trẻ không thật sự mệt vì học, mà đang mệt vì những cảm xúc, nỗi sợ và áp lực gắn với việc học.",
+    "title": "PH\u00c1T HI\u1ec6N \u00c1P L\u1ef0C H\u1eccC T\u1eacP",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng \u0111\u00e1nh gi\u00e1 con h\u1ecdc gi\u1ecfi hay h\u1ecdc y\u1ebfu, kh\u00f4ng t\u1eadp trung v\u00e0o \u0111i\u1ec3m s\u1ed1, th\u00e0nh t\u00edch ho\u1eb7c k\u1ebft qu\u1ea3 h\u1ecdc t\u1eadp b\u1ec1 m\u1eb7t, m\u00e0 \u0111i s\u00e2u v\u00e0o vi\u1ec7c nh\u1eadn di\u1ec7n nh\u1eefng \u00e1p l\u1ef1c t\u00e2m l\u00fd \u0111ang v\u1eadn h\u00e0nh ph\u00eda sau h\u00e0nh tr\u00ecnh h\u1ecdc t\u1eadp c\u1ee7a con. MAP gi\u00fap cha m\u1eb9 hi\u1ec3u r\u1eb1ng nhi\u1ec1u \u0111\u1ee9a tr\u1ebb kh\u00f4ng th\u1eadt s\u1ef1 m\u1ec7t v\u00ec h\u1ecdc, m\u00e0 \u0111ang m\u1ec7t v\u00ec nh\u1eefng c\u1ea3m x\u00fac, n\u1ed7i s\u1ee3 v\u00e0 \u00e1p l\u1ef1c g\u1eafn v\u1edbi vi\u1ec7c h\u1ecdc.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-304",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-304",
     "number": 304,
-    "title": "PHÁT HIỆN MẤT ĐỘNG LỰC HỌC TẬP",
-    "subtitle": "MAP này không đi theo hướng đánh giá con lười học, thiếu ý thức hay thiếu trách nhiệm, cũng không chỉ nhìn vào kết quả học tập, điểm số hoặc biểu hiện chống đối bên ngoài. MAP đi sâu vào việc nhận diện điều gì bên trong đang khiến động lực học tập của con dần suy giảm, điều gì đang làm con mất năng lượng cố gắng và vì sao có những đứa trẻ từng rất nỗ lực nhưng sau đó lại dần buông xuôi.",
+    "title": "PH\u00c1T HI\u1ec6N M\u1ea4T \u0110\u1ed8NG L\u1ef0C H\u1eccC T\u1eacP",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng \u0111\u00e1nh gi\u00e1 con l\u01b0\u1eddi h\u1ecdc, thi\u1ebfu \u00fd th\u1ee9c hay thi\u1ebfu tr\u00e1ch nhi\u1ec7m, c\u0169ng kh\u00f4ng ch\u1ec9 nh\u00ecn v\u00e0o k\u1ebft qu\u1ea3 h\u1ecdc t\u1eadp, \u0111i\u1ec3m s\u1ed1 ho\u1eb7c bi\u1ec3u hi\u1ec7n ch\u1ed1ng \u0111\u1ed1i b\u00ean ngo\u00e0i. MAP \u0111i s\u00e2u v\u00e0o vi\u1ec7c nh\u1eadn di\u1ec7n \u0111i\u1ec1u g\u00ec b\u00ean trong \u0111ang khi\u1ebfn \u0111\u1ed9ng l\u1ef1c h\u1ecdc t\u1eadp c\u1ee7a con d\u1ea7n suy gi\u1ea3m, \u0111i\u1ec1u g\u00ec \u0111ang l\u00e0m con m\u1ea5t n\u0103ng l\u01b0\u1ee3ng c\u1ed1 g\u1eafng v\u00e0 v\u00ec sao c\u00f3 nh\u1eefng \u0111\u1ee9a tr\u1ebb t\u1eebng r\u1ea5t n\u1ed7 l\u1ef1c nh\u01b0ng sau \u0111\u00f3 l\u1ea1i d\u1ea7n bu\u00f4ng xu\u00f4i.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-305",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-305",
     "number": 305,
-    "title": "PHÁT HIỆN NGHIỆN ĐIỆN THOẠI VÀ GIẢI TRÍ NHANH",
-    "subtitle": "MAP này không đi theo hướng đánh giá con sử dụng điện thoại nhiều hay ít, cũng không chỉ tập trung vào việc kiểm soát thời gian màn hình, tịch thu thiết bị hoặc giảm số giờ sử dụng. MAP đi sâu vào việc nhận diện điều gì bên trong đang khiến con ngày càng lệ thuộc vào điện thoại, video ngắn, mạng xã hội, game hoặc các hình thức giải trí kích thích nhanh để tự điều chỉnh cảm xúc và thoát khỏi những áp lực trong cuộc sống thật.",
+    "title": "PH\u00c1T HI\u1ec6N NGHI\u1ec6N \u0110I\u1ec6N THO\u1ea0I V\u00c0 GI\u1ea2I TR\u00cd NHANH",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng \u0111\u00e1nh gi\u00e1 con s\u1eed d\u1ee5ng \u0111i\u1ec7n tho\u1ea1i nhi\u1ec1u hay \u00edt, c\u0169ng kh\u00f4ng ch\u1ec9 t\u1eadp trung v\u00e0o vi\u1ec7c ki\u1ec3m so\u00e1t th\u1eddi gian m\u00e0n h\u00ecnh, t\u1ecbch thu thi\u1ebft b\u1ecb ho\u1eb7c gi\u1ea3m s\u1ed1 gi\u1edd s\u1eed d\u1ee5ng. MAP \u0111i s\u00e2u v\u00e0o vi\u1ec7c nh\u1eadn di\u1ec7n \u0111i\u1ec1u g\u00ec b\u00ean trong \u0111ang khi\u1ebfn con ng\u00e0y c\u00e0ng l\u1ec7 thu\u1ed9c v\u00e0o \u0111i\u1ec7n tho\u1ea1i, video ng\u1eafn, m\u1ea1ng x\u00e3 h\u1ed9i, game ho\u1eb7c c\u00e1c h\u00ecnh th\u1ee9c gi\u1ea3i tr\u00ed k\u00edch th\u00edch nhanh \u0111\u1ec3 t\u1ef1 \u0111i\u1ec1u ch\u1ec9nh c\u1ea3m x\u00fac v\u00e0 tho\u00e1t kh\u1ecfi nh\u1eefng \u00e1p l\u1ef1c trong cu\u1ed9c s\u1ed1ng th\u1eadt.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-306",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-306",
     "number": 306,
-    "title": "PHÁT HIỆN THU MÌNH NỘI TÂM",
-    "subtitle": "MAP này không đi theo hướng đánh giá con là ít nói, hướng nội, trầm tính hay thích ở một mình, cũng không xem mọi biểu hiện im lặng đều là vấn đề cần sửa chữa. MAP đi sâu vào việc nhận diện liệu sự yên lặng của con là một đặc điểm tính cách tự nhiên hay đang là một cơ chế phòng vệ được hình thành để bảo vệ nội tâm khỏi tổn thương, áp lực hoặc cảm giác không an toàn trong quá trình trưởng thành.",
+    "title": "PH\u00c1T HI\u1ec6N THU M\u00ccNH N\u1ed8I T\u00c2M",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng \u0111\u00e1nh gi\u00e1 con l\u00e0 \u00edt n\u00f3i, h\u01b0\u1edbng n\u1ed9i, tr\u1ea7m t\u00ednh hay th\u00edch \u1edf m\u1ed9t m\u00ecnh, c\u0169ng kh\u00f4ng xem m\u1ecdi bi\u1ec3u hi\u1ec7n im l\u1eb7ng \u0111\u1ec1u l\u00e0 v\u1ea5n \u0111\u1ec1 c\u1ea7n s\u1eeda ch\u1eefa. MAP \u0111i s\u00e2u v\u00e0o vi\u1ec7c nh\u1eadn di\u1ec7n li\u1ec7u s\u1ef1 y\u00ean l\u1eb7ng c\u1ee7a con l\u00e0 m\u1ed9t \u0111\u1eb7c \u0111i\u1ec3m t\u00ednh c\u00e1ch t\u1ef1 nhi\u00ean hay \u0111ang l\u00e0 m\u1ed9t c\u01a1 ch\u1ebf ph\u00f2ng v\u1ec7 \u0111\u01b0\u1ee3c h\u00ecnh th\u00e0nh \u0111\u1ec3 b\u1ea3o v\u1ec7 n\u1ed9i t\u00e2m kh\u1ecfi t\u1ed5n th\u01b0\u01a1ng, \u00e1p l\u1ef1c ho\u1eb7c c\u1ea3m gi\u00e1c kh\u00f4ng an to\u00e0n trong qu\u00e1 tr\u00ecnh tr\u01b0\u1edfng th\u00e0nh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-307",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-307",
     "number": 307,
-    "title": "PHÁT HIỆN NỔI LOẠN TUỔI TEEN",
-    "subtitle": "MAP này không đi theo hướng đánh giá con là hư, khó dạy, chống đối hay bất trị, cũng không chỉ tập trung vào việc xử lý các hành vi nổi loạn bên ngoài. MAP đi sâu vào việc nhận diện những áp lực, tổn thương, nhu cầu phát triển và xung đột nội tâm đang khiến con sử dụng nổi loạn như một cách để tự bảo vệ chính mình trong giai đoạn trưởng thành quan trọng của cuộc đời.",
+    "title": "PH\u00c1T HI\u1ec6N N\u1ed4I LO\u1ea0N TU\u1ed4I TEEN",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng \u0111\u00e1nh gi\u00e1 con l\u00e0 h\u01b0, kh\u00f3 d\u1ea1y, ch\u1ed1ng \u0111\u1ed1i hay b\u1ea5t tr\u1ecb, c\u0169ng kh\u00f4ng ch\u1ec9 t\u1eadp trung v\u00e0o vi\u1ec7c x\u1eed l\u00fd c\u00e1c h\u00e0nh vi n\u1ed5i lo\u1ea1n b\u00ean ngo\u00e0i. MAP \u0111i s\u00e2u v\u00e0o vi\u1ec7c nh\u1eadn di\u1ec7n nh\u1eefng \u00e1p l\u1ef1c, t\u1ed5n th\u01b0\u01a1ng, nhu c\u1ea7u ph\u00e1t tri\u1ec3n v\u00e0 xung \u0111\u1ed9t n\u1ed9i t\u00e2m \u0111ang khi\u1ebfn con s\u1eed d\u1ee5ng n\u1ed5i lo\u1ea1n nh\u01b0 m\u1ed9t c\u00e1ch \u0111\u1ec3 t\u1ef1 b\u1ea3o v\u1ec7 ch\u00ednh m\u00ecnh trong giai \u0111o\u1ea1n tr\u01b0\u1edfng th\u00e0nh quan tr\u1ecdng c\u1ee7a cu\u1ed9c \u0111\u1eddi.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-308",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-308",
     "number": 308,
-    "title": "PHÁT HIỆN TỰ TI SÂU BÊN TRONG",
-    "subtitle": "MAP này không đi theo hướng đánh giá con là thiếu tự tin, nhút nhát, yếu đuối hay kém năng lực, cũng không chỉ nhìn vào các biểu hiện bên ngoài như sợ đám đông, ít nói hoặc ngại thể hiện bản thân. MAP đi sâu vào việc nhận diện cảm giác giá trị bản thân đang vận hành bên trong con, giúp cha mẹ nhìn thấy liệu con có đang âm thầm sống với niềm tin rằng mình không đủ tốt, không đủ giỏi, không đủ quan trọng hoặc không xứng đáng được yêu thương và công nhận hay không.",
+    "title": "PH\u00c1T HI\u1ec6N T\u1ef0 TI S\u00c2U B\u00caN TRONG",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng \u0111\u00e1nh gi\u00e1 con l\u00e0 thi\u1ebfu t\u1ef1 tin, nh\u00fat nh\u00e1t, y\u1ebfu \u0111u\u1ed1i hay k\u00e9m n\u0103ng l\u1ef1c, c\u0169ng kh\u00f4ng ch\u1ec9 nh\u00ecn v\u00e0o c\u00e1c bi\u1ec3u hi\u1ec7n b\u00ean ngo\u00e0i nh\u01b0 s\u1ee3 \u0111\u00e1m \u0111\u00f4ng, \u00edt n\u00f3i ho\u1eb7c ng\u1ea1i th\u1ec3 hi\u1ec7n b\u1ea3n th\u00e2n. MAP \u0111i s\u00e2u v\u00e0o vi\u1ec7c nh\u1eadn di\u1ec7n c\u1ea3m gi\u00e1c gi\u00e1 tr\u1ecb b\u1ea3n th\u00e2n \u0111ang v\u1eadn h\u00e0nh b\u00ean trong con, gi\u00fap cha m\u1eb9 nh\u00ecn th\u1ea5y li\u1ec7u con c\u00f3 \u0111ang \u00e2m th\u1ea7m s\u1ed1ng v\u1edbi ni\u1ec1m tin r\u1eb1ng m\u00ecnh kh\u00f4ng \u0111\u1ee7 t\u1ed1t, kh\u00f4ng \u0111\u1ee7 gi\u1ecfi, kh\u00f4ng \u0111\u1ee7 quan tr\u1ecdng ho\u1eb7c kh\u00f4ng x\u1ee9ng \u0111\u00e1ng \u0111\u01b0\u1ee3c y\u00eau th\u01b0\u01a1ng v\u00e0 c\u00f4ng nh\u1eadn hay kh\u00f4ng.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-309",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-309",
     "number": 309,
-    "title": "PHÁT HIỆN ĐỨA TRẺ ĐANG KIỆT SỨC TINH THẦN",
-    "subtitle": "MAP này không đi theo hướng đánh giá con là lười biếng, thiếu ý chí, thiếu động lực hay thiếu trách nhiệm. MAP cũng không chỉ nhìn vào các biểu hiện bên ngoài như học tập sa sút, mất tập trung, ngủ nhiều hoặc không còn hứng thú với các hoạt động thường ngày. Trọng tâm của MAP là nhận diện liệu bên trong con có đang rơi vào trạng thái cạn kiệt năng lượng tinh thần sau một thời gian dài phải thích nghi, chịu áp lực, dồn nén cảm xúc hoặc liên tục gồng mình để đáp ứng kỳ vọng từ môi trường sống hay không.",
+    "title": "PH\u00c1T HI\u1ec6N \u0110\u1ee8A TR\u1eba \u0110ANG KI\u1ec6T S\u1ee8C TINH TH\u1ea6N",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng \u0111\u00e1nh gi\u00e1 con l\u00e0 l\u01b0\u1eddi bi\u1ebfng, thi\u1ebfu \u00fd ch\u00ed, thi\u1ebfu \u0111\u1ed9ng l\u1ef1c hay thi\u1ebfu tr\u00e1ch nhi\u1ec7m. MAP c\u0169ng kh\u00f4ng ch\u1ec9 nh\u00ecn v\u00e0o c\u00e1c bi\u1ec3u hi\u1ec7n b\u00ean ngo\u00e0i nh\u01b0 h\u1ecdc t\u1eadp sa s\u00fat, m\u1ea5t t\u1eadp trung, ng\u1ee7 nhi\u1ec1u ho\u1eb7c kh\u00f4ng c\u00f2n h\u1ee9ng th\u00fa v\u1edbi c\u00e1c ho\u1ea1t \u0111\u1ed9ng th\u01b0\u1eddng ng\u00e0y. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 nh\u1eadn di\u1ec7n li\u1ec7u b\u00ean trong con c\u00f3 \u0111ang r\u01a1i v\u00e0o tr\u1ea1ng th\u00e1i c\u1ea1n ki\u1ec7t n\u0103ng l\u01b0\u1ee3ng tinh th\u1ea7n sau m\u1ed9t th\u1eddi gian d\u00e0i ph\u1ea3i th\u00edch nghi, ch\u1ecbu \u00e1p l\u1ef1c, d\u1ed3n n\u00e9n c\u1ea3m x\u00fac ho\u1eb7c li\u00ean t\u1ee5c g\u1ed3ng m\u00ecnh \u0111\u1ec3 \u0111\u00e1p \u1ee9ng k\u1ef3 v\u1ecdng t\u1eeb m\u00f4i tr\u01b0\u1eddng s\u1ed1ng hay kh\u00f4ng.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-310",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-310",
     "number": 310,
-    "title": "PHÁT HIỆN ĐỨA TRẺ ĐANG CỐ LÀM HÀI LÒNG NGƯỜI KHÁC",
-    "subtitle": "MAP này không đi theo hướng đánh giá con là ngoan ngoãn, biết điều, dễ thương hay sống tình cảm. MAP cũng không chỉ nhìn vào những biểu hiện bên ngoài như biết nhường nhịn, luôn nghe lời, luôn giúp đỡ người khác hoặc rất ít gây ra xung đột. Trọng tâm của MAP là nhận diện liệu bên trong con có đang tồn tại nỗi sợ bị từ chối, bị thất vọng, bị ghét bỏ hoặc mất đi sự yêu thương nên luôn cố gắng làm hài lòng mọi người xung quanh hay không.",
+    "title": "PH\u00c1T HI\u1ec6N \u0110\u1ee8A TR\u1eba \u0110ANG C\u1ed0 L\u00c0M H\u00c0I L\u00d2NG NG\u01af\u1edcI KH\u00c1C",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng \u0111\u00e1nh gi\u00e1 con l\u00e0 ngoan ngo\u00e3n, bi\u1ebft \u0111i\u1ec1u, d\u1ec5 th\u01b0\u01a1ng hay s\u1ed1ng t\u00ecnh c\u1ea3m. MAP c\u0169ng kh\u00f4ng ch\u1ec9 nh\u00ecn v\u00e0o nh\u1eefng bi\u1ec3u hi\u1ec7n b\u00ean ngo\u00e0i nh\u01b0 bi\u1ebft nh\u01b0\u1eddng nh\u1ecbn, lu\u00f4n nghe l\u1eddi, lu\u00f4n gi\u00fap \u0111\u1ee1 ng\u01b0\u1eddi kh\u00e1c ho\u1eb7c r\u1ea5t \u00edt g\u00e2y ra xung \u0111\u1ed9t. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 nh\u1eadn di\u1ec7n li\u1ec7u b\u00ean trong con c\u00f3 \u0111ang t\u1ed3n t\u1ea1i n\u1ed7i s\u1ee3 b\u1ecb t\u1eeb ch\u1ed1i, b\u1ecb th\u1ea5t v\u1ecdng, b\u1ecb gh\u00e9t b\u1ecf ho\u1eb7c m\u1ea5t \u0111i s\u1ef1 y\u00eau th\u01b0\u01a1ng n\u00ean lu\u00f4n c\u1ed1 g\u1eafng l\u00e0m h\u00e0i l\u00f2ng m\u1ecdi ng\u01b0\u1eddi xung quanh hay kh\u00f4ng.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-311",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-311",
     "number": 311,
-    "title": "PHÁT HIỆN ĐỨA TRẺ ĐANG MẤT PHƯƠNG HƯỚNG",
-    "subtitle": "MAP này không đi theo hướng đánh giá con là thiếu mục tiêu, lười suy nghĩ về tương lai, thiếu ý chí hay thiếu trách nhiệm với cuộc sống của mình. MAP cũng không chỉ nhìn vào các biểu hiện bên ngoài như học hành sa sút, thay đổi sở thích liên tục, thiếu định hướng nghề nghiệp hoặc không biết mình muốn làm gì sau này. Trọng tâm của MAP là nhận diện liệu bên trong con có đang mất kết nối với chính bản thân mình, với những giá trị cốt lõi, nhu cầu thật và mong muốn thật của mình hay không.",
+    "title": "PH\u00c1T HI\u1ec6N \u0110\u1ee8A TR\u1eba \u0110ANG M\u1ea4T PH\u01af\u01a0NG H\u01af\u1edaNG",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng \u0111\u00e1nh gi\u00e1 con l\u00e0 thi\u1ebfu m\u1ee5c ti\u00eau, l\u01b0\u1eddi suy ngh\u0129 v\u1ec1 t\u01b0\u01a1ng lai, thi\u1ebfu \u00fd ch\u00ed hay thi\u1ebfu tr\u00e1ch nhi\u1ec7m v\u1edbi cu\u1ed9c s\u1ed1ng c\u1ee7a m\u00ecnh. MAP c\u0169ng kh\u00f4ng ch\u1ec9 nh\u00ecn v\u00e0o c\u00e1c bi\u1ec3u hi\u1ec7n b\u00ean ngo\u00e0i nh\u01b0 h\u1ecdc h\u00e0nh sa s\u00fat, thay \u0111\u1ed5i s\u1edf th\u00edch li\u00ean t\u1ee5c, thi\u1ebfu \u0111\u1ecbnh h\u01b0\u1edbng ngh\u1ec1 nghi\u1ec7p ho\u1eb7c kh\u00f4ng bi\u1ebft m\u00ecnh mu\u1ed1n l\u00e0m g\u00ec sau n\u00e0y. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 nh\u1eadn di\u1ec7n li\u1ec7u b\u00ean trong con c\u00f3 \u0111ang m\u1ea5t k\u1ebft n\u1ed1i v\u1edbi ch\u00ednh b\u1ea3n th\u00e2n m\u00ecnh, v\u1edbi nh\u1eefng gi\u00e1 tr\u1ecb c\u1ed1t l\u00f5i, nhu c\u1ea7u th\u1eadt v\u00e0 mong mu\u1ed1n th\u1eadt c\u1ee7a m\u00ecnh hay kh\u00f4ng.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-312",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-312",
     "number": 312,
-    "title": "PHÁT HIỆN NGUY CƠ SỐNG LỆCH BẢN CHẤT",
-    "subtitle": "MAP này không đi theo hướng đánh giá con là thay đổi tính cách, khó hiểu, thất thường hoặc không còn giống trước đây. MAP cũng không chỉ nhìn vào những biểu hiện bề mặt như con ngoan hơn, nghe lời hơn, hòa đồng hơn hoặc thành công hơn. Trọng tâm của MAP là nhận diện liệu bên trong con có đang dần rời xa bản chất thật của mình để thích nghi với môi trường, để được chấp nhận, để tránh bị tổn thương hoặc để giữ kết nối với những người quan trọng hay không.",
+    "title": "PH\u00c1T HI\u1ec6N NGUY C\u01a0 S\u1ed0NG L\u1ec6CH B\u1ea2N CH\u1ea4T",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111i theo h\u01b0\u1edbng \u0111\u00e1nh gi\u00e1 con l\u00e0 thay \u0111\u1ed5i t\u00ednh c\u00e1ch, kh\u00f3 hi\u1ec3u, th\u1ea5t th\u01b0\u1eddng ho\u1eb7c kh\u00f4ng c\u00f2n gi\u1ed1ng tr\u01b0\u1edbc \u0111\u00e2y. MAP c\u0169ng kh\u00f4ng ch\u1ec9 nh\u00ecn v\u00e0o nh\u1eefng bi\u1ec3u hi\u1ec7n b\u1ec1 m\u1eb7t nh\u01b0 con ngoan h\u01a1n, nghe l\u1eddi h\u01a1n, h\u00f2a \u0111\u1ed3ng h\u01a1n ho\u1eb7c th\u00e0nh c\u00f4ng h\u01a1n. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 nh\u1eadn di\u1ec7n li\u1ec7u b\u00ean trong con c\u00f3 \u0111ang d\u1ea7n r\u1eddi xa b\u1ea3n ch\u1ea5t th\u1eadt c\u1ee7a m\u00ecnh \u0111\u1ec3 th\u00edch nghi v\u1edbi m\u00f4i tr\u01b0\u1eddng, \u0111\u1ec3 \u0111\u01b0\u1ee3c ch\u1ea5p nh\u1eadn, \u0111\u1ec3 tr\u00e1nh b\u1ecb t\u1ed5n th\u01b0\u01a1ng ho\u1eb7c \u0111\u1ec3 gi\u1eef k\u1ebft n\u1ed1i v\u1edbi nh\u1eefng ng\u01b0\u1eddi quan tr\u1ecdng hay kh\u00f4ng.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-313",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-313",
     "number": 313,
-    "title": "Phát hiện gia đình mất kết nối cảm xúc",
-    "subtitle": "MAP này không được xây dựng để đánh giá mức độ yêu thương của gia đình thông qua việc nói chuyện nhiều hay ít, cũng không chỉ dựa vào thời gian các thành viên ở cạnh nhau hay thực hiện trách nhiệm với nhau như thế nào. Trọng tâm của MAP là nhận diện liệu giữa bố mẹ và con có còn tồn tại sự kết nối cảm xúc thật từ bên trong hay không, hay mọi người đang dần sống cạnh nhau nhưng ngày càng xa cách về mặt nội tâm.",
+    "title": "Ph\u00e1t hi\u1ec7n gia \u0111\u00ecnh m\u1ea5t k\u1ebft n\u1ed1i c\u1ea3m x\u00fac",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng \u0111\u1ec3 \u0111\u00e1nh gi\u00e1 m\u1ee9c \u0111\u1ed9 y\u00eau th\u01b0\u01a1ng c\u1ee7a gia \u0111\u00ecnh th\u00f4ng qua vi\u1ec7c n\u00f3i chuy\u1ec7n nhi\u1ec1u hay \u00edt, c\u0169ng kh\u00f4ng ch\u1ec9 d\u1ef1a v\u00e0o th\u1eddi gian c\u00e1c th\u00e0nh vi\u00ean \u1edf c\u1ea1nh nhau hay th\u1ef1c hi\u1ec7n tr\u00e1ch nhi\u1ec7m v\u1edbi nhau nh\u01b0 th\u1ebf n\u00e0o. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 nh\u1eadn di\u1ec7n li\u1ec7u gi\u1eefa b\u1ed1 m\u1eb9 v\u00e0 con c\u00f3 c\u00f2n t\u1ed3n t\u1ea1i s\u1ef1 k\u1ebft n\u1ed1i c\u1ea3m x\u00fac th\u1eadt t\u1eeb b\u00ean trong hay kh\u00f4ng, hay m\u1ecdi ng\u01b0\u1eddi \u0111ang d\u1ea7n s\u1ed1ng c\u1ea1nh nhau nh\u01b0ng ng\u00e0y c\u00e0ng xa c\u00e1ch v\u1ec1 m\u1eb7t n\u1ed9i t\u00e2m.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-314",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-314",
     "number": 314,
-    "title": "Phát hiện con đang sống để làm hài lòng bố mẹ",
-    "subtitle": "MAP này không được xây dựng để đánh giá mức độ ngoan ngoãn, vâng lời hay yêu thương của con dành cho bố mẹ. MAP cũng không mặc định rằng một đứa trẻ biết nghe lời, học giỏi, cố gắng hoặc luôn làm đúng là đang phát triển khỏe mạnh. Trọng tâm của MAP là nhận diện liệu con có đang dần hy sinh cảm xúc thật, nhu cầu thật và con người thật của mình chỉ để giữ lấy tình yêu, sự công nhận hoặc sự hài lòng từ bố mẹ hay không.",
+    "title": "Ph\u00e1t hi\u1ec7n con \u0111ang s\u1ed1ng \u0111\u1ec3 l\u00e0m h\u00e0i l\u00f2ng b\u1ed1 m\u1eb9",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng \u0111\u1ec3 \u0111\u00e1nh gi\u00e1 m\u1ee9c \u0111\u1ed9 ngoan ngo\u00e3n, v\u00e2ng l\u1eddi hay y\u00eau th\u01b0\u01a1ng c\u1ee7a con d\u00e0nh cho b\u1ed1 m\u1eb9. MAP c\u0169ng kh\u00f4ng m\u1eb7c \u0111\u1ecbnh r\u1eb1ng m\u1ed9t \u0111\u1ee9a tr\u1ebb bi\u1ebft nghe l\u1eddi, h\u1ecdc gi\u1ecfi, c\u1ed1 g\u1eafng ho\u1eb7c lu\u00f4n l\u00e0m \u0111\u00fang l\u00e0 \u0111ang ph\u00e1t tri\u1ec3n kh\u1ecfe m\u1ea1nh. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 nh\u1eadn di\u1ec7n li\u1ec7u con c\u00f3 \u0111ang d\u1ea7n hy sinh c\u1ea3m x\u00fac th\u1eadt, nhu c\u1ea7u th\u1eadt v\u00e0 con ng\u01b0\u1eddi th\u1eadt c\u1ee7a m\u00ecnh ch\u1ec9 \u0111\u1ec3 gi\u1eef l\u1ea5y t\u00ecnh y\u00eau, s\u1ef1 c\u00f4ng nh\u1eadn ho\u1eb7c s\u1ef1 h\u00e0i l\u00f2ng t\u1eeb b\u1ed1 m\u1eb9 hay kh\u00f4ng.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-315",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-315",
     "number": 315,
-    "title": "Phát hiện con đang chịu áp lực vô hình từ gia đình",
-    "subtitle": "MAP này không được xây dựng để chỉ nhận diện những áp lực rõ ràng như bị ép học, bị la mắng hoặc bị đặt ra những yêu cầu trực tiếp từ gia đình. Trọng tâm của MAP là giúp cha mẹ nhìn thấy những áp lực vô hình mà con đang hấp thụ mỗi ngày từ kỳ vọng, nỗi lo, cảm xúc, bầu không khí gia đình và những gánh nặng chưa từng được gọi tên nhưng vẫn âm thầm tác động đến nội tâm của con.",
+    "title": "Ph\u00e1t hi\u1ec7n con \u0111ang ch\u1ecbu \u00e1p l\u1ef1c v\u00f4 h\u00ecnh t\u1eeb gia \u0111\u00ecnh",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng \u0111\u1ec3 ch\u1ec9 nh\u1eadn di\u1ec7n nh\u1eefng \u00e1p l\u1ef1c r\u00f5 r\u00e0ng nh\u01b0 b\u1ecb \u00e9p h\u1ecdc, b\u1ecb la m\u1eafng ho\u1eb7c b\u1ecb \u0111\u1eb7t ra nh\u1eefng y\u00eau c\u1ea7u tr\u1ef1c ti\u1ebfp t\u1eeb gia \u0111\u00ecnh. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 nh\u00ecn th\u1ea5y nh\u1eefng \u00e1p l\u1ef1c v\u00f4 h\u00ecnh m\u00e0 con \u0111ang h\u1ea5p th\u1ee5 m\u1ed7i ng\u00e0y t\u1eeb k\u1ef3 v\u1ecdng, n\u1ed7i lo, c\u1ea3m x\u00fac, b\u1ea7u kh\u00f4ng kh\u00ed gia \u0111\u00ecnh v\u00e0 nh\u1eefng g\u00e1nh n\u1eb7ng ch\u01b0a t\u1eebng \u0111\u01b0\u1ee3c g\u1ecdi t\u00ean nh\u01b0ng v\u1eabn \u00e2m th\u1ea7m t\u00e1c \u0111\u1ed9ng \u0111\u1ebfn n\u1ed9i t\u00e2m c\u1ee7a con.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-316",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-316",
     "number": 316,
-    "title": "Phát hiện bố mẹ đang kiểm soát quá mức",
-    "subtitle": "MAP này không được xây dựng để đánh giá bố mẹ là nghiêm khắc hay dễ dãi, cũng không nhằm phê phán sự quan tâm, trách nhiệm hoặc tình yêu mà bố mẹ dành cho con. Trọng tâm của MAP là nhận diện liệu những lo lắng, mong muốn bảo vệ, kỳ vọng hoặc tình thương của bố mẹ có đang dần chuyển thành kiểm soát quá mức, làm thu hẹp không gian phát triển tự nhiên của con hay không.",
+    "title": "Ph\u00e1t hi\u1ec7n b\u1ed1 m\u1eb9 \u0111ang ki\u1ec3m so\u00e1t qu\u00e1 m\u1ee9c",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng \u0111\u1ec3 \u0111\u00e1nh gi\u00e1 b\u1ed1 m\u1eb9 l\u00e0 nghi\u00eam kh\u1eafc hay d\u1ec5 d\u00e3i, c\u0169ng kh\u00f4ng nh\u1eb1m ph\u00ea ph\u00e1n s\u1ef1 quan t\u00e2m, tr\u00e1ch nhi\u1ec7m ho\u1eb7c t\u00ecnh y\u00eau m\u00e0 b\u1ed1 m\u1eb9 d\u00e0nh cho con. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 nh\u1eadn di\u1ec7n li\u1ec7u nh\u1eefng lo l\u1eafng, mong mu\u1ed1n b\u1ea3o v\u1ec7, k\u1ef3 v\u1ecdng ho\u1eb7c t\u00ecnh th\u01b0\u01a1ng c\u1ee7a b\u1ed1 m\u1eb9 c\u00f3 \u0111ang d\u1ea7n chuy\u1ec3n th\u00e0nh ki\u1ec3m so\u00e1t qu\u00e1 m\u1ee9c, l\u00e0m thu h\u1eb9p kh\u00f4ng gian ph\u00e1t tri\u1ec3n t\u1ef1 nhi\u00ean c\u1ee7a con hay kh\u00f4ng.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-317",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-317",
     "number": 317,
-    "title": "Phát hiện con đang thu mình trong gia đình",
-    "subtitle": "MAP này không được xây dựng để đánh giá con là hướng nội, ít nói hay trầm tính, cũng không chỉ nhìn vào số lượng cuộc trò chuyện hoặc mức độ giao tiếp bề mặt giữa các thành viên trong gia đình. Trọng tâm của MAP là nhận diện liệu con có đang dần khép lòng, thu cảm xúc và tạo khoảng cách với gia đình như một cơ chế tự bảo vệ trước những tổn thương, thất vọng hoặc cảm giác không được thấu hiểu hay không.",
+    "title": "Ph\u00e1t hi\u1ec7n con \u0111ang thu m\u00ecnh trong gia \u0111\u00ecnh",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng \u0111\u1ec3 \u0111\u00e1nh gi\u00e1 con l\u00e0 h\u01b0\u1edbng n\u1ed9i, \u00edt n\u00f3i hay tr\u1ea7m t\u00ednh, c\u0169ng kh\u00f4ng ch\u1ec9 nh\u00ecn v\u00e0o s\u1ed1 l\u01b0\u1ee3ng cu\u1ed9c tr\u00f2 chuy\u1ec7n ho\u1eb7c m\u1ee9c \u0111\u1ed9 giao ti\u1ebfp b\u1ec1 m\u1eb7t gi\u1eefa c\u00e1c th\u00e0nh vi\u00ean trong gia \u0111\u00ecnh. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 nh\u1eadn di\u1ec7n li\u1ec7u con c\u00f3 \u0111ang d\u1ea7n kh\u00e9p l\u00f2ng, thu c\u1ea3m x\u00fac v\u00e0 t\u1ea1o kho\u1ea3ng c\u00e1ch v\u1edbi gia \u0111\u00ecnh nh\u01b0 m\u1ed9t c\u01a1 ch\u1ebf t\u1ef1 b\u1ea3o v\u1ec7 tr\u01b0\u1edbc nh\u1eefng t\u1ed5n th\u01b0\u01a1ng, th\u1ea5t v\u1ecdng ho\u1eb7c c\u1ea3m gi\u00e1c kh\u00f4ng \u0111\u01b0\u1ee3c th\u1ea5u hi\u1ec3u hay kh\u00f4ng.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-318",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-318",
     "number": 318,
-    "title": "Phát hiện gia đình giao tiếp bằng áp lực",
-    "subtitle": "MAP này không được xây dựng để chỉ nhận diện những cuộc cãi vã lớn, những lời la mắng gay gắt hay những xung đột dễ nhìn thấy trong gia đình. Trọng tâm của MAP là giúp cha mẹ nhận diện những áp lực vô hình đang tồn tại trong cách giao tiếp hằng ngày, nơi lời nói có thể không quá nặng nề nhưng vẫn khiến các thành viên luôn căng thẳng, phòng vệ, sợ sai hoặc không còn cảm thấy an toàn để chia sẻ con người thật của mình.",
+    "title": "Ph\u00e1t hi\u1ec7n gia \u0111\u00ecnh giao ti\u1ebfp b\u1eb1ng \u00e1p l\u1ef1c",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng \u0111\u1ec3 ch\u1ec9 nh\u1eadn di\u1ec7n nh\u1eefng cu\u1ed9c c\u00e3i v\u00e3 l\u1edbn, nh\u1eefng l\u1eddi la m\u1eafng gay g\u1eaft hay nh\u1eefng xung \u0111\u1ed9t d\u1ec5 nh\u00ecn th\u1ea5y trong gia \u0111\u00ecnh. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 gi\u00fap cha m\u1eb9 nh\u1eadn di\u1ec7n nh\u1eefng \u00e1p l\u1ef1c v\u00f4 h\u00ecnh \u0111ang t\u1ed3n t\u1ea1i trong c\u00e1ch giao ti\u1ebfp h\u1eb1ng ng\u00e0y, n\u01a1i l\u1eddi n\u00f3i c\u00f3 th\u1ec3 kh\u00f4ng qu\u00e1 n\u1eb7ng n\u1ec1 nh\u01b0ng v\u1eabn khi\u1ebfn c\u00e1c th\u00e0nh vi\u00ean lu\u00f4n c\u0103ng th\u1eb3ng, ph\u00f2ng v\u1ec7, s\u1ee3 sai ho\u1eb7c kh\u00f4ng c\u00f2n c\u1ea3m th\u1ea5y an to\u00e0n \u0111\u1ec3 chia s\u1ebb con ng\u01b0\u1eddi th\u1eadt c\u1ee7a m\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-319",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-319",
     "number": 319,
-    "title": "Phát hiện đứa trẻ đang mất cảm giác an toàn",
-    "subtitle": "MAP này không được xây dựng để đánh giá con là nhút nhát, yếu đuối, phụ thuộc hay thiếu bản lĩnh. MAP cũng không chỉ nhìn vào những biểu hiện bên ngoài như sợ hãi, bám bố mẹ hoặc lo lắng để đưa ra kết luận. Trọng tâm của MAP là nhận diện liệu bên trong con có đang dần đánh mất cảm giác an toàn về cảm xúc, về các mối quan hệ, về chính bản thân mình hoặc về môi trường sống xung quanh hay không.",
+    "title": "Ph\u00e1t hi\u1ec7n \u0111\u1ee9a tr\u1ebb \u0111ang m\u1ea5t c\u1ea3m gi\u00e1c an to\u00e0n",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng \u0111\u1ec3 \u0111\u00e1nh gi\u00e1 con l\u00e0 nh\u00fat nh\u00e1t, y\u1ebfu \u0111u\u1ed1i, ph\u1ee5 thu\u1ed9c hay thi\u1ebfu b\u1ea3n l\u0129nh. MAP c\u0169ng kh\u00f4ng ch\u1ec9 nh\u00ecn v\u00e0o nh\u1eefng bi\u1ec3u hi\u1ec7n b\u00ean ngo\u00e0i nh\u01b0 s\u1ee3 h\u00e3i, b\u00e1m b\u1ed1 m\u1eb9 ho\u1eb7c lo l\u1eafng \u0111\u1ec3 \u0111\u01b0a ra k\u1ebft lu\u1eadn. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 nh\u1eadn di\u1ec7n li\u1ec7u b\u00ean trong con c\u00f3 \u0111ang d\u1ea7n \u0111\u00e1nh m\u1ea5t c\u1ea3m gi\u00e1c an to\u00e0n v\u1ec1 c\u1ea3m x\u00fac, v\u1ec1 c\u00e1c m\u1ed1i quan h\u1ec7, v\u1ec1 ch\u00ednh b\u1ea3n th\u00e2n m\u00ecnh ho\u1eb7c v\u1ec1 m\u00f4i tr\u01b0\u1eddng s\u1ed1ng xung quanh hay kh\u00f4ng.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-320",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-320",
     "number": 320,
-    "title": "Phát hiện bố mẹ đang yêu con bằng nỗi sợ",
-    "subtitle": "MAP này không được xây dựng để đánh giá bố mẹ có yêu con nhiều hay ít, cũng không nhằm phủ nhận sự hy sinh, quan tâm hoặc trách nhiệm mà bố mẹ dành cho con. Trọng tâm của MAP là nhận diện liệu tình yêu của bố mẹ có đang được dẫn dắt bởi sự tin tưởng và kết nối lành mạnh hay đang vô thức bị chi phối bởi những nỗi sợ chưa được chữa lành bên trong như sợ con thất bại, sợ con tổn thương, sợ con khổ hoặc sợ mất đi những điều quan trọng trong cuộc đời con.",
+    "title": "Ph\u00e1t hi\u1ec7n b\u1ed1 m\u1eb9 \u0111ang y\u00eau con b\u1eb1ng n\u1ed7i s\u1ee3",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng \u0111\u1ec3 \u0111\u00e1nh gi\u00e1 b\u1ed1 m\u1eb9 c\u00f3 y\u00eau con nhi\u1ec1u hay \u00edt, c\u0169ng kh\u00f4ng nh\u1eb1m ph\u1ee7 nh\u1eadn s\u1ef1 hy sinh, quan t\u00e2m ho\u1eb7c tr\u00e1ch nhi\u1ec7m m\u00e0 b\u1ed1 m\u1eb9 d\u00e0nh cho con. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 nh\u1eadn di\u1ec7n li\u1ec7u t\u00ecnh y\u00eau c\u1ee7a b\u1ed1 m\u1eb9 c\u00f3 \u0111ang \u0111\u01b0\u1ee3c d\u1eabn d\u1eaft b\u1edfi s\u1ef1 tin t\u01b0\u1edfng v\u00e0 k\u1ebft n\u1ed1i l\u00e0nh m\u1ea1nh hay \u0111ang v\u00f4 th\u1ee9c b\u1ecb chi ph\u1ed1i b\u1edfi nh\u1eefng n\u1ed7i s\u1ee3 ch\u01b0a \u0111\u01b0\u1ee3c ch\u1eefa l\u00e0nh b\u00ean trong nh\u01b0 s\u1ee3 con th\u1ea5t b\u1ea1i, s\u1ee3 con t\u1ed5n th\u01b0\u01a1ng, s\u1ee3 con kh\u1ed5 ho\u1eb7c s\u1ee3 m\u1ea5t \u0111i nh\u1eefng \u0111i\u1ec1u quan tr\u1ecdng trong cu\u1ed9c \u0111\u1eddi con.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-321",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-321",
     "number": 321,
-    "title": "Phát hiện con đang gánh cảm xúc thay bố mẹ",
-    "subtitle": "MAP này không được xây dựng để ca ngợi sự hiểu chuyện, hy sinh hay khả năng quan tâm người khác của con như một điều hoàn toàn tích cực. MAP cũng không chỉ nhìn vào việc con ngoan ngoãn, biết nghĩ cho bố mẹ hoặc luôn cố gắng làm mọi người vui vẻ. Trọng tâm của MAP là nhận diện liệu con có đang vô thức đảm nhận vai trò gánh vác cảm xúc của người lớn, trở thành người xoa dịu, người chịu đựng hoặc người giữ cho gia đình ổn định về mặt cảm xúc quá sớm hay không.",
+    "title": "Ph\u00e1t hi\u1ec7n con \u0111ang g\u00e1nh c\u1ea3m x\u00fac thay b\u1ed1 m\u1eb9",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng \u0111\u1ec3 ca ng\u1ee3i s\u1ef1 hi\u1ec3u chuy\u1ec7n, hy sinh hay kh\u1ea3 n\u0103ng quan t\u00e2m ng\u01b0\u1eddi kh\u00e1c c\u1ee7a con nh\u01b0 m\u1ed9t \u0111i\u1ec1u ho\u00e0n to\u00e0n t\u00edch c\u1ef1c. MAP c\u0169ng kh\u00f4ng ch\u1ec9 nh\u00ecn v\u00e0o vi\u1ec7c con ngoan ngo\u00e3n, bi\u1ebft ngh\u0129 cho b\u1ed1 m\u1eb9 ho\u1eb7c lu\u00f4n c\u1ed1 g\u1eafng l\u00e0m m\u1ecdi ng\u01b0\u1eddi vui v\u1ebb. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 nh\u1eadn di\u1ec7n li\u1ec7u con c\u00f3 \u0111ang v\u00f4 th\u1ee9c \u0111\u1ea3m nh\u1eadn vai tr\u00f2 g\u00e1nh v\u00e1c c\u1ea3m x\u00fac c\u1ee7a ng\u01b0\u1eddi l\u1edbn, tr\u1edf th\u00e0nh ng\u01b0\u1eddi xoa d\u1ecbu, ng\u01b0\u1eddi ch\u1ecbu \u0111\u1ef1ng ho\u1eb7c ng\u01b0\u1eddi gi\u1eef cho gia \u0111\u00ecnh \u1ed5n \u0111\u1ecbnh v\u1ec1 m\u1eb7t c\u1ea3m x\u00fac qu\u00e1 s\u1edbm hay kh\u00f4ng.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-322",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-322",
     "number": 322,
-    "title": "Phát hiện bố mẹ và con đang hiểu sai nhau nghiêm trọng",
-    "subtitle": "MAP này không được xây dựng để xác định ai đúng ai sai trong mối quan hệ giữa bố mẹ và con, cũng không chỉ tập trung vào những cuộc cãi vã, xung đột hoặc bất đồng dễ nhìn thấy bên ngoài. Trọng tâm của MAP là nhận diện những lớp hiểu lầm sâu bên trong đang tồn tại giữa hai thế hệ, nơi cả bố mẹ và con đều có thể đang yêu thương, cố gắng và hy sinh cho nhau nhưng lại liên tục cảm thấy tổn thương, thất vọng hoặc không được thấu hiểu.",
+    "title": "Ph\u00e1t hi\u1ec7n b\u1ed1 m\u1eb9 v\u00e0 con \u0111ang hi\u1ec3u sai nhau nghi\u00eam tr\u1ecdng",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng \u0111\u1ec3 x\u00e1c \u0111\u1ecbnh ai \u0111\u00fang ai sai trong m\u1ed1i quan h\u1ec7 gi\u1eefa b\u1ed1 m\u1eb9 v\u00e0 con, c\u0169ng kh\u00f4ng ch\u1ec9 t\u1eadp trung v\u00e0o nh\u1eefng cu\u1ed9c c\u00e3i v\u00e3, xung \u0111\u1ed9t ho\u1eb7c b\u1ea5t \u0111\u1ed3ng d\u1ec5 nh\u00ecn th\u1ea5y b\u00ean ngo\u00e0i. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 nh\u1eadn di\u1ec7n nh\u1eefng l\u1edbp hi\u1ec3u l\u1ea7m s\u00e2u b\u00ean trong \u0111ang t\u1ed3n t\u1ea1i gi\u1eefa hai th\u1ebf h\u1ec7, n\u01a1i c\u1ea3 b\u1ed1 m\u1eb9 v\u00e0 con \u0111\u1ec1u c\u00f3 th\u1ec3 \u0111ang y\u00eau th\u01b0\u01a1ng, c\u1ed1 g\u1eafng v\u00e0 hy sinh cho nhau nh\u01b0ng l\u1ea1i li\u00ean t\u1ee5c c\u1ea3m th\u1ea5y t\u1ed5n th\u01b0\u01a1ng, th\u1ea5t v\u1ecdng ho\u1eb7c kh\u00f4ng \u0111\u01b0\u1ee3c th\u1ea5u hi\u1ec3u.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-323",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-323",
     "number": 323,
-    "title": "Kế hoạch 7 ngày giúp bố mẹ hiểu con hơn",
-    "subtitle": "MAP này không được xây dựng để dạy bố mẹ cách kiểm soát con, sửa con nhanh hơn hay biến con thành phiên bản mà người lớn mong muốn. Trọng tâm của MAP là giúp bố mẹ hiểu rằng phía sau mỗi hành vi của con luôn tồn tại một thế giới cảm xúc, suy nghĩ, nhu cầu và những nỗ lực tự bảo vệ mà nhiều khi chính con cũng chưa biết cách diễn đạt thành lời.",
+    "title": "K\u1ebf ho\u1ea1ch 7 ng\u00e0y gi\u00fap b\u1ed1 m\u1eb9 hi\u1ec3u con h\u01a1n",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng \u0111\u1ec3 d\u1ea1y b\u1ed1 m\u1eb9 c\u00e1ch ki\u1ec3m so\u00e1t con, s\u1eeda con nhanh h\u01a1n hay bi\u1ebfn con th\u00e0nh phi\u00ean b\u1ea3n m\u00e0 ng\u01b0\u1eddi l\u1edbn mong mu\u1ed1n. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 gi\u00fap b\u1ed1 m\u1eb9 hi\u1ec3u r\u1eb1ng ph\u00eda sau m\u1ed7i h\u00e0nh vi c\u1ee7a con lu\u00f4n t\u1ed3n t\u1ea1i m\u1ed9t th\u1ebf gi\u1edbi c\u1ea3m x\u00fac, suy ngh\u0129, nhu c\u1ea7u v\u00e0 nh\u1eefng n\u1ed7 l\u1ef1c t\u1ef1 b\u1ea3o v\u1ec7 m\u00e0 nhi\u1ec1u khi ch\u00ednh con c\u0169ng ch\u01b0a bi\u1ebft c\u00e1ch di\u1ec5n \u0111\u1ea1t th\u00e0nh l\u1eddi.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-324",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-324",
     "number": 324,
-    "title": "Kế hoạch 21 ngày cải thiện giao tiếp với con",
-    "subtitle": "MAP này không được xây dựng để dạy bố mẹ những câu nói hay, những kỹ thuật giao tiếp nhanh hoặc những công thức giúp con nghe lời ngay lập tức. Trọng tâm của MAP là giúp bố mẹ hiểu rằng giao tiếp thật sự không bắt đầu từ lời nói, mà bắt đầu từ cảm giác an toàn, được tôn trọng và được thấu hiểu bên trong mối quan hệ giữa bố mẹ và con.",
+    "title": "K\u1ebf ho\u1ea1ch 21 ng\u00e0y c\u1ea3i thi\u1ec7n giao ti\u1ebfp v\u1edbi con",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng \u0111\u1ec3 d\u1ea1y b\u1ed1 m\u1eb9 nh\u1eefng c\u00e2u n\u00f3i hay, nh\u1eefng k\u1ef9 thu\u1eadt giao ti\u1ebfp nhanh ho\u1eb7c nh\u1eefng c\u00f4ng th\u1ee9c gi\u00fap con nghe l\u1eddi ngay l\u1eadp t\u1ee9c. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 gi\u00fap b\u1ed1 m\u1eb9 hi\u1ec3u r\u1eb1ng giao ti\u1ebfp th\u1eadt s\u1ef1 kh\u00f4ng b\u1eaft \u0111\u1ea7u t\u1eeb l\u1eddi n\u00f3i, m\u00e0 b\u1eaft \u0111\u1ea7u t\u1eeb c\u1ea3m gi\u00e1c an to\u00e0n, \u0111\u01b0\u1ee3c t\u00f4n tr\u1ecdng v\u00e0 \u0111\u01b0\u1ee3c th\u1ea5u hi\u1ec3u b\u00ean trong m\u1ed1i quan h\u1ec7 gi\u1eefa b\u1ed1 m\u1eb9 v\u00e0 con.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-325",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-325",
     "number": 325,
-    "title": "Kế hoạch 30 ngày giúp con tập trung học tập tốt hơn",
-    "subtitle": "MAP này không được xây dựng để giúp bố mẹ ép con học nhiều hơn, kiểm soát chặt chẽ hơn hay sử dụng áp lực để cải thiện kết quả học tập trong ngắn hạn. Trọng tâm của MAP là giúp bố mẹ hiểu rằng sự tập trung học tập không chỉ liên quan đến ý thức hay thái độ, mà còn chịu ảnh hưởng rất sâu từ cảm xúc, hệ thần kinh, môi trường sống, động lực bên trong và trạng thái nội tâm của con.",
+    "title": "K\u1ebf ho\u1ea1ch 30 ng\u00e0y gi\u00fap con t\u1eadp trung h\u1ecdc t\u1eadp t\u1ed1t h\u01a1n",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng \u0111\u1ec3 gi\u00fap b\u1ed1 m\u1eb9 \u00e9p con h\u1ecdc nhi\u1ec1u h\u01a1n, ki\u1ec3m so\u00e1t ch\u1eb7t ch\u1ebd h\u01a1n hay s\u1eed d\u1ee5ng \u00e1p l\u1ef1c \u0111\u1ec3 c\u1ea3i thi\u1ec7n k\u1ebft qu\u1ea3 h\u1ecdc t\u1eadp trong ng\u1eafn h\u1ea1n. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 gi\u00fap b\u1ed1 m\u1eb9 hi\u1ec3u r\u1eb1ng s\u1ef1 t\u1eadp trung h\u1ecdc t\u1eadp kh\u00f4ng ch\u1ec9 li\u00ean quan \u0111\u1ebfn \u00fd th\u1ee9c hay th\u00e1i \u0111\u1ed9, m\u00e0 c\u00f2n ch\u1ecbu \u1ea3nh h\u01b0\u1edfng r\u1ea5t s\u00e2u t\u1eeb c\u1ea3m x\u00fac, h\u1ec7 th\u1ea7n kinh, m\u00f4i tr\u01b0\u1eddng s\u1ed1ng, \u0111\u1ed9ng l\u1ef1c b\u00ean trong v\u00e0 tr\u1ea1ng th\u00e1i n\u1ed9i t\u00e2m c\u1ee7a con.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-326",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-326",
     "number": 326,
-    "title": "Kế hoạch xây lại kết nối cảm xúc bố mẹ – con",
-    "subtitle": "MAP này không được xây dựng để hướng dẫn bố mẹ dành nhiều thời gian hơn cho con một cách hình thức, không tập trung vào các hoạt động gắn kết bề mặt và cũng không nhằm tạo ra những khoảnh khắc cảm xúc ngắn hạn. Trọng tâm của MAP là giúp bố mẹ hiểu rằng kết nối cảm xúc thật sự chỉ xuất hiện khi con cảm thấy mình được nhìn thấy, được lắng nghe, được thấu hiểu và được an toàn khi là chính mình trong mối quan hệ với gia đình.",
+    "title": "K\u1ebf ho\u1ea1ch x\u00e2y l\u1ea1i k\u1ebft n\u1ed1i c\u1ea3m x\u00fac b\u1ed1 m\u1eb9 \u2013 con",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng \u0111\u1ec3 h\u01b0\u1edbng d\u1eabn b\u1ed1 m\u1eb9 d\u00e0nh nhi\u1ec1u th\u1eddi gian h\u01a1n cho con m\u1ed9t c\u00e1ch h\u00ecnh th\u1ee9c, kh\u00f4ng t\u1eadp trung v\u00e0o c\u00e1c ho\u1ea1t \u0111\u1ed9ng g\u1eafn k\u1ebft b\u1ec1 m\u1eb7t v\u00e0 c\u0169ng kh\u00f4ng nh\u1eb1m t\u1ea1o ra nh\u1eefng kho\u1ea3nh kh\u1eafc c\u1ea3m x\u00fac ng\u1eafn h\u1ea1n. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 gi\u00fap b\u1ed1 m\u1eb9 hi\u1ec3u r\u1eb1ng k\u1ebft n\u1ed1i c\u1ea3m x\u00fac th\u1eadt s\u1ef1 ch\u1ec9 xu\u1ea5t hi\u1ec7n khi con c\u1ea3m th\u1ea5y m\u00ecnh \u0111\u01b0\u1ee3c nh\u00ecn th\u1ea5y, \u0111\u01b0\u1ee3c l\u1eafng nghe, \u0111\u01b0\u1ee3c th\u1ea5u hi\u1ec3u v\u00e0 \u0111\u01b0\u1ee3c an to\u00e0n khi l\u00e0 ch\u00ednh m\u00ecnh trong m\u1ed1i quan h\u1ec7 v\u1edbi gia \u0111\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-327",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-327",
     "number": 327,
-    "title": "Kế hoạch giảm áp lực học tập cho con",
-    "subtitle": "MAP này không được xây dựng để khuyến khích con học ít hơn, buông lỏng việc học hay giảm kỳ vọng một cách cảm tính. Trọng tâm của MAP là giúp bố mẹ nhìn thấy toàn bộ những áp lực hữu hình và vô hình đang tác động lên cảm xúc, hệ thần kinh, động lực học tập và giá trị bản thân của con, từ đó hiểu đúng nguyên nhân thay vì chỉ nhìn vào biểu hiện bên ngoài.",
+    "title": "K\u1ebf ho\u1ea1ch gi\u1ea3m \u00e1p l\u1ef1c h\u1ecdc t\u1eadp cho con",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng \u0111\u1ec3 khuy\u1ebfn kh\u00edch con h\u1ecdc \u00edt h\u01a1n, bu\u00f4ng l\u1ecfng vi\u1ec7c h\u1ecdc hay gi\u1ea3m k\u1ef3 v\u1ecdng m\u1ed9t c\u00e1ch c\u1ea3m t\u00ednh. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 gi\u00fap b\u1ed1 m\u1eb9 nh\u00ecn th\u1ea5y to\u00e0n b\u1ed9 nh\u1eefng \u00e1p l\u1ef1c h\u1eefu h\u00ecnh v\u00e0 v\u00f4 h\u00ecnh \u0111ang t\u00e1c \u0111\u1ed9ng l\u00ean c\u1ea3m x\u00fac, h\u1ec7 th\u1ea7n kinh, \u0111\u1ed9ng l\u1ef1c h\u1ecdc t\u1eadp v\u00e0 gi\u00e1 tr\u1ecb b\u1ea3n th\u00e2n c\u1ee7a con, t\u1eeb \u0111\u00f3 hi\u1ec3u \u0111\u00fang nguy\u00ean nh\u00e2n thay v\u00ec ch\u1ec9 nh\u00ecn v\u00e0o bi\u1ec3u hi\u1ec7n b\u00ean ngo\u00e0i.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-328",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-328",
     "number": 328,
-    "title": "Kế hoạch xây thói quen tự giác cho con",
-    "subtitle": "MAP này không được xây dựng để biến con thành một đứa trẻ luôn nghe lời, luôn làm theo yêu cầu của người lớn hoặc tuân thủ kỷ luật bằng áp lực và kiểm soát. Trọng tâm của MAP là giúp bố mẹ hiểu rằng sự tự giác thật sự không xuất phát từ nỗi sợ bị phạt, bị nhắc nhở hay bị đánh giá, mà được hình thành từ nội lực bên trong, khả năng tự chủ và cảm giác có trách nhiệm với chính cuộc sống của mình.",
+    "title": "K\u1ebf ho\u1ea1ch x\u00e2y th\u00f3i quen t\u1ef1 gi\u00e1c cho con",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng \u0111\u1ec3 bi\u1ebfn con th\u00e0nh m\u1ed9t \u0111\u1ee9a tr\u1ebb lu\u00f4n nghe l\u1eddi, lu\u00f4n l\u00e0m theo y\u00eau c\u1ea7u c\u1ee7a ng\u01b0\u1eddi l\u1edbn ho\u1eb7c tu\u00e2n th\u1ee7 k\u1ef7 lu\u1eadt b\u1eb1ng \u00e1p l\u1ef1c v\u00e0 ki\u1ec3m so\u00e1t. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 gi\u00fap b\u1ed1 m\u1eb9 hi\u1ec3u r\u1eb1ng s\u1ef1 t\u1ef1 gi\u00e1c th\u1eadt s\u1ef1 kh\u00f4ng xu\u1ea5t ph\u00e1t t\u1eeb n\u1ed7i s\u1ee3 b\u1ecb ph\u1ea1t, b\u1ecb nh\u1eafc nh\u1edf hay b\u1ecb \u0111\u00e1nh gi\u00e1, m\u00e0 \u0111\u01b0\u1ee3c h\u00ecnh th\u00e0nh t\u1eeb n\u1ed9i l\u1ef1c b\u00ean trong, kh\u1ea3 n\u0103ng t\u1ef1 ch\u1ee7 v\u00e0 c\u1ea3m gi\u00e1c c\u00f3 tr\u00e1ch nhi\u1ec7m v\u1edbi ch\u00ednh cu\u1ed9c s\u1ed1ng c\u1ee7a m\u00ecnh.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-329",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-329",
     "number": 329,
-    "title": "Kế hoạch giúp con tự tin hơn",
-    "subtitle": "MAP này không được xây dựng để giúp con trở nên mạnh dạn hơn bằng các kỹ năng giao tiếp bề mặt, không tập trung vào việc khiến con nổi bật hơn người khác và cũng không nhằm tạo ra sự tự tin dựa trên thành tích, lời khen hay sự công nhận từ bên ngoài. Trọng tâm của MAP là giúp bố mẹ hiểu rằng sự tự tin thật sự được hình thành từ cảm giác có giá trị, được là chính mình, được chấp nhận và tin rằng mình vẫn xứng đáng được yêu thương ngay cả khi chưa hoàn hảo.",
+    "title": "K\u1ebf ho\u1ea1ch gi\u00fap con t\u1ef1 tin h\u01a1n",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng \u0111\u1ec3 gi\u00fap con tr\u1edf n\u00ean m\u1ea1nh d\u1ea1n h\u01a1n b\u1eb1ng c\u00e1c k\u1ef9 n\u0103ng giao ti\u1ebfp b\u1ec1 m\u1eb7t, kh\u00f4ng t\u1eadp trung v\u00e0o vi\u1ec7c khi\u1ebfn con n\u1ed5i b\u1eadt h\u01a1n ng\u01b0\u1eddi kh\u00e1c v\u00e0 c\u0169ng kh\u00f4ng nh\u1eb1m t\u1ea1o ra s\u1ef1 t\u1ef1 tin d\u1ef1a tr\u00ean th\u00e0nh t\u00edch, l\u1eddi khen hay s\u1ef1 c\u00f4ng nh\u1eadn t\u1eeb b\u00ean ngo\u00e0i. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 gi\u00fap b\u1ed1 m\u1eb9 hi\u1ec3u r\u1eb1ng s\u1ef1 t\u1ef1 tin th\u1eadt s\u1ef1 \u0111\u01b0\u1ee3c h\u00ecnh th\u00e0nh t\u1eeb c\u1ea3m gi\u00e1c c\u00f3 gi\u00e1 tr\u1ecb, \u0111\u01b0\u1ee3c l\u00e0 ch\u00ednh m\u00ecnh, \u0111\u01b0\u1ee3c ch\u1ea5p nh\u1eadn v\u00e0 tin r\u1eb1ng m\u00ecnh v\u1eabn x\u1ee9ng \u0111\u00e1ng \u0111\u01b0\u1ee3c y\u00eau th\u01b0\u01a1ng ngay c\u1ea3 khi ch\u01b0a ho\u00e0n h\u1ea3o.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
     ]
   },
   {
+    "id": "family-child-330",
+    "categoryId": "family-child",
+    "previewModule": "category-family-child-map-330",
     "number": 330,
-    "title": "Kế hoạch giúp gia đình đồng hành đúng bản chất của con",
-    "subtitle": "MAP này không được xây dựng để hướng dẫn bố mẹ nuôi dạy con theo một công thức cố định, không nhằm biến con thành phiên bản lý tưởng theo mong muốn của người lớn và cũng không tập trung vào việc điều chỉnh hành vi để con phù hợp với một chuẩn mực chung. Trọng tâm của MAP là giúp gia đình hiểu rằng mỗi đứa trẻ sinh ra đều có một bản chất riêng, nhu cầu riêng, nhịp phát triển riêng và con đường trưởng thành riêng cần được tôn trọng và đồng hành đúng cách.",
+    "title": "K\u1ebf ho\u1ea1ch gi\u00fap gia \u0111\u00ecnh \u0111\u1ed3ng h\u00e0nh \u0111\u00fang b\u1ea3n ch\u1ea5t c\u1ee7a con",
+    "subtitle": "MAP n\u00e0y kh\u00f4ng \u0111\u01b0\u1ee3c x\u00e2y d\u1ef1ng \u0111\u1ec3 h\u01b0\u1edbng d\u1eabn b\u1ed1 m\u1eb9 nu\u00f4i d\u1ea1y con theo m\u1ed9t c\u00f4ng th\u1ee9c c\u1ed1 \u0111\u1ecbnh, kh\u00f4ng nh\u1eb1m bi\u1ebfn con th\u00e0nh phi\u00ean b\u1ea3n l\u00fd t\u01b0\u1edfng theo mong mu\u1ed1n c\u1ee7a ng\u01b0\u1eddi l\u1edbn v\u00e0 c\u0169ng kh\u00f4ng t\u1eadp trung v\u00e0o vi\u1ec7c \u0111i\u1ec1u ch\u1ec9nh h\u00e0nh vi \u0111\u1ec3 con ph\u00f9 h\u1ee3p v\u1edbi m\u1ed9t chu\u1ea9n m\u1ef1c chung. Tr\u1ecdng t\u00e2m c\u1ee7a MAP l\u00e0 gi\u00fap gia \u0111\u00ecnh hi\u1ec3u r\u1eb1ng m\u1ed7i \u0111\u1ee9a tr\u1ebb sinh ra \u0111\u1ec1u c\u00f3 m\u1ed9t b\u1ea3n ch\u1ea5t ri\u00eang, nhu c\u1ea7u ri\u00eang, nh\u1ecbp ph\u00e1t tri\u1ec3n ri\u00eang v\u00e0 con \u0111\u01b0\u1eddng tr\u01b0\u1edfng th\u00e0nh ri\u00eang c\u1ea7n \u0111\u01b0\u1ee3c t\u00f4n tr\u1ecdng v\u00e0 \u0111\u1ed3ng h\u00e0nh \u0111\u00fang c\u00e1ch.",
     "hasPreview": true,
     "tags": [
-      "gia đình",
-      "nuôi dạy con",
-      "thấu hiểu"
+      "gia \u0111\u00ecnh",
+      "nu\u00f4i d\u1ea1y con",
+      "th\u1ea5u hi\u1ec3u"
+    ]
+  },
+  {
+    "id": "family-child-331",
+    "categoryId": "family-child",
+    "number": 331,
+    "title": "\u0110I\u1ec0U KHI\u1ebeN B\u1ea0N KH\u00d3 NGH\u1ec8 NG\u01a0I TH\u1eacT S\u1ef0",
+    "subtitle": "Noi dung chuyen sau - MAP nguon 25.",
+    "hasPreview": true,
+    "previewModule": "category-family-child-map-331",
+    "tags": [
+      "Gia dinh",
+      "Cha me va con"
+    ]
+  },
+  {
+    "id": "family-child-332",
+    "categoryId": "family-child",
+    "number": 332,
+    "title": "V\u00cc SAO B\u1ea0N LU\u00d4N S\u1ee2 L\u00c0M NG\u01af\u1edcI KH\u00c1C TH\u1ea4T V\u1eccNG?",
+    "subtitle": "Noi dung chuyen sau - MAP nguon 24.",
+    "hasPreview": true,
+    "previewModule": "category-family-child-map-332",
+    "tags": [
+      "Gia dinh",
+      "Cha me va con"
+    ]
+  },
+  {
+    "id": "family-child-333",
+    "categoryId": "family-child",
+    "number": 333,
+    "title": "\u0110I\u1ec0U KHI\u1ebeN B\u1ea0N D\u1ec4 C\u1ea2M TH\u1ea4Y B\u1eca B\u1ece R\u01a0I",
+    "subtitle": "Noi dung chuyen sau - MAP nguon 21.",
+    "hasPreview": true,
+    "previewModule": "category-family-child-map-333",
+    "tags": [
+      "Gia dinh",
+      "Cha me va con"
+    ]
+  },
+  {
+    "id": "family-child-334",
+    "categoryId": "family-child",
+    "number": 334,
+    "title": "V\u00cc SAO B\u1ea0N LU\u00d4N MU\u1ed0N KI\u1ec2M SO\u00c1T M\u1eccI TH\u1ee8?",
+    "subtitle": "Noi dung chuyen sau - MAP nguon 18.",
+    "hasPreview": true,
+    "previewModule": "category-family-child-map-334",
+    "tags": [
+      "Gia dinh",
+      "Cha me va con"
+    ]
+  },
+  {
+    "id": "family-child-335",
+    "categoryId": "family-child",
+    "number": 335,
+    "title": "\u0110I\u1ec0U KHI\u1ebeN B\u1ea0N C\u1ea2M TH\u1ea4Y C\u00d4 \u0110\u01a0N TRONG CH\u00cdNH GIA \u0110\u00ccNH M\u00ccNH",
+    "subtitle": "Noi dung chuyen sau - MAP nguon 11.",
+    "hasPreview": true,
+    "previewModule": "category-family-child-map-335",
+    "tags": [
+      "Gia dinh",
+      "Cha me va con"
+    ]
+  },
+  {
+    "id": "family-child-336",
+    "categoryId": "family-child",
+    "number": 336,
+    "title": "\u0110I\u1ec0U B\u1ea0N LU\u00d4N MU\u1ed0N \u0110\u01af\u1ee2C CHA M\u1eb8 TH\u1ea4U HI\u1ec2U",
+    "subtitle": "Noi dung chuyen sau - MAP nguon 4.",
+    "hasPreview": true,
+    "previewModule": "category-family-child-map-336",
+    "tags": [
+      "Gia dinh",
+      "Cha me va con"
+    ]
+  },
+  {
+    "id": "family-child-337",
+    "categoryId": "family-child",
+    "number": 337,
+    "title": "PHI\u00caN B\u1ea2N TH\u1eacT C\u1ee6A B\u1ea0N \u0110ANG MU\u1ed0N S\u1ed0NG NH\u01af TH\u1ebe N\u00c0O?",
+    "subtitle": "Noi dung chuyen sau - MAP nguon 58.",
+    "hasPreview": true,
+    "previewModule": "category-family-child-map-337",
+    "tags": [
+      "Gia dinh",
+      "Cha me va con"
+    ]
+  },
+  {
+    "id": "family-child-338",
+    "categoryId": "family-child",
+    "number": 338,
+    "title": "\u0110I\u1ec0U KHI\u1ebeN B\u1ea0N LU\u00d4N S\u1ee2 L\u00c0M NG\u01af\u1edcI KH\u00c1C TH\u1ea4T V\u1eccNG",
+    "subtitle": "Noi dung chuyen sau - MAP nguon 24.",
+    "hasPreview": true,
+    "previewModule": "category-family-child-map-338",
+    "tags": [
+      "Gia dinh",
+      "Cha me va con"
+    ]
+  },
+  {
+    "id": "family-child-339",
+    "categoryId": "family-child",
+    "number": 339,
+    "title": "V\u00cc SAO B\u1ea0N D\u1ec4 C\u1ea2M TH\u1ea4Y B\u1eca B\u1ece R\u01a0I?",
+    "subtitle": "Noi dung chuyen sau - MAP nguon 21.",
+    "hasPreview": true,
+    "previewModule": "category-family-child-map-339",
+    "tags": [
+      "Gia dinh",
+      "Cha me va con"
+    ]
+  },
+  {
+    "id": "family-child-340",
+    "categoryId": "family-child",
+    "number": 340,
+    "title": "\u0110I\u1ec0U KHI\u1ebeN B\u1ea0N C\u1ea2M TH\u1ea4Y C\u00d4 \u0110\u01a0N TRONG CH\u00cdNH GIA \u0110\u00ccNH M\u00ccNH",
+    "subtitle": "Noi dung chuyen sau - MAP nguon 11.",
+    "hasPreview": true,
+    "previewModule": "category-family-child-map-340",
+    "tags": [
+      "Gia dinh",
+      "Cha me va con"
+    ]
+  },
+  {
+    "id": "family-child-341",
+    "categoryId": "family-child",
+    "number": 341,
+    "title": "\u0110I\u1ec0U B\u1ea0N LU\u00d4N MU\u1ed0N \u0110\u01af\u1ee2C CHA M\u1eb8 TH\u1ea4U HI\u1ec2U",
+    "subtitle": "Noi dung chuyen sau - MAP nguon 4.",
+    "hasPreview": true,
+    "previewModule": "category-family-child-map-341",
+    "tags": [
+      "Gia dinh",
+      "Cha me va con"
+    ]
+  },
+  {
+    "id": "family-child-342",
+    "categoryId": "family-child",
+    "number": 342,
+    "title": "KHI \u00c1P L\u1ef0C, B\u1ea0N TR\u1ede TH\u00c0NH PHI\u00caN B\u1ea2N N\u00c0O?",
+    "subtitle": "Noi dung chuyen sau - MAP nguon 26.",
+    "hasPreview": true,
+    "previewModule": "category-family-child-map-342",
+    "tags": [
+      "Gia dinh",
+      "Cha me va con"
+    ]
+  },
+  {
+    "id": "family-child-343",
+    "categoryId": "family-child",
+    "number": 343,
+    "title": "KHI N\u00c0O B\u1ea0N B\u1eaeT \u0110\u1ea6U CH\u1eeeA L\u00c0NH TH\u1eacT S\u1ef0?",
+    "subtitle": "Noi dung chuyen sau - MAP nguon 52.",
+    "hasPreview": true,
+    "previewModule": "category-family-child-map-343",
+    "tags": [
+      "Gia dinh",
+      "Cha me va con"
+    ]
+  },
+  {
+    "id": "family-child-344",
+    "categoryId": "family-child",
+    "number": 344,
+    "title": "\u0110I\u1ec0U GI\u00daP B\u1ea0N X\u00c2Y L\u1ea0I GI\u00c1 TR\u1eca B\u1ea2N TH\u00c2N",
+    "subtitle": "Noi dung chuyen sau - MAP nguon 56.",
+    "hasPreview": true,
+    "previewModule": "category-family-child-map-344",
+    "tags": [
+      "Gia dinh",
+      "Cha me va con"
+    ]
+  },
+  {
+    "id": "family-child-345",
+    "categoryId": "family-child",
+    "number": 345,
+    "title": "KHI N\u00c0O B\u1ea0N B\u1eaeT \u0110\u1ea6U C\u1ea2M TH\u1ea4Y M\u00ccNH CH\u01afA \u0110\u1ee6 T\u1ed0T?",
+    "subtitle": "Noi dung chuyen sau - MAP nguon 1.",
+    "hasPreview": true,
+    "previewModule": "category-family-child-map-345",
+    "tags": [
+      "Gia dinh",
+      "Cha me va con"
+    ]
+  },
+  {
+    "id": "family-child-346",
+    "categoryId": "family-child",
+    "number": 346,
+    "title": "KHI N\u00c0O B\u1ea0N B\u1eaeT \u0110\u1ea6U S\u1ed0NG B\u1eb0NG TR\u00c1CH NHI\u1ec6M H\u01a0N C\u1ea2M X\u00daC?",
+    "subtitle": "Noi dung chuyen sau - MAP nguon 12.",
+    "hasPreview": true,
+    "previewModule": "category-family-child-map-346",
+    "tags": [
+      "Gia dinh",
+      "Cha me va con"
+    ]
+  },
+  {
+    "id": "family-child-347",
+    "categoryId": "family-child",
+    "number": 347,
+    "title": "\u0110I\u1ec0U B\u1ea0N \u0110ANG C\u1ed0 CHE GI\u1ea4U KH\u1eceI TH\u1ebe GI\u1edaI",
+    "subtitle": "Noi dung chuyen sau - MAP nguon 10.",
+    "hasPreview": true,
+    "previewModule": "category-family-child-map-347",
+    "tags": [
+      "Gia dinh",
+      "Cha me va con"
+    ]
+  },
+  {
+    "id": "family-child-348",
+    "categoryId": "family-child",
+    "number": 348,
+    "title": "\u0110I\u1ec0U KHI\u1ebeN B\u1ea0N LU\u00d4N S\u1ee2 B\u1eca T\u1eea CH\u1ed0I HO\u1eb6C B\u1ece R\u01a0I",
+    "subtitle": "Noi dung chuyen sau - MAP nguon 13.",
+    "hasPreview": true,
+    "previewModule": "category-family-child-map-348",
+    "tags": [
+      "Gia dinh",
+      "Cha me va con"
+    ]
+  },
+  {
+    "id": "family-child-349",
+    "categoryId": "family-child",
+    "number": 349,
+    "title": "PHI\u00caN B\u1ea2N TH\u1eacT C\u1ee6A B\u1ea0N \u0110ANG B\u1eca M\u1eaeC K\u1eb8T \u1ede \u0110\u00c2U?",
+    "subtitle": "Noi dung chuyen sau - MAP nguon 15.",
+    "hasPreview": true,
+    "previewModule": "category-family-child-map-349",
+    "tags": [
+      "Gia dinh",
+      "Cha me va con"
+    ]
+  },
+  {
+    "id": "family-child-350",
+    "categoryId": "family-child",
+    "number": 350,
+    "title": "V\u00cc SAO B\u1ea0N KH\u00d3 NH\u1eacN Y\u00caU TH\u01af\u01a0NG TH\u1eacT S\u1ef0?",
+    "subtitle": "Noi dung chuyen sau - MAP nguon 22.",
+    "hasPreview": true,
+    "previewModule": "category-family-child-map-350",
+    "tags": [
+      "Gia dinh",
+      "Cha me va con"
+    ]
+  },
+  {
+    "id": "family-child-351",
+    "categoryId": "family-child",
+    "number": 351,
+    "title": "\u0110I\u1ec0U B\u1ea0N C\u1ea6N THA TH\u1ee8 \u0110\u1ec2 TR\u00c1I TIM \u0110\u01af\u1ee2C T\u1ef0 DO H\u01a0N",
+    "subtitle": "Noi dung chuyen sau - MAP nguon 50.",
+    "hasPreview": true,
+    "previewModule": "category-family-child-map-351",
+    "tags": [
+      "Gia dinh",
+      "Cha me va con"
+    ]
+  },
+  {
+    "id": "family-child-352",
+    "categoryId": "family-child",
+    "number": 352,
+    "title": "\u0110I\u1ec0U B\u1ea0N C\u1ea6N NG\u1eeaNG L\u00c0M \u0110\u1ec2 KH\u00d4NG TI\u1ebeP T\u1ee4C \u0110\u00c1NH M\u1ea4T CH\u00cdNH M\u00ccNH",
+    "subtitle": "Noi dung chuyen sau - MAP nguon 49.",
+    "hasPreview": true,
+    "previewModule": "category-family-child-map-352",
+    "tags": [
+      "Gia dinh",
+      "Cha me va con"
+    ]
+  },
+  {
+    "id": "family-child-353",
+    "categoryId": "family-child",
+    "number": 353,
+    "title": "VAI TR\u00d2 V\u00d4 TH\u1ee8C B\u1ea0N \u0110ANG MANG TRONG H\u1ec6 GIA \u0110\u00ccNH",
+    "subtitle": "Noi dung chuyen sau - MAP nguon 15.",
+    "hasPreview": true,
+    "previewModule": "category-family-child-map-353",
+    "tags": [
+      "Gia dinh",
+      "Cha me va con"
+    ]
+  },
+  {
+    "id": "family-child-354",
+    "categoryId": "family-child",
+    "number": 354,
+    "title": "\u0110I\u1ec0U KHI\u1ebeN NHI\u1ec0U \u0110\u1ee8A TR\u1eba PH\u1ea2I S\u1ed0NG \u0110\u1ec2 TH\u00cdCH NGHI",
+    "subtitle": "Noi dung chuyen sau - MAP nguon 26.",
+    "hasPreview": true,
+    "previewModule": "category-family-child-map-354",
+    "tags": [
+      "Gia dinh",
+      "Cha me va con"
+    ]
+  },
+  {
+    "id": "family-child-355",
+    "categoryId": "family-child",
+    "number": 355,
+    "title": "\u0110I\u1ec0U KHI\u1ebeN B\u1ea0N KH\u00d3 S\u1ed0NG \u0110\u00daNG V\u1edaI CON NG\u01af\u1edcI TH\u1eacT",
+    "subtitle": "Noi dung chuyen sau - MAP nguon 45.",
+    "hasPreview": true,
+    "previewModule": "category-family-child-map-355",
+    "tags": [
+      "Gia dinh",
+      "Cha me va con"
     ]
   }
 ];
-
-export const maps = Array.from({ length: 330 }, (_, index) => {
-  const number = index + 1;
-  const custom = featured.find((item) => item.number === number);
-  const base = custom ?? {
-    number,
-    title: `MAP gia đình số ${number}`,
-    subtitle: "Gợi mở một lát cắt để cha mẹ hiểu con và hiểu chính mình sâu hơn.",
-    hasPreview: false,
-    tags: ["gia đình", "đồng hành", "thấu hiểu"]
-  };
-
-  return {
-    id: `family-child-${number}`,
-    categoryId: "family-child",
-    previewModule: `category-family-child-map-${number}`,
-    ...base
-  };
-});
