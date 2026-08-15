@@ -1,0 +1,81 @@
+THƯ MỤC NGUỒN: C:\Users\noc\Downloads\map\chap15
+THƯ MỤC KẾT QUẢ: C:\Users\noc\Downloads\map\chap15\RENAMED_IMAGES_20260708_215939
+
+ẢNH ĐÃ QUÉT: 65
+TỆP KHÔNG PHẢI ẢNH ĐÃ BỎ QUA: 0
+
+MAP DUY NHẤT THÀNH CÔNG: 59
+[OK] WhatsApp Image 2026-07-02 at 15.18.17 (1).jpeg -> 1.jpeg (Tesseract; MAP 1; điểm 249.0)
+[OK] WhatsApp Image 2026-07-02 at 15.18.19 (3).jpeg -> 2.jpeg (Tesseract; MAP 2:; điểm 275.9)
+[OK] WhatsApp Image 2026-07-02 at 15.18.16 (3).jpeg -> 3.jpeg (RapidOCR; MAP3:; điểm 341.8)
+[OK] WhatsApp Image 2026-07-02 at 15.18.19 (2).jpeg -> 4.jpeg (Tesseract; MAP 4; điểm 247.9)
+[OK] WhatsApp Image 2026-07-02 at 15.18.17 (2).jpeg -> 5.jpeg (Tesseract; MAP 5; điểm 247.8)
+[OK] WhatsApp Image 2026-07-02 at 15.18.19 (4).jpeg -> 6.jpeg (Tesseract; MAP 6:; điểm 250.5)
+[OK] WhatsApp Image 2026-07-02 at 15.18.17 (4).jpeg -> 7.jpeg (Tesseract; MAP 7; điểm 241.5)
+[OK] WhatsApp Image 2026-07-02 at 15.18.19.jpeg -> 8.jpeg (Tesseract; MAP 8; điểm 261.3)
+[OK] WhatsApp Image 2026-07-02 at 15.18.17.jpeg -> 9.jpeg (Tesseract; MAP 9:; điểm 235.3)
+[OK] WhatsApp Image 2026-07-02 at 15.18.18.jpeg -> 11.jpeg (Tesseract; MAP 11:; điểm 249.9)
+[OK] WhatsApp Image 2026-07-02 at 15.18.15 (3).jpeg -> 12.jpeg (Tesseract; MAP 12; điểm 238.0)
+[OK] WhatsApp Image 2026-07-02 at 15.18.18 (1).jpeg -> 13.jpeg (Tesseract; MAP 13; điểm 261.8)
+[OK] WhatsApp Image 2026-07-02 at 15.18.16.jpeg -> 14.jpeg (Tesseract; MAP 14; điểm 251.1)
+[OK] WhatsApp Image 2026-07-02 at 15.18.17 (3).jpeg -> 15.jpeg (Tesseract; MAP 15:; điểm 268.3)
+[OK] WhatsApp Image 2026-07-02 at 15.18.16 (1).jpeg -> 16.jpeg (Tesseract; MAP 16:; điểm 255.9)
+[OK] WhatsApp Image 2026-07-02 at 15.18.16 (2).jpeg -> 17.jpeg (Tesseract; MAP 17:; điểm 246.4)
+[OK] WhatsApp Image 2026-07-02 at 15.18.18 (3).jpeg -> 18.jpeg (Tesseract; MAP 18:; điểm 260.5)
+[OK] WhatsApp Image 2026-07-02 at 15.18.19 (1).jpeg -> 19.jpeg (Tesseract; MAP 19:; điểm 241.9)
+[OK] WhatsApp Image 2026-07-02 at 15.18.12.jpeg -> 20.jpeg (Tesseract; MAP 20:; điểm 192.8)
+[OK] WhatsApp Image 2026-07-02 at 15.18.14 (3).jpeg -> 21.jpeg (Tesseract; MAP 21:; điểm 242.9)
+[OK] WhatsApp Image 2026-07-02 at 15.18.14.jpeg -> 22.jpeg (RapidOCR; MAP 22:; điểm 342.8)
+[OK] WhatsApp Image 2026-07-02 at 15.18.14 (2).jpeg -> 23.jpeg (Tesseract; MAP 23:; điểm 249.8)
+[OK] WhatsApp Image 2026-07-02 at 15.18.13.jpeg -> 24.jpeg (Tesseract; MAP 24:; điểm 238.8)
+[OK] WhatsApp Image 2026-07-02 at 15.18.11.jpeg -> 25.jpeg (RapidOCR; MAP25:; điểm 347.9)
+[OK] WhatsApp Image 2026-07-02 at 15.18.13 (1).jpeg -> 26.jpeg (Tesseract; MAP 26:; điểm 228.3)
+[OK] WhatsApp Image 2026-07-02 at 15.18.12 (1).jpeg -> 27.jpeg (RapidOCR; MAP 27:; điểm 336.3)
+[OK] WhatsApp Image 2026-07-02 at 15.18.15 (1).jpeg -> 28.jpeg (RapidOCR; MAP 28:; điểm 344.0)
+[OK] WhatsApp Image 2026-07-02 at 15.18.12 (2).jpeg -> 29.jpeg (Tesseract; MAP 29:; điểm 270.8)
+[OK] WhatsApp Image 2026-07-02 at 15.18.12 (4).jpeg -> 30.jpeg (Tesseract; MAP 30; điểm 233.3)
+[OK] WhatsApp Image 2026-07-02 at 15.18.11 (2).jpeg -> 31.jpeg (Tesseract; MAP 31:; điểm 250.7)
+[OK] WhatsApp Image 2026-07-02 at 15.18.11 (3).jpeg -> 32.jpeg (Tesseract; MAP 32:; điểm 235.5)
+[OK] WhatsApp Image 2026-07-02 at 15.18.15.jpeg -> 33.jpeg (Tesseract; MAP 33; điểm 236.9)
+[OK] WhatsApp Image 2026-07-02 at 15.18.11 (1).jpeg -> 34.jpeg (Tesseract; MAP 34:; điểm 250.3)
+[OK] WhatsApp Image 2026-07-02 at 15.18.12 (3).jpeg -> 35.jpeg (Tesseract; MAP 35:; điểm 247.0)
+[OK] WhatsApp Image 2026-07-02 at 15.18.13 (2).jpeg -> 36.jpeg (Tesseract; MAP 36:; điểm 241.2)
+[OK] WhatsApp Image 2026-07-02 at 15.18.13 (3).jpeg -> 37.jpeg (Tesseract; MAP 37:; điểm 243.6)
+[OK] WhatsApp Image 2026-07-02 at 15.18.15 (2).jpeg -> 38.jpeg (Tesseract; MAP 38:; điểm 242.5)
+[OK] WhatsApp Image 2026-07-02 at 15.18.13 (4).jpeg -> 39.jpeg (Tesseract; MAP 39:; điểm 248.7)
+[OK] WhatsApp Image 2026-07-02 at 15.18.08.jpeg -> 40.jpeg (Tesseract; MAP 40:; điểm 227.1)
+[OK] WhatsApp Image 2026-07-02 at 15.18.07 (4).jpeg -> 41.jpeg (Tesseract; MAP 41:; điểm 254.6)
+[OK] WhatsApp Image 2026-07-02 at 15.18.08 (1).jpeg -> 42.jpeg (Tesseract; MAP 42:; điểm 258.6)
+[OK] WhatsApp Image 2026-07-02 at 15.18.10 (2).jpeg -> 43.jpeg (Tesseract; MAP 43:; điểm 257.2)
+[OK] WhatsApp Image 2026-07-02 at 15.18.09 (1).jpeg -> 44.jpeg (Tesseract; MAP 44:; điểm 246.4)
+[OK] WhatsApp Image 2026-07-02 at 15.18.07 (3).jpeg -> 45.jpeg (Tesseract; MAP 45:; điểm 243.4)
+[OK] WhatsApp Image 2026-07-02 at 15.18.07 (1).jpeg -> 46.jpeg (Tesseract; MAP 46:; điểm 243.6)
+[OK] WhatsApp Image 2026-07-02 at 15.18.06.jpeg -> 47.jpeg (Tesseract; MAP 47:; điểm 237.5)
+[OK] WhatsApp Image 2026-07-02 at 15.18.09.jpeg -> 48.jpeg (Tesseract; MAP 48:; điểm 240.9)
+[OK] WhatsApp Image 2026-07-02 at 15.18.10.jpeg -> 49.jpeg (Tesseract; MAP 49:; điểm 242.2)
+[OK] WhatsApp Image 2026-07-02 at 15.18.10 (1).jpeg -> 50.jpeg (Tesseract; MAP 50:; điểm 254.1)
+[OK] WhatsApp Image 2026-07-02 at 15.18.10 (3).jpeg -> 51.jpeg (Tesseract; MAP 51:; điểm 240.8)
+[OK] WhatsApp Image 2026-07-02 at 15.18.06 (1).jpeg -> 52.jpeg (Tesseract; MAP 52:; điểm 232.4)
+[OK] WhatsApp Image 2026-07-02 at 15.18.06 (2).jpeg -> 53.jpeg (Tesseract; MAP 53:; điểm 232.9)
+[OK] WhatsApp Image 2026-07-02 at 15.18.07 (2).jpeg -> 54.jpeg (Tesseract; MAP 54:; điểm 246.7)
+[OK] WhatsApp Image 2026-07-02 at 15.17.57.jpeg -> 55.jpeg (Tesseract; MAP 55:; điểm 247.3)
+[OK] WhatsApp Image 2026-07-02 at 15.18.08 (2).jpeg -> 56.jpeg (Tesseract; MAP 56:; điểm 241.6)
+[OK] WhatsApp Image 2026-07-02 at 15.18.21 (2).jpeg -> 57.jpeg (Tesseract; MAP 57; điểm 253.1)
+[OK] WhatsApp Image 2026-07-02 at 15.18.21 (1).jpeg -> 58.jpeg (RapidOCR; MAP58:; điểm 354.2)
+[OK] WhatsApp Image 2026-07-02 at 15.18.08 (3).jpeg -> 59.jpeg (Tesseract; MAP 59:; điểm 248.1)
+[OK] WhatsApp Image 2026-07-02 at 15.18.09 (3).jpeg -> 60.jpeg (Tesseract; MAP 60:; điểm 247.9)
+
+ẢNH TRÙNG MAP: 6
+[DUPLICATE MAP 1] WhatsApp Image 2026-07-02 at 15.18.18 (2).jpeg
+[DUPLICATE MAP 29] WhatsApp Image 2026-07-02 at 15.18.14 (1).jpeg
+[DUPLICATE MAP 50] WhatsApp Image 2026-07-02 at 15.18.21.jpeg
+[DUPLICATE MAP 55] WhatsApp Image 2026-07-02 at 15.18.20.jpeg
+[DUPLICATE MAP 57] WhatsApp Image 2026-07-02 at 15.18.07.jpeg
+[DUPLICATE MAP 58] WhatsApp Image 2026-07-02 at 15.18.09 (2).jpeg
+
+KHÔNG ĐỌC ĐƯỢC SỐ MAP: 0
+
+FILE ẢNH KHÔNG HỢP LỆ: 0
+
+SỐ MAP BỊ THIẾU TRONG KHOẢNG 1-60:
+10
