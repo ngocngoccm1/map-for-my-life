@@ -252,14 +252,14 @@
     <div class="fixed inset-0 paper-grain z-50"></div>
     <header class="fixed top-0 w-full z-40 bg-surface/80 backdrop-blur-md shadow-sm">
       <nav class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
-        <a class="font-headline-md text-headline-md font-medium tracking-tight text-primary" href="#/">GEIN MAP FOR SUCCESS</a>
+        <a class="font-headline-md text-lg md:text-headline-md font-medium tracking-tight leading-tight text-primary max-w-[190px] md:max-w-none" href="#/">GEIN MAP FOR SUCCESS</a>
         <div class="hidden md:flex items-center gap-8">
           <a class="text-secondary font-semibold border-b-2 border-secondary pb-1 font-body-md text-body-md" href="#intro">Giới thiệu</a>
           <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#/catalog">Danh mục MAP</a>
           <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#/category/family-child">Chi tiết</a>
           <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#contact">Liên hệ</a>
         </div>
-        <a class="bg-primary text-on-primary px-6 py-2 rounded-full hover:scale-105 transition-transform duration-300 font-label-sm text-label-sm" href="#/catalog">Bắt đầu ngay</a>
+        <a class="bg-primary text-on-primary px-4 md:px-6 py-2 rounded-full whitespace-nowrap hover:scale-105 transition-transform duration-300 font-label-sm text-label-sm" href="#/catalog">Bắt đầu ngay</a>
       </nav>
     </header>
 
@@ -415,7 +415,7 @@
 
       const MAP_DATA_CONFIG = {
         "family-child": { dataCategoryId: "family-child", mapModule: "category-family-child", imageFolder: "masterdata/chap1", imagePattern: "number", supportsMultipleImages: false, codePrefix: "FAM" },
-        "human-decoding": { dataCategoryId: "human-decode", mapModule: "category-human-decode", imageFolder: "masterdata/chap2", imagePattern: "number", supportsMultipleImages: false, codePrefix: "DEC" },
+        "human-decoding": { dataCategoryId: "human-decode", mapModule: "category-human-decode", imageFolder: "masterdata/chap2", imagePattern: "number", supportsMultipleImages: true, codePrefix: "DEC" },
         "grow-together": { dataCategoryId: "grow-together", mapModule: "category-grow-together", imageFolder: "masterdata/chap3", imagePattern: "number", supportsMultipleImages: false, codePrefix: "GRW" },
         "peaceful-home": { dataCategoryId: "peaceful-home", mapModule: "category-peaceful-home", imageFolder: "masterdata/chap4", imagePattern: "number", supportsMultipleImages: false, codePrefix: "HOM" },
         "healing-family": { dataCategoryId: "healing-family", mapModule: "category-healing-family", imageFolder: "masterdata/chap5", imagePattern: "number", supportsMultipleImages: false, codePrefix: "HLF" },
@@ -430,6 +430,14 @@
         "father-child": { dataCategoryId: "father-child", mapModule: "category-father-child", imageFolder: "masterdata/chap14", imagePattern: "number", supportsMultipleImages: false, codePrefix: "DAD" },
         "marriage-emotion-healing": { dataCategoryId: "marriage-emotion", mapModule: "category-marriage-emotion", imageFolder: "masterdata/chap15", imagePattern: "number", supportsMultipleImages: false, codePrefix: "EMO" }
       };
+
+      // Chap 2 has several posters for each printed MAP number.
+      const CHAP2_IMAGE_LIMITS = {
+        1: 37, 2: 37, 3: 36, 4: 36, 5: 37, 6: 38, 7: 36, 8: 36,
+        9: 36, 10: 37, 11: 37, 12: 36, 13: 20, 14: 7, 15: 7, 16: 7,
+        17: 6, 18: 7, 19: 7, 20: 7, 21: 6, 22: 6, 23: 7, 24: 7, 25: 6
+      };
+      const CHAP2_MISSING_SUFFIXES = { 5: [4], 6: [3, 4], 10: [4], 11: [4] };
 
       const DIRECTORY_PAGE_SIZE = 10;
       const IMAGE_PRELOAD_BATCH_SIZE = 8;
@@ -501,6 +509,19 @@
       function getMapImageUrl(category, mapNumber) {
         return getMapImagePath(category, mapNumber, 1);
       }
+      function getMapImagePaths(category, mapNumber) {
+        if (category.id !== "human-decoding") return [getMapImageUrl(category, mapNumber)];
+        const number = Number(mapNumber);
+        const limit = CHAP2_IMAGE_LIMITS[number];
+        if (!limit) return [getMapImageUrl(category, mapNumber)];
+        const missing = CHAP2_MISSING_SUFFIXES[number] || [];
+        return Array.from({ length: limit }, (_, index) => index + 1)
+          .filter((index) => !missing.includes(index))
+          .map((index) => index === 1
+            ? getMapImageUrl(category, number)
+            : `${getCategoryConfig(category).imageFolder}/${number}-${index}.jpeg`);
+      }
+
 
       function checkImageUrl(url) {
         if (imageStatusCache.has(url)) return Promise.resolve(imageStatusCache.get(url));
@@ -525,7 +546,9 @@
       function scheduleImagePreload(category, maps) {
         if (!category || !maps?.length || preloadedCategoryImages.has(category.id)) return;
         preloadedCategoryImages.add(category.id);
-        const urls = maps.map((map) => getMapImageUrl(category, map.number));
+        const urls = maps
+          .filter((map) => category.id !== "human-decoding" || CHAP2_IMAGE_LIMITS[Number(map.number)])
+          .map((map) => getMapImageUrl(category, map.number));
         let index = 0;
         const runBatch = () => {
           const batch = urls.slice(index, index + IMAGE_PRELOAD_BATCH_SIZE);
@@ -581,7 +604,10 @@
       function renderDirectoryBook(category, map) {
         const title = `MAP ${map.number} - ${map.title}`;
         const imageUrl = getMapImageUrl(category, map.number);
-        const imageAvailable = imageStatusCache.get(imageUrl);
+        const imageAvailable = category.id === "human-decoding" && !CHAP2_IMAGE_LIMITS[Number(map.number)]
+          ? false
+          : imageStatusCache.get(imageUrl);
+        const imageCount = getMapImagePaths(category, map.number).length;
         return `
           <article class="group flex flex-col items-center text-center cursor-pointer">
             <div class="relative w-full aspect-[3/4] mb-6 transition-soft group-hover:-translate-y-2">
@@ -593,6 +619,7 @@
               </div>
             </div>
             <span class="text-label-sm font-label-sm text-primary-container bg-primary-container/10 px-3 py-1 rounded-full mb-3">${mapCode(category, map)}</span>
+            ${imageCount > 1 ? `<span class="mb-2 text-sm text-on-surface-variant">${imageCount} ảnh</span>` : ""}
             <h3 class="font-headline-md text-headline-md text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">${escapeHtml(map.title)}</h3>
             <button class="text-label-sm font-label-sm text-secondary hover:text-secondary-container flex items-center gap-1 group/btn transition-colors" data-map-detail="${category.id}|${map.number}" type="button">
               XEM CHI TIẾT
@@ -786,13 +813,80 @@
         }
       }
 
+      function renderMapGalleryThumbnails(paths, activeIndex, title) {
+        const start = Math.max(0, Math.min(activeIndex - 2, paths.length - 5));
+        return paths.slice(start, start + 5).map((path, offset) => {
+          const index = start + offset;
+          return `<button type="button" data-gallery-index="${index}" class="shrink-0 w-12 sm:w-14 aspect-[2/3] overflow-hidden rounded-md border-2 ${index === activeIndex ? "border-primary" : "border-transparent opacity-60 hover:opacity-100"} focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary" aria-label="Xem ảnh ${index + 1} của ${escapeHtml(title)}" aria-current="${index === activeIndex ? "true" : "false"}">
+            <img src="${escapeHtml(path)}" alt="" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+          </button>`;
+        }).join("");
+      }
+
       function renderMapHeroImage(category, map) {
         const title = `MAP ${map.number} - ${map.title}`;
-        return `<div class="relative w-full max-w-[400px] book-card-shadow rounded-r-lg overflow-hidden transition-transform duration-500 hover:rotate-2 bg-surface-container-lowest">
-          <div class="absolute left-0 top-0 bottom-0 w-4 bg-black/5 spine-shadow z-10"></div>
-          ${renderMapDirectoryFallback(title)}
-          <img alt="${escapeHtml(title)}" class="map-directory-cover-img relative z-10 w-full h-auto object-cover" src="${getMapImageUrl(category, map.number, 900)}" loading="lazy" decoding="async" onerror="this.classList.add('is-hidden')" />
+        if (category.id !== "human-decoding") {
+          return `<div class="relative w-full max-w-[400px] book-card-shadow rounded-r-lg overflow-hidden transition-transform duration-500 hover:rotate-2 bg-surface-container-lowest">
+            <div class="absolute left-0 top-0 bottom-0 w-4 bg-black/5 spine-shadow z-10"></div>
+            ${renderMapDirectoryFallback(title)}
+            <img alt="${escapeHtml(title)}" class="map-directory-cover-img relative z-10 w-full h-auto object-cover" src="${getMapImageUrl(category, map.number)}" loading="lazy" decoding="async" onerror="this.classList.add('is-hidden')" />
+          </div>`;
+        }
+        const paths = getMapImagePaths(category, map.number);
+        const hasKnownImage = category.id !== "human-decoding" || Boolean(CHAP2_IMAGE_LIMITS[Number(map.number)]);
+        const hasGallery = paths.length > 1;
+        return `<div class="w-full max-w-[400px]" ${hasGallery ? `data-map-gallery tabindex="0" aria-label="Bộ ảnh ${escapeHtml(title)}"` : ""}>
+          <div class="relative w-full aspect-[2/3] book-card-shadow rounded-r-lg overflow-hidden bg-surface-container-lowest">
+            <div class="absolute left-0 top-0 bottom-0 w-4 bg-black/5 spine-shadow z-20"></div>
+            ${renderMapDirectoryFallback(title)}
+            ${hasKnownImage ? `<img data-map-gallery-image alt="${escapeHtml(title)}" class="map-directory-cover-img relative z-10 w-full h-full object-contain" src="${escapeHtml(paths[0])}" loading="eager" fetchpriority="high" decoding="async" onerror="this.classList.add('is-hidden')" />` : ""}
+          </div>
+          ${hasGallery ? `<div class="mt-5 space-y-3">
+            <div class="flex items-center justify-between gap-3">
+              <p class="text-sm font-medium text-on-surface-variant" aria-live="polite" data-gallery-count>Ảnh 1 / ${paths.length}</p>
+              <div class="flex items-center gap-2">
+                <button type="button" data-gallery-step="-1" class="size-11 grid place-items-center rounded-full border border-outline-variant text-primary hover:bg-surface-container-low disabled:opacity-35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary" aria-label="Ảnh trước" disabled><span class="material-symbols-outlined">chevron_left</span></button>
+                <button type="button" data-gallery-step="1" class="size-11 grid place-items-center rounded-full border border-outline-variant text-primary hover:bg-surface-container-low disabled:opacity-35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary" aria-label="Ảnh tiếp theo"><span class="material-symbols-outlined">chevron_right</span></button>
+              </div>
+            </div>
+            <div class="flex justify-center gap-2" data-gallery-thumbnails>${renderMapGalleryThumbnails(paths, 0, title)}</div>
+          </div>` : ""}
         </div>`;
+      }
+
+      function bindMapGallery(category, map) {
+        const gallery = document.querySelector("[data-map-gallery]");
+        if (!gallery) return;
+        const paths = getMapImagePaths(category, map.number);
+        const title = `MAP ${map.number} - ${map.title}`;
+        const image = gallery.querySelector("[data-map-gallery-image]");
+        const count = gallery.querySelector("[data-gallery-count]");
+        const thumbnails = gallery.querySelector("[data-gallery-thumbnails]");
+        const previous = gallery.querySelector('[data-gallery-step="-1"]');
+        const next = gallery.querySelector('[data-gallery-step="1"]');
+        let activeIndex = 0;
+        const showImage = (index) => {
+          if (index < 0 || index >= paths.length || index === activeIndex) return;
+          activeIndex = index;
+          image.classList.remove("is-hidden");
+          image.src = paths[index];
+          image.alt = `${title}, ảnh ${index + 1} trên ${paths.length}`;
+          count.textContent = `Ảnh ${index + 1} / ${paths.length}`;
+          thumbnails.innerHTML = renderMapGalleryThumbnails(paths, index, title);
+          previous.disabled = index === 0;
+          next.disabled = index === paths.length - 1;
+        };
+        gallery.addEventListener("click", (event) => {
+          const thumbnail = event.target.closest("[data-gallery-index]");
+          if (thumbnail) showImage(Number(thumbnail.dataset.galleryIndex));
+          const step = event.target.closest("[data-gallery-step]");
+          if (step) showImage(activeIndex + Number(step.dataset.galleryStep));
+        });
+        gallery.addEventListener("keydown", (event) => {
+          if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+          event.preventDefault();
+          showImage(activeIndex + (event.key === "ArrowRight" ? 1 : -1));
+        });
       }
 
       function renderMapSuggestionCard(category, map, label) {
@@ -911,7 +1005,7 @@
         ];
         $("#directory-content").innerHTML = `
           <article data-map-page>
-            <section class="relative px-gutter py-stack-lg flex flex-col md:flex-row items-center justify-between max-w-container-max mx-auto gap-12">
+            <section class="relative px-gutter py-10 md:py-stack-lg flex flex-col md:flex-row items-center justify-between max-w-container-max mx-auto gap-12">
               <div class="md:w-1/2 space-y-6">
                 <nav class="mb-2">
                   <ul class="flex flex-wrap items-center gap-2 text-label-sm font-label-sm text-on-surface-variant uppercase tracking-widest">
@@ -991,6 +1085,7 @@
           </article>
         `;
         bindMapPageAccordions();
+        bindMapGallery(category, map);
         window.scrollTo({ top: 0, behavior: "smooth" });
       }
 
