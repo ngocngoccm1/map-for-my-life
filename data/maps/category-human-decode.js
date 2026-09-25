@@ -1,4 +1,4 @@
-export const maps = Array.from({ length: 500 }, (_, index) => {
+export const maps = Array.from({ length: 486 }, (_, index) => {
   const number = index + 1;
   return {
     id: `human-decode-${number}`,

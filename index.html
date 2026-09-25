@@ -389,7 +389,7 @@
 
       const MAP_CATEGORIES = [
         { id: "family-child", group: "family", groupLabel: "Gia đình", title: "Bản đồ gia đình - yêu thương, thấu hiểu, đồng hành cùng con", total: 330, totalLabel: "330 MAP", description: "Giúp cha mẹ hiểu sâu thế giới nội tâm của con, hiểu sự khác biệt giữa các thành viên trong gia đình, hiểu cách đồng hành phù hợp với từng đứa trẻ và xây dựng môi trường phát triển lành mạnh cho cả gia đình.", cover: "masterdata/chap1/1.jpeg" },
-        { id: "human-decoding", group: "decoding", groupLabel: "Giải mã con người", title: "Bản đồ giải mã con người toàn diện", total: 459, totalLabel: "459 MAP", description: "Khám phá 459 MAP hiện có theo từng nhóm chủ đề, từ cấu trúc con người, tư duy và cảm xúc đến năng lực, công việc và chất lượng sống.", cover: "masterdata/chap2/nhom-01-map-01.jpeg" },
+        { id: "human-decoding", group: "decoding", groupLabel: "Giải mã con người", title: "Bản đồ giải mã con người toàn diện", total: 486, totalLabel: "486 MAP", description: "Hệ thống 35 nhóm, 486 MAP, mỗi MAP gồm 40 chương chuyên sâu; khám phá con người từ cấu trúc cốt lõi đến cách kiến tạo cuộc đời.", cover: "masterdata/chap2/nhom-01-map-01.jpeg" },
         { id: "grow-together", group: "family", groupLabel: "Gia đình", title: "Bản đồ đồng hành, trưởng thành cùng nhau", total: 60, totalLabel: "60 MAP", description: "Giúp các thành viên trong gia đình học cách đồng hành, thấu hiểu và trưởng thành cùng nhau qua từng giai đoạn sống.", cover: "masterdata/chap3/1.jpeg" },
         { id: "peaceful-home", group: "family", groupLabel: "Gia đình", title: "Bản đồ xây dựng mái nhà bình yên và trưởng thành", total: 60, totalLabel: "60 MAP", description: "Giúp gia đình giảm xung đột, tăng kết nối và xây dựng một mái nhà có nền tảng cảm xúc an toàn.", cover: "masterdata/chap4/1.jpeg" },
         { id: "healing-family", group: "family", groupLabel: "Gia đình", title: "Bản đồ xây dựng gia đình chữa lành", total: 60, totalLabel: "60 MAP", description: "Giúp nhận diện những mô thức gia đình đang lặp lại, từ đó xây dựng một môi trường yêu thương, chữa lành và trưởng thành.", cover: "masterdata/chap5/1.jpeg" },
@@ -433,6 +433,10 @@
 
       const DIRECTORY_PAGE_SIZE = 10;
       const IMAGE_PRELOAD_BATCH_SIZE = 8;
+      const CHAP2_MISSING_GROUP_TITLES = {
+        32: "Tiềm năng và đòn bẩy phát triển",
+        35: "Kiến tạo cuộc đời"
+      };
       const mapCache = new Map();
       const previewCache = new Map();
       const imageStatusCache = new Map();
@@ -563,10 +567,19 @@
           const response = await fetch("./data/maps/chap2-assets.json");
           if (!response.ok) throw new Error("Không tải được danh sách ảnh Chap 2");
           const manifest = await response.json();
-          chap2Groups = manifest.groups.map((group) => ({
-            ...group,
-            imageCount: group.maps.reduce((count, map) => count + map.images.length, 0)
-          }));
+          const existingGroups = new Map(manifest.groups.map((group) => [group.number, group]));
+          chap2Groups = Array.from({ length: 35 }, (_, index) => {
+            const number = index + 1;
+            const group = existingGroups.get(number);
+            const count = number <= 4 ? 25 : number <= 18 ? 13 : 12;
+            return {
+              number,
+              title: group?.title || CHAP2_MISSING_GROUP_TITLES[number],
+              maps: Array.from({ length: count }, (_, mapIndex) =>
+                group?.maps.find((map) => map.number === mapIndex + 1) || { number: mapIndex + 1, images: [] }
+              )
+            };
+          });
           const maps = chap2Groups.flatMap((group) => group.maps.map((entry) => ({
             id: `human-decode-g${String(group.number).padStart(2, "0")}-m${String(entry.number).padStart(2, "0")}`,
             slug: `g${String(group.number).padStart(2, "0")}-m${String(entry.number).padStart(2, "0")}`,
@@ -575,8 +588,11 @@
             groupTitle: group.title,
             number: entry.number,
             title: group.title,
-            subtitle: `MAP ${entry.number} thuộc Nhóm ${group.number}: ${group.title}.`,
+            subtitle: entry.images.length
+              ? `MAP ${entry.number} thuộc Nhóm ${group.number}: ${group.title}.`
+              : "Nội dung MAP đang được cập nhật.",
             images: entry.images,
+            pending: entry.images.length === 0,
             hasPreview: false,
             tags: ["giải mã", group.title]
           })));
@@ -633,11 +649,12 @@
               <div class="relative w-full h-full rounded-sm overflow-hidden book-shadow flex bg-surface-container-lowest">
                 <div class="w-2 h-full bg-primary/20 absolute left-0 z-20 book-spine-effect"></div>
                 ${renderMapDirectoryFallback(title)}
-                ${imageAvailable === false ? "" : `<img alt="${escapeHtml(title)}" class="map-directory-cover-img absolute inset-0 h-full w-full object-cover z-10" src="${imageUrl}" loading="lazy" decoding="async" onload="markMapImageStatus(this.src, true)" onerror="markMapImageStatus(this.src, false); this.classList.add('is-hidden')" />`}
+                ${!imageUrl || imageAvailable === false ? "" : `<img alt="${escapeHtml(title)}" class="map-directory-cover-img absolute inset-0 h-full w-full object-cover z-10" src="${imageUrl}" loading="lazy" decoding="async" onload="markMapImageStatus(this.src, true)" onerror="markMapImageStatus(this.src, false); this.classList.add('is-hidden')" />`}
               </div>
             </div>
             <span class="text-label-sm font-label-sm text-primary-container bg-primary-container/10 px-3 py-1 rounded-full mb-3">${escapeHtml(mapCode(category, map))}</span>
             ${imageCount > 1 ? `<span class="mb-2 text-sm text-on-surface-variant">${imageCount} ảnh</span>` : ""}
+            ${map.pending ? '<span class="mb-2 text-sm text-on-surface-variant">Đang cập nhật</span>' : ""}
             <h3 class="font-headline-md text-headline-md text-on-surface mb-2 leading-snug group-hover:text-primary transition-colors">${isChap2 ? `MAP ${map.number}<br><span class="text-base font-normal">${escapeHtml(map.groupTitle)}</span>` : escapeHtml(map.title)}</h3>
             <button class="text-label-sm font-label-sm text-secondary hover:text-secondary-container flex items-center gap-1 group/btn transition-colors" data-map-detail="${category.id}|${isChap2 ? map.slug : map.number}" type="button">
               XEM CHI TIẾT
@@ -775,21 +792,20 @@
       }
 
       function renderChap2GroupPicker() {
-        const imageCount = chap2Groups.reduce((count, group) => count + group.imageCount, 0);
         return `<section class="mb-12" aria-label="Các nhóm Chap 2">
           <div class="mb-6">
             <h3 class="font-headline-lg text-headline-lg text-primary">Khám phá theo nhóm</h3>
-            <p class="mt-2 text-on-surface-variant">${selectedMaps.length} MAP từ ${imageCount} ảnh, thuộc ${chap2Groups.length} nhóm đang có dữ liệu. Nhóm 32 hiện chưa có ảnh.</p>
+            <p class="mt-2 text-on-surface-variant">${selectedMaps.length} MAP thuộc ${chap2Groups.length} nhóm. Các MAP chưa có nội dung được đánh dấu “Đang cập nhật”.</p>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
             <button class="text-left rounded-xl border border-outline-variant bg-surface-bright p-4 hover:border-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary" type="button" data-chap2-group="0" aria-pressed="true">
               <span class="block text-sm font-bold text-primary">Tất cả</span>
-              <span class="block mt-1 text-sm text-on-surface-variant">${selectedMaps.length} MAP · ${imageCount} ảnh</span>
+              <span class="block mt-1 text-sm text-on-surface-variant">${selectedMaps.length} MAP</span>
             </button>
             ${chap2Groups.map((group) => `<button class="text-left rounded-xl border border-outline-variant bg-surface-bright p-4 hover:border-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary" type="button" data-chap2-group="${group.number}" aria-pressed="false">
               <span class="block text-sm font-bold text-primary">Nhóm ${group.number}</span>
               <span class="block mt-1 text-sm text-on-surface">${escapeHtml(group.title)}</span>
-              <span class="block mt-2 text-sm text-on-surface-variant">${group.maps.length} MAP · ${group.imageCount} ảnh</span>
+              <span class="block mt-2 text-sm text-on-surface-variant">${group.maps.length} MAP</span>
             </button>`).join("")}
           </div>
         </section>`;
@@ -897,7 +913,7 @@
           <div class="relative w-full aspect-[2/3] book-card-shadow rounded-r-lg overflow-hidden bg-surface-container-lowest">
             <div class="absolute left-0 top-0 bottom-0 w-4 bg-black/5 spine-shadow z-20"></div>
             ${renderMapDirectoryFallback(title)}
-            <img data-map-gallery-image alt="${escapeHtml(title)}" class="map-directory-cover-img relative z-10 w-full h-full object-contain" src="${escapeHtml(paths[0])}" loading="eager" fetchpriority="high" decoding="async" onerror="this.classList.add('is-hidden')" />
+            ${paths.length ? `<img data-map-gallery-image alt="${escapeHtml(title)}" class="map-directory-cover-img relative z-10 w-full h-full object-contain" src="${escapeHtml(paths[0])}" loading="eager" fetchpriority="high" decoding="async" onerror="this.classList.add('is-hidden')" />` : ""}
           </div>
           ${hasGallery ? `<div class="mt-5 space-y-3">
             <div class="flex items-center justify-between gap-3">
@@ -957,7 +973,7 @@
               <div class="relative aspect-[3/4] overflow-hidden rounded-sm bg-surface-container-lowest book-shadow">
                 <div class="absolute left-0 top-0 bottom-0 w-2 bg-primary/20 z-20 book-spine-effect"></div>
                 ${renderMapDirectoryFallback(title)}
-                <img alt="${escapeHtml(title)} - ${escapeHtml(map.title)}" class="map-directory-cover-img absolute inset-0 h-full w-full object-cover z-10" src="${getMapImageUrl(category, map)}" loading="lazy" decoding="async" onerror="this.classList.add('is-hidden')" />
+                ${getMapImageUrl(category, map) ? `<img alt="${escapeHtml(title)} - ${escapeHtml(map.title)}" class="map-directory-cover-img absolute inset-0 h-full w-full object-cover z-10" src="${getMapImageUrl(category, map)}" loading="lazy" decoding="async" onerror="this.classList.add('is-hidden')" />` : ""}
               </div>
               <div>
                 <div class="text-label-sm font-label-sm text-secondary uppercase tracking-widest">${escapeHtml(label)}</div>

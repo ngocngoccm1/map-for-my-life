@@ -15,7 +15,7 @@ export const categories = [
     id: "human-decode",
     order: 2,
     name: "Bản đồ giải mã con người toàn diện",
-    count: 500,
+    count: 486,
     imageFolder: "Images_Clone_CATEGOGY2",
     coverImage: "",
     description: "Một thư viện nền tảng để nhìn sâu vào chỉ số, bài học, tiềm năng, tổn thương và cơ chế vận hành bên trong con người.",
