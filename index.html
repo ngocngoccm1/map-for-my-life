@@ -383,6 +383,7 @@
       <div class="max-w-container-max mx-auto px-gutter py-8 border-t border-outline-variant/30 text-center text-label-sm text-outline">© 2026 GEIN MAP FOR SUCCESS. Soul Map for Personal Growth. All rights reserved.</div>
     </footer>
 
+    <script src="./data/maps/category-groups.js"></script>
     <script>
       const HERO_IMAGE_URL = "masterdata/chap1/%E1%BA%A2nh%20gi%E1%BB%9Bi%20thi%E1%BB%87u%20web.jpeg";
       document.documentElement.style.setProperty("--hero-image", `url("${HERO_IMAGE_URL}")`);
@@ -438,6 +439,7 @@
         35: "Kiến tạo cuộc đời"
       };
       const mapCache = new Map();
+      const groupCache = new Map();
       const previewCache = new Map();
       const imageStatusCache = new Map();
       const preloadedCategoryImages = new Set();
@@ -446,8 +448,8 @@
       let selectedPage = 1;
       let detailQuery = "";
       let detailSort = "number";
-      let selectedChap2Group = 0;
-      let chap2Groups = [];
+      let selectedGroup = 0;
+      let activeGroups = [];
 
       const INDICATORS = [
         ["person", "Con người thật bên trong", "Khám phá bản ngã thực sự đằng sau những mặt nạ xã hội thường ngày."],
@@ -562,13 +564,16 @@
 
       async function loadMapsForCategory(category) {
         const config = getCategoryConfig(category);
-        if (mapCache.has(category.id)) return mapCache.get(category.id);
+        if (mapCache.has(category.id)) {
+          activeGroups = groupCache.get(category.id) || [];
+          return mapCache.get(category.id);
+        }
         if (category.id === "human-decoding") {
           const response = await fetch("./data/maps/chap2-assets.json");
           if (!response.ok) throw new Error("Không tải được danh sách ảnh Chap 2");
           const manifest = await response.json();
           const existingGroups = new Map(manifest.groups.map((group) => [group.number, group]));
-          chap2Groups = Array.from({ length: 35 }, (_, index) => {
+          activeGroups = Array.from({ length: 35 }, (_, index) => {
             const number = index + 1;
             const group = existingGroups.get(number);
             const count = number <= 4 ? 25 : number <= 18 ? 13 : 12;
@@ -580,7 +585,7 @@
               )
             };
           });
-          const maps = chap2Groups.flatMap((group) => group.maps.map((entry) => ({
+          const maps = activeGroups.flatMap((group) => group.maps.map((entry) => ({
             id: `human-decode-g${String(group.number).padStart(2, "0")}-m${String(entry.number).padStart(2, "0")}`,
             slug: `g${String(group.number).padStart(2, "0")}-m${String(entry.number).padStart(2, "0")}`,
             categoryId: "human-decode",
@@ -597,12 +602,28 @@
             tags: ["giải mã", group.title]
           })));
           mapCache.set(category.id, maps);
+          groupCache.set(category.id, activeGroups);
           return maps;
         }
         if (!config.mapModule) return [];
         const module = await import(`./data/maps/${config.mapModule}.js`);
-        const maps = module.maps || [];
+        const groupDefinitions = MAP_GROUPS[category.id] || [];
+        let lastMap = 0;
+        activeGroups = groupDefinitions.map((definition, index) => {
+          const title = Array.isArray(definition) ? definition[0] : definition;
+          const count = Array.isArray(definition) ? definition[1] : 15;
+          const firstMap = lastMap + 1;
+          lastMap += count;
+          return { number: index + 1, title, count, firstMap, lastMap };
+        });
+        const maps = (module.maps || [])
+          .filter((map) => !activeGroups.length || map.number <= lastMap)
+          .map((map) => {
+            const group = activeGroups.find((item) => map.number >= item.firstMap && map.number <= item.lastMap);
+            return group ? { ...map, groupNumber: group.number, groupTitle: group.title } : map;
+          });
         mapCache.set(category.id, maps);
+        groupCache.set(category.id, activeGroups);
         return maps;
       }
 
@@ -668,7 +689,7 @@
         const query = detailQuery.trim().toLowerCase();
         let maps = selectedMaps.filter((map) => {
           const haystack = `${map.number} ${map.title} ${map.subtitle || ""} ${map.groupNumber || ""} ${map.slug || ""} ${(map.tags || []).join(" ")}`.toLowerCase();
-          return (!selectedChap2Group || selectedDirectoryCategory?.id !== "human-decoding" || map.groupNumber === selectedChap2Group)
+          return (!selectedGroup || map.groupNumber === selectedGroup)
             && (!query || haystack.includes(query));
         });
         if (detailSort === "title") {
@@ -694,13 +715,13 @@
         grid.innerHTML = visible.map((map) => renderDirectoryBook(category, map)).join("");
         empty.classList.toggle("hidden", filtered.length > 0);
         pageInfo.textContent = `Trang ${selectedPage} của ${totalPages}`;
-        const heading = document.querySelector("[data-chap2-active-group]");
+        const heading = document.querySelector("[data-active-group]");
         if (heading) {
-          const group = chap2Groups.find((item) => item.number === selectedChap2Group);
-          heading.textContent = group ? `Nhóm ${group.number}: ${group.title} (${group.maps.length} MAP)` : `Tất cả ${selectedMaps.length} MAP`;
+          const group = activeGroups.find((item) => item.number === selectedGroup);
+          heading.textContent = group ? `Nhóm ${group.number}: ${group.title} (${group.maps?.length || group.count} MAP)` : `Tất cả ${selectedMaps.length} MAP`;
         }
-        document.querySelectorAll("[data-chap2-group]").forEach((button) => {
-          const active = Number(button.dataset.chap2Group) === selectedChap2Group;
+        document.querySelectorAll("[data-map-group]").forEach((button) => {
+          const active = Number(button.dataset.mapGroup) === selectedGroup;
           button.setAttribute("aria-pressed", String(active));
           button.classList.toggle("border-primary", active);
           button.classList.toggle("bg-primary-container/10", active);
@@ -727,12 +748,12 @@
           renderDirectoryGrid(category);
         });
         shell?.addEventListener("click", (event) => {
-          const group = event.target.closest("[data-chap2-group]");
+          const group = event.target.closest("[data-map-group]");
           if (group) {
-            selectedChap2Group = Number(group.dataset.chap2Group);
+            selectedGroup = Number(group.dataset.mapGroup);
             selectedPage = 1;
             renderDirectoryGrid(category);
-            document.querySelector("[data-chap2-active-group]")?.scrollIntoView({ behavior: "smooth", block: "start" });
+            document.querySelector("[data-active-group]")?.scrollIntoView({ behavior: "smooth", block: "start" });
             return;
           }
           const detail = event.target.closest("[data-map-detail]");
@@ -791,21 +812,22 @@
         `).join("");
       }
 
-      function renderChap2GroupPicker() {
-        return `<section class="mb-12" aria-label="Các nhóm Chap 2">
+      function renderGroupPicker() {
+        return `<section class="mb-12" aria-label="Các nhóm MAP">
           <div class="mb-6">
             <h3 class="font-headline-lg text-headline-lg text-primary">Khám phá theo nhóm</h3>
-            <p class="mt-2 text-on-surface-variant">${selectedMaps.length} MAP thuộc ${chap2Groups.length} nhóm. Các MAP chưa có nội dung được đánh dấu “Đang cập nhật”.</p>
+            <p class="mt-2 text-on-surface-variant">${activeGroups.length} nhóm · ${selectedMaps.length} MAP · ${(selectedMaps.length * 40).toLocaleString("vi-VN")} chương chuyên sâu.</p>
+            <p class="mt-1 text-sm text-on-surface-variant">${MAP_ANALYSIS_MODE[selectedMap.id] ? `Loại phân tích: ${escapeHtml(MAP_ANALYSIS_MODE[selectedMap.id])} · ` : ""}Mỗi MAP gồm 40 chương. MAP chưa có nội dung được đánh dấu “Đang cập nhật”.</p>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
-            <button class="text-left rounded-xl border border-outline-variant bg-surface-bright p-4 hover:border-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary" type="button" data-chap2-group="0" aria-pressed="true">
+            <button class="text-left rounded-xl border border-outline-variant bg-surface-bright p-4 hover:border-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary" type="button" data-map-group="0" aria-pressed="true">
               <span class="block text-sm font-bold text-primary">Tất cả</span>
               <span class="block mt-1 text-sm text-on-surface-variant">${selectedMaps.length} MAP</span>
             </button>
-            ${chap2Groups.map((group) => `<button class="text-left rounded-xl border border-outline-variant bg-surface-bright p-4 hover:border-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary" type="button" data-chap2-group="${group.number}" aria-pressed="false">
+            ${activeGroups.map((group) => `<button class="text-left rounded-xl border border-outline-variant bg-surface-bright p-4 hover:border-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary" type="button" data-map-group="${group.number}" aria-pressed="false">
               <span class="block text-sm font-bold text-primary">Nhóm ${group.number}</span>
               <span class="block mt-1 text-sm text-on-surface">${escapeHtml(group.title)}</span>
-              <span class="block mt-2 text-sm text-on-surface-variant">${group.maps.length} MAP</span>
+              <span class="block mt-2 text-sm text-on-surface-variant">${group.maps?.length || group.count} MAP${group.firstMap ? ` · MAP ${group.firstMap}–${group.lastMap}` : ""}</span>
             </button>`).join("")}
           </div>
         </section>`;
@@ -816,7 +838,7 @@
         selectedPage = 1;
         detailQuery = "";
         detailSort = "number";
-        selectedChap2Group = 0;
+        selectedGroup = 0;
         $("#directory-content").innerHTML = `
           <section class="relative z-10">
             <header class="mb-stack-md max-w-container-max mx-auto">
@@ -863,8 +885,8 @@
           selectedMaps = await loadMapsForCategory(selectedMap);
           selectedDirectoryCategory = selectedMap;
           document.querySelector("[data-map-directory-shell]").innerHTML = `
-            ${selectedMap.id === "human-decoding" ? renderChap2GroupPicker() : ""}
-            ${selectedMap.id === "human-decoding" ? '<h3 class="mb-6 font-headline-md text-headline-md text-primary scroll-mt-24" data-chap2-active-group>Tất cả MAP</h3>' : ""}
+            ${activeGroups.length ? renderGroupPicker() : ""}
+            ${activeGroups.length ? '<h3 class="mb-6 font-headline-md text-headline-md text-primary scroll-mt-24" data-active-group>Tất cả MAP</h3>' : ""}
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-8 gap-y-12" data-map-directory-grid></div>
             <div class="hidden bg-surface-container-low p-10 rounded-2xl text-center text-on-surface-variant" data-map-directory-empty>Chưa tìm thấy bản đồ phù hợp.</div>
             <div class="mt-20 flex flex-col items-center gap-6">
